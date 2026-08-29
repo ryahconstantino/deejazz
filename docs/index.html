@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#000000" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <title>DeeJazz — Music without distractions</title>
-    <script type="module" crossorigin src="./assets/index-CfhIFzxR.js"></script>
+    <script type="module" crossorigin src="./assets/index-CZthlja_.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-BjZHW51I.css">
   </head>
   <body class="overflow-x-hidden bg-black text-white antialiased selection:bg-fuchsia-500 selection:text-white">
@@ -158,10 +158,11 @@
               <a
                 class="download-link platform-action"
                 data-windows-download
-                aria-disabled="true"
-                aria-label="Windows download coming soon on GitHub"
+                href="https://github.com/ryahconstantino/deejazz/releases/latest/download/DeeJazz-Setup.exe"
+                rel="noopener"
+                aria-label="Download DeeJazz installer for Windows from GitHub"
               >
-                <span data-i18n="download.github.soon">Coming soon on GitHub</span>
+                <span data-i18n="download.windows.ready">Download installer</span>
               </a>
               <p data-i18n="download.windows.note">Free installer from GitHub Releases</p>
             </article>
@@ -184,9 +185,9 @@
                   <small data-i18n="download.linux.detail">x86_64 • portable package</small>
                 </span>
               </div>
-              <div class="linux-command" data-linux-command-box aria-disabled="true">
-                <code data-linux-command data-i18n="download.github.soon">Coming soon on GitHub</code>
-                <button type="button" data-copy-linux disabled data-i18n-aria-label="download.copy">
+              <div class="linux-command" data-linux-command-box aria-disabled="false">
+                <code data-linux-command>curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh | sh</code>
+                <button type="button" data-copy-linux data-i18n-aria-label="download.copy">
                   <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M8.25 6.75V4.875A1.875 1.875 0 0 1 10.125 3h8.25a1.875 1.875 0 0 1 1.875 1.875v8.25A1.875 1.875 0 0 1 18.375 15h-1.5M8.25 6.75h-2.625A1.875 1.875 0 0 0 3.75 8.625v9.75c0 1.036.84 1.875 1.875 1.875h9.75c1.036 0 1.875-.84 1.875-1.875V15M8.25 6.75h7.125c1.036 0 1.875.84 1.875 1.875V15" />
                   </svg>

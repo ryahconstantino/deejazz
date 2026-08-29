@@ -31,12 +31,9 @@ O comando atualiza a pasta `docs/`. Faça commit do código-fonte e do novo buil
 
 ## Downloads
 
-Configure as variáveis antes do build:
+Os downloads usam endereços fixos do repositório principal; não há variáveis de ambiente para configurar no GitHub Pages.
 
-```env
-VITE_WINDOWS_DOWNLOAD_URL=https://github.com/proprietario/deejazz/releases/download/versao/DeeJazz-Setup.exe
-VITE_LINUX_INSTALL_URL=https://raw.githubusercontent.com/proprietario/deejazz/master/scripts/install-linux.sh
-VITE_GITHUB_REPOSITORY=proprietario/deejazz
-```
+- Windows: `https://github.com/ryahconstantino/deejazz/releases/latest/download/DeeJazz-Setup.exe`
+- Linux: `curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh | sh`
 
-Sem as URLs, as opções aparecem como “Coming soon on GitHub”.
+O GitHub Pages serve diretamente o conteúdo já compilado em `docs/`.

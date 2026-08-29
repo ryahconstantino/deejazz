@@ -1,10 +1,8 @@
 import './style.css'
 import { DEFAULT_LOCALE, SUPPORTED_LOCALES, getMessage } from './i18n.js'
 
-const windowsDownloadUrl = import.meta.env.VITE_WINDOWS_DOWNLOAD_URL?.trim()
-  || import.meta.env.VITE_DOWNLOAD_URL?.trim()
-const linuxInstallUrl = import.meta.env.VITE_LINUX_INSTALL_URL?.trim()
-const configuredGitHubRepository = import.meta.env.VITE_GITHUB_REPOSITORY?.trim()
+const windowsDownloadUrl = 'https://github.com/ryahconstantino/deejazz/releases/latest/download/DeeJazz-Setup.exe'
+const linuxInstallUrl = 'https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh'
 const languagePicker = document.querySelector('#language-picker')
 const languageSelector = document.querySelector('#language-selector')
 const languageMenu = document.querySelector('#language-menu')
@@ -18,38 +16,6 @@ const linuxCommandBox = document.querySelector('[data-linux-command-box]')
 const linuxCommandElement = document.querySelector('[data-linux-command]')
 const copyLinuxButton = document.querySelector('[data-copy-linux]')
 let currentLocale = DEFAULT_LOCALE
-
-function isGitHubUrl(value, allowedHosts = ['github.com']) {
-  if (!value) return false
-
-  try {
-    const url = new URL(value)
-    return url.protocol === 'https:' && allowedHosts.includes(url.hostname)
-  } catch {
-    return false
-  }
-}
-
-function getGitHubRepository(value) {
-  if (/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(configuredGitHubRepository || '')) {
-    return configuredGitHubRepository
-  }
-
-  try {
-    const url = new URL(value)
-    const pathParts = url.pathname.split('/').filter(Boolean)
-    if (url.hostname === 'raw.githubusercontent.com' && pathParts.length >= 2) {
-      return `${pathParts[0]}/${pathParts[1]}`
-    }
-    if (url.hostname === 'github.com' && pathParts.length >= 2) {
-      return `${pathParts[0]}/${pathParts[1]}`
-    }
-  } catch {
-    return null
-  }
-
-  return null
-}
 
 function getSavedLocale() {
   try {
@@ -78,36 +44,20 @@ function getInitialLocale() {
 }
 
 function updateDownloads() {
-  const windowsIsReady = isGitHubUrl(windowsDownloadUrl)
-  const linuxRepository = getGitHubRepository(linuxInstallUrl)
-  const linuxIsReady = isGitHubUrl(linuxInstallUrl, ['github.com', 'raw.githubusercontent.com'])
-    && Boolean(linuxRepository)
-
   windowsDownloadLinks.forEach((link) => {
     const label = link.querySelector('span') || link
-    label.textContent = getMessage(currentLocale, windowsIsReady ? 'download.windows.ready' : 'download.github.soon')
-    link.setAttribute('aria-label', getMessage(
-      currentLocale,
-      windowsIsReady ? 'download.windows.readyAria' : 'download.windows.soonAria',
-    ))
-
-    if (windowsIsReady) {
-      link.href = windowsDownloadUrl
-      link.removeAttribute('aria-disabled')
-      link.setAttribute('rel', 'noopener')
-    } else {
-      link.removeAttribute('href')
-      link.setAttribute('aria-disabled', 'true')
-    }
+    label.textContent = getMessage(currentLocale, 'download.windows.ready')
+    link.setAttribute('aria-label', getMessage(currentLocale, 'download.windows.readyAria'))
+    link.href = windowsDownloadUrl
+    link.removeAttribute('aria-disabled')
+    link.setAttribute('rel', 'noopener')
   })
 
   if (linuxCommandElement) {
-    linuxCommandElement.textContent = linuxIsReady
-      ? `curl -fsSL ${linuxInstallUrl} | DEEJAZZ_GITHUB_REPOSITORY=${linuxRepository} sh`
-      : getMessage(currentLocale, 'download.github.soon')
+    linuxCommandElement.textContent = `curl -fsSL ${linuxInstallUrl} | sh`
   }
-  linuxCommandBox?.setAttribute('aria-disabled', String(!linuxIsReady))
-  if (copyLinuxButton) copyLinuxButton.disabled = !linuxIsReady
+  linuxCommandBox?.setAttribute('aria-disabled', 'false')
+  if (copyLinuxButton) copyLinuxButton.disabled = false
 }
 
 function updateMenuLabel() {
@@ -169,12 +119,6 @@ function applyLocale(locale, updateLocation = false) {
     saveLocale(currentLocale)
   }
 }
-
-windowsDownloadLinks.forEach((link) => {
-  link.addEventListener('click', (event) => {
-    if (!isGitHubUrl(windowsDownloadUrl)) event.preventDefault()
-  })
-})
 
 copyLinuxButton?.addEventListener('click', async () => {
   if (!linuxCommandElement || copyLinuxButton.disabled || !navigator.clipboard) return
