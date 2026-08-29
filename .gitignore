@@ -1,4 +1,5 @@
 node_modules/
+.pages-build/
 .env
 .env.*
 !.env.example

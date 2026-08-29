@@ -6,13 +6,13 @@ O idioma principal é `en-US`. O seletor do cabeçalho também oferece `pt-BR` e
 
 ## GitHub Pages
 
-O conteúdo publicado está na pasta `docs/` desta branch. Nas configurações do repositório, selecione:
+O conteúdo compilado é publicado diretamente na raiz desta branch. Nas configurações do repositório, selecione:
 
 - Source: `Deploy from a branch`
 - Branch: `pages`
-- Folder: `/docs`
+- Folder: `/ (root)`
 
-Não é necessário executar Actions. O arquivo `docs/.nojekyll` garante que os arquivos gerados pelo Vite sejam servidos diretamente.
+Não é necessário executar Actions. O `index.html`, a pasta `assets/`, o `favicon.svg` e o arquivo `.nojekyll` ficam no root da branch `pages` e são servidos diretamente.
 
 ## Desenvolvimento
 
@@ -27,7 +27,7 @@ npm run dev
 npm run build
 ```
 
-O comando atualiza a pasta `docs/`. Faça commit do código-fonte e do novo build na branch `pages`.
+O comando compila o código-fonte de `site/` em uma pasta temporária e atualiza os arquivos publicados no root. Faça commit do código-fonte e do novo build na branch `pages`.
 
 ## Downloads
 
@@ -36,4 +36,4 @@ Os downloads usam endereços fixos do repositório principal; não há variávei
 - Windows: `https://github.com/ryahconstantino/deejazz/releases/latest/download/DeeJazz-Setup.exe`
 - Linux: `curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh | sh`
 
-O GitHub Pages serve diretamente o conteúdo já compilado em `docs/`.
+O GitHub Pages serve diretamente o conteúdo já compilado na raiz da branch `pages`.
