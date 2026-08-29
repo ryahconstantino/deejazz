@@ -21,11 +21,18 @@ O instalador NSIS é criado em `dist/DeeJazz-Setup-7.1.320-ia32.exe`.
 
 ## Linux
 
+O build Linux incorpora melhorias do projeto [aunetx/deezer-linux](https://github.com/aunetx/deezer-linux): integração MPRIS, controles de mídia, minimizar para a bandeja, suporte a Wayland/IME, layout responsivo e opções de acessibilidade. A camada é aplicada somente ao pacote Linux e mantém a integração do uBO Lite.
+
+### Gerar os pacotes
+
 ```bash
 npm run dist:linux
+npm run dist:linux:arm64
 ```
 
-O build cria o pacote portátil `dist/DeeJazz-linux-x64.tar.gz` e o respectivo checksum SHA-256. Não são gerados pacotes `.deb` ou `.rpm`.
+Os builds criam `dist/DeeJazz-linux-x64.tar.gz` ou `dist/DeeJazz-linux-arm64.tar.gz`, acompanhados do respectivo checksum SHA-256. Não são gerados pacotes `.deb` ou `.rpm`.
+
+### Instalar com curl
 
 Depois de publicar o pacote e o checksum em uma release do GitHub, a instalação pode ser feita com:
 
@@ -35,6 +42,30 @@ curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scri
 
 A instalação ocorre em `~/.local/share/deejazz`, sem `sudo`.
 
+O instalador detecta Linux x86_64 ou ARM64, registra o ícone, o protocolo `deezer://` e a entrada do DeeJazz no menu de aplicativos.
+
+### Opções de execução
+
+As opções aceitam argumentos ou variáveis de ambiente:
+
+| Argumento | Variável | Efeito |
+| --- | --- | --- |
+| `--start-in-tray` | `DZ_START_IN_TRAY=yes` | Inicia o DeeJazz na bandeja |
+| `--disable-systray` | `DZ_DISABLE_SYSTRAY=yes` | Desativa a bandeja e fecha o app normalmente |
+| `--hide-offline-banner` | `DZ_HIDE_OFFLINE_BANNER=yes` | Oculta o aviso de modo offline |
+| `--disable-animations` | `DZ_DISABLE_ANIMATIONS=yes` | Desativa animações e transições |
+| `--disable-notifications` | `DZ_DISABLE_NOTIFICATIONS=yes` | Desativa notificações web |
+| `--sync-theme` | `DZ_SYNC_THEME=yes` | Sincroniza o tema com o sistema |
+| `--disable-hardware-acceleration` | `DZ_DISABLE_HARDWARE_ACCELERATION=yes` | Desativa aceleração de hardware |
+| `--keep-kernel` | `DZ_KEEP_KERNEL=yes` | Mantém a versão real do kernel no User-Agent |
+| `--log-level=warn` | `DZ_LOG_LEVEL=warn` | Define `error`, `warn`, `info`, `verbose`, `debug`, `silly` ou `off` |
+
+Exemplo:
+
+```bash
+deejazz --start-in-tray --sync-theme --log-level=warn
+```
+
 ## Site
 
-O site JAMSTACK é mantido separadamente em `ryahconstantino/deejazz-website`, sempre na branch `master`.
+O site é mantido em `ryahconstantino/deejazz-website`, na branch `pages`, e publicado pelo GitHub Pages a partir da pasta `/docs`.

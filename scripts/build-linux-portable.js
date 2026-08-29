@@ -10,11 +10,48 @@ const projectRoot = path.resolve(__dirname, "..");
 const sourceAsar = path.join(projectRoot, "src", "resources", "app.asar");
 const sourceIcon = path.join(projectRoot, "src", "resources", "win", "app.ico");
 const sourceTrayIcon = path.join(projectRoot, "src", "resources", "win", "systray.png");
+const sourceLinuxMain = path.join(projectRoot, "linux", "main.js");
 const workRoot = path.join(projectRoot, ".linux-build");
 const appDir = path.join(workRoot, "app");
 const linuxResources = path.join(workRoot, "resources", "linux");
 const outputDir = path.join(projectRoot, "dist");
-const artifactName = "DeeJazz-linux-x64.tar.gz";
+const requestedArch = process.argv.find((argument) => argument.startsWith("--arch="))?.split("=")[1] || "x64";
+const supportedArchitectures = {
+  arm64: Arch.arm64,
+  x64: Arch.x64,
+};
+
+if (!supportedArchitectures[requestedArch]) {
+  throw new Error(`Unsupported Linux architecture: ${requestedArch}. Use x64 or arm64.`);
+}
+
+const artifactName = `DeeJazz-linux-${requestedArch}.tar.gz`;
+const unpackedDirectoryName = requestedArch === "x64" ? "linux-unpacked" : `linux-${requestedArch}-unpacked`;
+
+function copyDependencyTree(packageName, copied = new Set()) {
+  if (copied.has(packageName)) return;
+
+  const sourceDirectory = path.join(projectRoot, "node_modules", ...packageName.split("/"));
+  const packagePath = path.join(sourceDirectory, "package.json");
+  if (!fs.existsSync(packagePath)) throw new Error(`Missing build dependency: ${packageName}`);
+
+  copied.add(packageName);
+  const targetDirectory = path.join(appDir, "node_modules", ...packageName.split("/"));
+  fs.cpSync(sourceDirectory, targetDirectory, { recursive: true });
+
+  const packageMetadata = JSON.parse(fs.readFileSync(packagePath, "utf8"));
+  for (const dependency of Object.keys(packageMetadata.dependencies || {})) {
+    copyDependencyTree(dependency, copied);
+  }
+}
+
+function replaceExactlyOnce(source, search, replacement, description) {
+  const occurrences = source.split(search).length - 1;
+  if (occurrences !== 1) {
+    throw new Error(`Could not apply Linux patch (${description}); expected one match, found ${occurrences}.`);
+  }
+  return source.replace(search, replacement);
+}
 
 function extractLargestPngFromIco(icoPath) {
   const ico = fs.readFileSync(icoPath);
@@ -54,7 +91,34 @@ function prepareApplication() {
   appPackage.license = "UNLICENSED";
   delete appPackage.homepage;
   delete appPackage.repository;
+  appPackage.main = "build/main-linux.js";
+  appPackage.dependencies["@jellybrick/mpris-service"] = "2.1.5";
   fs.writeFileSync(packagePath, `${JSON.stringify(appPackage, null, 2)}\n`);
+
+  fs.copyFileSync(sourceLinuxMain, path.join(appDir, "build", "main-linux.js"));
+  copyDependencyTree("@jellybrick/mpris-service");
+
+  const originalMainPath = path.join(appDir, "build", "main.js");
+  let originalMain = fs.readFileSync(originalMainPath, "utf8");
+  originalMain = replaceExactlyOnce(
+    originalMain,
+    "minWidth:990,minHeight:600",
+    "minWidth:450,minHeight:450",
+    "responsive minimum window size",
+  );
+  originalMain = replaceExactlyOnce(
+    originalMain,
+    "this.tray.init()",
+    "global.__DEEJAZZ_LINUX_OPTIONS?.disableSystray||this.tray.init()",
+    "optional system tray",
+  );
+  originalMain = replaceExactlyOnce(
+    originalMain,
+    "isDev(external_electron_namespaceObject.app)?this.window.showInactive():this.window.show(),this.thumbar.init()",
+    "global.__DEEJAZZ_LINUX_OPTIONS?.startInTray?this.window.hide():isDev(external_electron_namespaceObject.app)?this.window.showInactive():this.window.show(),this.thumbar.init()",
+    "start in system tray",
+  );
+  fs.writeFileSync(originalMainPath, originalMain);
 
   fs.writeFileSync(path.join(linuxResources, "icon.png"), extractLargestPngFromIco(sourceIcon));
   fs.copyFileSync(sourceTrayIcon, path.join(linuxResources, "systray.png"));
@@ -62,13 +126,13 @@ function prepareApplication() {
 
 async function buildPortableArchive() {
   fs.mkdirSync(outputDir, { recursive: true });
-  fs.rmSync(path.join(outputDir, "linux-unpacked"), { recursive: true, force: true });
+  fs.rmSync(path.join(outputDir, unpackedDirectoryName), { recursive: true, force: true });
   fs.rmSync(path.join(outputDir, artifactName), { force: true });
   fs.rmSync(path.join(outputDir, `${artifactName}.sha256`), { force: true });
 
   await build({
     projectDir: appDir,
-    targets: Platform.LINUX.createTarget(["tar.gz"], Arch.x64),
+    targets: Platform.LINUX.createTarget(["tar.gz"], supportedArchitectures[requestedArch]),
     publish: "never",
     config: {
       appId: "com.deejazz.desktop",
@@ -86,7 +150,7 @@ async function buildPortableArchive() {
         icon: path.join(linuxResources, "icon.png"),
         category: "AudioVideo;Audio",
         artifactName,
-        target: [{ target: "tar.gz", arch: ["x64"] }],
+        target: [{ target: "tar.gz", arch: [requestedArch] }],
       },
       extraResources: [
         {

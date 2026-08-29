@@ -9,7 +9,8 @@
   "main": "build/main-with-ubol.js",
   "scripts": {
     "dist:win": "node scripts/build-windows-installer.js",
-    "dist:linux": "node scripts/build-linux-portable.js"
+    "dist:linux": "node scripts/build-linux-portable.js --arch=x64",
+    "dist:linux:arm64": "node scripts/build-linux-portable.js --arch=arm64"
   },
   "build": {
     "appId": "com.deejazz.desktop",
@@ -45,6 +46,7 @@
   },
   "devDependencies": {
     "@electron/asar": "3.4.1",
+    "@jellybrick/mpris-service": "2.1.5",
     "electron-builder": "26.15.3"
   }
 }
