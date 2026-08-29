@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" role="img" aria-labelledby="deejazz-logo-title">
+  <title id="deejazz-logo-title">DeeJazz</title>
+  <defs>
+    <linearGradient id="deejazz-bars" x1="0" y1="0" x2="0" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff42b7" />
+      <stop offset=".62" stop-color="#a63bff" />
+      <stop offset="1" stop-color="#4e67ff" />
+    </linearGradient>
+  </defs>
+  <g id="deejazz-logo" fill="url(#deejazz-bars)">
+    <rect x="4" y="58.4" width="12" height="21.6" rx="6" />
+    <rect x="20" y="35.2" width="12" height="44.8" rx="6" />
+    <rect x="36" y="9.6" width="12" height="70.4" rx="6" />
+    <rect x="52" y="0" width="12" height="80" rx="6" />
+    <rect x="68" y="9.6" width="12" height="70.4" rx="6" />
+    <rect x="84" y="35.2" width="12" height="44.8" rx="6" />
+    <rect x="100" y="58.4" width="12" height="21.6" rx="6" />
+  </g>
+</svg>

@@ -12,7 +12,11 @@ O conteúdo compilado é publicado diretamente na raiz desta branch. Nas configu
 - Branch: `pages`
 - Folder: `/ (root)`
 
-Não é necessário executar Actions. O `index.html`, a pasta `assets/`, o `favicon.svg` e o arquivo `.nojekyll` ficam no root da branch `pages` e são servidos diretamente.
+Não é necessário executar Actions. O `index.html`, a pasta `assets/`, o `deejazz-logo.svg`, as imagens sociais e o arquivo `.nojekyll` ficam no root da branch `pages` e são servidos diretamente.
+
+## Identidade visual
+
+O símbolo oficial de sete barras está em `public/deejazz-logo.svg`. Navbar, mockup, seção de download, footer, favicon e imagens Open Graph devem reutilizar esse SVG como fonte da geometria da marca.
 
 ## Desenvolvimento
 

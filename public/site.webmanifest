@@ -1,0 +1,17 @@
+{
+  "name": "DeeJazz",
+  "short_name": "DeeJazz",
+  "description": "Music without distractions for Windows and Linux.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "./deejazz-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

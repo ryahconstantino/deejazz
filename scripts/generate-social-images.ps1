@@ -1,0 +1,114 @@
+param(
+  [string]$OutputDirectory = (Join-Path $PSScriptRoot "..\public")
+)
+
+$ErrorActionPreference = "Stop"
+Add-Type -AssemblyName System.Drawing
+
+$outputPath = [System.IO.Path]::GetFullPath($OutputDirectory)
+[System.IO.Directory]::CreateDirectory($outputPath) | Out-Null
+$logoSourcePath = [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot "..\public\deejazz-logo.svg"))
+[xml]$logoDocument = Get-Content -LiteralPath $logoSourcePath -Raw
+$logoBars = $logoDocument.SelectNodes("//*[local-name()='g' and @id='deejazz-logo']/*[local-name()='rect']")
+if ($logoBars.Count -ne 7) {
+  throw "The shared DeeJazz SVG must contain exactly seven bars."
+}
+
+function Get-SvgNumber {
+  param([string]$Value)
+  return [float]::Parse($Value, [System.Globalization.CultureInfo]::InvariantCulture)
+}
+
+function New-RoundedPath {
+  param([float]$X, [float]$Y, [float]$Width, [float]$Height, [float]$Radius)
+  $path = [System.Drawing.Drawing2D.GraphicsPath]::new()
+  $diameter = $Radius * 2
+  $path.AddArc($X, $Y, $diameter, $diameter, 180, 90)
+  $path.AddArc($X + $Width - $diameter, $Y, $diameter, $diameter, 270, 90)
+  $path.AddArc($X + $Width - $diameter, $Y + $Height - $diameter, $diameter, $diameter, 0, 90)
+  $path.AddArc($X, $Y + $Height - $diameter, $diameter, $diameter, 90, 90)
+  $path.CloseFigure()
+  return $path
+}
+
+function Fill-RoundedRectangle {
+  param($Graphics, $Brush, [float]$X, [float]$Y, [float]$Width, [float]$Height, [float]$Radius)
+  $path = New-RoundedPath $X $Y $Width $Height $Radius
+  $Graphics.FillPath($Brush, $path)
+  $path.Dispose()
+}
+
+function Draw-DeeJazzLogo {
+  param($Graphics, [float]$CenterX, [float]$CenterY, [float]$Scale)
+
+  $iconScale = 1.45 * $Scale
+  $iconWidth = 120 * $iconScale
+  $iconHeight = 80 * $iconScale
+  $font = [System.Drawing.Font]::new("Segoe UI", 92 * $Scale, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
+  $firstLabel = "Dee"
+  $secondLabel = "Jazz"
+  $firstLabelWidth = $Graphics.MeasureString($firstLabel, $font).Width - (4 * $Scale)
+  $labelWidth = $firstLabelWidth + $Graphics.MeasureString($secondLabel, $font).Width
+  $gap = 46 * $Scale
+  $groupWidth = $iconWidth + $gap + $labelWidth
+  $startX = $CenterX - ($groupWidth / 2)
+  $iconTop = $CenterY - ($iconHeight / 2)
+  $iconBottom = $iconTop + $iconHeight
+
+  $brush = [System.Drawing.Drawing2D.LinearGradientBrush]::new(
+    [System.Drawing.PointF]::new($startX, $iconTop),
+    [System.Drawing.PointF]::new($startX, $iconBottom),
+    [System.Drawing.ColorTranslator]::FromHtml("#FF42B7"),
+    [System.Drawing.ColorTranslator]::FromHtml("#4E67FF")
+  )
+  $blend = [System.Drawing.Drawing2D.ColorBlend]::new()
+  $blend.Colors = @(
+    [System.Drawing.ColorTranslator]::FromHtml("#FF42B7"),
+    [System.Drawing.ColorTranslator]::FromHtml("#A63BFF"),
+    [System.Drawing.ColorTranslator]::FromHtml("#4E67FF")
+  )
+  $blend.Positions = @(0.0, 0.62, 1.0)
+  $brush.InterpolationColors = $blend
+
+  foreach ($bar in $logoBars) {
+    $x = (Get-SvgNumber ($bar.GetAttribute("x"))) * $iconScale
+    $y = (Get-SvgNumber ($bar.GetAttribute("y"))) * $iconScale
+    $width = (Get-SvgNumber ($bar.GetAttribute("width"))) * $iconScale
+    $height = (Get-SvgNumber ($bar.GetAttribute("height"))) * $iconScale
+    $radius = (Get-SvgNumber ($bar.GetAttribute("rx"))) * $iconScale
+    Fill-RoundedRectangle $Graphics $brush ($startX + $x) ($iconTop + $y) $width $height $radius
+  }
+  $brush.Dispose()
+
+  $white = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::White)
+  $accent = [System.Drawing.SolidBrush]::new([System.Drawing.ColorTranslator]::FromHtml("#C53DFF"))
+  $textY = $CenterY - ($Graphics.MeasureString("DeeJazz", $font).Height / 2) - (3 * $Scale)
+  $textX = $startX + $iconWidth + $gap
+  $Graphics.DrawString($firstLabel, $font, $white, $textX, $textY)
+  $Graphics.DrawString($secondLabel, $font, $accent, $textX + $firstLabelWidth, $textY)
+  $accent.Dispose()
+  $white.Dispose()
+  $font.Dispose()
+}
+
+function New-SocialImage {
+  param([int]$Width, [int]$Height, [float]$Scale, [string]$FileName)
+
+  $bitmap = [System.Drawing.Bitmap]::new($Width, $Height, [System.Drawing.Imaging.PixelFormat]::Format32bppArgb)
+  $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
+  $graphics.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::AntiAlias
+  $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
+  $graphics.TextRenderingHint = [System.Drawing.Text.TextRenderingHint]::AntiAliasGridFit
+  $graphics.Clear([System.Drawing.Color]::Black)
+
+  Draw-DeeJazzLogo $graphics ($Width / 2) ($Height / 2) $Scale
+
+  $target = Join-Path $outputPath $FileName
+  $bitmap.Save($target, [System.Drawing.Imaging.ImageFormat]::Png)
+  $graphics.Dispose()
+  $bitmap.Dispose()
+}
+
+New-SocialImage 1200 630 1 "og-deejazz-desktop.png"
+New-SocialImage 1200 1200 1.18 "og-deejazz-mobile.png"
+Write-Output "Open Graph images generated in $outputPath"

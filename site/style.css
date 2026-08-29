@@ -56,29 +56,14 @@ body {
   color: #c53dff;
 }
 
-.brand-bars,
-.download-logo {
-  display: flex;
-  align-items: center;
-  height: 2.2rem;
-  gap: 2px;
-}
-
-.brand-bars i,
-.download-logo i {
+.brand-logo {
   display: block;
-  width: 4px;
-  border-radius: 3px;
-  background: linear-gradient(180deg, #ff42b7 0%, #a63bff 62%, #4e67ff 100%);
+  width: 3.3rem;
+  height: 2.2rem;
+  object-fit: contain;
 }
 
-.brand-bars i:nth-child(1) { height: 35%; }
-.brand-bars i:nth-child(2) { height: 63%; }
-.brand-bars i:nth-child(3) { height: 92%; }
-.brand-bars i:nth-child(4) { height: 72%; }
-.brand-bars i:nth-child(5) { height: 100%; }
-.brand-bars i:nth-child(6) { height: 51%; }
-.brand-bars.small { height: 1.8rem; }
+.brand-logo.small { width: 2.7rem; height: 1.8rem; }
 
 .nav-link {
   position: relative;
@@ -589,11 +574,10 @@ body {
   font-weight: 1000;
 }
 
-.mini-brand span {
-  width: 0.35rem;
+.mini-brand img {
+  width: 1.65rem;
   height: 1.1rem;
-  border-radius: 99px;
-  background: linear-gradient(#ff42b7, #7a37ff);
+  object-fit: contain;
 }
 
 .side-pill {
@@ -738,9 +722,7 @@ body {
 .benefit-list b { font-weight: inherit; }
 
 .download-section { position: relative; overflow: hidden; background: radial-gradient(circle at 50% 120%,rgba(117,50,255,.45),transparent 52%),#f4f1f8; color: black; }
-.download-logo { justify-content: center; height: 5rem; margin-bottom: 2rem; }
-.download-logo i { width: 8px; }
-.download-logo i:nth-child(1),.download-logo i:nth-child(7){height:27%}.download-logo i:nth-child(2),.download-logo i:nth-child(6){height:56%}.download-logo i:nth-child(3),.download-logo i:nth-child(5){height:88%}.download-logo i:nth-child(4){height:100%}
+.download-logo { display: block; width: 7.5rem; height: 5rem; margin: 0 auto 2rem; object-fit: contain; }
 .download-section .hero-copy { color: rgba(0,0,0,.58); }
 .light-button[aria-disabled="true"] { color: white; }
 
@@ -832,7 +814,7 @@ body {
 @media (max-width: 380px) {
   .brand { gap: .4rem; }
   .brand-name { font-size: .9rem; }
-  .brand-bars { height: 1.85rem; }
+  .brand-logo { width: 2.8rem; height: 1.85rem; }
   .language-trigger { gap: .35rem; padding-inline: .42rem; }
   .language-current { display: none; }
   .language-flag { width: 1.55rem; height: 1.1rem; }

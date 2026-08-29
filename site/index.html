@@ -7,9 +7,62 @@
       name="description"
       content="Download DeeJazz for Windows or install it on Linux with curl: your music with uBO Lite built in and fewer distractions."
     />
+    <meta name="application-name" content="DeeJazz" />
+    <meta name="author" content="DeeJazz contributors" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="keywords" content="DeeJazz, desktop music player, uBO Lite, Windows music app, Linux music app, ad blocker" />
+    <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#000000" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://ryahconstantino.github.io/deejazz/" />
+    <link rel="icon" href="/deejazz-logo.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="image_src" href="https://ryahconstantino.github.io/deejazz/og-deejazz-desktop.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DeeJazz" />
+    <meta property="og:title" content="DeeJazz — Music without distractions" />
+    <meta property="og:description" content="A desktop music experience for Windows and Linux with uBO Lite built in." />
+    <meta property="og:url" content="https://ryahconstantino.github.io/deejazz/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="pt_BR" />
+    <meta property="og:image" content="https://ryahconstantino.github.io/deejazz/og-deejazz-desktop.png" />
+    <meta property="og:image:secure_url" content="https://ryahconstantino.github.io/deejazz/og-deejazz-desktop.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="DeeJazz logo on a black background" />
+    <meta property="og:image" content="https://ryahconstantino.github.io/deejazz/og-deejazz-mobile.png" />
+    <meta property="og:image:secure_url" content="https://ryahconstantino.github.io/deejazz/og-deejazz-mobile.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="DeeJazz logo on a black background, optimized for mobile previews" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DeeJazz — Music without distractions" />
+    <meta name="twitter:description" content="A desktop music experience for Windows and Linux with uBO Lite built in." />
+    <meta name="twitter:url" content="https://ryahconstantino.github.io/deejazz/" />
+    <meta name="twitter:image" content="https://ryahconstantino.github.io/deejazz/og-deejazz-desktop.png" />
+    <meta name="twitter:image:alt" content="DeeJazz logo on a black background" />
     <title>DeeJazz — Music without distractions</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "DeeJazz",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Windows 10 or newer, Linux",
+        "description": "A desktop music experience for Windows and Linux with uBO Lite built in and fewer distractions.",
+        "url": "https://ryahconstantino.github.io/deejazz/",
+        "downloadUrl": "https://github.com/ryahconstantino/deejazz/releases/latest",
+        "image": [
+          "https://ryahconstantino.github.io/deejazz/og-deejazz-desktop.png",
+          "https://ryahconstantino.github.io/deejazz/og-deejazz-mobile.png"
+        ],
+        "inLanguage": ["en-US", "pt-BR"]
+      }
+    </script>
   </head>
   <body class="overflow-x-hidden bg-black text-white antialiased selection:bg-fuchsia-500 selection:text-white">
     <svg class="svg-definitions" aria-hidden="true">
@@ -42,9 +95,7 @@
     <header class="sticky top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur-xl">
       <div class="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
         <a href="#inicio" class="brand" aria-label="DeeJazz — home" data-i18n-aria-label="brand.home">
-          <span class="brand-bars" aria-hidden="true">
-            <i></i><i></i><i></i><i></i><i></i><i></i>
-          </span>
+          <img class="brand-logo" src="/deejazz-logo.svg" alt="" aria-hidden="true" />
           <span class="brand-name">DEE<span>JAZZ</span></span>
         </a>
 
@@ -208,7 +259,7 @@
 
             <div class="app-window">
               <aside class="app-sidebar">
-                <div class="mini-brand"><span></span>DEEJAZZ</div>
+                <div class="mini-brand"><img src="/deejazz-logo.svg" alt="" aria-hidden="true" />DEEJAZZ</div>
                 <div class="side-pill active"><b>⌂</b> <span data-i18n="mockup.home">Home</span></div>
                 <div class="side-pill"><b>⌕</b> <span data-i18n="mockup.explore">Explore</span></div>
                 <div class="side-divider"></div>
@@ -360,9 +411,7 @@
 
       <section id="download" class="download-section">
         <div class="mx-auto max-w-5xl px-5 py-24 text-center sm:px-8 sm:py-32 lg:px-12 lg:py-40">
-          <div class="download-logo reveal" aria-hidden="true">
-            <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-          </div>
+          <img class="download-logo reveal" src="/deejazz-logo.svg" alt="" aria-hidden="true" />
           <h2 class="display-title reveal"><span data-i18n="final.title.main">Press play</span><br /><span class="gradient-text" data-i18n="final.title.accent">your way.</span></h2>
           <p class="hero-copy reveal" data-i18n="final.copy">DeeJazz for Windows and Linux, with uBO Lite built in.</p>
           <div class="mt-9 reveal">
@@ -381,7 +430,7 @@
     <footer class="border-t border-white/10 bg-black">
       <div class="mx-auto flex max-w-[1440px] flex-col items-center justify-between gap-5 px-5 py-10 text-center sm:px-8 md:flex-row md:text-left lg:px-12">
         <div class="brand" aria-label="DeeJazz">
-          <span class="brand-bars small" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <img class="brand-logo small" src="/deejazz-logo.svg" alt="" aria-hidden="true" />
           <span class="brand-name">DEE<span>JAZZ</span></span>
         </div>
         <p class="text-xs font-bold tracking-wide text-white/45">© <span id="current-year"></span> <span data-i18n="footer.copy">DeeJazz. Independent project.</span></p>

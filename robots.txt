@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ryahconstantino.github.io/deejazz/sitemap.xml

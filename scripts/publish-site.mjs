@@ -4,7 +4,17 @@ import { fileURLToPath } from 'node:url'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const buildRoot = resolve(projectRoot, '.pages-build')
-const publishedEntries = ['assets', 'favicon.svg', 'index.html', '.nojekyll']
+const publishedEntries = [
+  'assets',
+  'deejazz-logo.svg',
+  'index.html',
+  'og-deejazz-desktop.png',
+  'og-deejazz-mobile.png',
+  'robots.txt',
+  'site.webmanifest',
+  'sitemap.xml',
+  '.nojekyll',
+]
 
 for (const entry of publishedEntries) {
   const source = resolve(buildRoot, entry)
