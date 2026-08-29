@@ -1,24 +1,24 @@
 # DeeJazz Website
 
-Site estático do DeeJazz, construído com Vite e TailwindCSS e publicado pelo GitHub Pages.
+Static DeeJazz website built with Vite and Tailwind CSS and published through GitHub Pages.
 
-O idioma principal é `en-US`. O seletor do cabeçalho também oferece `pt-BR` e salva a preferência no navegador.
+The primary language is `en-US`. The header language selector also provides `pt-BR` and stores the visitor's preference in the browser.
 
 ## GitHub Pages
 
-O conteúdo compilado é publicado diretamente na raiz desta branch. Nas configurações do repositório, selecione:
+The compiled website is published directly from the root of this branch. Select the following options in the repository settings:
 
 - Source: `Deploy from a branch`
 - Branch: `pages`
 - Folder: `/ (root)`
 
-Não é necessário executar Actions. O `index.html`, a pasta `assets/`, o `deejazz-logo.svg`, as imagens sociais e o arquivo `.nojekyll` ficam no root da branch `pages` e são servidos diretamente.
+GitHub Actions are not required. The `index.html`, `assets/` directory, `deejazz-logo.svg`, social preview images, and `.nojekyll` file live at the root of the `pages` branch and are served directly.
 
-## Identidade visual
+## Visual identity
 
-O símbolo oficial de sete barras está em `public/deejazz-logo.svg`. Navbar, mockup, seção de download, footer, favicon e imagens Open Graph devem reutilizar esse SVG como fonte da geometria da marca.
+The official seven-bar symbol is stored in `public/deejazz-logo.svg`. The navbar, application mockup, download section, footer, favicon, and Open Graph images must reuse this SVG as the source of the brand geometry.
 
-## Desenvolvimento
+## Development
 
 ```bash
 npm install
@@ -31,13 +31,13 @@ npm run dev
 npm run build
 ```
 
-O comando compila o código-fonte de `site/` em uma pasta temporária e atualiza os arquivos publicados no root. Faça commit do código-fonte e do novo build na branch `pages`.
+The command compiles the source code from `site/` into a temporary directory and updates the published files at the branch root. Commit both the source code and the generated build to the `pages` branch.
 
 ## Downloads
 
-Os downloads usam endereços fixos do repositório principal; não há variáveis de ambiente para configurar no GitHub Pages.
+Downloads use fixed URLs from the main repository. No environment variables are required for GitHub Pages.
 
-- Instaladores: `https://github.com/ryahconstantino/deejazz/releases/latest`
+- Installers: `https://github.com/ryahconstantino/deejazz/releases/latest`
 - Linux: `curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh | sh`
 
-O GitHub Pages serve diretamente o conteúdo já compilado na raiz da branch `pages`.
+GitHub Pages serves the precompiled content directly from the root of the `pages` branch.
