@@ -3,6 +3,7 @@
 set -eu
 
 APP_NAME="DeeJazz"
+DEFAULT_GITHUB_REPOSITORY="ryahconstantino/deejazz"
 INSTALL_ROOT="${XDG_DATA_HOME:-$HOME/.local/share}/deejazz"
 BIN_DIR="${HOME}/.local/bin"
 APPLICATIONS_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/applications"
@@ -43,20 +44,19 @@ if [ -n "$LOCAL_ARCHIVE" ]; then
 elif [ -n "${DEEJAZZ_DOWNLOAD_URL:-}" ]; then
   command -v curl >/dev/null 2>&1 || fail "curl não foi encontrado."
   DOWNLOAD_URL="$DEEJAZZ_DOWNLOAD_URL"
-elif [ -n "${DEEJAZZ_GITHUB_REPOSITORY:-}" ]; then
+else
   command -v curl >/dev/null 2>&1 || fail "curl não foi encontrado."
-  case "$DEEJAZZ_GITHUB_REPOSITORY" in
+  GITHUB_REPOSITORY="${DEEJAZZ_GITHUB_REPOSITORY:-$DEFAULT_GITHUB_REPOSITORY}"
+  case "$GITHUB_REPOSITORY" in
     */*) ;;
     *) fail "DEEJAZZ_GITHUB_REPOSITORY deve estar no formato proprietario/repositorio." ;;
   esac
 
   if [ -n "${DEEJAZZ_VERSION:-}" ]; then
-    DOWNLOAD_URL="https://github.com/${DEEJAZZ_GITHUB_REPOSITORY}/releases/download/v${DEEJAZZ_VERSION}/${ARCHIVE_NAME}"
+    DOWNLOAD_URL="https://github.com/${GITHUB_REPOSITORY}/releases/download/v${DEEJAZZ_VERSION}/${ARCHIVE_NAME}"
   else
-    DOWNLOAD_URL="https://github.com/${DEEJAZZ_GITHUB_REPOSITORY}/releases/latest/download/${ARCHIVE_NAME}"
+    DOWNLOAD_URL="https://github.com/${GITHUB_REPOSITORY}/releases/latest/download/${ARCHIVE_NAME}"
   fi
-else
-  fail "defina DEEJAZZ_DOWNLOAD_URL, DEEJAZZ_GITHUB_REPOSITORY ou DEEJAZZ_ARCHIVE_PATH."
 fi
 
 if [ -z "$LOCAL_ARCHIVE" ]; then

@@ -41,7 +41,7 @@
       "createStartMenuShortcut": true,
       "shortcutName": "DeeJazz",
       "uninstallDisplayName": "DeeJazz",
-      "artifactName": "DeeJazz-Setup-${version}-${arch}.${ext}"
+      "artifactName": "DeeJazz-Setup.${ext}"
     }
   },
   "devDependencies": {

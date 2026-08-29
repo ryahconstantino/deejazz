@@ -17,7 +17,7 @@ npm install
 npm run dist:win
 ```
 
-O instalador NSIS é criado em `dist/DeeJazz-Setup-7.1.320-ia32.exe`.
+O instalador NSIS é criado em `dist/DeeJazz-Setup.exe`. O nome não inclui a versão para manter estável o link da release mais recente.
 
 ## Linux
 
@@ -37,7 +37,7 @@ Os builds criam `dist/DeeJazz-linux-x64.tar.gz` ou `dist/DeeJazz-linux-arm64.tar
 Depois de publicar o pacote e o checksum em uma release do GitHub, a instalação pode ser feita com:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh | DEEJAZZ_GITHUB_REPOSITORY=ryahconstantino/deejazz sh
+curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh | sh
 ```
 
 A instalação ocorre em `~/.local/share/deejazz`, sem `sudo`.
