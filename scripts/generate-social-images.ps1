@@ -45,10 +45,11 @@ function Draw-DeeJazzLogo {
   $iconWidth = 120 * $iconScale
   $iconHeight = 80 * $iconScale
   $font = [System.Drawing.Font]::new("Segoe UI", 92 * $Scale, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
-  $firstLabel = "Dee"
-  $secondLabel = "Jazz"
-  $firstLabelWidth = $Graphics.MeasureString($firstLabel, $font).Width - (4 * $Scale)
-  $labelWidth = $firstLabelWidth + $Graphics.MeasureString($secondLabel, $font).Width
+  $format = [System.Drawing.StringFormat]::GenericTypographic.Clone()
+  $firstLabel = "DEE"
+  $secondLabel = "JAZZ"
+  $firstLabelWidth = $Graphics.MeasureString($firstLabel, $font, [System.Drawing.PointF]::Empty, $format).Width
+  $labelWidth = $firstLabelWidth + $Graphics.MeasureString($secondLabel, $font, [System.Drawing.PointF]::Empty, $format).Width
   $gap = 46 * $Scale
   $groupWidth = $iconWidth + $gap + $labelWidth
   $startX = $CenterX - ($groupWidth / 2)
@@ -82,10 +83,11 @@ function Draw-DeeJazzLogo {
 
   $white = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::White)
   $accent = [System.Drawing.SolidBrush]::new([System.Drawing.ColorTranslator]::FromHtml("#C53DFF"))
-  $textY = $CenterY - ($Graphics.MeasureString("DeeJazz", $font).Height / 2) - (3 * $Scale)
+  $textY = $CenterY - ($Graphics.MeasureString("DEEJAZZ", $font, [System.Drawing.PointF]::Empty, $format).Height / 2) - (3 * $Scale)
   $textX = $startX + $iconWidth + $gap
-  $Graphics.DrawString($firstLabel, $font, $white, $textX, $textY)
-  $Graphics.DrawString($secondLabel, $font, $accent, $textX + $firstLabelWidth, $textY)
+  $Graphics.DrawString($firstLabel, $font, $white, [System.Drawing.PointF]::new($textX, $textY), $format)
+  $Graphics.DrawString($secondLabel, $font, $accent, [System.Drawing.PointF]::new($textX + $firstLabelWidth, $textY), $format)
+  $format.Dispose()
   $accent.Dispose()
   $white.Dispose()
   $font.Dispose()
