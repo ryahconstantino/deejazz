@@ -33,7 +33,7 @@ O comando compila o código-fonte de `site/` em uma pasta temporária e atualiza
 
 Os downloads usam endereços fixos do repositório principal; não há variáveis de ambiente para configurar no GitHub Pages.
 
-- Windows: `https://github.com/ryahconstantino/deejazz/releases/latest/download/DeeJazz-Setup.exe`
+- Instaladores: `https://github.com/ryahconstantino/deejazz/releases/latest`
 - Linux: `curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh | sh`
 
 O GitHub Pages serve diretamente o conteúdo já compilado na raiz da branch `pages`.

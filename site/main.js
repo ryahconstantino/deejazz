@@ -1,7 +1,7 @@
 import './style.css'
 import { DEFAULT_LOCALE, SUPPORTED_LOCALES, getMessage } from './i18n.js'
 
-const windowsDownloadUrl = 'https://github.com/ryahconstantino/deejazz/releases/latest/download/DeeJazz-Setup.exe'
+const latestReleaseUrl = 'https://github.com/ryahconstantino/deejazz/releases/latest'
 const linuxInstallUrl = 'https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh'
 const languagePicker = document.querySelector('#language-picker')
 const languageSelector = document.querySelector('#language-selector')
@@ -48,7 +48,7 @@ function updateDownloads() {
     const label = link.querySelector('span') || link
     label.textContent = getMessage(currentLocale, 'download.windows.ready')
     link.setAttribute('aria-label', getMessage(currentLocale, 'download.windows.readyAria'))
-    link.href = windowsDownloadUrl
+    link.href = latestReleaseUrl
     link.removeAttribute('aria-disabled')
     link.setAttribute('rel', 'noopener')
   })
