@@ -25,7 +25,8 @@ if (!supportedArchitectures[requestedArch]) {
   throw new Error(`Unsupported Linux architecture: ${requestedArch}. Use x64 or arm64.`);
 }
 
-const artifactName = `DeeJazz-linux-${requestedArch}.tar.gz`;
+const artifactArchitecture = requestedArch === "x64" ? "amd64" : "arm64";
+const artifactName = `deejazz-linux-${artifactArchitecture}.tar.gz`;
 const unpackedDirectoryName = requestedArch === "x64" ? "linux-unpacked" : `linux-${requestedArch}-unpacked`;
 
 function copyDependencyTree(packageName, copied = new Set()) {

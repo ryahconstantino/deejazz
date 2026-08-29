@@ -42,7 +42,7 @@
       "createStartMenuShortcut": true,
       "shortcutName": "DeeJazz",
       "uninstallDisplayName": "DeeJazz",
-      "artifactName": "DeeJazz-Setup.${ext}"
+      "artifactName": "deejazz-windows-x64.${ext}"
     }
   },
   "devDependencies": {

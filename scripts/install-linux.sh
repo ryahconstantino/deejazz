@@ -24,12 +24,12 @@ fail() {
 trap cleanup EXIT HUP INT TERM
 
 case "$(uname -m)" in
-  x86_64|amd64) PACKAGE_ARCH="x64" ;;
+  x86_64|amd64) PACKAGE_ARCH="amd64" ;;
   aarch64|arm64) PACKAGE_ARCH="arm64" ;;
   *) fail "arquitetura não suportada; use Linux x86_64 ou ARM64." ;;
 esac
 
-ARCHIVE_NAME="DeeJazz-linux-${PACKAGE_ARCH}.tar.gz"
+ARCHIVE_NAME="deejazz-linux-${PACKAGE_ARCH}.tar.gz"
 
 command -v tar >/dev/null 2>&1 || fail "tar não foi encontrado."
 

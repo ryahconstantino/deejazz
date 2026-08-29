@@ -17,7 +17,7 @@ npm install
 npm run dist:win
 ```
 
-O instalador NSIS é criado em `dist/DeeJazz-Setup.exe`. O nome não inclui a versão para manter estável o link da release mais recente.
+O instalador NSIS é criado em `dist/deejazz-windows-x64.exe`. O nome não inclui a versão para manter estável o link da release mais recente.
 
 ## Linux
 
@@ -30,7 +30,7 @@ npm run dist:linux
 npm run dist:linux:arm64
 ```
 
-Os builds criam `dist/DeeJazz-linux-x64.tar.gz` ou `dist/DeeJazz-linux-arm64.tar.gz`, acompanhados do respectivo checksum SHA-256. Não são gerados pacotes `.deb` ou `.rpm`.
+Os builds criam `dist/deejazz-linux-amd64.tar.gz` ou `dist/deejazz-linux-arm64.tar.gz`, acompanhados do respectivo checksum SHA-256. Não são gerados pacotes `.deb` ou `.rpm`.
 
 ### Instalar com curl
 
