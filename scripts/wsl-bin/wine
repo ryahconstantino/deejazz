@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+windows_executable="$1"
+shift
+
+cmd_executable="/mnt/c/Windows/System32/cmd.exe"
+wsl_share="\\\\wsl\$\\${WSL_DISTRO_NAME}"
+windows_executable="Z:${windows_executable//\//\\}"
+arguments=""
+
+for argument in "$@"; do
+  if [[ "$argument" == /* && -e "$argument" ]]; then
+    argument="Z:${argument//\//\\}"
+  fi
+  arguments+=" \"${argument//\"/\"\"}\""
+done
+
+"$cmd_executable" /d /v:on /c \
+  "pushd $wsl_share && $windows_executable$arguments & set exitCode=!errorlevel! & popd & exit /b !exitCode!"

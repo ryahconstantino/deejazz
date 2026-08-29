@@ -1,0 +1,50 @@
+{
+  "name": "deejazz",
+  "productName": "DeeJazz",
+  "version": "7.1.320",
+  "private": true,
+  "description": "DeeJazz desktop application with uBO Lite integration",
+  "license": "UNLICENSED",
+  "author": "DeeJazz contributors",
+  "main": "build/main-with-ubol.js",
+  "scripts": {
+    "dist:win": "node scripts/build-windows-installer.js",
+    "dist:linux": "node scripts/build-linux-portable.js"
+  },
+  "build": {
+    "appId": "com.deejazz.desktop",
+    "productName": "DeeJazz",
+    "electronVersion": "38.4.0",
+    "directories": {
+      "buildResources": "src/resources/win",
+      "output": "dist"
+    },
+    "win": {
+      "executableName": "DeeJazz",
+      "icon": "src/resources/win/app.ico",
+      "signAndEditExecutable": false,
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "DeeJazz",
+      "uninstallDisplayName": "DeeJazz",
+      "artifactName": "DeeJazz-Setup-${version}-${arch}.${ext}"
+    }
+  },
+  "devDependencies": {
+    "@electron/asar": "3.4.1",
+    "electron-builder": "26.15.3"
+  }
+}

@@ -1,0 +1,5 @@
+provider: generic
+url: https://e-cdns-content.dzcdn.net/builds/deezer-desktop/8cF2rAuKxLcU1oMDmCYm8Uiqe19Ql0HTySLssdzLkQ9ZWHuDTp2JBtQOvdrFzWPA/win/ia32/
+updaterCacheDirName: deezer-desktop-updater
+publisherName:
+  - Deezer SA

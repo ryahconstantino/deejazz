@@ -1,0 +1,17 @@
+node_modules/
+dist/
+dist-site/
+.installer-work/
+.linux-build/
+.env
+*.log
+*.Zone.Identifier
+src/resources/app.asar.bak
+
+# O site possui um repositório independente: deejazz-website.
+index.html
+site/
+public/
+railway.toml
+vite.config.mjs
+.env.example
