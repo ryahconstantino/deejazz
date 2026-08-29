@@ -68,4 +68,4 @@ deejazz --start-in-tray --sync-theme --log-level=warn
 
 ## Site
 
-O site é mantido em `ryahconstantino/deejazz-website`, na branch `pages`, e publicado pelo GitHub Pages a partir da pasta `/docs`.
+O site é mantido na branch `pages` deste repositório e publicado pelo GitHub Pages a partir da pasta `/docs`.
