@@ -1,11 +1,11 @@
 # DeeJazz
 
-Aplicativo desktop DeeJazz para Windows e Linux, com integração do uBO Lite e filtros cosméticos próprios.
+DeeJazz desktop application for Windows and Linux with built-in uBO Lite integration and custom cosmetic filters.
 
-## Requisitos de build
+## Build requirements
 
-- Node.js e npm
-- Git LFS para baixar o runtime Windows e o `app.asar`
+- Node.js and npm
+- Git LFS to download the Windows runtime and `app.asar`
 
 ```bash
 npm install
@@ -17,50 +17,50 @@ npm install
 npm run dist:win
 ```
 
-O instalador NSIS é criado em `dist/deejazz-windows-x64.exe`. O nome não inclui a versão para manter estável o link da release mais recente.
+The NSIS installer is generated at `dist/deejazz-windows-x64.exe`. The filename does not include a version number, keeping the latest-release download URL stable.
 
 ## Linux
 
-O build Linux incorpora melhorias do projeto [aunetx/deezer-linux](https://github.com/aunetx/deezer-linux): integração MPRIS, controles de mídia, minimizar para a bandeja, suporte a Wayland/IME, layout responsivo e opções de acessibilidade. A camada é aplicada somente ao pacote Linux e mantém a integração do uBO Lite.
+The Linux build incorporates improvements based on [aunetx/deezer-linux](https://github.com/aunetx/deezer-linux), including MPRIS integration, media controls, system tray support, Wayland/IME compatibility, a responsive layout, and accessibility options. This layer is applied only to the Linux package and preserves the uBO Lite integration.
 
-### Gerar os pacotes
+### Build the packages
 
 ```bash
 npm run dist:linux
 npm run dist:linux:arm64
 ```
 
-Os builds criam `dist/deejazz-linux-amd64.tar.gz` ou `dist/deejazz-linux-arm64.tar.gz`, acompanhados do respectivo checksum SHA-256. Não são gerados pacotes `.deb` ou `.rpm`.
+The builds generate `dist/deejazz-linux-amd64.tar.gz` or `dist/deejazz-linux-arm64.tar.gz`, together with the corresponding SHA-256 checksum. No `.deb` or `.rpm` packages are generated.
 
-### Instalar com curl
+### Install with curl
 
-Depois de publicar o pacote e o checksum em uma release do GitHub, a instalação pode ser feita com:
+After publishing the archive and its checksum to a GitHub release, install DeeJazz with:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh | sh
 ```
 
-A instalação ocorre em `~/.local/share/deejazz`, sem `sudo`.
+The application is installed in `~/.local/share/deejazz` without `sudo`.
 
-O instalador detecta Linux x86_64 ou ARM64, registra o ícone, o protocolo `deezer://` e a entrada do DeeJazz no menu de aplicativos.
+The installer detects Linux x86_64 or ARM64 and registers the application icon, the `deezer://` protocol, and the DeeJazz application-menu entry.
 
-### Opções de execução
+### Runtime options
 
-As opções aceitam argumentos ou variáveis de ambiente:
+Options can be provided as command-line arguments or environment variables:
 
-| Argumento | Variável | Efeito |
+| Argument | Environment variable | Effect |
 | --- | --- | --- |
-| `--start-in-tray` | `DZ_START_IN_TRAY=yes` | Inicia o DeeJazz na bandeja |
-| `--disable-systray` | `DZ_DISABLE_SYSTRAY=yes` | Desativa a bandeja e fecha o app normalmente |
-| `--hide-offline-banner` | `DZ_HIDE_OFFLINE_BANNER=yes` | Oculta o aviso de modo offline |
-| `--disable-animations` | `DZ_DISABLE_ANIMATIONS=yes` | Desativa animações e transições |
-| `--disable-notifications` | `DZ_DISABLE_NOTIFICATIONS=yes` | Desativa notificações web |
-| `--sync-theme` | `DZ_SYNC_THEME=yes` | Sincroniza o tema com o sistema |
-| `--disable-hardware-acceleration` | `DZ_DISABLE_HARDWARE_ACCELERATION=yes` | Desativa aceleração de hardware |
-| `--keep-kernel` | `DZ_KEEP_KERNEL=yes` | Mantém a versão real do kernel no User-Agent |
-| `--log-level=warn` | `DZ_LOG_LEVEL=warn` | Define `error`, `warn`, `info`, `verbose`, `debug`, `silly` ou `off` |
+| `--start-in-tray` | `DZ_START_IN_TRAY=yes` | Starts DeeJazz in the system tray |
+| `--disable-systray` | `DZ_DISABLE_SYSTRAY=yes` | Disables the system tray and closes the application normally |
+| `--hide-offline-banner` | `DZ_HIDE_OFFLINE_BANNER=yes` | Hides the offline-mode banner |
+| `--disable-animations` | `DZ_DISABLE_ANIMATIONS=yes` | Disables animations and transitions |
+| `--disable-notifications` | `DZ_DISABLE_NOTIFICATIONS=yes` | Disables web notifications |
+| `--sync-theme` | `DZ_SYNC_THEME=yes` | Synchronizes the application theme with the operating system |
+| `--disable-hardware-acceleration` | `DZ_DISABLE_HARDWARE_ACCELERATION=yes` | Disables hardware acceleration |
+| `--keep-kernel` | `DZ_KEEP_KERNEL=yes` | Keeps the actual kernel version in the User-Agent |
+| `--log-level=warn` | `DZ_LOG_LEVEL=warn` | Sets `error`, `warn`, `info`, `verbose`, `debug`, `silly`, or `off` |
 
-Exemplo:
+Example:
 
 ```bash
 deejazz --start-in-tray --sync-theme --log-level=warn
@@ -68,4 +68,4 @@ deejazz --start-in-tray --sync-theme --log-level=warn
 
 ## Site
 
-O site é mantido na branch `pages` deste repositório e publicado pelo GitHub Pages diretamente a partir da raiz da branch.
+The website is maintained in this repository's `pages` branch and published by GitHub Pages directly from the branch root.
