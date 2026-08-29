@@ -37,6 +37,7 @@
       "oneClick": false,
       "perMachine": false,
       "allowToChangeInstallationDirectory": true,
+      "installerHeader": null,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "shortcutName": "DeeJazz",
