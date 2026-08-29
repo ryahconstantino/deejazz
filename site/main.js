@@ -117,10 +117,10 @@ function updateMenuLabel() {
 
 function updateLanguagePicker() {
   const metadata = currentLocale === 'pt-BR'
-    ? { flag: '🇧🇷', labelKey: 'language.portuguese' }
-    : { flag: '🇺🇸', labelKey: 'language.english' }
+    ? { flagId: '#flag-br', labelKey: 'language.portuguese' }
+    : { flagId: '#flag-us', labelKey: 'language.english' }
 
-  if (languageCurrentFlag) languageCurrentFlag.textContent = metadata.flag
+  languageCurrentFlag?.querySelector('use')?.setAttribute('href', metadata.flagId)
   if (languageCurrentLabel) languageCurrentLabel.textContent = getMessage(currentLocale, metadata.labelKey)
   languageOptions.forEach((option) => {
     option.setAttribute('aria-selected', String(option.dataset.locale === currentLocale))

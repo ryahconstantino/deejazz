@@ -1,8 +1,18 @@
 # DeeJazz Website
 
-Landing page JAMSTACK do DeeJazz, construída com Vite e TailwindCSS. O build gera arquivos estáticos em `dist-site/`, prontos para Railway ou qualquer hospedagem estática.
+Site estático do DeeJazz, construído com Vite e TailwindCSS e publicado pelo GitHub Pages.
 
 O idioma principal é `en-US`. O seletor do cabeçalho também oferece `pt-BR` e salva a preferência no navegador.
+
+## GitHub Pages
+
+O conteúdo publicado está na pasta `docs/` desta branch. Nas configurações do repositório, selecione:
+
+- Source: `Deploy from a branch`
+- Branch: `pages`
+- Folder: `/docs`
+
+Não é necessário executar Actions. O arquivo `docs/.nojekyll` garante que os arquivos gerados pelo Vite sejam servidos diretamente.
 
 ## Desenvolvimento
 
@@ -16,6 +26,8 @@ npm run dev
 ```bash
 npm run build
 ```
+
+O comando atualiza a pasta `docs/`. Faça commit do código-fonte e do novo build na branch `pages`.
 
 ## Downloads
 

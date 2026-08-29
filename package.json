@@ -2,17 +2,15 @@
   "name": "deejazz-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Static JAMSTACK website for DeeJazz",
+  "description": "Static website for DeeJazz published with GitHub Pages",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "start": "sirv dist-site --single --host 0.0.0.0 --port ${PORT:-3000}"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@tailwindcss/vite": "4.3.3",
-    "sirv-cli": "3.0.1",
     "tailwindcss": "4.3.3",
     "vite": "8.2.2"
   }
