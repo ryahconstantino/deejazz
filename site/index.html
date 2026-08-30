@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-US" class="scroll-smooth bg-black">
+<html lang="en-US" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,12 +12,14 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow, max-image-preview:large" />
     <meta name="keywords" content="DeeJazz, desktop music player, uBO Lite, Windows music app, Linux music app, ad blocker" />
-    <meta name="color-scheme" content="dark" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f3f3f5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111114" media="(prefers-color-scheme: dark)" />
     <link rel="canonical" href="https://ryahconstantino.github.io/deejazz/" />
     <link rel="icon" href="/deejazz-icon.png" type="image/png" sizes="512x512" />
     <link rel="apple-touch-icon" href="/deejazz-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preload" as="image" href="/deejazz-listening-object.webp" type="image/webp" fetchpriority="high" />
     <link rel="image_src" href="https://ryahconstantino.github.io/deejazz/og-deejazz-desktop.png" />
 
     <meta property="og:type" content="website" />
@@ -32,20 +34,20 @@
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="DeeJazz logo on a black background" />
+    <meta property="og:image:alt" content="DeeJazz logo on a dark background" />
     <meta property="og:image" content="https://ryahconstantino.github.io/deejazz/og-deejazz-mobile.png" />
     <meta property="og:image:secure_url" content="https://ryahconstantino.github.io/deejazz/og-deejazz-mobile.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="1200" />
-    <meta property="og:image:alt" content="DeeJazz logo on a black background, optimized for mobile previews" />
+    <meta property="og:image:alt" content="DeeJazz logo on a dark background, optimized for mobile previews" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="DeeJazz - Music without distractions" />
     <meta name="twitter:description" content="A desktop music experience for Windows and Linux with uBO Lite built in." />
     <meta name="twitter:url" content="https://ryahconstantino.github.io/deejazz/" />
     <meta name="twitter:image" content="https://ryahconstantino.github.io/deejazz/og-deejazz-desktop.png" />
-    <meta name="twitter:image:alt" content="DeeJazz logo on a black background" />
+    <meta name="twitter:image:alt" content="DeeJazz logo on a dark background" />
     <title>DeeJazz - Music without distractions</title>
     <script type="application/ld+json">
       {
@@ -65,50 +67,26 @@
       }
     </script>
   </head>
-  <body class="overflow-x-hidden bg-black text-white antialiased selection:bg-fuchsia-500 selection:text-white">
-    <svg class="svg-definitions" aria-hidden="true">
-      <defs>
-        <symbol id="flag-us" viewBox="0 0 28 20">
-          <rect width="28" height="20" fill="#fff"></rect>
-          <path fill="#b22234" d="M0 0h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28V7.7H0zm0 3.08h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28v1.54H0zm0 3.06h28V20H0z"></path>
-          <rect width="12.2" height="10.78" fill="#3c3b6e"></rect>
-          <g fill="#fff">
-            <circle cx="1.3" cy="1.25" r=".38"></circle><circle cx="3.7" cy="1.25" r=".38"></circle><circle cx="6.1" cy="1.25" r=".38"></circle><circle cx="8.5" cy="1.25" r=".38"></circle><circle cx="10.9" cy="1.25" r=".38"></circle>
-            <circle cx="2.5" cy="3.25" r=".38"></circle><circle cx="4.9" cy="3.25" r=".38"></circle><circle cx="7.3" cy="3.25" r=".38"></circle><circle cx="9.7" cy="3.25" r=".38"></circle>
-            <circle cx="1.3" cy="5.25" r=".38"></circle><circle cx="3.7" cy="5.25" r=".38"></circle><circle cx="6.1" cy="5.25" r=".38"></circle><circle cx="8.5" cy="5.25" r=".38"></circle><circle cx="10.9" cy="5.25" r=".38"></circle>
-            <circle cx="2.5" cy="7.25" r=".38"></circle><circle cx="4.9" cy="7.25" r=".38"></circle><circle cx="7.3" cy="7.25" r=".38"></circle><circle cx="9.7" cy="7.25" r=".38"></circle>
-            <circle cx="1.3" cy="9.25" r=".38"></circle><circle cx="3.7" cy="9.25" r=".38"></circle><circle cx="6.1" cy="9.25" r=".38"></circle><circle cx="8.5" cy="9.25" r=".38"></circle><circle cx="10.9" cy="9.25" r=".38"></circle>
-          </g>
-        </symbol>
-        <symbol id="flag-br" viewBox="0 0 28 20">
-          <rect width="28" height="20" fill="#009b3a"></rect>
-          <path fill="#ffdf00" d="M14 2.15 25.2 10 14 17.85 2.8 10z"></path>
-          <circle cx="14" cy="10" r="4.6" fill="#002776"></circle>
-          <path d="M9.8 8.65c3.4-.7 6.75.08 8.8 2.12" fill="none" stroke="#fff" stroke-width="1.05"></path>
-          <g fill="#fff">
-            <circle cx="12" cy="8.3" r=".28"></circle><circle cx="15.2" cy="8.15" r=".28"></circle><circle cx="16.8" cy="10.2" r=".25"></circle><circle cx="13.1" cy="11.7" r=".25"></circle><circle cx="15.5" cy="12.7" r=".22"></circle>
-          </g>
-        </symbol>
-      </defs>
-    </svg>
+  <body>
     <a class="skip-link" href="#conteudo" data-i18n="skip.content">Skip to content</a>
 
-    <header class="sticky top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur-xl">
-      <div class="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
+    <header class="site-header">
+      <div class="header-inner">
         <a href="#inicio" class="brand" aria-label="DeeJazz - home" data-i18n-aria-label="brand.home">
-          <img class="brand-wordmark" src="/deejazz-wordmark.png" alt="" aria-hidden="true" />
+          <picture>
+            <source media="(prefers-color-scheme: light)" srcset="/deejazz-wordmark-on-light.png" />
+            <img class="brand-wordmark" src="/deejazz-wordmark.png" alt="" aria-hidden="true" fetchpriority="high" />
+          </picture>
         </a>
 
-        <nav class="hidden items-center gap-8 text-sm font-semibold md:flex" aria-label="Main navigation" data-i18n-aria-label="nav.main">
+        <nav class="desktop-nav" aria-label="Main navigation" data-i18n-aria-label="nav.main">
           <a class="nav-link" href="#experiencia" data-i18n="nav.experience">Experience</a>
           <a class="nav-link" href="#recursos" data-i18n="nav.features">Features</a>
           <a class="nav-link" href="#protecao" data-i18n="nav.protection">Protection</a>
         </nav>
 
         <div class="header-actions">
-          <a class="download-link header-download" href="#platform-downloads" data-i18n="download.header.choose">
-            Downloads
-          </a>
+          <a class="button button-small header-download" href="#platform-downloads" data-i18n="download.header.choose">Downloads</a>
 
           <div id="language-picker" class="language-picker">
             <button
@@ -118,49 +96,34 @@
               aria-haspopup="listbox"
               aria-expanded="false"
               aria-controls="language-menu"
-              aria-label="Language"
-              data-i18n-aria-label="language.label"
             >
-              <svg id="language-current-flag" class="language-flag" viewBox="0 0 28 20" aria-hidden="true">
-                <use href="#flag-us"></use>
-              </svg>
+              <span class="sr-only" data-i18n="language.label">Language</span>
+              <span id="language-current-code" class="language-code">EN</span>
               <span id="language-current-label" class="language-current">English</span>
-              <svg class="language-chevron" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-              </svg>
+              <span class="language-chevron" aria-hidden="true"></span>
             </button>
 
             <div id="language-menu" class="language-menu" role="listbox" aria-label="Language" data-i18n-aria-label="language.label" hidden>
               <button class="language-option" type="button" role="option" data-locale="en-US" aria-selected="true">
-                <svg class="language-flag" viewBox="0 0 28 20" aria-hidden="true">
-                  <use href="#flag-us"></use>
-                </svg>
+                <span class="language-option-code" aria-hidden="true">EN</span>
                 <span class="language-option-copy">
                   <strong data-i18n="language.english">English</strong>
                   <small data-i18n="language.us">United States</small>
                 </span>
-                <svg class="language-check" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="m4.5 12.75 6 6 9-13.5"></path>
-                </svg>
               </button>
               <button class="language-option" type="button" role="option" data-locale="pt-BR" aria-selected="false">
-                <svg class="language-flag" viewBox="0 0 28 20" aria-hidden="true">
-                  <use href="#flag-br"></use>
-                </svg>
+                <span class="language-option-code" aria-hidden="true">PT</span>
                 <span class="language-option-copy">
                   <strong data-i18n="language.portuguese">Português</strong>
                   <small data-i18n="language.brazil">Brasil</small>
                 </span>
-                <svg class="language-check" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="m4.5 12.75 6 6 9-13.5"></path>
-                </svg>
               </button>
             </div>
           </div>
 
           <button
             id="menu-button"
-            class="mobile-menu-button md:hidden"
+            class="mobile-menu-button"
             type="button"
             aria-expanded="false"
             aria-controls="mobile-menu"
@@ -175,37 +138,55 @@
         <a href="#experiencia" data-i18n="nav.experience">Experience</a>
         <a href="#recursos" data-i18n="nav.features">Features</a>
         <a href="#protecao" data-i18n="nav.protection">Protection</a>
+        <a href="#platform-downloads" data-i18n="download.header.choose">Downloads</a>
       </nav>
     </header>
 
     <main id="conteudo">
       <section id="inicio" class="hero-section">
-        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
-        <div class="relative z-10 mx-auto max-w-[1440px] px-5 pb-20 pt-20 text-center sm:px-8 sm:pb-28 sm:pt-28 lg:px-12 lg:pb-32">
-          <p class="eyebrow reveal" data-i18n="hero.eyebrow">DeeJazz for Windows and Linux</p>
-          <h1 class="display-title hero-title mx-auto w-full text-center reveal">
-            <span data-i18n="hero.title.main">All your music.</span>
-            <span class="gradient-text" data-i18n="hero.title.accent">No distractions.</span>
-          </h1>
-          <p class="hero-copy reveal" data-i18n="hero.copy">
-            A desktop music experience with uBO Lite built in, an elegant interface, and everything right where it belongs.
-          </p>
-          <div id="platform-downloads" class="platform-download-grid reveal">
-            <article class="platform-download-card">
+        <div class="hero-shell">
+          <div class="hero-content">
+            <p class="eyebrow reveal" data-i18n="hero.eyebrow">DeeJazz for Windows and Linux</p>
+            <h1 class="display-title reveal">
+              <span data-i18n="hero.title.main">All your music.</span>
+              <span class="accent-text" data-i18n="hero.title.accent">No distractions.</span>
+            </h1>
+            <p class="hero-copy reveal" data-i18n="hero.copy">A focused desktop player with uBO Lite built in, designed for listening without the usual noise.</p>
+            <div class="hero-actions reveal">
+              <a class="button button-primary" href="#platform-downloads" data-i18n="download.header.choose">Downloads</a>
+              <a class="text-link" href="https://github.com/ryahconstantino/deejazz" rel="noopener" data-i18n="hero.github">View on GitHub</a>
+            </div>
+          </div>
+
+          <figure class="hero-media reveal">
+            <img
+              src="/deejazz-listening-object.webp"
+              width="900"
+              height="1125"
+              loading="eager"
+              fetchpriority="high"
+              alt="Sculptural magenta record and speaker representing focused listening"
+              data-i18n-alt="media.heroAlt"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="platform-downloads" class="downloads-section">
+        <div class="section-shell downloads-shell">
+          <div class="section-heading reveal">
+            <h2 class="section-title" data-i18n="downloads.title">Choose your platform.</h2>
+            <p class="section-copy" data-i18n="downloads.copy">Use the installer on Windows or one command on Linux.</p>
+          </div>
+
+          <div class="platform-download-grid">
+            <article class="platform-download-card reveal">
               <div class="platform-card-heading">
-                <span class="platform-icon windows-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M2 4.2 10.7 3v8.3H2V4.2Zm9.8-1.4L22 1.4v9.9H11.8V2.8ZM2 12.5h8.7v8.3L2 19.6v-7.1Zm9.8 0H22v9.9L11.8 21v-8.5Z" />
-                  </svg>
-                </span>
-                <span>
-                  <strong>Windows</strong>
-                  <small data-i18n="download.windows.detail">Windows 10 or newer</small>
-                </span>
+                <strong>Windows</strong>
+                <span data-i18n="download.windows.detail">Windows 10 or newer</span>
               </div>
               <a
-                class="download-link platform-action"
+                class="button button-primary platform-action"
                 data-windows-download
                 href="https://github.com/ryahconstantino/deejazz/releases/latest"
                 rel="noopener"
@@ -216,97 +197,73 @@
               <p data-i18n="download.windows.note">Choose your installer from GitHub Releases</p>
             </article>
 
-            <article class="platform-download-card linux-card">
+            <article class="platform-download-card reveal">
               <div class="platform-card-heading">
-                <span class="platform-icon linux-icon" aria-hidden="true">
-                  <svg viewBox="0 0 48 48">
-                    <ellipse cx="24" cy="25" rx="13" ry="18" fill="currentColor" />
-                    <ellipse cx="24" cy="28" rx="8.2" ry="12.5" fill="#f4f1f8" />
-                    <circle cx="20.5" cy="15.5" r="3.4" fill="#f4f1f8" />
-                    <circle cx="27.5" cy="15.5" r="3.4" fill="#f4f1f8" />
-                    <circle cx="21.4" cy="15.8" r="1.1" fill="#111" />
-                    <circle cx="26.6" cy="15.8" r="1.1" fill="#111" />
-                    <path d="m24 17.2-4 3h8l-4-3ZM16 39c-3.7.5-6 2-7 4 4.3.8 7.8.3 10.5-1.3L16 39Zm16 0c3.7.5 6 2 7 4-4.3.8-7.8.3-10.5-1.3L32 39Z" fill="#ffb12d" />
-                  </svg>
-                </span>
-                <span>
-                  <strong>Linux</strong>
-                  <small data-i18n="download.linux.detail">x86_64 • portable package</small>
-                </span>
+                <strong>Linux</strong>
+                <span data-i18n="download.linux.detail">x86_64 portable package</span>
               </div>
               <div class="linux-command" data-linux-command-box aria-disabled="false">
                 <code data-linux-command>curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh | sh</code>
-                <button type="button" data-copy-linux data-i18n-aria-label="download.copy">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M8.25 6.75V4.875A1.875 1.875 0 0 1 10.125 3h8.25a1.875 1.875 0 0 1 1.875 1.875v8.25A1.875 1.875 0 0 1 18.375 15h-1.5M8.25 6.75h-2.625A1.875 1.875 0 0 0 3.75 8.625v9.75c0 1.036.84 1.875 1.875 1.875h9.75c1.036 0 1.875-.84 1.875-1.875V15M8.25 6.75h7.125c1.036 0 1.875.84 1.875 1.875V15" />
-                  </svg>
+                <button type="button" data-copy-linux data-i18n-aria-label="download.copy" aria-describedby="copy-feedback">
+                  <span data-i18n="download.copyShort">Copy</span>
                 </button>
               </div>
-              <p data-i18n="download.linux.note">Install via CURL in your terminal</p>
+              <p data-i18n="download.linux.note">Install with curl in your terminal</p>
+              <span id="copy-feedback" class="copy-feedback" role="status" aria-live="polite"></span>
             </article>
           </div>
-
         </div>
       </section>
 
-      <section id="experiencia" class="light-section">
-        <div class="mx-auto grid max-w-[1280px] items-center gap-16 px-5 py-24 sm:px-8 sm:py-32 lg:grid-cols-[0.9fr_1.1fr] lg:px-12 lg:py-40">
-          <div class="text-center reveal">
-            <p class="eyebrow text-fuchsia-600" data-i18n="experience.eyebrow">Made for desktop</p>
-            <h2 class="section-title text-black" data-i18n="experience.title">Your music has a new look.</h2>
-            <p class="section-copy text-neutral-600" data-i18n="experience.copy">
-              DeeJazz brings the experience you already know into a cleaner, focused desktop application that is ready to play.
-            </p>
-            <div class="mt-8 flex flex-wrap justify-center gap-3 text-sm font-semibold text-black">
-              <span class="info-chip" data-i18n="experience.windows">Windows</span>
-              <span class="info-chip" data-i18n="experience.linux">Linux</span>
-              <span class="info-chip" data-i18n="experience.install">Simple installation</span>
-            </div>
+      <section id="experiencia" class="experience-section">
+        <div class="section-shell experience-layout">
+          <div class="experience-copy reveal">
+            <h2 class="section-title" data-i18n="experience.title">Your music has a new look.</h2>
+            <p class="section-copy" data-i18n="experience.copy">DeeJazz brings the experience you know into a cleaner desktop application that is ready to play.</p>
           </div>
 
-          <div class="feature-visual reveal">
-            <div class="visual-card visual-card-back"></div>
-            <div class="visual-card visual-card-front">
-              <div class="visual-art">
-                <div class="record"><i></i></div>
-                <div class="wave-lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-              </div>
-              <div class="visual-meta">
-                <span data-i18n="mockup.nowPlaying">Now playing</span>
-                <strong>Velvet Mood</strong>
-                <p>Luna &amp; Co.</p>
-                <div class="progress"><i></i></div>
-                <div class="visual-controls"><span>◀</span><b>▶</b><span>▶</span></div>
-              </div>
+          <dl class="compatibility-grid reveal">
+            <div>
+              <dt data-i18n="experience.windows">Windows</dt>
+              <dd data-i18n="experience.windowsDetail">A familiar installer and automatic shortcuts.</dd>
             </div>
-          </div>
+            <div>
+              <dt data-i18n="experience.linux">Linux</dt>
+              <dd data-i18n="experience.linuxDetail">A portable package installed from the terminal.</dd>
+            </div>
+            <div>
+              <dt data-i18n="experience.install">Simple installation</dt>
+              <dd data-i18n="experience.installDetail">Open the app and return to your music.</dd>
+            </div>
+          </dl>
         </div>
       </section>
 
-      <section id="recursos" class="bg-black">
-        <div class="mx-auto max-w-[1280px] px-5 py-24 sm:px-8 sm:py-32 lg:px-12 lg:py-40">
-          <div class="mx-auto max-w-4xl text-center reveal">
-            <p class="eyebrow" data-i18n="features.eyebrow">Everything in the right rhythm</p>
+      <section id="recursos" class="features-section">
+        <div class="section-shell">
+          <div class="section-heading reveal">
             <h2 class="section-title" data-i18n="features.title">More music. Less noise.</h2>
           </div>
 
           <div class="feature-grid">
-            <article class="feature-card feature-purple reveal">
-              <div class="feature-icon" aria-hidden="true">⌨</div>
+            <article class="feature-card feature-shortcuts reveal">
+              <div class="keyboard-preview" aria-hidden="true">
+                <kbd>Space</kbd><kbd>Ctrl</kbd><kbd>Shift</kbd>
+              </div>
               <div>
                 <h3 data-i18n="features.shortcuts.title">Quick shortcuts</h3>
                 <p data-i18n="features.shortcuts.copy">Control playback without taking your hands off the keyboard.</p>
               </div>
             </article>
-            <article class="feature-card feature-orange reveal">
-              <div class="feature-icon" aria-hidden="true">◉</div>
+
+            <article class="feature-card feature-focus reveal">
               <div>
                 <h3 data-i18n="features.focus.title">Focused experience</h3>
                 <p data-i18n="features.focus.copy">A dedicated window to listen, discover, and organize.</p>
               </div>
             </article>
-            <article class="feature-card feature-blue reveal">
-              <div class="feature-icon shield-mini" aria-hidden="true">✓</div>
+
+            <article class="feature-card feature-protection reveal">
               <div>
                 <h3 data-i18n="features.protection.title">Built-in protection</h3>
                 <p data-i18n="features.protection.copy">uBO Lite helps reduce ads, trackers, and distractions.</p>
@@ -317,73 +274,61 @@
       </section>
 
       <section id="protecao" class="protection-section">
-        <div class="protection-noise" aria-hidden="true"></div>
-        <div class="relative z-10 mx-auto grid max-w-[1280px] items-center gap-16 px-5 py-24 sm:px-8 sm:py-32 lg:grid-cols-2 lg:px-12 lg:py-40">
-          <div class="protection-shield reveal" aria-hidden="true">
-            <div class="shield-ring ring-a"></div>
-            <div class="shield-ring ring-b"></div>
-            <svg viewBox="0 0 180 210">
-              <path d="M90 7 165 34v58c0 49-29 88-75 111C44 180 15 141 15 92V34L90 7Z" fill="url(#shieldGradient)" />
-              <path d="m54 103 24 24 51-59" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="15" />
-              <defs>
-                <linearGradient id="shieldGradient" x1="24" y1="18" x2="153" y2="190" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#ff43bf"/><stop offset=".5" stop-color="#9333ea"/><stop offset="1" stop-color="#2563eb"/>
-                </linearGradient>
-              </defs>
-            </svg>
-            <span class="blocked-pill pill-one" data-i18n="protection.trackers">Trackers blocked</span>
-            <span class="blocked-pill pill-two" data-i18n="protection.cleaner">Cleaner browsing</span>
-          </div>
+        <div class="section-shell protection-layout">
+          <figure class="protection-media reveal">
+            <img
+              src="/deejazz-protection-wave.webp"
+              width="1280"
+              height="800"
+              loading="lazy"
+              alt="Magenta sound wave moving through dark acoustic panels"
+              data-i18n-alt="media.protectionAlt"
+            />
+          </figure>
 
-          <div class="text-center reveal">
+          <div class="protection-copy reveal">
             <p class="eyebrow" data-i18n="protection.eyebrow">uBO Lite built in</p>
-            <h2 class="section-title"><span data-i18n="protection.title.main">The music stays.</span><br /><span data-i18n="protection.title.accent">Distractions go.</span></h2>
-            <p class="section-copy text-white/70" data-i18n="protection.copy">
-              DeeJazz adds a content-blocking layer to the application for a lighter and more private experience.
-            </p>
+            <h2 class="section-title">
+              <span data-i18n="protection.title.main">The music stays.</span>
+              <span class="accent-text" data-i18n="protection.title.accent">Distractions go.</span>
+            </h2>
+            <p class="section-copy" data-i18n="protection.copy">DeeJazz adds content blocking for a lighter and more private listening experience.</p>
             <ul class="benefit-list">
-              <li><span>✓</span><b data-i18n="protection.benefit.filters">Content filters ready to use</b></li>
-              <li><span>✓</span><b data-i18n="protection.benefit.trackers">Fewer trackers while browsing</b></li>
-              <li><span>✓</span><b data-i18n="protection.benefit.automatic">Protection enabled automatically</b></li>
+              <li data-i18n="protection.benefit.filters">Content filters ready to use</li>
+              <li data-i18n="protection.benefit.trackers">Fewer trackers while browsing</li>
+              <li data-i18n="protection.benefit.automatic">Protection enabled automatically</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="download" class="download-section">
-        <div class="mx-auto max-w-5xl px-5 py-24 text-center sm:px-8 sm:py-32 lg:px-12 lg:py-40">
-          <img class="download-logo reveal" src="/deejazz-wordmark-on-light.png" alt="" aria-hidden="true" />
-          <h2 class="display-title reveal"><span data-i18n="final.title.main">Press play</span><br /><span class="gradient-text" data-i18n="final.title.accent">your way.</span></h2>
-          <p class="hero-copy reveal" data-i18n="final.copy">DeeJazz for Windows and Linux, with uBO Lite built in.</p>
-          <div class="mt-9 reveal">
-            <a
-              class="download-link primary-download light-button"
-              href="#platform-downloads"
-              data-i18n="download.choose"
-            >
-              Choose your platform
-            </a>
-          </div>
+      <section id="download" class="final-section">
+        <div class="section-shell final-shell reveal">
+          <picture>
+            <source media="(prefers-color-scheme: light)" srcset="/deejazz-wordmark-on-light.png" />
+            <img class="download-logo" src="/deejazz-wordmark.png" alt="" aria-hidden="true" />
+          </picture>
+          <h2 class="display-title">
+            <span data-i18n="final.title.main">Press play</span>
+            <span class="accent-text" data-i18n="final.title.accent">your way.</span>
+          </h2>
+          <p class="section-copy" data-i18n="final.copy">DeeJazz for Windows and Linux, with uBO Lite built in.</p>
+          <a class="button button-primary" href="#platform-downloads" data-i18n="download.header.choose">Downloads</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <div class="footer-main">
-          <div class="brand" aria-label="DeeJazz">
-            <img class="brand-wordmark small" src="/deejazz-wordmark.png" alt="" aria-hidden="true" />
-          </div>
-          <p class="footer-made-by">
-            <span data-i18n="footer.madeWith">Made with</span>
-            <span class="footer-heart" role="img" aria-label="love" data-i18n-aria-label="footer.love">❤️</span>
-            <span data-i18n="footer.by">by</span>
-            <a href="https://www.ryahconstantino.com/" target="_blank" rel="me noopener">Ryan Constantino</a>
-          </p>
-        </div>
-        <div class="footer-legal">
-          <p class="legal-copy">© <span id="current-year"></span> <span data-i18n="footer.copy">DeeJazz is an independent project and is not affiliated with, endorsed by, or sponsored by Deezer S.A.</span></p>
-        </div>
+        <picture>
+          <source media="(prefers-color-scheme: light)" srcset="/deejazz-wordmark-on-light.png" />
+          <img class="brand-wordmark brand-wordmark-small" src="/deejazz-wordmark.png" alt="" aria-hidden="true" />
+        </picture>
+        <p class="footer-made-by">
+          <span data-i18n="footer.builtBy">Built by</span>
+          <a href="https://www.ryahconstantino.com/" target="_blank" rel="me noopener">Ryan Constantino</a>
+        </p>
+        <p class="legal-copy">© <span id="current-year"></span> <span data-i18n="footer.copy">DeeJazz is an independent project and is not affiliated with, endorsed by, or sponsored by Deezer S.A.</span></p>
       </div>
     </footer>
 

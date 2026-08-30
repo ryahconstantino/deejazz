@@ -1,22 +1,26 @@
 import './style.css'
 import { DEFAULT_LOCALE, SUPPORTED_LOCALES, getMessage } from './i18n.js'
 
+document.documentElement.classList.add('js')
+
 const latestReleaseUrl = 'https://github.com/ryahconstantino/deejazz/releases/latest'
 const linuxInstallUrl = 'https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh'
 const languagePicker = document.querySelector('#language-picker')
 const languageSelector = document.querySelector('#language-selector')
 const languageMenu = document.querySelector('#language-menu')
-const languageCurrentFlag = document.querySelector('#language-current-flag')
+const languageCurrentCode = document.querySelector('#language-current-code')
 const languageCurrentLabel = document.querySelector('#language-current-label')
 const languageOptions = [...document.querySelectorAll('.language-option')]
 const menuButton = document.querySelector('#menu-button')
 const mobileMenu = document.querySelector('#mobile-menu')
-const desktopViewport = window.matchMedia('(min-width: 768px)')
+const desktopViewport = window.matchMedia('(min-width: 900px)')
 const windowsDownloadLinks = document.querySelectorAll('[data-windows-download]')
 const linuxCommandBox = document.querySelector('[data-linux-command-box]')
 const linuxCommandElement = document.querySelector('[data-linux-command]')
 const copyLinuxButton = document.querySelector('[data-copy-linux]')
+const copyFeedback = document.querySelector('#copy-feedback')
 let currentLocale = DEFAULT_LOCALE
+let copyFeedbackTimer
 
 function getSavedLocale() {
   try {
@@ -76,10 +80,10 @@ function setMobileMenu(open) {
 
 function updateLanguagePicker() {
   const metadata = currentLocale === 'pt-BR'
-    ? { flagId: '#flag-br', labelKey: 'language.portuguese' }
-    : { flagId: '#flag-us', labelKey: 'language.english' }
+    ? { code: 'PT', labelKey: 'language.portuguese' }
+    : { code: 'EN', labelKey: 'language.english' }
 
-  languageCurrentFlag?.querySelector('use')?.setAttribute('href', metadata.flagId)
+  if (languageCurrentCode) languageCurrentCode.textContent = metadata.code
   if (languageCurrentLabel) languageCurrentLabel.textContent = getMessage(currentLocale, metadata.labelKey)
   languageOptions.forEach((option) => {
     option.setAttribute('aria-selected', String(option.dataset.locale === currentLocale))
@@ -116,6 +120,10 @@ function applyLocale(locale, updateLocation = false) {
     element.setAttribute('title', getMessage(currentLocale, element.dataset.i18nTitle))
   })
 
+  document.querySelectorAll('[data-i18n-alt]').forEach((element) => {
+    element.setAttribute('alt', getMessage(currentLocale, element.dataset.i18nAlt))
+  })
+
   updateLanguagePicker()
   updateDownloads()
   updateMenuLabel()
@@ -130,15 +138,28 @@ function applyLocale(locale, updateLocation = false) {
 }
 
 copyLinuxButton?.addEventListener('click', async () => {
-  if (!linuxCommandElement || copyLinuxButton.disabled || !navigator.clipboard) return
+  if (!linuxCommandElement || copyLinuxButton.disabled) return
 
-  await navigator.clipboard.writeText(linuxCommandElement.textContent)
-  copyLinuxButton.classList.add('is-copied')
-  copyLinuxButton.setAttribute('aria-label', getMessage(currentLocale, 'download.copied'))
-  window.setTimeout(() => {
+  window.clearTimeout(copyFeedbackTimer)
+  copyFeedback?.classList.remove('is-error')
+
+  try {
+    if (!navigator.clipboard) throw new Error('Clipboard API unavailable')
+    await navigator.clipboard.writeText(linuxCommandElement.textContent)
+    copyLinuxButton.classList.add('is-copied')
+    copyLinuxButton.setAttribute('aria-label', getMessage(currentLocale, 'download.copied'))
+    if (copyFeedback) copyFeedback.textContent = getMessage(currentLocale, 'download.copied')
+  } catch {
+    copyFeedback?.classList.add('is-error')
+    if (copyFeedback) copyFeedback.textContent = getMessage(currentLocale, 'download.copyError')
+  }
+
+  copyFeedbackTimer = window.setTimeout(() => {
     copyLinuxButton.classList.remove('is-copied')
     copyLinuxButton.setAttribute('aria-label', getMessage(currentLocale, 'download.copy'))
-  }, 1600)
+    copyFeedback?.classList.remove('is-error')
+    if (copyFeedback) copyFeedback.textContent = ''
+  }, 2400)
 })
 
 languageSelector?.addEventListener('click', () => {
