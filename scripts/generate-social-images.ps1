@@ -138,6 +138,13 @@ function New-IconImage {
   $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
   $graphics.Clear([System.Drawing.Color]::Transparent)
 
+  $backgroundInset = $Size * 0.03125
+  $backgroundSize = $Size - ($backgroundInset * 2)
+  $backgroundRadius = $Size * 0.1875
+  $backgroundBrush = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::Black)
+  Fill-RoundedRectangle $graphics $backgroundBrush $backgroundInset $backgroundInset $backgroundSize $backgroundSize $backgroundRadius
+  $backgroundBrush.Dispose()
+
   $iconWidth = 120 * $IconScale
   $iconHeight = 80 * $IconScale
   $iconLeft = ($Size - $iconWidth) / 2
@@ -174,7 +181,7 @@ function New-IconImage {
   $bitmap.Dispose()
 }
 
-New-IconImage 512 3.4 "deejazz-icon.png"
+New-IconImage 512 2.8 "deejazz-icon.png"
 New-WordmarkImage 1200 300 1.52 "deejazz-wordmark.png"
 New-WordmarkImage 1200 300 1.52 "deejazz-wordmark-on-light.png" "#17131D"
 New-SocialImage 1200 630 1 "og-deejazz-desktop.png"
