@@ -12,11 +12,13 @@ The compiled website is published directly from the root of this branch. Select 
 - Branch: `pages`
 - Folder: `/ (root)`
 
-GitHub Actions are not required. The `index.html`, `assets/` directory, `deejazz-logo.svg`, social preview images, and `.nojekyll` file live at the root of the `pages` branch and are served directly.
+GitHub Actions are not required. The `index.html`, `assets/` directory, brand assets, social preview images, and `.nojekyll` file live at the root of the `pages` branch and are served directly.
 
 ## Visual identity
 
-The official seven-bar symbol is stored in `public/deejazz-logo.svg`. The navbar, application mockup, download section, footer, favicon, and Open Graph images must reuse this SVG as the source of the brand geometry.
+The official seven-bar symbol is stored in `public/deejazz-logo.svg` as the source geometry. Visible branding uses the fully rasterized `public/deejazz-wordmark.png`, which combines the symbol and uppercase DEEJAZZ name in one image so rendering never depends on fonts installed on the visitor's device. Open Graph images use the same rasterized composition.
+
+Run `scripts/generate-social-images.ps1` whenever the source symbol or wordmark composition changes.
 
 ## Development
 

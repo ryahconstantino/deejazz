@@ -191,7 +191,10 @@ mobileMenu?.querySelectorAll('a').forEach((link) => {
   })
 })
 
-document.querySelector('#current-year').textContent = new Date().getFullYear()
+const currentYear = document.querySelector('#current-year')
+if (currentYear) {
+  currentYear.textContent = String(new Date().getFullYear())
+}
 applyLocale(getInitialLocale())
 
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

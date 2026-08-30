@@ -7,6 +7,7 @@ const buildRoot = resolve(projectRoot, '.pages-build')
 const publishedEntries = [
   'assets',
   'deejazz-logo.svg',
+  'deejazz-wordmark.png',
   'index.html',
   'og-deejazz-desktop.png',
   'og-deejazz-mobile.png',

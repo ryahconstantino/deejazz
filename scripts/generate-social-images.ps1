@@ -111,6 +111,25 @@ function New-SocialImage {
   $bitmap.Dispose()
 }
 
+function New-WordmarkImage {
+  param([int]$Width, [int]$Height, [float]$Scale, [string]$FileName)
+
+  $bitmap = [System.Drawing.Bitmap]::new($Width, $Height, [System.Drawing.Imaging.PixelFormat]::Format32bppArgb)
+  $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
+  $graphics.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::AntiAlias
+  $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
+  $graphics.TextRenderingHint = [System.Drawing.Text.TextRenderingHint]::AntiAliasGridFit
+  $graphics.Clear([System.Drawing.Color]::Transparent)
+
+  Draw-DeeJazzLogo $graphics ($Width / 2) ($Height / 2) $Scale
+
+  $target = Join-Path $outputPath $FileName
+  $bitmap.Save($target, [System.Drawing.Imaging.ImageFormat]::Png)
+  $graphics.Dispose()
+  $bitmap.Dispose()
+}
+
+New-WordmarkImage 1200 300 1.52 "deejazz-wordmark.png"
 New-SocialImage 1200 630 1 "og-deejazz-desktop.png"
 New-SocialImage 1200 1200 1.18 "og-deejazz-mobile.png"
-Write-Output "Open Graph images generated in $outputPath"
+Write-Output "DeeJazz raster assets generated in $outputPath"
