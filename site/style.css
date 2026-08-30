@@ -600,6 +600,7 @@ body {
 }
 
 @media (min-width: 768px) {
+  .mobile-menu { display: none !important; }
   .footer-inner { padding: 2.75rem 2rem 2.25rem; }
   .footer-main { flex-direction: row; justify-content: space-between; }
   .footer-made-by { justify-content: flex-end; }

@@ -11,6 +11,7 @@ const languageCurrentLabel = document.querySelector('#language-current-label')
 const languageOptions = [...document.querySelectorAll('.language-option')]
 const menuButton = document.querySelector('#menu-button')
 const mobileMenu = document.querySelector('#mobile-menu')
+const desktopViewport = window.matchMedia('(min-width: 768px)')
 const windowsDownloadLinks = document.querySelectorAll('[data-windows-download]')
 const linuxCommandBox = document.querySelector('[data-linux-command-box]')
 const linuxCommandElement = document.querySelector('[data-linux-command]')
@@ -63,6 +64,14 @@ function updateDownloads() {
 function updateMenuLabel() {
   const isExpanded = menuButton?.getAttribute('aria-expanded') === 'true'
   menuButton?.setAttribute('aria-label', getMessage(currentLocale, isExpanded ? 'menu.close' : 'menu.open'))
+}
+
+function setMobileMenu(open) {
+  if (!menuButton || !mobileMenu) return
+  menuButton.setAttribute('aria-expanded', String(open))
+  mobileMenu.hidden = !open
+  document.body.classList.toggle('menu-open', open)
+  updateMenuLabel()
 }
 
 function updateLanguagePicker() {
@@ -176,19 +185,17 @@ document.addEventListener('click', (event) => {
 
 menuButton?.addEventListener('click', () => {
   const expanded = menuButton.getAttribute('aria-expanded') === 'true'
-  menuButton.setAttribute('aria-expanded', String(!expanded))
-  mobileMenu.hidden = expanded
-  document.body.classList.toggle('menu-open', !expanded)
-  updateMenuLabel()
+  setMobileMenu(!expanded)
 })
 
 mobileMenu?.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => {
-    menuButton?.setAttribute('aria-expanded', 'false')
-    mobileMenu.hidden = true
-    document.body.classList.remove('menu-open')
-    updateMenuLabel()
+    setMobileMenu(false)
   })
+})
+
+desktopViewport.addEventListener('change', (event) => {
+  if (event.matches) setMobileMenu(false)
 })
 
 const currentYear = document.querySelector('#current-year')
