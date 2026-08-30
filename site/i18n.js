@@ -65,6 +65,9 @@ const messages = {
     'final.title.main': 'Press play',
     'final.title.accent': 'your way.',
     'final.copy': 'DeeJazz for Windows and Linux, with uBO Lite built in.',
+    'footer.madeWith': 'Made with',
+    'footer.love': 'love',
+    'footer.by': 'by',
     'footer.copy': 'DeeJazz is an independent project and is not affiliated with, endorsed by, or sponsored by Deezer S.A.',
   },
   'pt-BR': {
@@ -130,6 +133,9 @@ const messages = {
     'final.title.main': 'Dê o play',
     'final.title.accent': 'do seu jeito.',
     'final.copy': 'DeeJazz para Windows e Linux, com uBO Lite integrado.',
+    'footer.madeWith': 'Feito com',
+    'footer.love': 'amor',
+    'footer.by': 'por',
     'footer.copy': 'DeeJazz é um projeto independente, sem associação, endosso ou patrocínio da Deezer S.A.',
   },
 }
