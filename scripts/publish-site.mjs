@@ -8,6 +8,7 @@ const publishedEntries = [
   'assets',
   'deejazz-logo.svg',
   'deejazz-wordmark.png',
+  'deejazz-wordmark-on-light.png',
   'index.html',
   'og-deejazz-desktop.png',
   'og-deejazz-mobile.png',

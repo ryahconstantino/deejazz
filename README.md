@@ -16,7 +16,7 @@ GitHub Actions are not required. The `index.html`, `assets/` directory, brand as
 
 ## Visual identity
 
-The official seven-bar symbol is stored in `public/deejazz-logo.svg` as the source geometry. Visible branding uses the fully rasterized `public/deejazz-wordmark.png`, which combines the symbol and uppercase DEEJAZZ name in one image so rendering never depends on fonts installed on the visitor's device. Open Graph images use the same rasterized composition.
+The official seven-bar symbol is stored in `public/deejazz-logo.svg` as the source geometry. Visible branding uses the fully rasterized `public/deejazz-wordmark.png`, which combines the symbol and uppercase DEEJAZZ name in one image so rendering never depends on fonts installed on the visitor's device. Light sections use `public/deejazz-wordmark-on-light.png` for proper contrast. Open Graph images use the same rasterized composition.
 
 Run `scripts/generate-social-images.ps1` whenever the source symbol or wordmark composition changes.
 

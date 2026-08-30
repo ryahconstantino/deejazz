@@ -39,7 +39,7 @@ function Fill-RoundedRectangle {
 }
 
 function Draw-DeeJazzLogo {
-  param($Graphics, [float]$CenterX, [float]$CenterY, [float]$Scale)
+  param($Graphics, [float]$CenterX, [float]$CenterY, [float]$Scale, [string]$FirstTextColor = "#FFFFFF")
 
   $iconScale = 1.45 * $Scale
   $iconWidth = 120 * $iconScale
@@ -81,15 +81,15 @@ function Draw-DeeJazzLogo {
   }
   $brush.Dispose()
 
-  $white = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::White)
+  $primaryText = [System.Drawing.SolidBrush]::new([System.Drawing.ColorTranslator]::FromHtml($FirstTextColor))
   $accent = [System.Drawing.SolidBrush]::new([System.Drawing.ColorTranslator]::FromHtml("#C53DFF"))
   $textY = $CenterY - ($Graphics.MeasureString("DEEJAZZ", $font, [System.Drawing.PointF]::Empty, $format).Height / 2) - (3 * $Scale)
   $textX = $startX + $iconWidth + $gap
-  $Graphics.DrawString($firstLabel, $font, $white, [System.Drawing.PointF]::new($textX, $textY), $format)
+  $Graphics.DrawString($firstLabel, $font, $primaryText, [System.Drawing.PointF]::new($textX, $textY), $format)
   $Graphics.DrawString($secondLabel, $font, $accent, [System.Drawing.PointF]::new($textX + $firstLabelWidth, $textY), $format)
   $format.Dispose()
   $accent.Dispose()
-  $white.Dispose()
+  $primaryText.Dispose()
   $font.Dispose()
 }
 
@@ -112,7 +112,7 @@ function New-SocialImage {
 }
 
 function New-WordmarkImage {
-  param([int]$Width, [int]$Height, [float]$Scale, [string]$FileName)
+  param([int]$Width, [int]$Height, [float]$Scale, [string]$FileName, [string]$FirstTextColor = "#FFFFFF")
 
   $bitmap = [System.Drawing.Bitmap]::new($Width, $Height, [System.Drawing.Imaging.PixelFormat]::Format32bppArgb)
   $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
@@ -121,7 +121,7 @@ function New-WordmarkImage {
   $graphics.TextRenderingHint = [System.Drawing.Text.TextRenderingHint]::AntiAliasGridFit
   $graphics.Clear([System.Drawing.Color]::Transparent)
 
-  Draw-DeeJazzLogo $graphics ($Width / 2) ($Height / 2) $Scale
+  Draw-DeeJazzLogo $graphics ($Width / 2) ($Height / 2) $Scale $FirstTextColor
 
   $target = Join-Path $outputPath $FileName
   $bitmap.Save($target, [System.Drawing.Imaging.ImageFormat]::Png)
@@ -130,6 +130,7 @@ function New-WordmarkImage {
 }
 
 New-WordmarkImage 1200 300 1.52 "deejazz-wordmark.png"
+New-WordmarkImage 1200 300 1.52 "deejazz-wordmark-on-light.png" "#17131D"
 New-SocialImage 1200 630 1 "og-deejazz-desktop.png"
 New-SocialImage 1200 1200 1.18 "og-deejazz-mobile.png"
 Write-Output "DeeJazz raster assets generated in $outputPath"
