@@ -395,18 +395,20 @@ body {
 
 .mobile-menu-button span {
   position: absolute;
-  left: 0.82rem;
+  top: 50%;
+  left: 50%;
   width: 1rem;
   height: 2px;
   border-radius: 2px;
   background: white;
-  transition: transform 180ms ease, top 180ms ease;
+  transform-origin: center;
+  transition: transform 180ms ease;
 }
 
-.mobile-menu-button span:first-child { top: 1.08rem; }
-.mobile-menu-button span:last-child { top: 1.58rem; }
-.mobile-menu-button[aria-expanded="true"] span:first-child { top: 1.31rem; transform: rotate(45deg); }
-.mobile-menu-button[aria-expanded="true"] span:last-child { top: 1.31rem; transform: rotate(-45deg); }
+.mobile-menu-button span:first-child { transform: translate(-50%, calc(-50% - .25rem)); }
+.mobile-menu-button span:last-child { transform: translate(-50%, calc(-50% + .25rem)); }
+.mobile-menu-button[aria-expanded="true"] span:first-child { transform: translate(-50%, -50%) rotate(45deg); }
+.mobile-menu-button[aria-expanded="true"] span:last-child { transform: translate(-50%, -50%) rotate(-45deg); }
 
 .mobile-menu {
   position: absolute;
@@ -634,7 +636,6 @@ body {
   .language-current { display: none; }
   .language-flag { width: 1.55rem; height: 1.1rem; }
   .mobile-menu-button { width: 2.55rem; height: 2.55rem; }
-  .mobile-menu-button span { left: .72rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
