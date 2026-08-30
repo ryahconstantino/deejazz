@@ -1,16 +1,18 @@
 {
   "name": "deejazz",
   "productName": "DeeJazz",
-  "version": "7.1.320",
+  "version": "1.1.0",
   "private": true,
   "description": "DeeJazz desktop application with uBO Lite integration",
   "license": "UNLICENSED",
   "author": "DeeJazz contributors",
   "main": "build/main-with-ubol.js",
   "scripts": {
-    "dist:win": "node scripts/build-windows-installer.js",
-    "dist:linux": "node scripts/build-linux-portable.js --arch=x64",
-    "dist:linux:arm64": "node scripts/build-linux-portable.js --arch=arm64"
+    "version:sync": "node scripts/sync-version.js",
+    "icons:win": "node scripts/generate-windows-icon.js",
+    "dist:win": "npm run version:sync && npm run icons:win && node scripts/build-windows-installer.js",
+    "dist:linux": "npm run version:sync && node scripts/build-linux-portable.js --arch=x64",
+    "dist:linux:arm64": "npm run version:sync && node scripts/build-linux-portable.js --arch=arm64"
   },
   "build": {
     "appId": "com.deejazz.desktop",
@@ -48,6 +50,7 @@
   "devDependencies": {
     "@electron/asar": "3.4.1",
     "@jellybrick/mpris-service": "2.1.5",
-    "electron-builder": "26.15.3"
+    "electron-builder": "26.15.3",
+    "resedit": "1.7.2"
   }
 }

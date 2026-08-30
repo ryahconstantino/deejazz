@@ -3,12 +3,13 @@ dist/
 dist-site/
 .installer-work/
 .linux-build/
+.pages-build/
 .env
 *.log
 *.Zone.Identifier
 src/resources/app.asar.bak
 
-# O site possui um repositório independente: deejazz-website.
+# Website files live on the pages branch.
 index.html
 site/
 public/

@@ -11,6 +11,32 @@ DeeJazz desktop application for Windows and Linux with built-in uBO Lite integra
 npm install
 ```
 
+## Release version
+
+The release version is defined in `.env.build`:
+
+```dotenv
+DEEJAZZ_VERSION=1.1.0
+```
+
+Edit this value for future releases. Every distribution command synchronizes it with `package.json` and `package-lock.json`, and applies it to the packaged application metadata. You can also synchronize it manually:
+
+```bash
+npm run version:sync
+```
+
+Artifact names remain stable so GitHub's `releases/latest/download` URLs continue to work.
+
+## Application icon
+
+`src/resources/deejazz-icon.png` is the canonical desktop icon and matches the favicon maintained on the `pages` branch. It uses the DeeJazz symbol centered on a black rounded square.
+
+The Linux package consumes this PNG directly. The Windows executable and installer use `src/resources/win/app.ico`, generated from the same PNG before every Windows build:
+
+```bash
+npm run icons:win
+```
+
 ## Windows
 
 ```bash
@@ -18,6 +44,8 @@ npm run dist:win
 ```
 
 The NSIS installer is generated at `dist/deejazz-windows-x64.exe`. The filename does not include a version number, keeping the latest-release download URL stable.
+
+The source runtime carries its upstream publisher signature. Replacing its name, version, and icon invalidates that signature, so the Windows build removes it from the staged executable. Production releases should be signed with a DeeJazz code-signing certificate through the standard electron-builder signing environment.
 
 ## Linux
 

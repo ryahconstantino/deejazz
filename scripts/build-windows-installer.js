@@ -3,11 +3,21 @@
 const fs = require("fs");
 const path = require("path");
 const { spawnSync } = require("child_process");
+const { createPackage, extractAll } = require("@electron/asar");
+const {
+  Data,
+  NtExecutable,
+  NtExecutableResource,
+  Resource,
+} = require("resedit");
+const { version } = require("./build-environment");
 
 const projectRoot = path.resolve(__dirname, "..");
 const sourceDir = path.join(projectRoot, "src");
 const workRoot = path.join(projectRoot, ".installer-work");
 const stagedApp = path.join(workRoot, "win-ia32-unpacked");
+const stagedAsarSource = path.join(workRoot, "app-asar");
+const sourceIcon = path.join(projectRoot, "src", "resources", "win", "app.ico");
 
 function enableWslNsisReader() {
   if (process.platform !== "linux" || !process.env.WSL_DISTRO_NAME) return;
@@ -39,7 +49,64 @@ function shouldCopy(source) {
   return !path.basename(source).includes(":Zone.Identifier");
 }
 
-function stageApplication() {
+async function updateStagedApplicationVersion() {
+  const stagedAsar = path.join(stagedApp, "resources", "app.asar");
+  fs.rmSync(stagedAsarSource, { recursive: true, force: true });
+  fs.mkdirSync(stagedAsarSource, { recursive: true });
+  extractAll(stagedAsar, stagedAsarSource);
+
+  const packagePath = path.join(stagedAsarSource, "package.json");
+  const packageMetadata = JSON.parse(fs.readFileSync(packagePath, "utf8"));
+  packageMetadata.version = version;
+  fs.writeFileSync(packagePath, `${JSON.stringify(packageMetadata, null, 2)}\n`);
+
+  fs.rmSync(stagedAsar, { force: true });
+  await createPackage(stagedAsarSource, stagedAsar);
+  fs.rmSync(stagedAsarSource, { recursive: true, force: true });
+}
+
+async function updateExecutableIdentity(executablePath) {
+  const executableBuffer = await fs.promises.readFile(executablePath);
+  // Replacing Windows resources invalidates the upstream executable signature.
+  // ignoreCert intentionally drops that obsolete certificate from the staged copy.
+  const executable = NtExecutable.from(executableBuffer, { ignoreCert: true });
+  const resources = NtExecutableResource.from(executable);
+  const versionInfoList = Resource.VersionInfo.fromEntries(resources.entries);
+  const versionInfo = versionInfoList[0] || Resource.VersionInfo.createEmpty();
+  const languages = versionInfo.getAllLanguagesForStringValues();
+  const language = languages[0] || { lang: 0x0409, codepage: 1200 };
+
+  versionInfo.setStringValues(language, {
+    CompanyName: "DeeJazz contributors",
+    FileDescription: "DeeJazz desktop application",
+    FileVersion: version,
+    InternalName: "DeeJazz",
+    OriginalFilename: "DeeJazz.exe",
+    ProductName: "DeeJazz",
+    ProductVersion: version,
+  });
+  versionInfo.setFileVersion(version);
+  versionInfo.setProductVersion(version);
+  versionInfo.setStringValues(language, {
+    FileVersion: version,
+    ProductVersion: version,
+  });
+  versionInfo.outputToResourceEntries(resources.entries);
+
+  const iconBuffer = await fs.promises.readFile(sourceIcon);
+  const iconFile = Data.IconFile.from(iconBuffer);
+  Resource.IconGroupEntry.replaceIconsForResource(
+    resources.entries,
+    1,
+    language.lang,
+    iconFile.icons.map((icon) => icon.data),
+  );
+
+  resources.outputResource(executable);
+  await fs.promises.writeFile(executablePath, Buffer.from(executable.generate()));
+}
+
+async function stageApplication() {
   fs.rmSync(workRoot, { recursive: true, force: true });
   fs.mkdirSync(stagedApp, { recursive: true });
   fs.cpSync(sourceDir, stagedApp, {
@@ -50,6 +117,8 @@ function stageApplication() {
   const oldExecutable = path.join(stagedApp, "Deezer.exe");
   const newExecutable = path.join(stagedApp, "DeeJazz.exe");
   fs.renameSync(oldExecutable, newExecutable);
+  await updateStagedApplicationVersion();
+  await updateExecutableIdentity(newExecutable);
 }
 
 function buildInstaller() {
@@ -85,10 +154,17 @@ function buildInstaller() {
   }
 }
 
-try {
-  enableWslNsisReader();
-  stageApplication();
-  buildInstaller();
-} finally {
-  fs.rmSync(workRoot, { recursive: true, force: true });
+async function main() {
+  try {
+    enableWslNsisReader();
+    await stageApplication();
+    buildInstaller();
+  } finally {
+    fs.rmSync(workRoot, { recursive: true, force: true });
+  }
 }
+
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});

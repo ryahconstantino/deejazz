@@ -5,10 +5,11 @@ const fs = require("fs");
 const path = require("path");
 const { extractAll } = require("@electron/asar");
 const { Arch, Platform, build } = require("electron-builder");
+const { version } = require("./build-environment");
 
 const projectRoot = path.resolve(__dirname, "..");
 const sourceAsar = path.join(projectRoot, "src", "resources", "app.asar");
-const sourceIcon = path.join(projectRoot, "src", "resources", "win", "app.ico");
+const sourceIcon = path.join(projectRoot, "src", "resources", "deejazz-icon.png");
 const sourceTrayIcon = path.join(projectRoot, "src", "resources", "win", "systray.png");
 const sourceLinuxMain = path.join(projectRoot, "linux", "main.js");
 const workRoot = path.join(projectRoot, ".linux-build");
@@ -54,29 +55,6 @@ function replaceExactlyOnce(source, search, replacement, description) {
   return source.replace(search, replacement);
 }
 
-function extractLargestPngFromIco(icoPath) {
-  const ico = fs.readFileSync(icoPath);
-  const imageCount = ico.readUInt16LE(4);
-  let largestPng = null;
-
-  for (let index = 0; index < imageCount; index += 1) {
-    const entryOffset = 6 + index * 16;
-    const width = ico[entryOffset] || 256;
-    const height = ico[entryOffset + 1] || 256;
-    const imageSize = ico.readUInt32LE(entryOffset + 8);
-    const imageOffset = ico.readUInt32LE(entryOffset + 12);
-    const image = ico.subarray(imageOffset, imageOffset + imageSize);
-    const isPng = image.subarray(0, 8).equals(Buffer.from("89504e470d0a1a0a", "hex"));
-
-    if (isPng && (!largestPng || width * height > largestPng.area)) {
-      largestPng = { area: width * height, image };
-    }
-  }
-
-  if (!largestPng) throw new Error("The Windows icon does not contain an embedded PNG image.");
-  return largestPng.image;
-}
-
 function prepareApplication() {
   fs.rmSync(workRoot, { recursive: true, force: true });
   fs.mkdirSync(appDir, { recursive: true });
@@ -87,6 +65,7 @@ function prepareApplication() {
   const appPackage = JSON.parse(fs.readFileSync(packagePath, "utf8"));
   appPackage.name = "deejazz";
   appPackage.productName = "DeeJazz";
+  appPackage.version = version;
   appPackage.description = "DeeJazz desktop application with uBO Lite integration";
   appPackage.author = "DeeJazz contributors";
   appPackage.license = "UNLICENSED";
@@ -121,7 +100,7 @@ function prepareApplication() {
   );
   fs.writeFileSync(originalMainPath, originalMain);
 
-  fs.writeFileSync(path.join(linuxResources, "icon.png"), extractLargestPngFromIco(sourceIcon));
+  fs.copyFileSync(sourceIcon, path.join(linuxResources, "icon.png"));
   fs.copyFileSync(sourceTrayIcon, path.join(linuxResources, "systray.png"));
 }
 
@@ -138,6 +117,7 @@ async function buildPortableArchive() {
     config: {
       appId: "com.deejazz.desktop",
       productName: "DeeJazz",
+      buildVersion: version,
       electronVersion: "38.4.0",
       asar: true,
       npmRebuild: false,
