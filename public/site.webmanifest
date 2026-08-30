@@ -9,8 +9,8 @@
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "./deejazz-wordmark.png",
-      "sizes": "1200x300",
+      "src": "./deejazz-icon.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]

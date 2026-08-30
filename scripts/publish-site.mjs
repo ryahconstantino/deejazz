@@ -6,6 +6,7 @@ const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const buildRoot = resolve(projectRoot, '.pages-build')
 const publishedEntries = [
   'assets',
+  'deejazz-icon.png',
   'deejazz-logo.svg',
   'deejazz-wordmark.png',
   'deejazz-wordmark-on-light.png',

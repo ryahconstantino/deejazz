@@ -129,6 +129,52 @@ function New-WordmarkImage {
   $bitmap.Dispose()
 }
 
+function New-IconImage {
+  param([int]$Size, [float]$IconScale, [string]$FileName)
+
+  $bitmap = [System.Drawing.Bitmap]::new($Size, $Size, [System.Drawing.Imaging.PixelFormat]::Format32bppArgb)
+  $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
+  $graphics.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::AntiAlias
+  $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
+  $graphics.Clear([System.Drawing.Color]::Transparent)
+
+  $iconWidth = 120 * $IconScale
+  $iconHeight = 80 * $IconScale
+  $iconLeft = ($Size - $iconWidth) / 2
+  $iconTop = ($Size - $iconHeight) / 2
+  $iconBottom = $iconTop + $iconHeight
+  $brush = [System.Drawing.Drawing2D.LinearGradientBrush]::new(
+    [System.Drawing.PointF]::new($iconLeft, $iconTop),
+    [System.Drawing.PointF]::new($iconLeft, $iconBottom),
+    [System.Drawing.ColorTranslator]::FromHtml("#FF42B7"),
+    [System.Drawing.ColorTranslator]::FromHtml("#4E67FF")
+  )
+  $blend = [System.Drawing.Drawing2D.ColorBlend]::new()
+  $blend.Colors = @(
+    [System.Drawing.ColorTranslator]::FromHtml("#FF42B7"),
+    [System.Drawing.ColorTranslator]::FromHtml("#A63BFF"),
+    [System.Drawing.ColorTranslator]::FromHtml("#4E67FF")
+  )
+  $blend.Positions = @(0.0, 0.62, 1.0)
+  $brush.InterpolationColors = $blend
+
+  foreach ($bar in $logoBars) {
+    $x = (Get-SvgNumber ($bar.GetAttribute("x"))) * $IconScale
+    $y = (Get-SvgNumber ($bar.GetAttribute("y"))) * $IconScale
+    $width = (Get-SvgNumber ($bar.GetAttribute("width"))) * $IconScale
+    $height = (Get-SvgNumber ($bar.GetAttribute("height"))) * $IconScale
+    $radius = (Get-SvgNumber ($bar.GetAttribute("rx"))) * $IconScale
+    Fill-RoundedRectangle $graphics $brush ($iconLeft + $x) ($iconTop + $y) $width $height $radius
+  }
+  $brush.Dispose()
+
+  $target = Join-Path $outputPath $FileName
+  $bitmap.Save($target, [System.Drawing.Imaging.ImageFormat]::Png)
+  $graphics.Dispose()
+  $bitmap.Dispose()
+}
+
+New-IconImage 512 3.4 "deejazz-icon.png"
 New-WordmarkImage 1200 300 1.52 "deejazz-wordmark.png"
 New-WordmarkImage 1200 300 1.52 "deejazz-wordmark-on-light.png" "#17131D"
 New-SocialImage 1200 630 1 "og-deejazz-desktop.png"
