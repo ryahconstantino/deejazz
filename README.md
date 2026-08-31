@@ -47,6 +47,21 @@ The NSIS installer is generated at `dist/deejazz-windows-x64.exe`. The filename 
 
 The source runtime carries its upstream publisher signature. Replacing its name, version, and icon invalidates that signature, so the Windows build removes it from the staged executable. Production releases should be signed with a DeeJazz code-signing certificate through the standard electron-builder signing environment.
 
+### Microsoft Defender SmartScreen
+
+The current Windows installer is not code-signed. Microsoft Defender SmartScreen may therefore display **"Windows protected your PC"** and report that an unrecognized app was prevented from starting. This is a reputation warning, not an installer error.
+
+Continue only when `deejazz-windows-x64.exe` was downloaded from the [official DeeJazz GitHub release](https://github.com/ryahconstantino/deejazz/releases/latest):
+
+1. Open `deejazz-windows-x64.exe`.
+2. In the blue SmartScreen window, select **More info**.
+3. Confirm that the app name is `deejazz-windows-x64.exe`. **Unknown publisher** may appear until DeeJazz releases are signed.
+4. Select **Run anyway** and complete the installer.
+
+Do not turn off SmartScreen, reputation-based protection, or Microsoft Defender globally. The procedure above allows only this downloaded file. If **Run anyway** is unavailable, a device or organization policy may prohibit bypassing the warning; contact the device administrator instead of disabling security controls.
+
+Microsoft explains how file and publisher reputation affect this warning in [SmartScreen reputation for Windows app developers](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation).
+
 ## Linux
 
 The Linux build incorporates improvements based on [aunetx/deezer-linux](https://github.com/aunetx/deezer-linux), including MPRIS integration, media controls, system tray support, Wayland/IME compatibility, a responsive layout, and accessibility options. This layer is applied only to the Linux package and preserves the uBO Lite integration.
