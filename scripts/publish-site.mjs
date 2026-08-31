@@ -20,6 +20,8 @@ const publishedEntries = [
   'index.html',
   'og-deejazz-desktop.png',
   'og-deejazz-mobile.png',
+  'platform-linux.svg',
+  'platform-windows.svg',
   'robots.txt',
   'site.webmanifest',
   'sitemap.xml',
