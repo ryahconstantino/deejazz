@@ -9,10 +9,11 @@
   "main": "build/main-with-ubol.js",
   "scripts": {
     "version:sync": "node scripts/sync-version.js",
+    "app:tray": "node scripts/patch-application-tray-icon.js",
     "icons:win": "node scripts/generate-windows-icon.js",
-    "dist:win": "npm run version:sync && npm run icons:win && node scripts/build-windows-installer.js",
-    "dist:linux": "npm run version:sync && node scripts/build-linux-portable.js --arch=x64",
-    "dist:linux:arm64": "npm run version:sync && node scripts/build-linux-portable.js --arch=arm64"
+    "dist:win": "npm run version:sync && npm run icons:win && npm run app:tray && node scripts/build-windows-installer.js",
+    "dist:linux": "npm run version:sync && npm run app:tray && node scripts/build-linux-portable.js --arch=x64",
+    "dist:linux:arm64": "npm run version:sync && npm run app:tray && node scripts/build-linux-portable.js --arch=arm64"
   },
   "build": {
     "appId": "com.deejazz.desktop",

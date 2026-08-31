@@ -3,6 +3,7 @@ dist/
 dist-site/
 .installer-work/
 .linux-build/
+.tray-icon-work/
 .pages-build/
 .env
 *.log

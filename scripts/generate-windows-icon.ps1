@@ -2,7 +2,9 @@ param(
   [Parameter(Mandatory = $true)]
   [string]$SourcePath,
   [Parameter(Mandatory = $true)]
-  [string]$OutputPath
+  [string]$OutputPath,
+  [Parameter(Mandatory = $false)]
+  [string]$TrayOutputPath
 )
 
 $ErrorActionPreference = "Stop"
@@ -70,4 +72,15 @@ try {
   $file.Dispose()
 }
 
-Write-Output "Generated $OutputPath from the shared DeeJazz icon."
+if ($TrayOutputPath) {
+  $trayFrame = $frames | Where-Object { $_.Size -eq 64 } | Select-Object -First 1
+  if (-not $trayFrame) {
+    throw "The 64px tray icon frame was not generated."
+  }
+
+  $trayOutputDirectory = [System.IO.Path]::GetDirectoryName([System.IO.Path]::GetFullPath($TrayOutputPath))
+  [System.IO.Directory]::CreateDirectory($trayOutputDirectory) | Out-Null
+  [System.IO.File]::WriteAllBytes([System.IO.Path]::GetFullPath($TrayOutputPath), [byte[]]$trayFrame.Bytes)
+}
+
+Write-Output "Generated the DeeJazz application and tray icons from the shared source."

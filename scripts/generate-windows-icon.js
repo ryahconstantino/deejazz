@@ -7,6 +7,7 @@ const { projectRoot } = require("./build-environment");
 const scriptPath = path.join(projectRoot, "scripts", "generate-windows-icon.ps1");
 const sourcePath = path.join(projectRoot, "src", "resources", "deejazz-icon.png");
 const outputPath = path.join(projectRoot, "src", "resources", "win", "app.ico");
+const trayOutputPath = path.join(projectRoot, "src", "resources", "win", "systray.png");
 
 function convertWslPath(filePath) {
   const result = spawnSync("wslpath", ["-w", filePath], { encoding: "utf8" });
@@ -18,8 +19,8 @@ function convertWslPath(filePath) {
 const isWsl = process.platform === "linux" && Boolean(process.env.WSL_DISTRO_NAME);
 const executable = process.platform === "win32" || isWsl ? "powershell.exe" : "pwsh";
 const paths = isWsl
-  ? [scriptPath, sourcePath, outputPath].map(convertWslPath)
-  : [scriptPath, sourcePath, outputPath];
+  ? [scriptPath, sourcePath, outputPath, trayOutputPath].map(convertWslPath)
+  : [scriptPath, sourcePath, outputPath, trayOutputPath];
 
 const result = spawnSync(executable, [
   "-NoProfile",
@@ -31,6 +32,8 @@ const result = spawnSync(executable, [
   paths[1],
   "-OutputPath",
   paths[2],
+  "-TrayOutputPath",
+  paths[3],
 ], { stdio: "inherit" });
 
 if (result.error) {
