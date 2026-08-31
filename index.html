@@ -111,8 +111,8 @@
         "inLanguage": ["en-US", "pt-BR"]
       }
     </script>
-    <script type="module" crossorigin src="./assets/index-xBz-S_nh.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BG95c_0-.css">
+    <script type="module" crossorigin src="./assets/index-Ch7P3pWh.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BhOw1seC.css">
   </head>
   <body>
     <svg class="svg-definitions" aria-hidden="true">
@@ -288,6 +288,9 @@
               >
                 <span data-i18n="download.windows.ready">Download Installer</span>
               </a>
+              <button class="installer-help" type="button" data-open-smartscreen aria-haspopup="dialog">
+                <span data-i18n="download.windows.help">SmartScreen blocked the installer?</span>
+              </button>
               <p data-i18n="download.windows.note">Choose your installer from GitHub Releases</p>
             </article>
 
@@ -308,6 +311,61 @@
           </div>
         </div>
       </section>
+
+      <dialog
+        id="smartscreen-dialog"
+        class="smartscreen-dialog"
+        aria-labelledby="smartscreen-title"
+        aria-describedby="smartscreen-description"
+      >
+        <div class="smartscreen-dialog-shell">
+          <div class="smartscreen-heading">
+            <span class="smartscreen-label">Microsoft Defender SmartScreen</span>
+            <h2 id="smartscreen-title" data-i18n="smartscreen.title">SmartScreen blocked the installer?</h2>
+            <p id="smartscreen-description" data-i18n="smartscreen.description">
+              The current Windows installer is not code-signed, so SmartScreen may report it as an unrecognized app.
+            </p>
+          </div>
+
+          <ol class="smartscreen-steps">
+            <li>
+              <div>
+                <strong data-i18n="smartscreen.verify.title">Verify the download</strong>
+                <p data-i18n="smartscreen.verify.copy">Continue only with deejazz-windows-x64.exe downloaded from the official DeeJazz GitHub release.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong data-i18n="smartscreen.info.title">Open More info</strong>
+                <p data-i18n="smartscreen.info.copy">In the blue SmartScreen window, select More info to reveal the app details and the additional action.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong data-i18n="smartscreen.run.title">Choose Run anyway</strong>
+                <p data-i18n="smartscreen.run.copy">Confirm the filename, choose Run anyway, and then complete the DeeJazz installer.</p>
+              </div>
+            </li>
+          </ol>
+
+          <p class="smartscreen-safety">
+            <strong data-i18n="smartscreen.safety.title">Keep SmartScreen enabled.</strong>
+            <span data-i18n="smartscreen.safety.copy">This procedure allows only this downloaded file and does not disable Windows protection.</span>
+          </p>
+          <a
+            class="smartscreen-source"
+            href="https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation"
+            target="_blank"
+            rel="noopener"
+            data-i18n="smartscreen.learn"
+          >How SmartScreen reputation works</a>
+
+          <div class="smartscreen-actions">
+            <a class="button button-primary" href="https://github.com/ryahconstantino/deejazz/releases/latest" rel="noopener" data-i18n="smartscreen.release">Open official release</a>
+            <button class="button" type="button" data-close-smartscreen data-i18n="smartscreen.close">Close</button>
+          </div>
+        </div>
+      </dialog>
 
       <section id="experiencia" class="experience-section">
         <div class="section-shell experience-layout">

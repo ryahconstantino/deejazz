@@ -19,6 +19,9 @@ const linuxCommandBox = document.querySelector('[data-linux-command-box]')
 const linuxCommandElement = document.querySelector('[data-linux-command]')
 const copyLinuxButton = document.querySelector('[data-copy-linux]')
 const copyFeedback = document.querySelector('#copy-feedback')
+const smartScreenDialog = document.querySelector('#smartscreen-dialog')
+const smartScreenTriggers = document.querySelectorAll('[data-open-smartscreen]')
+const smartScreenCloseButton = document.querySelector('[data-close-smartscreen]')
 let currentLocale = DEFAULT_LOCALE
 let copyFeedbackTimer
 
@@ -160,6 +163,26 @@ copyLinuxButton?.addEventListener('click', async () => {
     copyFeedback?.classList.remove('is-error')
     if (copyFeedback) copyFeedback.textContent = ''
   }, 2400)
+})
+
+smartScreenTriggers.forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    if (!smartScreenDialog?.showModal) return
+    smartScreenDialog.showModal()
+    document.body.classList.add('modal-open')
+  })
+})
+
+smartScreenCloseButton?.addEventListener('click', () => {
+  smartScreenDialog?.close()
+})
+
+smartScreenDialog?.addEventListener('click', (event) => {
+  if (event.target === smartScreenDialog) smartScreenDialog.close()
+})
+
+smartScreenDialog?.addEventListener('close', () => {
+  document.body.classList.remove('modal-open')
 })
 
 languageSelector?.addEventListener('click', () => {
