@@ -716,13 +716,17 @@ button:focus-visible {
 }
 
 .smartscreen-dialog {
-  width: min(42rem, calc(100% - 2rem));
+  position: fixed;
+  inset: 0;
+  width: min(40rem, calc(100% - 2rem));
+  height: min(36rem, calc(100dvh - 2rem));
   max-width: none;
-  max-height: calc(100dvh - 2rem);
-  overflow: auto;
+  max-height: none;
+  overflow: hidden;
   border: 1px solid var(--line-strong);
   border-radius: 1.5rem;
   background: var(--surface-raised);
+  margin: auto;
   padding: 0;
   color: var(--text);
   box-shadow: 0 2rem 7rem rgba(16, 10, 14, 0.38);
@@ -735,11 +739,15 @@ button:focus-visible {
 }
 
 .smartscreen-dialog-shell {
-  padding: clamp(1.4rem, 5vw, 2.5rem);
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto minmax(0, 1fr) auto;
 }
 
 .smartscreen-heading {
   max-width: 36rem;
+  padding: clamp(1.25rem, 4vw, 1.8rem);
+  border-bottom: 1px solid var(--line);
 }
 
 .smartscreen-label {
@@ -753,7 +761,7 @@ button:focus-visible {
 
 .smartscreen-heading h2 {
   margin: 0.7rem 0 0;
-  font-size: clamp(1.8rem, 5vw, 2.7rem);
+  font-size: clamp(1.7rem, 5vw, 2.2rem);
   font-weight: 720;
   letter-spacing: -0.045em;
   line-height: 1.05;
@@ -768,13 +776,27 @@ button:focus-visible {
 }
 
 .smartscreen-heading p {
-  margin: 1rem 0 0;
+  margin: 0.75rem 0 0;
+  line-height: 1.5;
+}
+
+.smartscreen-body {
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 clamp(1.25rem, 4vw, 1.8rem) 1rem;
+  scrollbar-gutter: stable;
+}
+
+.smartscreen-body:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -4px;
 }
 
 .smartscreen-steps {
   display: grid;
   gap: 0;
-  margin: 1.8rem 0 0;
+  margin: 0;
   padding: 0;
   border-top: 1px solid var(--line-strong);
   list-style: none;
@@ -835,14 +857,17 @@ button:focus-visible {
 }
 
 .smartscreen-actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 0.75rem;
-  margin-top: 1.6rem;
+  margin: 0;
+  padding: 1rem clamp(1.25rem, 4vw, 1.8rem);
+  border-top: 1px solid var(--line);
+  background: var(--surface-raised);
 }
 
 .smartscreen-actions .button {
-  min-width: 9rem;
+  min-width: 0;
 }
 
 .platform-action {
@@ -1376,11 +1401,26 @@ button:focus-visible {
   }
 
   .smartscreen-actions {
-    display: grid;
+    gap: 0.55rem;
+    padding: 0.8rem 1rem;
   }
 
   .smartscreen-actions .button {
     width: 100%;
+  }
+
+  .smartscreen-dialog {
+    width: calc(100% - 1rem);
+    height: calc(100dvh - 1rem);
+    border-radius: 1.1rem;
+  }
+
+  .smartscreen-heading {
+    padding: 1rem;
+  }
+
+  .smartscreen-body {
+    padding: 0 1rem 0.8rem;
   }
 }
 

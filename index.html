@@ -111,8 +111,8 @@
         "inLanguage": ["en-US", "pt-BR"]
       }
     </script>
-    <script type="module" crossorigin src="./assets/index-C7L9TGrM.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BELW3WMO.css">
+    <script type="module" crossorigin src="./assets/index-9TvQKpdI.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Cs_BbQzB.css">
   </head>
   <body>
     <svg class="svg-definitions" aria-hidden="true">
@@ -333,42 +333,50 @@
             </p>
           </div>
 
-          <ol class="smartscreen-steps">
-            <li>
-              <div>
-                <strong data-i18n="smartscreen.verify.title">Verify the download</strong>
-                <p data-i18n="smartscreen.verify.copy">Continue only with deejazz-windows-x64.exe downloaded from the official DeeJazz GitHub release.</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <strong data-i18n="smartscreen.info.title">Open More info</strong>
-                <p data-i18n="smartscreen.info.copy">In the blue SmartScreen window, select More info to reveal the app details and the additional action.</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <strong data-i18n="smartscreen.run.title">Choose Run anyway</strong>
-                <p data-i18n="smartscreen.run.copy">Confirm the filename, choose Run anyway, and then complete the DeeJazz installer.</p>
-              </div>
-            </li>
-          </ol>
+          <div
+            class="smartscreen-body"
+            tabindex="0"
+            role="region"
+            aria-label="SmartScreen installation steps"
+            data-i18n-aria-label="smartscreen.stepsLabel"
+          >
+            <ol class="smartscreen-steps">
+              <li>
+                <div>
+                  <strong data-i18n="smartscreen.verify.title">Verify the download</strong>
+                  <p data-i18n="smartscreen.verify.copy">Continue only with deejazz-windows-x64.exe downloaded from the official DeeJazz GitHub release.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong data-i18n="smartscreen.info.title">Open More info</strong>
+                  <p data-i18n="smartscreen.info.copy">In the blue SmartScreen window, select More info to reveal the app details and the additional action.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong data-i18n="smartscreen.run.title">Choose Run anyway</strong>
+                  <p data-i18n="smartscreen.run.copy">Confirm the filename, choose Run anyway, and then complete the DeeJazz installer.</p>
+                </div>
+              </li>
+            </ol>
 
-          <p class="smartscreen-safety">
-            <strong data-i18n="smartscreen.safety.title">Keep SmartScreen enabled.</strong>
-            <span data-i18n="smartscreen.safety.copy">This procedure allows only this downloaded file and does not disable Windows protection.</span>
-          </p>
-          <a
-            class="smartscreen-source"
-            href="https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation"
-            target="_blank"
-            rel="noopener"
-            data-i18n="smartscreen.learn"
-          >How SmartScreen reputation works</a>
+            <p class="smartscreen-safety">
+              <strong data-i18n="smartscreen.safety.title">Keep SmartScreen enabled.</strong>
+              <span data-i18n="smartscreen.safety.copy">This procedure allows only this downloaded file and does not disable Windows protection.</span>
+            </p>
+            <a
+              class="smartscreen-source"
+              href="https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation"
+              target="_blank"
+              rel="noopener"
+              data-i18n="smartscreen.learn"
+            >How SmartScreen reputation works</a>
+          </div>
 
           <div class="smartscreen-actions">
             <a class="button button-primary" href="https://github.com/ryahconstantino/deejazz/releases/latest" rel="noopener" data-i18n="smartscreen.release">Open official release</a>
-            <button class="button" type="button" data-close-smartscreen data-i18n="smartscreen.close">Close</button>
+            <button class="button" type="button" data-close-smartscreen data-i18n="smartscreen.close" autofocus>Close</button>
           </div>
         </div>
       </dialog>
