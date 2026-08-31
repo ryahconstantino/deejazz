@@ -1023,12 +1023,18 @@ button:focus-visible {
 }
 
 .feature-focus {
-  background: var(--text);
-  color: var(--page);
+  background:
+    linear-gradient(90deg, rgba(10, 10, 13, 0.96) 0%, rgba(10, 10, 13, 0.78) 45%, rgba(10, 10, 13, 0.14) 100%),
+    url("/deejazz-focus-player-2d-v1.webp") center / cover;
+  color: #f5f4f6;
+}
+
+.feature-focus > div {
+  max-width: 17rem;
 }
 
 .feature-focus p {
-  color: color-mix(in srgb, var(--page) 70%, transparent);
+  color: rgba(245, 244, 246, 0.76);
 }
 
 .feature-protection {

@@ -9,6 +9,7 @@ const publishedEntries = [
   'deejazz-icon.png',
   'deejazz-logo.svg',
   'deejazz-blocker-panel.webp',
+  'deejazz-focus-player-2d-v1.webp',
   'deejazz-hero-2d-v3.webp',
   'deejazz-listening-object.webp',
   'deejazz-listening-object-v2.webp',
