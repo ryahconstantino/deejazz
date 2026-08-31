@@ -19,8 +19,53 @@
     <link rel="icon" href="/deejazz-icon.png" type="image/png" sizes="512x512" />
     <link rel="apple-touch-icon" href="/deejazz-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preload" as="image" href="/deejazz-wordmark-on-light.png" type="image/png" media="(prefers-color-scheme: light)" />
+    <link rel="preload" as="image" href="/deejazz-wordmark.png" type="image/png" media="(prefers-color-scheme: dark)" />
     <link rel="preload" as="image" href="/deejazz-listening-object-v2.webp" type="image/webp" fetchpriority="high" />
     <link rel="image_src" href="https://ryahconstantino.github.io/deejazz/og-deejazz-desktop.png" />
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #f3f3f5;
+      }
+
+      .brand,
+      .brand picture {
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .brand-wordmark {
+        display: block;
+        width: 7.7rem;
+        height: auto;
+      }
+
+      .brand-wordmark-small {
+        width: 6.9rem;
+      }
+
+      .download-logo {
+        display: block;
+        width: min(13rem, 60vw);
+        height: auto;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        html,
+        body {
+          background: #111114;
+        }
+      }
+
+      @media (max-width: 460px) {
+        .brand-wordmark {
+          width: 6.8rem;
+        }
+      }
+    </style>
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="DeeJazz" />
@@ -100,7 +145,15 @@
         <a href="#inicio" class="brand" aria-label="DeeJazz - home" data-i18n-aria-label="brand.home">
           <picture>
             <source media="(prefers-color-scheme: light)" srcset="/deejazz-wordmark-on-light.png" />
-            <img class="brand-wordmark" src="/deejazz-wordmark.png" alt="" aria-hidden="true" fetchpriority="high" />
+            <img
+              class="brand-wordmark"
+              src="/deejazz-wordmark.png"
+              width="123"
+              height="31"
+              alt=""
+              aria-hidden="true"
+              fetchpriority="high"
+            />
           </picture>
         </a>
 
@@ -345,7 +398,15 @@
         <div class="section-shell final-shell reveal">
           <picture>
             <source media="(prefers-color-scheme: light)" srcset="/deejazz-wordmark-on-light.png" />
-            <img class="download-logo" src="/deejazz-wordmark.png" alt="" aria-hidden="true" />
+            <img
+              class="download-logo"
+              src="/deejazz-wordmark.png"
+              width="208"
+              height="52"
+              loading="lazy"
+              alt=""
+              aria-hidden="true"
+            />
           </picture>
           <h2 class="display-title">
             <span data-i18n="final.title.main">Press play</span>
@@ -361,7 +422,15 @@
       <div class="footer-inner">
         <picture>
           <source media="(prefers-color-scheme: light)" srcset="/deejazz-wordmark-on-light.png" />
-          <img class="brand-wordmark brand-wordmark-small" src="/deejazz-wordmark.png" alt="" aria-hidden="true" />
+          <img
+            class="brand-wordmark brand-wordmark-small"
+            src="/deejazz-wordmark.png"
+            width="110"
+            height="28"
+            loading="lazy"
+            alt=""
+            aria-hidden="true"
+          />
         </picture>
         <p class="footer-made-by">
           <span data-i18n="footer.builtBy">Built by</span>
