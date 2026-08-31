@@ -133,10 +133,10 @@ DESKTOP_FILE="$APPLICATIONS_DIR/deejazz.desktop"
   printf '%s\n' 'Icon=deejazz'
   printf '%s\n' 'Terminal=false'
   printf '%s\n' 'Categories=AudioVideo;Audio;Player;'
-  printf '%s\n' 'Keywords=music;audio;player;streaming;deezer;'
+  printf '%s\n' 'Keywords=music;audio;player;streaming;deejazz;'
   printf '%s\n' 'StartupNotify=true'
   printf '%s\n' 'StartupWMClass=DeeJazz'
-  printf '%s\n' 'MimeType=x-scheme-handler/deezer;'
+  printf '%s\n' 'MimeType=x-scheme-handler/deejazz;'
   printf '%s\n' 'SingleMainWindow=true'
   printf '%s\n' 'X-GNOME-UsesNotifications=true'
 } > "$DESKTOP_FILE"
@@ -151,7 +151,7 @@ if command -v gtk-update-icon-cache >/dev/null 2>&1; then
 fi
 
 if command -v xdg-mime >/dev/null 2>&1; then
-  xdg-mime default deejazz.desktop x-scheme-handler/deezer >/dev/null 2>&1 || true
+  xdg-mime default deejazz.desktop x-scheme-handler/deejazz >/dev/null 2>&1 || true
 fi
 
 if command -v ldd >/dev/null 2>&1; then

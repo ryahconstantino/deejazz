@@ -37,6 +37,22 @@ The Linux package consumes this PNG directly. The Windows executable and install
 npm run icons:win
 ```
 
+## Application integration
+
+The desktop integration is applied to `app.asar` with:
+
+```bash
+npm run app:integrate
+```
+
+This step keeps the DeeJazz identity, version, About link, rasterized wordmark, uBO Lite menu, and system-tray labels synchronized. The uBO Lite interface reads all 71 locales bundled in its `_locales` resources and automatically maps the active DeeJazz language to the matching locale.
+
+The Windows runtime identity can be refreshed independently after replacing the runtime executable:
+
+```bash
+npm run runtime:brand
+```
+
 ## Windows
 
 ```bash
@@ -64,7 +80,7 @@ Microsoft explains how file and publisher reputation affect this warning in [Sma
 
 ## Linux
 
-The Linux build incorporates improvements based on [aunetx/deezer-linux](https://github.com/aunetx/deezer-linux), including MPRIS integration, media controls, system tray support, Wayland/IME compatibility, a responsive layout, and accessibility options. This layer is applied only to the Linux package and preserves the uBO Lite integration.
+The Linux build includes MPRIS integration, media controls, system tray support, Wayland/IME compatibility, a responsive layout, and accessibility options. This layer is applied only to the Linux package and preserves the uBO Lite integration.
 
 ### Build the packages
 
@@ -85,7 +101,7 @@ curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scri
 
 The application is installed in `~/.local/share/deejazz` without `sudo`.
 
-The installer detects Linux x86_64 or ARM64 and registers the application icon, the `deezer://` protocol, and the DeeJazz application-menu entry.
+The installer detects Linux x86_64 or ARM64 and registers the application icon, the `deejazz://` protocol, and the DeeJazz application-menu entry.
 
 ### Runtime options
 

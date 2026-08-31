@@ -4,13 +4,8 @@ const fs = require("fs");
 const path = require("path");
 const { spawnSync } = require("child_process");
 const { createPackage, extractAll } = require("@electron/asar");
-const {
-  Data,
-  NtExecutable,
-  NtExecutableResource,
-  Resource,
-} = require("resedit");
 const { version } = require("./build-environment");
+const { updateExecutableIdentity } = require("./windows-executable-identity");
 
 const projectRoot = path.resolve(__dirname, "..");
 const sourceDir = path.join(projectRoot, "src");
@@ -65,47 +60,6 @@ async function updateStagedApplicationVersion() {
   fs.rmSync(stagedAsarSource, { recursive: true, force: true });
 }
 
-async function updateExecutableIdentity(executablePath) {
-  const executableBuffer = await fs.promises.readFile(executablePath);
-  // Replacing Windows resources invalidates the upstream executable signature.
-  // ignoreCert intentionally drops that obsolete certificate from the staged copy.
-  const executable = NtExecutable.from(executableBuffer, { ignoreCert: true });
-  const resources = NtExecutableResource.from(executable);
-  const versionInfoList = Resource.VersionInfo.fromEntries(resources.entries);
-  const versionInfo = versionInfoList[0] || Resource.VersionInfo.createEmpty();
-  const languages = versionInfo.getAllLanguagesForStringValues();
-  const language = languages[0] || { lang: 0x0409, codepage: 1200 };
-
-  versionInfo.setStringValues(language, {
-    CompanyName: "DeeJazz contributors",
-    FileDescription: "DeeJazz desktop application",
-    FileVersion: version,
-    InternalName: "DeeJazz",
-    OriginalFilename: "DeeJazz.exe",
-    ProductName: "DeeJazz",
-    ProductVersion: version,
-  });
-  versionInfo.setFileVersion(version);
-  versionInfo.setProductVersion(version);
-  versionInfo.setStringValues(language, {
-    FileVersion: version,
-    ProductVersion: version,
-  });
-  versionInfo.outputToResourceEntries(resources.entries);
-
-  const iconBuffer = await fs.promises.readFile(sourceIcon);
-  const iconFile = Data.IconFile.from(iconBuffer);
-  Resource.IconGroupEntry.replaceIconsForResource(
-    resources.entries,
-    1,
-    language.lang,
-    iconFile.icons.map((icon) => icon.data),
-  );
-
-  resources.outputResource(executable);
-  await fs.promises.writeFile(executablePath, Buffer.from(executable.generate()));
-}
-
 async function stageApplication() {
   fs.rmSync(workRoot, { recursive: true, force: true });
   fs.mkdirSync(stagedApp, { recursive: true });
@@ -114,11 +68,9 @@ async function stageApplication() {
     filter: shouldCopy,
   });
 
-  const oldExecutable = path.join(stagedApp, "Deezer.exe");
   const newExecutable = path.join(stagedApp, "DeeJazz.exe");
-  fs.renameSync(oldExecutable, newExecutable);
   await updateStagedApplicationVersion();
-  await updateExecutableIdentity(newExecutable);
+  await updateExecutableIdentity(newExecutable, sourceIcon, version);
 }
 
 function buildInstaller() {
