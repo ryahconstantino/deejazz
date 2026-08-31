@@ -15,6 +15,7 @@ const publishedEntries = [
   'deejazz-protection-2d-v3.webp',
   'deejazz-protection-wave.webp',
   'deejazz-protection-wave-v2.webp',
+  'deejazz-shortcuts-2d-v1.webp',
   'deejazz-wordmark.png',
   'deejazz-wordmark-on-light.png',
   'index.html',
