@@ -8,7 +8,7 @@ const linuxInstallUrl = 'https://raw.githubusercontent.com/ryahconstantino/deeja
 const languagePicker = document.querySelector('#language-picker')
 const languageSelector = document.querySelector('#language-selector')
 const languageMenu = document.querySelector('#language-menu')
-const languageCurrentCode = document.querySelector('#language-current-code')
+const languageCurrentFlag = document.querySelector('#language-current-flag')
 const languageCurrentLabel = document.querySelector('#language-current-label')
 const languageOptions = [...document.querySelectorAll('.language-option')]
 const menuButton = document.querySelector('#menu-button')
@@ -80,10 +80,10 @@ function setMobileMenu(open) {
 
 function updateLanguagePicker() {
   const metadata = currentLocale === 'pt-BR'
-    ? { code: 'PT', labelKey: 'language.portuguese' }
-    : { code: 'EN', labelKey: 'language.english' }
+    ? { flagId: '#flag-br', labelKey: 'language.portuguese' }
+    : { flagId: '#flag-us', labelKey: 'language.english' }
 
-  if (languageCurrentCode) languageCurrentCode.textContent = metadata.code
+  languageCurrentFlag?.querySelector('use')?.setAttribute('href', metadata.flagId)
   if (languageCurrentLabel) languageCurrentLabel.textContent = getMessage(currentLocale, metadata.labelKey)
   languageOptions.forEach((option) => {
     option.setAttribute('aria-selected', String(option.dataset.locale === currentLocale))

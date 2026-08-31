@@ -257,6 +257,13 @@ button:focus-visible {
   position: relative;
 }
 
+.svg-definitions {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 .language-trigger {
   display: flex;
   min-height: 2.7rem;
@@ -280,18 +287,16 @@ button:focus-visible {
   transform: translateY(1px);
 }
 
-.language-code,
-.language-option-code {
-  display: grid;
-  width: 2rem;
-  height: 1.7rem;
-  place-items: center;
-  border-radius: 0.5rem;
+.language-flag {
+  display: block;
+  width: 1.75rem;
+  height: 1.25rem;
+  flex: none;
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  border-radius: 0.3rem;
   background: var(--surface-strong);
-  color: var(--text);
-  font-size: 0.64rem;
-  font-weight: 820;
-  letter-spacing: 0.05em;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .language-current {
@@ -302,17 +307,20 @@ button:focus-visible {
 }
 
 .language-chevron {
-  width: 0.48rem;
-  height: 0.48rem;
-  border-right: 1.5px solid currentColor;
-  border-bottom: 1.5px solid currentColor;
+  width: 1rem;
+  height: 1rem;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
   color: var(--muted);
-  transform: translateY(-0.12rem) rotate(45deg);
   transition: transform 180ms ease;
 }
 
 .language-picker.is-open .language-chevron {
-  transform: translateY(0.12rem) rotate(225deg);
+  transform: rotate(180deg);
 }
 
 .language-menu {
@@ -337,7 +345,7 @@ button:focus-visible {
 
 .language-option {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   gap: 0.75rem;
   width: 100%;
@@ -376,6 +384,24 @@ button:focus-visible {
   margin-top: 0.1rem;
   color: var(--muted);
   font-size: 0.67rem;
+}
+
+.language-check {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: var(--accent);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+  opacity: 0;
+  transform: scale(0.75);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.language-option[aria-selected="true"] .language-check {
+  opacity: 1;
+  transform: scale(1);
 }
 
 @keyframes menu-in {
@@ -838,7 +864,7 @@ button:focus-visible {
   justify-content: flex-end;
   background:
     linear-gradient(180deg, rgba(10, 10, 12, 0.05) 10%, rgba(10, 10, 12, 0.86) 82%),
-    url("/deejazz-protection-wave.webp") center / cover;
+    url("/deejazz-protection-wave-v2.webp") center / cover;
   color: #f5f4f6;
 }
 

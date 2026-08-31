@@ -19,7 +19,7 @@
     <link rel="icon" href="/deejazz-icon.png" type="image/png" sizes="512x512" />
     <link rel="apple-touch-icon" href="/deejazz-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="preload" as="image" href="/deejazz-listening-object.webp" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/deejazz-listening-object-v2.webp" type="image/webp" fetchpriority="high" />
     <link rel="image_src" href="https://ryahconstantino.github.io/deejazz/og-deejazz-desktop.png" />
 
     <meta property="og:type" content="website" />
@@ -68,6 +68,31 @@
     </script>
   </head>
   <body>
+    <svg class="svg-definitions" aria-hidden="true">
+      <defs>
+        <symbol id="flag-us" viewBox="0 0 28 20">
+          <rect width="28" height="20" fill="#fff"></rect>
+          <path fill="#b22234" d="M0 0h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28V7.7H0zm0 3.08h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28v1.54H0zm0 3.06h28V20H0z"></path>
+          <rect width="12.2" height="10.78" fill="#3c3b6e"></rect>
+          <g fill="#fff">
+            <circle cx="1.3" cy="1.25" r=".38"></circle><circle cx="3.7" cy="1.25" r=".38"></circle><circle cx="6.1" cy="1.25" r=".38"></circle><circle cx="8.5" cy="1.25" r=".38"></circle><circle cx="10.9" cy="1.25" r=".38"></circle>
+            <circle cx="2.5" cy="3.25" r=".38"></circle><circle cx="4.9" cy="3.25" r=".38"></circle><circle cx="7.3" cy="3.25" r=".38"></circle><circle cx="9.7" cy="3.25" r=".38"></circle>
+            <circle cx="1.3" cy="5.25" r=".38"></circle><circle cx="3.7" cy="5.25" r=".38"></circle><circle cx="6.1" cy="5.25" r=".38"></circle><circle cx="8.5" cy="5.25" r=".38"></circle><circle cx="10.9" cy="5.25" r=".38"></circle>
+            <circle cx="2.5" cy="7.25" r=".38"></circle><circle cx="4.9" cy="7.25" r=".38"></circle><circle cx="7.3" cy="7.25" r=".38"></circle><circle cx="9.7" cy="7.25" r=".38"></circle>
+            <circle cx="1.3" cy="9.25" r=".38"></circle><circle cx="3.7" cy="9.25" r=".38"></circle><circle cx="6.1" cy="9.25" r=".38"></circle><circle cx="8.5" cy="9.25" r=".38"></circle><circle cx="10.9" cy="9.25" r=".38"></circle>
+          </g>
+        </symbol>
+        <symbol id="flag-br" viewBox="0 0 28 20">
+          <rect width="28" height="20" fill="#009b3a"></rect>
+          <path fill="#ffdf00" d="M14 2.15 25.2 10 14 17.85 2.8 10z"></path>
+          <circle cx="14" cy="10" r="4.6" fill="#002776"></circle>
+          <path d="M9.8 8.65c3.4-.7 6.75.08 8.8 2.12" fill="none" stroke="#fff" stroke-width="1.05"></path>
+          <g fill="#fff">
+            <circle cx="12" cy="8.3" r=".28"></circle><circle cx="15.2" cy="8.15" r=".28"></circle><circle cx="16.8" cy="10.2" r=".25"></circle><circle cx="13.1" cy="11.7" r=".25"></circle><circle cx="15.5" cy="12.7" r=".22"></circle>
+          </g>
+        </symbol>
+      </defs>
+    </svg>
     <a class="skip-link" href="#conteudo" data-i18n="skip.content">Skip to content</a>
 
     <header class="site-header">
@@ -98,25 +123,39 @@
               aria-controls="language-menu"
             >
               <span class="sr-only" data-i18n="language.label">Language</span>
-              <span id="language-current-code" class="language-code">EN</span>
+              <svg id="language-current-flag" class="language-flag" viewBox="0 0 28 20" aria-hidden="true">
+                <use href="#flag-us"></use>
+              </svg>
               <span id="language-current-label" class="language-current">English</span>
-              <span class="language-chevron" aria-hidden="true"></span>
+              <svg class="language-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+              </svg>
             </button>
 
             <div id="language-menu" class="language-menu" role="listbox" aria-label="Language" data-i18n-aria-label="language.label" hidden>
               <button class="language-option" type="button" role="option" data-locale="en-US" aria-selected="true">
-                <span class="language-option-code" aria-hidden="true">EN</span>
+                <svg class="language-flag" viewBox="0 0 28 20" aria-hidden="true">
+                  <use href="#flag-us"></use>
+                </svg>
                 <span class="language-option-copy">
                   <strong data-i18n="language.english">English</strong>
                   <small data-i18n="language.us">United States</small>
                 </span>
+                <svg class="language-check" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m4.5 12.75 6 6 9-13.5"></path>
+                </svg>
               </button>
               <button class="language-option" type="button" role="option" data-locale="pt-BR" aria-selected="false">
-                <span class="language-option-code" aria-hidden="true">PT</span>
+                <svg class="language-flag" viewBox="0 0 28 20" aria-hidden="true">
+                  <use href="#flag-br"></use>
+                </svg>
                 <span class="language-option-copy">
                   <strong data-i18n="language.portuguese">Português</strong>
                   <small data-i18n="language.brazil">Brasil</small>
                 </span>
+                <svg class="language-check" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m4.5 12.75 6 6 9-13.5"></path>
+                </svg>
               </button>
             </div>
           </div>
@@ -160,9 +199,9 @@
 
           <figure class="hero-media reveal">
             <img
-              src="/deejazz-listening-object.webp"
-              width="900"
-              height="1125"
+              src="/deejazz-listening-object-v2.webp"
+              width="1122"
+              height="1402"
               loading="eager"
               fetchpriority="high"
               alt="Sculptural magenta record and speaker representing focused listening"
@@ -277,9 +316,9 @@
         <div class="section-shell protection-layout">
           <figure class="protection-media reveal">
             <img
-              src="/deejazz-protection-wave.webp"
-              width="1280"
-              height="800"
+              src="/deejazz-protection-wave-v2.webp"
+              width="1585"
+              height="992"
               loading="lazy"
               alt="Magenta sound wave moving through dark acoustic panels"
               data-i18n-alt="media.protectionAlt"
