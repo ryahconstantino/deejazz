@@ -9,10 +9,11 @@ const sourceAsar = path.join(projectRoot, "src", "resources", "app.asar");
 const windowsIcon = path.join(projectRoot, "src", "resources", "win", "app.ico");
 const darkWordmark = path.join(projectRoot, "deejazz-wordmark.png");
 const lightWordmark = path.join(projectRoot, "deejazz-wordmark-on-light.png");
+const panelLocalesPath = path.join(projectRoot, "scripts", "ubol-panel-locales.json");
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v8";
+const integrationRevision = "deejazz-desktop-v10";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
 const legacyBrandLower = legacyBrand.toLowerCase();
@@ -42,7 +43,7 @@ function ubolLocales(appRoot) {
     .sort();
 }
 
-function localeRuntimeSource(locales) {
+function localeRuntimeSource(locales, panelMessages) {
   return `
 const DEEJAZZ_INTEGRATION_REVISION = ${JSON.stringify(integrationRevision)};
 const DEEJAZZ_WEBSITE_URL = ${JSON.stringify(projectUrl)};
@@ -82,7 +83,11 @@ function loadUbolMessages(locale) {
 }
 
 const UBOL_LOCALE = resolveUbolLocale();
-const UBOL_MESSAGES = Object.freeze(loadUbolMessages(UBOL_LOCALE));
+const DEEJAZZ_PANEL_MESSAGES = Object.freeze(${JSON.stringify(panelMessages)});
+const UBOL_MESSAGES = Object.freeze({
+  ...loadUbolMessages(UBOL_LOCALE),
+  ...(DEEJAZZ_PANEL_MESSAGES[UBOL_LOCALE] || DEEJAZZ_PANEL_MESSAGES.en),
+});
 const UBOL_EXTENSION_VERSION = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, "..", "extensions", "ubol", "manifest.json"), "utf8"),
 ).version;
@@ -181,7 +186,7 @@ function patchMain(main) {
   return result;
 }
 
-function patchWrapper(wrapper, locales) {
+function patchWrapper(wrapper, locales, panelMessages) {
   let result = wrapper;
   if (!result.includes('const fs = require("fs");')) {
     result = result.replace('const path = require("path");', 'const fs = require("fs");\nconst path = require("path");');
@@ -194,10 +199,10 @@ function patchWrapper(wrapper, locales) {
       const runtimeEndMarker = 'app.commandLine.appendSwitch("lang", UBOL_UI.chromiumLocale);';
       const runtimeEnd = result.indexOf(runtimeEndMarker, runtimeStart);
       if (runtimeEnd === -1) throw new Error("Could not locate the existing locale runtime boundary.");
-      result = `${result.slice(0, runtimeStart)}${localeRuntimeSource(locales).trimStart()}${result.slice(runtimeEnd + runtimeEndMarker.length)}`;
+      result = `${result.slice(0, runtimeStart)}${localeRuntimeSource(locales, panelMessages).trimStart()}${result.slice(runtimeEnd + runtimeEndMarker.length)}`;
     } else {
       if (!result.includes(marker)) throw new Error("Could not locate the DeeJazz wrapper identity marker.");
-      result = result.replace(marker, `${marker}\n${localeRuntimeSource(locales)}`);
+      result = result.replace(marker, `${marker}\n${localeRuntimeSource(locales, panelMessages)}`);
     }
   }
 
@@ -281,6 +286,52 @@ function patchPanel(panel) {
       '  document.querySelector("#open-original").textContent = text("popupTipDashboard", "Open the dashboard");\n  document.querySelector(".stats article:nth-child(1) span").textContent = text("showBlockedCountLabel", "Items filtered");\n  document.querySelector(".stats article:nth-child(3) span").textContent = text("customFiltersPageName", "Elements hidden");\n  document.querySelector(".details .detail-row:nth-child(3) span").textContent = text("developOptionDynamicRuleset", "Network rules");\n  document.querySelector(".details .detail-row:nth-child(4) span").textContent = text("aboutFilterLists", "Active lists");',
     );
   }
+  if (!result.includes('text("deejazzHistoryTitle"')) {
+    result = result.replace(
+      `  document.querySelector("#open-original").textContent = text("popupTipDashboard", "Open the dashboard");
+  document.querySelector(".stats article:nth-child(1) span").textContent = text("showBlockedCountLabel", "Items filtered");
+  document.querySelector(".stats article:nth-child(3) span").textContent = text("customFiltersPageName", "Elements hidden");
+  document.querySelector(".details .detail-row:nth-child(3) span").textContent = text("developOptionDynamicRuleset", "Network rules");
+  document.querySelector(".details .detail-row:nth-child(4) span").textContent = text("aboutFilterLists", "Active lists");`,
+      `  document.querySelector("#open-original").textContent = text("popupTipDashboard", "Open the dashboard");
+  document.querySelector(".stats").setAttribute("aria-label", text("deejazzStatistics", "Persistent statistics"));
+  document.querySelector(".stats article:nth-child(1) span").textContent = text("deejazzItemsFiltered", text("showBlockedCountLabel", "Items filtered"));
+  document.querySelector(".stats article:nth-child(2) span").textContent = text("deejazzNetworkRequests", "Network requests");
+  document.querySelector(".stats article:nth-child(3) span").textContent = text("deejazzElementsHidden", text("customFiltersPageName", "Elements hidden"));
+  document.querySelector(".details .detail-row:nth-child(1) span").textContent = text("deejazzBlocked", text("strictblockTitle", "Blocked"));
+  document.querySelector(".details .detail-row:nth-child(2) span").textContent = text("deejazzRedirected", "Redirected");
+  document.querySelector(".details .detail-row:nth-child(3) span").textContent = text("deejazzNetworkRules", text("developOptionDynamicRuleset", "Network rules"));
+  document.querySelector(".details .detail-row:nth-child(4) span").textContent = text("deejazzActiveLists", text("aboutFilterLists", "Active lists"));
+  document.querySelector("#history-title").textContent = text("deejazzHistoryTitle", "Recently filtered");
+  document.querySelector(".history-heading span").textContent = text("deejazzHistorySaved", "Saved on this device");`,
+    );
+  }
+  if (!result.includes("function localizedHistoryType(value)")) {
+    result = result.replace(
+      "const formatNumber = (value) => new Intl.NumberFormat(currentLocale).format(Number(value) || 0);",
+      `const formatNumber = (value) => new Intl.NumberFormat(currentLocale).format(Number(value) || 0);
+
+function localizedHistoryType(value) {
+  const normalized = String(value || "").trim().toLocaleLowerCase();
+  if (["blocked", "bloqueado"].includes(normalized)) {
+    return text("deejazzHistoryBlocked", text("strictblockTitle", "Blocked"));
+  }
+  if (["redirected", "neutralizado", "redirecionado"].includes(normalized)) {
+    return text("deejazzHistoryRedirected", "Redirected");
+  }
+  if (["hidden", "elemento ocultado"].includes(normalized)) {
+    return text("deejazzHistoryHidden", text("customFiltersPageName", "Element hidden"));
+  }
+  return value;
+}
+
+function localizedHistoryRule(value) {
+  return ["network-rule", "regra de rede"].includes(String(value || "").trim().toLocaleLowerCase())
+    ? text("deejazzHistoryNetworkRule", text("developOptionDynamicRuleset", "Network rule"))
+    : value;
+}`,
+    );
+  }
   result = result.replace(
     'elements.description.textContent = state.enabled\n    ? "Ativa. Anúncios e rastreadores compatíveis são filtrados antes de chegar ao player."\n    : "Desativada. As requisições estão passando sem a filtragem do uBO Lite.";',
     'elements.description.textContent = state.enabled\n    ? `${text("filteringMode2Name", "Optimal")}. ${text("optimalFilteringModeDescription", "Network and extended filtering are active.")}`\n    : `${text("filteringMode0Name", "No filtering")}. ${text("noFilteringModeDescription", "Requests are not filtered.")}`;',
@@ -293,8 +344,18 @@ function patchPanel(panel) {
     'window.deejazzUbol.getState().then(render);',
     'Promise.all([window.deejazzUbol.getUi(), window.deejazzUbol.getState()]).then(([ui, state]) => {\n  applyLocale(ui);\n  render(state);\n});',
   );
-  result = result.replace('empty.textContent = "Nenhum item filtrado ainda.";', 'empty.textContent = "No items have been filtered yet.";');
+  result = result.replace('empty.textContent = "Nenhum item filtrado ainda.";', 'empty.textContent = text("deejazzHistoryEmpty", "No items have been filtered yet.");');
+  result = result.replace('empty.textContent = "No items have been filtered yet.";', 'empty.textContent = text("deejazzHistoryEmpty", "No items have been filtered yet.");');
+  result = result.replace("type.textContent = entry.type;", "type.textContent = localizedHistoryType(entry.type);");
+  result = result.replace("rule.textContent = entry.rule;", "rule.textContent = localizedHistoryRule(entry.rule);");
   return result;
+}
+
+function patchLoader(loader) {
+  return loader
+    .replace('type: action === "redirect" ? "neutralizado" : "bloqueado",', 'type: action === "redirect" ? "redirected" : "blocked",')
+    .replace('rule: rule ? `${rule.rulesetId}/${rule.id}` : "regra de rede",', 'rule: rule ? `${rule.rulesetId}/${rule.id}` : "network-rule",')
+    .replace('type: "elemento ocultado",', 'type: "hidden",');
 }
 
 function patchPanelHtml(panelHtml) {
@@ -352,7 +413,7 @@ function copyBranding(appRoot) {
 }
 
 async function main() {
-  for (const required of [sourceAsar, windowsIcon, darkWordmark, lightWordmark]) {
+  for (const required of [sourceAsar, windowsIcon, darkWordmark, lightWordmark, panelLocalesPath]) {
     if (!fs.existsSync(required)) throw new Error(`Required integration asset is missing: ${required}`);
   }
 
@@ -378,6 +439,12 @@ async function main() {
     extractAll(sourceAsar, extractedApp);
     const locales = ubolLocales(extractedApp);
     if (locales.length < 70) throw new Error(`Expected the complete uBO Lite locale set; found only ${locales.length}.`);
+    const panelLocaleCatalog = JSON.parse(fs.readFileSync(panelLocalesPath, "utf8"));
+    const panelMessages = panelLocaleCatalog.locales || {};
+    const missingPanelLocales = locales.filter((locale) => !panelMessages[locale]);
+    if (missingPanelLocales.length > 0) {
+      throw new Error(`Missing DeeJazz panel translations for: ${missingPanelLocales.join(", ")}.`);
+    }
 
     const packagePath = path.join(extractedApp, "package.json");
     const metadata = JSON.parse(fs.readFileSync(packagePath, "utf8"));
@@ -391,7 +458,8 @@ async function main() {
     fs.writeFileSync(packagePath, `${JSON.stringify(metadata, null, 2)}\n`);
 
     updateFile(path.join(extractedApp, "build", "main.js"), patchMain);
-    updateFile(path.join(extractedApp, "build", "main-with-ubol.js"), (source) => patchWrapper(source, locales));
+    updateFile(path.join(extractedApp, "build", "main-with-ubol.js"), (source) => patchWrapper(source, locales, panelMessages));
+    updateFile(path.join(extractedApp, "build", "ubol-loader.js"), patchLoader);
     updateFile(path.join(extractedApp, "build", "ubol-panel-preload.js"), patchPanelPreload);
     updateFile(path.join(extractedApp, "build", "ubol-panel.js"), patchPanel);
     updateFile(path.join(extractedApp, "build", "ubol-panel.html"), patchPanelHtml);
