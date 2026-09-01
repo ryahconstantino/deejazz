@@ -16,7 +16,7 @@ npm install
 The release version is defined in `.env.build`:
 
 ```dotenv
-DEEJAZZ_VERSION=1.1.0
+DEEJAZZ_VERSION=1.1.1
 ```
 
 Edit this value for future releases. Every distribution command synchronizes it with `package.json` and `package-lock.json`, and applies it to the packaged application metadata. You can also synchronize it manually:

@@ -40,7 +40,7 @@ const fileEnvironment = parseEnvironmentFile(environmentPath);
 const version = String(process.env.DEEJAZZ_VERSION || fileEnvironment.DEEJAZZ_VERSION || "").trim();
 
 if (!/^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$/.test(version)) {
-  throw new Error(`DEEJAZZ_VERSION must use semantic versioning (for example, 1.1.0); received: ${version || "empty"}`);
+  throw new Error(`DEEJAZZ_VERSION must use semantic versioning (for example, 1.1.1); received: ${version || "empty"}`);
 }
 
 module.exports = Object.freeze({
