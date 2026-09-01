@@ -61,6 +61,10 @@ npm run dist:win
 
 The NSIS installer is generated at `dist/deejazz-windows-x64.exe`. The filename does not include a version number, keeping the latest-release download URL stable.
 
+The Windows release is x64-only. Its build downloads the official Electron `win32-x64` runtime and rejects the package if the installed `DeeJazz.exe` is not a PE32+ AMD64 executable. 32-bit Windows is not supported.
+
+The outer `.exe` may still be reported as PE32 because electron-builder uses the standard NSIS bootstrap executable. That bootstrap only extracts and launches the package; the bundled application payload is `app-64.7z`, and the installed `DeeJazz.exe` is PE32+ AMD64.
+
 The source runtime carries its upstream publisher signature. Replacing its name, version, and icon invalidates that signature, so the Windows build removes it from the staged executable. Production releases should be signed with a DeeJazz code-signing certificate through the standard electron-builder signing environment.
 
 ### Microsoft Defender SmartScreen

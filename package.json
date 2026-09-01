@@ -32,7 +32,7 @@
         {
           "target": "nsis",
           "arch": [
-            "ia32"
+            "x64"
           ]
         }
       ]
@@ -51,8 +51,10 @@
   },
   "devDependencies": {
     "@electron/asar": "3.4.1",
+    "@electron/get": "^3.1.0",
     "@jellybrick/mpris-service": "2.1.5",
     "electron-builder": "26.15.3",
-    "resedit": "1.7.2"
+    "resedit": "1.7.2",
+    "unzipper": "^0.12.5"
   }
 }
