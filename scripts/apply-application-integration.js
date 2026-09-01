@@ -12,7 +12,7 @@ const lightWordmark = path.join(projectRoot, "deejazz-wordmark-on-light.png");
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v7";
+const integrationRevision = "deejazz-desktop-v8";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
 const legacyBrandLower = legacyBrand.toLowerCase();
@@ -83,6 +83,9 @@ function loadUbolMessages(locale) {
 
 const UBOL_LOCALE = resolveUbolLocale();
 const UBOL_MESSAGES = Object.freeze(loadUbolMessages(UBOL_LOCALE));
+const UBOL_EXTENSION_VERSION = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, "..", "extensions", "ubol", "manifest.json"), "utf8"),
+).version;
 const UBOL_UI = Object.freeze({
   chromiumLocale: UBOL_LOCALE.replace(/_/g, "-"),
   direction: ["ar", "fa", "he", "ur"].includes(UBOL_LOCALE.split("_")[0]) ? "rtl" : "ltr",
@@ -96,6 +99,68 @@ const DEEJAZZ_WORDMARK_LIGHT = wordmarkDataUrl("deejazz-wordmark-on-light.png");
 
 app.commandLine.appendSwitch("lang", UBOL_UI.chromiumLocale);
 `;
+}
+
+function menuRuntimeSource() {
+  return `function capitalizeMenuLabel(value) {
+  const label = String(value || "").trim();
+  return label.replace(/^./u, (character) => character.toLocaleUpperCase(UBOL_UI.chromiumLocale));
+}
+
+function dashboardMenuLabel() {
+  if (UBOL_LOCALE === "en" || UBOL_LOCALE === "en_GB") return "Open Dashboard";
+  return capitalizeMenuLabel(ubolText("popupTipDashboard", "Open Dashboard"));
+}
+
+function filteringModeMenuLabel() {
+  return capitalizeMenuLabel(ubolText("popupFilteringModeLabel", "Filtering mode"));
+}
+
+function ubolVersionMenuLabel(state = getUbolState()) {
+  return \`uBlock Origin Lite v\${state.extensionVersion || UBOL_EXTENSION_VERSION}\`;
+}
+
+function updateUbolMenu(state = getUbolState()) {
+  const currentMenu = Menu.getApplicationMenu();
+  if (!currentMenu) return;
+
+  const enabledItem = currentMenu.getMenuItemById(MENU_IDS.enabled);
+  if (enabledItem) enabledItem.checked = state.enabled;
+  const versionItem = currentMenu.getMenuItemById(MENU_IDS.version);
+  if (versionItem) versionItem.label = ubolVersionMenuLabel(state);
+}
+
+function injectUbolMenu(menu) {
+  if (!menu || menu.getMenuItemById(MENU_IDS.root)) return menu;
+
+  const state = getUbolState();
+  const submenu = Menu.buildFromTemplate([
+    {
+      label: dashboardMenuLabel(),
+      accelerator: "CmdOrCtrl+Shift+B",
+      click: openBlockerWindow,
+    },
+    {
+      id: MENU_IDS.enabled,
+      label: filteringModeMenuLabel(),
+      type: "checkbox",
+      checked: state.enabled,
+      click: (item) => ubolController && ubolController.setEnabled(item.checked),
+    },
+    {
+      id: MENU_IDS.version,
+      label: ubolVersionMenuLabel(state),
+      enabled: false,
+    },
+  ]);
+  const menuItem = new MenuItem({
+    id: MENU_IDS.root,
+    label: "uBlock Origin Lite",
+    submenu,
+  });
+  menu.insert(Math.max(0, menu.items.length - 1), menuItem);
+  return menu;
+}`;
 }
 
 function patchMain(main) {
@@ -136,16 +201,23 @@ function patchWrapper(wrapper, locales) {
     }
   }
 
+  const menuIdsStart = result.indexOf("const MENU_IDS = Object.freeze({");
+  const menuIdsEnd = result.indexOf("});", menuIdsStart);
+  if (menuIdsStart === -1 || menuIdsEnd === -1) throw new Error("Could not locate the uBO menu identifiers.");
+  result = `${result.slice(0, menuIdsStart)}const MENU_IDS = Object.freeze({
+  root: "deejazz-ubol",
+  enabled: "deejazz-ubol-enabled",
+  version: "deejazz-ubol-version",
+});${result.slice(menuIdsEnd + 3)}`;
+
   result = result.split(`An official ${legacyBrand} update would replace this customized app.asar.`).join("A vendor update would replace this customized app.asar.");
   result = result.split(`${legacyBrand}'s bundled entry point`).join("The bundled entry point");
   result = result.split(`${legacyBrand} registers its`).join("The bundled application registers its");
 
-  result = result.replace('label: "Abrir painel de proteção",', 'label: ubolText("popupTipDashboard", "Open the dashboard"),');
-  result = result.replace('label: "Proteção ativada",', 'label: ubolText("popupFilteringModeLabel", "Filtering mode"),');
-  result = result.replace('label: `Itens filtrados (salvos): ${state.totalHandled}`,', 'label: `${ubolText("showBlockedCountLabel", "Blocked requests")}: ${state.totalHandled}`,');
-  result = result.replace('label: "Zerar histórico e contadores",', 'label: ubolText("resetToDefaultButton", "Reset counters"),');
-  result = result.replace('label: "Configurações originais do uBO Lite",', 'label: ubolText("settingsPageName", "Settings"),');
-  result = result.replace('statusItem.label = `Itens filtrados (salvos): ${state.totalHandled}`;', 'statusItem.label = `${ubolText("showBlockedCountLabel", "Blocked requests")}: ${state.totalHandled}`;');
+  const menuRuntimeStart = result.indexOf("function updateUbolMenu(");
+  const menuRuntimeEnd = result.indexOf("const originalSetApplicationMenu", menuRuntimeStart);
+  if (menuRuntimeStart === -1 || menuRuntimeEnd === -1) throw new Error("Could not locate the uBO menu implementation.");
+  result = `${result.slice(0, menuRuntimeStart)}${menuRuntimeSource()}\n\n${result.slice(menuRuntimeEnd)}`;
 
   if (!result.includes('ipcMain.handle("deejazz-ubol:get-ui"')) {
     result = result.replace(
