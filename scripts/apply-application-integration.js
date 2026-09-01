@@ -13,8 +13,9 @@ const panelLocalesPath = path.join(projectRoot, "scripts", "ubol-panel-locales.j
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v10";
-const projectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
+const integrationRevision = "deejazz-desktop-v12";
+const projectUrl = "https://ryahconstantino.github.io/deejazz/";
+const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
 const legacyBrandLower = legacyBrand.toLowerCase();
 
@@ -170,6 +171,7 @@ function injectUbolMenu(menu) {
 
 function patchMain(main) {
   let result = main;
+  result = result.split(previousProjectUrl).join(projectUrl);
   result = result.split(legacyBrand).join("DeeJazz");
   result = result.replace(/com\.deejazz\.deejazz-desktop/g, "com.deejazz.desktop");
   result = result.split(`.config/${legacyBrandLower}-desktop`).join(".config/deejazz");
@@ -177,12 +179,16 @@ function patchMain(main) {
   result = result.split(`menu_quit-${legacyBrandLower}_label`).join("menu_quit-deejazz_label");
   result = result.split(`menu_title_open${legacyBrandLower}_electron`).join("menu_title_opendeejazz_electron");
   result = result.split(`https://www.${legacyBrandLower}.com/features`).join(projectUrl);
-  result = replaceOnce(
-    result,
-    'getAboutOptions(){return{label:i18n_t("menu_about_label"),role:"about"}}',
-    `getAboutOptions(){return{label:i18n_t("menu_about_label"),click:()=>{external_electron_namespaceObject.shell.openExternal(${JSON.stringify(projectUrl)})}}}`,
-    "project About link",
-  );
+  const originalAbout = 'getAboutOptions(){return{label:i18n_t("menu_about_label"),role:"about"}}';
+  const deejazzAbout = `getAboutOptions(){return{label:i18n_t("menu_about_label"),click:()=>{external_electron_namespaceObject.shell.openExternal(${JSON.stringify(projectUrl)})}}}`;
+  if (result.includes(originalAbout)) {
+    result = replaceOnce(result, originalAbout, deejazzAbout, "project About link");
+  } else {
+    const aboutStart = result.indexOf('getAboutOptions(){return{label:i18n_t("menu_about_label"),click:()=>{external_electron_namespaceObject.shell.openExternal(');
+    const aboutEnd = result.indexOf("getCloseOptions(){", aboutStart);
+    if (aboutStart === -1 || aboutEnd === -1) throw new Error("Could not locate the existing DeeJazz About link.");
+    result = `${result.slice(0, aboutStart)}${deejazzAbout}${result.slice(aboutEnd)}`;
+  }
   return result;
 }
 
