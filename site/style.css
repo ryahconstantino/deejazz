@@ -1250,7 +1250,7 @@ button:focus-visible {
 
 @media (min-width: 768px) {
   .hero-shell {
-    grid-template-columns: minmax(0, 0.76fr) minmax(0, 1.24fr);
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
     gap: clamp(2rem, 4vw, 4.5rem);
   }
 
@@ -1287,6 +1287,25 @@ button:focus-visible {
   .legal-copy {
     justify-self: end;
     text-align: right;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-shell {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  }
+
+  .hero-content {
+    max-width: 42rem;
+  }
+
+  .hero-content .display-title > span {
+    white-space: nowrap;
+  }
+
+  .hero-screenshot {
+    max-width: 39rem;
+    justify-self: end;
   }
 }
 
