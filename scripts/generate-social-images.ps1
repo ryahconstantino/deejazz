@@ -7,7 +7,11 @@ Add-Type -AssemblyName System.Drawing
 
 $outputPath = [System.IO.Path]::GetFullPath($OutputDirectory)
 [System.IO.Directory]::CreateDirectory($outputPath) | Out-Null
-$logoSourcePath = [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot "..\public\deejazz-logo.svg"))
+$brandingPath = Join-Path $outputPath "assets\images\branding"
+$socialPath = Join-Path $outputPath "assets\images\social"
+[System.IO.Directory]::CreateDirectory($brandingPath) | Out-Null
+[System.IO.Directory]::CreateDirectory($socialPath) | Out-Null
+$logoSourcePath = [System.IO.Path]::GetFullPath((Join-Path $brandingPath "deejazz-logo.svg"))
 [xml]$logoDocument = Get-Content -LiteralPath $logoSourcePath -Raw
 $logoBars = $logoDocument.SelectNodes("//*[local-name()='g' and @id='deejazz-logo']/*[local-name()='rect']")
 if ($logoBars.Count -ne 7) {
@@ -181,9 +185,9 @@ function New-IconImage {
   $bitmap.Dispose()
 }
 
-New-IconImage 512 2.8 "deejazz-icon.png"
-New-WordmarkImage 1200 300 1.52 "deejazz-wordmark.png"
-New-WordmarkImage 1200 300 1.52 "deejazz-wordmark-on-light.png" "#17131D"
-New-SocialImage 1200 630 1 "og-deejazz-desktop.png"
-New-SocialImage 1200 1200 1.18 "og-deejazz-mobile.png"
+New-IconImage 512 2.8 "assets\images\branding\deejazz-icon.png"
+New-WordmarkImage 1200 300 1.52 "assets\images\branding\deejazz-wordmark.png"
+New-WordmarkImage 1200 300 1.52 "assets\images\branding\deejazz-wordmark-on-light.png" "#17131D"
+New-SocialImage 1200 630 1 "assets\images\social\og-deejazz-desktop.png"
+New-SocialImage 1200 1200 1.18 "assets\images\social\og-deejazz-mobile.png"
 Write-Output "DeeJazz raster assets generated in $outputPath"

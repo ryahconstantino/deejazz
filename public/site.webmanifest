@@ -9,7 +9,7 @@
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "./deejazz-icon.png",
+      "src": "./assets/images/branding/deejazz-icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }

@@ -1,45 +1,63 @@
-# DeeJazz Website
+# DeeJazz
 
-Static DeeJazz website built with Vite and Tailwind CSS and published through GitHub Pages.
+## Integrated with uBlock Origin Lite
 
-The primary language is `en-US`. The header language selector also provides `pt-BR` and stores the visitor's preference in the browser.
+DeeJazz is a focused desktop music experience for Windows and Linux. It combines a dedicated player, native desktop integration, keyboard shortcuts, and built-in uBlock Origin Lite protection in one clean application.
 
-## GitHub Pages
+![DeeJazz running on Windows](assets/images/product/deejazz-windows-home.png)
 
-The compiled website is published directly from the root of this branch. Select the following options in the repository settings:
+## Highlights
 
-- Source: `Deploy from a branch`
-- Branch: `pages`
-- Folder: `/ (root)`
+- Built-in uBlock Origin Lite protection
+- Native Windows and Linux packages
+- Media keys, tray controls, and desktop notifications
+- English and Portuguese interfaces
+- Automatic updates through GitHub Releases
 
-GitHub Actions are not required. The `index.html`, `assets/` directory, brand assets, social preview images, and `.nojekyll` file live at the root of the `pages` branch and are served directly.
+## Download
 
-## Visual identity
+Download the latest installers from [GitHub Releases](https://github.com/ryahconstantino/deejazz/releases/latest).
 
-The official seven-bar symbol is stored in `public/deejazz-logo.svg` as the source geometry. Visible branding uses the fully rasterized `public/deejazz-wordmark.png`, which combines the symbol and uppercase DEEJAZZ name in one image so rendering never depends on fonts installed on the visitor's device. Light sections use `public/deejazz-wordmark-on-light.png` for proper contrast. The favicon and application manifest use the symbol-only `public/deejazz-icon.png`. Open Graph images use the full rasterized composition.
-
-Run `scripts/generate-social-images.ps1` whenever the source symbol or wordmark composition changes.
-
-## Development
+Linux users can also install DeeJazz with:
 
 ```bash
-npm install
-npm run dev
+curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh | sh
 ```
 
-## Build
+## Build the desktop application
+
+Requirements: Git, Git LFS, Node.js 20 or newer, and npm.
 
 ```bash
+git clone https://github.com/ryahconstantino/deejazz.git
+cd deejazz
+git switch master
+git lfs pull
+npm install
+npm run dist:win
+```
+
+For Linux x64:
+
+```bash
+npm run dist:linux
+```
+
+For Linux ARM64:
+
+```bash
+npm run dist:linux:arm64
+```
+
+## Build the website
+
+The website source and its GitHub Pages output live on the `pages` branch.
+
+```bash
+git switch pages
+npm install
+npm run dev
 npm run build
 ```
 
-The command compiles the source code from `site/` into a temporary directory and updates the published files at the branch root. Commit both the source code and the generated build to the `pages` branch.
-
-## Downloads
-
-Downloads use fixed URLs from the main repository. No environment variables are required for GitHub Pages.
-
-- Installers: `https://github.com/ryahconstantino/deejazz/releases/latest`
-- Linux: `curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh | sh`
-
-GitHub Pages serves the precompiled content directly from the root of the `pages` branch.
+`npm run build` compiles the site and refreshes the static files served from the branch root.

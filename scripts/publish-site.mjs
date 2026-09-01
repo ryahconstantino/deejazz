@@ -6,6 +6,14 @@ const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const buildRoot = resolve(projectRoot, '.pages-build')
 const publishedEntries = [
   'assets',
+  'index.html',
+  'robots.txt',
+  'site.webmanifest',
+  'sitemap.xml',
+  '.nojekyll',
+]
+
+const legacyRootImages = [
   'deejazz-icon.png',
   'deejazz-logo.svg',
   'deejazz-blocker-panel.webp',
@@ -19,15 +27,10 @@ const publishedEntries = [
   'deejazz-shortcuts-2d-v1.webp',
   'deejazz-wordmark.png',
   'deejazz-wordmark-on-light.png',
-  'index.html',
   'og-deejazz-desktop.png',
   'og-deejazz-mobile.png',
   'platform-linux.svg',
   'platform-windows.svg',
-  'robots.txt',
-  'site.webmanifest',
-  'sitemap.xml',
-  '.nojekyll',
 ]
 
 for (const entry of publishedEntries) {
@@ -42,6 +45,10 @@ for (const entry of publishedEntries) {
   const destination = resolve(projectRoot, entry)
   rmSync(destination, { recursive: true, force: true })
   cpSync(source, destination, { recursive: true })
+}
+
+for (const entry of legacyRootImages) {
+  rmSync(resolve(projectRoot, entry), { force: true })
 }
 
 console.log('GitHub Pages atualizado no root da branch pages.')
