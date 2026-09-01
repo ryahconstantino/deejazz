@@ -7,8 +7,8 @@ const { projectRoot, version } = require("./build-environment");
 
 const sourceAsar = path.join(projectRoot, "src", "resources", "app.asar");
 const windowsIcon = path.join(projectRoot, "src", "resources", "win", "app.ico");
-const darkWordmark = path.join(projectRoot, "deejazz-wordmark.png");
-const lightWordmark = path.join(projectRoot, "deejazz-wordmark-on-light.png");
+const darkWordmark = path.join(projectRoot, "assets", "images", "branding", "deejazz-wordmark.png");
+const lightWordmark = path.join(projectRoot, "assets", "images", "branding", "deejazz-wordmark-on-light.png");
 const panelLocalesPath = path.join(projectRoot, "scripts", "ubol-panel-locales.json");
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
