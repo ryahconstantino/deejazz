@@ -13,7 +13,7 @@ Add-Type -AssemblyName System.Drawing
 $source = [System.Drawing.Image]::FromFile([System.IO.Path]::GetFullPath($SourcePath))
 $sizes = @(16, 20, 24, 32, 40, 48, 64, 128, 256)
 $frames = [System.Collections.Generic.List[object]]::new()
-$symbolScale = 1.22
+$symbolScale = 1.14
 $renderSource = [System.Drawing.Bitmap]::new($source.Width, $source.Height, [System.Drawing.Imaging.PixelFormat]::Format32bppArgb)
 
 $minX = $source.Width
@@ -50,8 +50,16 @@ $symbolTarget = [System.Drawing.Rectangle]::new(
   $symbolWidth,
   $symbolHeight
 )
-$clearArea = [System.Drawing.Rectangle]::Union($symbolSource, $symbolTarget)
 $backgroundColor = ([System.Drawing.Bitmap]$source).GetPixel([Math]::Floor($source.Width / 2), [Math]::Floor($source.Height * 0.1))
+$backgroundBounds = [System.Drawing.Rectangle]::new(1, 1, $source.Width - 2, $source.Height - 2)
+$backgroundRadius = [Math]::Round($source.Width * 0.065)
+$backgroundDiameter = $backgroundRadius * 2
+$backgroundPath = [System.Drawing.Drawing2D.GraphicsPath]::new()
+$backgroundPath.AddArc($backgroundBounds.X, $backgroundBounds.Y, $backgroundDiameter, $backgroundDiameter, 180, 90)
+$backgroundPath.AddArc($backgroundBounds.Right - $backgroundDiameter, $backgroundBounds.Y, $backgroundDiameter, $backgroundDiameter, 270, 90)
+$backgroundPath.AddArc($backgroundBounds.Right - $backgroundDiameter, $backgroundBounds.Bottom - $backgroundDiameter, $backgroundDiameter, $backgroundDiameter, 0, 90)
+$backgroundPath.AddArc($backgroundBounds.X, $backgroundBounds.Bottom - $backgroundDiameter, $backgroundDiameter, $backgroundDiameter, 90, 90)
+$backgroundPath.CloseFigure()
 $prepareGraphics = [System.Drawing.Graphics]::FromImage($renderSource)
 $backgroundBrush = [System.Drawing.SolidBrush]::new($backgroundColor)
 
@@ -60,11 +68,12 @@ try {
   $prepareGraphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
   $prepareGraphics.PixelOffsetMode = [System.Drawing.Drawing2D.PixelOffsetMode]::HighQuality
   $prepareGraphics.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::HighQuality
-  $prepareGraphics.DrawImage($source, [System.Drawing.Rectangle]::new(0, 0, $source.Width, $source.Height))
-  $prepareGraphics.FillRectangle($backgroundBrush, $clearArea)
+  $prepareGraphics.Clear([System.Drawing.Color]::Transparent)
+  $prepareGraphics.FillPath($backgroundBrush, $backgroundPath)
   $prepareGraphics.DrawImage($source, $symbolTarget, $symbolSource, [System.Drawing.GraphicsUnit]::Pixel)
 } finally {
   $backgroundBrush.Dispose()
+  $backgroundPath.Dispose()
   $prepareGraphics.Dispose()
 }
 
