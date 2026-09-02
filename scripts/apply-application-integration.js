@@ -13,7 +13,7 @@ const panelLocalesPath = path.join(projectRoot, "scripts", "ubol-panel-locales.j
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v12";
+const integrationRevision = "deejazz-desktop-v13";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/";
 const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
@@ -113,13 +113,21 @@ function menuRuntimeSource() {
   return label.replace(/^./u, (character) => character.toLocaleUpperCase(UBOL_UI.chromiumLocale));
 }
 
+function titleCaseLocalizedLabel(value) {
+  const label = String(value || "").trim();
+  return label.replace(/\\p{L}[\\p{L}\\p{M}]*/gu, (word) => {
+    const characters = Array.from(word);
+    return characters.shift().toLocaleUpperCase(UBOL_UI.chromiumLocale) + characters.join("");
+  });
+}
+
 function dashboardMenuLabel() {
   if (UBOL_LOCALE === "en" || UBOL_LOCALE === "en_GB") return "Open Dashboard";
   return capitalizeMenuLabel(ubolText("popupTipDashboard", "Open Dashboard"));
 }
 
 function filteringModeMenuLabel() {
-  return capitalizeMenuLabel(ubolText("popupFilteringModeLabel", "Filtering mode"));
+  return titleCaseLocalizedLabel(ubolText("popupFilteringModeLabel", "Filtering mode"));
 }
 
 function ubolVersionMenuLabel(state = getUbolState()) {
@@ -286,6 +294,28 @@ function patchPanel(panel) {
   if (!result.includes("let currentLocale = \"en\";")) {
     result = result.replace('const formatNumber =', 'let currentLocale = "en";\nlet localizedMessages = {};\n\nconst text = (key, fallback) => localizedMessages[key] || fallback;\n\nfunction applyLocale(ui) {\n  currentLocale = String(ui.locale || "en").replace(/_/g, "-");\n  localizedMessages = ui.messages || {};\n  document.documentElement.lang = currentLocale;\n  document.documentElement.dir = ui.direction || "ltr";\n  document.title = `DeeJazz — ${text("extName", "uBlock Origin Lite")}`;\n  document.querySelector("h1").textContent = text("extName", "uBlock Origin Lite");\n  document.querySelector("#protection-title").textContent = text("popupFilteringModeLabel", "Filtering mode");\n  document.querySelector("#enabled").setAttribute("aria-label", text("popupFilteringModeLabel", "Filtering mode"));\n  document.querySelector("#reset").textContent = text("resetToDefaultButton", "Reset counters");\n  document.querySelector("#open-original").textContent = text("popupTipDashboard", "Open the dashboard");\n}\n\nconst formatNumber =');
   }
+  if (!result.includes("function titleCaseLocalizedLabel(value)")) {
+    result = result.replace(
+      'const text = (key, fallback) => localizedMessages[key] || fallback;',
+      `const text = (key, fallback) => localizedMessages[key] || fallback;
+
+function titleCaseLocalizedLabel(value) {
+  const locale = currentLocale || "en";
+  return String(value || "").trim().replace(/\\p{L}[\\p{L}\\p{M}]*/gu, (word) => {
+    const characters = Array.from(word);
+    return characters.shift().toLocaleUpperCase(locale) + characters.join("");
+  });
+}`,
+    );
+  }
+  result = result.replace(
+    'document.querySelector("#protection-title").textContent = text("popupFilteringModeLabel", "Filtering mode");',
+    'document.querySelector("#protection-title").textContent = titleCaseLocalizedLabel(text("popupFilteringModeLabel", "Filtering mode"));',
+  );
+  result = result.replace(
+    'document.querySelector("#enabled").setAttribute("aria-label", text("popupFilteringModeLabel", "Filtering mode"));',
+    'document.querySelector("#enabled").setAttribute("aria-label", titleCaseLocalizedLabel(text("popupFilteringModeLabel", "Filtering mode")));',
+  );
   if (!result.includes('document.querySelector(".stats article:nth-child(1) span")')) {
     result = result.replace(
       '  document.querySelector("#open-original").textContent = text("popupTipDashboard", "Open the dashboard");',
