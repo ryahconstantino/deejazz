@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "private": true,
   "description": "DeeJazz desktop application with uBO Lite integration",
-  "license": "UNLICENSED",
-  "author": "DeeJazz contributors",
+  "license": "MIT",
+  "author": "Ryan Constantino",
   "main": "build/main-with-ubol.js",
   "scripts": {
     "version:sync": "node scripts/sync-version.js",

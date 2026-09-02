@@ -73,6 +73,10 @@ git push origin v1.1.2
 
 You can also run **Build and publish release** manually from the Actions tab and provide the version to publish. The workflow attaches the installers and Linux SHA-256 checksum files to the release.
 
+## License and attribution
+
+DeeJazz is released under the [MIT License](LICENSE). Redistributions and substantial portions must retain the copyright and license notices, crediting Ryan Constantino as the original author.
+
 ## Website
 
 The DeeJazz website is published from the root of the [`pages`](https://github.com/ryahconstantino/deejazz/tree/pages) branch.

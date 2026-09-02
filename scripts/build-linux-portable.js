@@ -67,8 +67,8 @@ function prepareApplication() {
   appPackage.productName = "DeeJazz";
   appPackage.version = version;
   appPackage.description = "DeeJazz desktop application with uBO Lite integration";
-  appPackage.author = "DeeJazz contributors";
-  appPackage.license = "UNLICENSED";
+  appPackage.author = "Ryan Constantino";
+  appPackage.license = "MIT";
   delete appPackage.homepage;
   delete appPackage.repository;
   appPackage.main = "build/main-linux.js";

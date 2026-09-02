@@ -20,7 +20,7 @@ async function updateExecutableIdentity(executablePath, iconPath, version) {
   const language = languages[0] || { lang: 0x0409, codepage: 1200 };
 
   versionInfo.setStringValues(language, {
-    CompanyName: "DeeJazz contributors",
+    CompanyName: "Ryan Constantino",
     FileDescription: "DeeJazz desktop application",
     FileVersion: version,
     InternalName: "DeeJazz",

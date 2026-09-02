@@ -615,7 +615,9 @@ async function main() {
   const packagedMain = extractFile(sourceAsar, "build/main-with-ubol.js").toString("utf8");
   const packagedMetadata = JSON.parse(extractFile(sourceAsar, "package.json").toString("utf8"));
   if (packagedMain.includes(`const DEEJAZZ_INTEGRATION_REVISION = ${JSON.stringify(integrationRevision)};`)
-    && packagedMetadata.version === version) {
+    && packagedMetadata.version === version
+    && packagedMetadata.author === "Ryan Constantino"
+    && packagedMetadata.license === "MIT") {
     console.log(`DeeJazz application integration ${integrationRevision} is already applied.`);
     return;
   }
@@ -641,7 +643,8 @@ async function main() {
     metadata.description = "DeeJazz desktop application with uBO Lite integration";
     metadata.homepage = projectUrl;
     metadata.repository = { type: "git", url: "https://github.com/ryahconstantino/deejazz.git" };
-    metadata.author = "DeeJazz contributors";
+    metadata.author = "Ryan Constantino";
+    metadata.license = "MIT";
     fs.writeFileSync(packagePath, `${JSON.stringify(metadata, null, 2)}\n`);
 
     updateFile(path.join(extractedApp, "build", "main.js"), patchMain);
