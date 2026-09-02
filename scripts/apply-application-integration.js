@@ -11,7 +11,7 @@ const panelLocalesPath = path.join(projectRoot, "scripts", "ubol-panel-locales.j
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v14";
+const integrationRevision = "deejazz-desktop-v18";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/";
 const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
@@ -266,10 +266,35 @@ function patchWrapper(wrapper, locales, panelMessages) {
       `const EARLY_COSMETIC_FILTER_CSS = \`\n  ${logoSelector} {\n    display: none !important;\n    visibility: hidden !important;\n    pointer-events: none !important;\n  }\n\`;\nconst COSMETIC_FILTER_CSS = \``,
     );
   }
+  const sidebarLayoutCss = `  button:has(> svg[data-testid="PanelLeftIcon"]) {
+    position: fixed !important;
+    top: 28px !important;
+    left: 16px !important;
+    z-index: 10 !important;
+  }
 
-  result = result.replace(
-    '  let scanTimer = null;\n  let cssInserted = false;',
-    `  let scanTimer = null;
+  *:has(> button > svg[data-testid="PanelLeftIcon"]) {
+    min-height: 0 !important;
+    height: 0 !important;
+    overflow: visible !important;
+  }
+`;
+  const existingSidebarLayout = /  button:has\(> svg\[data-testid="PanelLeftIcon"\]\) \{[\s\S]*?  \*:has\(> button > svg\[data-testid="PanelLeftIcon"\]\) \{[\s\S]*?  \}\n/;
+  if (existingSidebarLayout.test(result)) {
+    result = result.replace(existingSidebarLayout, sidebarLayoutCss);
+  } else {
+    result = result.replace(
+      'const COSMETIC_FILTER_CSS = `',
+      `const COSMETIC_FILTER_CSS = \`\n${sidebarLayoutCss}`,
+    );
+  }
+
+  const cosmeticStateStart = result.indexOf('  let scanTimer = null;');
+  const cosmeticScanStart = result.indexOf('  const scan = async () => {', cosmeticStateStart);
+  if (cosmeticStateStart === -1 || cosmeticScanStart === -1) {
+    throw new Error("Could not locate the cosmetic filtering state boundary.");
+  }
+  const cosmeticStateSource = `  let scanTimer = null;
   let cssInserted = false;
   let earlyCssKey = null;
   let earlyCssPromise = null;
@@ -291,8 +316,10 @@ function patchWrapper(wrapper, locales, panelMessages) {
         .finally(() => { earlyCssPromise = null; });
     }
     await earlyCssPromise;
-  };`,
-  );
+  };
+
+`;
+  result = `${result.slice(0, cosmeticStateStart)}${cosmeticStateSource}${result.slice(cosmeticScanStart)}`;
   result = result.replace(
     '    try {\n      if (!cssInserted) {',
     '    try {\n      await syncEarlyCosmeticCss();\n      if (!cssInserted) {',
