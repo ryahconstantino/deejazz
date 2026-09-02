@@ -15,6 +15,12 @@ DeeJazz is a desktop music player for Windows and Linux. It combines a focused l
 - Portable Linux builds for AMD64 and ARM64
 - Linux MPRIS media controls, tray integration, and Wayland support
 
+## Built-in protection
+
+The localized uBlock Origin Lite dashboard shows active filtering, persistent counters, enabled lists, and recently filtered requests.
+
+![DeeJazz uBlock Origin Lite dashboard in English](assets/images/deejazz-blocker-panel.png)
+
 ## Download
 
 Download the latest Windows and Linux packages from [GitHub Releases](https://github.com/ryahconstantino/deejazz/releases/latest).
