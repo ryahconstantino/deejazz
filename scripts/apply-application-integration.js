@@ -7,13 +7,11 @@ const { projectRoot, version } = require("./build-environment");
 
 const sourceAsar = path.join(projectRoot, "src", "resources", "app.asar");
 const windowsIcon = path.join(projectRoot, "src", "resources", "win", "app.ico");
-const darkWordmark = path.join(projectRoot, "assets", "images", "branding", "deejazz-wordmark.png");
-const lightWordmark = path.join(projectRoot, "assets", "images", "branding", "deejazz-wordmark-on-light.png");
 const panelLocalesPath = path.join(projectRoot, "scripts", "ubol-panel-locales.json");
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v13";
+const integrationRevision = "deejazz-desktop-v14";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/";
 const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
@@ -99,9 +97,6 @@ const UBOL_UI = Object.freeze({
   messages: UBOL_MESSAGES,
 });
 const ubolText = (key, fallback) => UBOL_MESSAGES[key] || fallback;
-const wordmarkDataUrl = (fileName) => \`data:image/png;base64,\${fs.readFileSync(path.join(__dirname, "branding", fileName)).toString("base64")}\`;
-const DEEJAZZ_WORDMARK_DARK = wordmarkDataUrl("deejazz-wordmark.png");
-const DEEJAZZ_WORDMARK_LIGHT = wordmarkDataUrl("deejazz-wordmark-on-light.png");
 
 app.commandLine.appendSwitch("lang", UBOL_UI.chromiumLocale);
 `;
@@ -233,7 +228,9 @@ function patchWrapper(wrapper, locales, panelMessages) {
   result = result.split(`${legacyBrand}'s bundled entry point`).join("The bundled entry point");
   result = result.split(`${legacyBrand} registers its`).join("The bundled application registers its");
 
-  const menuRuntimeStart = result.indexOf("function updateUbolMenu(");
+  const menuRuntimeStart = result.includes("function capitalizeMenuLabel(")
+    ? result.indexOf("function capitalizeMenuLabel(")
+    : result.indexOf("function updateUbolMenu(");
   const menuRuntimeEnd = result.indexOf("const originalSetApplicationMenu", menuRuntimeStart);
   if (menuRuntimeStart === -1 || menuRuntimeEnd === -1) throw new Error("Could not locate the uBO menu implementation.");
   result = `${result.slice(0, menuRuntimeStart)}${menuRuntimeSource()}\n\n${result.slice(menuRuntimeEnd)}`;
@@ -245,38 +242,74 @@ function patchWrapper(wrapper, locales, panelMessages) {
     );
   }
 
-  const scanMarker = '    document.documentElement.dataset.deejazzUbolEnabled = ${JSON.stringify(String(enabled))};\n';
-  const brandingSource = `    for (const brandContainer of document.querySelectorAll(".css-1kuh2nn")) {
-      const originalBrand = brandContainer.querySelector('svg[width="127"][height="16"]');
-      if (!originalBrand && brandContainer.dataset.deejazzBranding !== "true") continue;
-      const darkTheme = Boolean(
-        brandContainer.closest('[data-theme="dark"]') ||
-        document.documentElement.dataset.theme === "dark" ||
-        document.body?.dataset.theme === "dark" ||
-        matchMedia("(prefers-color-scheme: dark)").matches
-      );
-      let image = brandContainer.querySelector('img[data-deejazz-branding="true"]');
-      if (!image) {
-        image = document.createElement("img");
-        image.dataset.deejazzBranding = "true";
-        image.alt = "DeeJazz";
-        image.style.cssText = "display:block;width:127px;height:auto;max-height:32px;object-fit:contain";
-        brandContainer.replaceChildren(image);
-        brandContainer.dataset.deejazzBranding = "true";
+  for (const brandingMarker of [
+    '    const brandContainer = document.querySelector(".css-1kuh2nn");',
+    '    for (const brandContainer of document.querySelectorAll(".css-1kuh2nn")) {',
+  ]) {
+    const brandingStart = result.indexOf(brandingMarker);
+    if (brandingStart === -1) continue;
+    const brandingEnd = result.indexOf('    if (${enabled ? "false" : "true"}) return [];', brandingStart);
+    if (brandingEnd === -1) throw new Error("Could not locate the existing branding injection boundary.");
+    result = `${result.slice(0, brandingStart)}${result.slice(brandingEnd)}`;
+  }
+
+  const logoSelector = 'a.chakra-link.css-jp3a7j:has(> .css-1kuh2nn > svg[width="127"][height="16"])';
+  if (!result.includes(`selector: ${JSON.stringify(logoSelector)}`)) {
+    result = result.replace(
+      'const COSMETIC_FILTERS = Object.freeze([',
+      `const COSMETIC_FILTERS = Object.freeze([\n  {\n    label: "Header brand logo",\n    selector: ${JSON.stringify(logoSelector)},\n  },`,
+    );
+  }
+  if (!result.includes("const EARLY_COSMETIC_FILTER_CSS =")) {
+    result = result.replace(
+      'const COSMETIC_FILTER_CSS = `',
+      `const EARLY_COSMETIC_FILTER_CSS = \`\n  ${logoSelector} {\n    display: none !important;\n    visibility: hidden !important;\n    pointer-events: none !important;\n  }\n\`;\nconst COSMETIC_FILTER_CSS = \``,
+    );
+  }
+
+  result = result.replace(
+    '  let scanTimer = null;\n  let cssInserted = false;',
+    `  let scanTimer = null;
+  let cssInserted = false;
+  let earlyCssKey = null;
+  let earlyCssPromise = null;
+
+  const syncEarlyCosmeticCss = async () => {
+    if (contents.isDestroyed()) return;
+    const enabled = Boolean(ubolController && ubolController.enabled);
+    if (!enabled) {
+      if (earlyCssKey) {
+        await contents.removeInsertedCSS(earlyCssKey).catch(() => {});
+        earlyCssKey = null;
       }
-      image.src = darkTheme
-        ? \${JSON.stringify(DEEJAZZ_WORDMARK_DARK)}
-        : \${JSON.stringify(DEEJAZZ_WORDMARK_LIGHT)};
+      return;
     }
-`;
-  const existingBrandingStart = result.indexOf('    const brandContainer = document.querySelector(".css-1kuh2nn");');
-  if (existingBrandingStart !== -1) {
-    const existingBrandingEnd = result.indexOf('    if (${enabled ? "false" : "true"}) return [];', existingBrandingStart);
-    if (existingBrandingEnd === -1) throw new Error("Could not locate the existing branding injection boundary.");
-    result = `${result.slice(0, existingBrandingStart)}${brandingSource}${result.slice(existingBrandingEnd)}`;
-  } else if (!result.includes('for (const brandContainer of document.querySelectorAll(".css-1kuh2nn"))')) {
-    if (!result.includes(scanMarker)) throw new Error("Could not locate the cosmetic scan marker.");
-    result = result.replace(scanMarker, `${scanMarker}${brandingSource}`);
+    if (earlyCssKey) return;
+    if (!earlyCssPromise) {
+      earlyCssPromise = contents.insertCSS(EARLY_COSMETIC_FILTER_CSS)
+        .then((key) => { earlyCssKey = key; })
+        .finally(() => { earlyCssPromise = null; });
+    }
+    await earlyCssPromise;
+  };`,
+  );
+  result = result.replace(
+    '    try {\n      if (!cssInserted) {',
+    '    try {\n      await syncEarlyCosmeticCss();\n      if (!cssInserted) {',
+  );
+  if (!result.includes('contents.on("did-start-navigation",')) {
+    result = result.replace(
+      '  contents.on("dom-ready", () => {',
+      `  contents.on("did-start-navigation", (_event, _url, _isInPlace, isMainFrame) => {
+    if (!isMainFrame) return;
+    earlyCssKey = null;
+    earlyCssPromise = null;
+    syncEarlyCosmeticCss().catch((error) => {
+      if (!contents.isDestroyed()) log.debug(\`uBO Lite: early cosmetic CSS skipped. \${error.message}\`);
+    });
+  });
+  contents.on("dom-ready", () => {`,
+    );
   }
   return result;
 }
@@ -441,30 +474,15 @@ function patchTranslations(appRoot) {
   }
 }
 
-function copyBranding(appRoot) {
-  const target = path.join(appRoot, "build", "branding");
-  fs.mkdirSync(target, { recursive: true });
-  fs.copyFileSync(darkWordmark, path.join(target, "deejazz-wordmark.png"));
-  fs.copyFileSync(lightWordmark, path.join(target, "deejazz-wordmark-on-light.png"));
-}
-
 async function main() {
-  for (const required of [sourceAsar, windowsIcon, darkWordmark, lightWordmark, panelLocalesPath]) {
+  for (const required of [sourceAsar, windowsIcon, panelLocalesPath]) {
     if (!fs.existsSync(required)) throw new Error(`Required integration asset is missing: ${required}`);
   }
 
   const packagedMain = extractFile(sourceAsar, "build/main-with-ubol.js").toString("utf8");
   const packagedMetadata = JSON.parse(extractFile(sourceAsar, "package.json").toString("utf8"));
-  let packagedBrandingMatches = false;
-  try {
-    packagedBrandingMatches = extractFile(sourceAsar, "build/branding/deejazz-wordmark.png").equals(fs.readFileSync(darkWordmark))
-      && extractFile(sourceAsar, "build/branding/deejazz-wordmark-on-light.png").equals(fs.readFileSync(lightWordmark));
-  } catch {
-    packagedBrandingMatches = false;
-  }
   if (packagedMain.includes(`const DEEJAZZ_INTEGRATION_REVISION = ${JSON.stringify(integrationRevision)};`)
-    && packagedMetadata.version === version
-    && packagedBrandingMatches) {
+    && packagedMetadata.version === version) {
     console.log(`DeeJazz application integration ${integrationRevision} is already applied.`);
     return;
   }
@@ -500,7 +518,7 @@ async function main() {
     updateFile(path.join(extractedApp, "build", "ubol-panel.js"), patchPanel);
     updateFile(path.join(extractedApp, "build", "ubol-panel.html"), patchPanelHtml);
     patchTranslations(extractedApp);
-    copyBranding(extractedApp);
+    fs.rmSync(path.join(extractedApp, "build", "branding"), { recursive: true, force: true });
 
     await createPackage(extractedApp, rebuiltAsar);
     const verificationMain = extractFile(rebuiltAsar, "build/main-with-ubol.js").toString("utf8");
