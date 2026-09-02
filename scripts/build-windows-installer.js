@@ -112,7 +112,12 @@ async function stageApplication() {
 }
 
 function buildInstaller() {
-  const npx = process.platform === "win32" ? "npx.cmd" : "npx";
+  const electronBuilderCli = path.join(
+    projectRoot,
+    "node_modules",
+    "electron-builder",
+    "cli.js",
+  );
   const environment = {
     ...process.env,
     CSC_IDENTITY_AUTO_DISCOVERY: "false",
@@ -125,9 +130,8 @@ function buildInstaller() {
     environment.PATH = `${path.join(projectRoot, "scripts", "wsl-bin")}:${environment.PATH}`;
   }
 
-  const result = spawnSync(npx, [
-    "--yes",
-    "electron-builder@26.15.3",
+  const result = spawnSync(process.execPath, [
+    electronBuilderCli,
     "--win",
     "nsis:x64",
     "--prepackaged",
