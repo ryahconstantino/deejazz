@@ -11,25 +11,61 @@ const panelLocalesPath = path.join(projectRoot, "scripts", "ubol-panel-locales.j
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v19";
+const integrationRevision = "deejazz-desktop-v20";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/";
 const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
 const legacyBrandLower = legacyBrand.toLowerCase();
-const accountMenuCosmeticFilters = Object.freeze([
-  ["Subscription management", 'li.account-item[data-testid="subscription"]'],
-  ["Recommendation management", 'li.account-item[data-testid="recommendations"]'],
-  ["Gift card purchase", 'li.account-item[data-testid="getGiftCard"]'],
-  ["Gift code activation", 'li.account-item[data-testid="gift"]'],
-  ["Support link", 'li.account-item[data-testid="support"]'],
-  ["Community and feedback link", 'li.account-item[data-testid="community"]'],
-  ["Features link", 'li.account-item[data-testid="features"]'],
-  ["Plans link", 'li.account-item[data-testid="offers"]'],
-  ["Report content link", 'li.account-item[data-testid="report_content"]'],
-  ["Company link", 'li.account-item[data-testid="company"]'],
-  ["Jobs link", 'li.account-item[data-testid="jobs"]'],
-  ["Legal link", 'li.account-item[data-testid="legal"]'],
+const cosmeticFilterLabels = Object.freeze([
+  ["deejazzFilterHeaderLogo", "Header brand logo", "Logotipo do cabeçalho", ["Header brand logo"]],
+  ["deejazzFilterUpgradeBanner", "Upgrade banner", "Banner de upgrade", ["Banner de upgrade (conversionBanner)", "Upgrade banner"]],
+  ["deejazzFilterAdFreeOffer", "Ad-free settings offer", "Oferta sem anúncios nas configurações", ["Oferta Ad-free nas configurações", "Ad-free settings offer"]],
+  ["deejazzFilterHighFidelityOffer", "High Fidelity offer", "Oferta de alta fidelidade", ["Oferta High Fidelity / Try it", "High Fidelity offer"]],
+  ["deejazzFilterTopAdSlot", "Top advertising space", "Espaço publicitário superior", ["Espaço publicitário superior (adslot1)", "Top advertising space"]],
+  ["deejazzFilterCompanionBanner", "Companion advertising banner", "Banner publicitário complementar", ["Banner publicitário companion", "Companion advertising banner"]],
+  ["deejazzFilterPremiumOfferModal", "Premium offer modal", "Modal de oferta Premium", ["Modal de oferta Premium", "Premium offer modal"]],
+  ["deejazzFilterSubscription", "Subscription management", "Gerenciamento da assinatura", ["Subscription management"]],
+  ["deejazzFilterRecommendations", "Recommendation management", "Gerenciamento de recomendações", ["Recommendation management"]],
+  ["deejazzFilterGiftCard", "Gift card purchase", "Compra de cartão-presente", ["Gift card purchase"]],
+  ["deejazzFilterGiftCode", "Gift code activation", "Ativação de código-presente", ["Gift code activation"]],
+  ["deejazzFilterSupport", "Support link", "Link de suporte", ["Support link"]],
+  ["deejazzFilterCommunity", "Community and feedback link", "Link da comunidade e feedback", ["Community and feedback link"]],
+  ["deejazzFilterFeatures", "Features link", "Link de recursos", ["Features link"]],
+  ["deejazzFilterPlans", "Plans link", "Link de planos", ["Plans link"]],
+  ["deejazzFilterReportContent", "Report content link", "Link para denunciar conteúdo", ["Report content link"]],
+  ["deejazzFilterCompany", "Company link", "Link da empresa", ["Company link"]],
+  ["deejazzFilterJobs", "Jobs link", "Link de vagas", ["Jobs link"]],
+  ["deejazzFilterLegal", "Legal link", "Link de informações legais", ["Legal link"]],
 ]);
+const accountMenuCosmeticFilters = Object.freeze([
+  ["deejazzFilterSubscription", 'li.account-item[data-testid="subscription"]'],
+  ["deejazzFilterRecommendations", 'li.account-item[data-testid="recommendations"]'],
+  ["deejazzFilterGiftCard", 'li.account-item[data-testid="getGiftCard"]'],
+  ["deejazzFilterGiftCode", 'li.account-item[data-testid="gift"]'],
+  ["deejazzFilterSupport", 'li.account-item[data-testid="support"]'],
+  ["deejazzFilterCommunity", 'li.account-item[data-testid="community"]'],
+  ["deejazzFilterFeatures", 'li.account-item[data-testid="features"]'],
+  ["deejazzFilterPlans", 'li.account-item[data-testid="offers"]'],
+  ["deejazzFilterReportContent", 'li.account-item[data-testid="report_content"]'],
+  ["deejazzFilterCompany", 'li.account-item[data-testid="company"]'],
+  ["deejazzFilterJobs", 'li.account-item[data-testid="jobs"]'],
+  ["deejazzFilterLegal", 'li.account-item[data-testid="legal"]'],
+]);
+
+function localizeCosmeticFilterLabels(panelMessages) {
+  return Object.fromEntries(Object.entries(panelMessages).map(([locale, messages]) => {
+    const language = locale.split("_")[0].toLowerCase();
+    const localized = { ...messages };
+    for (const [key, english, portuguese] of cosmeticFilterLabels) {
+      localized[key] = language === "en"
+        ? english
+        : language === "pt"
+          ? portuguese
+          : messages.deejazzHistoryHidden || english;
+    }
+    return [locale, localized];
+  }));
+}
 
 function replaceOnce(source, search, replacement, description) {
   if (source.includes(replacement)) return source;
@@ -271,7 +307,7 @@ function patchWrapper(wrapper, locales, panelMessages) {
   if (!result.includes(`selector: ${JSON.stringify(logoSelector)}`)) {
     result = result.replace(
       'const COSMETIC_FILTERS = Object.freeze([',
-      `const COSMETIC_FILTERS = Object.freeze([\n  {\n    label: "Header brand logo",\n    selector: ${JSON.stringify(logoSelector)},\n  },`,
+      `const COSMETIC_FILTERS = Object.freeze([\n  {\n    label: "deejazzFilterHeaderLogo",\n    selector: ${JSON.stringify(logoSelector)},\n  },`,
     );
   }
   const cosmeticFiltersStart = result.indexOf('const COSMETIC_FILTERS = Object.freeze([');
@@ -288,6 +324,14 @@ function patchWrapper(wrapper, locales, panelMessages) {
       `  {\n    label: ${JSON.stringify(label)},\n    selector: ${JSON.stringify(selector)},\n  },\n`
     )).join("");
     result = `${result.slice(0, cosmeticFiltersEnd)}${accountFilterSource}${result.slice(cosmeticFiltersEnd)}`;
+  }
+  for (const [key, _english, _portuguese, aliases] of cosmeticFilterLabels) {
+    for (const alias of aliases) {
+      result = result.replace(
+        `    label: ${JSON.stringify(alias)},`,
+        `    label: ${JSON.stringify(key)},`,
+      );
+    }
   }
   if (!result.includes("const EARLY_COSMETIC_FILTER_CSS =")) {
     result = result.replace(
@@ -390,6 +434,9 @@ function patchPanelPreload(preload) {
 
 function patchPanel(panel) {
   let result = panel.replace('new Intl.NumberFormat("pt-BR")', 'new Intl.NumberFormat(currentLocale)');
+  const historyTargetAliases = Object.fromEntries(cosmeticFilterLabels.flatMap(([key, _english, _portuguese, aliases]) => (
+    [key, ...aliases].map((alias) => [alias.toLocaleLowerCase(), key])
+  )));
   if (!result.includes("let currentLocale = \"en\";")) {
     result = result.replace('const formatNumber =', 'let currentLocale = "en";\nlet localizedMessages = {};\n\nconst text = (key, fallback) => localizedMessages[key] || fallback;\n\nfunction applyLocale(ui) {\n  currentLocale = String(ui.locale || "en").replace(/_/g, "-");\n  localizedMessages = ui.messages || {};\n  document.documentElement.lang = currentLocale;\n  document.documentElement.dir = ui.direction || "ltr";\n  document.title = `DeeJazz — ${text("extName", "uBlock Origin Lite")}`;\n  document.querySelector("h1").textContent = text("extName", "uBlock Origin Lite");\n  document.querySelector("#protection-title").textContent = text("popupFilteringModeLabel", "Filtering mode");\n  document.querySelector("#enabled").setAttribute("aria-label", text("popupFilteringModeLabel", "Filtering mode"));\n  document.querySelector("#reset").textContent = text("resetToDefaultButton", "Reset counters");\n  document.querySelector("#open-original").textContent = text("popupTipDashboard", "Open the dashboard");\n}\n\nconst formatNumber =');
   }
@@ -467,6 +514,22 @@ function localizedHistoryRule(value) {
 }`,
     );
   }
+  if (!result.includes("function localizedHistoryTarget(value)")) {
+    result = result.replace(
+      "function localizedHistoryType(value) {",
+      `const HISTORY_TARGET_ALIASES = Object.freeze(${JSON.stringify(historyTargetAliases)});
+
+function localizedHistoryTarget(value) {
+  const normalized = String(value || "").trim().toLocaleLowerCase();
+  const messageKey = HISTORY_TARGET_ALIASES[normalized];
+  return messageKey
+    ? text(messageKey, text("deejazzHistoryHidden", "Element hidden"))
+    : value;
+}
+
+function localizedHistoryType(value) {`,
+    );
+  }
   result = result.replace(
     'elements.description.textContent = state.enabled\n    ? "Ativa. Anúncios e rastreadores compatíveis são filtrados antes de chegar ao player."\n    : "Desativada. As requisições estão passando sem a filtragem do uBO Lite.";',
     'elements.description.textContent = state.enabled\n    ? `${text("filteringMode2Name", "Optimal")}. ${text("optimalFilteringModeDescription", "Network and extended filtering are active.")}`\n    : `${text("filteringMode0Name", "No filtering")}. ${text("noFilteringModeDescription", "Requests are not filtered.")}`;',
@@ -483,6 +546,10 @@ function localizedHistoryRule(value) {
   result = result.replace('empty.textContent = "No items have been filtered yet.";', 'empty.textContent = text("deejazzHistoryEmpty", "No items have been filtered yet.");');
   result = result.replace("type.textContent = entry.type;", "type.textContent = localizedHistoryType(entry.type);");
   result = result.replace("rule.textContent = entry.rule;", "rule.textContent = localizedHistoryRule(entry.rule);");
+  result = result.replace(
+    'target.textContent = count > 1 ? `${entry.target} ×${formatNumber(count)}` : entry.target;',
+    'const localizedTarget = localizedHistoryTarget(entry.target);\n      target.textContent = count > 1 ? `${localizedTarget} ×${formatNumber(count)}` : localizedTarget;',
+  );
   return result;
 }
 
@@ -560,7 +627,7 @@ async function main() {
     const locales = ubolLocales(extractedApp);
     if (locales.length < 70) throw new Error(`Expected the complete uBO Lite locale set; found only ${locales.length}.`);
     const panelLocaleCatalog = JSON.parse(fs.readFileSync(panelLocalesPath, "utf8"));
-    const panelMessages = panelLocaleCatalog.locales || {};
+    const panelMessages = localizeCosmeticFilterLabels(panelLocaleCatalog.locales || {});
     const missingPanelLocales = locales.filter((locale) => !panelMessages[locale]);
     if (missingPanelLocales.length > 0) {
       throw new Error(`Missing DeeJazz panel translations for: ${missingPanelLocales.join(", ")}.`);
