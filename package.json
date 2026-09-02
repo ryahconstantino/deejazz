@@ -6,7 +6,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/publish-site.mjs",
+    "build": "vite build",
+    "publish:local": "npm run build && node scripts/publish-site.mjs",
     "preview": "vite preview"
   },
   "devDependencies": {

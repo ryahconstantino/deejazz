@@ -22,22 +22,28 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Check out the static site
+      - name: Check out the website source
         uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build the website
+        run: npm run build
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
 
-      - name: Prepare published files
-        run: |
-          mkdir _site
-          cp -R assets _site/assets
-          cp index.html robots.txt site.webmanifest sitemap.xml .nojekyll _site/
-
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: _site
+          path: .pages-build
 
       - name: Deploy GitHub Pages
         id: deployment
