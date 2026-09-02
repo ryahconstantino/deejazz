@@ -639,7 +639,7 @@ button:focus-visible {
 
 .improvements-shell {
   display: grid;
-  grid-template-columns: minmax(0, 43rem) minmax(10rem, 14rem);
+  grid-template-columns: minmax(0, 43rem) minmax(15rem, 19rem);
   align-items: center;
   justify-content: space-between;
   gap: clamp(1.5rem, 5vw, 4.5rem);
@@ -648,8 +648,8 @@ button:focus-visible {
 
 .github-mark {
   display: grid;
-  width: clamp(9rem, 15vw, 13rem);
-  height: clamp(9rem, 15vw, 13rem);
+  width: clamp(15rem, 20vw, 19rem);
+  aspect-ratio: 1;
   flex: none;
   justify-self: end;
   place-items: center;
@@ -661,8 +661,8 @@ button:focus-visible {
 }
 
 .github-mark svg {
-  width: 58%;
-  height: 58%;
+  width: 64%;
+  height: 64%;
 }
 
 .improvements-copy {
@@ -1401,9 +1401,10 @@ button:focus-visible {
   }
 
   .github-mark {
-    width: clamp(7rem, 30vw, 9rem);
-    height: clamp(7rem, 30vw, 9rem);
-    justify-self: end;
+    width: 100%;
+    height: clamp(16rem, 72vw, 24rem);
+    aspect-ratio: auto;
+    justify-self: stretch;
   }
 
   .feature-grid {
