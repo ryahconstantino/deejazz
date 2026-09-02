@@ -11,11 +11,25 @@ const panelLocalesPath = path.join(projectRoot, "scripts", "ubol-panel-locales.j
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v18";
+const integrationRevision = "deejazz-desktop-v19";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/";
 const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
 const legacyBrandLower = legacyBrand.toLowerCase();
+const accountMenuCosmeticFilters = Object.freeze([
+  ["Subscription management", 'li.account-item[data-testid="subscription"]'],
+  ["Recommendation management", 'li.account-item[data-testid="recommendations"]'],
+  ["Gift card purchase", 'li.account-item[data-testid="getGiftCard"]'],
+  ["Gift code activation", 'li.account-item[data-testid="gift"]'],
+  ["Support link", 'li.account-item[data-testid="support"]'],
+  ["Community and feedback link", 'li.account-item[data-testid="community"]'],
+  ["Features link", 'li.account-item[data-testid="features"]'],
+  ["Plans link", 'li.account-item[data-testid="offers"]'],
+  ["Report content link", 'li.account-item[data-testid="report_content"]'],
+  ["Company link", 'li.account-item[data-testid="company"]'],
+  ["Jobs link", 'li.account-item[data-testid="jobs"]'],
+  ["Legal link", 'li.account-item[data-testid="legal"]'],
+]);
 
 function replaceOnce(source, search, replacement, description) {
   if (source.includes(replacement)) return source;
@@ -260,10 +274,35 @@ function patchWrapper(wrapper, locales, panelMessages) {
       `const COSMETIC_FILTERS = Object.freeze([\n  {\n    label: "Header brand logo",\n    selector: ${JSON.stringify(logoSelector)},\n  },`,
     );
   }
+  const cosmeticFiltersStart = result.indexOf('const COSMETIC_FILTERS = Object.freeze([');
+  const cosmeticFiltersEnd = result.indexOf(']);', cosmeticFiltersStart);
+  if (cosmeticFiltersStart === -1 || cosmeticFiltersEnd === -1) {
+    throw new Error("Could not locate the cosmetic filter list.");
+  }
+  const existingCosmeticFilters = result.slice(cosmeticFiltersStart, cosmeticFiltersEnd);
+  const missingAccountFilters = accountMenuCosmeticFilters.filter(([, selector]) => (
+    !existingCosmeticFilters.includes(`selector: ${JSON.stringify(selector)}`)
+  ));
+  if (missingAccountFilters.length > 0) {
+    const accountFilterSource = missingAccountFilters.map(([label, selector]) => (
+      `  {\n    label: ${JSON.stringify(label)},\n    selector: ${JSON.stringify(selector)},\n  },\n`
+    )).join("");
+    result = `${result.slice(0, cosmeticFiltersEnd)}${accountFilterSource}${result.slice(cosmeticFiltersEnd)}`;
+  }
   if (!result.includes("const EARLY_COSMETIC_FILTER_CSS =")) {
     result = result.replace(
       'const COSMETIC_FILTER_CSS = `',
       `const EARLY_COSMETIC_FILTER_CSS = \`\n  ${logoSelector} {\n    display: none !important;\n    visibility: hidden !important;\n    pointer-events: none !important;\n  }\n\`;\nconst COSMETIC_FILTER_CSS = \``,
+    );
+  }
+  const firstAccountMenuSelector = accountMenuCosmeticFilters[0][1];
+  if (!result.includes(`html[data-deejazz-ubol-enabled="true"] ${firstAccountMenuSelector},`)) {
+    const accountMenuCss = accountMenuCosmeticFilters.map(([, selector]) => (
+      `  html[data-deejazz-ubol-enabled="true"] ${selector},`
+    )).join("\n");
+    result = result.replace(
+      '  html[data-deejazz-ubol-enabled="true"] [data-testid="conversionBanner"],',
+      `${accountMenuCss}\n  html[data-deejazz-ubol-enabled="true"] [data-testid="conversionBanner"],`,
     );
   }
   const sidebarLayoutCss = `  button:has(> svg[data-testid="PanelLeftIcon"]) {
