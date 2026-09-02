@@ -107,14 +107,12 @@ jobs:
       - name: Build Linux package
         run: npm run ${{ matrix.command }}
 
-      - name: Upload Linux package and checksum
+      - name: Upload Linux package
         uses: actions/upload-artifact@v4
         with:
           name: deejazz-linux-${{ matrix.artifact }}
           if-no-files-found: error
-          path: |
-            dist/deejazz-linux-${{ matrix.artifact }}.tar.gz
-            dist/deejazz-linux-${{ matrix.artifact }}.tar.gz.sha256
+          path: dist/deejazz-linux-${{ matrix.artifact }}.tar.gz
 
   release:
     name: Publish GitHub release
