@@ -639,17 +639,19 @@ button:focus-visible {
 
 .improvements-shell {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-columns: minmax(0, 43rem) minmax(10rem, 14rem);
   align-items: center;
+  justify-content: space-between;
   gap: clamp(1.5rem, 5vw, 4.5rem);
   padding-block: clamp(4.5rem, 9vw, 8rem);
 }
 
 .github-mark {
   display: grid;
-  width: clamp(4.5rem, 10vw, 7rem);
-  height: clamp(4.5rem, 10vw, 7rem);
+  width: clamp(9rem, 15vw, 13rem);
+  height: clamp(9rem, 15vw, 13rem);
   flex: none;
+  justify-self: end;
   place-items: center;
   border: 1px solid var(--line-strong);
   border-radius: 1.5rem;
@@ -1399,8 +1401,9 @@ button:focus-visible {
   }
 
   .github-mark {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: clamp(7rem, 30vw, 9rem);
+    height: clamp(7rem, 30vw, 9rem);
+    justify-self: end;
   }
 
   .feature-grid {
