@@ -588,7 +588,6 @@ button:focus-visible {
   width: 100%;
   height: auto;
   justify-self: stretch;
-  border-radius: 0.875rem;
   box-shadow: var(--media-shadow);
 }
 
@@ -631,6 +630,55 @@ button:focus-visible {
 
 .downloads-shell {
   width: min(100%, 69rem);
+}
+
+.improvements-section {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.improvements-shell {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 4.5rem);
+  padding-block: clamp(4.5rem, 9vw, 8rem);
+}
+
+.github-mark {
+  display: grid;
+  width: clamp(4.5rem, 10vw, 7rem);
+  height: clamp(4.5rem, 10vw, 7rem);
+  flex: none;
+  place-items: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 1.5rem;
+  background: var(--surface-raised);
+  color: var(--text);
+  box-shadow: var(--card-shadow);
+}
+
+.github-mark svg {
+  width: 58%;
+  height: 58%;
+}
+
+.improvements-copy {
+  max-width: 43rem;
+}
+
+.improvements-copy .section-copy {
+  max-width: 38rem;
+}
+
+.improvements-link {
+  gap: 0.6rem;
+  margin-top: 1.7rem;
+}
+
+.improvements-link svg {
+  width: 1.05rem;
+  height: 1.05rem;
 }
 
 .section-heading {
@@ -1332,7 +1380,8 @@ button:focus-visible {
 @media (max-width: 767px) {
   .hero-shell,
   .experience-layout,
-  .protection-layout {
+  .protection-layout,
+  .improvements-shell {
     grid-template-columns: 1fr;
   }
 
@@ -1347,6 +1396,11 @@ button:focus-visible {
 
   .hero-screenshot {
     width: 100%;
+  }
+
+  .github-mark {
+    width: 4.5rem;
+    height: 4.5rem;
   }
 
   .feature-grid {
