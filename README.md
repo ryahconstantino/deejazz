@@ -62,6 +62,17 @@ Generated files are written to `dist/`:
 - `deejazz-linux-amd64.tar.gz`
 - `deejazz-linux-arm64.tar.gz`
 
+## Automated releases
+
+GitHub Actions builds the Windows x64 installer and both Linux packages, then publishes them to a GitHub Release. Push a semantic-version tag to start a release:
+
+```bash
+git tag v1.1.2
+git push origin v1.1.2
+```
+
+You can also run **Build and publish release** manually from the Actions tab and provide the version to publish. The workflow attaches the installers and Linux SHA-256 checksum files to the release.
+
 ## Website
 
 The DeeJazz website is published from the root of the [`pages`](https://github.com/ryahconstantino/deejazz/tree/pages) branch.

@@ -1,0 +1,140 @@
+name: Build and publish release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Semantic version to build and publish (for example, 1.1.2)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    name: Validate release version
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      tag: ${{ steps.version.outputs.tag }}
+    steps:
+      - name: Resolve version
+        id: version
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+        shell: bash
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then
+            version="${GITHUB_REF_NAME#v}"
+          else
+            version="$INPUT_VERSION"
+          fi
+
+          if [[ ! "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+([-.][0-9A-Za-z.-]+)?$ ]]; then
+            echo "Invalid release version: $version" >&2
+            exit 1
+          fi
+
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "tag=v$version" >> "$GITHUB_OUTPUT"
+
+  windows:
+    name: Windows x64 installer
+    needs: prepare
+    runs-on: windows-latest
+    env:
+      DEEJAZZ_VERSION: ${{ needs.prepare.outputs.version }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Windows installer
+        run: npm run dist:win
+
+      - name: Upload Windows installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: deejazz-windows-x64
+          if-no-files-found: error
+          path: dist/deejazz-windows-x64.exe
+
+  linux:
+    name: Linux ${{ matrix.arch }} package
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: x64
+            command: dist:linux
+            artifact: amd64
+          - arch: arm64
+            command: dist:linux:arm64
+            artifact: arm64
+    env:
+      DEEJAZZ_VERSION: ${{ needs.prepare.outputs.version }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Linux package
+        run: npm run ${{ matrix.command }}
+
+      - name: Upload Linux package and checksum
+        uses: actions/upload-artifact@v4
+        with:
+          name: deejazz-linux-${{ matrix.artifact }}
+          if-no-files-found: error
+          path: |
+            dist/deejazz-linux-${{ matrix.artifact }}.tar.gz
+            dist/deejazz-linux-${{ matrix.artifact }}.tar.gz.sha256
+
+  release:
+    name: Publish GitHub release
+    needs: [prepare, windows, linux]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: release-assets
+          merge-multiple: true
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG_NAME: ${{ needs.prepare.outputs.tag }}
+          VERSION: ${{ needs.prepare.outputs.version }}
+        shell: bash
+        run: |
+          test -n "$(find release-assets -maxdepth 1 -type f -print -quit)"
+          gh release create "$TAG_NAME" release-assets/* \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "DeeJazz $VERSION" \
+            --generate-notes
