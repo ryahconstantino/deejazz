@@ -136,6 +136,8 @@ function buildInstaller() {
     "nsis:x64",
     "--prepackaged",
     stagedApp,
+    "--publish",
+    "never",
   ], {
     cwd: projectRoot,
     env: environment,
