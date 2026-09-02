@@ -13,7 +13,7 @@ Add-Type -AssemblyName System.Drawing
 $source = [System.Drawing.Image]::FromFile([System.IO.Path]::GetFullPath($SourcePath))
 $sizes = @(16, 20, 24, 32, 40, 48, 64, 128, 256)
 $frames = [System.Collections.Generic.List[object]]::new()
-$symbolScale = 1.14
+$symbolScale = 1.22
 $renderSource = [System.Drawing.Bitmap]::new($source.Width, $source.Height, [System.Drawing.Imaging.PixelFormat]::Format32bppArgb)
 
 $minX = $source.Width
