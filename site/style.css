@@ -132,21 +132,23 @@ button:focus-visible {
   padding-inline: clamp(1rem, 3vw, 3rem);
 }
 
-.brand,
-.brand picture {
+.brand {
   display: inline-flex;
   align-items: center;
 }
 
 .brand-wordmark {
-  display: block;
-  width: 7.7rem;
-  height: auto;
-  object-fit: contain;
+  display: inline-block;
+  color: #fff;
+  font-family: "Arial Black", "Avenir Next", "Segoe UI", Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: -0.09em;
+  line-height: 1;
 }
 
 .brand-wordmark-small {
-  width: 6.9rem;
+  font-size: 1.15rem;
 }
 
 .desktop-nav {
@@ -1205,9 +1207,12 @@ button:focus-visible {
 }
 
 .download-logo {
-  display: block;
-  width: min(13rem, 60vw);
-  height: auto;
+  color: #fff;
+  font-family: "Arial Black", "Avenir Next", "Segoe UI", Arial, sans-serif;
+  font-size: clamp(2rem, 5vw, 3.3rem);
+  font-weight: 900;
+  letter-spacing: -0.09em;
+  line-height: 1;
   margin-bottom: 2rem;
 }
 
@@ -1436,7 +1441,7 @@ button:focus-visible {
   }
 
   .brand-wordmark {
-    width: 6.8rem;
+    font-size: 1.15rem;
   }
 
   .language-current {
