@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dp" android:width="24.0dp" android:autoMirrored="true" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/theme_icon_primary" android:pathData="M12.18 17.64l-1.4-1.44L14.1 13H6v-2h8.1l-3.31-3.2l1.39-1.44L18 12l-5.82 5.64z" />
+</vector>

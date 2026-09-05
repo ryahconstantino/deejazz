@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="offer_wall_additional_description_margin_top">4.0dp</dimen>
+    <dimen name="offer_wall_header_height">16.0dp</dimen>
+    <dimen name="offer_wall_image_size">28.0dp</dimen>
+    <dimen name="offer_wall_price_margin_top">0.0dp</dimen>
+    <dimen name="offer_wall_secondary_cta_margin_bottom">4.0dp</dimen>
+    <dimen name="offer_wall_secondary_cta_margin_top">0.0dp</dimen>
+    <dimen name="offer_wall_special_margin_top">8.0dp</dimen>
+</resources>

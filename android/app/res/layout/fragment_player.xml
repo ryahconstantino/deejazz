@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/player_empty_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/player_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <com.deezer.feature.eastereggs.christmas.SnowfallView android:id="@id/player_snowfall" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:snowflakeAlphaMax="255" app:snowflakeAlphaMin="100" app:snowflakeAngleMax="5" app:snowflakeImage="@drawable/ic_snowflake" app:snowflakeSizeMax="28.0dp" app:snowflakeSizeMin="4.0dp" app:snowflakeSpeedMax="12" app:snowflakeSpeedMin="4" app:snowflakesAlreadyFalling="false" app:snowflakesAutoPlay="false" app:snowflakesFadingEnabled="true" app:snowflakesNumMax="80" app:snowflakesNumMin="50" />
+    <FrameLayout android:id="@id/player_scene_root" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

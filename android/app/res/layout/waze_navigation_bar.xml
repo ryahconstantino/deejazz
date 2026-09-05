@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#13b8e8" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/wazeNavBarNavigationLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <FrameLayout android:id="@id/wazeNavBarInstructionLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dp" android:layout_marginRight="9.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="7.0dp" android:layout_marginEnd="9.0dp" android:layout_alignParentStart="true">
+            <ImageView android:layout_gravity="center" android:id="@id/wazeNavBarInstruction" android:padding="5.0dp" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+            <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/wazeNavBarRoundaboutExitNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <ImageView android:id="@id/wazeIcon" android:layout_width="35.0dp" android:layout_height="35.0dp" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/audio_banner_app_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:id="@id/wazeNavBarDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:layout_toRightOf="@id/wazeNavBarInstructionLayout" android:layout_centerVertical="true" android:fontFamily="sans-serif-black" android:layout_marginEnd="15.0dp" android:layout_toEndOf="@id/wazeNavBarInstructionLayout" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:id="@id/wazeNavBarStreetName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/wazeIcon" android:layout_toRightOf="@id/wazeNavBarDistance" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium" android:layout_toStartOf="@id/wazeIcon" android:layout_toEndOf="@id/wazeNavBarDistance" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/wazeNavBarGeneralLayout" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <ImageView android:layout_width="35.0dp" android:layout_height="35.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="13.0dp" android:src="@drawable/audio_banner_app_icon" android:layout_alignParentLeft="true" android:layout_marginStart="10.0dp" android:layout_alignParentStart="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/wazeNavBarStartWazeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/waze_nav_bar_start_waze" android:fontFamily="sans-serif" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/wazeNavBarStartWazeDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/waze_nav_bar_see_waze_direction" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <ImageView android:id="@id/wazeNavBarCloseButton" android:padding="15.0dp" android:layout_width="45.0dp" android:layout_height="match_parent" android:src="@drawable/audio_banner_app_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:alpha="0.5" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>

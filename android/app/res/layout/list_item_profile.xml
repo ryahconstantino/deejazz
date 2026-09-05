@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/ripple_cell_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="80.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/profile_item_avatar" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:src="@drawable/placeholder_round" android:layout_marginStart="16.0dp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/profile_item_texts_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/profile_item_avatar">
+        <TextView android:textSize="16.0sp" android:textColor="@color/theme_text_primary" android:id="@id/profile_item_username" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/palette_light_grey_800" android:id="@id/profile_item_profile_type" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" />
+    </LinearLayout>
+    <ImageView android:gravity="center" android:id="@id/profile_item_is_checked" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/check_24" android:layout_centerVertical="true" android:layout_marginEnd="16.0dp" android:layout_alignParentEnd="true" />
+    <RelativeLayout android:id="@id/profile_item_delete" android:background="@drawable/ripple_unbounded" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:visibility="visible" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/onboarding_like_dislike_delete" android:layout_centerVertical="true" android:layout_marginEnd="16.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/separator_profile_add" android:background="@color/theme_divider_primary" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+</RelativeLayout>

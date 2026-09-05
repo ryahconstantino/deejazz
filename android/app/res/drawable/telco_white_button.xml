@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape>
+            <solid android:color="@color/login_page_facebook_press_color" />
+            <corners android:radius="24.0dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/login_page_facebook_press_color" />
+            <corners android:radius="24.0dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/login_page_facebook_idle_color" />
+            <corners android:radius="24.0dp" />
+        </shape>
+    </item>
+</selector>

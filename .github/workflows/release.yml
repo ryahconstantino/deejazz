@@ -114,9 +114,58 @@ jobs:
           if-no-files-found: error
           path: dist/deejazz-linux-${{ matrix.artifact }}.tar.gz
 
+  android:
+    name: Android signed APK
+    needs: prepare
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Install Android build tools
+        run: sdkmanager 'build-tools;35.0.0'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build, sign and verify Android APK
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        shell: bash
+        run: |
+          test -n "$ANDROID_KEYSTORE_BASE64"
+          test -n "$ANDROID_KEYSTORE_PASSWORD"
+          export ANDROID_KEYSTORE_PATH="$RUNNER_TEMP/deejazz-release.jks"
+          trap 'rm -f "$ANDROID_KEYSTORE_PATH"' EXIT
+          umask 077
+          printf '%s' "$ANDROID_KEYSTORE_BASE64" | base64 --decode > "$ANDROID_KEYSTORE_PATH"
+          npm run dist:android
+
+      - name: Upload Android APK and checksum
+        uses: actions/upload-artifact@v4
+        with:
+          name: deejazz-android
+          if-no-files-found: error
+          path: |
+            Dist/deejazz-android.apk
+            Dist/deejazz-android.apk.sha256
+
   release:
     name: Publish GitHub release
-    needs: [prepare, windows, linux]
+    needs: [prepare, windows, linux, android]
     runs-on: ubuntu-latest
     permissions:
       contents: write

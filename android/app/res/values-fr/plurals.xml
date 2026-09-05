@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dz_SMScoderesentconfirmationscreen_text_XSMScodesleft_mobile">
+        <item quantity="one">%1$s code SMS restant</item>
+        <item quantity="other">%1$s codes SMS restants</item>
+    </plurals>
+    <plurals name="dz_agerestrictionerrormessage_text_mustbeXyearsentervaliddate_mobile">
+        <item quantity="one">Vous devez avoir au moins %1$s an pour utiliser un compte Deezer. Merci de renseigner une date de naissance valide.</item>
+        <item quantity="other">Vous devez avoir au moins %1$s ans pour utiliser un compte Deezer. Merci de renseigner une date de naissance valide.</item>
+    </plurals>
+    <plurals name="dz_androidtv_text_profilenumberlimitreached_mobile">
+        <item quantity="one">Limite atteinte : %1$s profil maximum. Supprimez un profil.</item>
+        <item quantity="other">Limite atteinte : %1$s profils maximum. Supprimez un profil.</item>
+    </plurals>
+    <plurals name="dz_androidtvlandingpage_text_morethanXmilliontracksacrossallgenres_mobile">
+        <item quantity="one">"Plus d'%1$s million de titres dans tous les genres"</item>
+        <item quantity="other">Plus de %1$s millions de titres dans tous les genres</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseXmoreartistsUPP_mobile">
+        <item quantity="one">CHOISIR %1$s ARTISTE EN PLUS</item>
+        <item quantity="other">CHOISIR %1$s ARTISTES EN PLUS</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseatleastXartistsUPP_mobile">
+        <item quantity="one">CHOISIR AU MOINS %1$s ARTISTE</item>
+        <item quantity="other">CHOISIR AU MOINS %1$s ARTISTES</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_continuewithXartistsUPP_mobile">
+        <item quantity="one">CONTINUER AVEC %1$s ARTISTE</item>
+        <item quantity="other">CONTINUER AVEC %1$s ARTISTES</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_deletetheseXplaylists_mobile">
+        <item quantity="one">Supprimer cette playlist ?</item>
+        <item quantity="other">Supprimer ces %1$s playlists ?</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_playlistsdownloaded_mobile">
+        <item quantity="one">Playlist téléchargée !</item>
+        <item quantity="other">Playlists téléchargées !</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_trackremovedfromfavorite_mobile">
+        <item quantity="one">Ce titre a bien été retiré des Coups de cœur.</item>
+        <item quantity="other">Ces titres ont bien été retirés des Coups de cœur.</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xapps_mobile">
+        <item quantity="one">%1$s application</item>
+        <item quantity="other">%1$s applications</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xartists_mobile">
+        <item quantity="one">%1$s artiste</item>
+        <item quantity="other">%1$s artistes</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xaudiobooks_mobile">
+        <item quantity="one">%1$s livre audio</item>
+        <item quantity="other">%1$s livres audio</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xchapters_mobile">
+        <item quantity="one">%1$s chapitre</item>
+        <item quantity="other">%1$s chapitres</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xdownloads_mobile">
+        <item quantity="one">%1$s téléchargement</item>
+        <item quantity="other">%1$s téléchargements</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xepisodes_mobile">
+        <item quantity="one">%1$s épisode</item>
+        <item quantity="other">%1$s épisodes</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xmixes_mobile">
+        <item quantity="one">%1$s mix</item>
+        <item quantity="other">%1$s mix</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xnewentries_mobile">
+        <item quantity="one">%1$s nouveau titre</item>
+        <item quantity="other">%1$s nouveaux titres</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xplaylists_mobile">
+        <item quantity="one">%1$s playlist</item>
+        <item quantity="other">%1$s playlists</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xpodcasts_mobile">
+        <item quantity="one">%1$s podcast</item>
+        <item quantity="other">%1$s podcasts</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xtracks_mobile">
+        <item quantity="one">%1$s titre</item>
+        <item quantity="other">%1$s titres</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xunheard_mobile">
+        <item quantity="one">%1$s non lu</item>
+        <item quantity="other">%1$s non lus</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_subtitle_cancelactivesubsbeforedeleting_mobile">
+        <item quantity="one">"Vous devez annuler l'abonnement en cours avant de supprimer votre compte."</item>
+        <item quantity="other">Vous devez annuler les abonnements en cours avant de supprimer votre compte.</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingloseaccesstoapps_mobile">
+        <item quantity="one">"En supprimant votre compte, vous perdrez l'accès à l'app listée ci-dessous :"</item>
+        <item quantity="other">"En supprimant votre compte, vous perdrez l'accès aux apps listées ci-dessous :"</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletinglosefollowingsubs_mobile">
+        <item quantity="one">"En supprimant votre compte, vous perdrez l'abonnement suivant :"</item>
+        <item quantity="other">En supprimant votre compte, vous perdrez tous les abonnements suivants :</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingyouloseaccessdataandsubs_mobile">
+        <item quantity="one">"En supprimant votre compte, vous perdrez tous vos accès, données et votre abonnement sur l'app listée ci-dessous :"</item>
+        <item quantity="other">En supprimant votre compte, vous perdrez tous vos accès, données et abonnements sur les apps listées ci-dessous :</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_accountassociatedwithXapps_mobile">
+        <item quantity="one">Votre compte est utilisé sur %1$s app</item>
+        <item quantity="other">Votre compte est utilisé sur %1$s apps</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithactivesubs_mobile">
+        <item quantity="one">App avec abonnement en cours</item>
+        <item quantity="other">Apps avec abonnements en cours</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithoutsubs_mobile">
+        <item quantity="one">App sans abonnements</item>
+        <item quantity="other">Apps sans abonnements</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithsubs_mobile">
+        <item quantity="one">App avec abonnement</item>
+        <item quantity="other">Apps avec abonnement</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_subtitle_howaboutXmorefreedays_mobile">
+        <item quantity="one">%1$s jour supplémentaire offert, ça vous tente ?</item>
+        <item quantity="other">%1$s jours supplémentaires offerts, ça vous tente ?</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_title_planXtrialendsinXdays_mobile">
+        <item quantity="one">Votre essai %1$s se termine dans %2$s jour</item>
+        <item quantity="other">Votre essai %1$s se termine dans %2$s jours</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXhours_mobile">
+        <item quantity="one">Pour des raisons de sécurité, vous pourrez réessayer dans %1$s heure.</item>
+        <item quantity="other">Pour des raisons de sécurité, vous pourrez réessayer dans %1$s heures.</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXminutes_mobile">
+        <item quantity="one">Pour des raisons de sécurité, vous pourrez réessayer dans %1$s minute.</item>
+        <item quantity="other">Pour des raisons de sécurité, vous pourrez réessayer dans %1$s minutes.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_TCsprivacypolicyforunderXyearold_mobile">
+        <item quantity="one">"En activant un compte pour un mineur de moins d'%1$s an, vous acceptez que Deezer rassemble et traite des données personnelles concernant ce mineur afin de lui permettre d'utiliser notre service. Pour plus d'informations, vous pouvez consulter notre %2$sPolitique de protection des données%3$s."</item>
+        <item quantity="other">"En activant un compte pour un mineur de moins de %1$s ans, vous acceptez que Deezer rassemble et traite des données personnelles concernant ce mineur afin de lui permettre d'utiliser notre service. Pour plus d'informations, vous pouvez consulter notre %2$sPolitique de protection des données%3$s."</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_onlycontentsuitableforXageandunder_mobile">
+        <item quantity="one">"Une fois cette option activée, seuls les contenus adaptés aux enfants d'%1$s an et moins seront visibles."</item>
+        <item quantity="other">Une fois cette option activée, seuls les contenus adaptés aux enfants de %1$s ans et moins seront visibles.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_underXyearsorkidscannotbeconverted_mobile">
+        <item quantity="one">"Ce profil n'est pas accessible. Les profils des utilisateurs de moins d'%1$s an et les profils enfants ne peuvent pas être convertis en compte indépendant."</item>
+        <item quantity="other">"Ce profil n'est pas accessible. Les profils des utilisateurs de moins de %1$s ans et les profils enfants ne peuvent pas être convertis en compte indépendant."</item>
+    </plurals>
+    <plurals name="dz_familymemberselector_text_Xmembersremaining_mobile">
+        <item quantity="one">%1$s membre restant</item>
+        <item quantity="other">%1$s membres restants</item>
+    </plurals>
+    <plurals name="dz_familyprofileminorconsent_text_termsandconditions_mobile">
+        <item quantity="one">"En créant un profil secondaire pour un mineur de moins d'%1$s an, vous acceptez que Deezer et ses partenaires prennent connaissance des informations personnelles liées à cet utilisateur et les utilisent dans le but de lui recommander des contenus et des offres qui correspondent à son âge et à ses centres d’intérêt, et uniquement dans ce but. Pour plus d’informations, nous vous invitons à lire notre Politique de protection des données."</item>
+        <item quantity="other">En créant un profil secondaire pour un mineur de moins de %1$s ans, vous acceptez que Deezer et ses partenaires prennent connaissance des informations personnelles liées à cet utilisateur et les utilisent dans le but de lui recommander des contenus et des offres qui correspondent à son âge et à ses centres d’intérêt, et uniquement dans ce but. Pour plus d’informations, nous vous invitons à lire notre Politique de protection des données.</item>
+    </plurals>
+    <plurals name="dz_familyprofileswitcherwelcome_text_Xprofilesremaining_mobile">
+        <item quantity="one">%1$s profil disponible</item>
+        <item quantity="other">%1$s profils disponibles</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_accountcreationagerestriction_mobile">
+        <item quantity="one">Vous devez avoir au moins %1$s an pour créer un compte.</item>
+        <item quantity="other">Vous devez avoir au moins %1$s ans pour créer un compte.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordnotenoughchars_mobile">
+        <item quantity="one">Votre mot de passe doit comporter au moins %1$s caractère.</item>
+        <item quantity="other">Votre mot de passe doit comporter au moins %1$s caractères.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordtoomanychars_mobile">
+        <item quantity="one">Votre mot de passe ne doit pas dépasser %1$s caractère.</item>
+        <item quantity="other">Votre mot de passe ne doit pas dépasser %1$s caractères.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernamenotenoughchars_mobile">
+        <item quantity="one">Votre pseudo doit comporter au moins %1$s caractère.</item>
+        <item quantity="other">Votre pseudo doit comporter au moins %1$s caractères.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernametoomanychars_mobile">
+        <item quantity="one">Votre pseudo ne doit pas dépasser %1$s caractère.</item>
+        <item quantity="other">Votre pseudo ne doit pas dépasser %1$s caractères.</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xgbleft_mobile">
+        <item quantity="one">%1$s Go restant</item>
+        <item quantity="other">%1$s Go restants</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xmbleft_mobile">
+        <item quantity="one">%1$s Mo restant</item>
+        <item quantity="other">%1$s Mo restants</item>
+    </plurals>
+    <plurals name="dz_inprogressplaylistpage_subtitle_duringthelastXdays_mobile">
+        <item quantity="one">Depuis hier</item>
+        <item quantity="other">Pendant ces %1$s derniers jours</item>
+    </plurals>
+    <plurals name="dz_masthead_title_episodescountnox_mobile">
+        <item quantity="one">Épisode</item>
+        <item quantity="other">Épisodes</item>
+    </plurals>
+    <plurals name="dz_masthead_title_fanscountnox_mobile">
+        <item quantity="one">Fan</item>
+        <item quantity="other">Fans</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_Xtrackchangesperhour_mobile">
+        <item quantity="one">Un mix vous limite a %1$s changement de titres par heure.</item>
+        <item quantity="other">Un mix vous limite a %1$s changements de titres par heure.</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_changetrackallowedagaininXmin_mobile">
+        <item quantity="one">Vous serez à nouveau en mesure de changer de titres dans %1$s min</item>
+        <item quantity="other">Vous serez à nouveau en mesure de changer de titres dans %1$s min</item>
+    </plurals>
+    <plurals name="dz_mobiletrialtoaster_text_yourXdaytrialhasstarted_mobile">
+        <item quantity="one">"Votre jour d'essai a commencé"</item>
+        <item quantity="other">"Vos %1$s jours d'essai ont commencé"</item>
+    </plurals>
+    <plurals name="dz_mymusic_albums_count">
+        <item quantity="one">%1$s album</item>
+        <item quantity="other">%1$s albums</item>
+    </plurals>
+    <plurals name="dz_newofferscardsusp_text_getXaccountswithXbenefitsplushifi_mobile">
+        <item quantity="one">Profitez de %1$s compte indépendant, chacun avec les avantages de %2$s, le son Haute Fidélité inclus.</item>
+        <item quantity="other">Profitez de %1$s comptes indépendants, chacun avec les avantages de %2$s, le son Haute Fidélité inclus.</item>
+    </plurals>
+    <plurals name="dz_offerwall_text_priceXpermonthforXmonths_mobile">
+        <item quantity="one">%1$s/mois pendant %2$s mois</item>
+        <item quantity="other">%1$s/mois pendant %2$s mois</item>
+    </plurals>
+    <plurals name="dz_offlinepodcastplaylist_subtitle_Xdownloadedepisodes_mobile">
+        <item quantity="one">%1$s épisode téléchargé</item>
+        <item quantity="other">%1$s épisodes téléchargés</item>
+    </plurals>
+    <plurals name="dz_onboardingfirstlikes_action_pickXmoreUPP_mobile">
+        <item quantity="one">ENCORE %1$s</item>
+        <item quantity="other">ENCORE %1$s</item>
+    </plurals>
+    <plurals name="dz_onboardingtoastmessage_action_onlyXpickstostart_mobile">
+        <item quantity="one">"Doucement ! On en a juste besoin d'%1$s pour commencer."</item>
+        <item quantity="other">Doucement ! On en a juste besoin de %1$s pour commencer.</item>
+    </plurals>
+    <plurals name="dz_passwordsecurity_title_Xcharactersmin_mobile">
+        <item quantity="one">%1$s caractère min.</item>
+        <item quantity="other">%1$s caractères min.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_accountalreadylinkedtoXdevices_mobile">
+        <item quantity="one">Votre compte est déjà associé à %1$s autre appareil. Les fonctionnalités %2$s ne seront donc pas disponibles sur cet appareil.</item>
+        <item quantity="other">Votre compte est déjà associé à %1$s autres appareils. Les fonctionnalités %2$s ne seront donc pas disponibles sur cet appareil.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_maxXdevicesonyoursubcription_mobile">
+        <item quantity="one">Votre abonnement vous permet de profiter de %1$s sur %2$s appareil maximum.</item>
+        <item quantity="other">Votre abonnement vous permet de profiter de %1$s sur %2$s appareils maximum.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_nomorethanXdevicesonyoursubcription_mobile">
+        <item quantity="one">"Votre abonnement ne vous permet pas d'utiliser %1$s sur plus de %2$s appareil."</item>
+        <item quantity="other">"Votre abonnement ne vous permet pas d'utiliser %1$s sur plus de %2$s appareils."</item>
+    </plurals>
+    <plurals name="dz_playlist_text_tracksalreadyaddedtotheplaylist_mobile">
+        <item quantity="one">Ce titre a déjà été ajouté à la playlist</item>
+        <item quantity="other">Ces titres ont déjà été ajoutés à la playlist</item>
+    </plurals>
+    <plurals name="dz_playlistpage_action_addXtracks_mobile">
+        <item quantity="one">Ajouter %1$s titre</item>
+        <item quantity="other">Ajouter %1$s titres</item>
+    </plurals>
+    <plurals name="dz_premiumbenefit_text_skipmorethanXtracksperhour_mobile">
+        <item quantity="one">"Zappez plus d'%1$s titre par heure"</item>
+        <item quantity="other">Zappez plus de %1$s titres par heure</item>
+    </plurals>
+    <plurals name="dz_searchresult_title_topresults_mobile">
+        <item quantity="one">Meilleur résultat</item>
+        <item quantity="other">Meilleurs résultats</item>
+    </plurals>
+    <plurals name="dz_signupjapanUS_action_tryitfreexmonths_mobile">
+        <item quantity="one">"%1$s mois d'essai offert"</item>
+        <item quantity="other">"%1$s mois d'essai offerts"</item>
+    </plurals>
+    <plurals name="dz_skipcounter_text_Xmoretracks_mobile">
+        <item quantity="one">Vous pouvez zapper encore %1$s titre.</item>
+        <item quantity="other">Vous pouvez zapper encore %1$s titres.</item>
+    </plurals>
+    <plurals name="dz_sleeptimer_text_sleepinlessthanXminutes_mobile">
+        <item quantity="one">"En pause dans moins d'%1$s minute"</item>
+        <item quantity="other">En pause dans moins de %1$s minutes</item>
+    </plurals>
+    <plurals name="dz_smartcache_text_storemostplayedtracksrecosettoXgb_mobile">
+        <item quantity="one">Le Smart Cache stocke les titres que vous écoutez le plus pour les recharger plus rapidement. Pour une expérience optimale, nous vous recommandons de le régler sur %1$s Go.</item>
+        <item quantity="other">Le Smart Cache stocke les titres que vous écoutez le plus pour les recharger plus rapidement. Pour une expérience optimale, nous vous recommandons de le régler sur %1$s Go.</item>
+    </plurals>
+    <plurals name="dz_smartloginandroidtvxboxwelcome_text_thiscodewillexpireinXminutes_mobile">
+        <item quantity="one">Ce code expirera dans %1$s minute.</item>
+        <item quantity="other">Ce code expirera dans %1$s minutes.</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Followers_mobile">
+        <item quantity="one">Follower</item>
+        <item quantity="other">Followers</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Following_mobile">
+        <item quantity="one">Following</item>
+        <item quantity="other">Following</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfans_mobile">
+        <item quantity="one">%1$s fan</item>
+        <item quantity="other">%1$s fans</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowers_mobile">
+        <item quantity="one">%1$s follower</item>
+        <item quantity="other">%1$s followers</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowing_mobile">
+        <item quantity="one">%1$s following</item>
+        <item quantity="other">%1$s following</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xnotifications_mobile">
+        <item quantity="one">%1$s nouvelle notification</item>
+        <item quantity="other">%1$s nouvelles notifications</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xgigabytes_mobile">
+        <item quantity="one">%1$s Go</item>
+        <item quantity="other">%1$s Go</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xmegabytes_mobile">
+        <item quantity="one">%1$s Mo</item>
+        <item quantity="other">%1$s Mo</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdays_mobile">
+        <item quantity="one">%1$s jour</item>
+        <item quantity="other">%1$s jours</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdaysago_mobile">
+        <item quantity="one">Il y a %1$s jour</item>
+        <item quantity="other">Il y a %1$s jours</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhours_mobile">
+        <item quantity="one">%1$s heure</item>
+        <item quantity="other">%1$s heures</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhoursago_mobile">
+        <item quantity="one">Il y a %1$s heure</item>
+        <item quantity="other">Il y a %1$s heures</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmin_mobile">
+        <item quantity="one">%1$s min</item>
+        <item quantity="other">%1$s min</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_XminleftUPP_mobile">
+        <item quantity="one">%1$s MIN RESTANTE</item>
+        <item quantity="other">%1$s MIN RESTANTES</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutes_mobile">
+        <item quantity="one">%1$s minute</item>
+        <item quantity="other">%1$s minutes</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutesago_mobile">
+        <item quantity="one">Il y a %1$s minute</item>
+        <item quantity="other">Il y a %1$s minutes</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmonthsago_mobile">
+        <item quantity="one">Il y a %1$s mois</item>
+        <item quantity="other">Il y a %1$s mois</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xs_mobile">
+        <item quantity="one">%1$s s</item>
+        <item quantity="other">%1$s s</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xweeksago_mobile">
+        <item quantity="one">Il y a %1$s semaine</item>
+        <item quantity="other">Il y a %1$s semaines</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xyearsago_mobile">
+        <item quantity="one">Il y a %1$s an</item>
+        <item quantity="other">Il y a %1$s ans</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_alreadyaddedtoplaylist_mobile">
+        <item quantity="one">Déjà ajouté à la playlist</item>
+        <item quantity="other">Déjà ajoutés à la playlist</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_unlockedXmoreskips_mobile">
+        <item quantity="one">Vous pouvez à nouveau zapper %1$s fois</item>
+        <item quantity="other">Vous pouvez à nouveau zapper %1$s fois</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoplaylisttrack_mobile">
+        <item quantity="one">Ajouté à la playlist</item>
+        <item quantity="other">Ajoutés à la playlist</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoyourfavoritetrackstrack_mobile">
+        <item quantity="one">Ajouté à vos Coups de cœur</item>
+        <item quantity="other">Ajoutés à vos Coups de cœur</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromplaylist_mobile">
+        <item quantity="one">Retiré de la playlist</item>
+        <item quantity="other">Retirés de la playlist</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromyourfavoritetrackstrack_mobile">
+        <item quantity="one">Retiré de vos Coups de cœur</item>
+        <item quantity="other">Retirés de vos Coups de cœur</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_Xdaytrial_mobile">
+        <item quantity="one">"%1$s jour d'essai"</item>
+        <item quantity="other">"%1$s jours d'essai"</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_downloadskipadfreelistening_mobile">
+        <item quantity="one">"Téléchargez vos titres, zappez les morceaux que vous n'aimez pas et écoutez votre musique sans pub pendant %1$s jour."</item>
+        <item quantity="other">"Téléchargez vos titres, zappez les morceaux que vous n'aimez pas et écoutez votre musique sans pub pendant %1$s jours."</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_text_tryXforXdaysfreenocreditcardrequired_mobile">
+        <item quantity="one">%2$s jour offert pour essayer %1$s - carte bancaire non demandée</item>
+        <item quantity="other">%2$s jours offerts pour essayer %1$s - carte bancaire non demandée</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXdays_mobile">
+        <item quantity="one">Pour vérifier votre abonnement et continuer à profiter de Deezer sur votre mobile, merci de vous connecter au WiFi/réseau mobile dans %1$s jour.</item>
+        <item quantity="other">Pour vérifier votre abonnement et continuer à profiter de Deezer sur votre mobile, merci de vous connecter au WiFi/réseau mobile dans %1$s jours.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXhours_mobile">
+        <item quantity="one">Pour vérifier votre abonnement et continuer à profiter de Deezer sur votre mobile, merci de vous connecter au WiFi/réseau mobile dans %1$s heure.</item>
+        <item quantity="other">Pour vérifier votre abonnement et continuer à profiter de Deezer sur votre mobile, merci de vous connecter au WiFi/réseau mobile dans %1$s heures.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXminutes_mobile">
+        <item quantity="one">Pour vérifier votre abonnement et continuer à profiter de Deezer sur votre mobile, merci de vous connecter au WiFi/réseau mobile dans %1$s minute.</item>
+        <item quantity="other">Pour vérifier votre abonnement et continuer à profiter de Deezer sur votre mobile, merci de vous connecter au WiFi/réseau mobile dans %1$s minutes.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avancer de %d seconde</item>
+        <item quantity="other">Avancer de %d secondes</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Revenir en arrière de %d seconde</item>
+        <item quantity="other">Revenir en arrière de %d secondes</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nouvelle notification</item>
+        <item quantity="other">%d nouvelles notifications</item>
+    </plurals>
+</resources>

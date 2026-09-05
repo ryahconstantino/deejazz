@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dz_SMScoderesentconfirmationscreen_text_XSMScodesleft_mobile">
+        <item quantity="other">%1$s kode SMS tersisa</item>
+    </plurals>
+    <plurals name="dz_agerestrictionerrormessage_text_mustbeXyearsentervaliddate_mobile">
+        <item quantity="other">Anda harus setidaknya berusia %1$s tahun untuk menggunakan akun Deezer. Harap masukkan tanggal yang valid.</item>
+    </plurals>
+    <plurals name="dz_androidtv_text_profilenumberlimitreached_mobile">
+        <item quantity="other">Anda telah mencapai batas jumlah %1$s profil. Harap hapus satu profil untuk melanjutkan.</item>
+    </plurals>
+    <plurals name="dz_androidtvlandingpage_text_morethanXmilliontracksacrossallgenres_mobile">
+        <item quantity="other">Lebih dari %1$s juta lagu di seluruh ragam musik</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseXmoreartistsUPP_mobile">
+        <item quantity="other">PILIH %1$s ARTIS LAGI</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseatleastXartistsUPP_mobile">
+        <item quantity="other">PILIH SEKURANG-KURANGNYA %1$s ARTIS</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_continuewithXartistsUPP_mobile">
+        <item quantity="other">TERUSKAN DENGAN %1$s ARTIS</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_deletetheseXplaylists_mobile">
+        <item quantity="other">Hapus %1$s daftar putar ini?</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_playlistsdownloaded_mobile">
+        <item quantity="other">Daftar putar sudah diunduh!</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_trackremovedfromfavorite_mobile">
+        <item quantity="other">Lagu-lagu ini telah dihapus dari Lagu Favorit Anda.</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xapps_mobile">
+        <item quantity="other">%1$s aplikasi</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xartists_mobile">
+        <item quantity="other">%1$s artis</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xaudiobooks_mobile">
+        <item quantity="other">%1$s buku audio</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xchapters_mobile">
+        <item quantity="other">%1$s bab</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xdownloads_mobile">
+        <item quantity="other">%1$s unduhan</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xepisodes_mobile">
+        <item quantity="other">%1$s episode</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xmixes_mobile">
+        <item quantity="other">%1$s campuran</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xnewentries_mobile">
+        <item quantity="other">%1$s entri baru</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xplaylists_mobile">
+        <item quantity="other">%1$s daftar putar</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xpodcasts_mobile">
+        <item quantity="other">%1$s podcast</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xtracks_mobile">
+        <item quantity="other">%1$s lagu</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xunheard_mobile">
+        <item quantity="other">%1$s belum didengar</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_subtitle_cancelactivesubsbeforedeleting_mobile">
+        <item quantity="other">Anda harus membatalkan langganan aktif apa pun sebelum menghapus akun Anda.</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingloseaccesstoapps_mobile">
+        <item quantity="other">Dengan menghapus akun, Anda akan kehilangan akses ke aplikasi berikut ini:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletinglosefollowingsubs_mobile">
+        <item quantity="other">Dengan menghapus akun, Anda akan kehilangan langganan berikut ini:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingyouloseaccessdataandsubs_mobile">
+        <item quantity="other">Dengan menghapus akun, Anda akan kehilangan akses, data, dan langganan di aplikasi berikut ini:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_accountassociatedwithXapps_mobile">
+        <item quantity="other">Akun Anda dikaitkan dengan aplikasi %1$s</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithactivesubs_mobile">
+        <item quantity="other">Aplikasi dengan langganan aktif</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithoutsubs_mobile">
+        <item quantity="other">Aplikasi tanpa langganan</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithsubs_mobile">
+        <item quantity="other">Aplikasi dengan langganan</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_subtitle_howaboutXmorefreedays_mobile">
+        <item quantity="other">Mau %1$s hari gratis lagi?</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_title_planXtrialendsinXdays_mobile">
+        <item quantity="other">Percobaan %1$s Anda akan berakhir dalam %2$s hari.</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXhours_mobile">
+        <item quantity="other">Untuk alasan keamanan, Anda bisa mencoba lagi dalam %1$s jam.</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXminutes_mobile">
+        <item quantity="other">Untuk alasan keamanan, Anda bisa mencoba lagi dalam %1$s menit.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_TCsprivacypolicyforunderXyearold_mobile">
+        <item quantity="other">Dengan mengaktifkan akun untuk anggota di bawah usia %1$s tahun, Anda menyetujui bahwa Deezer mengumpulkan dan mengelola data pribadi mereka agar mereka bisa menggunakan layanan kami. Untuk informasi lebih lanjut, Anda bisa membaca %2$sKebijakan Privasi%3$s kami.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_onlycontentsuitableforXageandunder_mobile">
+        <item quantity="other">Dengan mengaktifkan opsi ini, hanya konten yang cocok untuk usia %1$s dan di bawahnya akan ditunjukkan.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_underXyearsorkidscannotbeconverted_mobile">
+        <item quantity="other">Anda tidak bisa mengakses profil ini. Pengguna di bawah usia %1$s tahun atau profil anak tidak bisa diubah dari profil menjadi akun terpisah.</item>
+    </plurals>
+    <plurals name="dz_familymemberselector_text_Xmembersremaining_mobile">
+        <item quantity="other">%1$s anggota tersisa</item>
+    </plurals>
+    <plurals name="dz_familyprofileminorconsent_text_termsandconditions_mobile">
+        <item quantity="other">Dengan membuat sub-profil bagi anak di bawah usia %1$s, artinya Anda menyetujui Deezer dan mitranya untuk mengumpulkan dan memproses data pribadi yang dikaitkan dengan pemilik profil guna menawarkan konten dan penawaran yang disesuaikan dengan minat. Untuk informasi lebih lanjut harap lihat Kebijakan Privasi kami.</item>
+    </plurals>
+    <plurals name="dz_familyprofileswitcherwelcome_text_Xprofilesremaining_mobile">
+        <item quantity="other">%1$s profil tersisa</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_accountcreationagerestriction_mobile">
+        <item quantity="other">Anda setidaknya harus berusia %1$s untuk membuat akun.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordnotenoughchars_mobile">
+        <item quantity="other">Kata sandi Anda harus mengandung minimum %1$s karakter.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordtoomanychars_mobile">
+        <item quantity="other">Kata sandi Anda tidak boleh mengandung lebih dari %1$s karakter.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernamenotenoughchars_mobile">
+        <item quantity="other">Nama pengguna Anda setidaknya harus mengandung %1$s karakter.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernametoomanychars_mobile">
+        <item quantity="other">Nama pengguna Anda tidak boleh mengandung lebih dari %1$s karakter.</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xgbleft_mobile">
+        <item quantity="other">%1$s GB tersisa</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xmbleft_mobile">
+        <item quantity="other">%1$s mb tersisa</item>
+    </plurals>
+    <plurals name="dz_inprogressplaylistpage_subtitle_duringthelastXdays_mobile">
+        <item quantity="other">Selama %1$s hari terakhir</item>
+    </plurals>
+    <plurals name="dz_masthead_title_episodescountnox_mobile">
+        <item quantity="other">Episode</item>
+    </plurals>
+    <plurals name="dz_masthead_title_fanscountnox_mobile">
+        <item quantity="other">Penggemar</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_Xtrackchangesperhour_mobile">
+        <item quantity="other">Anda hanya bisa melakukan %1$s penggantian lagu per jam dalam satu campuran.</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_changetrackallowedagaininXmin_mobile">
+        <item quantity="other">Anda baru bisa mengganti lagu lagi dalam %1$s menit.</item>
+    </plurals>
+    <plurals name="dz_mobiletrialtoaster_text_yourXdaytrialhasstarted_mobile">
+        <item quantity="other">Masa percobaan %1$s Anda sudah dimulai</item>
+    </plurals>
+    <plurals name="dz_mymusic_albums_count">
+        <item quantity="other">%1$s album</item>
+    </plurals>
+    <plurals name="dz_newofferscardsusp_text_getXaccountswithXbenefitsplushifi_mobile">
+        <item quantity="other">Dapatkan %1$s akun terpisah, semua dengan keuntungan %2$s termasuk suara High fidelity.</item>
+    </plurals>
+    <plurals name="dz_offerwall_text_priceXpermonthforXmonths_mobile">
+        <item quantity="other">%1$s/bulan untuk %2$s bulan</item>
+    </plurals>
+    <plurals name="dz_offlinepodcastplaylist_subtitle_Xdownloadedepisodes_mobile">
+        <item quantity="other">%1$s episode yang diunduh</item>
+    </plurals>
+    <plurals name="dz_onboardingfirstlikes_action_pickXmoreUPP_mobile">
+        <item quantity="other">PILIH %1$s LAGI</item>
+    </plurals>
+    <plurals name="dz_onboardingtoastmessage_action_onlyXpickstostart_mobile">
+        <item quantity="other">Pelan-pelan! Kami hanya perlu %1$s pilihan untuk memulai.</item>
+    </plurals>
+    <plurals name="dz_passwordsecurity_title_Xcharactersmin_mobile">
+        <item quantity="other">Minimum %1$s karakter</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_accountalreadylinkedtoXdevices_mobile">
+        <item quantity="other">Akun Anda sudah ditautkan ke %1$s peranti lain. Fitur %2$s tidak akan tersedia di peranti ini.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_maxXdevicesonyoursubcription_mobile">
+        <item quantity="other">Berkat langganan ini, Anda bisa menikmati %1$s dalam maksimal %2$s peranti.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_nomorethanXdevicesonyoursubcription_mobile">
+        <item quantity="other">Dengan langganan ini Anda tidak dapat menikmati %1$s dalam lebih dari %2$s peranti.</item>
+    </plurals>
+    <plurals name="dz_playlist_text_tracksalreadyaddedtotheplaylist_mobile">
+        <item quantity="other">Lagu-lagu ini sudah ditambahkan ke daftar putar</item>
+    </plurals>
+    <plurals name="dz_playlistpage_action_addXtracks_mobile">
+        <item quantity="other">Tambahkan %1$s lagu</item>
+    </plurals>
+    <plurals name="dz_premiumbenefit_text_skipmorethanXtracksperhour_mobile">
+        <item quantity="other">Lewati lebih dari %1$s lagu per jam</item>
+    </plurals>
+    <plurals name="dz_searchresult_title_topresults_mobile">
+        <item quantity="other">Hasil terbaik</item>
+    </plurals>
+    <plurals name="dz_signupjapanUS_action_tryitfreexmonths_mobile">
+        <item quantity="other">Cobalah gratis untuk %1$s bulan</item>
+    </plurals>
+    <plurals name="dz_skipcounter_text_Xmoretracks_mobile">
+        <item quantity="other">Anda bisa lewati %1$s lagu lagi.</item>
+    </plurals>
+    <plurals name="dz_sleeptimer_text_sleepinlessthanXminutes_mobile">
+        <item quantity="other">Tidur dalam kurang dari %1$s menit</item>
+    </plurals>
+    <plurals name="dz_smartcache_text_storemostplayedtracksrecosettoXgb_mobile">
+        <item quantity="other">Smart Cache menyimpan lagu yang paling sering diputar sehingga dapat dimuat ulang lebih cepat. Untuk pengalaman terbaik, kami merekomendasikan mengaturnya menjadi %1$s GB.</item>
+    </plurals>
+    <plurals name="dz_smartloginandroidtvxboxwelcome_text_thiscodewillexpireinXminutes_mobile">
+        <item quantity="other">Kode ini akan kedaluwarsa dalam %1$s menit.</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Followers_mobile">
+        <item quantity="other">Pengikut</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Following_mobile">
+        <item quantity="other">Mengikuti</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfans_mobile">
+        <item quantity="other">%1$s penggemar</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowers_mobile">
+        <item quantity="other">%1$s pengikut</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowing_mobile">
+        <item quantity="other">%1$s diikuti oleh Anda</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xnotifications_mobile">
+        <item quantity="other">%1$s pemberitahuan baru</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xgigabytes_mobile">
+        <item quantity="other">%1$s GB</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xmegabytes_mobile">
+        <item quantity="other">%1$s MB</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdays_mobile">
+        <item quantity="other">%1$s hari</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdaysago_mobile">
+        <item quantity="other">%1$s hari yang lalu</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhours_mobile">
+        <item quantity="other">%1$s jam</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhoursago_mobile">
+        <item quantity="other">%1$s jam yang lalu</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmin_mobile">
+        <item quantity="other">%1$s menit</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_XminleftUPP_mobile">
+        <item quantity="other">%1$s MENIT LAGI</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutes_mobile">
+        <item quantity="other">%1$s menit</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutesago_mobile">
+        <item quantity="other">%1$s menit yang lalu</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmonthsago_mobile">
+        <item quantity="other">%1$s bulan yang lalu</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xs_mobile">
+        <item quantity="other">%1$s d</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xweeksago_mobile">
+        <item quantity="other">%1$s minggu yang lalu</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xyearsago_mobile">
+        <item quantity="other">%1$s tahun yang lalu</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_alreadyaddedtoplaylist_mobile">
+        <item quantity="other">Sudah ditambahkan ke daftar putar</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_unlockedXmoreskips_mobile">
+        <item quantity="other">Anda telah melompati %1$s lagu lagi</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoplaylisttrack_mobile">
+        <item quantity="other">Ditambahkan ke daftar putar</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoyourfavoritetrackstrack_mobile">
+        <item quantity="other">Ditambahkan ke lagu favorit Anda</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromplaylist_mobile">
+        <item quantity="other">Dihapus dari daftar putar</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromyourfavoritetrackstrack_mobile">
+        <item quantity="other">Hapus dari lagu favorit Anda</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_Xdaytrial_mobile">
+        <item quantity="other">Percobaan %1$s hari</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_downloadskipadfreelistening_mobile">
+        <item quantity="other">Unduh lagu-lagu Anda, lewati lagu yang tidak Anda sukai, dan nikmatilah lagu tanpa mendengar iklan selama %1$s hari.</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_text_tryXforXdaysfreenocreditcardrequired_mobile">
+        <item quantity="other">Coba %1$s selama %2$s hari secara gratis - tak perlu kartu kredit!</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXdays_mobile">
+        <item quantity="other">Untuk memeriksa langganan Anda dan tetap menggunakan Deezer di telepon genggam Anda, harap lakukan koneksi ke WiFi atau jaringan telepon selular dalam %1$s hari.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXhours_mobile">
+        <item quantity="other">Untuk memeriksa langganan Anda dan tetap menggunakan Deezer di telepon genggam Anda, harap lakukan koneksi ke WiFi atau jaringan telepon selular dalam %1$s jam.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXminutes_mobile">
+        <item quantity="other">Untuk memeriksa langganan Anda dan tetap menggunakan Deezer di telepon genggam Anda, harap lakukan koneksi ke WiFi atau jaringan telepon selular dalam %1$s menit.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Maju cepat %d detik</item>
+        <item quantity="other">Maju cepat %d detik</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Mundur %d detik</item>
+        <item quantity="other">Mundur %d detik</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notifikasi baru</item>
+        <item quantity="other">%d notifikasi baru</item>
+    </plurals>
+</resources>

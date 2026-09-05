@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center_vertical" android:background="@drawable/ripple_cell_background" android:layout_width="match_parent" android:layout_height="@dimen/bottom_sheet_context_menu_entry_height" android:paddingStart="@dimen/bottom_sheet_context_menu_legacy_horizontalMargin" android:paddingEnd="@dimen/bottom_sheet_context_menu_legacy_horizontalMargin" style="@style/BottomMenu.SimpleEntry.Text"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

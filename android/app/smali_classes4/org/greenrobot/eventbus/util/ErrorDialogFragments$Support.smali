@@ -1,0 +1,83 @@
+.class public Lorg/greenrobot/eventbus/util/ErrorDialogFragments$Support;
+.super Lyd;
+.source ""
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/greenrobot/eventbus/util/ErrorDialogFragments;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Support"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x6
+
+    invoke-direct {p0}, Lyd;-><init>()V
+
+    const/4 v0, 0x1
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 3
+
+    const-string v2, "  ~@~@~@~@~@~@~@~@~@~@~   Smob - Mod obfuscation tool v1.4 by Kirlif\'   ~@~@~@~@~@~@~@~@~@~@~  "
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Lzd;
+
+    move-result-object v0
+
+    const/4 v2, 0x2
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-static {p1, p2, v0, v1}, Lorg/greenrobot/eventbus/util/ErrorDialogFragments;->handleOnClick(Landroid/content/DialogInterface;ILandroid/app/Activity;Landroid/os/Bundle;)V
+
+    const/4 v2, 0x6
+
+    return-void
+.end method
+
+.method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
+    .locals 2
+
+    const/4 v1, 0x2
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Lzd;
+
+    move-result-object p1
+
+    const/4 v1, 0x4
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
+
+    move-result-object v0
+
+    const/4 v1, 0x2
+
+    invoke-static {p1, v0, p0}, Lorg/greenrobot/eventbus/util/ErrorDialogFragments;->createDialog(Landroid/content/Context;Landroid/os/Bundle;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/Dialog;
+
+    move-result-object p1
+
+    const/4 v1, 0x6
+
+    return-object p1
+.end method

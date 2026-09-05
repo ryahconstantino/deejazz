@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deezer.feature.playlist.management.ui.PlaylistManagementCoordinatorLayout android:id="@id/masthead_coordinatorlayout" android:tag="layout/activity_playlist_management_0" android:background="@color/theme_bg_primary" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingTop="@dimen/scaled_24dp" android:paddingBottom="@dimen/scaled_20dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</com.deezer.feature.playlist.management.ui.PlaylistManagementCoordinatorLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/palette_yellow_900" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_account" android:left="6.0dp" android:top="6.0dp" android:right="6.0dp" android:bottom="6.0dp" />
+</layer-list>

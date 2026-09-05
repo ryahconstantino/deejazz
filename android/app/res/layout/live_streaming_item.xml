@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/ripple_cell_background" android:layout_width="match_parent" android:layout_height="@dimen/live_streaming_item_height" android:paddingStart="@dimen/scaled_16dp" android:paddingEnd="@dimen/scaled_16dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/cover" android:layout_width="@dimen/live_streaming_item_cover_size" android:layout_height="@dimen/live_streaming_item_cover_size" android:layout_marginEnd="12.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="10.0sp" android:textColor="@color/theme_text_secondary" android:ellipsize="end" android:id="@id/on_air" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="2.0dp" android:drawableEnd="@drawable/state_list_badge_waves_grey" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="@dimen/scaled_14sp" android:textColor="@color/theme_text_primary" android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/theme_text_secondary" android:ellipsize="end" android:id="@id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

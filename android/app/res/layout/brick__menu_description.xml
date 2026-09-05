@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/theme_text_secondary" android:id="@id/menu_description_text" android:tag="layout/brick__menu_description_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/scaled_16dp" android:layout_marginEnd="@dimen/scaled_16dp" style="@style/p3"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

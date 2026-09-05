@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:sothree="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/container_banner_top" />
+        <com.deezer.android.ui.widget.sliding.SlidingUpPanelLayout android:gravity="bottom" android:id="@id/sliding_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="0.0dp" sothree:layout_constraintBottom_toBottomOf="parent" sothree:layout_constraintTop_toBottomOf="@id/banner_top" sothree:umanoInitialState="hidden" sothree:umanoPanelHeight="@dimen/mini_player_ng_height_bottom_tabbar" sothree:umanoShadowHeight="4.0dp">
+            <RelativeLayout android:id="@id/fl_insets" android:layout_width="match_parent" android:layout_height="match_parent" sothree:insetBackground="?default_inset_color">
+                <ViewStub android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/networkStatusBarcontainer" />
+                <ViewStub android:id="@id/toolbar" android:layout="@layout/toolbar" android:inflatedId="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:layout_alignParentTop="true" />
+                <include android:id="@id/networkStatusBarcontainer" layout="@layout/network_statusbar_layout" />
+            </RelativeLayout>
+            <FrameLayout android:id="@id/player_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.deezer.android.ui.widget.sliding.SlidingUpPanelLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:layout_gravity="bottom" android:id="@id/bottom_navigation" android:background="@color/palette_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" sothree:itemIconTint="@color/tab_bar_icon" sothree:itemTextAppearanceActive="@style/TabBar.Active" sothree:itemTextAppearanceInactive="@style/TabBar.Inactive" sothree:itemTextColor="@color/tab_bar_icon" />
+</FrameLayout>

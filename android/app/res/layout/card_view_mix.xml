@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.android.ui.recyclerview.widget.dynamicpage.DynamicCardRadioCoverView android:id="@id/cover_and_title" android:background="@drawable/placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" app:squared="true" style="@style/CardsElevation" />
+    <com.deezer.uikit.widgets.labels.LabelView android:id="@id/label_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" />
+    <TextView android:textSize="@dimen/scaled_14sp" android:textColor="@color/theme_text_primary" android:ellipsize="end" android:gravity="start|center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:maxLines="2" android:textDirection="locale" />
+    <TextView android:textSize="@dimen/scaled_10sp" android:textColor="@color/theme_text_secondary" android:ellipsize="end" android:gravity="start|center" android:id="@id/caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:textDirection="locale" />
+    <com.deezer.uikit.widgets.labels.LabelView android:id="@id/label_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_badge_vertical_margin" />
+</LinearLayout>

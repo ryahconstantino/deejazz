@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/snackbar_sso_container" android:background="@color/sso_background" android:paddingTop="@dimen/scaled_20dp" android:paddingBottom="@dimen/scaled_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/scaled_16dp" android:paddingEnd="@dimen/scaled_16dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/sso_text_color" android:id="@id/snackbar_sso_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/p3" />
+    <Button android:id="@id/snackbar_sso_connect" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/snackbar_sso_title" style="@style/Widget.SSOButton" />
+    <Button android:id="@id/snackbar_sso_cancel" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:layout_constraintEnd_toStartOf="@id/snackbar_sso_connect" app:layout_constraintTop_toBottomOf="@id/snackbar_sso_title" style="@style/Widget.SSOButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

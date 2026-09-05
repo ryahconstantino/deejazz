@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/masthead_page_picture_drawable_rectangle_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/masthead_content_picture" android:tag="binding_1" android:background="@drawable/placeholder" android:layout_width="@dimen/masthead_content_picture_picturesize" android:layout_height="@dimen/masthead_content_picture_picturesize" android:layout_marginTop="@dimen/masthead_content_picture_topmargin" android:scaleType="fitCenter" android:elevation="@dimen/masthead_content_picture_pictureelevation" />
+</FrameLayout>

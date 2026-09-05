@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/purple_gradient_1" android:endColor="@color/purple_gradient_2" android:angle="45.0" android:type="linear" />
+            <corners android:radius="8.0dp" />
+        </shape>
+    </item>
+    <item android:gravity="end|center" android:height="@dimen/spinner_arrow_down_dimen" android:width="@dimen/spinner_arrow_down_dimen" android:end="8.0dp">
+        <bitmap android:src="@drawable/chevron_bottom" android:tint="@color/palette_white" />
+    </item>
+</layer-list>

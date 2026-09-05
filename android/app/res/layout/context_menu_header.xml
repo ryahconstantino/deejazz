@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/theme_bg_secondary" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/context_menu_header_block" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginStart="@dimen/bottom_sheet_context_menu_entry_topMargin" android:layout_marginEnd="@dimen/bottom_sheet_context_menu_entry_topMargin">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/context_menu_picture_imageview" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginEnd="16.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/p1" android:textColor="@color/theme_text_primary_statelist" android:ellipsize="marquee" android:id="@id/context_menu_first_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="@style/p5" android:textColor="@color/theme_text_primary_statelist" android:ellipsize="marquee" android:id="@id/context_menu_second_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sans-serif-light" />
+            <TextView android:textAppearance="@style/p5" android:textColor="@color/theme_text_primary_statelist" android:ellipsize="marquee" android:id="@id/context_menu_third_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sans-serif-light" />
+            <TextView android:textAppearance="@style/p1" android:textColor="@color/theme_text_primary_statelist" android:ellipsize="end" android:id="@id/context_menu_talkshow_title_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/context_menu_detail_block" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_below="@id/context_menu_header_block">
+        <ScrollView android:id="@id/context_menu_description_scrollview" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:fadeScrollbars="false" android:layout_marginStart="@dimen/bottom_sheet_context_menu_entry_topMargin" android:layout_marginEnd="@dimen/bottom_sheet_context_menu_entry_topMargin">
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/p1" android:textColor="@color/theme_text_primary_statelist" android:ellipsize="end" android:id="@id/context_menu_talkepisode_title_textview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="2" />
+                <TextView android:textAppearance="@style/p5" android:textColor="@color/theme_text_secondary_statelist" android:ellipsize="end" android:id="@id/context_menu_talkepisode_timeinfo_textview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif-light" />
+                <TextView android:textAppearance="@style/p3" android:textColor="@color/theme_text_primary_statelist" android:id="@id/context_menu_description_textview" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

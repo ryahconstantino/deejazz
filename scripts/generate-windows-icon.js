@@ -5,9 +5,9 @@ const { spawnSync } = require("child_process");
 const { projectRoot } = require("./build-environment");
 
 const scriptPath = path.join(projectRoot, "scripts", "generate-windows-icon.ps1");
-const sourcePath = path.join(projectRoot, "src", "resources", "deejazz-icon.png");
-const outputPath = path.join(projectRoot, "src", "resources", "win", "app.ico");
-const trayOutputPath = path.join(projectRoot, "src", "resources", "win", "systray.png");
+const sourcePath = path.join(projectRoot, "desktop", "resources", "deejazz-icon.png");
+const outputPath = path.join(projectRoot, "desktop", "resources", "win", "app.ico");
+const trayOutputPath = path.join(projectRoot, "desktop", "resources", "win", "systray.png");
 
 function convertWslPath(filePath) {
   const result = spawnSync("wslpath", ["-w", filePath], { encoding: "utf8" });

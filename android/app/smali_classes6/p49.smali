@@ -1,0 +1,172 @@
+.class public final Lp49;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u00c6\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0014\u0008\u0007\u0018\u0000 \u0088\u00012\u00020\u0001:\u0002\u0088\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0012\u0010\u0003\u001a\u00020\u00042\u0008\u0008\u0001\u0010\u0005\u001a\u00020\u0006H\u0007JX\u0010\u0007\u001a\u00020\u00082\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001cH\u0007J \u0010\u001d\u001a\u00020\n2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u0016H\u0007J0\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&2\u0006\u0010\'\u001a\u00020(2\u0006\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\u0019\u001a\u00020\u001aH\u0007J\u0010\u0010)\u001a\u00020(2\u0006\u0010#\u001a\u00020$H\u0007J\u0008\u0010*\u001a\u00020+H\u0007J\u0018\u0010,\u001a\u00020-2\u0006\u0010#\u001a\u00020$2\u0006\u0010\u0011\u001a\u00020\u0012H\u0007J\u0010\u0010.\u001a\u00020/2\u0006\u0010#\u001a\u00020$H\u0007J\u0010\u00100\u001a\u0002012\u0006\u0010\'\u001a\u00020(H\u0007J\u0008\u00102\u001a\u000203H\u0007J\u0010\u00104\u001a\u0002052\u0006\u00106\u001a\u000207H\u0007J\u0008\u00108\u001a\u000209H\u0007J\u0010\u0010:\u001a\u00020\u001a2\u0006\u0010;\u001a\u00020<H\u0007J\u0012\u0010=\u001a\u00020>2\u0008\u0008\u0001\u0010?\u001a\u00020@H\u0007J\u0010\u0010A\u001a\u00020B2\u0006\u0010#\u001a\u00020$H\u0007J\u0010\u0010C\u001a\u00020D2\u0006\u0010#\u001a\u00020$H\u0007J\u0010\u0010E\u001a\u00020F2\u0006\u0010%\u001a\u00020&H\u0007J\u0010\u0010G\u001a\u00020H2\u0006\u0010I\u001a\u00020FH\u0007J\u0010\u0010J\u001a\u00020K2\u0006\u0010L\u001a\u00020MH\u0007J\u0010\u0010N\u001a\u00020O2\u0006\u0010\'\u001a\u00020(H\u0007J\u0008\u0010P\u001a\u00020QH\u0007J0\u0010R\u001a\u00020S2\u0006\u0010T\u001a\u0002052\u0006\u0010U\u001a\u00020\u00082\u0006\u0010V\u001a\u0002092\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001e\u001a\u00020\u001fH\u0007J\u0010\u0010W\u001a\u00020X2\u0006\u0010\u001b\u001a\u00020\u001cH\u0007J\u0008\u0010Y\u001a\u00020ZH\u0007J\u0008\u0010[\u001a\u00020\\H\u0007J\u0018\u0010]\u001a\u00020^2\u0006\u0010_\u001a\u00020\u00042\u0006\u0010`\u001a\u00020aH\u0007J\u0010\u0010b\u001a\u00020c2\u0006\u0010%\u001a\u00020&H\u0007J\u0018\u0010d\u001a\u00020e2\u0006\u0010#\u001a\u00020$2\u0006\u0010`\u001a\u00020aH\u0007J\u0010\u0010f\u001a\u00020a2\u0006\u0010\u001b\u001a\u00020\u001cH\u0007J\u0010\u0010g\u001a\u00020<2\u0006\u0010#\u001a\u00020$H\u0007J\u0010\u0010h\u001a\u00020\u000c2\u0006\u0010;\u001a\u00020<H\u0007J\u0012\u0010i\u001a\u00020j2\u0008\u0008\u0001\u0010?\u001a\u00020@H\u0007J\u0010\u0010k\u001a\u00020\u00102\u0006\u0010l\u001a\u00020jH\u0007J\u0018\u0010m\u001a\u00020\u00162\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010n\u001a\u00020+H\u0007J(\u0010o\u001a\u0010\u0012\u000c\u0012\n r*\u0004\u0018\u00010q0q0p2\u0006\u0010\u001b\u001a\u00020\u001c2\u0008\u0008\u0001\u0010?\u001a\u00020@H\u0007J\u0010\u0010s\u001a\u00020\u00062\u0006\u0010#\u001a\u00020$H\u0007J\u0010\u0010t\u001a\u00020u2\u0006\u0010\r\u001a\u00020\u000eH\u0007J\u0010\u0010v\u001a\u00020\u00062\u0006\u0010%\u001a\u00020&H\u0007J\u00ca\u0001\u0010w\u001a\u00020M2\u0008\u0008\u0001\u0010\u0005\u001a\u00020\u00062\u0006\u0010x\u001a\u00020O2\u0006\u0010y\u001a\u0002012\u0006\u0010z\u001a\u00020\u00102\u0006\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010{\u001a\u00020S2\u0006\u0010|\u001a\u00020X2\u0006\u0010}\u001a\u00020\\2\u0006\u0010~\u001a\u00020^2\u0006\u0010\u007f\u001a\u00020Q2\u0007\u0010\u0080\u0001\u001a\u00020Z2\u0006\u0010\r\u001a\u00020\u000e2\u0007\u0010\u0081\u0001\u001a\u00020B2\u0006\u0010\u001b\u001a\u00020\u001c2\u0007\u0010\u0082\u0001\u001a\u00020\u00042\r\u0010\u0083\u0001\u001a\u0008\u0012\u0004\u0012\u00020q0p2\u0006\u0010\u001e\u001a\u00020\u001f2\u0007\u0010\u0084\u0001\u001a\u0002032\u0007\u0010\u0085\u0001\u001a\u00020H2\t\u0008\u0001\u0010\u0086\u0001\u001a\u00020\u00062\u0007\u0010\u0087\u0001\u001a\u00020uH\u0007\u00a8\u0006\u0089\u0001"
+    }
+    d2 = {
+        "Lcom/deezer/feature/podcast/PodcastPageModule;",
+        "",
+        "()V",
+        "provideAudioContext",
+        "Lcom/deezer/core/jukebox/model/IAudioContext;",
+        "talkShowId",
+        "",
+        "provideCellEpisodeWithCoverDescriptionProgressListTransformer",
+        "Lcom/deezer/android/ui/ui_kit/cells/lists/CellEpisodeWithCoverDescriptionProgressListTransformer;",
+        "singleCellTransformer",
+        "Lcom/deezer/android/ui/ui_kit/cells/CellEpisodeWithCoverDescriptionProgressTransformer;",
+        "synchronizerFacade",
+        "Lcom/deezer/synchronizer/SynchronizerFacade;",
+        "playerController",
+        "Lcom/deezer/core/jukebox/IPlayerController;",
+        "bookmarkProvider",
+        "Lcom/deezer/core/data/talkbookmarks/TalkBookmarkProviderWrapper;",
+        "eventBus",
+        "Lorg/greenrobot/eventbus/EventBus;",
+        "trackLikeBus",
+        "Lcom/deezer/android/ui/TrackLikeBus;",
+        "timeCaptionHelper",
+        "Lcom/deezer/android/ui/ui_kit/helpers/TalkEpisodeTimeCaptionHelper;",
+        "licenceHandler",
+        "Lcom/deezer/core/data/model/policy/LicenceHandler;",
+        "legacySynchronizerInteropMapper",
+        "Lcom/deezer/core/synchro/LegacySynchronizerInteropMapper;",
+        "stringProvider",
+        "Lcom/deezer/app/NewStringProvider;",
+        "provideCellEpisodeWithCoverDescriptionProgressTransformer",
+        "enabledFeatures",
+        "Lcom/deezer/core/data/model/EnabledFeatures;",
+        "talkEpisodeTimeCaptionHelper",
+        "provideContentLauncherHelper",
+        "Lcom/deezer/android/ui/fragment/handler/helper/ContentLauncherHelper;",
+        "activity",
+        "Lcom/deezer/feature/podcast/PodcastActivity;",
+        "appComponent",
+        "Lcom/deezer/core/inject/AppComponent;",
+        "dataComponent",
+        "Lcom/deezer/core/data/inject/DataComponent;",
+        "provideDataComponent",
+        "provideDatePatternProvider",
+        "Lcom/deezer/android/ui/ui_kit/helpers/DatePatternProvider;",
+        "provideDeeplinkActionConsumer",
+        "Lcom/deezer/navigation/deeplink/actions/DeeplinkActionConsumer;",
+        "provideEpisodeMenuLauncher",
+        "Lcom/deezer/feature/bottomsheetmenu/episode/EpisodeMenuLauncher;",
+        "provideEpisodeRepository",
+        "Lcom/deezer/core/podcast/repository/EpisodeRepository;",
+        "provideEpisodeTransformer",
+        "Lcom/deezer/core/data/transformers/SimpleEpisodeTransformer;",
+        "provideErrorBrickFactory",
+        "Lcom/deezer/android/ui/recyclerview/adapter/lego/bricks/ErrorBrickFactory;",
+        "connectivityHandler",
+        "Lcom/deezer/core/commons/network/ConnectivityHandler;",
+        "provideFilterWrapper",
+        "Lcom/deezer/android/util/FilterWrapper;",
+        "provideLegacySynchronizerInteropMapper",
+        "component",
+        "Lcom/deezer/core/inject/SynchroComponent;",
+        "provideNotificationManagerCompat",
+        "Landroidx/core/app/NotificationManagerCompat;",
+        "context",
+        "Landroid/content/Context;",
+        "provideOfflinePodcastRepository",
+        "Lcom/deezer/feature/offlinepodcast/repository/IOfflinePodcastRepository;",
+        "providePodcastMenuMenuLauncher",
+        "Lcom/deezer/feature/bottomsheetmenu/podcast/PodcastMenuLauncher;",
+        "providePodcastNotificationFactory",
+        "Lcom/deezer/core/podcast/repository/PodcastNotificationRepositoryFactory;",
+        "providePodcastNotificationRepository",
+        "Lcom/deezer/core/podcast/repository/PodcastNotificationRepository;",
+        "podcastNotificationRepositoryFactory",
+        "providePodcastPageViewModel",
+        "Landroidx/lifecycle/ViewModel;",
+        "viewModel",
+        "Lcom/deezer/feature/podcast/PodcastPageViewModel;",
+        "providePodcastRepository",
+        "Lcom/deezer/core/podcast/repository/PodcastRepository;",
+        "providePodcastToFavoriteFabStateTransformer",
+        "Lcom/deezer/feature/podcast/transformers/PodcastToFavoriteFabStateTransformer;",
+        "providePodcastToLegoDataTransformer",
+        "Lcom/deezer/feature/podcast/transformers/PodcastToLegoDataTransformer;",
+        "factory",
+        "cellEpisodesTransformer",
+        "filterWrapper",
+        "providePodcastToMastheadTransformer",
+        "Lcom/deezer/feature/podcast/transformers/PodcastToMastheadTransformer;",
+        "providePodcastToPageMenuStateTransformer",
+        "Lcom/deezer/feature/podcast/transformers/PodcastToPageMenuStateTransformer;",
+        "providePodcastToPlayFabVisibilityTransformer",
+        "Lcom/deezer/feature/podcast/transformers/PodcastToPlayFabVisibilityTransformer;",
+        "providePodcastToShareFabStateTransformer",
+        "Lcom/deezer/feature/podcast/transformers/PodcastToShareFabStateTransformer;",
+        "audioContext",
+        "sharingMessageBuilder",
+        "Lcom/deezer/feature/share/SharingMessageBuilder;",
+        "providePushBoxTracker",
+        "Lcom/deezer/analytics/PushBoxTracker$Tracker;",
+        "provideShareMenuLauncher",
+        "Lcom/deezer/feature/bottomsheetmenu/share/ShareMenuLauncher;",
+        "provideSharingMessageBuilder",
+        "provideSynchroComponent",
+        "provideSynchronizerFacade",
+        "provideTalkBookmarkProvider",
+        "Lcom/deezer/core/podcast_bookmark_cache/TalkBookmarkProvider;",
+        "provideTalkBookmarkProviderWrapper",
+        "talkBookmarkProvider",
+        "provideTalkEpisodeDateHelper",
+        "datePatternProvider",
+        "provideTalkEpisodeSortHolder",
+        "Lcom/deezer/android/ui/SortHolder;",
+        "Lcom/deezer/core/data/model/TalkEpisode;",
+        "kotlin.jvm.PlatformType",
+        "provideTalkShowId",
+        "provideTrackLauncher",
+        "Lcom/deezer/core/jukebox/TrackLauncher;",
+        "provideUserId",
+        "provideViewModel",
+        "podcastRepository",
+        "episodeRepository",
+        "talkBookmarkProviderWrapper",
+        "legoDataTransformer",
+        "mastheadTransformer",
+        "playFabVisibilityTransformer",
+        "shareFabStateTransformer",
+        "favoriteFabStateTransformer",
+        "pageMenuStateTransformer",
+        "offlinePodcastRepository",
+        "talkAudioContext",
+        "sortHolder",
+        "episodeTransformer",
+        "podcastNotificationRepository",
+        "userId",
+        "trackLauncher",
+        "Companion",
+        "app_deezerOfficialGooglePlayStoreRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x5,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x3
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x7
+
+    return-void
+.end method

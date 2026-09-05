@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/constraintLayout" android:tag="layout/brick__recently_search_title_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/title" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TitleBrick" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/clear_icon" android:tag="binding_2" android:background="@drawable/ripple_unbounded" android:visibility="visible" android:layout_width="@dimen/scaled_18dp" android:layout_height="@dimen/scaled_18dp" app:layout_constraintBottom_toBottomOf="@id/title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/title" app:srcCompat="@drawable/ic_trash" />
+</androidx.constraintlayout.widget.ConstraintLayout>

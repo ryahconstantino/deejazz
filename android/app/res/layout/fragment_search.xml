@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_fragment" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/search_edittext_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" style="?searchInputContainerStyle">
+        <com.deezer.android.ui.widget.SeparatorEditText android:gravity="start|center" android:id="@id/search_edittext" style="?searchInputStyle" />
+        <com.deezer.uikit.widgets.searchbar.SearchEndIconImageView android:layout_gravity="end" android:id="@id/right_imageview" android:background="@drawable/ripple_unbounded" android:layout_width="wrap_content" android:layout_height="?actionBarSize" android:src="@drawable/search_end_icon" android:scaleType="center" android:tint="@color/theme_icon_primary" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" app:fixedSize="height" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:background="@drawable/recycler_view_background" android:paddingBottom="@dimen/grid_recycler_view_item_divider_horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/content_page_list_padding" android:paddingEnd="@dimen/content_page_list_padding" android:elevation="@dimen/content_page_list_elevation" android:outlineProvider="background" />
+    </FrameLayout>
+</LinearLayout>

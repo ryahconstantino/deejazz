@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ripple_cell_background" android:layout_width="match_parent" android:layout_height="65.0dp" android:paddingStart="@dimen/scaled_16dp" android:paddingEnd="@dimen/scaled_16dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.deezer.uikit.widgets.imageview.SquareImageView android:id="@id/user_item_cover_image_view" android:padding="@dimen/scaled_4dp" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="@style/p1" android:textColor="@color/theme_text_primary_statelist" android:gravity="center_vertical" android:id="@id/list_item_user_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" android:paddingStart="8.0dp" android:layout_toEndOf="@id/user_item_cover_image_view" />
+</RelativeLayout>

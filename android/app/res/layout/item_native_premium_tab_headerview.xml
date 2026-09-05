@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_native_premium_tab_headerview_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/theme_text_primary" android:gravity="start" android:id="@id/header_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:minHeight="32.0dp" app:layout_constraintEnd_toStartOf="@id/header_close_button" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/h1.XSmall" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/header_close_button" android:tag="binding_1" android:background="?selectableItemBackgroundBorderless" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/header_text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/header_text" app:srcCompat="@drawable/offerwall_cross" />
+</androidx.constraintlayout.widget.ConstraintLayout>

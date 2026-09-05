@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dz_SMScoderesentconfirmationscreen_text_XSMScodesleft_mobile">
+        <item quantity="one">%1$s SMS kodu kaldı</item>
+        <item quantity="other">%1$s SMS kodu kaldı</item>
+    </plurals>
+    <plurals name="dz_agerestrictionerrormessage_text_mustbeXyearsentervaliddate_mobile">
+        <item quantity="one">Deezer hesabını kullanabilmek için en az %1$s yaşında olmalısın. Lütfen geçerli bir tarih gir.</item>
+        <item quantity="other">Deezer hesabını kullanabilmek için en az %1$s yaşında olmalısın. Lütfen geçerli bir tarih gir.</item>
+    </plurals>
+    <plurals name="dz_androidtv_text_profilenumberlimitreached_mobile">
+        <item quantity="one">%1$s profil limitine ulaştın. Devam etmek için lütfen bir profil sil.</item>
+        <item quantity="other">%1$s profil limitine ulaştın. Devam etmek için lütfen bir profil sil.</item>
+    </plurals>
+    <plurals name="dz_androidtvlandingpage_text_morethanXmilliontracksacrossallgenres_mobile">
+        <item quantity="one">Tüm türlerden %1$s milyondan fazla şarkı</item>
+        <item quantity="other">Tüm türlerden %1$s milyondan fazla şarkı</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseXmoreartistsUPP_mobile">
+        <item quantity="one">%1$s SANATÇI DAHA SEÇ</item>
+        <item quantity="other">%1$s SANATÇI DAHA SEÇ</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseatleastXartistsUPP_mobile">
+        <item quantity="one">EN AZ %1$s SANATÇI SEÇ</item>
+        <item quantity="other">EN AZ %1$s SANATÇI SEÇ</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_continuewithXartistsUPP_mobile">
+        <item quantity="one">%1$s SANATÇIYLA DEVAM ET</item>
+        <item quantity="other">%1$s SANATÇIYLA DEVAM ET</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_deletetheseXplaylists_mobile">
+        <item quantity="one">Bu çalma listesi silinsin mi?</item>
+        <item quantity="other">Bu %1$s çalma listesi silinsin mi?</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_playlistsdownloaded_mobile">
+        <item quantity="one">Çalma listeleri indirildi!</item>
+        <item quantity="other">Çalma listeleri indirildi!</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_trackremovedfromfavorite_mobile">
+        <item quantity="one">Bu şarkı sevdiğin şarkılar listesinden silindi.</item>
+        <item quantity="other">Bu şarkılar sevdiğin şarkılar listesinden silindi.</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xapps_mobile">
+        <item quantity="one">%1$s uygulama</item>
+        <item quantity="other">%1$s uygulama</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xartists_mobile">
+        <item quantity="one">%1$s sanatçı</item>
+        <item quantity="other">%1$s sanatçı</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xaudiobooks_mobile">
+        <item quantity="one">%1$s sesli kitap</item>
+        <item quantity="other">%1$s sesli kitap</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xchapters_mobile">
+        <item quantity="one">%1$s bölüm</item>
+        <item quantity="other">%1$s bölüm</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xdownloads_mobile">
+        <item quantity="one">%1$s indirme</item>
+        <item quantity="other">%1$s indirme</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xepisodes_mobile">
+        <item quantity="one">%1$s bölüm</item>
+        <item quantity="other">%1$s bölüm</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xmixes_mobile">
+        <item quantity="one">%1$s miks</item>
+        <item quantity="other">%1$s miks</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xnewentries_mobile">
+        <item quantity="one">%1$s yeni giriş</item>
+        <item quantity="other">%1$s yeni giriş</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xplaylists_mobile">
+        <item quantity="one">%1$s çalma listesi</item>
+        <item quantity="other">%1$s çalma listesi</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xpodcasts_mobile">
+        <item quantity="one">%1$s podcast</item>
+        <item quantity="other">%1$s podcast</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xtracks_mobile">
+        <item quantity="one">%1$s şarkı</item>
+        <item quantity="other">%1$s şarkı</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xunheard_mobile">
+        <item quantity="one">%1$s dinlenmedi</item>
+        <item quantity="other">%1$s dinlenmedi</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_subtitle_cancelactivesubsbeforedeleting_mobile">
+        <item quantity="one">Hesabını silmeden önce tüm aktif üyelikleri iptal etmelisin.</item>
+        <item quantity="other">Hesabını silmeden önce tüm aktif üyelikleri iptal etmelisin.</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingloseaccesstoapps_mobile">
+        <item quantity="one">Hesabını silerek, şu uygulamaya erişimini kaybedeceksin:</item>
+        <item quantity="other">Hesabını silerek, şu uygulamalara erişimini kaybedeceksin:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletinglosefollowingsubs_mobile">
+        <item quantity="one">Hesabını silerek şu üyeliği kaybedeceksin:</item>
+        <item quantity="other">Hesabını silerek şu üyelikleri kaybedeceksin:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingyouloseaccessdataandsubs_mobile">
+        <item quantity="one">Hesabını silerek, şu uygulamaya erişimini, verilerini ve üyeliklerini kaybedeceksin:</item>
+        <item quantity="other">Hesabını silerek, şu uygulamalara erişimini, verilerini ve üyeliklerini kaybedeceksin:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_accountassociatedwithXapps_mobile">
+        <item quantity="one">Hesabın %1$s uygulamayla ilişkilendirildi</item>
+        <item quantity="other">Hesabın %1$s uygulamayla ilişkilendirildi</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithactivesubs_mobile">
+        <item quantity="one">Aktif üyeliği olan uygulamalar</item>
+        <item quantity="other">Aktif üyelikleri olan uygulamalar</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithoutsubs_mobile">
+        <item quantity="one">Üyeliği olmayan uygulamalar</item>
+        <item quantity="other">Üyelikleri olmayan uygulamalar</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithsubs_mobile">
+        <item quantity="one">Üyeliği olan uygulamalar</item>
+        <item quantity="other">Üyelikleri olan uygulamalar</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_subtitle_howaboutXmorefreedays_mobile">
+        <item quantity="one">Ücretsiz %1$s gün daha denemeye ne dersin?</item>
+        <item quantity="other">Ücretsiz %1$s gün daha denemeye ne dersin?</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_title_planXtrialendsinXdays_mobile">
+        <item quantity="one">%1$s deneme süren %2$s gün içinde sona eriyor</item>
+        <item quantity="other">%1$s deneme süren %2$s gün içinde sona eriyor</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXhours_mobile">
+        <item quantity="one">Güvenlik nedeniyle %1$s saat sonra tekrar deneyebilirsin.</item>
+        <item quantity="other">Güvenlik nedeniyle %1$s saat sonra tekrar deneyebilirsin.</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXminutes_mobile">
+        <item quantity="one">Güvenlik nedeniyle %1$s dakika sonra tekrar deneyebilirsin.</item>
+        <item quantity="other">Güvenlik nedeniyle %1$s dakika sonra tekrar deneyebilirsin.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_TCsprivacypolicyforunderXyearold_mobile">
+        <item quantity="one">"%1$s yaşından küçük üyeler için bir hesap etkinleştirerek, hizmetimizi kullanabilmeleri için Deezer'ın kişisel verilerini toplayıp yönetmesini kabul etmiş olursun. Daha fazla bilgi için %2$sGizlilik İlkemizi%3$s okuyabilirsin."</item>
+        <item quantity="other">"%1$s yaşından küçük üyeler için bir hesap etkinleştirerek, hizmetimizi kullanabilmeleri için Deezer'ın kişisel verilerini toplayıp yönetmesini kabul etmiş olursun. Daha fazla bilgi için %2$sGizlilik İlkemizi%3$s okuyabilirsin."</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_onlycontentsuitableforXageandunder_mobile">
+        <item quantity="one">Bu seçenek etkinleştirildiğinde sadece %1$s yaş ve altı için uygun içerikler gösterilecektir.</item>
+        <item quantity="other">Bu seçenek etkinleştirildiğinde sadece %1$s yaş ve altı için uygun içerikler gösterilecektir.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_underXyearsorkidscannotbeconverted_mobile">
+        <item quantity="one">Bu profile erişemezsin. %1$s yaşından küçük kullanıcılar veya çocuk profilleri, profilden bağımsız hesaba dönüştürülemez.</item>
+        <item quantity="other">Bu profile erişemezsin. %1$s yaşından küçük kullanıcılar veya çocuk profilleri, profilden bağımsız hesaba dönüştürülemez.</item>
+    </plurals>
+    <plurals name="dz_familymemberselector_text_Xmembersremaining_mobile">
+        <item quantity="one">%1$s üye kaldı</item>
+        <item quantity="other">%1$s üye kaldı</item>
+    </plurals>
+    <plurals name="dz_familyprofileminorconsent_text_termsandconditions_mobile">
+        <item quantity="one">%1$s yaşından küçükler için bu alt profili oluşturarak, Deezer ve ortaklarının, ilgi alanlarına yönelik içerik ve teklifler sunmak için sahibiyle ilişkili kişisel verileri toplamasını ve işlemesini kabul etmiş oluyorsunuz. Daha fazla bilgi için lütfen Gizlilik Politikamıza bakın.</item>
+        <item quantity="other">%1$s yaşından küçükler için bu alt profili oluşturarak, Deezer ve ortaklarının, ilgi alanlarına yönelik içerik ve teklifler sunmak için sahibiyle ilişkili kişisel verileri toplamasını ve işlemesini kabul etmiş oluyorsunuz. Daha fazla bilgi için lütfen Gizlilik Politikamıza bakın.</item>
+    </plurals>
+    <plurals name="dz_familyprofileswitcherwelcome_text_Xprofilesremaining_mobile">
+        <item quantity="one">%1$s profil kaldı</item>
+        <item quantity="other">%1$s profil kaldı</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_accountcreationagerestriction_mobile">
+        <item quantity="one">Bir hesap oluşturmak için en az %1$s yaşında olmalısın.</item>
+        <item quantity="other">Bir hesap oluşturmak için en az %1$s yaşında olmalısın.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordnotenoughchars_mobile">
+        <item quantity="one">Şifren en az %1$s karakter bulunması gerekiyor.</item>
+        <item quantity="other">Şifren en az %1$s karakter bulunması gerekiyor.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordtoomanychars_mobile">
+        <item quantity="one">Şifren en fazla %1$s karakterden oluşmalıdır.</item>
+        <item quantity="other">Şifren en fazla %1$s karakterden oluşmalıdır.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernamenotenoughchars_mobile">
+        <item quantity="one">Kullanıcı adın en az %1$s karakterden oluşmalıdır.</item>
+        <item quantity="other">Kullanıcı adın en az %1$s karakterden oluşmalıdır.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernametoomanychars_mobile">
+        <item quantity="one">Kullanıcı adın en fazla %1$s karakterden oluşmalıdır.</item>
+        <item quantity="other">Kullanıcı adın en fazla %1$s karakterden oluşmalıdır.</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xgbleft_mobile">
+        <item quantity="one">%1$s GB kaldı</item>
+        <item quantity="other">%1$s GB kaldı</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xmbleft_mobile">
+        <item quantity="one">%1$s mb kaldı</item>
+        <item quantity="other">%1$s mb kaldı</item>
+    </plurals>
+    <plurals name="dz_inprogressplaylistpage_subtitle_duringthelastXdays_mobile">
+        <item quantity="one">Dünden bugüne</item>
+        <item quantity="other">Son %1$s günlük</item>
+    </plurals>
+    <plurals name="dz_masthead_title_episodescountnox_mobile">
+        <item quantity="one">Bölüm</item>
+        <item quantity="other">Bölümler</item>
+    </plurals>
+    <plurals name="dz_masthead_title_fanscountnox_mobile">
+        <item quantity="one">Takipçi</item>
+        <item quantity="other">Hayranlar</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_Xtrackchangesperhour_mobile">
+        <item quantity="one">Bir miks sana her saat için %1$s şarkı değiştirme olanağı verir.</item>
+        <item quantity="other">Bir miks sana her saat için %1$s şarkı değiştirme olanağı verir.</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_changetrackallowedagaininXmin_mobile">
+        <item quantity="one">Şarkıları %1$s dakika içinde değiştirebileceksin.</item>
+        <item quantity="other">Şarkıları %1$s dakika içinde değiştirebileceksin.</item>
+    </plurals>
+    <plurals name="dz_mobiletrialtoaster_text_yourXdaytrialhasstarted_mobile">
+        <item quantity="one">%1$s günlük deneme süren başladı</item>
+        <item quantity="other">%1$s günlük deneme süren başladı</item>
+    </plurals>
+    <plurals name="dz_mymusic_albums_count">
+        <item quantity="one">%1$s albüm</item>
+        <item quantity="other">%1$s albüm</item>
+    </plurals>
+    <plurals name="dz_newofferscardsusp_text_getXaccountswithXbenefitsplushifi_mobile">
+        <item quantity="one">Tüm %2$s avantajlarını Yüksek Doğrulukta sesle birlikte %1$s ayrı hesapta kullanabilirsin.</item>
+        <item quantity="other">Tüm %2$s avantajlarını Yüksek Doğrulukta sesle birlikte %1$s ayrı hesapta kullanabilirsin.</item>
+    </plurals>
+    <plurals name="dz_offerwall_text_priceXpermonthforXmonths_mobile">
+        <item quantity="one">%2$s ay süreyle ayda %1$s</item>
+        <item quantity="other">%2$s ay süreyle ayda %1$s</item>
+    </plurals>
+    <plurals name="dz_offlinepodcastplaylist_subtitle_Xdownloadedepisodes_mobile">
+        <item quantity="one">%1$s bölüm indirildi</item>
+        <item quantity="other">%1$s bölüm indirildi</item>
+    </plurals>
+    <plurals name="dz_onboardingfirstlikes_action_pickXmoreUPP_mobile">
+        <item quantity="one">%1$s TANE DAHA SEÇ</item>
+        <item quantity="other">%1$s TANE DAHA SEÇ</item>
+    </plurals>
+    <plurals name="dz_onboardingtoastmessage_action_onlyXpickstostart_mobile">
+        <item quantity="one">Dur bakalım! Başlamak için sadece %1$s tane seçim gerekiyor.</item>
+        <item quantity="other">Dur bakalım! Başlamak için sadece %1$s tane seçim gerekiyor.</item>
+    </plurals>
+    <plurals name="dz_passwordsecurity_title_Xcharactersmin_mobile">
+        <item quantity="one">En az %1$s karakter</item>
+        <item quantity="other">En az %1$s karakter</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_accountalreadylinkedtoXdevices_mobile">
+        <item quantity="one">Hesabın halihazırda %1$s farklı cihazda bağlı durumda. %2$s özellikleri bu cihazda kullanılamayacak.</item>
+        <item quantity="other">Hesabın halihazırda %1$s farklı cihazda bağlı durumda. %2$s özellikleri bu cihazda kullanılamayacak.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_maxXdevicesonyoursubcription_mobile">
+        <item quantity="one">Üyeliğin %1$s ayrıcalığını en fazla %2$s cihazda kullanabilmene olanak veriyor.</item>
+        <item quantity="other">Üyeliğin %1$s ayrıcalığını en fazla %2$s cihazda kullanabilmene olanak veriyor.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_nomorethanXdevicesonyoursubcription_mobile">
+        <item quantity="one">Üyeliğinle %1$s ayrıcalığını en fazla %2$s cihazda kullanabilirsin.</item>
+        <item quantity="other">Üyeliğinle %1$s ayrıcalığını en fazla %2$s cihazda kullanabilirsin.</item>
+    </plurals>
+    <plurals name="dz_playlist_text_tracksalreadyaddedtotheplaylist_mobile">
+        <item quantity="one">Bu şarkı çalma listesine daha önce eklenmişti</item>
+        <item quantity="other">Bu şarkılar çalma listesine daha önce eklenmişti</item>
+    </plurals>
+    <plurals name="dz_playlistpage_action_addXtracks_mobile">
+        <item quantity="one">%1$s şarkı ekle</item>
+        <item quantity="other">%1$s şarkı ekle</item>
+    </plurals>
+    <plurals name="dz_premiumbenefit_text_skipmorethanXtracksperhour_mobile">
+        <item quantity="one">"Saat başına %1$s'den fazla şarkı atlayabilirsin"</item>
+        <item quantity="other">"Saat başına %1$s'den fazla şarkı atlayabilirsin"</item>
+    </plurals>
+    <plurals name="dz_searchresult_title_topresults_mobile">
+        <item quantity="one">En iyi sonuç</item>
+        <item quantity="other">En iyi sonuçlar</item>
+    </plurals>
+    <plurals name="dz_signupjapanUS_action_tryitfreexmonths_mobile">
+        <item quantity="one">%1$s ay ücretsiz dene</item>
+        <item quantity="other">%1$s ay ücretsiz dene</item>
+    </plurals>
+    <plurals name="dz_skipcounter_text_Xmoretracks_mobile">
+        <item quantity="one">%1$s şarkı daha atlayabilirsin.</item>
+        <item quantity="other">%1$s şarkı daha atlayabilirsin.</item>
+    </plurals>
+    <plurals name="dz_sleeptimer_text_sleepinlessthanXminutes_mobile">
+        <item quantity="one">%1$s dakikadan kısa sürede uyku</item>
+        <item quantity="other">%1$s dakikadan kısa sürede uyku</item>
+    </plurals>
+    <plurals name="dz_smartcache_text_storemostplayedtracksrecosettoXgb_mobile">
+        <item quantity="one">Smart Cache en çok dinlediğin şarkıları önbellekte saklar ve daha hızlı yüklenmelerini sağlar. En iyi deneyim için %1$s GB olarak ayarlamanı öneririz.</item>
+        <item quantity="other">Smart Cache en çok dinlediğin şarkıları önbellekte saklar ve daha hızlı yüklenmelerini sağlar. En iyi deneyim için %1$s GB olarak ayarlamanı öneririz.</item>
+    </plurals>
+    <plurals name="dz_smartloginandroidtvxboxwelcome_text_thiscodewillexpireinXminutes_mobile">
+        <item quantity="one">Bu kod %1$s dakika içinde kullanım dışı kalacak.</item>
+        <item quantity="other">Bu kod %1$s dakika içinde kullanım dışı kalacak.</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Followers_mobile">
+        <item quantity="one">Takipçi</item>
+        <item quantity="other">Takipçi</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Following_mobile">
+        <item quantity="one">Takip ettiği kişiler</item>
+        <item quantity="other">Takip ettiği kişiler</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfans_mobile">
+        <item quantity="one">%1$s fan</item>
+        <item quantity="other">%1$s fan</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowers_mobile">
+        <item quantity="one">%1$s takipçi</item>
+        <item quantity="other">%1$s takipçi</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowing_mobile">
+        <item quantity="one">%1$s takip edilen</item>
+        <item quantity="other">%1$s takip edilen</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xnotifications_mobile">
+        <item quantity="one">%1$s yeni bildirim</item>
+        <item quantity="other">%1$s yeni bildirim</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xgigabytes_mobile">
+        <item quantity="one">%1$s GB</item>
+        <item quantity="other">%1$s GB</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xmegabytes_mobile">
+        <item quantity="one">%1$s MB</item>
+        <item quantity="other">%1$s MB</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdays_mobile">
+        <item quantity="one">%1$s gün</item>
+        <item quantity="other">%1$s gün</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdaysago_mobile">
+        <item quantity="one">%1$s gün önce</item>
+        <item quantity="other">%1$s gün önce</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhours_mobile">
+        <item quantity="one">%1$s saat</item>
+        <item quantity="other">%1$s saat</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhoursago_mobile">
+        <item quantity="one">%1$s saat önce</item>
+        <item quantity="other">%1$s saat önce</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmin_mobile">
+        <item quantity="one">%1$s dak</item>
+        <item quantity="other">%1$s dak</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_XminleftUPP_mobile">
+        <item quantity="one">%1$s DAKİKA KALDI</item>
+        <item quantity="other">%1$s DAKİKA KALDI</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutes_mobile">
+        <item quantity="one">%1$s dakika</item>
+        <item quantity="other">%1$s dakika</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutesago_mobile">
+        <item quantity="one">%1$s dakika önce</item>
+        <item quantity="other">%1$s dakika önce</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmonthsago_mobile">
+        <item quantity="one">%1$s ay önce</item>
+        <item quantity="other">%1$s ay önce</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xs_mobile">
+        <item quantity="one">%1$s sn</item>
+        <item quantity="other">%1$s sn</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xweeksago_mobile">
+        <item quantity="one">%1$s hafta önce</item>
+        <item quantity="other">%1$s hafta önce</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xyearsago_mobile">
+        <item quantity="one">%1$s yıl önce</item>
+        <item quantity="other">%1$s yıl önce</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_alreadyaddedtoplaylist_mobile">
+        <item quantity="one">Çalma listesine zaten ekli</item>
+        <item quantity="other">Çalma listesine zaten ekli</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_unlockedXmoreskips_mobile">
+        <item quantity="one">Yeniden %1$s parça daha atlama olanağına sahipsin</item>
+        <item quantity="other">Yeniden %1$s parça daha atlama olanağına sahipsin</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoplaylisttrack_mobile">
+        <item quantity="one">Çalma listesine eklendi</item>
+        <item quantity="other">Çalma listesine eklendi</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoyourfavoritetrackstrack_mobile">
+        <item quantity="one">Sevdiğin şarkılara eklendi</item>
+        <item quantity="other">Sevdiğin şarkılara eklendi</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromplaylist_mobile">
+        <item quantity="one">Çalma listesinden silindi</item>
+        <item quantity="other">Çalma listesinden silindi</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromyourfavoritetrackstrack_mobile">
+        <item quantity="one">Sevdiğin şarkılardan çıkarıldı</item>
+        <item quantity="other">Sevdiğin şarkılardan çıkarıldı</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_Xdaytrial_mobile">
+        <item quantity="one">%1$s günlük deneme</item>
+        <item quantity="other">%1$s günlük deneme</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_downloadskipadfreelistening_mobile">
+        <item quantity="one">%1$s gün boyunca kendi şarkılarını indir, sevmediğin şarkıları atla ve reklamsız müziğin tadını çıkar.</item>
+        <item quantity="other">%1$s gün boyunca kendi şarkılarını indir, sevmediğin şarkıları atla ve reklamsız müziğin tadını çıkar.</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_text_tryXforXdaysfreenocreditcardrequired_mobile">
+        <item quantity="one">%1$s üyeliğini %2$s gün ücretsiz dene, kredi kartı zorunlu değil!</item>
+        <item quantity="other">%1$s üyeliğini %2$s gün ücretsiz dene, kredi kartı zorunlu değil!</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXdays_mobile">
+        <item quantity="one">"Üyeliğini doğrulamak ve Deezer'ı telefonunda kullanmaya devam etmek için lütfen %1$s gün içinde WiFi veya mobil ağ yoluyla bağlantı kur."</item>
+        <item quantity="other">"Üyeliğini doğrulamak ve Deezer'ı telefonunda kullanmaya devam etmek için lütfen %1$s gün içinde WiFi veya mobil ağ yoluyla bağlantı kur."</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXhours_mobile">
+        <item quantity="one">"Üyeliğini doğrulamak ve Deezer'ı telefonunda kullanmaya devam etmek için lütfen %1$s saat içinde WiFi veya mobil ağ yoluyla bağlantı kur."</item>
+        <item quantity="other">"Üyeliğini doğrulamak ve Deezer'ı telefonunda kullanmaya devam etmek için lütfen %1$s saat içinde WiFi veya mobil ağ yoluyla bağlantı kur."</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXminutes_mobile">
+        <item quantity="one">"Üyeliğini doğrulamak ve Deezer'ı telefonunda kullanmaya devam etmek için lütfen %1$s dakika içinde WiFi veya mobil ağ yoluyla bağlantı kur."</item>
+        <item quantity="other">"Üyeliğini doğrulamak ve Deezer'ı telefonunda kullanmaya devam etmek için lütfen %1$s dakika içinde WiFi veya mobil ağ yoluyla bağlantı kur."</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d saniye ileri sar</item>
+        <item quantity="other">%d saniye ileri sar</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d saniye geri sar</item>
+        <item quantity="other">%d saniye geri sar</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d yeni bildirim</item>
+        <item quantity="other">%d yeni bildirim</item>
+    </plurals>
+</resources>

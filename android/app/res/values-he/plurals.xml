@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dz_SMScoderesentconfirmationscreen_text_XSMScodesleft_mobile">
+        <item quantity="one">נותר עוד ניסיון %1$s לשליחת הקוד</item>
+        <item quantity="two">נותרו עוד %1$s ניסיונות לשליחת הקוד</item>
+        <item quantity="many">נותרו עוד %1$s ניסיונות לשליחת הקוד</item>
+        <item quantity="other">נותרו עוד %1$s ניסיונות לשליחת הקוד בהודעת טקסט</item>
+    </plurals>
+    <plurals name="dz_agerestrictionerrormessage_text_mustbeXyearsentervaliddate_mobile">
+        <item quantity="one">צריך להיות לפחות בני %1$s כדי ליצור חשבון Deezer. התאריך שהזנת לא תקין.</item>
+        <item quantity="two">צריך להיות לפחות בני %1$s כדי ליצור חשבון Deezer. התאריך שהזנת לא תקין.</item>
+        <item quantity="many">צריך להיות לפחות בני %1$s כדי ליצור חשבון Deezer. התאריך שהזנת לא תקין.</item>
+        <item quantity="other">צריך להיות לפחות בני %1$s כדי ליצור חשבון Deezer. התאריך שהזנת לא תקין.</item>
+    </plurals>
+    <plurals name="dz_androidtv_text_profilenumberlimitreached_mobile">
+        <item quantity="one">יצרת כבר פרופיל אחד. כדי להמשיך, צריך למחוק את הפרופיל הקיים.</item>
+        <item quantity="two">יצרת כבר %1$s פרופילים. כדי להמשיך, צריך למחוק את אחד מהפרופילים הקיימים.</item>
+        <item quantity="many">יצרת כבר %1$s פרופילים. כדי להמשיך, צריך למחוק את אחד מהפרופילים הקיימים.</item>
+        <item quantity="other">יצרת כבר %1$s פרופילים. כדי להמשיך, צריך למחוק את אחד מהפרופילים הקיימים.</item>
+    </plurals>
+    <plurals name="dz_androidtvlandingpage_text_morethanXmilliontracksacrossallgenres_mobile">
+        <item quantity="one">"יותר ממיליון קטעים מוזיקליים מכל הז'אנרים"</item>
+        <item quantity="two">"יותר מ-%1$s מיליון קטעים מוזיקליים מכל הז'אנרים"</item>
+        <item quantity="many">"יותר מ-%1$s מיליון קטעים מוזיקליים מכל הז'אנרים"</item>
+        <item quantity="other">"יותר מ-%1$s מיליון קטעים מוזיקליים מכל הז'אנרים"</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseXmoreartistsUPP_mobile">
+        <item quantity="one">צריך לבחור עוד אמן אחד</item>
+        <item quantity="two">צריך לבחור עוד %1$s אמנים</item>
+        <item quantity="many">צריך לבחור עוד %1$s אמנים</item>
+        <item quantity="other">צריך לבחור עוד %1$s אמנים</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseatleastXartistsUPP_mobile">
+        <item quantity="one">צריך לבחור לפחות אמן אחד</item>
+        <item quantity="two">צריך לבחור לפחות %1$s אמנים</item>
+        <item quantity="many">צריך לבחור לפחות %1$s אמנים</item>
+        <item quantity="other">צריך לבחור לפחות %1$s אמנים</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_continuewithXartistsUPP_mobile">
+        <item quantity="one">המשך עם אמן אחד</item>
+        <item quantity="two">המשך עם %1$s אמנים</item>
+        <item quantity="many">המשך עם %1$s אמנים</item>
+        <item quantity="other">המשך עם %1$s אמנים</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_deletetheseXplaylists_mobile">
+        <item quantity="one">למחוק פלייליסט %1$s?</item>
+        <item quantity="two">למחוק %1$s פלייליסטים?</item>
+        <item quantity="many">למחוק %1$s פלייליסטים?</item>
+        <item quantity="other">למחוק %1$s פלייליסטים?</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_playlistsdownloaded_mobile">
+        <item quantity="one">פלייליסט הורד!</item>
+        <item quantity="two">פלייליסטים הורדו!</item>
+        <item quantity="many">פלייליסטים הורדו!</item>
+        <item quantity="other">הפלייליסטים הורדו!</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_trackremovedfromfavorite_mobile">
+        <item quantity="one">הסרנו את הקטע המוזיקלי הזה מרשימת הקטעים האהובים שלך.</item>
+        <item quantity="two">הסרנו את הקטעים המוזיקליים האלה מרשימת הקטעים האהובים שלך.</item>
+        <item quantity="many">הסרנו את הקטעים המוזיקליים האלה מרשימת הקטעים האהובים שלך.</item>
+        <item quantity="other">הסרנו את הקטעים המוזיקליים האלה מרשימת הקטעים האהובים שלך.</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xapps_mobile">
+        <item quantity="one">אפליקציה אחת</item>
+        <item quantity="two">%1$sאפליקציות</item>
+        <item quantity="many">%1$sאפליקציות</item>
+        <item quantity="other">%1$s אפליקציות</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xartists_mobile">
+        <item quantity="one">אמן אחד</item>
+        <item quantity="two">%1$s אמנים</item>
+        <item quantity="many">%1$s אמנים</item>
+        <item quantity="other">%1$s אמנים</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xaudiobooks_mobile">
+        <item quantity="one">ספר אודיו אחד</item>
+        <item quantity="two">%1$sספרי אודיו</item>
+        <item quantity="many">%1$sספרי אודיו</item>
+        <item quantity="other">%1$s ספרי אודיו</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xchapters_mobile">
+        <item quantity="one">פרק אחד</item>
+        <item quantity="two">%1$sפרקים</item>
+        <item quantity="many">%1$sפרקים</item>
+        <item quantity="other">%1$s פרקים</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xdownloads_mobile">
+        <item quantity="one">הורדה אחת</item>
+        <item quantity="two">%1$s הורדות</item>
+        <item quantity="many">%1$s הורדות</item>
+        <item quantity="other">%1$s הורדות</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xepisodes_mobile">
+        <item quantity="one">פרק אחד</item>
+        <item quantity="two">%1$s פרקים</item>
+        <item quantity="many">%1$s פרקים</item>
+        <item quantity="other">%1$s פרקים</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xmixes_mobile">
+        <item quantity="one">מיקסטייפ אחד</item>
+        <item quantity="two">%1$s מיקסטייפים</item>
+        <item quantity="many">%1$s מיקסטייפים</item>
+        <item quantity="other">%1$s מיקסטייפים</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xnewentries_mobile">
+        <item quantity="one">קטע חדש אחד</item>
+        <item quantity="two">%1$sקטעים חדשים</item>
+        <item quantity="many">%1$s קטעים חדשים</item>
+        <item quantity="other">%1$s קטעים חדשים</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xplaylists_mobile">
+        <item quantity="one">פלייליסט אחד</item>
+        <item quantity="two">%1$s פלייליסטים</item>
+        <item quantity="many">%1$s פלייליסטים</item>
+        <item quantity="other">%1$s פלייליסטים</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xpodcasts_mobile">
+        <item quantity="one">פודקאסט אחד</item>
+        <item quantity="two">%1$s פודקאסטים</item>
+        <item quantity="many">%1$s פודקאסטים</item>
+        <item quantity="other">%1$s פודקאסטים</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xtracks_mobile">
+        <item quantity="one">קטע מוזיקלי אחד</item>
+        <item quantity="two">%1$s קטעים מוזיקליים</item>
+        <item quantity="many">%1$s קטעים מוזיקליים</item>
+        <item quantity="other">%1$s קטעים מוזיקליים</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xunheard_mobile">
+        <item quantity="one">אחד שעדיין לא שמעת</item>
+        <item quantity="two">%1$sשעדיין לא שמעת</item>
+        <item quantity="many">%1$s שעדיין לא שמעת</item>
+        <item quantity="other">%1$s שעדיין לא שמעת</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_subtitle_cancelactivesubsbeforedeleting_mobile">
+        <item quantity="one">עליך לבטל את המינוי הפעיל לפני מחיקת החשבון.</item>
+        <item quantity="two">עליך לבטל את כל המינויים הפעילים לפני מחיקת החשבון.</item>
+        <item quantity="many">עליך לבטל את כל המינויים הפעילים לפני מחיקת החשבון.</item>
+        <item quantity="other">עליך לבטל את כל המינויים הפעילים לפני מחיקת החשבון.</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingloseaccesstoapps_mobile">
+        <item quantity="one">מחיקת החשבון תגרום לחסימת הגישה לאפליקציה הבאה:</item>
+        <item quantity="two">מחיקת החשבון תגרום לחסימת הגישה לאפליקציות הבאות:</item>
+        <item quantity="many">מחיקת החשבון תגרום לחסימת הגישה לאפליקציות הבאות:</item>
+        <item quantity="other">מחיקת החשבון תגרום לחסימת הגישה לאפליקציות הבאות:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletinglosefollowingsubs_mobile">
+        <item quantity="one">מחיקת החשבון תגרום לאבדן המינוי הבא:</item>
+        <item quantity="two">מחיקת החשבון תגרום לאבדן המינויים הבאים:</item>
+        <item quantity="many">מחיקת החשבון תגרום לאבדן המינויים הבאים:</item>
+        <item quantity="other">מחיקת החשבון תגרום לאבדן המינויים הבאים:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingyouloseaccessdataandsubs_mobile">
+        <item quantity="one">מחיקת החשבון תגרום לחסימת הגישה, לאבדן הנתונים ולביטול המינוי באפליקציה הבאה:</item>
+        <item quantity="two">מחיקת החשבון תגרום לחסימת הגישה, לאבדן הנתונים ולביטול המינויים באפליקציות הבאות:</item>
+        <item quantity="many">מחיקת החשבון תגרום לחסימת הגישה, לאבדן הנתונים ולביטול המינויים באפליקציות הבאות:</item>
+        <item quantity="other">מחיקת החשבון תגרום לחסימת הגישה, לאבדן הנתונים ולביטול המינויים באפליקציות הבאות:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_accountassociatedwithXapps_mobile">
+        <item quantity="one">החשבון שחל מקושר לאםליקציה %1$s</item>
+        <item quantity="two">החשבון שחל מקושר ל-%1$s אפליקציות</item>
+        <item quantity="many">החשבון שחל מקושר ל-%1$s אפליקציות</item>
+        <item quantity="other">החשבון מקושר ל-%1$s אפליקציות</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithactivesubs_mobile">
+        <item quantity="one">אםליקציה עם מינוי פעיל</item>
+        <item quantity="two">אםליקציות עם מינויים פעילים</item>
+        <item quantity="many">אםליקציות עם מינויים פעילים</item>
+        <item quantity="other">אפליקציות עם מינויים פעילים</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithoutsubs_mobile">
+        <item quantity="one">אפליקציה ללא מינוי</item>
+        <item quantity="two">אפליקציות ללא מינויים</item>
+        <item quantity="many">אפליקציות ללא מינויים</item>
+        <item quantity="other">אפליקציות ללא מינויים</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithsubs_mobile">
+        <item quantity="one">אפליקציה עם מינוי</item>
+        <item quantity="two">אפליקציות עם מינויים</item>
+        <item quantity="many">אפליקציות עם מינויים</item>
+        <item quantity="other">אפליקציות עם מינויים</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_subtitle_howaboutXmorefreedays_mobile">
+        <item quantity="one">רוצה עוד יום של בחינם?</item>
+        <item quantity="two">רוצה עוד יומיים בחינם?</item>
+        <item quantity="many">רוצה עוד %1$s יום בחינם?</item>
+        <item quantity="other">רוצה עוד %1$s ימים בחינם?</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_title_planXtrialendsinXdays_mobile">
+        <item quantity="one">תקופת הניסיון שלך בתוכנית %1$s מסתיימת בעוד יום</item>
+        <item quantity="two">תקופת הניסיון שלך בתוכנית %1$s מסתיימת בעוד יומיים</item>
+        <item quantity="many">תקופת הניסיון שלך בתוכנית %1$s מסתיימת בעוד %2$s יום</item>
+        <item quantity="other">תקופת הניסיון שלך בתוכנית %1$s מסתיימת בעוד %2$s ימים</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXhours_mobile">
+        <item quantity="one">מטעמי אבטחה, יהיה באפשרותך לנסות שוב בעוד שעה %1$s.</item>
+        <item quantity="two">מטעמי אבטחה, יהיה באפשרותך לנסות שוב בעוד %1$s שעות.</item>
+        <item quantity="many">מטעמי אבטחה, יהיה באפשרותך לנסות שוב בעוד %1$s שעות.</item>
+        <item quantity="other">מטעמי אבטחה, יהיה באפשרותך לנסות שוב בעוד %1$s שעות.</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXminutes_mobile">
+        <item quantity="one">מטעמי אבטחה, יהיה באפשרותך לנסות שוב בעוד דקה %1$s.</item>
+        <item quantity="two">מטעמי אבטחה, יהיה באפשרותך לנסות שוב בעוד %1$s דקות.</item>
+        <item quantity="many">מטעמי אבטחה, יהיה באפשרותך לנסות שוב בעוד %1$s דקות.</item>
+        <item quantity="other">מטעמי אבטחה, יהיה באפשרותך לנסות שוב בעוד %1$s דקות.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_TCsprivacypolicyforunderXyearold_mobile">
+        <item quantity="one">כשמפעילים חשבון לילדים מתחת לגיל %1$s, מאשרים ל-Deezer לאסוף ולנהל את המידע האישי של הילדים כדי לאפשר להם להשתמש בשירות. למידע נוסף, אפשר לקרוא את %2$sמדיניות הפרטיות%3$s שלנו.</item>
+        <item quantity="two">כשמפעילים חשבון לילדים מתחת לגיל %1$s, מאשרים ל-Deezer לאסוף ולנהל את המידע האישי של הילדים כדי לאפשר להם להשתמש בשירות. למידע נוסף, אפשר לקרוא את %2$sמדיניות הפרטיות%3$s שלנו.</item>
+        <item quantity="many">כשמפעילים חשבון לילדים מתחת לגיל %1$s, מאשרים ל-Deezer לאסוף ולנהל את המידע האישי של הילדים כדי לאפשר להם להשתמש בשירות. למידע נוסף, אפשר לקרוא את %2$sמדיניות הפרטיות%3$s שלנו.</item>
+        <item quantity="other">כשמפעילים חשבון לילדים מתחת לגיל %1$s, מאשרים ל-Deezer לאסוף ולנהל את המידע האישי של הילדים כדי לאפשר להם להשתמש בשירות. למידע נוסף, אפשר לקרוא את %2$sמדיניות הפרטיות%3$s שלנו.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_onlycontentsuitableforXageandunder_mobile">
+        <item quantity="one">כשמפעילים את ההגדרה הזו, רק תוכן שמתאים לילדים בני %1$s ומטה מופיע בפרופיל.</item>
+        <item quantity="two">כשמפעילים את ההגדרה הזו, רק תוכן שמתאים לילדים בני %1$s ומטה מופיע בפרופיל.</item>
+        <item quantity="many">כשמפעילים את ההגדרה הזו, רק תוכן שמתאים לילדים בני %1$s ומטה מופיע בפרופיל.</item>
+        <item quantity="other">כשמפעילים את ההגדרה הזו, רק תוכן שמתאים לילדים בני %1$s ומטה מופיע בפרופיל.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_underXyearsorkidscannotbeconverted_mobile">
+        <item quantity="one">לצערנו אי אפשר להפוך פרופילים של ילדים לחשבונות עצמאיים או ליצור לילדים מתחת לגיל %1$s חשבון עצמאי.</item>
+        <item quantity="two">לצערנו אי אפשר להפוך פרופילים של ילדים לחשבונות עצמאיים או ליצור לילדים מתחת לגיל %1$s חשבון עצמאי.</item>
+        <item quantity="many">לצערנו אי אפשר להפוך פרופילים של ילדים לחשבונות עצמאיים או ליצור לילדים מתחת לגיל %1$s חשבון עצמאי.</item>
+        <item quantity="other">לצערנו אי אפשר להפוך פרופילים של ילדים לחשבונות עצמאיים או ליצור לילדים מתחת לגיל %1$s חשבון עצמאי.</item>
+    </plurals>
+    <plurals name="dz_familymemberselector_text_Xmembersremaining_mobile">
+        <item quantity="one">נשאר מקום לעוד אדם אחד</item>
+        <item quantity="two">נשאר מקום לעוד %1$s אנשים</item>
+        <item quantity="many">נשאר מקום לעוד %1$s אנשים</item>
+        <item quantity="other">נשאר מקום לעוד %1$s אנשים</item>
+    </plurals>
+    <plurals name="dz_familyprofileminorconsent_text_termsandconditions_mobile">
+        <item quantity="one">יצירת פרופיל משנה זה עבור קטין שטרם מלאה לו שנה %1$s, מהווה הסכמה לכך ש-Deezer ושותפיה אוספים ומעבדים מידע אישי הקשור לבעל החשבון, במטרה להציע תוכן ומבצעים המותאמים לתחומי עניין ספציפיים. למידע נוסף, מומלץ לקרוא את מדיניות הפרטיות שלנו.</item>
+        <item quantity="two">יצירת פרופיל משנה זה עבור קטין שטרם מלאו לו %1$s שנים, מהווה הסכמה לכך ש-Deezer ושותפיה אוספים ומעבדים מידע אישי הקשור לבעל החשבון, במטרה להציע תוכן ומבצעים המותאמים לתחומי עניין ספציפיים. למידע נוסף, מומלץ לקרוא את מדיניות הפרטיות שלנו.</item>
+        <item quantity="many">יצירת פרופיל משנה זה עבור קטין שטרם מלאו לו %1$s שנים, מהווה הסכמה לכך ש-Deezer ושותפיה אוספים ומעבדים מידע אישי הקשור לבעל החשבון, במטרה להציע תוכן ומבצעים המותאמים לתחומי עניין ספציפיים. למידע נוסף, מומלץ לקרוא את מדיניות הפרטיות שלנו.</item>
+        <item quantity="other">יצירת פרופיל משנה זה עבור קטין שטרם מלאו לו %1$s שנים, מהווה הסכמה לכך ש-Deezer ושותפיה אוספים ומעבדים מידע אישי הקשור לבעל החשבון, במטרה להציע תוכן ומבצעים המותאמים לתחומי עניין ספציפיים. למידע נוסף, מומלץ לקרוא את מדיניות הפרטיות שלנו.</item>
+    </plurals>
+    <plurals name="dz_familyprofileswitcherwelcome_text_Xprofilesremaining_mobile">
+        <item quantity="one">נותר פרופיל %1$s</item>
+        <item quantity="two">נותרו %1$s פרופילים</item>
+        <item quantity="many">נותרו %1$s פרופילים</item>
+        <item quantity="other">נותרו %1$s פרופילים</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_accountcreationagerestriction_mobile">
+        <item quantity="one">צריך להיות לפחות בני %1$s כדי ליצור חשבון.</item>
+        <item quantity="two">צריך להיות לפחות בני %1$s כדי ליצור חשבון.</item>
+        <item quantity="many">צריך להיות לפחות בני %1$s כדי ליצור חשבון.</item>
+        <item quantity="other">צריך להיות לפחות בני %1$s כדי ליצור חשבון.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordnotenoughchars_mobile">
+        <item quantity="one">הסיסמה צריכה להכיל לפחות תו אחד.</item>
+        <item quantity="two">הסיסמה צריכה להכיל לפחות %1$s תווים.</item>
+        <item quantity="many">הסיסמה צריכה להכיל לפחות %1$s תווים.</item>
+        <item quantity="other">הסיסמה צריכה להכיל לפחות %1$s תווים.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordtoomanychars_mobile">
+        <item quantity="one">הסיסמה לא יכולה להכיל יותר מתו אחד.</item>
+        <item quantity="two">הסיסמה לא יכולה להכיל יותר מ-%1$s תווים.</item>
+        <item quantity="many">הסיסמה לא יכולה להכיל יותר מ-%1$s תווים.</item>
+        <item quantity="other">הסיסמה לא יכולה להכיל יותר מ-%1$s תווים.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernamenotenoughchars_mobile">
+        <item quantity="one">שם המשתמש צריך להכיל לפחות תו אחד.</item>
+        <item quantity="two">שם המשתמש צריך להכיל לפחות %1$s תווים.</item>
+        <item quantity="many">שם המשתמש צריך להכיל לפחות %1$s תווים.</item>
+        <item quantity="other">שם המשתמש צריך להכיל לפחות %1$s תווים.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernametoomanychars_mobile">
+        <item quantity="one">שם המשתמש לא יכול להכיל יותר מתו אחד.</item>
+        <item quantity="two">שם המשתמש לא יכול להכיל יותר מ-%1$s תווים.</item>
+        <item quantity="many">שם המשתמש לא יכול להכיל יותר מ-%1$s תווים.</item>
+        <item quantity="other">שם המשתמש לא יכול להכיל יותר מ-%1$s תווים.</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xgbleft_mobile">
+        <item quantity="one">נותרו GB%1$s</item>
+        <item quantity="two">נותרו GB%1$s</item>
+        <item quantity="many">נותרו GB%1$s</item>
+        <item quantity="other">נותרו GB%1$s</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xmbleft_mobile">
+        <item quantity="one">נותר MB%1$s</item>
+        <item quantity="two">נותרו MB%1$s</item>
+        <item quantity="many">נותרו MB%1$s</item>
+        <item quantity="other">נותרו MB%1$s</item>
+    </plurals>
+    <plurals name="dz_inprogressplaylistpage_subtitle_duringthelastXdays_mobile">
+        <item quantity="one">מאז אתמול</item>
+        <item quantity="two">במהלך %1$s הימים האחרונים</item>
+        <item quantity="many">במהלך %1$s הימים האחרונים</item>
+        <item quantity="other">במהלך %1$s הימים האחרונים</item>
+    </plurals>
+    <plurals name="dz_masthead_title_episodescountnox_mobile">
+        <item quantity="one">פרק</item>
+        <item quantity="two">פרקים</item>
+        <item quantity="many">פרקים</item>
+        <item quantity="other">פרקים</item>
+    </plurals>
+    <plurals name="dz_masthead_title_fanscountnox_mobile">
+        <item quantity="one">מעריץ</item>
+        <item quantity="two">מעריצים</item>
+        <item quantity="many">מעריצים</item>
+        <item quantity="other">מעריצים</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_Xtrackchangesperhour_mobile">
+        <item quantity="one">במיקסטייפ אפשר להחליף רק קטע אחד כל שעה.</item>
+        <item quantity="two">במיקסטייפ אפשר להחליף רק %1$s קטעים כל שעה.</item>
+        <item quantity="many">במיקסטייפ אפשר להחליף רק %1$s קטעים כל שעה.</item>
+        <item quantity="other">במיקסטייפ אפשר להחליף רק %1$s קטעים כל שעה.</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_changetrackallowedagaininXmin_mobile">
+        <item quantity="one">אפשר יהיה להחליף קטע שוב בעוד דקה.</item>
+        <item quantity="two">אפשר יהיה להחליף קטע שוב בעוד %1$s דקות.</item>
+        <item quantity="many">אפשר יהיה להחליף קטע שוב בעוד %1$s דקות.</item>
+        <item quantity="other">אפשר יהיה להחליף קטע שוב בעוד %1$s דקות.</item>
+    </plurals>
+    <plurals name="dz_mobiletrialtoaster_text_yourXdaytrialhasstarted_mobile">
+        <item quantity="one">תקופת הניסיון שלך התחילה. מהיום נתחיל לספור יום</item>
+        <item quantity="two">תקופת הניסיון שלך התחילה. מהיום נתחיל לספור יומיים</item>
+        <item quantity="many">תקופת הניסיון שלך התחילה. מהיום נתחיל לספור %1$s ימים</item>
+        <item quantity="other">תקופת הניסיון שלך התחילה. מהיום נתחיל לספור %1$s ימים</item>
+    </plurals>
+    <plurals name="dz_mymusic_albums_count">
+        <item quantity="one">אלבום אחד</item>
+        <item quantity="two">%1$s אלבומים</item>
+        <item quantity="many">%1$s אלבומים</item>
+        <item quantity="other">%1$s אלבומים</item>
+    </plurals>
+    <plurals name="dz_newofferscardsusp_text_getXaccountswithXbenefitsplushifi_mobile">
+        <item quantity="one">מקבלים חשבון אחד עם כל היתרונות של %2$s, כולל סאונד באיכות Hi-Fi.</item>
+        <item quantity="two">מקבלים %1$s חשבונות נפרדים עם כל היתרונות של %2$s, כולל סאונד באיכות Hi-Fi.</item>
+        <item quantity="many">מקבלים %1$s חשבונות נפרדים עם כל היתרונות של %2$s, כולל סאונד באיכות Hi-Fi.</item>
+        <item quantity="other">מקבלים %1$s חשבונות נפרדים עם כל היתרונות של %2$s, כולל סאונד באיכות Hi-Fi.</item>
+    </plurals>
+    <plurals name="dz_offerwall_text_priceXpermonthforXmonths_mobile">
+        <item quantity="one">%1$s לחודש במשך חודש %2$s</item>
+        <item quantity="two">%1$s לחודש במשך %2$s חודשים</item>
+        <item quantity="many">%1$s לחודש במשך %2$s חודשים</item>
+        <item quantity="other">%1$s לחודש במשך %2$s חודשים</item>
+    </plurals>
+    <plurals name="dz_offlinepodcastplaylist_subtitle_Xdownloadedepisodes_mobile">
+        <item quantity="one">הורדת פרק אחד</item>
+        <item quantity="two">הורדת %1$s פרקים</item>
+        <item quantity="many">הורדת %1$s פרקים</item>
+        <item quantity="other">הורדת %1$s פרקים</item>
+    </plurals>
+    <plurals name="dz_onboardingfirstlikes_action_pickXmoreUPP_mobile">
+        <item quantity="one">צריך לבחור עוד %1$s</item>
+        <item quantity="two">צריך לבחור עוד %1$s</item>
+        <item quantity="many">צריך לבחור עוד %1$s</item>
+        <item quantity="other">צריך לבחור עוד %1$s</item>
+    </plurals>
+    <plurals name="dz_onboardingtoastmessage_action_onlyXpickstostart_mobile">
+        <item quantity="one">הלו-הלו! אנחנו צריכים רק בחירה אחת כדי להתחיל.</item>
+        <item quantity="two">הלו-הלו! אנחנו צריכים רק %1$s בחירות כדי להתחיל.</item>
+        <item quantity="many">הלו-הלו! אנחנו צריכים רק %1$s בחירות כדי להתחיל.</item>
+        <item quantity="other">הלו-הלו! אנחנו צריכים רק %1$s בחירות כדי להתחיל.</item>
+    </plurals>
+    <plurals name="dz_passwordsecurity_title_Xcharactersmin_mobile">
+        <item quantity="one">תו %1$s לפחות</item>
+        <item quantity="two">%1$s תווים לפחות</item>
+        <item quantity="many">%1$s תווים לפחות</item>
+        <item quantity="other">%1$s תווים לפחות</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_accountalreadylinkedtoXdevices_mobile">
+        <item quantity="one">החשבון שלך כבר מקושר למכשיר אחר. אי אפשר יהיה להשתמש בתכונות של %2$s במכשיר הזה.</item>
+        <item quantity="two">החשבון שלך כבר מקושר ל-%1$s מכשירים אחרים. אי אפשר יהיה להשתמש בתכונות של %2$s במכשיר הזה.</item>
+        <item quantity="many">החשבון שלך כבר מקושר ל-%1$s מכשירים אחרים. אי אפשר יהיה להשתמש בתכונות של %2$s במכשיר הזה.</item>
+        <item quantity="other">החשבון שלך כבר מקושר ל-%1$s מכשירים אחרים. אי אפשר יהיה להשתמש בתכונות של %2$s במכשיר הזה.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_maxXdevicesonyoursubcription_mobile">
+        <item quantity="one">במינוי %1$s אפשר לקשר רק מכשיר אחד.</item>
+        <item quantity="two">במינוי %1$s אפשר לקשר רק %2$s מכשירים.</item>
+        <item quantity="many">במינוי %1$s אפשר לקשר רק %2$s מכשירים.</item>
+        <item quantity="other">במינוי %1$s אפשר לקשר רק %2$s מכשירים.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_nomorethanXdevicesonyoursubcription_mobile">
+        <item quantity="one">במינוי %1$s שלך אפשר ליהנות מהתוכנית רק במכשיר אחד בכל פעם.</item>
+        <item quantity="two">במינוי %1$s שלך אפשר ליהנות מהתוכנית רק ב-%2$s מכשירים במקביל.</item>
+        <item quantity="many">במינוי %1$s שלך אפשר ליהנות מהתוכנית רק ב-%2$s מכשירים במקביל.</item>
+        <item quantity="other">במינוי %1$s שלך אפשר ליהנות מהתוכנית רק ב-%2$s מכשירים במקביל.</item>
+    </plurals>
+    <plurals name="dz_playlist_text_tracksalreadyaddedtotheplaylist_mobile">
+        <item quantity="one">הקטע הזה כבר נוסף לפלייליסט</item>
+        <item quantity="two">הקטעים האלה כבר נוספו לפלייליסט</item>
+        <item quantity="many">הקטעים האלה כבר נוספו לפלייליסט</item>
+        <item quantity="other">הקטעים האלה כבר נוספו לפלייליסט</item>
+    </plurals>
+    <plurals name="dz_playlistpage_action_addXtracks_mobile">
+        <item quantity="one">הוספת שיר אחד</item>
+        <item quantity="two">הוספת %1$s שירים</item>
+        <item quantity="many">הוספת %1$s שירים</item>
+        <item quantity="other">הוספת %1$s שירים</item>
+    </plurals>
+    <plurals name="dz_premiumbenefit_text_skipmorethanXtracksperhour_mobile">
+        <item quantity="one">לדלג על יותר מקטע אחד כל שעה</item>
+        <item quantity="two">לדלג על יותר מ-%1$s קטעים כל שעה</item>
+        <item quantity="many">לדלג על יותר מ-%1$s קטעים כל שעה</item>
+        <item quantity="other">לדלג על יותר מ-%1$s קטעים כל שעה</item>
+    </plurals>
+    <plurals name="dz_searchresult_title_topresults_mobile">
+        <item quantity="one">התוצאה הרלוונטית ביותר</item>
+        <item quantity="two">התוצאות הרלוונטיות ביותר</item>
+        <item quantity="many">התוצאות הרלוונטיות ביותר</item>
+        <item quantity="other">התוצאות הרלוונטיות ביותר</item>
+    </plurals>
+    <plurals name="dz_signupjapanUS_action_tryitfreexmonths_mobile">
+        <item quantity="one">אפשר לנסות בחינם למשך חודש</item>
+        <item quantity="two">אפשר לנסות בחינם למשך חודשיים</item>
+        <item quantity="many">אפשר לנסות בחינם למשך %1$s חודשים</item>
+        <item quantity="other">אפשר לנסות בחינם למשך %1$s חודשים</item>
+    </plurals>
+    <plurals name="dz_skipcounter_text_Xmoretracks_mobile">
+        <item quantity="one">אפשר לדלג על קטע נוסף אחד.</item>
+        <item quantity="two">אפשר לדלג על %1$s קטעים נוספים.</item>
+        <item quantity="many">אפשר לדלג על %1$s קטעים נוספים.</item>
+        <item quantity="other">אפשר לדלג על %1$s קטעים נוספים.</item>
+    </plurals>
+    <plurals name="dz_sleeptimer_text_sleepinlessthanXminutes_mobile">
+        <item quantity="one">מעבר למצב שינה בעוד פחות מדקה %1$s</item>
+        <item quantity="two">מעבר למצב שינה בעוד פחות מ-%1$s דקות</item>
+        <item quantity="many">מעבר למצב שינה בעוד פחות מ-%1$s דקות</item>
+        <item quantity="other">מעבר למצב שינה בעוד פחות מ-%1$s דקות</item>
+    </plurals>
+    <plurals name="dz_smartcache_text_storemostplayedtracksrecosettoXgb_mobile">
+        <item quantity="one">"כשמפעילים את ההגדרה 'שימוש חכם בזיכרון', הקטעים המושמעים ביותר נשמרים כדי שהם ייטענו מהר יותר. לחוויית האזנה מיטבית, אנחנו ממליצים להגדיר את גודל הזיכרון ל-%1$s GB."</item>
+        <item quantity="two">"כשמפעילים את ההגדרה 'שימוש חכם בזיכרון', הקטעים המושמעים ביותר נשמרים כדי שהם ייטענו מהר יותר. לחוויית האזנה מיטבית, אנחנו ממליצים להגדיר את גודל הזיכרון ל-%1$s GB."</item>
+        <item quantity="many">"כשמפעילים את ההגדרה 'שימוש חכם בזיכרון', הקטעים המושמעים ביותר נשמרים כדי שהם ייטענו מהר יותר. לחוויית האזנה מיטבית, אנחנו ממליצים להגדיר את גודל הזיכרון ל-%1$s GB."</item>
+        <item quantity="other">"כשמפעילים את ההגדרה 'שימוש חכם בזיכרון', הקטעים המושמעים ביותר נשמרים כדי שהם ייטענו מהר יותר. לחוויית האזנה מיטבית, אנחנו ממליצים להגדיר את גודל הזיכרון ל-%1$s GB."</item>
+    </plurals>
+    <plurals name="dz_smartloginandroidtvxboxwelcome_text_thiscodewillexpireinXminutes_mobile">
+        <item quantity="one">תוקף הקוד יפוג בעוד דקה %1$s.</item>
+        <item quantity="two">תוקף הקוד יפוג בעוד %1$s דקות.</item>
+        <item quantity="many">תוקף הקוד יפוג בעוד %1$s דקות.</item>
+        <item quantity="other">תוקף הקוד יפוג בעוד %1$s דקות.</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Followers_mobile">
+        <item quantity="one">עוקב/ת</item>
+        <item quantity="two">עוקבים</item>
+        <item quantity="many">עוקבים</item>
+        <item quantity="other">עוקבים</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Following_mobile">
+        <item quantity="one">במעקב שלי</item>
+        <item quantity="two">במעקב שלי</item>
+        <item quantity="many">במעקב שלי</item>
+        <item quantity="other">במעקב שלי</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfans_mobile">
+        <item quantity="one">מעריץ/ה</item>
+        <item quantity="two">%1$sמעריצים</item>
+        <item quantity="many">%1$s מעריצים</item>
+        <item quantity="other">%1$s מעריצים</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowers_mobile">
+        <item quantity="one">עוקב אחד</item>
+        <item quantity="two">%1$s עוקבים</item>
+        <item quantity="many">%1$s עוקבים</item>
+        <item quantity="other">%1$s עוקבים</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowing_mobile">
+        <item quantity="one">%1$s במעקב שלי</item>
+        <item quantity="two">%1$s במעקב שלי</item>
+        <item quantity="many">%1$s במעקב שלי</item>
+        <item quantity="other">%1$s במעקב שלי</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xnotifications_mobile">
+        <item quantity="one">הודעה חדשה אחת</item>
+        <item quantity="two">%1$sהודעות חדשות</item>
+        <item quantity="many">%1$sהודעות חדשות</item>
+        <item quantity="other">%1$s הודעות חדשות</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xgigabytes_mobile">
+        <item quantity="one">%1$sGB</item>
+        <item quantity="two">%1$sGB</item>
+        <item quantity="many">%1$sGB</item>
+        <item quantity="other">%1$sGB</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xmegabytes_mobile">
+        <item quantity="one">%1$sMB</item>
+        <item quantity="two">%1$sMB</item>
+        <item quantity="many">%1$sMB</item>
+        <item quantity="other">%1$sMB</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdays_mobile">
+        <item quantity="one">יום</item>
+        <item quantity="two">יומיים</item>
+        <item quantity="many">%1$s יום</item>
+        <item quantity="other">%1$s ימים</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdaysago_mobile">
+        <item quantity="one">אתמול</item>
+        <item quantity="two">שלשום</item>
+        <item quantity="many">לפני %1$s יום</item>
+        <item quantity="other">לפני %1$s ימים</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhours_mobile">
+        <item quantity="one">שעה</item>
+        <item quantity="two">שעתיים</item>
+        <item quantity="many">%1$s שעות</item>
+        <item quantity="other">%1$s שעות</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhoursago_mobile">
+        <item quantity="one">לפני שעה</item>
+        <item quantity="two">לפני שעתיים</item>
+        <item quantity="many">לפני %1$s שעות</item>
+        <item quantity="other">לפני %1$s שעות</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmin_mobile">
+        <item quantity="one">דקה אחת</item>
+        <item quantity="two">%1$s דקות</item>
+        <item quantity="many">%1$s דקות</item>
+        <item quantity="other">%1$s דקות</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_XminleftUPP_mobile">
+        <item quantity="one">נותרה דקה %1$s</item>
+        <item quantity="two">נותרו %1$s דקות</item>
+        <item quantity="many">נותרו %1$s דקות</item>
+        <item quantity="other">נותרו %1$s דקות</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutes_mobile">
+        <item quantity="one">דקה</item>
+        <item quantity="two">%1$s דקות</item>
+        <item quantity="many">%1$s דקות</item>
+        <item quantity="other">%1$s דקות</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutesago_mobile">
+        <item quantity="one">לפני דקה</item>
+        <item quantity="two">לפני %1$s דקות</item>
+        <item quantity="many">לפני %1$s דקות</item>
+        <item quantity="other">לפני %1$s דקות</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmonthsago_mobile">
+        <item quantity="one">לפני חודש</item>
+        <item quantity="two">לפני חודשיים</item>
+        <item quantity="many">לפני %1$s חודש</item>
+        <item quantity="other">לפני %1$s חודשים</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xs_mobile">
+        <item quantity="one">"שנ' אחת"</item>
+        <item quantity="two">"%1$sשנ'"</item>
+        <item quantity="many">"%1$sשנ'"</item>
+        <item quantity="other">"%1$s שנ'"</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xweeksago_mobile">
+        <item quantity="one">לפני שבוע</item>
+        <item quantity="two">לפני שבועי</item>
+        <item quantity="many">לפני %1$s שבועות</item>
+        <item quantity="other">לפני %1$s שבועות</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xyearsago_mobile">
+        <item quantity="one">לפני שנה</item>
+        <item quantity="two">לפני שנתיים</item>
+        <item quantity="many">לפני %1$s שנה</item>
+        <item quantity="other">לפני %1$s שנים</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_alreadyaddedtoplaylist_mobile">
+        <item quantity="one">כבר נוסף לפלייליסט</item>
+        <item quantity="two">כבר נוספו לפלייליסט</item>
+        <item quantity="many">כבר נוספו לפלייליסט</item>
+        <item quantity="other">כבר נוספו לפלייליסט</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_unlockedXmoreskips_mobile">
+        <item quantity="one">קיבלת עוד דילוג אחד</item>
+        <item quantity="two">קיבלת עוד %1$s דילוגים</item>
+        <item quantity="many">קיבלת עוד %1$s דילוגים</item>
+        <item quantity="other">קיבלת עוד %1$s דילוגים</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoplaylisttrack_mobile">
+        <item quantity="one">הוספנו את זה לפלייליסט</item>
+        <item quantity="two">הוספנו את זה לפלייליסט</item>
+        <item quantity="many">הוספנו את זה לפלייליסט</item>
+        <item quantity="other">הוספנו את זה לפלייליסט</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoyourfavoritetrackstrack_mobile">
+        <item quantity="one">הוספנו את זה לקטעים האהובים שלך</item>
+        <item quantity="two">הוספנו את זה לקטעים האהובים שלך</item>
+        <item quantity="many">הוספנו את זה לקטעים האהובים שלך</item>
+        <item quantity="other">הוספנו את זה לקטעים האהובים שלך</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromplaylist_mobile">
+        <item quantity="one">הסרנו את זה מהפלייליסט</item>
+        <item quantity="two">הסרנו את זה מהפלייליסט</item>
+        <item quantity="many">הסרנו את זה מהפלייליסט</item>
+        <item quantity="other">הסרנו את זה מהפלייליסט</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromyourfavoritetrackstrack_mobile">
+        <item quantity="one">הסרנו את זה מהקטעים האהובים שלך</item>
+        <item quantity="two">הסרנו את זה מהקטעים האהובים שלך</item>
+        <item quantity="many">הסרנו את זה מהקטעים האהובים שלך</item>
+        <item quantity="other">הסרנו את זה מהקטעים האהובים שלך</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_Xdaytrial_mobile">
+        <item quantity="one">תקופת ניסיון ליום</item>
+        <item quantity="two">תקופת ניסיון ליומיים</item>
+        <item quantity="many">תקופת ניסיון ל-%1$s יום</item>
+        <item quantity="other">תקופת ניסיון ל-%1$s ימים</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_downloadskipadfreelistening_mobile">
+        <item quantity="one">אפשר להוריד קטעים, לדלג על שירים שלא אוהבים וליהנות מהאזנה בלי פרסומות ליום שלם אחד.</item>
+        <item quantity="two">אפשר להוריד קטעים, לדלג על שירים שלא אוהבים וליהנות מהאזנה בלי פרסומות ליומיים.</item>
+        <item quantity="many">אפשר להוריד קטעים, לדלג על שירים שלא אוהבים וליהנות מהאזנה בלי פרסומות ל-%1$s יום.</item>
+        <item quantity="other">אפשר להוריד קטעים, לדלג על שירים שלא אוהבים וליהנות מהאזנה בלי פרסומות ל-%1$s ימים.</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_text_tryXforXdaysfreenocreditcardrequired_mobile">
+        <item quantity="one">רוצה לנסות את %1$s ליום שלם בחינם? אפילו לא צריך להזין פרטי כרטיס אשראי!</item>
+        <item quantity="two">רוצה לנסות את %1$s ליומיים בחינם? אפילו לא צריך להזין פרטי כרטיס אשראי!</item>
+        <item quantity="many">רוצה לנסות את %1$s ל-%2$s יום בחינם? אפילו לא צריך להזין פרטי כרטיס אשראי!</item>
+        <item quantity="other">רוצה לנסות את %1$s ל-%2$s ימים בחינם? אפילו לא צריך להזין פרטי כרטיס אשראי!</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXdays_mobile">
+        <item quantity="one">כדי לאמת את המינוי שלך ולהמשיך להשתמש ב-Deezer בטלפון, נא להתחבר לרשת WiFi או לרשת סלולרית בתוך יום %1$s.</item>
+        <item quantity="two">כדי לאמת את המינוי שלך ולהמשיך להשתמש ב-Deezer בטלפון, נא להתחבר לרשת WiFi או לרשת סלולרית בתוך %1$s ימים.</item>
+        <item quantity="many">כדי לאמת את המינוי שלך ולהמשיך להשתמש ב-Deezer בטלפון, נא להתחבר לרשת WiFi או לרשת סלולרית בתוך %1$s ימים.</item>
+        <item quantity="other">כדי לאמת את המינוי שלך ולהמשיך להשתמש ב-Deezer בטלפון, נא להתחבר לרשת WiFi או לרשת סלולרית בתוך %1$s ימים.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXhours_mobile">
+        <item quantity="one">כדי לאמת את המינוי שלך ולהמשיך להשתמש ב-Deezer בטלפון, נא להתחבר לרשת WiFi או לרשת סלולרית בתוך שעה %1$s.</item>
+        <item quantity="two">כדי לאמת את המינוי שלך ולהמשיך להשתמש ב-Deezer בטלפון, נא להתחבר לרשת WiFi או לרשת סלולרית בתוך %1$s שעות.</item>
+        <item quantity="many">כדי לאמת את המינוי שלך ולהמשיך להשתמש ב-Deezer בטלפון, נא להתחבר לרשת WiFi או לרשת סלולרית בתוך %1$s שעות.</item>
+        <item quantity="other">כדי לאמת את המינוי שלך ולהמשיך להשתמש ב-Deezer בטלפון, נא להתחבר לרשת WiFi או לרשת סלולרית בתוך %1$s שעות.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXminutes_mobile">
+        <item quantity="one">כדי לאמת את המינוי שלך ולהמשיך להשתמש ב-Deezer בטלפון, נא להתחבר לרשת WiFi או לרשת סלולרית בתוך דקה %1$s.</item>
+        <item quantity="two">כדי לאמת את המינוי שלך ולהמשיך להשתמש ב-Deezer בטלפון, נא להתחבר לרשת WiFi או לרשת סלולרית בתוך %1$s דקות.</item>
+        <item quantity="many">כדי לאמת את המינוי שלך ולהמשיך להשתמש ב-Deezer בטלפון, נא להתחבר לרשת WiFi או לרשת סלולרית בתוך %1$s דקות.</item>
+        <item quantity="other">כדי לאמת את המינוי שלך ולהמשיך להשתמש ב-Deezer בטלפון, נא להתחבר לרשת WiFi או לרשת סלולרית בתוך %1$s דקות.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="flowtab_card_padding">8.0dp</dimen>
+    <dimen name="flowtab_card_title_size">14.0sp</dimen>
+    <dimen name="player_bottom_buttons_margin_top">2.0dp</dimen>
+    <dimen name="player_control_button">32.0dp</dimen>
+    <dimen name="player_track_subtitle">10.0sp</dimen>
+    <dimen name="player_track_subtitle_lyrics_margin_vertical">2.0dp</dimen>
+    <dimen name="player_track_subtitle_lyrics_padding_vertical">2.0dp</dimen>
+    <dimen name="player_track_title">14.0sp</dimen>
+    <dimen name="player_track_title_and_lyrics_padding_bottom">2.0dp</dimen>
+    <dimen name="player_track_title_and_lyrics_padding_top">1.0dp</dimen>
+    <dimen name="smart_journey_welcome_title_margin_bottom">0.0dp</dimen>
+    <dimen name="welcome_button_height">48.0dp</dimen>
+    <dimen name="welcome_buttons_max_width">256.0dp</dimen>
+    <dimen name="welcome_constraint_width_title" />
+    <dimen name="welcome_logo_height">25.0dp</dimen>
+    <dimen name="welcome_logo_margin_top">16.0dp</dimen>
+    <dimen name="welcome_sign_up_margin_top">12.0dp</dimen>
+    <dimen name="welcome_text_height">60.0dp</dimen>
+</resources>

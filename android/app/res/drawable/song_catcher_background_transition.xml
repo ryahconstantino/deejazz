@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/song_catcher_animation" android:drawable="@drawable/song_catcher_background_animation" />
+    <item android:id="@id/song_catcher_result" android:drawable="@color/transparent" />
+</transition>

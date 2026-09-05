@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_shortcut_search" android:enabled="true" android:shortcutId="search" android:shortcutShortLabel="@string/tab_search" android:shortcutLongLabel="@string/tab_search" android:shortcutDisabledMessage="@string/tab_search">
+        <intent android:targetPackage="deezer.android.app" android:action="deezer.android.app.SHORTCUT" android:targetClass="com.deezer.android.ui.activity.LauncherActivity">
+            <extra android:name="target" android:value="search" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcut_flow" android:enabled="true" android:shortcutId="flow" android:shortcutShortLabel="@string/action_flow_play" android:shortcutLongLabel="@string/action_flow_play" android:shortcutDisabledMessage="@string/action_flow_play">
+        <intent android:targetPackage="deezer.android.app" android:action="deezer.android.app.SHORTCUT" android:targetClass="com.deezer.android.ui.activity.LauncherActivity">
+            <extra android:name="target" android:value="flow" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

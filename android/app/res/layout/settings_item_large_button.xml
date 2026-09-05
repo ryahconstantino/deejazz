@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/settings_item_one_line_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/settings_item_content_vertical_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/p3" android:textStyle="bold" android:textColor="@color/palette_light_grey_800" android:gravity="center" android:id="@id/settings_item_title" android:background="@drawable/ripple_deezer_grey" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="36.0dp" android:layout_centerInParent="true" />
+    <View android:id="@id/sep" android:background="@color/theme_divider_primary" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

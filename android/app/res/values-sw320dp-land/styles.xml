@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SmartJourney.WelcomePage.Title" parent="@style/h1" />
+    <style name="SmartTrackListCardSubtitle" parent="@style/SmartTrackListCardSubtitle.Base">
+        <item name="android:lineSpacingMultiplier">0.8</item>
+    </style>
+    <style name="SmartTrackListCardTitle" parent="@style/SmartTrackListCardTitle.Base">
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

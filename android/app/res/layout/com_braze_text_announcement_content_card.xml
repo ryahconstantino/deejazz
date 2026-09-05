@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/Braze.ContentCards.TextAnnouncement.Root"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Braze.ContentCards.TextAnnouncement.Container">
+        <TextView android:id="@id/com_braze_content_cards_text_announcement_card_title" style="@style/Braze.ContentCards.TextAnnouncement.Title" />
+        <TextView android:id="@id/com_braze_content_cards_text_announcement_card_description" style="@style/Braze.ContentCards.TextAnnouncement.Description" />
+        <TextView android:id="@id/com_braze_content_cards_action_hint" style="@style/Braze.ContentCards.ActionHint.TextAnnouncement" />
+    </RelativeLayout>
+    <ImageView android:id="@id/com_braze_content_cards_pinned_icon" style="@style/Braze.ContentCards.PinnedIcon.TextAnnouncement" />
+    <View android:id="@id/com_braze_content_cards_unread_bar" style="@style/Braze.ContentCards.UnreadBar.TextAnnouncement" />
+</RelativeLayout>

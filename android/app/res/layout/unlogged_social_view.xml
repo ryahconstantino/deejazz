@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/social_view" android:tag="layout/unlogged_social_view_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/facebook_btn" android:tag="binding_1" android:paddingTop="@dimen/social_button_padding_top_n_bottom" android:paddingBottom="@dimen/social_button_padding_top_n_bottom" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/google_btn" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/SocialButtons.Facebook" />
+    <TextView android:id="@id/google_btn" android:tag="binding_2" android:paddingTop="@dimen/social_button_padding_top_n_bottom" android:paddingBottom="@dimen/social_button_padding_top_n_bottom" android:layout_marginStart="@dimen/social_button_divider_dim" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/facebook_btn" app:layout_constraintTop_toTopOf="parent" style="@style/SocialButtons.Google" />
+</androidx.constraintlayout.widget.ConstraintLayout>

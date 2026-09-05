@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/webview_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.deezer.android.ui.widget.DeezerWebview android:id="@id/webview_body" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/palette_white" android:gravity="center" android:id="@id/webview_error_message" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/dz_legacy_message_error_server_v2" android:fontFamily="sans-serif-light" />
+        <ImageView android:id="@id/webview_cancel" android:background="@drawable/ripple_transparent_to_blue" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cross" android:layout_alignTop="@id/webview_body" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/webview_progress" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

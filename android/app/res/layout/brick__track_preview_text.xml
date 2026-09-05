@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/brick__track_preview_text_0" android:paddingTop="@dimen/scaled_16dp" android:paddingBottom="@dimen/scaled_20dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/scaled_14sp" android:textColor="@color/theme_text_secondary" android:id="@id/text" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" bind:layout_constraintBottom_toTopOf="@id/link" bind:layout_constraintEnd_toEndOf="parent" bind:layout_constraintStart_toStartOf="parent" bind:layout_constraintTop_toTopOf="parent" bind:layout_constraintVertical_chainStyle="packed" />
+    <TextView android:textSize="@dimen/scaled_14sp" android:textStyle="bold" android:textColor="@color/theme_accent_primary" android:id="@id/link" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintEnd_toEndOf="parent" bind:layout_constraintStart_toStartOf="parent" bind:layout_constraintTop_toBottomOf="@id/text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

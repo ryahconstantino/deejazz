@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="cast_use_default_notification">false</bool>
+    <bool name="com_appboy_disable_uil_image_cache">true</bool>
+    <bool name="com_appboy_firebase_cloud_messaging_registration_enabled">true</bool>
+    <bool name="com_appboy_handle_push_deep_links_automatically">false</bool>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="dynamic_page_native_ad_large_mode">false</bool>
+    <bool name="dynamic_page_slideshow_double_item">false</bool>
+    <bool name="enable_media_browser_service">true</bool>
+    <bool name="enable_waze_integration">true</bool>
+    <bool name="in_app_can_show_fail_image">false</bool>
+    <bool name="is_dynamic_page_tablet_mode">false</bool>
+    <bool name="is_small_device">false</bool>
+    <bool name="is_tablet">false</bool>
+    <bool name="landscape">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="night_mode">false</bool>
+    <bool name="offer_wall_display_sub_note">true</bool>
+    <bool name="screen_size_debug_is_tablet">false</bool>
+    <bool name="tablet_mode">false</bool>
+    <bool name="telco_asso_redirect_internet_user_to_webview">false</bool>
+    <bool name="why_ads_can_show_full_text">false</bool>
+</resources>

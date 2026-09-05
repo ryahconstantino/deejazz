@@ -1,0 +1,17 @@
+.class public interface abstract Lcom/google/android/gms/internal/icing/zzdc;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lcom/google/android/gms/internal/icing/zzdg;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/google/android/gms/internal/icing/zzdg<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation

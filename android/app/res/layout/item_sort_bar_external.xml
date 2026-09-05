@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deezer.android.ui.widget.RelativeLayoutWithBottomSeparator android:background="@color/download_bar_background" android:layout_width="match_parent" android:layout_height="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/theme_divider_primary" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginTop="11.0dp" android:layout_marginBottom="11.0dp" android:layout_toLeftOf="@id/sort_spinner" android:layout_toStartOf="@id/sort_spinner" />
+    <include layout="@layout/include_option_spinner" />
+</com.deezer.android.ui.widget.RelativeLayoutWithBottomSeparator>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/cover_container" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/CardsElevation">
+        <com.deezer.android.ui.recyclerview.widget.CardCoverView android:id="@id/cover_and_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:enablePadding="true" app:squared="true" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/scaled_14sp" android:textColor="@color/theme_text_primary" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="2" android:textDirection="locale" app:layout_constraintEnd_toEndOf="@id/cover_container" app:layout_constraintStart_toStartOf="@id/cover_container" app:layout_constraintTop_toBottomOf="@id/cover_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

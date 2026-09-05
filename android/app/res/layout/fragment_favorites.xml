@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lego_search_container" android:tag="layout/fragment_favorites_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.deezer.feature.favorites.widget.FavoritesHeaderAppBarLayout android:id="@id/appbar" android:tag="binding_1" android:background="@color/theme_bg_secondary" android:layout_width="match_parent" android:layout_height="wrap_content" bind:elevation="@dimen/search_input_elevation" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" bind:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" bind:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <RelativeLayout android:orientation="vertical" android:id="@id/fragment_container" android:background="@color/theme_bg_primary" android:paddingBottom="@dimen/grid_recycler_view_item_divider_horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="@dimen/scaled_16dp" android:outlineProvider="background" bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintEnd_toEndOf="parent" bind:layout_constraintStart_toStartOf="parent" bind:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

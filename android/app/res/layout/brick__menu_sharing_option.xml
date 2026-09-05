@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deezer.uikit.bricks.menu.MenuSharingCardView android:tag="layout/brick__menu_sharing_option_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" android:background="@drawable/sharing_icon_background" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="center" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textColor="@color/theme_text_primary" android:ellipsize="end" android:gravity="center_horizontal" android:tag="binding_1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="2" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/icon" style="@style/p5" />
+</com.deezer.uikit.bricks.menu.MenuSharingCardView>

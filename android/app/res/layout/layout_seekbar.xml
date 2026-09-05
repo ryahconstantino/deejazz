@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SeekBar android:id="@id/base_seekbar" android:layout_width="match_parent" android:layout_height="@dimen/player_seek_bar_height" style="@style/PlayerSeekBar" />
+    <TextView android:textSize="@dimen/scaled_12sp" android:textColor="@color/button_text" android:id="@id/seekbar_text_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/scaled_6dp" />
+    <TextView android:textSize="@dimen/scaled_12sp" android:textColor="@color/button_text" android:id="@id/seekbar_text_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/scaled_12sp" android:textColor="@color/button_text" android:id="@id/seekbar_text_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/scaled_6dp" />
+</merge>

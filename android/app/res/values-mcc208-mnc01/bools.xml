@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="telco_asso_redirect_internet_user_to_webview">true</bool>
+</resources>

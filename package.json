@@ -12,6 +12,9 @@
     "app:integrate": "node scripts/apply-application-integration.js",
     "runtime:brand": "node scripts/brand-windows-runtime.js",
     "icons:win": "node scripts/generate-windows-icon.js",
+    "icons:android": "node scripts/generate-android-branding.js",
+    "check:android": "node scripts/verify-android-source.js",
+    "dist:android": "npm run icons:android && node scripts/build-android.js",
     "dist:win": "npm run version:sync && npm run icons:win && npm run app:integrate && node scripts/build-windows-installer.js",
     "dist:linux": "npm run version:sync && npm run app:integrate && node scripts/build-linux-portable.js --arch=x64",
     "dist:linux:arm64": "npm run version:sync && npm run app:integrate && node scripts/build-linux-portable.js --arch=arm64"
@@ -21,12 +24,12 @@
     "productName": "DeeJazz",
     "electronVersion": "38.4.0",
     "directories": {
-      "buildResources": "src/resources/win",
+      "buildResources": "desktop/resources/win",
       "output": "dist"
     },
     "win": {
       "executableName": "DeeJazz",
-      "icon": "src/resources/win/app.ico",
+      "icon": "desktop/resources/win/app.ico",
       "signAndEditExecutable": false,
       "target": [
         {
@@ -55,6 +58,7 @@
     "@jellybrick/mpris-service": "2.1.5",
     "electron-builder": "26.15.3",
     "resedit": "1.7.2",
+    "sharp": "0.35.3",
     "unzipper": "^0.12.5"
   }
 }

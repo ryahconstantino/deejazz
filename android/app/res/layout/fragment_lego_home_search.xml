@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/lego_search_container" android:tag="layout/fragment_lego_home_search_0" android:background="@color/palette_light_grey_400" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.deezer.feature.search.widget.SearchHeaderAppBarLayout android:id="@id/appbar" android:background="@color/theme_bg_primary" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:background="@drawable/recycler_view_background" android:paddingBottom="@dimen/grid_recycler_view_item_divider_horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/content_page_list_padding" android:paddingEnd="@dimen/content_page_list_padding" android:elevation="@dimen/content_page_list_elevation" android:outlineProvider="background" />
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

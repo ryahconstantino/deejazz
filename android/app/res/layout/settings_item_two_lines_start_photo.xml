@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/settings_item_two_lines_left_photo_layout" android:background="@drawable/ripple_cell_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/scaled_80dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/settings_item_icon" android:layout_width="@dimen/settings_profile_picture" android:layout_height="@dimen/settings_profile_picture" android:src="@drawable/settings_ic_account" android:layout_centerVertical="true" android:layout_marginStart="@dimen/settings_item_horizontal_padding" android:layout_alignParentStart="true" />
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_item_horizontal_padding" android:layout_marginBottom="@dimen/settings_item_horizontal_padding" android:minHeight="@dimen/scaled_80dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/settings_item_horizontal_padding" android:layout_marginEnd="@dimen/settings_item_horizontal_padding" android:layout_toEndOf="@id/settings_item_icon" layout="@layout/settings_item_two_lines_content" />
+    <View android:id="@id/sep" android:background="@color/settings_header_mat" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

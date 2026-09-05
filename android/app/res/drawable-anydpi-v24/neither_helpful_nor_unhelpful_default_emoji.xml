@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="40.0dp" android:width="40.0dp" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$neither_helpful_nor_unhelpful_default_emoji__0" android:pathData="M24,12C24,18.6274 18.6274,24 12,24C5.3726,24 0,18.6274 0,12C0,5.3726 5.3726,0 12,0C18.6274,0 24,5.3726 24,12Z" />
+    <path android:fillColor="#000000" android:pathData="M6.75,10.5C6.75,11.3284 7.4216,12 8.25,12C9.0784,12 9.75,11.3284 9.75,10.5C9.75,9.6716 9.0784,9 8.25,9C7.4216,9 6.75,9.6716 6.75,10.5Z" />
+    <path android:fillColor="#000000" android:pathData="M14.25,10.5C14.25,11.3284 14.9216,12 15.75,12C16.5784,12 17.25,11.3284 17.25,10.5C17.25,9.6716 16.5784,9 15.75,9C14.9216,9 14.25,9.6716 14.25,10.5Z" />
+    <path android:fillColor="#000000" android:pathData="M6.75,16.5C6.75,16.0858 7.0858,15.75 7.5,15.75H16.5C16.9142,15.75 17.25,16.0858 17.25,16.5C17.25,16.9142 16.9142,17.25 16.5,17.25H7.5C7.0858,17.25 6.75,16.9142 6.75,16.5Z" android:fillType="evenOdd" />
+</vector>

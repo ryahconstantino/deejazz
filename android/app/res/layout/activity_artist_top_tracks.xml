@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:tag="layout/activity_artist_top_tracks_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@drawable/toolbar_background" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" bind:subtitleTextAppearance="@style/DeezerSubTitle.Light" bind:theme="@style/Deezer.Toolbar.Light" bind:titleTextAppearance="@style/DeezerTitle.Light" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?actionBarSize" bind:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingBottom="@dimen/scaled_20dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include android:id="@id/filter_toolbar" layout="@layout/filter_toolbar" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

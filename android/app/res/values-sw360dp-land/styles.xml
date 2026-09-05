@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SmartTrackListCardSubtitle" parent="@style/SmartTrackListCardSubtitle.Base">
+        <item name="android:lineSpacingMultiplier">0.9</item>
+    </style>
+</resources>

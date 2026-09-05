@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/ripple_cell_background_rounded" android:paddingTop="@dimen/scaled_8dp" android:paddingBottom="@dimen/scaled_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/scaled_16dp" android:paddingEnd="@dimen/scaled_16dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="10.0dp" android:layout_height="12.0dp" android:layout_marginEnd="@dimen/scaled_8dp" app:srcCompat="@drawable/play_black_8" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MenuItemTextButton" />
+</LinearLayout>

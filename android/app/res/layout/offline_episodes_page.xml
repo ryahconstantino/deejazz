@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deezer.android.masthead.MastheadCoordinatorLayout android:id="@id/masthead_coordinatorlayout" android:tag="layout/offline_episodes_page_0" android:background="@color/theme_bg_primary" android:layout_width="match_parent" android:layout_height="match_parent" bind:picturePlaceholderType="drawable_rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" bind:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:tag="binding_2" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.deezer.android.ui.recyclerview.widget.ContentPagePlayButton android:id="@id/fab" android:tag="binding_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" bind:layout_anchor="@id/app_bar" bind:layout_anchorGravity="center|bottom" bind:layout_behavior="com.deezer.android.ui.recyclerview.widget.ContentPagePlayButtonBehavior" style="@style/DeezerRoundAccentButton.ContentPagePlayButton" />
+</deezer.android.masthead.MastheadCoordinatorLayout>

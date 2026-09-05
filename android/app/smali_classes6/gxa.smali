@@ -1,0 +1,254 @@
+.class public final Lgxa;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lomf;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lomf<",
+        "Lc35;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lexa;
+
+.field public final b:Lslg;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lslg<",
+            "Lx63;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lslg;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lslg<",
+            "Laa4;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Lslg;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lslg<",
+            "Lu73;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final e:Lslg;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lslg<",
+            "Le1b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final f:Lslg;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lslg<",
+            "Lky1;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lexa;Lslg;Lslg;Lslg;Lslg;Lslg;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lexa;",
+            "Lslg<",
+            "Lx63;",
+            ">;",
+            "Lslg<",
+            "Laa4;",
+            ">;",
+            "Lslg<",
+            "Lu73;",
+            ">;",
+            "Lslg<",
+            "Le1b;",
+            ">;",
+            "Lslg<",
+            "Lky1;",
+            ">;)V"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x5
+
+    iput-object p1, p0, Lgxa;->a:Lexa;
+
+    const/4 v0, 0x0
+
+    iput-object p2, p0, Lgxa;->b:Lslg;
+
+    const/4 v0, 0x3
+
+    iput-object p3, p0, Lgxa;->c:Lslg;
+
+    const/4 v0, 0x3
+
+    iput-object p4, p0, Lgxa;->d:Lslg;
+
+    const/4 v0, 0x3
+
+    iput-object p5, p0, Lgxa;->e:Lslg;
+
+    const/4 v0, 0x7
+
+    iput-object p6, p0, Lgxa;->f:Lslg;
+
+    const/4 v0, 0x6
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public get()Ljava/lang/Object;
+    .locals 10
+
+    const-string v9, "  ~@~@~@~@~@~@~@~@~@~@~   Smob - Mod obfuscation tool v1.4 by Kirlif\'   ~@~@~@~@~@~@~@~@~@~@~  "
+
+    iget-object v0, p0, Lgxa;->a:Lexa;
+
+    const/4 v9, 0x1
+
+    iget-object v1, p0, Lgxa;->b:Lslg;
+
+    const/4 v9, 0x0
+
+    invoke-interface {v1}, Lslg;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v3, v1
+
+    move-object v3, v1
+
+    const/4 v9, 0x5
+
+    check-cast v3, Lx63;
+
+    const/4 v9, 0x5
+
+    iget-object v1, p0, Lgxa;->c:Lslg;
+
+    const/4 v9, 0x7
+
+    invoke-interface {v1}, Lslg;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v4, v1
+
+    move-object v4, v1
+
+    const/4 v9, 0x3
+
+    check-cast v4, Laa4;
+
+    const/4 v9, 0x7
+
+    iget-object v1, p0, Lgxa;->d:Lslg;
+
+    const/4 v9, 0x4
+
+    invoke-interface {v1}, Lslg;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    const/4 v9, 0x2
+
+    check-cast v1, Lu73;
+
+    iget-object v2, p0, Lgxa;->e:Lslg;
+
+    const/4 v9, 0x0
+
+    invoke-interface {v2}, Lslg;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    move-object v7, v2
+
+    const/4 v9, 0x0
+
+    check-cast v7, Le1b;
+
+    const/4 v9, 0x3
+
+    iget-object v2, p0, Lgxa;->f:Lslg;
+
+    const/4 v9, 0x5
+
+    invoke-interface {v2}, Lslg;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    move-object v8, v2
+
+    move-object v8, v2
+
+    const/4 v9, 0x0
+
+    check-cast v8, Lky1;
+
+    const/4 v9, 0x2
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v9, 0x3
+
+    new-instance v0, Lc35;
+
+    const/4 v9, 0x2
+
+    invoke-interface {v1}, Lq73;->g()Lto3;
+
+    move-result-object v5
+
+    const/4 v9, 0x2
+
+    invoke-interface {v1}, Lq73;->u()Lj90;
+
+    move-result-object v6
+
+    move-object v2, v0
+
+    move-object v2, v0
+
+    const/4 v9, 0x6
+
+    invoke-direct/range {v2 .. v8}, Lc35;-><init>(Lx63;Laa4;Lto3;Lj90;Le1b;Lky1;)V
+
+    const/4 v9, 0x6
+
+    return-object v0
+.end method

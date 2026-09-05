@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deezer.feature.favoriteslist.ui.ListCoordinatorLayout android:id="@id/masthead_coordinatorlayout" android:tag="layout/activity_favorites_albums_0" android:background="@color/theme_bg_primary" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" bind:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <FrameLayout android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" bind:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include android:layout_gravity="end" android:id="@id/fast_scroller" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/fastscroll_margin_topbottom" android:layout_marginBottom="@dimen/fastscroll_margin_topbottom" layout="@layout/include_fastscroller" />
+    </FrameLayout>
+</com.deezer.feature.favoriteslist.ui.ListCoordinatorLayout>

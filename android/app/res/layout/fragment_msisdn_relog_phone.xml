@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/fragment_msisdn_relog_phone_0" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/scaled_32dp" android:paddingEnd="@dimen/scaled_32dp">
+        <TextView android:textSize="@dimen/scaled_22sp" android:textColor="@color/palette_white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/scaled_8dp" android:text="@string/dz_legacy_telcoasso_prompt_needauth" />
+        <TextView android:textSize="@dimen/scaled_18sp" android:textColor="@color/msisdn_transparent_white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dz_legacy_telcoasso_prompt_phonenumber" />
+        <TextView android:textAppearance="@style/p1" android:textColor="@color/login_field_text_color" android:gravity="center_vertical" android:tag="binding_1" android:focusable="false" android:layout_width="match_parent" android:layout_height="@dimen/login_form_entry_height" android:layout_marginTop="@dimen/scaled_56dp" android:drawableEnd="@drawable/chevron" />
+        <View android:background="@color/msisdn_transparent_white" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/login_form_entry_height">
+            <TextView android:textAppearance="@style/p1" android:textColor="@color/palette_white" android:gravity="center_vertical" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="match_parent" android:fontFamily="sans-serif-light" />
+            <com.deezer.uikit.widgets.layouts.BaselineTextInputLayout android:id="@id/msisdn_phone_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/login_form_text_input_height" android:importantForAutofill="yes" app:errorTextAppearance="@style/TextAppearance.App.TextInputLayout.Error" app:hintEnabled="true" app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout.Hint" style="@style/UnloggedPage.TextInput">
+                <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/dz_legacy_settings_user_phonenumber" android:maxLines="1" android:inputType="phone" android:imeOptions="actionNext" android:autofillHints="phone" app:theme="@style/MsisdnRelogTextInputLayoutTheme" />
+            </com.deezer.uikit.widgets.layouts.BaselineTextInputLayout>
+        </LinearLayout>
+        <View android:background="@color/msisdn_transparent_white" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <TextView android:textSize="@dimen/scaled_16sp" android:textColor="@drawable/stateful_text_white" android:gravity="center" android:layout_gravity="center" android:tag="binding_3" android:background="@drawable/login_deezer_button" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/scaled_56dp" android:minHeight="36.0dp" android:text="@string/dz_legacy_action_submit" android:fontFamily="sans-serif" />
+    </LinearLayout>
+</ScrollView>

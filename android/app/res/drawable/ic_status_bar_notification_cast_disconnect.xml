@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/status_bar_notification_icon_size" android:width="@dimen/status_bar_notification_icon_size" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:pathData="M1.5,1.5L22.5,22.5" android:strokeColor="@color/status_bar_notification_icon_color" android:strokeWidth="3.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:pathData="M22.5,1.5L1.5,22.5" android:strokeColor="@color/status_bar_notification_icon_color" android:strokeWidth="3.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+</vector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_layout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.uikit.widgets.imageview.SquareImageView android:id="@id/cast_controller_cover" android:layout_width="96.0dp" android:layout_height="96.0dp" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/cast_controller_info" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/cast_controller_control_layout" android:layout_toEndOf="@id/cast_controller_cover">
+        <TextView android:textAppearance="@style/p1" android:textStyle="bold|italic" android:textColor="@color/theme_text_primary" android:id="@id/cast_controller_track_title" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" />
+        <TextView android:textAppearance="@style/p3" android:textStyle="italic" android:textColor="@color/theme_text_secondary" android:id="@id/cast_controller_album_title" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:textAppearance="@style/p3" android:textStyle="italic" android:textColor="@color/theme_text_secondary" android:id="@id/cast_controller_artist_name" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/cast_controller_control_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <com.deezer.android.ui.widget.imageview.CheckableImageView android:id="@id/cast_controller_control_play_pause" android:background="@drawable/ripple_round_mask" android:layout_width="@dimen/player_control_button" android:layout_height="@dimen/player_control_button" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:scaleType="center" android:layout_weight="1.0" android:layout_marginStart="16.0dp" android:layout_marginEnd="15.0dp" app:dzrTint="@color/cast_dialog_controls_tint" app:srcCompat="@drawable/player_play_button_level" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/dynamic_page_section_header_padding_left" android:paddingTop="@dimen/dynamic_page_section_header_padding_top" android:paddingRight="@dimen/dynamic_page_section_header_padding_right" android:paddingBottom="@dimen/dynamic_page_section_header_padding_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dynamic_page_section_header_padding_left" android:paddingEnd="@dimen/dynamic_page_section_header_padding_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/dynamic_page_header_internal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

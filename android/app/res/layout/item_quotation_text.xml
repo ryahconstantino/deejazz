@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textColor="@color/theme_text_primary" android:id="@id/item_quotation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_notif_quotation_attachment_margin_top_bottom" android:layout_marginBottom="@dimen/app_notif_quotation_attachment_margin_top_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.deezer.android.ui.widget.FixedBackgroundView android:id="@id/fixedBackgroundImageView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@id/background_veil" android:background="@color/login_bg_veil_login_reg_screen" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/login_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

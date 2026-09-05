@@ -11,11 +11,11 @@ const { updateExecutableIdentity } = require("./windows-executable-identity");
 const { build: buildConfiguration } = require("../package.json");
 
 const projectRoot = path.resolve(__dirname, "..");
-const sourceResources = path.join(projectRoot, "src", "resources");
+const sourceResources = path.join(projectRoot, "desktop", "resources");
 const workRoot = path.join(projectRoot, ".installer-work");
 const stagedApp = path.join(workRoot, "win-x64-unpacked");
 const stagedAsarSource = path.join(workRoot, "app-asar");
-const sourceIcon = path.join(projectRoot, "src", "resources", "win", "app.ico");
+const sourceIcon = path.join(projectRoot, "desktop", "resources", "win", "app.ico");
 const electronVersion = buildConfiguration.electronVersion;
 const PE_MACHINE_AMD64 = 0x8664;
 

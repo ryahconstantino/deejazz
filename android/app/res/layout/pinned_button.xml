@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/pinned_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_notif_pinned_button_notif_margin_top" android:layout_marginBottom="@dimen/app_notif_pinned_button_notif_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/action2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/scaled_24dp" android:letterSpacing="0.1" style="@style/notificationsCenterPinnedButton" />
+    <TextView android:id="@id/action1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="0.1" style="@style/notificationsCenterPinnedButton" />
+</LinearLayout>

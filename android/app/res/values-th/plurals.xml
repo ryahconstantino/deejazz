@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dz_SMScoderesentconfirmationscreen_text_XSMScodesleft_mobile">
+        <item quantity="other">จำนวนการส่งรหัส SMS คงเหลือ %1$s ครั้ง</item>
+    </plurals>
+    <plurals name="dz_agerestrictionerrormessage_text_mustbeXyearsentervaliddate_mobile">
+        <item quantity="other">คุณต้องมีอายุอย่างน้อย %1$s ปีจึงจะใช้บัญชี Deezer ได้ กรุณาใส่วันที่ที่ถูกต้อง</item>
+    </plurals>
+    <plurals name="dz_androidtv_text_profilenumberlimitreached_mobile">
+        <item quantity="other">คุณมีโปรไฟล์ถึงขีดจำกัด %1$s โปรไฟล์แล้ว กรุณาลบโปรไฟล์เพื่อดำเนินการต่อ</item>
+    </plurals>
+    <plurals name="dz_androidtvlandingpage_text_morethanXmilliontracksacrossallgenres_mobile">
+        <item quantity="other">มีมากกว่า %1$s ล้านเพลงจากทุกแนวเพลง</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseXmoreartistsUPP_mobile">
+        <item quantity="other">เลือกศิลปินเพิ่มอีก %1$s คน/วง</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseatleastXartistsUPP_mobile">
+        <item quantity="other">เลือกศิลปินอย่างน้อย %1$s คน/วง</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_continuewithXartistsUPP_mobile">
+        <item quantity="other">ดำเนินการต่อด้วยศิลปิน %1$s คน/วง</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_deletetheseXplaylists_mobile">
+        <item quantity="other">ลบ %1$s เพลย์ลิสต์เหล่านี้ใช่หรือไม่?</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_playlistsdownloaded_mobile">
+        <item quantity="other">ดาวน์โหลดเพลย์ลิสต์แล้ว!</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_trackremovedfromfavorite_mobile">
+        <item quantity="other">ย้ายเพลงเหล่านี้ออกจากเพลงชื่นชอบของคุณแล้ว</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xapps_mobile">
+        <item quantity="other">%1$s แอปฯ</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xartists_mobile">
+        <item quantity="other">%1$s ศิลปิน</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xaudiobooks_mobile">
+        <item quantity="other">หนังสือเสียง %1$s เล่ม</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xchapters_mobile">
+        <item quantity="other">%1$s บท</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xdownloads_mobile">
+        <item quantity="other">%1$s ดาวน์โหลด</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xepisodes_mobile">
+        <item quantity="other">%1$s ตอน</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xmixes_mobile">
+        <item quantity="other">%1$s mix</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xnewentries_mobile">
+        <item quantity="other">%1$s รายการใหม่</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xplaylists_mobile">
+        <item quantity="other">%1$s เพลย์ลิสต์</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xpodcasts_mobile">
+        <item quantity="other">%1$s พอดคาสต์</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xtracks_mobile">
+        <item quantity="other">%1$s เพลง</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xunheard_mobile">
+        <item quantity="other">%1$s ที่ไม่ได้เล่น</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_subtitle_cancelactivesubsbeforedeleting_mobile">
+        <item quantity="other">คุณต้องยกเลิกการสมัครสมาชิกทั้งหมดก่อนจะลบบัญชีของคุณ</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingloseaccesstoapps_mobile">
+        <item quantity="other">เมื่อบัญชีของคุณถูกลบ คุณจะไม่สามารถเข้าถึงแอปฯ ต่อไปนี้ได้:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletinglosefollowingsubs_mobile">
+        <item quantity="other">เมื่อบัญชีของคุณถูกลบ การสมัครสมาชิกต่อไปนี้ก็จะถูกลบด้วยเช่นกัน:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingyouloseaccessdataandsubs_mobile">
+        <item quantity="other">เมื่อบัญชีของคุณถูกลบ ทั้งการเข้าถึง ข้อมูล และการสมัครสมาชิกบนแอปฯ ต่อไปนี้ก็จะถูกลบด้วย:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_accountassociatedwithXapps_mobile">
+        <item quantity="other">บัญชีของคุณเชื่อมโยงกับแอปฯ %1$s รายการ</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithactivesubs_mobile">
+        <item quantity="other">แอปฯ ที่มีการสมัครสมาชิกเป็นปัจจุบัน</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithoutsubs_mobile">
+        <item quantity="other">แอปฯ ที่ไม่ได้สมัครสมาชิก</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithsubs_mobile">
+        <item quantity="other">แอปฯ ที่สมัครสมาชิกไว้</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_subtitle_howaboutXmorefreedays_mobile">
+        <item quantity="other">ขยายฟรีออกไปอีก %1$s วันดีไหม?</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_title_planXtrialendsinXdays_mobile">
+        <item quantity="other">%1$s แบบทดลองใช้จะหมดอายุในอีก %2$s วัน</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXhours_mobile">
+        <item quantity="other">เพื่อเหตุผลด้านความปลอดภัย โปรดลองอีกครั้งในอีก %1$s ชั่วโมง</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXminutes_mobile">
+        <item quantity="other">เพื่อเหตุผลด้านความปลอดภัย โปรดลองอีกครั้งในอีก %1$s นาที</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_TCsprivacypolicyforunderXyearold_mobile">
+        <item quantity="other">เมื่อเปิดใช้งานบัญชีสำหรับสมาชิกอายุต่ำกว่า %1$s ปี แสดงว่าคุณยอมรับให้ Deezer เก็บและจัดการข้อมูลส่วนตัวเพื่อให้สมาชิกดังกล่าวสามารถใช้บริการของเราได้ สำหรับข้อมูลเพิ่มเติม คุณสามารถอ่าน%2$sนโยบายความเป็นส่วนตัว%3$sของเรา</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_onlycontentsuitableforXageandunder_mobile">
+        <item quantity="other">เมื่อเปิดใช้งานตัวเลือกนี้ จะแสดงเพียงเนื้อหาที่เหมาะสำหรับอายุ %1$s ปีหรือต่ำกว่า</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_underXyearsorkidscannotbeconverted_mobile">
+        <item quantity="other">คุณไม่สามารถเข้าถึงโปรไฟล์นี้ได้ ผู้ใช้ที่อายุต่ำกว่า %1$s ปีหรือโปรไฟล์สำหรับเด็กไม่สามารถเปลี่ยนโปรไฟล์เป็นบัญชีแยกอิสระได้</item>
+    </plurals>
+    <plurals name="dz_familymemberselector_text_Xmembersremaining_mobile">
+        <item quantity="other">เหลืออีก %1$s สมาชิก</item>
+    </plurals>
+    <plurals name="dz_familyprofileminorconsent_text_termsandconditions_mobile">
+        <item quantity="other">เมื่อสร้างโปรไฟล์ย่อยสำหรับเยาวชนอายุต่ำกว่า %1$s ปี คุณยินยอมให้ Deezer และพันธมิตรรวบรวมและประมวลผลข้อมูลส่วนตัวที่เชื่อมโยงกับเจ้าของข้อมูล เพื่อเสนอเนื้อหาและข้อเสนอที่ตรงกับความสนใจ สำหรับข้อมูลเพิ่มเติม กรุณาไปที่ นโยบายความเป็นส่วนตัว</item>
+    </plurals>
+    <plurals name="dz_familyprofileswitcherwelcome_text_Xprofilesremaining_mobile">
+        <item quantity="other">เหลืออีก %1$s โปรไฟล์</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_accountcreationagerestriction_mobile">
+        <item quantity="other">คุณต้องมีอายุอย่างน้อย %1$s ปีจึงจะสร้างบัญชีได้</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordnotenoughchars_mobile">
+        <item quantity="other">รหัสผ่านของคุณต้องมีอย่างน้อย %1$s ตัวอักษร</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordtoomanychars_mobile">
+        <item quantity="other">รหัสผ่านของคุณไม่สามารถมีมากกว่า %1$s ตัวอักษร</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernamenotenoughchars_mobile">
+        <item quantity="other">ชื่อผู้ใช้ของคุณต้องมีอย่างน้อย %1$s ตัวอักษร</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernametoomanychars_mobile">
+        <item quantity="other">ชื่อผู้ใช้ของคุณไม่สามารถมีมากกว่า %1$s ตัวอักษร</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xgbleft_mobile">
+        <item quantity="other">คงเหลือ %1$s GB</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xmbleft_mobile">
+        <item quantity="other">คงเหลือ %1$s MB</item>
+    </plurals>
+    <plurals name="dz_inprogressplaylistpage_subtitle_duringthelastXdays_mobile">
+        <item quantity="other">ในช่วง %1$s วันสุดท้าย</item>
+    </plurals>
+    <plurals name="dz_masthead_title_episodescountnox_mobile">
+        <item quantity="other">ตอน</item>
+    </plurals>
+    <plurals name="dz_masthead_title_fanscountnox_mobile">
+        <item quantity="other">แฟนเพลง</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_Xtrackchangesperhour_mobile">
+        <item quantity="other">คุณสามารถเปลี่ยน %1$s เพลงต่อชั่วโมงเท่านั้นกับ mix</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_changetrackallowedagaininXmin_mobile">
+        <item quantity="other">คุณจะเปลี่ยนเพลงได้อีกครั้งใน %1$s นาที</item>
+    </plurals>
+    <plurals name="dz_mobiletrialtoaster_text_yourXdaytrialhasstarted_mobile">
+        <item quantity="other">ช่วงทดลองใช้ %1$s วันเริ่มต้นแล้ว</item>
+    </plurals>
+    <plurals name="dz_mymusic_albums_count">
+        <item quantity="other">%1$s อัลบั้ม</item>
+    </plurals>
+    <plurals name="dz_newofferscardsusp_text_getXaccountswithXbenefitsplushifi_mobile">
+        <item quantity="other">รับบัญชีส่วนบุคคล %1$s บัญชี ทั้งหมดนี้เป็นสิทธิประโยชน์ของ %2$s พร้อมกับเสียงคมชัดระดับสูง</item>
+    </plurals>
+    <plurals name="dz_offerwall_text_priceXpermonthforXmonths_mobile">
+        <item quantity="other">%1$s/เดือนสำหรับ %2$s เดือน</item>
+    </plurals>
+    <plurals name="dz_offlinepodcastplaylist_subtitle_Xdownloadedepisodes_mobile">
+        <item quantity="other">ดาวน์โหลดแล้ว %1$s ตอน</item>
+    </plurals>
+    <plurals name="dz_onboardingfirstlikes_action_pickXmoreUPP_mobile">
+        <item quantity="other">เลือกเพิ่ม %1$s รายการ</item>
+    </plurals>
+    <plurals name="dz_onboardingtoastmessage_action_onlyXpickstostart_mobile">
+        <item quantity="other">ช้าก่อน! เราต้องใช้การคัดสรรเพียง %1$s เพลงก็เริ่มต้นได้แล้ว</item>
+    </plurals>
+    <plurals name="dz_passwordsecurity_title_Xcharactersmin_mobile">
+        <item quantity="other">อย่างน้อย %1$s ตัวอักษร</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_accountalreadylinkedtoXdevices_mobile">
+        <item quantity="other">บัญชีของคุณเชื่อมต่ออยู่กับอุปกรณ์อื่นจำนวน %1$s เครื่องแล้ว %2$s จึงไม่สามารถใช้ได้บนอุปกรณ์นี้</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_maxXdevicesonyoursubcription_mobile">
+        <item quantity="other">การสมัครสมาชิกของคุณให้คุณเพลิดเพลินไปกับ %1$s บนอุปกรณ์สูงสุด %2$s เครื่อง</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_nomorethanXdevicesonyoursubcription_mobile">
+        <item quantity="other">การสมัครสมาชิกของคุณจำกัดการใช้ %1$s บนอุปกรณ์ไม่เกิน %2$s เครื่อง</item>
+    </plurals>
+    <plurals name="dz_playlist_text_tracksalreadyaddedtotheplaylist_mobile">
+        <item quantity="other">เพิ่มเพลงเหล่านี้ไว้ในเพลย์ลิสต์เรียบร้อยแล้ว</item>
+    </plurals>
+    <plurals name="dz_playlistpage_action_addXtracks_mobile">
+        <item quantity="other">เพิ่ม %1$s เพลง</item>
+    </plurals>
+    <plurals name="dz_premiumbenefit_text_skipmorethanXtracksperhour_mobile">
+        <item quantity="other">กระโดดข้าม %1$s เพลงต่อชั่วโมง</item>
+    </plurals>
+    <plurals name="dz_searchresult_title_topresults_mobile">
+        <item quantity="other">ผลลัพธ์สูงสุด</item>
+    </plurals>
+    <plurals name="dz_signupjapanUS_action_tryitfreexmonths_mobile">
+        <item quantity="other">ลองใช้ฟรี %1$s เดือน</item>
+    </plurals>
+    <plurals name="dz_skipcounter_text_Xmoretracks_mobile">
+        <item quantity="other">คุณข้ามได้อีก %1$s เพลง</item>
+    </plurals>
+    <plurals name="dz_sleeptimer_text_sleepinlessthanXminutes_mobile">
+        <item quantity="other">ปิดในเวลาน้อยกว่า %1$s นาที</item>
+    </plurals>
+    <plurals name="dz_smartcache_text_storemostplayedtracksrecosettoXgb_mobile">
+        <item quantity="other">สมาร์ทแคช จัดเก็บเพลงที่คุณฟังบ่อยที่สุดและโหลดอย่างรวดเร็ว เราขอแนะนำให้ตั้งค่าไว้ที่ %1$s GB เพื่อประสบการณ์ที่ดีที่สุด</item>
+    </plurals>
+    <plurals name="dz_smartloginandroidtvxboxwelcome_text_thiscodewillexpireinXminutes_mobile">
+        <item quantity="other">รหัสนี้จะหมดอายุภายใน %1$s นาที</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Followers_mobile">
+        <item quantity="other">ผู้ติดตาม</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Following_mobile">
+        <item quantity="other">กำลังติดตาม</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfans_mobile">
+        <item quantity="other">แฟนเพลง %1$s คน</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowers_mobile">
+        <item quantity="other">ผู้ติดตาม %1$s คน</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowing_mobile">
+        <item quantity="other">%1$s คนที่คุณกำลังติดตาม</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xnotifications_mobile">
+        <item quantity="other">%1$s การแจ้งเตือนใหม่</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xgigabytes_mobile">
+        <item quantity="other">%1$s GB</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xmegabytes_mobile">
+        <item quantity="other">%1$s MB</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdays_mobile">
+        <item quantity="other">%1$s วัน</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdaysago_mobile">
+        <item quantity="other">%1$s วันที่แล้ว</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhours_mobile">
+        <item quantity="other">%1$s ชั่วโมง</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhoursago_mobile">
+        <item quantity="other">%1$s ชั่วโมงที่แล้ว</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmin_mobile">
+        <item quantity="other">%1$s นาที</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_XminleftUPP_mobile">
+        <item quantity="other">เหลืออีก %1$s นาที</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutes_mobile">
+        <item quantity="other">%1$s นาที</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutesago_mobile">
+        <item quantity="other">%1$s นาทีที่แล้ว</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmonthsago_mobile">
+        <item quantity="other">%1$s เดือนที่แล้ว</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xs_mobile">
+        <item quantity="other">%1$s วินาที</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xweeksago_mobile">
+        <item quantity="other">%1$s สัปดาห์ที่แล้ว</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xyearsago_mobile">
+        <item quantity="other">%1$s ปีที่แล้ว</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_alreadyaddedtoplaylist_mobile">
+        <item quantity="other">เพิ่มไปยังเพลย์ลิสต์แล้ว</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_unlockedXmoreskips_mobile">
+        <item quantity="other">คุณปลดล็อกการข้ามเพลงเพิ่มขึ้น %1$s ครั้ง</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoplaylisttrack_mobile">
+        <item quantity="other">เพิ่มไปยังเพลย์ลิสต์แล้ว</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoyourfavoritetrackstrack_mobile">
+        <item quantity="other">เพิ่มไว้ในเพลงชื่นชอบของคุณแล้ว</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromplaylist_mobile">
+        <item quantity="other">ลบออกจากเพลย์ลิสต์แล้ว</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromyourfavoritetrackstrack_mobile">
+        <item quantity="other">ลบออกจากเพลงชื่นชอบของคุณแล้ว</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_Xdaytrial_mobile">
+        <item quantity="other">ทดลองใช้ %1$s วัน</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_downloadskipadfreelistening_mobile">
+        <item quantity="other">ดาวน์โหลดเพลง ข้ามเพลงที่ไม่ชอบ และฟังโดยไม่มีโฆษณาคั่น %1$s วัน</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_text_tryXforXdaysfreenocreditcardrequired_mobile">
+        <item quantity="other">ลองใช้ %1$s %2$s วันฟรี ไม่ต้องใช้บัตรเครดิต!</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXdays_mobile">
+        <item quantity="other">หากต้องการตรวจสอบการสมัครสมาชิกของคุณและใช้งาน Deezer ในมือถือของคุณต่อไป กรุณาเชื่อมต่อ WiFi หรือกับเครือข่ายมือถือของคุณภายใน %1$s วัน</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXhours_mobile">
+        <item quantity="other">หากต้องการตรวจสอบการสมัครสมาชิกของคุณและใช้งาน Deezer ในมือถือของคุณต่อไป กรุณาเชื่อมต่อ WiFi หรือกับเครือข่ายมือถือของคุณภายใน %1$s ชั่วโมง</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXminutes_mobile">
+        <item quantity="other">หากต้องการตรวจสอบการสมัครสมาชิกของคุณและใช้งาน Deezer ในมือถือของคุณต่อไป กรุณาเชื่อมต่อ WiFi หรือกับเครือข่ายมือถือของคุณภายใน %1$s นาที</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">กรอไปข้างหน้า %d วินาที</item>
+        <item quantity="other">กรอไปข้างหน้า %d วินาที</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">กรอกลับ %d วินาที</item>
+        <item quantity="other">กรอกลับ %d วินาที</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">การแจ้งเตือนใหม่ %d รายการ</item>
+        <item quantity="other">การแจ้งเตือนใหม่ %d รายการ</item>
+    </plurals>
+</resources>

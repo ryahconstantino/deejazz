@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/com_braze_inline_image_push_layout" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Braze.Push.InlineImage.Layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/com_braze_inline_image_push_text_area" style="@style/Braze.Push.InlineImage.TextArea.Layout">
+        <LinearLayout android:id="@id/com_braze_inline_image_push_text_area_header_layout" style="@style/Braze.Push.InlineImage.TextArea.Header.Layout">
+            <ImageView android:id="@id/com_braze_inline_image_push_app_icon" style="@style/Braze.Push.InlineImage.TextArea.Header.AppIcon" />
+            <TextView android:id="@id/com_braze_inline_image_push_app_name_text" style="@style/Braze.Push.InlineImage.TextArea.Header.AppNameText" />
+            <TextView android:id="@id/com_braze_inline_image_push_header_text_divider" style="@style/Braze.Push.InlineImage.TextArea.Header.TextDivider" />
+            <TextView android:id="@id/com_braze_inline_image_push_time_text" style="@style/Braze.Push.InlineImage.TextArea.Header.TimeText" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/com_braze_inline_image_title_content_layout" style="@style/Braze.Push.InlineImage.TextArea.TitleContent.Layout">
+            <TextView android:id="@id/com_braze_inline_image_push_title_text" style="@style/Braze.Push.InlineImage.TextArea.TitleContent.TitleText" />
+            <TextView android:id="@id/com_braze_inline_image_push_content_text" style="@style/Braze.Push.InlineImage.TextArea.TitleContent.ContentText" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/com_braze_inline_image_push_side_image" style="@style/Braze.Push.InlineImage.Image.ImageContent" />
+</LinearLayout>

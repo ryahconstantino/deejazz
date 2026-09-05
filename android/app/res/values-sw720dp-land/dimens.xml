@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cta_margin">84.0dp</dimen>
+    <dimen name="offer_wall_padding_left_right">330.0dp</dimen>
+    <dimen name="onboarding_artist_max_cover_size">260.0dp</dimen>
+    <dimen name="onboarding_channel_grid_horizontal_margin">35.0dp</dimen>
+    <dimen name="premium_native_tab_start_n_end_margin">208.0dp</dimen>
+    <dimen name="text_margin">84.0dp</dimen>
+    <dimen name="trial_and_flow_onboarding_text_layout_margin_left_right">300.0dp</dimen>
+    <dimen name="why_ads_pager_height">200.0dp</dimen>
+</resources>

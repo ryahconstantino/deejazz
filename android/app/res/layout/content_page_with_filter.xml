@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deezer.android.ui.widget.ContentPageLayout android:id="@id/main_content" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/content_page_material_internal_base" />
+    <include android:id="@id/filter_toolbar" layout="@layout/filter_toolbar" />
+</com.deezer.android.ui.widget.ContentPageLayout>

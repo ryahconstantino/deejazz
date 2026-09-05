@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Spinner android:id="@id/sort_spinner" android:background="?android:selectableItemBackground" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:popupBackground="@color/spinner_background" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:dropDownWidth="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="24.0dp" android:layout_alignParentEnd="true" style="@style/SortSpinner"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

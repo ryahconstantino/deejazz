@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/prototype__lego_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/proto_addElement" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="48.0dp" android:text="Add" android:layout_weight="1.0" />
+        <Button android:id="@id/proto_removeElement" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="48.0dp" android:text="Remove" android:layout_weight="1.0" />
+        <Button android:id="@id/proto_modifyElement" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="48.0dp" android:text="Modify" android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/proto_list" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

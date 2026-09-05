@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/player_text_light"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <stroke android:width="@dimen/player_lyrics_button_border_thickness" android:color="@color/player_text_light" />
+            <corners android:radius="@dimen/player_lyrics_button_border_radius" />
+        </shape>
+    </item>
+    <item android:id="@android:id/mask">
+        <shape>
+            <corners android:radius="@dimen/player_lyrics_button_border_radius" />
+            <solid android:color="@color/player_text_light" />
+        </shape>
+    </item>
+</ripple>

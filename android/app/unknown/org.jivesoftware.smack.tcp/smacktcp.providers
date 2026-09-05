@@ -1,0 +1,18 @@
+<?xml version="1.0"?> 
+<smackProviders>
+
+    <!-- XEP-0198: Stream Management -->
+    <streamFeatureProvider>
+        <elementName>sm</elementName>
+        <namespace>urn:xmpp:sm:3</namespace>
+        <className>org.jivesoftware.smack.sm.provider.StreamManagementStreamFeatureProvider</className>
+    </streamFeatureProvider>
+
+    <!-- Ejabberd Business Edition: rebind -->
+    <streamFeatureProvider>
+        <elementName>rebind</elementName>
+        <namespace>p1:rebind</namespace>
+        <className>net.processone.sm.provider.RebindFeatureProvider</className>
+    </streamFeatureProvider>
+
+</smackProviders>

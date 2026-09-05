@@ -1,0 +1,31 @@
+.class public Lcom/qualtrics/digital/CreativeDefinition;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public BrandID:Ljava/lang/String;
+
+.field public CreativeID:Ljava/lang/String;
+
+.field public Revision:Ljava/lang/String;
+
+.field public Title:Ljava/lang/String;
+
+.field public Type:Ljava/lang/String;
+
+.field public ZoneID:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    return-void
+.end method

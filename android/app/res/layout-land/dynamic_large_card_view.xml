@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout-land/dynamic_large_card_view_0" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/first" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/scaled_8dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/second" app:layout_constraintHeight_default="wrap" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/dynamic_slideshow_item" />
+    <include android:id="@id/second" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/scaled_8dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toEndOf="@id/first" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_default="wrap" layout="@layout/dynamic_large_card_texts" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="layout/fragment_inapp_purchase_loader_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/scaled_20sp" android:textColor="@color/theme_text_primary" android:gravity="center" android:id="@id/inapp_loader_title" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/scaled_48dp" android:layout_marginStart="@dimen/scaled_48dp" android:layout_marginEnd="@dimen/scaled_48dp" />
+    <TextView android:textSize="@dimen/scaled_14sp" android:textColor="@color/theme_text_secondary" android:gravity="center" android:id="@id/inapp_loader_subtitle" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/scaled_12dp" android:layout_marginStart="@dimen/scaled_48dp" android:layout_marginEnd="@dimen/scaled_48dp" />
+    <ProgressBar android:id="@id/inapp_progress_bar" android:tag="binding_3" android:layout_width="@dimen/scaled_32dp" android:layout_height="@dimen/scaled_32dp" android:layout_marginTop="@dimen/scaled_24dp" android:indeterminate="true" />
+</LinearLayout>

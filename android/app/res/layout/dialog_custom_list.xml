@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/dialog_custom_list" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progressContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/listContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/filter" android:padding="@dimen/scaled_8dp" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <AutoCompleteTextView android:textAppearance="@style/p1" android:textColor="@color/palette_dark_grey_700" android:gravity="start" android:id="@id/input_edittext" android:paddingRight="@dimen/scaled_32dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/tab_search_24" android:inputType="textAutoComplete" android:imeOptions="flagNoFullscreen" android:drawableStart="@drawable/tab_search_24" android:paddingEnd="@dimen/scaled_32dp" />
+                <ImageView android:layout_gravity="end|center" android:id="@id/input_clear_icon" android:paddingRight="@dimen/scaled_8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cross" android:scaleType="centerInside" android:paddingEnd="@dimen/scaled_8dp" />
+            </FrameLayout>
+            <View android:id="@id/sep" android:background="@color/settings_header_mat" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <com.deezer.android.ui.widget.feed.CustomListView android:id="@android:id/list" android:fadingEdgeLength="0.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:drawSelectorOnTop="false" android:cacheColorHint="@android:color/transparent" android:fastScrollEnabled="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/internalEmptyContainer" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+            <ImageView android:id="@id/internalEmptyImage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/p1" android:textColor="@color/theme_text_secondary" android:gravity="center" android:id="@id/internalEmptyText" android:paddingTop="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+            <TextView android:textAppearance="@style/p5" android:textColor="@color/error_color_text_selector" android:gravity="center" android:id="@id/internalSecondaryEmptyText" android:paddingTop="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/internalErrorContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+        <ImageView android:id="@id/internalErrorImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ph_noconnection" />
+        <TextView android:textAppearance="@style/p1" android:textColor="@android:color/black" android:gravity="center" android:id="@id/internalErrorTextview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+        <TextView android:textAppearance="@style/p5" android:textColor="@color/error_color_text_selector" android:gravity="center" android:id="@id/internalErrorRetryTextTextview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+    </LinearLayout>
+</FrameLayout>

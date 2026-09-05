@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.uikit.widgets.views.ForegroundImageView android:id="@id/list_item_cover" android:layout_width="@dimen/item_image_cover_size" android:layout_height="@dimen/item_image_cover_size" android:layout_marginEnd="12.0dp" />
+    <TextView android:textSize="@dimen/text_details_mat" android:textStyle="italic" android:ellipsize="end" android:gravity="start|top" android:id="@id/list_item_second_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:textAlignment="viewStart" />
+    <ImageView android:id="@id/list_item_love" android:background="@drawable/ripple_unbounded" android:layout_width="@dimen/item_love_button_width" android:layout_height="@dimen/item_love_button_height" android:scaleType="centerInside" app:srcCompat="@drawable/ic_heart_outline_white_24" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/list_item_menu_button" android:background="@drawable/ripple_unbounded" android:layout_width="@dimen/item_menu_button_width" android:layout_height="@dimen/item_menu_button_height" android:scaleType="centerInside" android:tint="@color/theme_icon_primary" android:paddingEnd="@dimen/item_menu_button_padding_right" app:srcCompat="@drawable/ic_overflow_white_24" />
+</merge>

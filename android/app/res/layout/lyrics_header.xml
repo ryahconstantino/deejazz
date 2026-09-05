@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.deezer.android.ui.widget.player.LyricsGetReadyView android:layout_gravity="center" android:id="@id/player_lyrics_get_ready_icon" android:paddingTop="@dimen/player_lyrics_get_ready_icon_padding" android:paddingBottom="@dimen/player_lyrics_get_ready_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lyrics_ic_karaoke_get_ready" android:paddingStart="@dimen/player_lyrics_get_ready_icon_padding" android:paddingEnd="@dimen/player_lyrics_get_ready_icon_padding" />
+</merge>

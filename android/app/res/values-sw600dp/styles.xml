@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Braze.InAppMessage.Full" parent="@style/Braze.InAppMessage">
+        <item name="android:background">@drawable/com_braze_inappmessage_modal_background</item>
+        <item name="android:padding">0.0dp</item>
+        <item name="android:layout_width">450.0dp</item>
+        <item name="android:layout_height">720.0dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="SmartJourney.WelcomePage.Title" parent="@style/h1.Large" />
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+    <style name="radiolist_dialog_title_style" parent="@style/h1" />
+    <style name="songCatcherSearchHeader" parent="@style/songCatcherSearchHeaderBig" />
+    <style name="songCatcherSearchHeaderSubtitle" parent="@style/songCatcherSearchHeaderSubtitleBig" />
+    <style name="songCatcherSearchHeaderTitle" parent="@style/songCatcherSearchHeaderTitleBig" />
+</resources>

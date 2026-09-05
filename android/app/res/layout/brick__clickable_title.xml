@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/brick__clickable_title_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/clickable_title" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TitleBrick" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/masthead_content_summary_button_chevron" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chevron_text_margin" android:layout_marginStart="@dimen/chevron_text_margin" app:layout_constraintBottom_toBottomOf="@id/clickable_title" app:layout_constraintStart_toEndOf="@id/clickable_title" app:layout_constraintTop_toTopOf="@id/clickable_title" app:layout_constraintVertical_bias="0.6" app:srcCompat="@drawable/chevron_right_12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deezer.android.ui.recyclerview.widget.dynamicpage.DynamicListItemWithPlayButtonView android:background="@drawable/ripple_cell_background" android:paddingTop="@dimen/scaled_8dp" android:paddingBottom="@dimen/scaled_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/grid_recycler_view_total_padding_horizontal" android:paddingEnd="@dimen/grid_recycler_view_total_padding_horizontal" app:menu_view_displayed="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

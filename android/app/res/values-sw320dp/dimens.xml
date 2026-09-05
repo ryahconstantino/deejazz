@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="flowtab_card_subtitle_goneMarginTop">28.0dp</dimen>
+    <dimen name="flowtab_card_subtitle_marginTop">1.0dp</dimen>
+    <dimen name="flowtab_card_title_marginTop">0.0dp</dimen>
+    <dimen name="flowtab_logo_margin_top">2.0dp</dimen>
+    <dimen name="fragment_offer_wall_margin_bottom">@dimen/scaled_8dp</dimen>
+    <dimen name="offer_wall_container_margin_top">0.0dp</dimen>
+    <dimen name="offer_wall_indicator_margin_bottom">8.0dp</dimen>
+    <dimen name="player_cover_margin">8.0dp</dimen>
+    <dimen name="welcome_title_margin_top">0.0dp</dimen>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/settings_item_seekbar_layout" android:background="@drawable/ripple_cell_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_item_content_vertical_margin" android:minHeight="64.0dp" android:paddingStart="@dimen/settings_item_horizontal_padding" android:paddingEnd="@dimen/settings_item_horizontal_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/p1" android:textColor="@color/theme_accent_primary" android:gravity="center_vertical" android:id="@id/settings_item_seekbar_current_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+    <TextView android:textAppearance="@style/p1" android:textColor="@color/theme_text_primary" android:gravity="center_vertical" android:id="@id/settings_item_seekbar_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/settings_item_seekbar_current_value" />
+    <androidx.appcompat.widget.AppCompatSeekBar android:id="@id/settings_item_seekbar_widget" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="@dimen/settings_item_content_vertical_margin" android:layout_below="@id/settings_item_seekbar_current_value" />
+    <View android:id="@id/sep" android:background="@color/theme_divider_primary" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/settings_item_seekbar_widget" android:layout_alignParentBottom="true" />
+</RelativeLayout>

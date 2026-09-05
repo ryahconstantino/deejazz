@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/main_content" android:tag="layout/fragment_queue_list_0" android:fitsSystemWindows="true" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@drawable/toolbar_background" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" app:subtitleTextAppearance="@style/DeezerSubTitle.Light" app:theme="@style/Deezer.Toolbar.Light" app:titleTextAppearance="@style/DeezerTitle.Light" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:background="@color/theme_bg_primary" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?actionBarSize" android:paddingStart="@dimen/settings_list_padding" android:paddingEnd="@dimen/settings_list_padding" android:outlineProvider="paddedBounds" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

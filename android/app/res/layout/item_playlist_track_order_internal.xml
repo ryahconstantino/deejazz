@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:id="@id/list_item_check" android:layout_width="@dimen/item_menu_button_width" android:layout_height="@dimen/item_menu_button_height" android:checked="false" app:buttonTint="@color/check_box_tint" />
+    <TextView android:textSize="@dimen/text_details_mat" android:textStyle="italic" android:ellipsize="end" android:gravity="top" android:id="@id/list_item_second_line" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="@dimen/item_second_line_height" android:maxLines="1" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/list_item_grip_button" android:background="@android:color/transparent" android:layout_width="@dimen/item_menu_button_width" android:layout_height="@dimen/item_menu_button_height" android:scaleType="centerInside" android:tint="@color/theme_icon_primary" android:paddingEnd="@dimen/item_menu_button_padding_right" app:srcCompat="@drawable/ic_grip_white_24" />
+</merge>

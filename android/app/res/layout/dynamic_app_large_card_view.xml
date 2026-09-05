@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/ripple_cell_background" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.deezer.android.ui.recyclerview.widget.CardCoverView android:id="@id/cover_and_title" android:background="@drawable/placeholder" android:layout_width="@dimen/dynamic_large_card_cover_size" android:layout_height="@dimen/dynamic_large_card_cover_height_app" style="@style/CardsElevation" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/grid_recycler_view_total_padding_horizontal">
+        <com.deezer.uikit.widgets.labels.LabelView android:id="@id/label_top" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/scaled_14sp" android:textColor="@color/theme_text_primary" android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dynamic_card_text_margin" android:maxLines="2" android:textDirection="locale" />
+        <TextView android:textSize="@dimen/text_details_mat" android:textColor="@color/theme_text_secondary" android:ellipsize="end" android:id="@id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dynamic_card_text_margin" android:maxLines="2" android:textDirection="locale" />
+        <TextView android:textSize="@dimen/scaled_10sp" android:textColor="@color/theme_text_secondary" android:ellipsize="end" android:id="@id/caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dynamic_card_text_margin" android:maxLines="1" android:textDirection="locale" />
+        <TextView android:textSize="@dimen/scaled_10sp" android:textColor="@color/theme_text_secondary" android:ellipsize="end" android:id="@id/target_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableEnd="@drawable/state_list_chevron_right_8_light_grey" android:textDirection="locale" />
+        <com.deezer.uikit.widgets.labels.LabelView android:id="@id/label_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_large_badge_bottom_vertical_margin" />
+    </LinearLayout>
+</LinearLayout>

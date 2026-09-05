@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="brick_error_top_margin_top">64.0dp</dimen>
+    <dimen name="offer_wall_padding_left_right">430.0dp</dimen>
+    <dimen name="telco_wrapper_main_view">700.0dp</dimen>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="flowtab_card_padding">12.0dp</dimen>
+    <dimen name="flowtab_card_title_size">18.0sp</dimen>
+    <dimen name="hero_image_header_height_large">200.0dp</dimen>
+    <dimen name="message_one_cta_bis_button_margin_bottom">4.0dp</dimen>
+    <dimen name="offer_wall_header_height">20.0dp</dimen>
+    <dimen name="player_bottom_buttons_margin_top">4.0dp</dimen>
+    <dimen name="player_control_button">44.0dp</dimen>
+    <dimen name="player_track_subtitle">12.0sp</dimen>
+    <dimen name="player_track_subtitle_lyrics_margin_vertical">4.0dp</dimen>
+    <dimen name="player_track_subtitle_lyrics_padding_vertical">4.0dp</dimen>
+    <dimen name="player_track_title">16.0sp</dimen>
+    <dimen name="player_track_title_and_lyrics_padding_bottom">4.0dp</dimen>
+    <dimen name="player_track_title_and_lyrics_padding_top">2.0dp</dimen>
+    <dimen name="welcome_text_height">80.0dp</dimen>
+</resources>

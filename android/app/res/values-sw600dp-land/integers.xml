@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="dynamic_page_card_span_count">5</integer>
+    <integer name="dynamic_page_link_span_count">2</integer>
+    <integer name="dynamic_page_list_span_count">2</integer>
+    <integer name="onboarding_channel_span_count">5</integer>
+    <item type="integer" name="smart_msisdn_country_dialog_percent_height" format="float">0.85</item>
+</resources>

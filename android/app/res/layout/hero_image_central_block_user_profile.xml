@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deezer.android.ui.widget.HeroImageCentralHeaderBlockLinearLayout android:orientation="horizontal" android:id="@id/content_page_header_text_block" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?actionBarSize" android:paddingStart="@dimen/hero_header_profile_block_padding" android:paddingEnd="@dimen/hero_header_profile_block_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/header_block_image_view" android:layout_width="@dimen/hero_header_profile_user_side" android:layout_height="@dimen/hero_header_profile_user_side" android:layout_marginBottom="8.0dp" android:src="@drawable/placeholder_round" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/scaled_18sp" android:textStyle="normal" android:textColor="@color/theme_text_primary" android:ellipsize="end" android:id="@id/mock_title_in_header_block" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="12.0dp" />
+        <TextView android:textSize="@dimen/scaled_12sp" android:textStyle="normal" android:textColor="@color/theme_text_secondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="12.0dp" />
+        <Button android:id="@id/header_switch_profile" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_centerHorizontal="true" android:layout_marginStart="12.0dp" style="@style/switchProfileTransparentGreyButton" />
+        <Button android:id="@id/header_subscribe_offer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_centerHorizontal="true" android:layout_marginStart="12.0dp" style="@style/subscribeTransparentBlueButton" />
+        <include layout="@layout/followers_following_profile_block" />
+    </LinearLayout>
+</com.deezer.android.ui.widget.HeroImageCentralHeaderBlockLinearLayout>

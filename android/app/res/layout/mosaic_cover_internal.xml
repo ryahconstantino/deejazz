@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.android.ui.widget.imageview.DiaporamaImageView android:id="@id/mosaic_cover_image" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:foregroundDrawable="@drawable/mosaic_item_foreground" />
+    <com.deezer.uikit.widgets.views.PlayButton android:layout_gravity="center" android:id="@id/mosaic_cover_play_button" android:background="@drawable/play_circle_background" android:padding="@dimen/dynamic_page_item_mosaic_play_button_padding" android:layout_width="52.0dp" android:layout_height="52.0dp" android:layout_marginBottom="12.0dp" />
+    <com.deezer.uikit.widgets.views.PlayButton android:layout_gravity="center" android:id="@id/mosaic_cover_shuffle_button" android:background="@drawable/play_circle_background" android:padding="@dimen/dynamic_page_item_mosaic_play_button_padding" android:layout_width="52.0dp" android:layout_height="52.0dp" android:layout_marginBottom="12.0dp" app:drawableAppearance="shuffle" app:tintColor="@color/palette_black" />
+</merge>

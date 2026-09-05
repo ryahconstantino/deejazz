@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/player_chevron" />
+    <include android:id="@id/player_top_title" layout="@layout/layout_player_expanded_top_title" />
+    <FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/player_track_button_block" android:layout_below="@id/player_top_title">
+        <com.deezer.android.ui.fragment.player.PlayerViewPager android:id="@id/player_cover_pager" android:clipChildren="false" app:previews="false" style="@style/PlayerViewPager" />
+        <include layout="@layout/buffering_notification" />
+    </FrameLayout>
+    <com.deezer.android.ui.fragment.player.PlayerTrackButtonLayout android:id="@id/player_track_button_block" android:layout_width="wrap_content" android:layout_height="@dimen/player_more_button" android:layout_above="@id/player_seek_bar" app:like="true" app:more="true" app:share="true" style="@style/PlayerTrackButtonPersonalizationBlock" />
+    <com.deezer.android.ui.widget.player.SeekBarViewGroup android:id="@id/player_seek_bar" android:layout_width="match_parent" android:layout_height="@dimen/player_seek_bar_height" android:layout_above="@id/player_bottom_or_right_view" android:layout_marginStart="@dimen/scaled_18dp" android:layout_marginEnd="@dimen/scaled_18dp" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/player_bottom_or_right_view" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.deezer.android.ui.fragment.player.PlayerTrackTitleExpandedLayout android:id="@id/track_title" android:layout_width="match_parent" android:layout_height="@dimen/player_ui_track_title" style="@style/PlayerTrackTitle" />
+        <include android:id="@id/player_control_buttons" android:layout_width="match_parent" android:layout_height="@dimen/player_control_button" layout="@layout/layout_player_controls" />
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/player_bottom_buttons_margin_top" layout="@layout/layout_player_bottom_buttons_personalization_ui" />
+    </LinearLayout>
+</RelativeLayout>

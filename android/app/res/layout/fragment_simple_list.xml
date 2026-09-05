@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/fragment_simple_list_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@drawable/toolbar_background" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" app:subtitleTextAppearance="@style/DeezerSubTitle.Light" app:theme="@style/Deezer.Toolbar.Light" app:titleTextAppearance="@style/DeezerTitle.Light" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?actionBarSize">
+        <com.deezer.android.ui.widget.FixedRecyclerView android:id="@id/list" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include android:id="@id/filter_toolbar" layout="@layout/filter_toolbar" />
+    <com.deezer.android.ui.recyclerview.widget.AdaptedFloatingActionButton android:id="@id/fab" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/content_page_fab_margin_end" android:scaleType="center" android:layout_marginEnd="@dimen/content_page_fab_margin_end" app:layout_anchor="@id/toolbar" app:layout_anchorGravity="end|bottom" app:layout_behavior="com.deezer.android.ui.fix.SafeInsetFloatingActionButtonBehavior" app:srcCompat="@drawable/ic_shuffle" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?actionBarSize">
+        <androidx.appcompat.widget.ViewStubCompat android:layout_gravity="end" android:id="@id/fast_scroller" android:layout="@layout/include_fastscroller" android:inflatedId="@id/fast_scroller" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/fastscroll_margin_topbottom" android:layout_marginBottom="@dimen/fastscroll_margin_topbottom" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

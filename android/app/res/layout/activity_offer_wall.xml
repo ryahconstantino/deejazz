@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_offer_wall_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="?actionBarSize">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/offer_wall_close_button" android:tag="binding_1" android:background="?selectableItemBackgroundBorderless" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="8.0dp" app:srcCompat="@drawable/offerwall_cross" />
+        <TextView android:textSize="@dimen/scaled_18sp" android:textStyle="bold" android:textColor="@color/theme_text_primary" android:id="@id/offer_wall_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dz_planspage_title_ourplans_mobile" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/offer_wall_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/offer_wall_container_margin_top" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/offer_wall_title" />
+</LinearLayout>

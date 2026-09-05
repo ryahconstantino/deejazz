@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/playButton_background">
+        <shape android:shape="oval">
+            <size android:height="32.0dp" android:width="32.0dp" />
+            <solid android:color="@color/play_button_background" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:id="@id/playButton_icon" android:drawable="@drawable/play_16" android:left="18.0dp" android:top="18.0dp" android:right="18.0dp" android:bottom="18.0dp" />
+</layer-list>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/main_content" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?actionBarSize">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:background="@color/theme_bg_primary" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?actionBarSize" android:paddingStart="@dimen/settings_list_padding" android:paddingEnd="@dimen/settings_list_padding" android:elevation="@dimen/toolbar_elevation" android:outlineProvider="paddedBounds" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@color/toolbar_background" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" app:subtitleTextAppearance="@style/DeezerSubTitle.Light" app:theme="@style/Deezer.Toolbar.Light" app:titleTextAppearance="@style/DeezerTitle.Light" />
+    <RelativeLayout android:id="@id/edit_toolbar_overlay" android:background="@color/toolbar_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation">
+        <TextView android:textColor="@android:color/white" android:id="@id/done_edit" android:background="@drawable/ripple_deezer_accent" android:paddingTop="@dimen/scaled_8dp" android:paddingBottom="@dimen/scaled_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/scaled_16dp" android:paddingEnd="@dimen/scaled_16dp" android:layout_marginEnd="@dimen/scaled_8dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

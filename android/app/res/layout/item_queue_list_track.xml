@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deezer.android.ui.recyclerview.widget.items.TrackWithCoverItemView android:id="@id/track_with_cover_item_view" android:tag="layout/item_queue_list_track_0" android:background="@color/theme_bg_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/scaled_16dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

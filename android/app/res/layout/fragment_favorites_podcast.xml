@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:tag="layout/fragment_favorites_podcast_0" android:paddingBottom="@dimen/grid_recycler_view_item_divider_horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:outlineProvider="background"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

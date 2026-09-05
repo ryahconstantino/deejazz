@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_page_padding_normal">16.0dp</dimen>
+</resources>

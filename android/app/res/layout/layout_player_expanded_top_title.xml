@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="@dimen/player_title_height" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.android.ui.widget.chromecast.PlayerMediaRouteButton android:id="@id/chromecastButton" android:layout_width="@dimen/player_cast_icon_width" android:layout_height="@dimen/player_cast_icon_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/player_container_text" android:background="@drawable/ripple_rect_mask" android:clickable="true" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginStart="@dimen/player_title_height" app:layout_constraintEnd_toStartOf="@id/chromecastButton" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/player_title_container_type_text_size" android:id="@id/player_container_type" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/playerContainerType" />
+        <TextView android:textSize="@dimen/player_title_text_size" android:id="@id/player_container_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/playerContainerTitle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/player_container_flow" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/scaled_52dp" app:foregroundDrawable="@drawable/ripple_round_mask" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:gravity="center_vertical" android:id="@id/flow_cover" android:layout_width="@dimen/scaled_24dp" android:layout_height="@dimen/scaled_24dp" android:src="@drawable/flow_button" android:elevation="@dimen/scaled_8dp" />
+        <TextView android:textSize="@dimen/player_title_container_type_text_size" android:id="@id/player_container_flow_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/scaled_8dp" style="@style/playerContainerTitle" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

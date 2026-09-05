@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/com_braze_inline_image_push_layout" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Braze.Push.InlineImageConstrained.Layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/com_braze_inline_image_push_text_area" style="@style/Braze.Push.InlineImageConstrained.TextArea.Layout">
+        <LinearLayout android:id="@id/com_braze_inline_image_title_content_layout" style="@style/Braze.Push.InlineImageConstrained.TextArea.TitleContent.Layout">
+            <TextView android:id="@id/com_braze_inline_image_push_title_text" style="@style/Braze.Push.InlineImageConstrained.TextArea.TitleContent.TitleText" />
+            <TextView android:id="@id/com_braze_inline_image_push_content_text" style="@style/Braze.Push.InlineImageConstrained.TextArea.TitleContent.ContentText" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

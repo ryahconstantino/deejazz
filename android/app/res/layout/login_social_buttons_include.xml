@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:typeface="normal" android:textStyle="normal" android:textColor="#ff52525a" android:gravity="center" android:layout_gravity="center" android:id="@id/facebook_btn" android:background="@drawable/login_social_button_background" android:layout_width="match_parent" android:layout_height="44.0dp" android:text="@string/facebook_login_button" android:includeFontPadding="false" android:textAllCaps="false" android:drawableStart="@drawable/parcours_reg_log_fb" android:paddingStart="24.0dp" android:paddingEnd="48.0dp" />
+    <View android:layout_width="match_parent" android:layout_height="16.0dp" />
+    <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="#ff52525a" android:gravity="center" android:layout_gravity="center" android:id="@id/sign_in_with_google_button" android:background="@drawable/login_social_button_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="44.0dp" android:text="@string/google_login_button" android:includeFontPadding="false" android:drawableStart="@drawable/state_list_google_g_logo" android:paddingStart="24.0dp" android:paddingEnd="48.0dp" />
+</LinearLayout>

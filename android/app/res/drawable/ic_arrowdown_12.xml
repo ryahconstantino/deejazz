@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="12.0dp" android:width="12.0dp" android:viewportWidth="12.0" android:viewportHeight="12.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:rotation="90.0" android:translateX="12.0">
+        <path android:fillColor="@color/theme_icon_primary" android:pathData="M11.6541,5.6495L6.0862,0L5.3739,0.7019L10.1032,5.5005H-0.001V6.5005H10.1032L5.3739,11.299L6.0862,12.0009L11.6541,6.3514L12,6.0005L11.6541,5.6495Z" android:fillType="evenOdd" />
+    </group>
+</vector>

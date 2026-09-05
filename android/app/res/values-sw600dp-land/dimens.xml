@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_sheet_context_menu_peek_height">384.0dp</dimen>
+    <dimen name="brick_error_top_margin_top">32.0dp</dimen>
+    <dimen name="change_password_expand_height">1500.0dp</dimen>
+    <dimen name="content_page_fab_margin_end">140.0dp</dimen>
+    <dimen name="content_page_list_elevation">2.0dp</dimen>
+    <dimen name="content_page_list_padding">128.0dp</dimen>
+    <dimen name="dynamic_page_padding_horizontal">36.0dp</dimen>
+    <dimen name="hero_image_header_height">240.0dp</dimen>
+    <dimen name="illustration_one_cta_margin">200.0dp</dimen>
+    <dimen name="login_max_width">533.0dp</dimen>
+    <dimen name="login_padding">40.0dp</dimen>
+    <dimen name="login_register_root_side_margin">102.0dp</dimen>
+    <dimen name="offer_wall_additional_description_margin_top">32.0dp</dimen>
+    <dimen name="offer_wall_card_ratio">0.8</dimen>
+    <dimen name="offer_wall_header_height">52.0dp</dimen>
+    <dimen name="offer_wall_image_size">44.0dp</dimen>
+    <dimen name="offer_wall_padding_left_right">200.0dp</dimen>
+    <dimen name="offer_wall_price_margin_top">8.0dp</dimen>
+    <dimen name="offer_wall_secondary_cta_margin_bottom">16.0dp</dimen>
+    <dimen name="offer_wall_secondary_cta_margin_top">8.0dp</dimen>
+    <dimen name="offer_wall_special_margin_top">24.0dp</dimen>
+    <dimen name="player_controls_button_normal_margin">12.0dp</dimen>
+    <dimen name="player_lyrics_list_fading_size">150.0dp</dimen>
+    <dimen name="premium_native_tab_start_n_end_margin">152.0dp</dimen>
+    <dimen name="profile_settings_list_padding">128.0dp</dimen>
+    <dimen name="settings_list_padding">128.0dp</dimen>
+    <dimen name="smart_journey_welcome_email_container_max_width">500.0dp</dimen>
+    <dimen name="smart_journey_welcome_subtitle_margin_bottom">32.0dp</dimen>
+    <dimen name="telco_wrapper_main_view">500.0dp</dimen>
+    <dimen name="text_nb_item_margin_right">264.0dp</dimen>
+    <dimen name="welcome_button_margin_bottom">48.0dp</dimen>
+    <dimen name="why_ads_pager_height">280.0dp</dimen>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/constraintLayout4" android:tag="layout/item_lab_header_0" android:background="@color/lab_header_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/settings_item_horizontal_padding" android:paddingEnd="@dimen/settings_item_horizontal_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/p1" android:textColor="#ffffff" android:gravity="top" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:fontFamily="sans-serif-medium" />
+    <TextView android:textAppearance="@style/p3" android:textColor="#ffffff" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:fontFamily="sans-serif" />
+</LinearLayout>

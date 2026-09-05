@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/display_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/display_list" android:background="?android:selectableItemBackground" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/state_list_display_list" />
+    <View android:background="@color/theme_divider_primary" android:layout_width="1.0dp" android:layout_height="16.0dp" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/display_mosaic" android:background="?android:selectableItemBackground" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/state_list_display_mosaic" />
+</LinearLayout>

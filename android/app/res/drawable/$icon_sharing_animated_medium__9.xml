@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@android:interpolator/bounce" android:duration="@integer/icon_sharing_animation_duration_in" android:startOffset="1900" android:valueFrom="@dimen/icon_sharing_animation_scale_start" android:valueTo="1" android:propertyName="scaleX" />
+    <objectAnimator android:interpolator="@android:interpolator/bounce" android:duration="@integer/icon_sharing_animation_duration_in" android:startOffset="1900" android:valueFrom="@dimen/icon_sharing_animation_scale_start" android:valueTo="1" android:propertyName="scaleY" />
+</set>

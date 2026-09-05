@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dp" android:width="24.0dp" android:viewportWidth="80.0" android:viewportHeight="80.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:translateX="28.0" android:translateY="28.0">
+        <path android:fillColor="@color/placeholder_icon" android:pathData="@string/p_cover_profile_picture" />
+    </group>
+</vector>

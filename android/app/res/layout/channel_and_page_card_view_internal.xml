@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.uikit.widgets.views.ForegroundImageView android:id="@id/background" android:layout_width="match_parent" android:layout_height="match_parent" app:foregroundDrawable="@drawable/mosaic_item_foreground" />
+    <TextView android:layout_gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:paddingStart="@dimen/dynamic_card_cover_padding" android:paddingEnd="@dimen/dynamic_card_cover_padding" style="@style/Deezer.Widget.Channel.Title" />
+</merge>

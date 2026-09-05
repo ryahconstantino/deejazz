@@ -1,0 +1,107 @@
+.class public Lzq4;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ldi5;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ldi5<",
+        "Lhk4;",
+        "Lcr4$c$b;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Lcr4$c$b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 2
+
+    const/4 v1, 0x7
+
+    new-instance v0, Lzq4$a;
+
+    const/4 v1, 0x7
+
+    invoke-direct {v0}, Lzq4$a;-><init>()V
+
+    const/4 v1, 0x3
+
+    sput-object v0, Lzq4;->a:Ljava/util/Map;
+
+    const/4 v1, 0x7
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x5
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    const-string v1, "  ~@~@~@~@~@~@~@~@~@~@~   Smob - Mod obfuscation tool v1.4 by Kirlif\'   ~@~@~@~@~@~@~@~@~@~@~  "
+
+    check-cast p1, Lhk4;
+
+    const/4 v1, 0x6
+
+    invoke-interface {p1}, Lhk4;->S()Ljava/lang/String;
+
+    move-result-object p1
+
+    const/4 v1, 0x7
+
+    sget-object v0, Lzq4;->a:Ljava/util/Map;
+
+    const/4 v1, 0x4
+
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    const/4 v1, 0x7
+
+    check-cast p1, Lcr4$c$b;
+
+    const/4 v1, 0x2
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    sget-object p1, Lcr4$c$b;->b:Lcr4$c$b;
+
+    :goto_0
+    const/4 v1, 0x2
+
+    return-object p1
+.end method

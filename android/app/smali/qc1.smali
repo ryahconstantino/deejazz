@@ -1,0 +1,81 @@
+.class public Lqc1;
+.super Lhc1;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lhc1<",
+        "Ljava/lang/Void;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    const/4 v1, 0x5
+
+    const/16 v0, 0x10
+
+    const/4 v1, 0x3
+
+    invoke-direct {p0, v0}, Lhc1;-><init>(I)V
+
+    const/4 v1, 0x1
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public f()I
+    .locals 2
+
+    const-string v1, "  ~@~@~@~@~@~@~@~@~@~@~   Smob - Mod obfuscation tool v1.4 by Kirlif\'   ~@~@~@~@~@~@~@~@~@~@~  "
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x6
+
+    return v0
+.end method
+
+.method public bridge synthetic getItem(I)Ljava/lang/Object;
+    .locals 1
+
+    const/4 v0, 0x7
+
+    const/4 p1, 0x0
+
+    const/4 v0, 0x3
+
+    return-object p1
+.end method
+
+.method public getItemId(I)Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x4
+
+    const-string p1, "empty_view"
+
+    const/4 v0, 0x5
+
+    return-object p1
+.end method
+
+.method public h(I)I
+    .locals 1
+
+    const/4 v0, 0x2
+
+    const p1, 0x7f0a0838
+
+    const/4 v0, 0x4
+
+    return p1
+.end method

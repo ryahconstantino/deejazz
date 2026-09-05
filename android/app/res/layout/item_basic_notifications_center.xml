@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.uikit.widgets.views.ForegroundImageView android:id="@id/list_item_user_pic" android:layout_width="@dimen/item_image_notification_center" android:layout_height="@dimen/item_image_notification_center" android:layout_marginEnd="@dimen/scaled_16dp" app:foregroundDrawable="@drawable/ripple_rect_mask" />
+    <TextView android:textSize="@dimen/scaled_14sp" android:textColor="@color/appnotification_default_text_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/list_item_first_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_notif_basic_first_line_margin_top_bottom" android:layout_marginBottom="@dimen/app_notif_basic_first_line_margin_top_bottom" />
+    <TextView android:textSize="@dimen/scaled_12sp" android:textColor="@color/appnotification_default_seconde_line_color" android:layout_gravity="center_vertical" android:id="@id/list_item_second_line" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/scaled_10sp" android:textColor="@color/theme_text_secondary" android:id="@id/list_item_timestamp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_notif_basic_timestamp_margin_top" />
+    <com.deezer.uikit.widgets.views.ForegroundImageView android:id="@id/list_item_unread_icon" android:layout_width="@dimen/app_notif_unread_icon_size" android:layout_height="@dimen/app_notif_unread_icon_size" android:src="@drawable/track_unseen_drawable" android:layout_marginStart="@dimen/app_notif_unread_icon_margin" android:layout_marginEnd="@dimen/app_notif_unread_icon_margin" app:foregroundDrawable="@drawable/ripple_round_mask" />
+</merge>

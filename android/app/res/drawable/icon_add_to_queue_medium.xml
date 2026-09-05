@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dp" android:width="24.0dp" android:autoMirrored="true" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/theme_icon_primary" android:pathData="M22 3H2V2h20v1z" />
+    <path android:fillColor="@color/theme_icon_primary" android:pathData="M22 19h-9v-1h9v1z" />
+    <path android:fillColor="@color/theme_icon_primary" android:pathData="M13 11h9v-1h-9v1z" />
+    <path android:fillColor="@color/theme_icon_primary" android:pathData="M22 15h-9v-1h9v1z" />
+    <path android:fillColor="@color/theme_icon_primary" android:pathData="M2 7h20V6H2v1z" />
+    <path android:fillColor="@color/theme_icon_primary" android:pathData="M2 11h1v7h7l-4-4l0.7-0.7l5.18 5.17l0.02 0.01l-5.2 5.2L6 22.96L9.97 19H2v-8z" />
+</vector>

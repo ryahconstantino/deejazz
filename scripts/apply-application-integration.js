@@ -5,8 +5,8 @@ const path = require("path");
 const { createPackage, extractAll, extractFile } = require("@electron/asar");
 const { projectRoot, version } = require("./build-environment");
 
-const sourceAsar = path.join(projectRoot, "src", "resources", "app.asar");
-const windowsIcon = path.join(projectRoot, "src", "resources", "win", "app.ico");
+const sourceAsar = path.join(projectRoot, "desktop", "resources", "app.asar");
+const windowsIcon = path.join(projectRoot, "desktop", "resources", "win", "app.ico");
 const panelLocalesPath = path.join(projectRoot, "scripts", "ubol-panel-locales.json");
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");

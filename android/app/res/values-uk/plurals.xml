@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dz_SMScoderesentconfirmationscreen_text_XSMScodesleft_mobile">
+        <item quantity="one">Залишився %1$s СМС-код</item>
+        <item quantity="few">Залишилося %1$s СМС-коди</item>
+        <item quantity="many">Залишилося %1$s СМС-кодів</item>
+        <item quantity="other">Залишилося %1$s СМС-кодів</item>
+    </plurals>
+    <plurals name="dz_agerestrictionerrormessage_text_mustbeXyearsentervaliddate_mobile">
+        <item quantity="one">Вам має виповнитися щонайменше %1$s рік для користування акаунтом Deezer. Будь ласка, уведіть дійсну дату.</item>
+        <item quantity="few">Вам має виповнитися щонайменше %1$s роки для користування акаунтом Deezer. Будь ласка, уведіть дійсну дату.</item>
+        <item quantity="many">Вам має виповнитися щонайменше %1$s років для користування акаунтом Deezer. Будь ласка, уведіть дійсну дату.</item>
+        <item quantity="other">Вам має виповнитися щонайменше %1$s років для користування акаунтом Deezer. Будь ласка, уведіть дійсну дату.</item>
+    </plurals>
+    <plurals name="dz_androidtv_text_profilenumberlimitreached_mobile">
+        <item quantity="one">Ви створили максимальну кількість профілів - %1$s. Будь-ласка, видаліть один із профілів і продовжуйте.</item>
+        <item quantity="few">Ви створили максимальну кількість профілів - %1$s. Будь-ласка, видаліть один із профілів і продовжуйте.</item>
+        <item quantity="many">Ви створили максимальну кількість профілів - %1$s. Будь-ласка, видаліть один із профілів і продовжуйте.</item>
+        <item quantity="other">Ви створили максимальну кількість профілів - %1$s. Будь-ласка, видаліть один із профілів і продовжуйте.</item>
+    </plurals>
+    <plurals name="dz_androidtvlandingpage_text_morethanXmilliontracksacrossallgenres_mobile">
+        <item quantity="one">Більше ніж %1$s мільйон треків серед всіх жанрів</item>
+        <item quantity="few">Більше ніж %1$s мільйони треків серед всіх жанрів</item>
+        <item quantity="many">Більше ніж %1$s мільйонів треків серед всіх жанрів</item>
+        <item quantity="other">Більше ніж %1$s мільйонів треків серед всіх жанрів</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseXmoreartistsUPP_mobile">
+        <item quantity="one">ОБЕРІТЬ ЩЕ %1$s ВИКОНАВЦЯ</item>
+        <item quantity="few">ОБЕРІТЬ ЩЕ %1$s ВИКОНАВЦІВ</item>
+        <item quantity="many">ОБЕРІТЬ ЩЕ %1$s ВИКОНАВЦІВ</item>
+        <item quantity="other">ОБЕРІТЬ ЩЕ %1$s ВИКОНАВЦІВ</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseatleastXartistsUPP_mobile">
+        <item quantity="one">ОБЕРІТЬ ЩОНАЙМЕНШЕ %1$s ВИКОНАВЦЯ</item>
+        <item quantity="few">ОБЕРІТЬ ЩОНАЙМЕНШЕ %1$s ВИКОНАВЦІВ</item>
+        <item quantity="many">ОБЕРІТЬ ЩОНАЙМЕНШЕ %1$s ВИКОНАВЦІВ</item>
+        <item quantity="other">ОБЕРІТЬ ЩОНАЙМЕНШЕ %1$s ВИКОНАВЦІВ</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_continuewithXartistsUPP_mobile">
+        <item quantity="one">ПРОДОВЖИТИ З %1$s ВИКОНАВЦЕМ</item>
+        <item quantity="few">ПРОДОВЖИТИ З %1$s ВИКОНАВЦЯМИ</item>
+        <item quantity="many">ПРОДОВЖИТИ З %1$s ВИКОНАВЦЯМИ</item>
+        <item quantity="other">ПРОДОВЖИТИ З %1$s ВИКОНАВЦЯМИ</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_deletetheseXplaylists_mobile">
+        <item quantity="one">Видалити цей плейліст?</item>
+        <item quantity="few">Видалити ці %1$s плейлісти?</item>
+        <item quantity="many">Видалити ці %1$s плейлістів?</item>
+        <item quantity="other">Видалити ці %1$s плейлістів?</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_playlistsdownloaded_mobile">
+        <item quantity="one">Плейліст завантажений!</item>
+        <item quantity="few">Плейлісти завантажено!</item>
+        <item quantity="many">Плейлісти завантажено!</item>
+        <item quantity="other">Плейлісти завантажено!</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_trackremovedfromfavorite_mobile">
+        <item quantity="one">Цей трек видалений із ваших «Улюблених треків».</item>
+        <item quantity="few">Ці треки видалені з ваших «Улюблених треків».</item>
+        <item quantity="many">Ці треки видалені з ваших «Улюблених треків».</item>
+        <item quantity="other">Ці треки видалені з ваших «Улюблених треків».</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xapps_mobile">
+        <item quantity="one">%1$s програма</item>
+        <item quantity="few">%1$s програми</item>
+        <item quantity="many">%1$s програм</item>
+        <item quantity="other">%1$s програм</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xartists_mobile">
+        <item quantity="one">%1$s виконавець</item>
+        <item quantity="few">%1$s виконавця</item>
+        <item quantity="many">%1$s виконавців</item>
+        <item quantity="other">%1$s виконавців</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xaudiobooks_mobile">
+        <item quantity="one">%1$s аудіокнига</item>
+        <item quantity="few">%1$s аудіокниги</item>
+        <item quantity="many">%1$s аудіокниг</item>
+        <item quantity="other">%1$s аудіокниг</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xchapters_mobile">
+        <item quantity="one">%1$s глава</item>
+        <item quantity="few">%1$s глави</item>
+        <item quantity="many">%1$s глав</item>
+        <item quantity="other">%1$s глав</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xdownloads_mobile">
+        <item quantity="one">%1$s завантаження</item>
+        <item quantity="few">%1$s завантаження</item>
+        <item quantity="many">%1$s завантажень</item>
+        <item quantity="other">%1$s завантажень</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xepisodes_mobile">
+        <item quantity="one">%1$s епізод</item>
+        <item quantity="few">%1$s епізоди</item>
+        <item quantity="many">%1$s епізодів</item>
+        <item quantity="other">%1$s епізодів</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xmixes_mobile">
+        <item quantity="one">%1$s мікс</item>
+        <item quantity="few">%1$s мікси</item>
+        <item quantity="many">%1$s міксів</item>
+        <item quantity="other">%1$s міксів</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xnewentries_mobile">
+        <item quantity="one">%1$s новий запис</item>
+        <item quantity="few">%1$s нових записи</item>
+        <item quantity="many">%1$s нових записів</item>
+        <item quantity="other">%1$s нових записів</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xplaylists_mobile">
+        <item quantity="one">%1$s плейліст</item>
+        <item quantity="few">%1$s плейлісти</item>
+        <item quantity="many">%1$s плейлістів</item>
+        <item quantity="other">%1$s плейлістів</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xpodcasts_mobile">
+        <item quantity="one">%1$s подкаст</item>
+        <item quantity="few">%1$s подкасти</item>
+        <item quantity="many">%1$s подкастів</item>
+        <item quantity="other">%1$s подкастів</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xtracks_mobile">
+        <item quantity="one">%1$s трек</item>
+        <item quantity="few">%1$s треки</item>
+        <item quantity="many">%1$s треків</item>
+        <item quantity="other">%1$s треків</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xunheard_mobile">
+        <item quantity="one">%1$s непрослуханий</item>
+        <item quantity="few">%1$s непрослухані</item>
+        <item quantity="many">%1$s непрослуханих</item>
+        <item quantity="other">%1$s непрослуханих</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_subtitle_cancelactivesubsbeforedeleting_mobile">
+        <item quantity="one">Ви маєте скасувати будь-яку активну підписку перед вилученням свого акаунта.</item>
+        <item quantity="few">Ви маєте скасувати будь-які активні підписки перед вилученням свого акаунта.</item>
+        <item quantity="many">Ви маєте скасувати будь-які активні підписки перед вилученням свого акаунта.</item>
+        <item quantity="other">Ви маєте скасувати будь-які активні підписки перед вилученням свого акаунта.</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingloseaccesstoapps_mobile">
+        <item quantity="one">Видаляючи свій акаунт, ви втрачаєте доступ до такого додатку:</item>
+        <item quantity="few">Видаляючи свій акаунт, ви втрачаєте доступ до таких додатків:</item>
+        <item quantity="many">Видаляючи свій акаунт, ви втрачаєте доступ до таких додатків:</item>
+        <item quantity="other">Видаляючи свій акаунт, ви втрачаєте доступ до таких додатків:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletinglosefollowingsubs_mobile">
+        <item quantity="one">Видаляючи свій акаунт, ви втрачаєте таку підписку:</item>
+        <item quantity="few">Видаляючи свій акаунт, ви втрачаєте такі підписки:</item>
+        <item quantity="many">Видаляючи свій акаунт, ви втрачаєте такі підписки:</item>
+        <item quantity="other">Видаляючи свій акаунт, ви втрачаєте такі підписки:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingyouloseaccessdataandsubs_mobile">
+        <item quantity="one">Видаляючи свій акаунт, ви втрачаєте весь свій доступ, дані та підписки на такий додаток:</item>
+        <item quantity="few">Видаляючи свій акаунт, ви втрачаєте весь свій доступ, дані та підписки на такі додатки:</item>
+        <item quantity="many">Видаляючи свій акаунт, ви втрачаєте весь свій доступ, дані та підписки на такі додатки:</item>
+        <item quantity="other">Видаляючи свій акаунт, ви втрачаєте весь свій доступ, дані та підписки на такі додатки:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_accountassociatedwithXapps_mobile">
+        <item quantity="one">Ваш акаунт поєднаний із %1$s додатком</item>
+        <item quantity="few">Ваш акаунт поєднаний із %1$s додатками</item>
+        <item quantity="many">Ваш акаунт поєднаний із %1$s додатками</item>
+        <item quantity="other">Ваш акаунт поєднаний із %1$s додатками</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithactivesubs_mobile">
+        <item quantity="one">Додаток з активною підпискою</item>
+        <item quantity="few">Додатки з активними підписками</item>
+        <item quantity="many">Додатки з активними підписками</item>
+        <item quantity="other">Додатки з активними підписками</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithoutsubs_mobile">
+        <item quantity="one">Додаток без підписки</item>
+        <item quantity="few">Додатки без підписок</item>
+        <item quantity="many">Додатки без підписок</item>
+        <item quantity="other">Додатки без підписок</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithsubs_mobile">
+        <item quantity="one">Додаток із підпискою</item>
+        <item quantity="few">Додатки з підписками</item>
+        <item quantity="many">Додатки з підписками</item>
+        <item quantity="other">Додатки з підписками</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_subtitle_howaboutXmorefreedays_mobile">
+        <item quantity="one">Що скажете про ще %1$s день безкоштовно?</item>
+        <item quantity="few">Що скажете про ще %1$s дні безкоштовно?</item>
+        <item quantity="many">Що скажете про ще %1$s днів безкоштовно?</item>
+        <item quantity="other">Що скажете про ще %1$s днів безкоштовно?</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_title_planXtrialendsinXdays_mobile">
+        <item quantity="one">Ваша пробна підписка %1$s закінчується за %2$s день</item>
+        <item quantity="few">Ваша пробна підписка %1$s закінчується за %2$s дні</item>
+        <item quantity="many">Ваша пробна підписка %1$s закінчується за %2$s днів</item>
+        <item quantity="other">Ваша пробна підписка %1$s закінчується за %2$s днів</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXhours_mobile">
+        <item quantity="one">З міркувань безпеки ви можете повторити спробу через %1$s годину.</item>
+        <item quantity="few">З міркувань безпеки ви можете повторити спробу через %1$s години.</item>
+        <item quantity="many">З міркувань безпеки ви можете повторити спробу через %1$s годин.</item>
+        <item quantity="other">З міркувань безпеки ви можете повторити спробу через %1$s годин.</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXminutes_mobile">
+        <item quantity="one">З міркувань безпеки ви можете повторити спробу через %1$s хвилину.</item>
+        <item quantity="few">З міркувань безпеки ви можете повторити спробу через %1$s хвилини.</item>
+        <item quantity="many">З міркувань безпеки ви можете повторити спробу через %1$s хвилин.</item>
+        <item quantity="other">З міркувань безпеки ви можете повторити спробу через %1$s хвилин.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_TCsprivacypolicyforunderXyearold_mobile">
+        <item quantity="one">Активуючи акаунт для учасників молодших %1$s року, ви погоджуєтесь з тим, що Deezer збирає їх персональні дані та розпоряджається ними так, щоб учасники могли використовувати наш сервіс. Докладніша інформація наведена у нашій %2$sПолітиці конфіденційності%3$s</item>
+        <item quantity="few">Активуючи акаунт для учасників молодших %1$s років, ви погоджуєтесь з тим, що Deezer збирає їх персональні дані та розпоряджається ними так, щоб учасники могли використовувати наш сервіс. Докладніша інформація наведена у нашій %2$sПолітиці конфіденційності%3$s</item>
+        <item quantity="many">Активуючи акаунт для учасників молодших %1$s років, ви погоджуєтесь з тим, що Deezer збирає їх персональні дані та розпоряджається ними так, щоб учасники могли використовувати наш сервіс. Докладніша інформація наведена у нашій %2$sПолітиці конфіденційності%3$s</item>
+        <item quantity="other">Активуючи акаунт для учасників молодших %1$s років, ви погоджуєтесь з тим, що Deezer збирає їх персональні дані та розпоряджається ними так, щоб учасники могли використовувати наш сервіс. Докладніша інформація наведена у нашій %2$sПолітиці конфіденційності%3$s</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_onlycontentsuitableforXageandunder_mobile">
+        <item quantity="one">Якщо ви активуєте цю опцію, буде відображатися лише контент, що підходить для віку %1$s року та молодше.</item>
+        <item quantity="few">Якщо ви активуєте цю опцію, буде відображатися лише контент, що підходить для віку %1$s років та молодше.</item>
+        <item quantity="many">Якщо ви активуєте цю опцію, буде відображатися лише контент, що підходить для віку %1$s років та молодше.</item>
+        <item quantity="other">Якщо ви активуєте цю опцію, буде відображатися лише контент, що підходить для віку %1$s років та молодше.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_underXyearsorkidscannotbeconverted_mobile">
+        <item quantity="one">У вас немає доступу до цього профілю. Користувачі молодші %1$s року або дитячі профілі не можуть бути переведені в незалежний акаунт.</item>
+        <item quantity="few">У вас немає доступу до цього профілю. Користувачі молодші %1$s років або дитячі профілі не можуть бути переведені в незалежний акаунт.</item>
+        <item quantity="many">У вас немає доступу до цього профілю. Користувачі молодші %1$s років або дитячі профілі не можуть бути переведені в незалежний акаунт.</item>
+        <item quantity="other">У вас немає доступу до цього профілю. Користувачі молодші %1$s років або дитячі профілі не можуть бути переведені в незалежний акаунт.</item>
+    </plurals>
+    <plurals name="dz_familymemberselector_text_Xmembersremaining_mobile">
+        <item quantity="one">Залишається ще %1$s користувач</item>
+        <item quantity="few">Залишається ще %1$s користувача</item>
+        <item quantity="many">Залишається ще %1$s користувачів</item>
+        <item quantity="other">Залишається ще %1$s користувачів</item>
+    </plurals>
+    <plurals name="dz_familyprofileminorconsent_text_termsandconditions_mobile">
+        <item quantity="one">"Створюючи цей під-профіль для неповнолітнього віком менше %1$s року, ви погоджуєтеся, що Deezer і його партнери збирають та обробляють персональні дані, пов'язані з їх власником, щоб запропонувати зміст та пропозиції, що відповідають інтересам. Для отримання додаткової інформації ознайомтеся з нашою Політикою конфіденційності."</item>
+        <item quantity="few">"Створюючи цей під-профіль для неповнолітнього віком менше %1$s років, ви погоджуєтеся, що Deezer і його партнери збирають та обробляють персональні дані, пов'язані з їх власником, щоб запропонувати зміст та пропозиції, що відповідають інтересам. Для отримання додаткової інформації ознайомтеся з нашою Політикою конфіденційності."</item>
+        <item quantity="many">"Створюючи цей під-профіль для неповнолітнього віком менше %1$s років, ви погоджуєтеся, що Deezer і його партнери збирають та обробляють персональні дані, пов'язані з їх власником, щоб запропонувати зміст та пропозиції, що відповідають інтересам. Для отримання додаткової інформації ознайомтеся з нашою Політикою конфіденційності."</item>
+        <item quantity="other">"Створюючи цей під-профіль для неповнолітнього віком менше %1$s років, ви погоджуєтеся, що Deezer і його партнери збирають та обробляють персональні дані, пов'язані з їх власником, щоб запропонувати зміст та пропозиції, що відповідають інтересам. Для отримання додаткової інформації ознайомтеся з нашою Політикою конфіденційності."</item>
+    </plurals>
+    <plurals name="dz_familyprofileswitcherwelcome_text_Xprofilesremaining_mobile">
+        <item quantity="one">Ще %1$s профіль</item>
+        <item quantity="few">Ще %1$s профілі</item>
+        <item quantity="many">Ще %1$s профілів</item>
+        <item quantity="other">Ще %1$s профілів</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_accountcreationagerestriction_mobile">
+        <item quantity="one">Вам повинно бути не менше %1$s року, щоб створити акаунт.</item>
+        <item quantity="few">Вам повинно бути не менше %1$s років, щоб створити акаунт.</item>
+        <item quantity="many">Вам повинно бути не менше %1$s років, щоб створити акаунт.</item>
+        <item quantity="other">Вам повинно бути не менше %1$s років, щоб створити акаунт.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordnotenoughchars_mobile">
+        <item quantity="one">Ваш пароль має містити щонайменше %1$s знак.</item>
+        <item quantity="few">Ваш пароль має містити щонайменше %1$s знаки.</item>
+        <item quantity="many">Ваш пароль має містити щонайменше %1$s знаків.</item>
+        <item quantity="other">Ваш пароль має містити щонайменше %1$s знаків.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordtoomanychars_mobile">
+        <item quantity="one">Пароль повинен містити не більше %1$s символу.</item>
+        <item quantity="few">Пароль повинен містити не більше %1$s символів.</item>
+        <item quantity="many">Пароль повинен містити не більше %1$s символів.</item>
+        <item quantity="other">Пароль повинен містити не більше %1$s символів.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernamenotenoughchars_mobile">
+        <item quantity="one">"Ваше ім'я користувача має налічувати щонайменше %1$s символ."</item>
+        <item quantity="few">"Ваше ім'я користувача має налічувати щонайменше %1$s символи."</item>
+        <item quantity="many">"Ваше ім'я користувача має налічувати щонайменше %1$s символів."</item>
+        <item quantity="other">"Ваше ім'я користувача має налічувати щонайменше %1$s символів."</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernametoomanychars_mobile">
+        <item quantity="one">"Ваше ім'я користувача повинне містити не більше %1$s символу."</item>
+        <item quantity="few">"Ваше ім'я користувача повинне містити не більше %1$s символів."</item>
+        <item quantity="many">"Ваше ім'я користувача повинне містити не більше %1$s символів."</item>
+        <item quantity="other">"Ваше ім'я користувача повинне містити не більше %1$s символів."</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xgbleft_mobile">
+        <item quantity="one">%1$s Гб залишився</item>
+        <item quantity="few">%1$s Гб залишилося</item>
+        <item quantity="many">%1$s Гб залишилося</item>
+        <item quantity="other">%1$s Гб залишилося</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xmbleft_mobile">
+        <item quantity="one">%1$s Мб залишився</item>
+        <item quantity="few">%1$s Мб залишилося</item>
+        <item quantity="many">%1$s Мб залишилося</item>
+        <item quantity="other">%1$s Мб залишилося</item>
+    </plurals>
+    <plurals name="dz_inprogressplaylistpage_subtitle_duringthelastXdays_mobile">
+        <item quantity="one">Відучора</item>
+        <item quantity="few">Впродовж останніх %1$s днів</item>
+        <item quantity="many">Впродовж останніх %1$s днів</item>
+        <item quantity="other">Впродовж останніх %1$s днів</item>
+    </plurals>
+    <plurals name="dz_masthead_title_episodescountnox_mobile">
+        <item quantity="one">Епізод</item>
+        <item quantity="few">Епізоди</item>
+        <item quantity="many">Епізоди</item>
+        <item quantity="other">Епізоди</item>
+    </plurals>
+    <plurals name="dz_masthead_title_fanscountnox_mobile">
+        <item quantity="one">Шанувальник</item>
+        <item quantity="few">Шанувальники</item>
+        <item quantity="many">Фани</item>
+        <item quantity="other">Фани</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_Xtrackchangesperhour_mobile">
+        <item quantity="one">У міксі можна міняти треки у кількості не більше %1$s за годину.</item>
+        <item quantity="few">У міксі можна міняти треки у кількості не більше %1$s за годину.</item>
+        <item quantity="many">У міксі можна міняти треки у кількості не більше %1$s за годину.</item>
+        <item quantity="other">У міксі можна міняти треки у кількості не більше %1$s за годину.</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_changetrackallowedagaininXmin_mobile">
+        <item quantity="one">Ви зможете знову міняти треки через %1$s хвилину.</item>
+        <item quantity="few">Ви зможете знову міняти треки через %1$s хвилини.</item>
+        <item quantity="many">Ви зможете знову міняти треки через %1$s хвилин.</item>
+        <item quantity="other">Ви зможете знову міняти треки через %1$s хвилин.</item>
+    </plurals>
+    <plurals name="dz_mobiletrialtoaster_text_yourXdaytrialhasstarted_mobile">
+        <item quantity="one">Ваш %1$s-денний пробний термін розпочався</item>
+        <item quantity="few">Ваш %1$s-денний пробний термін розпочався</item>
+        <item quantity="many">Ваш %1$s-денний пробний термін розпочався</item>
+        <item quantity="other">Ваш %1$s-денний пробний термін розпочався</item>
+    </plurals>
+    <plurals name="dz_mymusic_albums_count">
+        <item quantity="one">%1$s альбом</item>
+        <item quantity="few">%1$s альбоми</item>
+        <item quantity="many">%1$s альбомів</item>
+        <item quantity="other">%1$s альбомів</item>
+    </plurals>
+    <plurals name="dz_newofferscardsusp_text_getXaccountswithXbenefitsplushifi_mobile">
+        <item quantity="one">Отримайте %1$s індивідуальний акаунт з усіма перевагами %2$s включно зі звуком високої точності.</item>
+        <item quantity="few">Отримайте %1$s індивідуальних акаунта з усіма перевагами %2$s включно зі звуком високої точності.</item>
+        <item quantity="many">Отримайте %1$s індивідуальних акаунтів з усіма перевагами %2$s включно зі звуком високої точності.</item>
+        <item quantity="other">Отримайте %1$s індивідуальних акаунтів з усіма перевагами %2$s включно зі звуком високої точності.</item>
+    </plurals>
+    <plurals name="dz_offerwall_text_priceXpermonthforXmonths_mobile">
+        <item quantity="one">%1$s/місяць за %2$s місяць</item>
+        <item quantity="few">%1$s/місяць за %2$s місяці</item>
+        <item quantity="many">%1$s/місяць за %2$s місяців</item>
+        <item quantity="other">%1$s/місяць за %2$s місяців</item>
+    </plurals>
+    <plurals name="dz_offlinepodcastplaylist_subtitle_Xdownloadedepisodes_mobile">
+        <item quantity="one">%1$s завантажений епізод</item>
+        <item quantity="few">%1$s завантажених епізодів</item>
+        <item quantity="many">%1$s завантажених епізодів</item>
+        <item quantity="other">%1$s завантажених епізодів</item>
+    </plurals>
+    <plurals name="dz_onboardingfirstlikes_action_pickXmoreUPP_mobile">
+        <item quantity="one">ВИБЕРІТЬ ЩЕ %1$s</item>
+        <item quantity="few">ВИБЕРІТЬ ЩЕ %1$s</item>
+        <item quantity="many">ВИБЕРІТЬ ЩЕ %1$s</item>
+        <item quantity="other">ВИБЕРІТЬ ЩЕ %1$s</item>
+    </plurals>
+    <plurals name="dz_onboardingtoastmessage_action_onlyXpickstostart_mobile">
+        <item quantity="one">Обережніше! Для початку достатньо вибрати всього %1$s добірку.</item>
+        <item quantity="few">Обережніше! Для початку достатньо вибрати всього %1$s добірки.</item>
+        <item quantity="many">Обережніше! Для початку достатньо вибрати всього %1$s добірок.</item>
+        <item quantity="other">Обережніше! Для початку достатньо вибрати всього %1$s добірок.</item>
+    </plurals>
+    <plurals name="dz_passwordsecurity_title_Xcharactersmin_mobile">
+        <item quantity="one">Мін. %1$s знак</item>
+        <item quantity="few">Мін. %1$s знаки</item>
+        <item quantity="many">Мін. %1$s знаків</item>
+        <item quantity="other">Мін. %1$s знаків</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_accountalreadylinkedtoXdevices_mobile">
+        <item quantity="one">"Ваш акаунт уже прив'язаний до %1$s іншого пристрою. Можливості %2$s стануть недоступними для цього пристрою."</item>
+        <item quantity="few">"Ваш акаунт уже прив'язаний до інших %1$s пристрів. Можливості %2$s стануть недоступними для цього пристрою."</item>
+        <item quantity="many">"Ваш акаунт уже прив'язаний до інших %1$s пристроїв. Можливості %2$s стануть недоступними для цього пристрою."</item>
+        <item quantity="other">"Ваш акаунт уже прив'язаний до інших %1$s пристроїв. Можливості %2$s стануть недоступними для цього пристрою."</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_maxXdevicesonyoursubcription_mobile">
+        <item quantity="one">Ваша підписка надає вам право використовувати %1$s максимально на %2$s пристрої.</item>
+        <item quantity="few">Ваша підписка надає вам право використовувати %1$s максимально на %2$s пристроях.</item>
+        <item quantity="many">Ваша підписка надає вам право використовувати %1$s максимально на %2$s пристроях.</item>
+        <item quantity="other">Ваша підписка дає вам право використовувати %1$s максимально на %2$s пристроях.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_nomorethanXdevicesonyoursubcription_mobile">
+        <item quantity="one">Ваша підписка дає вам право використовувати %1$s не більше ніж на %2$s пристрої.</item>
+        <item quantity="few">Ваша підписка дає вам право використовувати %1$s не більше ніж на %2$s пристроях.</item>
+        <item quantity="many">Ваша підписка дає вам право використовувати %1$s не більше ніж на %2$s пристроях.</item>
+        <item quantity="other">Ваша підписка дає вам право використовувати %1$s не більше ніж на %2$s пристроях.</item>
+    </plurals>
+    <plurals name="dz_playlist_text_tracksalreadyaddedtotheplaylist_mobile">
+        <item quantity="one">Цей трек уже було додано до плейліста</item>
+        <item quantity="few">Ці треки уже було додано до плейліста</item>
+        <item quantity="many">Ці треки уже було додано до плейліста</item>
+        <item quantity="other">Ці треки уже було додано до плейліста</item>
+    </plurals>
+    <plurals name="dz_playlistpage_action_addXtracks_mobile">
+        <item quantity="one">Додати %1$s трек</item>
+        <item quantity="few">Додати %1$s трека</item>
+        <item quantity="many">Додати %1$s треків</item>
+        <item quantity="other">Додати %1$s треків</item>
+    </plurals>
+    <plurals name="dz_premiumbenefit_text_skipmorethanXtracksperhour_mobile">
+        <item quantity="one">Ви зможете пропускати більше %1$s треку на годину</item>
+        <item quantity="few">Ви зможете пропускати більше %1$s треків на годину</item>
+        <item quantity="many">Ви зможете пропускати більше %1$s треків на годину</item>
+        <item quantity="other">Ви зможете пропускати більше %1$s треків на годину</item>
+    </plurals>
+    <plurals name="dz_searchresult_title_topresults_mobile">
+        <item quantity="one">Найкращий результат</item>
+        <item quantity="few">Найкращі результати</item>
+        <item quantity="many">Найкращі результати</item>
+        <item quantity="other">Найкращі результати</item>
+    </plurals>
+    <plurals name="dz_signupjapanUS_action_tryitfreexmonths_mobile">
+        <item quantity="one">Спробуйте безкоштовно протягом %1$s місяця</item>
+        <item quantity="few">Спробуйте безкоштовно протягом %1$s місяців</item>
+        <item quantity="many">Спробуйте безкоштовно протягом %1$s місяців</item>
+        <item quantity="other">Спробуйте безкоштовно протягом %1$s місяців</item>
+    </plurals>
+    <plurals name="dz_skipcounter_text_Xmoretracks_mobile">
+        <item quantity="one">Ви можете пропустити ще %1$s трек.</item>
+        <item quantity="few">Ви можете пропустити ще %1$s треки.</item>
+        <item quantity="many">Ви можете пропустити ще %1$s треків.</item>
+        <item quantity="other">Ви можете пропустити ще %1$s треків.</item>
+    </plurals>
+    <plurals name="dz_sleeptimer_text_sleepinlessthanXminutes_mobile">
+        <item quantity="one">Режим сну менш ніж за %1$s хвилину</item>
+        <item quantity="few">Режим сну менш ніж за %1$s хвилини</item>
+        <item quantity="many">Режим сну менш ніж за %1$s хвилин</item>
+        <item quantity="other">Режим сну менш ніж за %1$s хвилин</item>
+    </plurals>
+    <plurals name="dz_smartcache_text_storemostplayedtracksrecosettoXgb_mobile">
+        <item quantity="one">"Технологія Smart Cache дозволяє зберігати найбільше прослухані треки, щоб швидше їх завантажувати. Для найкращого досвіду прослуховування радимо встановити розмір кеш-пам'яті в %1$s ГБ."</item>
+        <item quantity="few">"Технологія Smart Cache дозволяє зберігати найбільше прослухані треки, щоб швидше їх завантажувати. Для найкращого досвіду прослуховування радимо встановити розмір кеш-пам'яті в %1$s ГБ."</item>
+        <item quantity="many">"Технологія Smart Cache дозволяє зберігати найбільше прослухані треки, щоб швидше їх завантажувати. Для найкращого досвіду прослуховування радимо встановити розмір кеш-пам'яті в %1$s ГБ."</item>
+        <item quantity="other">"Технологія Smart Cache дозволяє зберігати найбільше прослухані треки, щоб швидше їх завантажувати. Для найкращого досвіду прослуховування радимо встановити розмір кеш-пам'яті в %1$s ГБ."</item>
+    </plurals>
+    <plurals name="dz_smartloginandroidtvxboxwelcome_text_thiscodewillexpireinXminutes_mobile">
+        <item quantity="one">Термін дії цього коду закінчиться через %1$s хвилину.</item>
+        <item quantity="few">Термін дії цього коду закінчиться через %1$s хвилини.</item>
+        <item quantity="many">Термін дії цього коду закінчиться через %1$s хвилин.</item>
+        <item quantity="other">Термін дії цього коду закінчиться через %1$s хвилин.</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Followers_mobile">
+        <item quantity="one">Послідовник</item>
+        <item quantity="few">Послідовники</item>
+        <item quantity="many">Послідовники</item>
+        <item quantity="other">Послідовники</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Following_mobile">
+        <item quantity="one">Ви відстежуєте</item>
+        <item quantity="few">Ви відстежуєте</item>
+        <item quantity="many">Ви відстежуєте</item>
+        <item quantity="other">Ви відстежуєте</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfans_mobile">
+        <item quantity="one">%1$s шанувальник</item>
+        <item quantity="few">%1$s шанувальника</item>
+        <item quantity="many">%1$s шанувальників</item>
+        <item quantity="other">%1$s шанувальників</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowers_mobile">
+        <item quantity="one">%1$s послідовник</item>
+        <item quantity="few">%1$s послідовники</item>
+        <item quantity="many">%1$s послідовників</item>
+        <item quantity="other">%1$s послідовників</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowing_mobile">
+        <item quantity="one">%1$s відстеження</item>
+        <item quantity="few">%1$s відстеження</item>
+        <item quantity="many">%1$s відстежень</item>
+        <item quantity="other">%1$s відстежень</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xnotifications_mobile">
+        <item quantity="one">%1$s нове сповіщення</item>
+        <item quantity="few">%1$s нові сповіщення</item>
+        <item quantity="many">%1$s нових сповіщень</item>
+        <item quantity="other">%1$s нових сповіщень</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xgigabytes_mobile">
+        <item quantity="one">%1$s ГБ</item>
+        <item quantity="few">%1$s ГБ</item>
+        <item quantity="many">%1$s ГБ</item>
+        <item quantity="other">%1$s ГБ</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xmegabytes_mobile">
+        <item quantity="one">%1$s МБ</item>
+        <item quantity="few">%1$s МБ</item>
+        <item quantity="many">%1$s МБ</item>
+        <item quantity="other">%1$s МБ</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdays_mobile">
+        <item quantity="one">%1$s день</item>
+        <item quantity="few">%1$s д.</item>
+        <item quantity="many">%1$s д.</item>
+        <item quantity="other">%1$s д.</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdaysago_mobile">
+        <item quantity="one">%1$s день тому</item>
+        <item quantity="few">%1$s д. тому</item>
+        <item quantity="many">%1$s д. тому</item>
+        <item quantity="other">%1$s д. тому</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhours_mobile">
+        <item quantity="one">%1$s година</item>
+        <item quantity="few">%1$s год.</item>
+        <item quantity="many">%1$s год.</item>
+        <item quantity="other">%1$s год.</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhoursago_mobile">
+        <item quantity="one">%1$s година тому</item>
+        <item quantity="few">%1$s год. тому</item>
+        <item quantity="many">%1$s год. тому</item>
+        <item quantity="other">%1$s год. тому</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmin_mobile">
+        <item quantity="one">%1$s хвилина</item>
+        <item quantity="few">%1$s хвилини</item>
+        <item quantity="many">%1$s хвилин</item>
+        <item quantity="other">%1$s хвилин</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_XminleftUPP_mobile">
+        <item quantity="one">ЗАЛИШИЛАСЬ %1$s ХВ.</item>
+        <item quantity="few">ЗАЛИШИЛОСЬ %1$s ХВ.</item>
+        <item quantity="many">ЗАЛИШИЛОСЬ %1$s ХВ.</item>
+        <item quantity="other">ЗАЛИШИЛОСЬ %1$s ХВ.</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutes_mobile">
+        <item quantity="one">%1$s хвилина</item>
+        <item quantity="few">%1$s хв.</item>
+        <item quantity="many">%1$s хв.</item>
+        <item quantity="other">%1$s хв.</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutesago_mobile">
+        <item quantity="one">%1$s хвилина тому</item>
+        <item quantity="few">%1$s хв. тому</item>
+        <item quantity="many">%1$s хв. тому</item>
+        <item quantity="other">%1$s хв. тому</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmonthsago_mobile">
+        <item quantity="one">%1$s місяць тому</item>
+        <item quantity="few">%1$s міс. тому</item>
+        <item quantity="many">%1$s міс. тому</item>
+        <item quantity="other">%1$s міс. тому</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xs_mobile">
+        <item quantity="one">%1$s секунда</item>
+        <item quantity="few">%1$s сек.</item>
+        <item quantity="many">%1$s сек.</item>
+        <item quantity="other">%1$s сек.</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xweeksago_mobile">
+        <item quantity="one">%1$s тиждень тому</item>
+        <item quantity="few">%1$s тиж. тому</item>
+        <item quantity="many">%1$s тиж. тому</item>
+        <item quantity="other">%1$s тиж. тому</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xyearsago_mobile">
+        <item quantity="one">%1$s рік тому</item>
+        <item quantity="few">%1$s р. тому</item>
+        <item quantity="many">%1$s р. тому</item>
+        <item quantity="other">%1$s р. тому</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_alreadyaddedtoplaylist_mobile">
+        <item quantity="one">Уже додано до плейліста</item>
+        <item quantity="few">Уже додано до плейліста</item>
+        <item quantity="many">Уже додано до плейліста</item>
+        <item quantity="other">Уже додано до плейліста</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_unlockedXmoreskips_mobile">
+        <item quantity="one">Ви розблокували %1$s додатковий пропуск</item>
+        <item quantity="few">Ви розблокували %1$s додаткові пропуски</item>
+        <item quantity="many">Ви розблокували %1$s додаткових пропусків</item>
+        <item quantity="other">Ви розблокували %1$s додаткових пропусків</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoplaylisttrack_mobile">
+        <item quantity="one">Додано до плейліста</item>
+        <item quantity="few">Додано до плейліста</item>
+        <item quantity="many">Додано до плейліста</item>
+        <item quantity="other">Додано до плейліста</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoyourfavoritetrackstrack_mobile">
+        <item quantity="one">Додано до ваших улюблених треків.</item>
+        <item quantity="few">Додано до ваших улюблених треків.</item>
+        <item quantity="many">Додано до ваших улюблених треків.</item>
+        <item quantity="other">Додано до ваших улюблених треків.</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromplaylist_mobile">
+        <item quantity="one">Вилучено з плейліста</item>
+        <item quantity="few">Вилучено з плейліста</item>
+        <item quantity="many">Вилучено з плейліста</item>
+        <item quantity="other">Вилучено з плейліста</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromyourfavoritetrackstrack_mobile">
+        <item quantity="one">Вилучено з ваших улюблених треків</item>
+        <item quantity="few">Вилучено з ваших улюблених треків</item>
+        <item quantity="many">Вилучено з ваших улюблених треків</item>
+        <item quantity="other">Вилучено з ваших улюблених треків</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_Xdaytrial_mobile">
+        <item quantity="one">%1$s день спроби</item>
+        <item quantity="few">%1$s дні спроби</item>
+        <item quantity="many">%1$s днів спроби</item>
+        <item quantity="other">%1$s днів спроби</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_downloadskipadfreelistening_mobile">
+        <item quantity="one">Завантажуйте ваші треки, пропускайте пісні, які не подобаються, і насолоджуйтеся музикою без реклами протягом %1$s дня.</item>
+        <item quantity="few">Завантажуйте ваші треки, пропускайте пісні, які не подобаються, і насолоджуйтеся музикою без реклами протягом %1$s днів.</item>
+        <item quantity="many">Завантажуйте ваші треки, пропускайте пісні, які не подобаються, і насолоджуйтеся музикою без реклами протягом %1$s днів.</item>
+        <item quantity="other">Завантажуйте ваші треки, пропускайте пісні, які не подобаються, і насолоджуйтеся музикою без реклами протягом %1$s днів.</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_text_tryXforXdaysfreenocreditcardrequired_mobile">
+        <item quantity="one">Спробуйте %1$s протягом %2$s дня безкоштовно: кредитна картка не потрібна!</item>
+        <item quantity="few">Спробуйте %1$s протягом %2$s днів безкоштовно: кредитна картка не потрібна!</item>
+        <item quantity="many">Спробуйте %1$s протягом %2$s днів безкоштовно: кредитна картка не потрібна!</item>
+        <item quantity="other">Спробуйте %1$s протягом %2$s днів безкоштовно: кредитка картка не потрібна!</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXdays_mobile">
+        <item quantity="one">Щоб перевірити вашу підписку і дозволити використання Deezer на вашому телефоні, програма повинна бути підключена до WiFi або до мережі вашого мобільного оператора протягом %1$s дня.</item>
+        <item quantity="few">Щоб перевірити вашу підписку і дозволити використання Deezer на вашому телефоні, програма повинна бути підключена до WiFi або до мережі вашого мобільного оператора протягом %1$s днів.</item>
+        <item quantity="many">Щоб перевірити вашу підписку і дозволити використання Deezer на вашому телефоні, програма повинна бути підключена до WiFi або до мережі вашого мобільного оператора протягом %1$s днів.</item>
+        <item quantity="other">Щоб перевірити вашу підписку і дозволити використання Deezer на вашому телефоні, програма повинна бути підключена до Wi-Fi або до мережі вашого мобільного оператора протягом %1$s днів.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXhours_mobile">
+        <item quantity="one">Щоб перевірити вашу підписку і дозволити використання Deezer на вашому телефоні, програма повинна бути підключена до WiFi або до мережі вашого мобільного оператора протягом %1$s години.</item>
+        <item quantity="few">Щоб перевірити вашу підписку і дозволити використання Deezer на вашому телефоні, програма повинна бути підключена до WiFi або до мережі вашого мобільного оператора протягом %1$s годин.</item>
+        <item quantity="many">Щоб перевірити вашу підписку і дозволити використання Deezer на вашому телефоні, програма повинна бути підключена до WiFi або до мережі вашого мобільного оператора протягом %1$s годин.</item>
+        <item quantity="other">Щоб перевірити вашу підписку і дозволити використання Deezer на вашому телефоні, програма повинна бути підключена до Wi-Fi або до мережі вашого мобільного оператора протягом %1$s годин.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXminutes_mobile">
+        <item quantity="one">Щоб перевірити вашу підписку і дозволити використання Deezer на вашому телефоні, програма повинна бути підключена до WiFi або до мережі вашого мобільного оператора протягом %1$s хвилини.</item>
+        <item quantity="few">Щоб перевірити вашу підписку і дозволити використання Deezer на вашому телефоні, програма повинна бути підключена до WiFi або до мережі вашого мобільного оператора протягом %1$s хвилин.</item>
+        <item quantity="many">Щоб перевірити вашу підписку і дозволити використання Deezer на вашому телефоні, програма повинна бути підключена до WiFi або до мережі вашого мобільного оператора протягом %1$s хвилин.</item>
+        <item quantity="other">Щоб перевірити вашу підписку і дозволити використання Deezer на вашому телефоні, програма повинна бути підключена до Wi-Fi або до мережі вашого мобільного оператора протягом %1$s хвилин.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Перемотати вперед на %d секунду</item>
+        <item quantity="few">Перемотати вперед на %d секунди</item>
+        <item quantity="many">Перемотати вперед на %d секунд</item>
+        <item quantity="other">Перемотати вперед на %d секунди</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Перемотати назад на %d секунду</item>
+        <item quantity="few">Перемотати назад на %d секунди</item>
+        <item quantity="many">Перемотати назад на %d секунд</item>
+        <item quantity="other">Перемотати назад на %d секунди</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d нове сповіщення</item>
+        <item quantity="few">%d нові сповіщення</item>
+        <item quantity="many">%d нових сповіщень</item>
+        <item quantity="other">%d нового сповіщення</item>
+    </plurals>
+</resources>

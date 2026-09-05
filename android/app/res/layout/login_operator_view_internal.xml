@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/operator_icon" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" android:layout_alignParentStart="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffd2d2da" android:gravity="fill_vertical" android:id="@id/login_operator_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_alignParentTop="true" android:fontFamily="sans-serif-light" android:layout_marginEnd="@dimen/scaled_12dp" android:layout_toEndOf="@id/operator_icon" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="fill_vertical" android:id="@id/login_operator_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:layout_below="@id/login_operator_top" android:fontFamily="sans-serif-light" android:layout_marginEnd="@dimen/scaled_12dp" android:layout_toEndOf="@id/operator_icon" />
+</merge>

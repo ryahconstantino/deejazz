@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/space" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginBottom="16.0dp" android:layout_weight="1.0" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" app:srcCompat="@drawable/download_56" />
+    <TextView android:textSize="@dimen/placeholder_error_body" android:textColor="@color/theme_text_primary" android:gravity="center_horizontal" android:id="@id/offlineTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" />
+    <TextView android:textSize="@dimen/placeholder_error_info" android:textColor="@color/theme_text_primary" android:gravity="center_horizontal" android:id="@id/offlineText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" />
+    <Button android:textAppearance="@style/p1" android:textStyle="bold" android:textColor="@color/offline_fragment_subscribe_button_text" android:id="@id/OfflineSubscribeButton" android:background="@drawable/deezer_blue_button_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:minHeight="48.0dp" />
+    <Space android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginBottom="16.0dp" android:layout_weight="2.0" />
+</LinearLayout>

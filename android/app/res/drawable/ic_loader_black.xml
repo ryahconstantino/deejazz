@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="8.0dp" android:width="8.0dp" android:viewportWidth="8.0" android:viewportHeight="8.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="rotationGroup" android:pivotX="4.0" android:pivotY="4.0">
+        <path android:fillColor="@color/button_square_play_icon" android:pathData="M0,4L0.72727,4C0.72727,5.80748 2.19252,7.27273 4,7.27273C5.80748,7.27273 7.27273,5.80748 7.27273,4C7.27273,2.19252 5.80748,0.72727 4,0.72727L4,0C6.20914,0 8,1.79086 8,4C8,6.20914 6.20914,8 4,8C1.79086,8 0,6.20914 0,4Z" android:fillType="evenOdd" />
+    </group>
+</vector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.android.ui.fragment.player.ui.PlayerTextView android:ellipsize="marquee" android:id="@id/player_track_title" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" android:marqueeRepeatLimit="marquee_forever" android:layout_alignParentStart="true" app:dzrGravity="center" app:dzrTextColor="@color/text_white" app:dzrTextSize="@dimen/player_track_title" />
+    <com.deezer.android.ui.fragment.player.ui.PlayerTextView android:ellipsize="marquee" android:id="@id/player_subtitle" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/player_track_title" android:marqueeRepeatLimit="marquee_forever" android:layout_alignParentStart="true" app:dzrGravity="center" app:dzrTextColor="@color/theme_text_secondary" app:dzrTextSize="@dimen/player_track_subtitle" style="@style/PlayerTrackSubtitle" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/mosaic_cover_internal" />
+    <androidx.appcompat.widget.AppCompatImageView android:gravity="center_horizontal" android:id="@id/mosaic_cover_flow_logo" android:layout_width="wrap_content" android:layout_height="32.0dp" app:srcCompat="@drawable/ic_flow_logo" />
+    <TextView android:textSize="@dimen/dynamic_page_item_mosaic_highlight_subtitle_size" android:textColor="@color/mosaic_item_text" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/mosaic_cover_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" android:fontFamily="sans-serif" />
+</merge>

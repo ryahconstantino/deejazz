@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/settings_item_two_lines_layout" android:background="@drawable/ripple_cell_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64.0dp" android:layout_centerVertical="true" android:paddingStart="@dimen/settings_item_horizontal_padding" android:paddingEnd="@dimen/settings_item_horizontal_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/settings_item_content_vertical_margin" android:layout_marginBottom="@dimen/settings_item_content_vertical_margin" layout="@layout/settings_item_two_lines_content" />
+    <View android:id="@id/sep" android:background="@color/theme_divider_primary" android:layout_width="match_parent" android:layout_height="1.0dp" />
+</LinearLayout>

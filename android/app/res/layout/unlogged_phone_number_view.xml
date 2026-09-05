@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/unlogged_phone_number_view_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/phone_code" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_marginStart="@dimen/phone_margin_start" app:layout_constraintBaseline_toBaselineOf="@id/phone_field" app:layout_constraintBottom_toBottomOf="@id/phone_field" app:layout_constraintEnd_toStartOf="@id/phone_field" app:layout_constraintStart_toStartOf="parent" style="@style/UnloggedPage.PhoneCode" />
+    <com.deezer.uikit.widgets.layouts.BaselineTextInputLayout android:id="@id/phone_field" android:tag="binding_2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layoutDirection="ltr" android:layout_marginEnd="@dimen/login_register_side_margin" app:errorEnabled="true" app:hintEnabled="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/phone_code" app:layout_constraintTop_toTopOf="parent" style="@style/UnloggedPage.TextInput">
+        <com.deezer.widget.DzTextInputEditText android:textColor="@color/palette_dark_grey_600" android:id="@id/phone_edit_text" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="match_parent" android:inputType="phone" android:imeOptions="actionNext" android:textAlignment="viewStart" />
+    </com.deezer.uikit.widgets.layouts.BaselineTextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

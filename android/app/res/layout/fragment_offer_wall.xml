@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_offer_wall_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.feature.offerwall.result.widget.OfferWallViewPager android:id="@id/offer_wall_viewpager" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginBottom="@dimen/fragment_offer_wall_margin_bottom" app:layout_constraintBottom_toTopOf="@id/offer_wall_dots_indicator" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.deezer.commons.widgets.DotsIndicator android:layout_gravity="bottom" android:id="@id/offer_wall_dots_indicator" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/offer_wall_indicator_margin_bottom" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/offer_wall_viewpager" />
+</androidx.constraintlayout.widget.ConstraintLayout>

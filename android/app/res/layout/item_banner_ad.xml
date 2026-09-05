@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deezer.android.ui.widget.LinearLayoutWithBottomSeparator android:orientation="vertical" android:background="@color/theme_bg_primary" android:paddingTop="1.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/toolbar_second_line_text" android:textStyle="bold" android:textColor="@color/theme_text_secondary" android:gravity="center_horizontal" android:id="@id/banner_ad_description" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/banner_ad_view_container" android:background="@color/banner_ad_bg_placeholder" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginBottom="4.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+</com.deezer.android.ui.widget.LinearLayoutWithBottomSeparator>

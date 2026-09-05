@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_illustration_toaster_textview_0" android:background="@color/theme_bg_primary" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_margin="8.0dp" app:cardCornerRadius="4.0dp" app:cardElevation="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/toaster_background" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56.0dp">
+            <ImageView android:id="@id/imageview" android:layout_width="24.0dp" android:layout_height="24.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textColor="@color/theme_text_primary" android:id="@id/textview" android:tag="binding_1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/imageview" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginStart="0.0dp" style="@style/p3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

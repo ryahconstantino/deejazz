@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/item_corner_radius" />
+            <solid android:color="@color/cover_background" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/cover_icon_top_tracks" android:left="@dimen/image_playlist_large_icon_padding" android:top="@dimen/image_playlist_large_icon_padding" android:right="@dimen/image_playlist_large_icon_padding" android:bottom="@dimen/image_playlist_large_icon_padding" />
+</layer-list>

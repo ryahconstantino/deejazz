@@ -1,0 +1,8 @@
+.class public interface abstract Lk35;
+.super Ljava/lang/Object;
+.source ""
+
+
+# virtual methods
+.method public abstract a()Landroid/os/Bundle;
+.end method

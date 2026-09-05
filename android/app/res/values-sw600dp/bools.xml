@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="dynamic_page_native_ad_large_mode">true</bool>
+    <bool name="dynamic_page_slideshow_double_item">true</bool>
+    <bool name="in_app_can_show_fail_image">true</bool>
+    <bool name="is_tablet">true</bool>
+    <bool name="screen_size_debug_is_tablet">true</bool>
+    <bool name="why_ads_can_show_full_text">true</bool>
+</resources>

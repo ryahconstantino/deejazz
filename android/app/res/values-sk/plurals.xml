@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dz_SMScoderesentconfirmationscreen_text_XSMScodesleft_mobile">
+        <item quantity="one">%1$s SMS kód ostáva</item>
+        <item quantity="few">%1$s SMS kódy ostávajú</item>
+        <item quantity="many">%1$s SMS kódov ostáva</item>
+        <item quantity="other">%1$s SMS kódov ostáva</item>
+    </plurals>
+    <plurals name="dz_agerestrictionerrormessage_text_mustbeXyearsentervaliddate_mobile">
+        <item quantity="one">Musíš mať najmenej %1$s rok pre používanie účtu na Deezeri. Prosíme zadaj platný dátum.</item>
+        <item quantity="few">Musíš mať najmenej %1$s roky pre používanie účtu na Deezeri. Prosíme zadaj platný dátum.</item>
+        <item quantity="many">Musíš mať najmenej %1$s rokov pre používanie účtu na Deezeri. Prosíme zadaj platný dátum.</item>
+        <item quantity="other">Musíš mať najmenej %1$s rokov pre používanie účtu na Deezeri. Prosíme zadaj platný dátum.</item>
+    </plurals>
+    <plurals name="dz_androidtv_text_profilenumberlimitreached_mobile">
+        <item quantity="one">Maximálny počet %1$s profilu bol dosiahnutý. Prosíme zmaž niektorý profil pre pokračovanie.</item>
+        <item quantity="few">Maximálny počet %1$s profilov bol dosiahnutý. Prosíme zmaž niektorý profil pre pokračovanie.</item>
+        <item quantity="many">Maximálny počet %1$s profilov bol dosiahnutý. Prosíme zmaž niektorý profil pre pokračovanie.</item>
+        <item quantity="other">Maximálny počet %1$s profilov bol dosiahnutý. Prosíme zmaž niektorý profil pre pokračovanie.</item>
+    </plurals>
+    <plurals name="dz_androidtvlandingpage_text_morethanXmilliontracksacrossallgenres_mobile">
+        <item quantity="one">Viac ako %1$s milión skladieb zo všetkých žánrov.</item>
+        <item quantity="few">Viac ako %1$s milióny skladieb zo všetkých žánrov.</item>
+        <item quantity="many">Viac ako %1$s milióna skladieb zo všetkých žánrov.</item>
+        <item quantity="other">Viac ako %1$s miliónov skladieb zo všetkých žánrov.</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseXmoreartistsUPP_mobile">
+        <item quantity="one">VYBER EŠTE %1$s INTERPRETA</item>
+        <item quantity="few">VYBER EŠTE %1$s INTERPRETOV</item>
+        <item quantity="many">VYBER EŠTE %1$s INTERPRETOV</item>
+        <item quantity="other">VYBER EŠTE %1$s INTERPRETOV</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseatleastXartistsUPP_mobile">
+        <item quantity="one">VYBER NAJMENEJ %1$s INTERPRETA</item>
+        <item quantity="few">VYBER NAJMENEJ %1$s INTERPRETOV</item>
+        <item quantity="many">VYBER NAJMENEJ %1$s INTERPRETOV</item>
+        <item quantity="other">VYBER NAJMENEJ %1$s INTERPRETOV</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_continuewithXartistsUPP_mobile">
+        <item quantity="one">POKRAČOVAŤ S %1$s INTERPRETOM</item>
+        <item quantity="few">POKRAČOVAŤ S %1$s INTERPRETMI</item>
+        <item quantity="many">POKRAČOVAŤ S %1$s INTERPRETMI</item>
+        <item quantity="other">POKRAČOVAŤ S %1$s INTERPRETMI</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_deletetheseXplaylists_mobile">
+        <item quantity="one">Vymazať tento playlist?</item>
+        <item quantity="few">Vymazať tieto %1$s playlisty?</item>
+        <item quantity="many">Vymazať tieto %1$s playlisty?</item>
+        <item quantity="other">Vymazať tieto %1$s playlisty?</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_playlistsdownloaded_mobile">
+        <item quantity="one">Playlist stiahnutý!</item>
+        <item quantity="few">Playlisty stiahnuté!</item>
+        <item quantity="many">Playlisty stiahnuté!</item>
+        <item quantity="other">Playlisty stiahnuté!</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_trackremovedfromfavorite_mobile">
+        <item quantity="one">Táto skladba bola odstránená z tvojich obľúbených skladieb.</item>
+        <item quantity="few">Tieto skladby boli odstránené z tvojich obľúbených skladieb.</item>
+        <item quantity="many">Tieto skladby boli odstránené z tvojich obľúbených skladieb.</item>
+        <item quantity="other">Tieto skladby boli odstránené z tvojich obľúbených skladieb.</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xapps_mobile">
+        <item quantity="one">%1$s aplikácia</item>
+        <item quantity="few">%1$s aplikácie</item>
+        <item quantity="many">%1$s aplikácií</item>
+        <item quantity="other">%1$s aplikácií</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xartists_mobile">
+        <item quantity="one">%1$s interpret</item>
+        <item quantity="few">%1$s interpreti</item>
+        <item quantity="many">%1$s interpretov</item>
+        <item quantity="other">%1$s interpretov</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xaudiobooks_mobile">
+        <item quantity="one">%1$s audiokniha</item>
+        <item quantity="few">%1$s audioknihy</item>
+        <item quantity="many">%1$s audiokníh</item>
+        <item quantity="other">%1$s audiokníh</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xchapters_mobile">
+        <item quantity="one">%1$s kapitola</item>
+        <item quantity="few">%1$s kapitoly</item>
+        <item quantity="many">%1$s kapitoly</item>
+        <item quantity="other">%1$s kapitol</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xdownloads_mobile">
+        <item quantity="one">%1$s stiahnutá</item>
+        <item quantity="few">%1$s stiahnuté</item>
+        <item quantity="many">%1$s stiahnutých</item>
+        <item quantity="other">%1$s stiahnutých</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xepisodes_mobile">
+        <item quantity="one">%1$s epizóda</item>
+        <item quantity="few">%1$s epizódy</item>
+        <item quantity="many">%1$s epizód</item>
+        <item quantity="other">%1$s epizód</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xmixes_mobile">
+        <item quantity="one">%1$s mix</item>
+        <item quantity="few">%1$s mixy</item>
+        <item quantity="many">%1$s mixov</item>
+        <item quantity="other">%1$s mixov</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xnewentries_mobile">
+        <item quantity="one">%1$s nová</item>
+        <item quantity="few">%1$s nové</item>
+        <item quantity="many">%1$s nových</item>
+        <item quantity="other">%1$s nových</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xplaylists_mobile">
+        <item quantity="one">%1$s playlist</item>
+        <item quantity="few">%1$s playlisty</item>
+        <item quantity="many">%1$s playlistov</item>
+        <item quantity="other">%1$s playlistov</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xpodcasts_mobile">
+        <item quantity="one">%1$s podcast</item>
+        <item quantity="few">%1$s podcasty</item>
+        <item quantity="many">%1$s podcastov</item>
+        <item quantity="other">%1$s podcastov</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xtracks_mobile">
+        <item quantity="one">%1$s skladba</item>
+        <item quantity="few">%1$s skladby</item>
+        <item quantity="many">%1$s skladieb</item>
+        <item quantity="other">%1$s skladieb</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xunheard_mobile">
+        <item quantity="one">%1$s nevypočutá</item>
+        <item quantity="few">%1$s nevypočuté</item>
+        <item quantity="many">%1$s nevypočutých</item>
+        <item quantity="other">%1$s nevypočutých</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_subtitle_cancelactivesubsbeforedeleting_mobile">
+        <item quantity="one">Pre vymazaním účtu musíš zrušiť všetky aktívne predplatné.</item>
+        <item quantity="few">Pre vymazaním účtu musíš zrušiť všetky aktívne predplatné.</item>
+        <item quantity="many">Pre vymazaním účtu musíš zrušiť všetky aktívne predplatné.</item>
+        <item quantity="other">Pre vymazaním účtu musíš zrušiť všetky aktívne predplatné.</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingloseaccesstoapps_mobile">
+        <item quantity="one">Keď vymažeš svoj účet, prídeš o túto aplikáciu:</item>
+        <item quantity="few">Keď vymažeš svoj účet, prídeš o tieto aplikácie:</item>
+        <item quantity="many">Keď vymažeš svoj účet, prídeš o tieto aplikácie:</item>
+        <item quantity="other">Keď vymažeš svoj účet, prídeš o tieto aplikácie:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletinglosefollowingsubs_mobile">
+        <item quantity="one">Keď vymažeš svoj účet, prídeš o toto predplatné:</item>
+        <item quantity="few">Keď vymažeš svoj účet, prídeš o tieto predplatné:</item>
+        <item quantity="many">Keď vymažeš svoj účet, prídeš o tieto predplatné:</item>
+        <item quantity="other">Keď vymažeš svoj účet, prídeš o tieto predplatné:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingyouloseaccessdataandsubs_mobile">
+        <item quantity="one">Keď vymažeš svoj účet, prídeš o prístup ku všetkým položkám, o údaje a predplatné na nasledujúcu aplikáciu:</item>
+        <item quantity="few">Keď vymažeš svoj účet, prídeš o prístup ku všetkým položkám, o údaje a predplatné na nasledujúce aplikácie:</item>
+        <item quantity="many">Keď vymažeš svoj účet, prídeš o prístup ku všetkým položkám, o údaje a predplatné na nasledujúce aplikácie:</item>
+        <item quantity="other">Keď vymažeš svoj účet, prídeš o prístup ku všetkým položkám, o údaje a predplatné na nasledujúce aplikácie:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_accountassociatedwithXapps_mobile">
+        <item quantity="one">Tvoj účet je prepojený s %1$s aplikáciou</item>
+        <item quantity="few">Tvoj účet je prepojený s niekoľkými aplikáciami (%1$s)</item>
+        <item quantity="many">Tvoj účet je prepojený s niekoľkými aplikáciami (%1$s)</item>
+        <item quantity="other">Tvoj účet je prepojený s niekoľkými aplikáciami (%1$s)</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithactivesubs_mobile">
+        <item quantity="one">Aplikácia s aktívnym predplatným</item>
+        <item quantity="few">Aplikácie s aktívnym predplatným</item>
+        <item quantity="many">Aplikácie s aktívnym predplatným</item>
+        <item quantity="other">Aplikácie s aktívnym predplatným</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithoutsubs_mobile">
+        <item quantity="one">Aplikácie bez predplatného</item>
+        <item quantity="few">Aplikácie bez predplatného</item>
+        <item quantity="many">Aplikácie bez predplatného</item>
+        <item quantity="other">Aplikácie bez predplatného</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithsubs_mobile">
+        <item quantity="one">Aplikácia s predplatným</item>
+        <item quantity="few">Aplikácie s predplatným</item>
+        <item quantity="many">Aplikácie s predplatným</item>
+        <item quantity="other">Aplikácie s predplatným</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_subtitle_howaboutXmorefreedays_mobile">
+        <item quantity="one">Čo ty na ďalší %1$s deň zadarmo?</item>
+        <item quantity="few">Čo ty na ďalšie %1$s dni zadarmo?</item>
+        <item quantity="many">Čo ty na ďalších %1$s dňa zadarmo?</item>
+        <item quantity="other">Čo ty na ďalších %1$s dní zadarmo?</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_title_planXtrialendsinXdays_mobile">
+        <item quantity="one">Tvoje skúšobné obdobie %1$s končí o %2$s deň</item>
+        <item quantity="few">Tvoje skúšobné obdobie %1$s končí o %2$s dni</item>
+        <item quantity="many">Tvoje skúšobné obdobie %1$s končí o %2$s dňa</item>
+        <item quantity="other">Tvoje skúšobné obdobie %1$s končí o %2$s dní</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXhours_mobile">
+        <item quantity="one">Z bezpečnostných dôvodov, môžeš skúsiť znova o %1$s hodinu.</item>
+        <item quantity="few">Z bezpečnostných dôvodov, môžeš skúsiť znova o %1$s hodiny.</item>
+        <item quantity="many">Z bezpečnostných dôvodov, môžeš skúsiť znova o %1$s hodín.</item>
+        <item quantity="other">Z bezpečnostných dôvodov, môžeš skúsiť znova o %1$s hodín.</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXminutes_mobile">
+        <item quantity="one">Z bezpečnostných dôvodov, môžeš skúsiť znova o %1$s minútu.</item>
+        <item quantity="few">Z bezpečnostných dôvodov, môžeš skúsiť znova o %1$s minúty.</item>
+        <item quantity="many">Z bezpečnostných dôvodov, môžeš skúsiť znova o %1$s minút.</item>
+        <item quantity="other">Z bezpečnostných dôvodov, môžeš skúsiť znova o %1$s minút.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_TCsprivacypolicyforunderXyearold_mobile">
+        <item quantity="one">Aktivovaním účtu pre členov pod %1$s rokov súhlasíš s tým, že Deezer zbiera a spravuje ich osobné dáta, aby mohli používať našu službu. Pre viac informácií si môžeš prečítať našu %2$sPolitiku ochrany osobných údajov%3$s</item>
+        <item quantity="few">Aktivovaním účtu pre členov pod %1$s rokov súhlasíš s tým, že Deezer zbiera a spravuje ich osobné dáta, aby mohli používať našu službu. Pre viac informácií si môžeš prečítať našu %2$sPolitiku ochrany osobných údajov%3$s</item>
+        <item quantity="many">Aktivovaním účtu pre členov pod %1$s rokov súhlasíš s tým, že Deezer zbiera a spravuje ich osobné dáta, aby mohli používať našu službu. Pre viac informácií si môžeš prečítať našu %2$sPolitiku ochrany osobných údajov%3$s</item>
+        <item quantity="other">Aktivovaním účtu pre členov pod %1$s rokov súhlasíš s tým, že Deezer zbiera a spravuje ich osobné dáta, aby mohli používať našu službu. Pre viac informácií si môžeš prečítať našu %2$sPolitiku ochrany osobných údajov%3$s</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_onlycontentsuitableforXageandunder_mobile">
+        <item quantity="one">Aktivovaním tejto možnosti bude zobrazený iba obsah vhodný pre vekovú kategóriu %1$s a nižšie.</item>
+        <item quantity="few">Aktivovaním tejto možnosti bude zobrazený iba obsah vhodný pre vekovú kategóriu %1$s a nižšie.</item>
+        <item quantity="many">Aktivovaním tejto možnosti bude zobrazený iba obsah vhodný pre vekovú kategóriu %1$s a nižšie.</item>
+        <item quantity="other">Aktivovaním tejto možnosti bude zobrazený iba obsah vhodný pre vekovú kategóriu %1$s a nižšie.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_underXyearsorkidscannotbeconverted_mobile">
+        <item quantity="one">Nemáš prístup k tomuto profilu. Užívatelia pod %1$s rok alebo detské profily nemôžu byť premenené z profilu na nezávislý účet.</item>
+        <item quantity="few">Nemáš prístup k tomuto profilu. Užívatelia pod %1$s roky alebo detské profily nemôžu byť premenené z profilu na nezávislý účet.</item>
+        <item quantity="many">Nemáš prístup k tomuto profilu. Užívatelia pod %1$s rokov alebo detské profily nemôžu byť premenené z profilu na nezávislý účet.</item>
+        <item quantity="other">Nemáš prístup k tomuto profilu. Užívatelia pod %1$s rokov alebo detské profily nemôžu byť premenené z profilu na nezávislý účet.</item>
+    </plurals>
+    <plurals name="dz_familymemberselector_text_Xmembersremaining_mobile">
+        <item quantity="one">%1$s člen ostáva</item>
+        <item quantity="few">%1$s členovia ostávajú</item>
+        <item quantity="many">%1$s členov ostáva</item>
+        <item quantity="other">%1$s členov ostáva</item>
+    </plurals>
+    <plurals name="dz_familyprofileminorconsent_text_termsandconditions_mobile">
+        <item quantity="one">Vytvorením tohto účtu pre maloletú osobu pod %1$s rok akceptujete, že Deezer a jeho partneri zbierajú a spracúvajú osobné údaje týkajúce sa ich nositeľa za účelom poskytnutia obsahu a ponúk na základe jeho záujmov. Pre viac informácií prosíme choď na naše Zásady ochrany súkromia.</item>
+        <item quantity="few">Vytvorením tohto účtu pre maloletú osobu pod %1$s roky akceptujete, že Deezer a jeho partneri zbierajú a spracúvajú osobné údaje týkajúce sa ich nositeľa za účelom poskytnutia obsahu a ponúk na základe jeho záujmov. Pre viac informácií prosíme choď na naše Zásady ochrany súkromia.</item>
+        <item quantity="many">Vytvorením tohto účtu pre maloletú osobu pod %1$s roka akceptujete, že Deezer a jeho partneri zbierajú a spracúvajú osobné údaje týkajúce sa ich nositeľa za účelom poskytnutia obsahu a ponúk na základe jeho záujmov. Pre viac informácií prosíme choď na naše Zásady ochrany súkromia.</item>
+        <item quantity="other">Vytvorením tohto účtu pre maloletú osobu pod %1$s rokov akceptujete, že Deezer a jeho partneri zbierajú a spracúvajú osobné údaje týkajúce sa ich nositeľa za účelom poskytnutia obsahu a ponúk na základe jeho záujmov. Pre viac informácií prosíme choď na naše Zásady ochrany súkromia.</item>
+    </plurals>
+    <plurals name="dz_familyprofileswitcherwelcome_text_Xprofilesremaining_mobile">
+        <item quantity="one">%1$s profil ostáva</item>
+        <item quantity="few">%1$s profily ostávajú</item>
+        <item quantity="many">%1$s profilov ostáva</item>
+        <item quantity="other">%1$s profilov ostáva</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_accountcreationagerestriction_mobile">
+        <item quantity="one">Musíš mať najmenej %1$s rok pre vytvorenie účtu.</item>
+        <item quantity="few">Musíš mať najmenej %1$s roky pre vytvorenie účtu.</item>
+        <item quantity="many">Musíš mať najmenej %1$s roka pre vytvorenie účtu.</item>
+        <item quantity="other">Musíš mať najmenej %1$s rokov pre vytvorenie účtu.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordnotenoughchars_mobile">
+        <item quantity="one">Tvoje heslo musí obsahovať minimálne %1$s znak.</item>
+        <item quantity="few">Tvoje heslo musí obsahovať minimálne %1$s znaky.</item>
+        <item quantity="many">Tvoje heslo musí obsahovať minimálne %1$s znakov.</item>
+        <item quantity="other">Tvoje heslo musí obsahovať minimálne %1$s znakov.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordtoomanychars_mobile">
+        <item quantity="one">Tvoje heslo nemôže mať viac ako %1$s znak.</item>
+        <item quantity="few">Tvoje heslo nemôže mať viac ako %1$s znaky.</item>
+        <item quantity="many">Tvoje heslo nemôže mať viac ako %1$s znakov.</item>
+        <item quantity="other">Tvoje heslo nemôže mať viac ako %1$s znakov.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernamenotenoughchars_mobile">
+        <item quantity="one">Tvoje užívateľské meno musí obsahovať najmenej %1$s znak.</item>
+        <item quantity="few">Tvoje užívateľské meno musí obsahovať najmenej %1$s znaky.</item>
+        <item quantity="many">Tvoje užívateľské meno musí obsahovať najmenej %1$s znakov.</item>
+        <item quantity="other">Tvoje užívateľské meno musí obsahovať najmenej %1$s znakov.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernametoomanychars_mobile">
+        <item quantity="one">Tvoje užívateľské meno nemôže obsahovať viac ako %1$s znak.</item>
+        <item quantity="few">Tvoje užívateľské meno nemôže obsahovať viac ako %1$s znaky.</item>
+        <item quantity="many">Tvoje užívateľské meno nemôže obsahovať viac ako %1$s znakov.</item>
+        <item quantity="other">Tvoje užívateľské meno nemôže obsahovať viac ako %1$s znakov.</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xgbleft_mobile">
+        <item quantity="one">%1$s GB ostáva</item>
+        <item quantity="few">%1$s GB ostáva</item>
+        <item quantity="many">%1$s GB ostáva</item>
+        <item quantity="other">%1$s GB ostáva</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xmbleft_mobile">
+        <item quantity="one">%1$s mb ostáva</item>
+        <item quantity="few">%1$s mb ostávajú</item>
+        <item quantity="many">%1$s mb ostáva</item>
+        <item quantity="other">%1$s mb ostáva</item>
+    </plurals>
+    <plurals name="dz_inprogressplaylistpage_subtitle_duringthelastXdays_mobile">
+        <item quantity="one">Od včera</item>
+        <item quantity="few">Počas posledných %1$s dní</item>
+        <item quantity="many">Počas posledných %1$s dní</item>
+        <item quantity="other">Počas posledných %1$s dní</item>
+    </plurals>
+    <plurals name="dz_masthead_title_episodescountnox_mobile">
+        <item quantity="one">Epizóda</item>
+        <item quantity="few">Epizódy</item>
+        <item quantity="many">Epizódy</item>
+        <item quantity="other">Epizódy</item>
+    </plurals>
+    <plurals name="dz_masthead_title_fanscountnox_mobile">
+        <item quantity="one">Fanúšik</item>
+        <item quantity="few">Fanúšikovia</item>
+        <item quantity="many">Fanúšikovia</item>
+        <item quantity="other">Fanúšikovia</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_Xtrackchangesperhour_mobile">
+        <item quantity="one">Mix ti umožní preskočenie %1$s skladby za hodinu.</item>
+        <item quantity="few">Mix ti umožní preskočenie %1$s skladieb za hodinu.</item>
+        <item quantity="many">Mix ti umožní preskočenie %1$s skladieb za hodinu.</item>
+        <item quantity="other">Mix ti umožní preskočenie %1$s skladieb za hodinu.</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_changetrackallowedagaininXmin_mobile">
+        <item quantity="one">Opäť budeš môcť preskakovať skladby za %1$s minútu.</item>
+        <item quantity="few">Opäť budeš môcť preskakovať skladby za %1$s minúty.</item>
+        <item quantity="many">Opäť budeš môcť preskakovať skladby za %1$s minúty.</item>
+        <item quantity="other">Opäť budeš môcť preskakovať skladby za %1$s minút.</item>
+    </plurals>
+    <plurals name="dz_mobiletrialtoaster_text_yourXdaytrialhasstarted_mobile">
+        <item quantity="one">Tvoje %1$s-dňové skúšobné obdobie sa začalo</item>
+        <item quantity="few">Tvoje %1$s-denné skúšobné obdobie sa začalo</item>
+        <item quantity="many">Tvoje %1$s-dňové skúšobné obdobie sa začalo</item>
+        <item quantity="other">Tvoje %1$s-dňové skúšobné obdobie sa začalo</item>
+    </plurals>
+    <plurals name="dz_mymusic_albums_count">
+        <item quantity="one">%1$s album</item>
+        <item quantity="few">%1$s albumy</item>
+        <item quantity="many">%1$s albumov</item>
+        <item quantity="other">%1$s albumov</item>
+    </plurals>
+    <plurals name="dz_newofferscardsusp_text_getXaccountswithXbenefitsplushifi_mobile">
+        <item quantity="one">Získajte %1$s samostatný účet, všetky s výhodami %2$s vrátane Vysokej vernosti reprodukcie zvuku.</item>
+        <item quantity="few">Získajte %1$s samostatné účty, všetky s výhodami %2$s vrátane Vysokej vernosti reprodukcie zvuku.</item>
+        <item quantity="many">Získajte %1$s samostatných účtov, všetky s výhodami %2$s vrátane Vysokej vernosti reprodukcie zvuku.</item>
+        <item quantity="other">Získajte %1$s samostatných účtov, všetky s výhodami %2$s vrátane Vysokej vernosti reprodukcie zvuku.</item>
+    </plurals>
+    <plurals name="dz_offerwall_text_priceXpermonthforXmonths_mobile">
+        <item quantity="one">%1$s/mesiac na %2$s mesiac</item>
+        <item quantity="few">%1$s/mesiac na %2$s mesiace</item>
+        <item quantity="many">%1$s/mesiac na %2$s mesiaca</item>
+        <item quantity="other">%1$s/mesiac na %2$s mesiacov</item>
+    </plurals>
+    <plurals name="dz_offlinepodcastplaylist_subtitle_Xdownloadedepisodes_mobile">
+        <item quantity="one">%1$s stiahnutá epizóda</item>
+        <item quantity="few">%1$s stiahnutých epizód</item>
+        <item quantity="many">%1$s stiahnutých epizód</item>
+        <item quantity="other">%1$s stiahnuté epizódy</item>
+    </plurals>
+    <plurals name="dz_onboardingfirstlikes_action_pickXmoreUPP_mobile">
+        <item quantity="one">VYBER EŠTE %1$s</item>
+        <item quantity="few">VYBER EŠTE %1$s</item>
+        <item quantity="many">VYBER EŠTE %1$s</item>
+        <item quantity="other">VYBER EŠTE %1$s</item>
+    </plurals>
+    <plurals name="dz_onboardingtoastmessage_action_onlyXpickstostart_mobile">
+        <item quantity="one">Brzdi brzdi! Na začiatok nám stačí, ak vyberieš %1$s.</item>
+        <item quantity="few">Brzdi brzdi! Na začiatok nám stačí, ak vyberieš %1$s.</item>
+        <item quantity="many">Brzdi brzdi! Na začiatok nám stačí, ak vyberieš %1$s.</item>
+        <item quantity="other">Brzdi brzdi! Na začiatok nám stačí, ak vyberieš %1$s.</item>
+    </plurals>
+    <plurals name="dz_passwordsecurity_title_Xcharactersmin_mobile">
+        <item quantity="one">%1$s znak min.</item>
+        <item quantity="few">%1$s znaky min.</item>
+        <item quantity="many">%1$s znakov min.</item>
+        <item quantity="other">%1$s znakov min.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_accountalreadylinkedtoXdevices_mobile">
+        <item quantity="one">Tvoj účet už je prepojený s %1$s iným zariadením. Funkcie %2$s na tomto zariadení nebudú k dispozícii.</item>
+        <item quantity="few">Tvoj účet už je prepojený s %1$s inými zariadeniami. Funkcie %2$s na tomto zariadení nebudú k dispozícii.</item>
+        <item quantity="many">Tvoj účet už je prepojený s %1$s inými zariadeniami. Funkcie %2$s na tomto zariadení nebudú k dispozícii.</item>
+        <item quantity="other">Tvoj účet už je prepojený s %1$s inými zariadeniami. Funkcie %2$s na tomto zariadení nebudú k dispozícii.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_maxXdevicesonyoursubcription_mobile">
+        <item quantity="one">S tvojim predplatným môžeš používať %1$s na maximálne %2$s zariadení.</item>
+        <item quantity="few">S tvojim predplatným môžeš používať %1$s na maximálne %2$s zariadeniach.</item>
+        <item quantity="many">S tvojim predplatným môžeš používať %1$s na maximálne %2$s zariadeniach.</item>
+        <item quantity="other">S tvojim predplatným môžeš používať %1$s na maximálne %2$s zariadeniach.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_nomorethanXdevicesonyoursubcription_mobile">
+        <item quantity="one">S tvojim predplatným nemôžeš používať %1$s na viac ako %2$s zariadení.</item>
+        <item quantity="few">S tvojim predplatným nemôžeš používať %1$s na viac ako %2$s zariadeniach.</item>
+        <item quantity="many">S tvojim predplatným nemôžeš používať %1$s na viac ako %2$s zariadeniach.</item>
+        <item quantity="other">S tvojim predplatným nemôžeš používať %1$s na viac ako %2$s zariadeniach.</item>
+    </plurals>
+    <plurals name="dz_playlist_text_tracksalreadyaddedtotheplaylist_mobile">
+        <item quantity="one">Táto skladba už bola pridaná do playlistu</item>
+        <item quantity="few">Tieto skladby už boli pridané do playlistu</item>
+        <item quantity="many">Tieto skladby už boli pridané do playlistu</item>
+        <item quantity="other">Tieto skladby už boli pridané do playlistu</item>
+    </plurals>
+    <plurals name="dz_playlistpage_action_addXtracks_mobile">
+        <item quantity="one">Pridať %1$s skladbu</item>
+        <item quantity="few">Pridať %1$s skladby</item>
+        <item quantity="many">Pridať %1$s skladieb</item>
+        <item quantity="other">Pridať %1$s skladieb</item>
+    </plurals>
+    <plurals name="dz_premiumbenefit_text_skipmorethanXtracksperhour_mobile">
+        <item quantity="one">Preskakuj viac ako %1$s skladbu za hodinu</item>
+        <item quantity="few">Preskakuj viac ako %1$s skladby za hodinu</item>
+        <item quantity="many">Preskakuj viac ako %1$s skladieb za hodinu</item>
+        <item quantity="other">Preskakuj viac ako %1$s skladieb za hodinu</item>
+    </plurals>
+    <plurals name="dz_searchresult_title_topresults_mobile">
+        <item quantity="one">Top výsledok</item>
+        <item quantity="few">Top výsledky</item>
+        <item quantity="many">Top výsledky</item>
+        <item quantity="other">Top výsledky</item>
+    </plurals>
+    <plurals name="dz_signupjapanUS_action_tryitfreexmonths_mobile">
+        <item quantity="one">Vyskúšaj zadarmo na %1$s mesiac</item>
+        <item quantity="few">Vyskúšaj zadarmo na %1$s mesiace</item>
+        <item quantity="many">Vyskúšaj zadarmo na %1$s mesiaca</item>
+        <item quantity="other">Vyskúšaj zadarmo na %1$s mesiacov</item>
+    </plurals>
+    <plurals name="dz_skipcounter_text_Xmoretracks_mobile">
+        <item quantity="one">Môžeš preskočiť %1$s ďalšiu skladbu</item>
+        <item quantity="few">Môžeš preskočiť %1$s ďalšie skladby</item>
+        <item quantity="many">Môžeš preskočiť %1$s ďalších skladieb</item>
+        <item quantity="other">Môžeš preskočiť %1$s ďalších skladieb</item>
+    </plurals>
+    <plurals name="dz_sleeptimer_text_sleepinlessthanXminutes_mobile">
+        <item quantity="one">Zaspať za menej ako %1$s minútu</item>
+        <item quantity="few">Zaspať za menej ako %1$s minúty</item>
+        <item quantity="many">Zaspať za menej ako %1$s minút</item>
+        <item quantity="other">Zaspať za menej ako %1$s minút</item>
+    </plurals>
+    <plurals name="dz_smartcache_text_storemostplayedtracksrecosettoXgb_mobile">
+        <item quantity="one">V pamäti Smart Cache sa ukladá väčšina prehrávaných skladieb, aby sa rýchlejšie opätovne načítali. Pre čo najlepšie využitie odporúčame nastaviť na %1$s GB.</item>
+        <item quantity="few">V pamäti Smart Cache sa ukladá väčšina prehrávaných skladieb, aby sa rýchlejšie opätovne načítali. Pre čo najlepšie využitie odporúčame nastaviť na %1$s GB.</item>
+        <item quantity="many">V pamäti Smart Cache sa ukladá väčšina prehrávaných skladieb, aby sa rýchlejšie opätovne načítali. Pre čo najlepšie využitie odporúčame nastaviť na %1$s GB.</item>
+        <item quantity="other">V pamäti Smart Cache sa ukladá väčšina prehrávaných skladieb, aby sa rýchlejšie opätovne načítali. Pre čo najlepšie využitie odporúčame nastaviť na %1$s GB.</item>
+    </plurals>
+    <plurals name="dz_smartloginandroidtvxboxwelcome_text_thiscodewillexpireinXminutes_mobile">
+        <item quantity="one">Platnosť tohto kódu vyprší o %1$s minútu.</item>
+        <item quantity="few">Platnosť tohto kódu vyprší o %1$s minúty.</item>
+        <item quantity="many">Platnosť tohto kódu vyprší o %1$s minúty.</item>
+        <item quantity="other">Platnosť tohto kódu vyprší o %1$s minút.</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Followers_mobile">
+        <item quantity="one">Sleduje</item>
+        <item quantity="few">Sledujúci</item>
+        <item quantity="many">Sledujúcich</item>
+        <item quantity="other">Sledujúcich</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Following_mobile">
+        <item quantity="one">Sledovaný</item>
+        <item quantity="few">Sledovaní</item>
+        <item quantity="many">Sledovaných</item>
+        <item quantity="other">Sledovaných</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfans_mobile">
+        <item quantity="one">%1$s fanúšik</item>
+        <item quantity="few">%1$s fanúšikovia</item>
+        <item quantity="many">%1$s fanúšikov</item>
+        <item quantity="other">%1$s fanúšikov</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowers_mobile">
+        <item quantity="one">%1$s sleduje</item>
+        <item quantity="few">%1$s sledujúci</item>
+        <item quantity="many">%1$s sledujúcich</item>
+        <item quantity="other">%1$s sledujúcich</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowing_mobile">
+        <item quantity="one">%1$s sledujúci</item>
+        <item quantity="few">%1$s sledujúci</item>
+        <item quantity="many">%1$s sledujúcich</item>
+        <item quantity="other">%1$s sledujúcich</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xnotifications_mobile">
+        <item quantity="one">%1$s nová notifikácia</item>
+        <item quantity="few">%1$s nové notifikácie</item>
+        <item quantity="many">%1$s nových notifikácií</item>
+        <item quantity="other">%1$s nových notifikácií</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xgigabytes_mobile">
+        <item quantity="one">%1$s GB</item>
+        <item quantity="few">%1$s GB</item>
+        <item quantity="many">%1$s GB</item>
+        <item quantity="other">%1$s GB</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xmegabytes_mobile">
+        <item quantity="one">%1$s MB</item>
+        <item quantity="few">%1$s MB</item>
+        <item quantity="many">%1$s MB</item>
+        <item quantity="other">%1$s MB</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdays_mobile">
+        <item quantity="one">%1$s deň</item>
+        <item quantity="few">%1$s dni</item>
+        <item quantity="many">%1$s dňa</item>
+        <item quantity="other">%1$s dní</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdaysago_mobile">
+        <item quantity="one">pred %1$s dňom</item>
+        <item quantity="few">pred %1$s dňami</item>
+        <item quantity="many">pred %1$s dňami</item>
+        <item quantity="other">pred %1$s dňami</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhours_mobile">
+        <item quantity="one">%1$s hodina</item>
+        <item quantity="few">%1$s hodiny</item>
+        <item quantity="many">%1$s hodiny</item>
+        <item quantity="other">%1$s hodín</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhoursago_mobile">
+        <item quantity="one">pred %1$s hodinou</item>
+        <item quantity="few">pred %1$s hodinami</item>
+        <item quantity="many">pred %1$s hodinami</item>
+        <item quantity="other">pred %1$s hodinami</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmin_mobile">
+        <item quantity="one">%1$s minúta</item>
+        <item quantity="few">%1$s minúty</item>
+        <item quantity="many">%1$s minúty</item>
+        <item quantity="other">%1$s minút</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_XminleftUPP_mobile">
+        <item quantity="one">%1$s MINÚTA DO KONCA</item>
+        <item quantity="few">%1$s MINÚTY DO KONCA</item>
+        <item quantity="many">%1$s MINÚT DO KONCA</item>
+        <item quantity="other">%1$s MINÚT DO KONCA</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutes_mobile">
+        <item quantity="one">%1$s minúta</item>
+        <item quantity="few">%1$s minúty</item>
+        <item quantity="many">%1$s minúty</item>
+        <item quantity="other">%1$s minút</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutesago_mobile">
+        <item quantity="one">pred %1$s minútou</item>
+        <item quantity="few">pred %1$s minútami</item>
+        <item quantity="many">pred %1$s minútami</item>
+        <item quantity="other">pred %1$s minútami</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmonthsago_mobile">
+        <item quantity="one">pred %1$s mesiacom</item>
+        <item quantity="few">pred %1$s mesiacmi</item>
+        <item quantity="many">pred %1$s mesiacmi</item>
+        <item quantity="other">pred %1$s mesiacmi</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xs_mobile">
+        <item quantity="one">%1$s s</item>
+        <item quantity="few">%1$s s</item>
+        <item quantity="many">%1$s s</item>
+        <item quantity="other">%1$s s</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xweeksago_mobile">
+        <item quantity="one">pred %1$s týždňom</item>
+        <item quantity="few">pred %1$s týždňami</item>
+        <item quantity="many">pred %1$s týždňami</item>
+        <item quantity="other">pred %1$s týždňami</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xyearsago_mobile">
+        <item quantity="one">pred %1$s rokom</item>
+        <item quantity="few">pred %1$s rokmi</item>
+        <item quantity="many">pred %1$s rokmi</item>
+        <item quantity="other">pred %1$s rokmi</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_alreadyaddedtoplaylist_mobile">
+        <item quantity="one">Už pridaný do playlistu</item>
+        <item quantity="few">Už pridané do playlistu</item>
+        <item quantity="many">Už pridané do playlistu</item>
+        <item quantity="other">Už pridané do playlistu</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_unlockedXmoreskips_mobile">
+        <item quantity="one">Získavaš ďalšie %1$s preskakovanie navyše</item>
+        <item quantity="few">Získavaš ďalšie %1$s preskakovania navyše</item>
+        <item quantity="many">Získavaš ďalších %1$s preskakovaní navyše</item>
+        <item quantity="other">Získavaš ďalších %1$s preskakovaní navyše</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoplaylisttrack_mobile">
+        <item quantity="one">Pridaná do playlistu</item>
+        <item quantity="few">Pridané do playlistu</item>
+        <item quantity="many">Pridané do playlistu</item>
+        <item quantity="other">Pridané do playlistu</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoyourfavoritetrackstrack_mobile">
+        <item quantity="one">Pridaná do tvojich obľúbených skladieb</item>
+        <item quantity="few">Pridané do tvojich obľúbených skladieb</item>
+        <item quantity="many">Pridané do tvojich obľúbených skladieb</item>
+        <item quantity="other">Pridané do tvojich obľúbených skladieb</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromplaylist_mobile">
+        <item quantity="one">Odstránená z playlistu</item>
+        <item quantity="few">Odstránené z playlistu</item>
+        <item quantity="many">Odstránené z playlistu</item>
+        <item quantity="other">Odstránené z playlistu</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromyourfavoritetrackstrack_mobile">
+        <item quantity="one">Odstránená z tvojich obľúbených skladieb</item>
+        <item quantity="few">Odstránené z tvojich obľúbených skladieb</item>
+        <item quantity="many">Odstránené z tvojich obľúbených skladieb</item>
+        <item quantity="other">Odstránené z tvojich obľúbených skladieb</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_Xdaytrial_mobile">
+        <item quantity="one">%1$s denná ochutnávka</item>
+        <item quantity="few">%1$s dňová ochutnávka</item>
+        <item quantity="many">%1$s denná ochutnávka</item>
+        <item quantity="other">%1$s dňová ochutnávka</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_downloadskipadfreelistening_mobile">
+        <item quantity="one">Sťahuj skladby, preskakuj pesničky, ktoré sa ti nepáčia a užívaj si bezplatné počúvanie na %1$s deň.</item>
+        <item quantity="few">Sťahuj skladby, preskakuj pesničky, ktoré sa ti nepáčia a užívaj si bezplatné počúvanie na %1$s dni.</item>
+        <item quantity="many">Sťahuj skladby, preskakuj pesničky, ktoré sa ti nepáčia a užívaj si bezplatné počúvanie na %1$s dňa.</item>
+        <item quantity="other">Sťahuj skladby, preskakuj pesničky, ktoré sa ti nepáčia a užívaj si bezplatné počúvanie na %1$s dní.</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_text_tryXforXdaysfreenocreditcardrequired_mobile">
+        <item quantity="one">Vyskúšaj %1$s na %2$s deň zadarmo - kreditná karta nie je potrebná!</item>
+        <item quantity="few">Vyskúšaj %1$sna %2$s dni zadarmo - kreditná karta nie je potrebná!</item>
+        <item quantity="many">Vyskúšaj %1$sna %2$s dňa zadarmo - kreditná karta nie je potrebná!</item>
+        <item quantity="other">Vyskúšaj %1$s na %2$s dní zadarmo - kreditná karta nie je potrebná!</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXdays_mobile">
+        <item quantity="one">Aby bolo možné overiť tvoje predplatné a aj naďalej používať Deezer v mobile, prosíme pripoj sa na WiFi alebo do mobilnej siete najneskôr do %1$s dňa.</item>
+        <item quantity="few">Aby bolo možné overiť tvoje predplatné a aj naďalej používať Deezer v mobile, prosíme pripoj sa na WiFi alebo do mobilnej siete najneskôr do %1$s dní.</item>
+        <item quantity="many">Aby bolo možné overiť tvoje predplatné a aj naďalej používať Deezer v mobile, prosíme pripoj sa na WiFi alebo do mobilnej siete najneskôr do %1$s dní.</item>
+        <item quantity="other">Aby bolo možné overiť tvoje predplatné a aj naďalej používať Deezer v mobile, prosíme pripoj sa na WiFi alebo do mobilnej siete najneskôr do %1$s dní.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXhours_mobile">
+        <item quantity="one">Aby bolo možné overiť tvoje predplatné a aj naďalej používať Deezer v mobile, prosíme pripoj sa na WiFi alebo do mobilnej siete najneskôr do %1$s hodiny.</item>
+        <item quantity="few">Aby bolo možné overiť tvoje predplatné a aj naďalej používať Deezer v mobile, prosíme pripoj sa na WiFi alebo do mobilnej siete najneskôr do %1$s hodín.</item>
+        <item quantity="many">Aby bolo možné overiť tvoje predplatné a aj naďalej používať Deezer v mobile, prosíme pripoj sa na WiFi alebo do mobilnej siete najneskôr do %1$s hodín.</item>
+        <item quantity="other">Aby bolo možné overiť tvoje predplatné a aj naďalej používať Deezer v mobile, prosíme pripoj sa na WiFi alebo do mobilnej siete najneskôr do %1$s hodín.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXminutes_mobile">
+        <item quantity="one">Aby bolo možné overiť tvoje predplatné a aj naďalej používať Deezer v mobile, prosíme pripoj sa na WiFi alebo do mobilnej siete najneskôr do %1$s minúty.</item>
+        <item quantity="few">Aby bolo možné overiť tvoje predplatné a aj naďalej používať Deezer v mobile, prosíme pripoj sa na WiFi alebo do mobilnej siete najneskôr do %1$s minút.</item>
+        <item quantity="many">Aby bolo možné overiť tvoje predplatné a aj naďalej používať Deezer v mobile, prosíme pripoj sa na WiFi alebo do mobilnej siete najneskôr do %1$s minút.</item>
+        <item quantity="other">Aby bolo možné overiť tvoje predplatné a aj naďalej používať Deezer v mobile, prosíme pripoj sa na WiFi alebo do mobilnej siete najneskôr do %1$s minút.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Pretočiť dopredu o %d sekundu</item>
+        <item quantity="few">Pretočiť dopredu o %d sekundy</item>
+        <item quantity="many">Pretočiť dopredu o %d sekundy</item>
+        <item quantity="other">Pretočiť dopredu o %d sekúnd</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Pretočiť späť o %d sekundu</item>
+        <item quantity="few">Pretočiť späť o %d sekundy</item>
+        <item quantity="many">Pretočiť späť o %d sekundy</item>
+        <item quantity="other">Pretočiť späť o %d sekúnd</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nové upozornenie</item>
+        <item quantity="few">%d nové upozornenia</item>
+        <item quantity="many">%d new notifications</item>
+        <item quantity="other">%d nových upozornení</item>
+    </plurals>
+</resources>

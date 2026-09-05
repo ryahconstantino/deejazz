@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/filter_sort_bar_text_size" android:textStyle="normal" android:textColor="@drawable/filter_sort_bar_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/filter_text_view" android:background="@drawable/spinner_background_material_up" android:paddingRight="32.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/scaled_16dp" android:layout_marginRight="8.0dp" android:maxLines="1" android:layout_alignParentLeft="true" android:paddingEnd="32.0dp" android:layout_marginStart="@dimen/scaled_16dp" android:layout_marginEnd="8.0dp" android:layout_alignParentStart="true" />
+    <Space android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@id/sort_spinner" android:layout_toRightOf="@id/filter_text_view" android:layout_toStartOf="@id/sort_spinner" android:layout_toEndOf="@id/filter_text_view" />
+    <Spinner android:id="@id/sort_spinner" android:background="@drawable/ripple_cell_background" android:layout_width="wrap_content" android:layout_height="match_parent" android:popupBackground="@color/spinner_background" android:layout_alignParentRight="true" android:dropDownWidth="wrap_content" android:layout_marginEnd="@dimen/sort_bar_spinner_margin_right" android:layout_alignParentEnd="true" style="@style/SortSpinner" />
+</merge>

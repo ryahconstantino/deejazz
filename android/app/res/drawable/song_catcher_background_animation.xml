@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="@integer/song_catcher_animation_duration" android:drawable="@drawable/song_catcher_color_blue" />
+    <item android:duration="@integer/song_catcher_animation_duration" android:drawable="@drawable/song_catcher_color_red" />
+    <item android:duration="@integer/song_catcher_animation_duration" android:drawable="@drawable/song_catcher_color_purple" />
+    <item android:duration="@integer/song_catcher_animation_duration" android:drawable="@drawable/song_catcher_color_yellow" />
+    <item android:duration="@integer/song_catcher_animation_duration" android:drawable="@drawable/song_catcher_color_orange" />
+    <item android:duration="@integer/song_catcher_animation_duration" android:drawable="@drawable/song_catcher_color_teal" />
+    <item android:duration="@integer/song_catcher_animation_duration" android:drawable="@drawable/song_catcher_color_deep_purple" />
+    <item android:duration="@integer/song_catcher_animation_duration" android:drawable="@drawable/song_catcher_color_pink" />
+    <item android:duration="@integer/song_catcher_animation_duration" android:drawable="@drawable/song_catcher_color_green" />
+    <item android:duration="@integer/song_catcher_animation_duration" android:drawable="@drawable/song_catcher_color_teal" />
+</animation-list>

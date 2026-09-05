@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/player_buffering_rootview" android:background="@drawable/rounded_text_view" android:padding="18.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/player_buffering_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:layout_centerHorizontal="true" android:indeterminateTint="@color/buffering_spinner_tint" />
+    <TextView android:textSize="@dimen/player_nearly_loaded_title_text_size" android:textStyle="bold" android:textColor="@color/player_subscription_layer_text_color" android:gravity="center" android:id="@id/nearly_loaded_text_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:layout_below="@id/player_buffering_notification" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/player_nearly_loaded_subtitle_text_size" android:textColor="@color/player_subscription_layer_text_color" android:gravity="center" android:id="@id/nearly_loaded_text_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/nearly_loaded_text_title" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,5 +1,13 @@
 node_modules/
 dist/
+Dist/
+*.apk
+*.idsig
+*.jks
+*.keystore
+.android-build/
+android/app/build/
+android/app/dist/
 dist-site/
 .installer-work/
 .linux-build/
@@ -8,7 +16,7 @@ dist-site/
 .env
 *.log
 *.Zone.Identifier
-src/resources/app.asar.bak
+desktop/resources/app.asar.bak
 
 # Website files live on the pages branch.
 index.html

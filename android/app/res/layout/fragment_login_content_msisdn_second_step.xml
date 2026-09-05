@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.uikit.widgets.layouts.BaselineTextInputLayout android:id="@id/activation_code_input_container" android:layout_width="match_parent" android:layout_height="@dimen/login_form_entry_height" android:layout_marginTop="@dimen/login_padding_left_right" android:layout_marginBottom="@dimen/login_page_padding_small" android:minHeight="@dimen/login_form_text_input_height" android:layoutDirection="ltr" android:importantForAutofill="yes" app:errorTextAppearance="@style/TextAppearance.App.TextInputLayout.Error" app:hintEnabled="true" app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout.Hint" style="@style/UnloggedPage.TextInput">
+        <com.google.android.material.textfield.TextInputEditText android:textColor="@color/theme_text_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/dz_legacy_settings_user_phonenumber" android:maxLines="1" android:inputType="phone" android:imeOptions="actionNext" android:autofillHints="phone" app:theme="@style/MsisdnRelogTextInputLayoutTheme" />
+    </com.deezer.uikit.widgets.layouts.BaselineTextInputLayout>
+</RelativeLayout>

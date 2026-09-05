@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.android.ui.widget.imageview.DiaporamaImageView android:id="@id/mosaic_cover_image" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dynamic_page_item_mosaic_highlight_height" app:foregroundDrawable="@drawable/mosaic_item_foreground" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/mosaic_cover_flow_logo" android:layout_width="wrap_content" android:layout_height="18.0dp" android:paddingStart="@dimen/dynamic_card_radio_cover_padding" app:srcCompat="@drawable/ic_flow_logo" />
+    <TextView android:textSize="@dimen/scaled_14sp" android:textColor="@color/text_white" android:ellipsize="end" android:id="@id/mosaic_cover_title" android:paddingTop="@dimen/scaled_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textDirection="locale" android:paddingStart="@dimen/scaled_10dp" android:paddingEnd="@dimen/scaled_10dp" style="@style/h3" />
+    <com.deezer.uikit.widgets.views.PlayButton android:id="@id/mosaic_cover_play_button" style="@style/CardPlayButton" />
+    <com.deezer.uikit.widgets.views.PlayButton android:id="@id/mosaic_cover_shuffle_button" app:drawableAppearance="shuffle" app:tintColor="@color/palette_black" style="@style/CardPlayButton" />
+</merge>

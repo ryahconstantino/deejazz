@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.braze.ui.inappmessage.views.InAppMessageHtmlView android:id="@id/com_braze_inappmessage_html" style="@style/Braze.InAppMessage.Html"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.braze.ui.inappmessage.views.InAppMessageWebView android:id="@id/com_braze_inappmessage_html_webview" style="@style/Braze.InAppMessage.Html.Webview" />
+</com.braze.ui.inappmessage.views.InAppMessageHtmlView>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dz_SMScoderesentconfirmationscreen_text_XSMScodesleft_mobile">
+        <item quantity="one">%1$s SMS kód maradt</item>
+        <item quantity="other">%1$s SMS kód maradt</item>
+    </plurals>
+    <plurals name="dz_agerestrictionerrormessage_text_mustbeXyearsentervaliddate_mobile">
+        <item quantity="one">A Deezer fiók használata %1$s éves kortól lehetséges. Kérjük, írj be egy érvényes dátumot.</item>
+        <item quantity="other">A Deezer fiók használata %1$s éves kortól lehetséges. Kérjük, írj be egy érvényes dátumot.</item>
+    </plurals>
+    <plurals name="dz_androidtv_text_profilenumberlimitreached_mobile">
+        <item quantity="one">Elérted a létrehozható profilok maximális számát ( %1$s ). Kérjük,a folytatáshoz törölj egy profilt.</item>
+        <item quantity="other">Elérted a létrehozható profilok maximális számát (%1$s ). Kérjük, a folytatáshoz törölj egy profilt.</item>
+    </plurals>
+    <plurals name="dz_androidtvlandingpage_text_morethanXmilliontracksacrossallgenres_mobile">
+        <item quantity="one">Több mint %1$s millió zeneszám minden műfajban</item>
+        <item quantity="other">Több mint %1$s millió zeneszám minden műfajban</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseXmoreartistsUPP_mobile">
+        <item quantity="one">VÁLASSZ KI MÉG %1$s ELŐADÓT</item>
+        <item quantity="other">VÁLASSZ KI MÉG %1$s ELŐADÓT</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseatleastXartistsUPP_mobile">
+        <item quantity="one">VÁLASSZ KI LEGALÁBB %1$s ELŐADÓT</item>
+        <item quantity="other">VÁLASSZ KI LEGALÁBB %1$s ELŐADÓT</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_continuewithXartistsUPP_mobile">
+        <item quantity="one">FOLYTASD %1$s ELŐADÓVAL</item>
+        <item quantity="other">FOLYTASD %1$s ELŐADÓVAL</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_deletetheseXplaylists_mobile">
+        <item quantity="one">Törölni szeretnéd ezt a playlistet?</item>
+        <item quantity="other">Törölni szeretnél %1$s playlistet?</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_playlistsdownloaded_mobile">
+        <item quantity="one">A playlist letöltése sikerült!</item>
+        <item quantity="other">A playlistek letöltése sikerült!</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_trackremovedfromfavorite_mobile">
+        <item quantity="one">Ezt a dalt eltávolítottuk a Kedvenc dalok közül.</item>
+        <item quantity="other">Ezeket a dalokat eltávolítottuk a Kedvenc dalok közül.</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xapps_mobile">
+        <item quantity="one">%1$s alkalmazás</item>
+        <item quantity="other">%1$s alkalmazás</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xartists_mobile">
+        <item quantity="one">%1$s előadó</item>
+        <item quantity="other">%1$s előadó</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xaudiobooks_mobile">
+        <item quantity="one">%1$s hangoskönyv</item>
+        <item quantity="other">%1$s hangoskönyv</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xchapters_mobile">
+        <item quantity="one">%1$s fejezet</item>
+        <item quantity="other">%1$s fejezet</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xdownloads_mobile">
+        <item quantity="one">%1$s letöltés</item>
+        <item quantity="other">%1$s letöltés</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xepisodes_mobile">
+        <item quantity="one">%1$s epizód</item>
+        <item quantity="other">%1$s epizód</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xmixes_mobile">
+        <item quantity="one">%1$s mix</item>
+        <item quantity="other">%1$s mix</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xnewentries_mobile">
+        <item quantity="one">%1$s új dal</item>
+        <item quantity="other">%1$s új dal</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xplaylists_mobile">
+        <item quantity="one">%1$s playlist</item>
+        <item quantity="other">%1$s playlist</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xpodcasts_mobile">
+        <item quantity="one">%1$s podcast</item>
+        <item quantity="other">%1$s podcast</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xtracks_mobile">
+        <item quantity="one">%1$s dal</item>
+        <item quantity="other">%1$s dal</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xunheard_mobile">
+        <item quantity="one">%1$s még nem hallgatott</item>
+        <item quantity="other">%1$s még nem hallgatott</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_subtitle_cancelactivesubsbeforedeleting_mobile">
+        <item quantity="one">A fiókod törlését megelőzően minden aktív előfizetést le kell mondanod.</item>
+        <item quantity="other">A fiókod törlését megelőzően minden aktív előfizetést le kell mondanod.</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingloseaccesstoapps_mobile">
+        <item quantity="one">A fiókod törlésével elveszíted a hozzáférést a következő alkalmazáshoz:</item>
+        <item quantity="other">A fiókod törlésével elveszíted a hozzáférést a következő alkalmazásokhoz:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletinglosefollowingsubs_mobile">
+        <item quantity="one">A fiókod törlésével elveszíted a következő előfizetést:</item>
+        <item quantity="other">A fiókod törlésével elveszíted a következő előfizetéseket:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingyouloseaccessdataandsubs_mobile">
+        <item quantity="one">A fiókod törlésével elveszítesz minden hozzáférést, adatot és előfizetést a következő alkalmazás esetén:</item>
+        <item quantity="other">A fiókod törlésével elveszítesz minden hozzáférést, adatot és előfizetést a következő alkalmazások esetén:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_accountassociatedwithXapps_mobile">
+        <item quantity="one">A fiókod %1$s alkalmazáshoz van társítva</item>
+        <item quantity="other">A fiókod %1$s alkalmazáshoz van társítva</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithactivesubs_mobile">
+        <item quantity="one">Aktív előfizetéssel rendelkező alkalmazás</item>
+        <item quantity="other">Aktív előfizetéssel rendelkező alkalmazások</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithoutsubs_mobile">
+        <item quantity="one">Előfizetés nélküli alkalmazások</item>
+        <item quantity="other">Előfizetések nélküli alkalmazások</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithsubs_mobile">
+        <item quantity="one">Előfizetéssel rendelkező alkalmazás</item>
+        <item quantity="other">Előfizetéssel rendelkező alkalmazások</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_subtitle_howaboutXmorefreedays_mobile">
+        <item quantity="one">Mit szólnál még %1$s ingyenes naphoz?</item>
+        <item quantity="other">Mit szólnál még %1$s ingyenes naphoz?</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_title_planXtrialendsinXdays_mobile">
+        <item quantity="one">%1$s próbaidőszakod %2$s napon belül lejár</item>
+        <item quantity="other">%1$s próbaidőszakod %2$s napon belül lejár</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXhours_mobile">
+        <item quantity="one">Biztonsági okokból %1$s óra múlva ismét próbálkozhatsz.</item>
+        <item quantity="other">Biztonsági okokból %1$s óra múlva ismét próbálkozhatsz.</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXminutes_mobile">
+        <item quantity="one">Biztonsági okokból %1$s perc múlva ismét próbálkozhatsz.</item>
+        <item quantity="other">Biztonsági okokból %1$s perc múlva ismét próbálkozhatsz.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_TCsprivacypolicyforunderXyearold_mobile">
+        <item quantity="one">A %1$s év alatti tagok fiókjának aktiválásával beleegyezel, hogy a Deezer gyűjtse és kezelje a személyes adataikat annak érdekében, hogy használhassák a Deezer szolgáltatásait. További információkért olvasd el az %2$sAdatvédelmi szabályzatunkat%3$s.</item>
+        <item quantity="other">A %1$s év alatti tagok fiókjának aktiválásával beleegyezel, hogy a Deezer gyűjtse és kezelje a személyes adataikat annak érdekében, hogy használhassák a Deezer szolgáltatásait. További információkért olvasd el az %2$sAdatvédelmi szabályzatunkat%3$s.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_onlycontentsuitableforXageandunder_mobile">
+        <item quantity="one">A funkció aktiválása után csak a %1$s éves és annál fiatalabb korosztály számára megfelelő tartalmak jelennek meg.</item>
+        <item quantity="other">A funkció aktiválása után csak a %1$s éves és annál fiatalabb korosztály számára megfelelő tartalmak jelennek meg.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_underXyearsorkidscannotbeconverted_mobile">
+        <item quantity="one">Nincs hozzáférésed ehhez a profilhoz. A %1$s év alatti felhasználók profiljai vagy a gyerek profilok nem alakíthatók független fiókká.</item>
+        <item quantity="other">Nincs hozzáférésed ehhez a profilhoz. A %1$s év alatti felhasználók profiljai vagy a gyerek profilok nem alakíthatók független fiókká.</item>
+    </plurals>
+    <plurals name="dz_familymemberselector_text_Xmembersremaining_mobile">
+        <item quantity="one">%1$s tag maradt</item>
+        <item quantity="other">%1$s tag maradt</item>
+    </plurals>
+    <plurals name="dz_familyprofileminorconsent_text_termsandconditions_mobile">
+        <item quantity="one">Az alprofil létrehozásával egy %1$s éven aluli fiatalkorú számára elfogadod, hogy a Deezer és partnerei a tulajdonoshoz köthető személyes adatokat gyűjtenek be és dolgoznak fel, hogy az érdeklődési körének megfelelő tartalmakat és ajánlatokat kínálhassanak fel. További információkért, kérjük, hogy lépj az Adatvédelmi nyilatkozatunkhoz.</item>
+        <item quantity="other">Az alprofil létrehozásával egy %1$s éven aluli fiatalkorú számára elfogadod, hogy a Deezer és partnerei a tulajdonoshoz köthető személyes adatokat gyűjtenek be és dolgoznak fel, hogy az érdeklődési körének megfelelő tartalmakat és ajánlatokat kínálhassanak fel. További információkért, kérjük, hogy lépj az Adatvédelmi nyilatkozatunkhoz.</item>
+    </plurals>
+    <plurals name="dz_familyprofileswitcherwelcome_text_Xprofilesremaining_mobile">
+        <item quantity="one">%1$s profil van hátra</item>
+        <item quantity="other">%1$s profil van hátra</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_accountcreationagerestriction_mobile">
+        <item quantity="one">%1$s éves kor alatt a fiók létrehozása nem lehetséges.</item>
+        <item quantity="other">%1$s éves kor alatt a fiók létrehozása nem lehetséges.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordnotenoughchars_mobile">
+        <item quantity="one">A jelszónak legalább %1$s karaktert kell tartalmaznia.</item>
+        <item quantity="other">A jelszónak legalább %1$s karaktert kell tartalmaznia.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordtoomanychars_mobile">
+        <item quantity="one">A jelszó nem tartalmazhat több mint %1$s karaktert.</item>
+        <item quantity="other">A jelszó nem tartalmazhat több mint %1$s karaktert.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernamenotenoughchars_mobile">
+        <item quantity="one">A felhasználónévnek legalább %1$s karaktert kell tartalmaznia.</item>
+        <item quantity="other">A felhasználónévnek legalább %1$s karaktert kell tartalmaznia.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernametoomanychars_mobile">
+        <item quantity="one">A felhasználónév nem tartalmazhat több mint %1$s karaktert.</item>
+        <item quantity="other">A felhasználónév nem tartalmazhat több mint %1$s karaktert.</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xgbleft_mobile">
+        <item quantity="one">%1$s GB maradt</item>
+        <item quantity="other">%1$s GB maradt</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xmbleft_mobile">
+        <item quantity="one">%1$s mb maradt</item>
+        <item quantity="other">%1$s mb maradt</item>
+    </plurals>
+    <plurals name="dz_inprogressplaylistpage_subtitle_duringthelastXdays_mobile">
+        <item quantity="one">Tegnap óta</item>
+        <item quantity="other">Az elmúlt %1$s napban</item>
+    </plurals>
+    <plurals name="dz_masthead_title_episodescountnox_mobile">
+        <item quantity="one">Epizódok</item>
+        <item quantity="other">Epizódok</item>
+    </plurals>
+    <plurals name="dz_masthead_title_fanscountnox_mobile">
+        <item quantity="one">Rajongó</item>
+        <item quantity="other">Rajongók</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_Xtrackchangesperhour_mobile">
+        <item quantity="one">Egy adott mixben egy óra alatt csak %1$s dalt válthatsz.</item>
+        <item quantity="other">Egy adott mixben egy óra alatt csak %1$s dalt válthatsz.</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_changetrackallowedagaininXmin_mobile">
+        <item quantity="one">Legközelebb %1$s perc múlva tudsz ismét dalt váltani.</item>
+        <item quantity="other">Legközelebb %1$s perc múlva tudsz ismét dalt váltani.</item>
+    </plurals>
+    <plurals name="dz_mobiletrialtoaster_text_yourXdaytrialhasstarted_mobile">
+        <item quantity="one">%1$s napos próbaidőszakod megkezdődött</item>
+        <item quantity="other">%1$s napos próbaidőszakod megkezdődött</item>
+    </plurals>
+    <plurals name="dz_mymusic_albums_count">
+        <item quantity="one">%1$s album</item>
+        <item quantity="other">%1$s album</item>
+    </plurals>
+    <plurals name="dz_newofferscardsusp_text_getXaccountswithXbenefitsplushifi_mobile">
+        <item quantity="one">Tegyél szert %1$s egyéni fiókra a %2$s minden előnyével együtt, beleértve a Hi-Fi hangminőséget is.</item>
+        <item quantity="other">Tegyél szert %1$s egyéni fiókra a %2$s minden előnyével együtt, beleértve a Hi-Fi hangminőséget is.</item>
+    </plurals>
+    <plurals name="dz_offerwall_text_priceXpermonthforXmonths_mobile">
+        <item quantity="one">%1$s/hónap %2$s hónapért</item>
+        <item quantity="other">%1$s/hónap %2$s hónapért</item>
+    </plurals>
+    <plurals name="dz_offlinepodcastplaylist_subtitle_Xdownloadedepisodes_mobile">
+        <item quantity="one">%1$s letöltött epizód</item>
+        <item quantity="other">%1$s letöltött epizód</item>
+    </plurals>
+    <plurals name="dz_onboardingfirstlikes_action_pickXmoreUPP_mobile">
+        <item quantity="one">VÁLASSZ MÉG %1$s KEDVENCET</item>
+        <item quantity="other">VÁLASSZ MÉG %1$s KEDVENCET</item>
+    </plurals>
+    <plurals name="dz_onboardingtoastmessage_action_onlyXpickstostart_mobile">
+        <item quantity="one">Szervusz, cowboy! Csak %1$s kiválasztásra van szükség az indításhoz.</item>
+        <item quantity="other">Szervusz, cowboy! Csak %1$s kiválasztásra van szükség az indításhoz.</item>
+    </plurals>
+    <plurals name="dz_passwordsecurity_title_Xcharactersmin_mobile">
+        <item quantity="one">Használj legalább %1$s karaktert</item>
+        <item quantity="other">Használj legalább %1$s karaktert</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_accountalreadylinkedtoXdevices_mobile">
+        <item quantity="one">Fiókod már hozzá van kapcsolva %1$s más készülékhez. A %2$s előfizetés nem lesz elérhető ezen a készüléken.</item>
+        <item quantity="other">Fiókod már hozzá van kapcsolva %1$s más készülékhez. A %2$s előfizetés nem lesz elérhető ezen a készüléken.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_maxXdevicesonyoursubcription_mobile">
+        <item quantity="one">Előfizetéseddel maximum %2$s készüléken élvezheted a %1$s-t.</item>
+        <item quantity="other">Előfizetéseddel maximum %2$s készüléken élvezheted a %1$s-t.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_nomorethanXdevicesonyoursubcription_mobile">
+        <item quantity="one">Előfizetésed nem teszi lehetővé, hogy több mint %1$s készüléken élvezd a %2$s-t.</item>
+        <item quantity="other">Előfizetésed nem teszi lehetővé, hogy több mint %1$s készüléken élvezd a %2$s-t.</item>
+    </plurals>
+    <plurals name="dz_playlist_text_tracksalreadyaddedtotheplaylist_mobile">
+        <item quantity="one">Ezt a zeneszámot már hozzáadtad a playlisthez</item>
+        <item quantity="other">Ezeket a zeneszámokat már hozzáadtad a playlisthez</item>
+    </plurals>
+    <plurals name="dz_playlistpage_action_addXtracks_mobile">
+        <item quantity="one">%1$s zeneszám hozzáadása</item>
+        <item quantity="other">%1$s zeneszám hozzáadása</item>
+    </plurals>
+    <plurals name="dz_premiumbenefit_text_skipmorethanXtracksperhour_mobile">
+        <item quantity="one">Óránként több mint %1$s dal átugrása</item>
+        <item quantity="other">Óránként több mint %1$s dal átugrása</item>
+    </plurals>
+    <plurals name="dz_searchresult_title_topresults_mobile">
+        <item quantity="one">Top találat</item>
+        <item quantity="other">Top találatok</item>
+    </plurals>
+    <plurals name="dz_signupjapanUS_action_tryitfreexmonths_mobile">
+        <item quantity="one">Próbáld ki ingyen %1$s hónapig</item>
+        <item quantity="other">Próbáld ki ingyen %1$s hónapig</item>
+    </plurals>
+    <plurals name="dz_skipcounter_text_Xmoretracks_mobile">
+        <item quantity="one">További %1$s dalt ugorhatsz át.</item>
+        <item quantity="other">További %1$s dalt ugorhatsz át.</item>
+    </plurals>
+    <plurals name="dz_sleeptimer_text_sleepinlessthanXminutes_mobile">
+        <item quantity="one">Aludj el kevesebb mint %1$s perc alatt</item>
+        <item quantity="other">Aludj el kevesebb mint %1$s perc alatt</item>
+    </plurals>
+    <plurals name="dz_smartcache_text_storemostplayedtracksrecosettoXgb_mobile">
+        <item quantity="one">A Smart Cache tárolja a legtöbbet játszott dalokat, így azok gyorsabban töltődnek be. A legjobb élményhez a %1$s GB beállítást ajánljuk.</item>
+        <item quantity="other">A Smart Cache tárolja a legtöbbet játszott dalokat, így azok gyorsabban töltődnek be. A legjobb élményhez a %1$s GB beállítást ajánljuk.</item>
+    </plurals>
+    <plurals name="dz_smartloginandroidtvxboxwelcome_text_thiscodewillexpireinXminutes_mobile">
+        <item quantity="one">Ez a kód %1$s percen belül lejár.</item>
+        <item quantity="other">Ez a kód %1$s percen belül lejár.</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Followers_mobile">
+        <item quantity="one">Követő</item>
+        <item quantity="other">Követő</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Following_mobile">
+        <item quantity="one">Követett</item>
+        <item quantity="other">Követett</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfans_mobile">
+        <item quantity="one">%1$s rajongó</item>
+        <item quantity="other">%1$s rajongó</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowers_mobile">
+        <item quantity="one">%1$s követő</item>
+        <item quantity="other">%1$s követő</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowing_mobile">
+        <item quantity="one">%1$s követett</item>
+        <item quantity="other">%1$s követett</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xnotifications_mobile">
+        <item quantity="one">%1$s új értesítés</item>
+        <item quantity="other">%1$s új értesítés</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xgigabytes_mobile">
+        <item quantity="one">%1$s GB</item>
+        <item quantity="other">%1$s GB</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xmegabytes_mobile">
+        <item quantity="one">%1$s MB</item>
+        <item quantity="other">%1$s MB</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdays_mobile">
+        <item quantity="one">%1$s nap</item>
+        <item quantity="other">%1$s nap</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdaysago_mobile">
+        <item quantity="one">%1$s nappal ezelőtt</item>
+        <item quantity="other">%1$s nappal ezelőtt</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhours_mobile">
+        <item quantity="one">%1$s óra</item>
+        <item quantity="other">%1$s óra</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhoursago_mobile">
+        <item quantity="one">%1$s órával ezelőtt</item>
+        <item quantity="other">%1$s órával ezelőtt</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmin_mobile">
+        <item quantity="one">%1$s perc</item>
+        <item quantity="other">%1$s perc</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_XminleftUPP_mobile">
+        <item quantity="one">%1$s PERC VAN HÁTRA</item>
+        <item quantity="other">%1$s PERC VAN HÁTRA</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutes_mobile">
+        <item quantity="one">%1$s perc</item>
+        <item quantity="other">%1$s perc</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutesago_mobile">
+        <item quantity="one">%1$s perccel ezelőtt</item>
+        <item quantity="other">%1$s perccel ezelőtt</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmonthsago_mobile">
+        <item quantity="one">%1$s hónappal ezelőtt</item>
+        <item quantity="other">%1$s hónappal ezelőtt</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xs_mobile">
+        <item quantity="one">%1$s másodperc</item>
+        <item quantity="other">%1$s másodperc</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xweeksago_mobile">
+        <item quantity="one">%1$s héttel ezelőtt</item>
+        <item quantity="other">%1$s héttel ezelőtt</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xyearsago_mobile">
+        <item quantity="one">%1$s évvel ezelőtt</item>
+        <item quantity="other">%1$s évvel ezelőtt</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_alreadyaddedtoplaylist_mobile">
+        <item quantity="one">Már hozzáadva a playlisthez</item>
+        <item quantity="other">Már hozzáadva a playlisthez</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_unlockedXmoreskips_mobile">
+        <item quantity="one">Még %1$s átugrási lehetőséget szereztél.</item>
+        <item quantity="other">Még %1$s átugrási lehetőséget szereztél.</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoplaylisttrack_mobile">
+        <item quantity="one">Hozzáadva a playlisthez</item>
+        <item quantity="other">Hozzáadva a playlisthez</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoyourfavoritetrackstrack_mobile">
+        <item quantity="one">Hozzáadva a kedvenc dalaidhoz</item>
+        <item quantity="other">Hozzáadva a kedvenc dalaidhoz</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromplaylist_mobile">
+        <item quantity="one">Törölve a playlistről</item>
+        <item quantity="other">Törölve a playlistről</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromyourfavoritetrackstrack_mobile">
+        <item quantity="one">Eltávolítva a kedvenc dalaid közül</item>
+        <item quantity="other">Eltávolítva a kedvenc dalaid közül</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_Xdaytrial_mobile">
+        <item quantity="one">%1$s napos kipróbálás</item>
+        <item quantity="other">%1$s napos kipróbálás</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_downloadskipadfreelistening_mobile">
+        <item quantity="one">Töltsd le zeneszámaidat, ugord át az általad kevésbé kedvelt dalokat, és élvezd a reklámmentes zenehallgatást %1$s napig.</item>
+        <item quantity="other">Töltsd le zeneszámaidat, ugord át az általad kevésbé kedvelt dalokat, és élvezd a reklámmentes zenehallgatást %1$s napig.</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_text_tryXforXdaysfreenocreditcardrequired_mobile">
+        <item quantity="one">Próbáld ki a %1$s-t %2$s napig ingyen. Bankkártya nem szükséges!</item>
+        <item quantity="other">Próbáld ki a %1$s-t %2$s napig ingyen. Bankkártya nem szükséges!</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXdays_mobile">
+        <item quantity="one">Az előfizetés megerősítéséhez és a Deezer telefonon történő használatához csatlakozzon WiFi-hez vagy mobilhálózathoz %1$s napon belül.</item>
+        <item quantity="other">Az előfizetés megerősítéséhez és a Deezer telefonon történő használatához csatlakozzon WiFi-hez vagy mobilhálózathoz %1$s napon belül.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXhours_mobile">
+        <item quantity="one">Az előfizetés megerősítéséhez és a Deezer telefonon történő használatához csatlakozzon WiFi-hez vagy mobilhálózathoz %1$s órán belül.</item>
+        <item quantity="other">Az előfizetés megerősítéséhez és a Deezer telefonon történő használatához csatlakozzon WiFi-hez vagy mobilhálózathoz %1$s órán belül.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXminutes_mobile">
+        <item quantity="one">Az előfizetés megerősítéséhez és a Deezer telefonon történő használatához csatlakozzon WiFi-hez vagy mobilhálózathoz %1$s percen belül.</item>
+        <item quantity="other">Az előfizetés megerősítéséhez és a Deezer telefonon történő használatához csatlakozzon WiFi-hez vagy mobilhálózathoz %1$s percen belül.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Előretekerés %d másodperccel</item>
+        <item quantity="other">Előretekerés %d másodperccel</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Visszatekerés %d másodperccel</item>
+        <item quantity="other">Visszatekerés %d másodperccel</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d új értesítés</item>
+        <item quantity="other">%d új értesítés</item>
+    </plurals>
+</resources>

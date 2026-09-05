@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progress_container" android:paddingTop="@dimen/scaled_16dp" android:paddingBottom="@dimen/scaled_16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/scaled_16dp" android:paddingEnd="@dimen/scaled_16dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_width="48.0dp" android:layout_height="48.0dp" android:indeterminate="true" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_running" />
+</LinearLayout>

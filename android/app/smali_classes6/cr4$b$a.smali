@@ -1,0 +1,57 @@
+.class public final Lcr4$b$a;
+.super Lcom/google/protobuf/GeneratedMessageLite$a;
+.source ""
+
+# interfaces
+.implements Lraf;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcr4$b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite$a<",
+        "Lcr4$b;",
+        "Lcr4$b$a;",
+        ">;",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    const/4 v1, 0x0
+
+    sget-object v0, Lcr4$b;->f:Lcr4$b;
+
+    const/4 v1, 0x5
+
+    invoke-direct {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite$a;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lar4;)V
+    .locals 1
+
+    sget-object p1, Lcr4$b;->f:Lcr4$b;
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessageLite$a;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    const/4 v0, 0x6
+
+    return-void
+.end method

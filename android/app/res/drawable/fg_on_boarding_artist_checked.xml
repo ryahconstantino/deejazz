@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient android:startColor="#b36b42b4" android:endColor="#b3f06262" android:angle="45.0" android:type="linear" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/ic_heart_on_boarding" android:left="@dimen/onboarding_artist_selection_icon_margin_width" android:top="@dimen/onboarding_artist_selection_icon_margin_height" android:right="@dimen/onboarding_artist_selection_icon_margin_width" android:bottom="@dimen/onboarding_artist_selection_icon_margin_height" />
+</layer-list>

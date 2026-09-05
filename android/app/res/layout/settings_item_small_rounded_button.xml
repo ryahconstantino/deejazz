@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/settings_item_one_line_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/scaled_24dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/p4" android:textColor="@color/button_accent_text" android:gravity="center" android:id="@id/settings_item_title" android:background="@drawable/button_round_accent" android:padding="@dimen/scaled_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:textAllCaps="true" />
+    <View android:id="@id/sep" android:background="@color/theme_divider_primary" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

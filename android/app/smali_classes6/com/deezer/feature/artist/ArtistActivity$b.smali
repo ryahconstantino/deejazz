@@ -1,0 +1,245 @@
+.class public final Lcom/deezer/feature/artist/ArtistActivity$b;
+.super Lwa0;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/deezer/feature/artist/ArtistActivity;->F0(Lk7g$b;)Z
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0017\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016\u00a8\u0006\u0006"
+    }
+    d2 = {
+        "com/deezer/feature/artist/ArtistActivity$onMenuEvent$2",
+        "Lcom/deezer/android/ui/actions/OnlineAction;",
+        "doAction",
+        "",
+        "context",
+        "Landroid/content/Context;",
+        "app_deezerOfficialGooglePlayStoreRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x5,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field public final synthetic b:Lcom/deezer/feature/artist/ArtistActivity;
+
+
+# direct methods
+.method public constructor <init>(Lcom/deezer/feature/artist/ArtistActivity;)V
+    .locals 1
+
+    const/4 v0, 0x4
+
+    iput-object p1, p0, Lcom/deezer/feature/artist/ArtistActivity$b;->b:Lcom/deezer/feature/artist/ArtistActivity;
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0}, Lwa0;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Landroid/content/Context;)V
+    .locals 6
+
+    const-string v5, "  ~@~@~@~@~@~@~@~@~@~@~   Smob - Mod obfuscation tool v1.4 by Kirlif\'   ~@~@~@~@~@~@~@~@~@~@~  "
+
+    const-string/jumbo v0, "xtsecnt"
+
+    const-string v0, "context"
+
+    const/4 v5, 0x1
+
+    invoke-static {p1, v0}, Lrqg;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v5, 0x5
+
+    iget-object p1, p0, Lcom/deezer/feature/artist/ArtistActivity$b;->b:Lcom/deezer/feature/artist/ArtistActivity;
+
+    iget-object p1, p1, Lcom/deezer/feature/artist/ArtistActivity;->u0:Lyi6;
+
+    const/4 v5, 0x2
+
+    if-eqz p1, :cond_0
+
+    const/4 v5, 0x3
+
+    iget-object v0, p1, Lyi6;->q:Lkag;
+
+    const/4 v5, 0x7
+
+    iget-object v1, p1, Lyi6;->d:Ltn6;
+
+    const/4 v5, 0x0
+
+    iget-object v2, p1, Lyi6;->c:Ljava/lang/String;
+
+    const/4 v5, 0x1
+
+    iget-object v3, p1, Lyi6;->B:Ljava/lang/String;
+
+    const/4 v5, 0x0
+
+    invoke-interface {v1, v2, v2, v3}, Lc53;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lbag;
+
+    move-result-object v1
+
+    const/4 v5, 0x6
+
+    invoke-virtual {v1}, Lbag;->B()Lu9g;
+
+    move-result-object v1
+
+    const/4 v5, 0x2
+
+    invoke-static {}, Lhag;->a()Laag;
+
+    move-result-object v2
+
+    const/4 v5, 0x4
+
+    invoke-virtual {v1, v2}, Lu9g;->Q(Laag;)Lu9g;
+
+    move-result-object v1
+
+    const/4 v5, 0x3
+
+    sget-object v2, Lbf6;->a:Lbf6;
+
+    const/4 v5, 0x1
+
+    sget-object v3, Lgbg;->d:Ltag;
+
+    const/4 v5, 0x7
+
+    sget-object v4, Lgbg;->c:Loag;
+
+    const/4 v5, 0x6
+
+    invoke-virtual {v1, v3, v2, v4, v4}, Lu9g;->y(Ltag;Ltag;Loag;Loag;)Lu9g;
+
+    move-result-object v1
+
+    const/4 v5, 0x6
+
+    invoke-static {}, Lnn2;->a()Lyag;
+
+    move-result-object v2
+
+    const/4 v5, 0x3
+
+    invoke-virtual {v1, v2}, Lu9g;->D(Lyag;)Lu9g;
+
+    move-result-object v1
+
+    const/4 v5, 0x4
+
+    new-instance v2, Lqf6;
+
+    const/4 v5, 0x3
+
+    invoke-direct {v2, p1}, Lqf6;-><init>(Lyi6;)V
+
+    const/4 v5, 0x4
+
+    invoke-virtual {v1, v2}, Lu9g;->r0(Lxag;)Lu9g;
+
+    move-result-object v1
+
+    const/4 v5, 0x0
+
+    new-instance v2, Lef6;
+
+    invoke-direct {v2, p1}, Lef6;-><init>(Lyi6;)V
+
+    const/4 v5, 0x3
+
+    invoke-virtual {v1, v2}, Lu9g;->r0(Lxag;)Lu9g;
+
+    move-result-object v1
+
+    const/4 v5, 0x1
+
+    new-instance v2, Lnf6;
+
+    const/4 v5, 0x1
+
+    invoke-direct {v2, p1}, Lnf6;-><init>(Lyi6;)V
+
+    const/4 v5, 0x6
+
+    invoke-virtual {v1, v3, v3, v2, v4}, Lu9g;->y(Ltag;Ltag;Loag;Loag;)Lu9g;
+
+    move-result-object v1
+
+    const/4 v5, 0x2
+
+    const-string v2, "A(tm6CsolsApo/armtsirr)roupr)trfbRestneit0ya22i.(ehteei"
+
+    const-string v2, "artistRepository.banArti\u2026Complete(refreshArtist())"
+
+    const/4 v5, 0x5
+
+    invoke-static {v1, v2}, Lrqg;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v5, 0x7
+
+    new-instance v2, Llf6;
+
+    const/4 v5, 0x1
+
+    invoke-direct {v2, p1}, Llf6;-><init>(Lyi6;)V
+
+    const/4 v5, 0x5
+
+    sget-object p1, Lgbg;->e:Ltag;
+
+    invoke-virtual {v1, v2, p1, v4, v3}, Lu9g;->o0(Ltag;Ltag;Loag;Ltag;)Llag;
+
+    move-result-object p1
+
+    const/4 v5, 0x5
+
+    invoke-virtual {v0, p1}, Lkag;->b(Llag;)Z
+
+    const/4 v5, 0x3
+
+    return-void
+
+    :cond_0
+    const/4 v5, 0x0
+
+    const-string/jumbo p1, "taoPoerlsaiewdMVtge"
+
+    const-string p1, "artistPageViewModel"
+
+    const/4 v5, 0x2
+
+    invoke-static {p1}, Lrqg;->n(Ljava/lang/String;)V
+
+    const/4 v5, 0x7
+
+    const/4 p1, 0x0
+
+    const/4 v5, 0x5
+
+    throw p1
+.end method

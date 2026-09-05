@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/labs_screen_fragment_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar" android:layout_width="match_parent" android:layout_height="220.0dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" app:collapsedTitleTextAppearance="@style/DeezerTitleLightSingleLine" app:contentScrim="@color/toolbar_background" app:expandedTitleMarginBottom="10.0dp" app:expandedTitleMarginEnd="64.0dp" app:expandedTitleMarginStart="@dimen/settings_item_horizontal_padding" app:expandedTitleTextAppearance="@style/DeezerTitleLightExpanded" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <ImageView android:id="@id/backdrop" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/labs" android:scaleType="centerCrop" app:layout_collapseMode="parallax" />
+            <com.google.android.material.appbar.MaterialToolbar android:theme="@style/Deezer.Toolbar.Light" android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" app:navigationIcon="?homeAsUpIndicator" app:popupTheme="@style/PopupTheme" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

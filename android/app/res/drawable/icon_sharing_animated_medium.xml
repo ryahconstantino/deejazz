@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$icon_sharing_animated_medium__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="share_generic" android:animation="@drawable/$icon_sharing_animated_medium__1" />
+    <target android:name="whatsapp" android:animation="@drawable/$icon_sharing_animated_medium__2" />
+    <target android:name="whatsapp_group" android:animation="@drawable/$icon_sharing_animated_medium__3" />
+    <target android:name="instagram_path1" android:animation="@drawable/$icon_sharing_animated_medium__4" />
+    <target android:name="instagram_path2" android:animation="@drawable/$icon_sharing_animated_medium__5" />
+    <target android:name="instagram_path3" android:animation="@drawable/$icon_sharing_animated_medium__6" />
+    <target android:name="instagram_group" android:animation="@drawable/$icon_sharing_animated_medium__7" />
+    <target android:name="snapchat" android:animation="@drawable/$icon_sharing_animated_medium__8" />
+    <target android:name="snapchat_group" android:animation="@drawable/$icon_sharing_animated_medium__9" />
+    <target android:name="share_generic_end" android:animation="@drawable/$icon_sharing_animated_medium__10" />
+    <target android:name="share_generic_end_group" android:animation="@drawable/$icon_sharing_animated_medium__11" />
+</animated-vector>

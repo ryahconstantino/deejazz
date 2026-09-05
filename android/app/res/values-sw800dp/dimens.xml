@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="brick_error_top_margin_top">256.0dp</dimen>
+    <dimen name="offer_wall_padding_left_right">180.0dp</dimen>
+    <dimen name="player_list_item_equalizer_margin">16.0dp</dimen>
+    <dimen name="player_list_item_height">72.0dp</dimen>
+</resources>

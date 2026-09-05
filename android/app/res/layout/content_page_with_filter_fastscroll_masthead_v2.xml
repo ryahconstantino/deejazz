@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deezer.android.masthead.MastheadCoordinatorLayout android:id="@id/main_content" android:background="@color/theme_bg_primary" android:layout_width="match_parent" android:layout_height="match_parent" app:picturePlaceholderType="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/content_page_material_internal_base_masthead_v2" />
+    <include android:id="@id/filter_toolbar" layout="@layout/filter_toolbar" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include android:layout_gravity="end" android:id="@id/fast_scroller" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/fastscroll_margin_topbottom" android:layout_marginBottom="@dimen/fastscroll_margin_topbottom" layout="@layout/include_fastscroller" />
+    </FrameLayout>
+</deezer.android.masthead.MastheadCoordinatorLayout>

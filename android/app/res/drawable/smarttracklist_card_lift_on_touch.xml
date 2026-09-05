@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <set>
+            <objectAnimator android:duration="@android:integer/config_shortAnimTime" android:valueTo="@dimen/flowtab_smartTrackList_card_elevation__pressed" android:valueType="floatType" android:propertyName="translationZ" />
+        </set>
+    </item>
+    <item>
+        <set>
+            <objectAnimator android:duration="@android:integer/config_shortAnimTime" android:valueTo="@dimen/flowtab_smartTrackList_card_elevation" android:valueType="floatType" android:propertyName="translationZ" />
+        </set>
+    </item>
+</selector>

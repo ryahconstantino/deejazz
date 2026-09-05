@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@color/theme_bg_primary" android:insetLeft="@dimen/content_page_list_padding" android:insetRight="@dimen/content_page_list_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

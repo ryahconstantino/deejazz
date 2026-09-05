@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="message_one_cta_bis_title_margin_top">8.0dp</dimen>
+    <dimen name="offer_wall_header_height">8.0dp</dimen>
+</resources>

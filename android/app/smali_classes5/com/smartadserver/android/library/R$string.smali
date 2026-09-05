@@ -1,0 +1,192 @@
+.class public final Lcom/smartadserver/android/library/R$string;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/smartadserver/android/library/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "string"
+.end annotation
+
+
+# static fields
+.field public static final abc_action_bar_home_description:I = 0x7f120001
+
+.field public static final abc_action_bar_up_description:I = 0x7f120002
+
+.field public static final abc_action_menu_overflow_description:I = 0x7f120003
+
+.field public static final abc_action_mode_done:I = 0x7f120004
+
+.field public static final abc_activity_chooser_view_see_all:I = 0x7f120005
+
+.field public static final abc_activitychooserview_choose_application:I = 0x7f120006
+
+.field public static final abc_capital_off:I = 0x7f120007
+
+.field public static final abc_capital_on:I = 0x7f120008
+
+.field public static final abc_menu_alt_shortcut_label:I = 0x7f120009
+
+.field public static final abc_menu_ctrl_shortcut_label:I = 0x7f12000a
+
+.field public static final abc_menu_delete_shortcut_label:I = 0x7f12000b
+
+.field public static final abc_menu_enter_shortcut_label:I = 0x7f12000c
+
+.field public static final abc_menu_function_shortcut_label:I = 0x7f12000d
+
+.field public static final abc_menu_meta_shortcut_label:I = 0x7f12000e
+
+.field public static final abc_menu_shift_shortcut_label:I = 0x7f12000f
+
+.field public static final abc_menu_space_shortcut_label:I = 0x7f120010
+
+.field public static final abc_menu_sym_shortcut_label:I = 0x7f120011
+
+.field public static final abc_prepend_shortcut_label:I = 0x7f120012
+
+.field public static final abc_search_hint:I = 0x7f120013
+
+.field public static final abc_searchview_description_clear:I = 0x7f120014
+
+.field public static final abc_searchview_description_query:I = 0x7f120015
+
+.field public static final abc_searchview_description_search:I = 0x7f120016
+
+.field public static final abc_searchview_description_submit:I = 0x7f120017
+
+.field public static final abc_searchview_description_voice:I = 0x7f120018
+
+.field public static final abc_shareactionprovider_share_with:I = 0x7f120019
+
+.field public static final abc_shareactionprovider_share_with_application:I = 0x7f12001a
+
+.field public static final abc_toolbar_collapse_description:I = 0x7f12001b
+
+.field public static final app_name:I = 0x7f12001e
+
+.field public static final common_google_play_services_enable_button:I = 0x7f12007e
+
+.field public static final common_google_play_services_enable_text:I = 0x7f12007f
+
+.field public static final common_google_play_services_enable_title:I = 0x7f120080
+
+.field public static final common_google_play_services_install_button:I = 0x7f120081
+
+.field public static final common_google_play_services_install_text:I = 0x7f120082
+
+.field public static final common_google_play_services_install_title:I = 0x7f120083
+
+.field public static final common_google_play_services_notification_channel_name:I = 0x7f120084
+
+.field public static final common_google_play_services_notification_ticker:I = 0x7f120085
+
+.field public static final common_google_play_services_unknown_issue:I = 0x7f120086
+
+.field public static final common_google_play_services_unsupported_text:I = 0x7f120087
+
+.field public static final common_google_play_services_update_button:I = 0x7f120088
+
+.field public static final common_google_play_services_update_text:I = 0x7f120089
+
+.field public static final common_google_play_services_update_title:I = 0x7f12008a
+
+.field public static final common_google_play_services_updating_text:I = 0x7f12008b
+
+.field public static final common_google_play_services_wear_update_text:I = 0x7f12008c
+
+.field public static final common_open_on_phone:I = 0x7f12008d
+
+.field public static final common_signin_button_text:I = 0x7f12008e
+
+.field public static final common_signin_button_text_long:I = 0x7f12008f
+
+.field public static final copy:I = 0x7f120090
+
+.field public static final copy_toast_msg:I = 0x7f120091
+
+.field public static final expand_button_title:I = 0x7f120a79
+
+.field public static final fallback_menu_item_copy_link:I = 0x7f120a80
+
+.field public static final fallback_menu_item_open_in_browser:I = 0x7f120a81
+
+.field public static final fallback_menu_item_share_link:I = 0x7f120a82
+
+.field public static final not_set:I = 0x7f120af7
+
+.field public static final preference_copied:I = 0x7f120b11
+
+.field public static final sas_native_video_close_button_label:I = 0x7f120b19
+
+.field public static final sas_native_video_download_button_label:I = 0x7f120b1a
+
+.field public static final sas_native_video_more_info_button_label:I = 0x7f120b1b
+
+.field public static final sas_native_video_replay_button_label:I = 0x7f120b1c
+
+.field public static final sas_native_video_watch_button_label:I = 0x7f120b1d
+
+.field public static final sas_rewarded_video_close_anyway_text_label:I = 0x7f120b1e
+
+.field public static final sas_rewarded_video_close_before_end_text_label:I = 0x7f120b1f
+
+.field public static final sas_rewarded_video_close_before_end_title_label:I = 0x7f120b20
+
+.field public static final sas_rewarded_video_resume_video_text_label:I = 0x7f120b21
+
+.field public static final sas_transparencyreport_dialog_cannot_send_report_email:I = 0x7f120b22
+
+.field public static final sas_transparencyreport_dialog_report_button_cancel:I = 0x7f120b23
+
+.field public static final sas_transparencyreport_dialog_report_button_send:I = 0x7f120b24
+
+.field public static final sas_transparencyreport_dialog_report_message:I = 0x7f120b25
+
+.field public static final sas_transparencyreport_dialog_report_title:I = 0x7f120b26
+
+.field public static final sas_transparencyreport_mail_body:I = 0x7f120b27
+
+.field public static final sas_transparencyreport_mail_title:I = 0x7f120b28
+
+.field public static final sas_transparencyreport_reason_layout_issue:I = 0x7f120b29
+
+.field public static final sas_transparencyreport_reason_malicious_ad:I = 0x7f120b2a
+
+.field public static final sas_transparencyreport_reason_missing_ad:I = 0x7f120b2b
+
+.field public static final sas_transparencyreport_reason_other:I = 0x7f120b2c
+
+.field public static final sas_transparencyreport_reason_other_hint:I = 0x7f120b2d
+
+.field public static final sas_transparencyreport_reason_undesirable_ad:I = 0x7f120b2e
+
+.field public static final search_menu_title:I = 0x7f120b2f
+
+.field public static final status_bar_notification_info_overflow:I = 0x7f120b3b
+
+.field public static final summary_collapsed_preference_list:I = 0x7f120b3c
+
+.field public static final v7_preference_off:I = 0x7f120b56
+
+.field public static final v7_preference_on:I = 0x7f120b57
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x7
+
+    return-void
+.end method

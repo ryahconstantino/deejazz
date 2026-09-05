@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@color/toolbar_background" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" app:popupTheme="@style/PopupTheme" app:theme="@style/Deezer.Toolbar.Light"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_internal" />
+</com.google.android.material.appbar.MaterialToolbar>

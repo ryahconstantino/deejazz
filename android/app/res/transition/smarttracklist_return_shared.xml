@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet android:interpolator="@interpolator/mr_fast_out_slow_in"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <transitionSet android:duration="350" android:transitionOrdering="together">
+        <changeClipBounds android:interpolator="@interpolator/mr_fast_out_slow_in" />
+        <changeImageTransform android:interpolator="@interpolator/mr_fast_out_slow_in" />
+        <changeBounds android:interpolator="@interpolator/mr_fast_out_slow_in" />
+        <changeTransform android:interpolator="@interpolator/mr_fast_out_slow_in" />
+        <transition app:cornerRadiusEnd="@dimen/item_corner_radius" app:cornerRadiusStart="@dimen/smartTrackList_background_corner_radius" class="com.deezer.android.ui.transitions.MorphDrawableTransition">
+            <targets>
+                <target android:targetId="@id/background" />
+                <target android:targetId="@id/cover" />
+            </targets>
+        </transition>
+    </transitionSet>
+    <transition android:interpolator="@android:interpolator/linear" android:duration="200" android:startDelay="150" app:fadeMode="in" class="com.deezer.android.ui.transitions.Fade">
+        <targets>
+            <target android:targetId="@id/chevron" />
+        </targets>
+    </transition>
+</transitionSet>

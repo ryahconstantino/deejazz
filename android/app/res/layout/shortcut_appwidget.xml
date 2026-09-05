@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/shortcut_widget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="40.0dp" android:minHeight="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/shortcut_widget_text_size" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/shortcut_widget_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="180.0dp" android:lines="2" android:shadowColor="@color/text_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_alignParentBottom="true" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/shortcut_widget_img" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/launcher_ic_app" android:layout_above="@id/shortcut_widget_title" />
+</RelativeLayout>

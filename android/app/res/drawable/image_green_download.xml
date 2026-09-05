@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <size android:height="@dimen/item_image_cover_size" android:width="@dimen/item_image_cover_size" />
+            <solid android:color="@color/bg_cover_download_green" />
+            <corners android:radius="@dimen/item_card_corner_radius" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/download_24_green" android:left="@dimen/image_playlist_large_icon_padding" android:top="@dimen/image_playlist_large_icon_padding" android:right="@dimen/image_playlist_large_icon_padding" android:bottom="@dimen/image_playlist_large_icon_padding" />
+</layer-list>

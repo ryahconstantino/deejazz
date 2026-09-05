@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/native_ad_container_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:gravity="bottom" android:id="@id/native_ad_image" android:layout_width="279.0dp" android:layout_height="146.0dp" />
+    <ImageView android:id="@id/native_ad_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="16.0dp" android:layout_marginStart="8.0dp" />
+    <TextView android:textSize="@dimen/scaled_16sp" android:textColor="@color/theme_text_primary" android:ellipsize="end" android:gravity="start|top" android:id="@id/link_title" android:paddingTop="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" android:singleLine="true" android:paddingStart="12.0dp" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/description_layout" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:paddingStart="12.0dp" android:paddingEnd="32.0dp">
+        <TextView android:textSize="@dimen/scaled_14sp" android:textColor="@color/theme_text_secondary" android:ellipsize="end" android:id="@id/native_ad_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/scaled_10sp" android:textColor="@color/theme_text_secondary" android:gravity="center" android:id="@id/advertisement_claim" android:background="@drawable/ripple_advertisement_claim" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:layout_marginBottom="12.0dp" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" android:layout_marginStart="12.0dp" />
+    <TextView android:textSize="@dimen/scaled_12sp" android:textColor="@color/theme_text_secondary" android:ellipsize="none" android:gravity="center" android:id="@id/call_to_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:drawablePadding="7.0dp" android:layout_marginStart="32.0dp" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/call_to_action_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:layout_marginEnd="16.0dp" app:srcCompat="@drawable/link_external" />
+</merge>

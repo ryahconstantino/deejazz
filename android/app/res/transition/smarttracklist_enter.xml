@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet android:transitionOrdering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <transitionSet android:transitionOrdering="together">
+        <targets>
+            <target android:targetId="@id/recycler_view" />
+        </targets>
+        <slide android:interpolator="@interpolator/mr_fast_out_slow_in" android:duration="450" android:startDelay="0" android:slideEdge="bottom" />
+        <fade android:interpolator="@android:interpolator/linear" android:duration="150" android:startDelay="300" />
+    </transitionSet>
+    <fade android:duration="150" android:startDelay="300">
+        <targets>
+            <target android:excludeId="@id/recycler_view" />
+            <target android:excludeId="@android:id/statusBarBackground" />
+            <target android:excludeId="@android:id/navigationBarBackground" />
+        </targets>
+    </fade>
+    <fade android:duration="450">
+        <targets>
+            <target android:targetId="@android:id/statusBarBackground" />
+            <target android:targetId="@android:id/navigationBarBackground" />
+        </targets>
+    </fade>
+</transitionSet>

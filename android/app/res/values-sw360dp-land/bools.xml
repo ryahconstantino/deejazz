@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="dynamic_page_native_ad_large_mode">true</bool>
+    <bool name="dynamic_page_slideshow_double_item">true</bool>
+    <bool name="is_small_device">true</bool>
+    <bool name="offer_wall_display_sub_note">true</bool>
+</resources>

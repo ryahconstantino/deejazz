@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="1.0dp" android:color="@color/transparent_grey_button_border" />
+    <corners android:radius="4.0dp" />
+    <solid android:color="@color/overlay_64" />
+</shape>

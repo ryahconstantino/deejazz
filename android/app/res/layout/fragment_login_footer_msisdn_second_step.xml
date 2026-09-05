@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/p3" android:textColor="@drawable/stateful_text_white" android:gravity="center" android:id="@id/login_code_not_received_btn" android:background="@drawable/ripple_transparent_to_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_page_padding_small" android:text="@string/dz_legacy_action_code_notreceived" android:minLines="2" android:includeFontPadding="false" android:fontFamily="sans-serif-light" />
+    <TextView android:textAppearance="@style/p3" android:textColor="@color/login_texts_color" android:gravity="center" android:id="@id/login_change_number_btn" android:background="@drawable/ripple_transparent_to_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_page_padding_small" android:layout_marginBottom="@dimen/scaled_56dp" android:text="@string/dz_legacy_action_phonenumber_change" android:minLines="2" android:includeFontPadding="false" android:fontFamily="sans-serif-light" />
+</LinearLayout>

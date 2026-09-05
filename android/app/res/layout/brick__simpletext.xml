@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:tag="layout/brick__simpletext_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceListItem" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceListItemSmall" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

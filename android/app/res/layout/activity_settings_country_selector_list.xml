@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/main_content" android:tag="layout/activity_settings_country_selector_list_0" android:fitsSystemWindows="true" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?actionBarSize" bind:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?actionBarSize" android:paddingStart="@dimen/profile_settings_list_padding" android:paddingEnd="@dimen/profile_settings_list_padding" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@color/toolbar_background" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" bind:subtitleTextAppearance="@style/DeezerSubTitle.Light" bind:theme="@style/Deezer.Toolbar.Light" bind:titleTextAppearance="@style/DeezerTitle.Light" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

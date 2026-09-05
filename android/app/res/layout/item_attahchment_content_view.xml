@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/list_item_cover" android:layout_width="@dimen/app_notif_content_attachment_photo_width" android:layout_height="@dimen/app_notif_content_attachment_photo_height" android:layout_marginTop="@dimen/app_notif_content_attachment_photo_margin_top_bottom" android:layout_marginBottom="@dimen/app_notif_content_attachment_photo_margin_top_bottom" android:layout_marginEnd="@dimen/app_notif_content_attachment_photo_margin_right" />
+    <TextView android:textSize="@dimen/app_notif_content_attachment_first_line_text_size" android:textColor="@color/theme_text_primary" android:ellipsize="end" android:gravity="top" android:id="@id/list_item_first_line" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    <TextView android:textSize="@dimen/app_notif_content_attachment_second_line_text_size" android:ellipsize="end" android:id="@id/list_item_second_line" android:paddingTop="2.0dp" android:paddingBottom="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+</merge>

@@ -8,9 +8,9 @@ const { Arch, Platform, build } = require("electron-builder");
 const { version } = require("./build-environment");
 
 const projectRoot = path.resolve(__dirname, "..");
-const sourceAsar = path.join(projectRoot, "src", "resources", "app.asar");
-const sourceIcon = path.join(projectRoot, "src", "resources", "deejazz-icon.png");
-const sourceTrayIcon = path.join(projectRoot, "src", "resources", "win", "systray.png");
+const sourceAsar = path.join(projectRoot, "desktop", "resources", "app.asar");
+const sourceIcon = path.join(projectRoot, "desktop", "resources", "deejazz-icon.png");
+const sourceTrayIcon = path.join(projectRoot, "desktop", "resources", "win", "systray.png");
 const sourceLinuxMain = path.join(projectRoot, "linux", "main.js");
 const workRoot = path.join(projectRoot, ".linux-build");
 const appDir = path.join(workRoot, "app");

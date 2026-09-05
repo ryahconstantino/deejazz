@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deezer.android.ui.HeroHeaderContainer android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/toolbar_elevation" android:outlineProvider="bounds"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/backdrop" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/hero_image_placeholder_color" android:scaleType="centerCrop" />
+</com.deezer.android.ui.HeroHeaderContainer>

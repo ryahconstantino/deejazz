@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deezer.android.ui.recyclerview.widget.LinkView android:background="@drawable/ripple_cell_background" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="@dimen/generic_view_item_link_height" android:layoutDirection="locale" android:paddingStart="@dimen/grid_recycler_view_total_padding_horizontal" android:paddingEnd="@dimen/grid_recycler_view_total_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

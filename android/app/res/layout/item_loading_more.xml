@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/retry_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/scaled_16dp">
+        <TextView android:textSize="@dimen/scaled_14sp" android:textStyle="italic" android:textColor="@color/theme_text_secondary" android:gravity="center" android:id="@id/lost_connection_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:fontFamily="sans-serif" />
+        <TextView android:textSize="@dimen/scaled_14sp" android:id="@id/retry_btn" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DeezerRoundAccentButton" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8.0dp" />
+</FrameLayout>

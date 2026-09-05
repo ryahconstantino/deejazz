@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/placeholder_background" />
+    <item android:drawable="@drawable/icon_content" android:left="@dimen/flowtab_card_playbutton_size_half" android:top="@dimen/flowtab_card_playbutton_size_quarter" android:bottom="@dimen/flowtab_card_playbutton_size_quarter" />
+</layer-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="dynamic_page_card_span_count">5</integer>
+    <integer name="onboarding_channel_span_count">5</integer>
+    <integer name="page_grid_generic_numColumns">5</integer>
+</resources>

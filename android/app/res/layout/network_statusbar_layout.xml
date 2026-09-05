@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/networkStatusBarcontainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/scaled_24dp" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/scaled_14sp" android:gravity="center" android:layout_gravity="center" android:id="@id/networkStatusbar" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawablePadding="@dimen/scaled_8dp" />
+</FrameLayout>

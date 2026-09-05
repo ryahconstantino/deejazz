@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.android.ui.widget.FixedBackgroundView android:id="@id/background_img" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@id/overlay" android:background="@color/login_bg_veil_login_reg_screen" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@color/toolbar_background" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" app:subtitleTextAppearance="@style/DeezerSubTitle.Light" app:theme="@style/Deezer.Toolbar.Light" app:titleTextAppearance="@style/DeezerTitle.Light" />
+        <FrameLayout android:orientation="vertical" android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>

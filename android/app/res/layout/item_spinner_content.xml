@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView android:theme="@style/RadioButton" android:textSize="12.0sp" android:textColor="@color/sort_spinner_color" android:ellipsize="end" android:gravity="left|center" android:id="@id/spinner_text" android:background="@drawable/ripple_cell_background" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="48.0dp" android:checkMark="?android:listChoiceIndicatorSingle" android:maxLines="1" android:drawablePadding="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

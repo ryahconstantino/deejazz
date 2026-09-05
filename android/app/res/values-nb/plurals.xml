@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dz_SMScoderesentconfirmationscreen_text_XSMScodesleft_mobile">
+        <item quantity="one">%1$s SMS-kode igjen</item>
+        <item quantity="other">%1$s SMS-koder igjen</item>
+    </plurals>
+    <plurals name="dz_agerestrictionerrormessage_text_mustbeXyearsentervaliddate_mobile">
+        <item quantity="one">Du må være over %1$s år for å opprette en Deezer-konto. Vennligst oppgi riktig dato.</item>
+        <item quantity="other">Du må være over %1$s år for å opprette en Deezer-konto. Vennligst oppgi riktig dato.</item>
+    </plurals>
+    <plurals name="dz_androidtv_text_profilenumberlimitreached_mobile">
+        <item quantity="one">Du har nådd grensen din på %1$s profil. Vennligst slett en konto for å fortsette.</item>
+        <item quantity="other">Du har nådd grensen din på %1$s profiler. Vennligst slett en konto for å fortsette.</item>
+    </plurals>
+    <plurals name="dz_androidtvlandingpage_text_morethanXmilliontracksacrossallgenres_mobile">
+        <item quantity="one">Mer enn %1$s million låter i alle sjangre</item>
+        <item quantity="other">Mer enn %1$s millioner låter i alle sjangre</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseXmoreartistsUPP_mobile">
+        <item quantity="one">VELG %1$s ARTIST TIL</item>
+        <item quantity="other">VELG %1$s ARTISTER TIL</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseatleastXartistsUPP_mobile">
+        <item quantity="one">VELG MINST %1$s ARTIST</item>
+        <item quantity="other">VELG MINST %1$s ARTISTER</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_continuewithXartistsUPP_mobile">
+        <item quantity="one">FORTSETT MED %1$s ARTIST</item>
+        <item quantity="other">FORTSETT MED %1$s ARTISTER</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_deletetheseXplaylists_mobile">
+        <item quantity="one">Slette denne spillelisten?</item>
+        <item quantity="other">Slette disse %1$s spillelistene?</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_playlistsdownloaded_mobile">
+        <item quantity="one">Spilleliste lastet ned!</item>
+        <item quantity="other">Spillelister lastet ned!</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_trackremovedfromfavorite_mobile">
+        <item quantity="one">Denne låten er fjernet fra dine Favorittlåter.</item>
+        <item quantity="other">Disse låtene er fjernet fra dine Favorittlåter.</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xapps_mobile">
+        <item quantity="one">%1$s app</item>
+        <item quantity="other">%1$s apper</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xartists_mobile">
+        <item quantity="one">%1$s artist</item>
+        <item quantity="other">%1$s artister</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xaudiobooks_mobile">
+        <item quantity="one">%1$s lydbok</item>
+        <item quantity="other">%1$s lydbøker</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xchapters_mobile">
+        <item quantity="one">%1$s kapittel</item>
+        <item quantity="other">%1$s kapitler</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xdownloads_mobile">
+        <item quantity="one">%1$s nedlasting</item>
+        <item quantity="other">%1$s nedlastinger</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xepisodes_mobile">
+        <item quantity="one">%1$s episode</item>
+        <item quantity="other">%1$s episoder</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xmixes_mobile">
+        <item quantity="one">%1$s miks</item>
+        <item quantity="other">%1$s mikser</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xnewentries_mobile">
+        <item quantity="one">%1$s nye</item>
+        <item quantity="other">%1$s nye</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xplaylists_mobile">
+        <item quantity="one">%1$s spilleliste</item>
+        <item quantity="other">%1$s spillelister</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xpodcasts_mobile">
+        <item quantity="one">%1$s podkast</item>
+        <item quantity="other">%1$s podkaster</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xtracks_mobile">
+        <item quantity="one">%1$s låt</item>
+        <item quantity="other">%1$s låter</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xunheard_mobile">
+        <item quantity="one">%1$s uhørt låt</item>
+        <item quantity="other">%1$s uhørte låter</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_subtitle_cancelactivesubsbeforedeleting_mobile">
+        <item quantity="one">Du må avslutte et eventuelt aktivt abonnement før du sletter kontoen din.</item>
+        <item quantity="other">Du må avslutte eventuelle aktive abonnementer før du sletter kontoen din.</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingloseaccesstoapps_mobile">
+        <item quantity="one">Ved å slette kontoen din vil du miste tilgang til følgende app:</item>
+        <item quantity="other">Ved å slette kontoen din vil du miste tilgang til følgende apper:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletinglosefollowingsubs_mobile">
+        <item quantity="one">Ved å slette kontoen din vil du miste følgende abonnement:</item>
+        <item quantity="other">Ved å slette kontoen din vil du miste følgende abonnementer:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingyouloseaccessdataandsubs_mobile">
+        <item quantity="one">Ved å slette kontoen din vil du miste all tilgang, data og abonnementer på følgende app:</item>
+        <item quantity="other">Ved å slette kontoen din vil du miste all tilgang, data og abonnementer på følgende apper:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_accountassociatedwithXapps_mobile">
+        <item quantity="one">Kontoen din er tilknyttet %1$s app</item>
+        <item quantity="other">Kontoen din er tilknyttet %1$s apper</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithactivesubs_mobile">
+        <item quantity="one">App med et aktivt abonnement</item>
+        <item quantity="other">Apper med aktive abonnementer</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithoutsubs_mobile">
+        <item quantity="one">App uten et abonnement</item>
+        <item quantity="other">Apper uten abonnementer</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithsubs_mobile">
+        <item quantity="one">App med et abonnement</item>
+        <item quantity="other">Apper med abonnementer</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_subtitle_howaboutXmorefreedays_mobile">
+        <item quantity="one">Hva med %1$s ekstra dag gratis?</item>
+        <item quantity="other">Hva med %1$s ekstra dager gratis?</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_title_planXtrialendsinXdays_mobile">
+        <item quantity="one">Prøveperioden på %1$s er over om %2$s dag</item>
+        <item quantity="other">Prøveperioden på %1$s er over om %2$s dager</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXhours_mobile">
+        <item quantity="one">Av sikkerhetsårsaker kan du prøve på nytt om %1$s time.</item>
+        <item quantity="other">Av sikkerhetsårsaker kan du prøve på nytt om %1$s timer.</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXminutes_mobile">
+        <item quantity="one">Av sikkerhetsårsaker kan du prøve på nytt om %1$s minutt.</item>
+        <item quantity="other">Av sikkerhetsårsaker kan du prøve på nytt om %1$s minutter.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_TCsprivacypolicyforunderXyearold_mobile">
+        <item quantity="one">Ved å aktivere en konto for medlemmer under %1$s år, godtar du at Deezer samler inn og behandler deres personopplysninger slik at de kan bruke tjenesten vår. For mer informasjon kan du lese våre retningslinjer for %2$sPersonvern%3$s</item>
+        <item quantity="other">Ved å aktivere en konto for medlemmer under %1$s år, godtar du at Deezer samler inn og behandler deres personopplysninger slik at de kan bruke tjenesten vår. For mer informasjon kan du lese våre retningslinjer for %2$sPersonvern%3$s</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_onlycontentsuitableforXageandunder_mobile">
+        <item quantity="one">Ved å aktivere dette alternativet vil kun innhold egnet for barn under %1$s år bli vist.</item>
+        <item quantity="other">Ved å aktivere dette alternativet vil kun innhold egnet for barn under %1$s år bli vist.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_underXyearsorkidscannotbeconverted_mobile">
+        <item quantity="one">Du har ikke tilgang til denne profilen. Brukere under %1$s år eller barneprofiler kan ikke endres fra en profil til en uavhengig konto.</item>
+        <item quantity="other">Du har ikke tilgang til denne profilen. Brukere under %1$s år eller barneprofiler kan ikke endres fra en profil til en uavhengig konto.</item>
+    </plurals>
+    <plurals name="dz_familymemberselector_text_Xmembersremaining_mobile">
+        <item quantity="one">%1$s medlem igjen</item>
+        <item quantity="other">%1$s medlemmer igjen</item>
+    </plurals>
+    <plurals name="dz_familyprofileminorconsent_text_termsandconditions_mobile">
+        <item quantity="one">Ved å opprette denne underprofilen for en mindreårig under %1$s år, godtar du at Deezer og deres partnere samler inn og behandler personlige data knyttet til innehaveren for å tilby innhold og tilbud skreddersydd til dennes interesser. For mer informasjon, vennligst gå til våre retningslinjer for personvern.</item>
+        <item quantity="other">Ved å opprette denne underprofilen for en mindreårig under %1$s år, godtar du at Deezer og deres samarbeidspartnere samler inn og behandler personlige data knyttet til innehaveren for å tilby innhold og tilbud skreddersydd til dennes interesser. For mer informasjon, vennligst gå til våre retningslinjer for personvern.</item>
+    </plurals>
+    <plurals name="dz_familyprofileswitcherwelcome_text_Xprofilesremaining_mobile">
+        <item quantity="one">%1$s profil igjen</item>
+        <item quantity="other">%1$s profiler igjen</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_accountcreationagerestriction_mobile">
+        <item quantity="one">Du må være minst %1$s år for å opprette en konto.</item>
+        <item quantity="other">Du må være minst %1$s år for å opprette en konto.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordnotenoughchars_mobile">
+        <item quantity="one">Passordet må inneholde minst %1$s tegn.</item>
+        <item quantity="other">Passordet må inneholde minst %1$s tegn.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordtoomanychars_mobile">
+        <item quantity="one">Passordet kan ikke bestå av mer enn %1$s tegn.</item>
+        <item quantity="other">Passordet kan ikke bestå av mer enn %1$s tegn.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernamenotenoughchars_mobile">
+        <item quantity="one">Brukernavnet må bestå av minst %1$s tegn.</item>
+        <item quantity="other">Brukernavnet må bestå av minst %1$s tegn.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernametoomanychars_mobile">
+        <item quantity="one">Brukernavnet kan ikke bestå av mer enn %1$s tegn.</item>
+        <item quantity="other">Brukernavnet kan ikke bestå av mer enn %1$s tegn.</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xgbleft_mobile">
+        <item quantity="one">%1$s GB igjen</item>
+        <item quantity="other">%1$s GB igjen</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xmbleft_mobile">
+        <item quantity="one">%1$s MB igjen</item>
+        <item quantity="other">%1$s MB igjen</item>
+    </plurals>
+    <plurals name="dz_inprogressplaylistpage_subtitle_duringthelastXdays_mobile">
+        <item quantity="one">Siden i går</item>
+        <item quantity="other">I løpet av de siste %1$s dagene</item>
+    </plurals>
+    <plurals name="dz_masthead_title_episodescountnox_mobile">
+        <item quantity="one">Episode</item>
+        <item quantity="other">Episoder</item>
+    </plurals>
+    <plurals name="dz_masthead_title_fanscountnox_mobile">
+        <item quantity="one">Tilhenger</item>
+        <item quantity="other">Tilhengere</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_Xtrackchangesperhour_mobile">
+        <item quantity="one">I en miks kan du bare bytte låt %1$s gang i timen.</item>
+        <item quantity="other">I en miks kan du bare bytte låt %1$s ganger i timen.</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_changetrackallowedagaininXmin_mobile">
+        <item quantity="one">Du vil kunne bytte låt igjen om %1$s minutt.</item>
+        <item quantity="other">Du vil kunne bytte låt igjen om %1$s minutter.</item>
+    </plurals>
+    <plurals name="dz_mobiletrialtoaster_text_yourXdaytrialhasstarted_mobile">
+        <item quantity="one">Din %1$s-dags prøveperiode har startet</item>
+        <item quantity="other">Din %1$s-dagers prøveperiode har startet</item>
+    </plurals>
+    <plurals name="dz_mymusic_albums_count">
+        <item quantity="one">%1$s album</item>
+        <item quantity="other">%1$s album</item>
+    </plurals>
+    <plurals name="dz_newofferscardsusp_text_getXaccountswithXbenefitsplushifi_mobile">
+        <item quantity="one">Få %1$s individuell konto med både %2$s-fordelene og High Fidelity-lyd.</item>
+        <item quantity="other">Få %1$s individuelle kontoer, alle med både %2$s-fordelene og High Fidelity-lyd.</item>
+    </plurals>
+    <plurals name="dz_offerwall_text_priceXpermonthforXmonths_mobile">
+        <item quantity="one">%1$s/måned for %2$s måned</item>
+        <item quantity="other">%1$s/måned for %2$s måneder</item>
+    </plurals>
+    <plurals name="dz_offlinepodcastplaylist_subtitle_Xdownloadedepisodes_mobile">
+        <item quantity="one">%1$s nedlastet episode</item>
+        <item quantity="other">%1$s nedlastede episoder</item>
+    </plurals>
+    <plurals name="dz_onboardingfirstlikes_action_pickXmoreUPP_mobile">
+        <item quantity="one">VELG %1$s TIL</item>
+        <item quantity="other">VELG %1$s TIL</item>
+    </plurals>
+    <plurals name="dz_onboardingtoastmessage_action_onlyXpickstostart_mobile">
+        <item quantity="one">Oi, sakte i svingene! Vi trenger bare %1$s valg for å komme i gang.</item>
+        <item quantity="other">Oi, sakte i svingene! Vi trenger bare %1$s valg for å komme i gang.</item>
+    </plurals>
+    <plurals name="dz_passwordsecurity_title_Xcharactersmin_mobile">
+        <item quantity="one">Minst %1$s tegn</item>
+        <item quantity="other">Minst %1$s tegn</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_accountalreadylinkedtoXdevices_mobile">
+        <item quantity="one">Kontoen din er allerede koblet til %1$s annen enhet. %2$s-funksjonene vil ikke være tilgjengelig på denne enheten.</item>
+        <item quantity="other">Kontoen din er allerede koblet til %1$s andre enheter. %2$s-funksjonene vil ikke være tilgjengelig på denne enheten.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_maxXdevicesonyoursubcription_mobile">
+        <item quantity="one">Med abonnementet ditt kan du bruke %1$s på maksimalt %2$s enhet.</item>
+        <item quantity="other">Med abonnementet ditt kan du bruke %1$s på maksimalt %2$s enheter.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_nomorethanXdevicesonyoursubcription_mobile">
+        <item quantity="one">Med abonnementet ditt kan du ikke bruke %1$s på mer enn %2$s enhet.</item>
+        <item quantity="other">Med abonnementet ditt kan du ikke bruke %1$s på mer enn %2$s enheter.</item>
+    </plurals>
+    <plurals name="dz_playlist_text_tracksalreadyaddedtotheplaylist_mobile">
+        <item quantity="one">Denne låten er allerede lagt til i spillelisten</item>
+        <item quantity="other">Disse låtene er allerede lagt til i spillelisten</item>
+    </plurals>
+    <plurals name="dz_playlistpage_action_addXtracks_mobile">
+        <item quantity="one">Legg til %1$s låt</item>
+        <item quantity="other">Legg til %1$s låter</item>
+    </plurals>
+    <plurals name="dz_premiumbenefit_text_skipmorethanXtracksperhour_mobile">
+        <item quantity="one">Hopp over mer enn %1$s låt i timen</item>
+        <item quantity="other">Hopp over mer enn %1$s låter i timen</item>
+    </plurals>
+    <plurals name="dz_searchresult_title_topresults_mobile">
+        <item quantity="one">Toppresultat</item>
+        <item quantity="other">Toppresultater</item>
+    </plurals>
+    <plurals name="dz_signupjapanUS_action_tryitfreexmonths_mobile">
+        <item quantity="one">Prøv det gratis i %1$s måned</item>
+        <item quantity="other">Prøv det gratis i %1$s måneder</item>
+    </plurals>
+    <plurals name="dz_skipcounter_text_Xmoretracks_mobile">
+        <item quantity="one">Du kan hoppe %1$s låt til.</item>
+        <item quantity="other">Du kan hoppe over %1$s flere låt.</item>
+    </plurals>
+    <plurals name="dz_sleeptimer_text_sleepinlessthanXminutes_mobile">
+        <item quantity="one">Sovner om under %1$s minutt</item>
+        <item quantity="other">Sovner om under %1$s minutter</item>
+    </plurals>
+    <plurals name="dz_smartcache_text_storemostplayedtracksrecosettoXgb_mobile">
+        <item quantity="one">Smart Cache lagrer de mest spilte låtene, slik at de raskere kan lastes inn igjen. For den beste opplevelsen anbefaler vi å stille den til %1$s GB.</item>
+        <item quantity="other">Smart Cache lagrer de mest spilte låtene, slik at de raskere kan lastes inn igjen. For den beste opplevelsen anbefaler vi å stille den til %1$s GB.</item>
+    </plurals>
+    <plurals name="dz_smartloginandroidtvxboxwelcome_text_thiscodewillexpireinXminutes_mobile">
+        <item quantity="one">Denne koden utløper om %1$s minutt.</item>
+        <item quantity="other">Denne koden utløper om %1$s minutter.</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Followers_mobile">
+        <item quantity="one">Følger</item>
+        <item quantity="other">Følgere</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Following_mobile">
+        <item quantity="one">Følges av deg</item>
+        <item quantity="other">Følges av deg</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfans_mobile">
+        <item quantity="one">%1$s fan</item>
+        <item quantity="other">%1$s fans</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowers_mobile">
+        <item quantity="one">%1$s følger</item>
+        <item quantity="other">%1$s følgere</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowing_mobile">
+        <item quantity="one">%1$s følges av deg</item>
+        <item quantity="other">%1$s følges av deg</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xnotifications_mobile">
+        <item quantity="one">%1$s nytt varsel</item>
+        <item quantity="other">%1$s nye varsler</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xgigabytes_mobile">
+        <item quantity="one">%1$s GB</item>
+        <item quantity="other">%1$s GB</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xmegabytes_mobile">
+        <item quantity="one">%1$s MB</item>
+        <item quantity="other">%1$s MB</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdays_mobile">
+        <item quantity="one">%1$s dag</item>
+        <item quantity="other">%1$s dager</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdaysago_mobile">
+        <item quantity="one">For %1$s dag siden</item>
+        <item quantity="other">For %1$s dager siden</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhours_mobile">
+        <item quantity="one">%1$s time</item>
+        <item quantity="other">%1$s timer</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhoursago_mobile">
+        <item quantity="one">For %1$s time siden</item>
+        <item quantity="other">For %1$s timer siden</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmin_mobile">
+        <item quantity="one">%1$s min</item>
+        <item quantity="other">%1$s min</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_XminleftUPP_mobile">
+        <item quantity="one">%1$s MIN IGJEN</item>
+        <item quantity="other">%1$s MIN IGJEN</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutes_mobile">
+        <item quantity="one">%1$s minutt</item>
+        <item quantity="other">%1$s minutter</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutesago_mobile">
+        <item quantity="one">For %1$s minutt siden</item>
+        <item quantity="other">For %1$s minutter siden</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmonthsago_mobile">
+        <item quantity="one">For %1$s måned siden</item>
+        <item quantity="other">For %1$s måneder siden</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xs_mobile">
+        <item quantity="one">%1$s sek</item>
+        <item quantity="other">%1$s sek</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xweeksago_mobile">
+        <item quantity="one">For %1$s uke siden</item>
+        <item quantity="other">For %1$s uker siden</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xyearsago_mobile">
+        <item quantity="one">For %1$s år siden</item>
+        <item quantity="other">For %1$s år siden</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_alreadyaddedtoplaylist_mobile">
+        <item quantity="one">Allerede lagt til i spillelisten</item>
+        <item quantity="other">Allerede lagt til i spillelisten</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_unlockedXmoreskips_mobile">
+        <item quantity="one">Du kan nå hoppe over %1$s spor til</item>
+        <item quantity="other">Du kan nå hoppe over %1$s spor til</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoplaylisttrack_mobile">
+        <item quantity="one">Lagt til i spilleliste</item>
+        <item quantity="other">Lagt til i spilleliste</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoyourfavoritetrackstrack_mobile">
+        <item quantity="one">Lagt til i dine favorittlåter</item>
+        <item quantity="other">Lagt til i dine favorittlåter</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromplaylist_mobile">
+        <item quantity="one">Fjernet fra spilleliste</item>
+        <item quantity="other">Fjernet fra spilleliste</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromyourfavoritetrackstrack_mobile">
+        <item quantity="one">Fjernet fra dine favorittlåter</item>
+        <item quantity="other">Fjernet fra dine favorittlåter</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_Xdaytrial_mobile">
+        <item quantity="one">%1$s prøvedag</item>
+        <item quantity="other">%1$s prøvedager</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_downloadskipadfreelistening_mobile">
+        <item quantity="one">Last ned dine låter, hopp over sangene du ikke liker og kos deg med reklamefri musikk i %1$s dag.</item>
+        <item quantity="other">Last ned dine låter, hopp over sangene du ikke liker og kos deg med reklamefri musikk i %1$s dager.</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_text_tryXforXdaysfreenocreditcardrequired_mobile">
+        <item quantity="one">Prøv %1$s i %2$s dag gratis - kredittkort er ikke nødvendig!</item>
+        <item quantity="other">Prøv %1$s i %2$s dager gratis - kredittkort er ikke nødvendig!</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXdays_mobile">
+        <item quantity="one">For å bekrefte abonnementet ditt slik at du kan fortsette å bruke Deezer på mobilen må du koble til WiFi eller et mobilnett innen %1$s dag.</item>
+        <item quantity="other">For å bekrefte abonnementet ditt slik at du kan fortsette å bruke Deezer på mobilen må du koble til WiFi eller et mobilnett innen %1$s dager.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXhours_mobile">
+        <item quantity="one">For å bekrefte abonnementet ditt slik at du kan fortsette å bruke Deezer på mobilen må du koble til WiFi eller et mobilnett innen %1$s time.</item>
+        <item quantity="other">For å bekrefte abonnementet ditt slik at du kan fortsette å bruke Deezer på mobilen må du koble til WiFi eller et mobilnett innen %1$s timer.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXminutes_mobile">
+        <item quantity="one">For å bekrefte abonnementet ditt slik at du kan fortsette å bruke Deezer på mobilen må du koble til WiFi eller et mobilnett innen %1$s minutt.</item>
+        <item quantity="other">For å bekrefte abonnementet ditt slik at du kan fortsette å bruke Deezer på mobilen må du koble til WiFi eller et mobilnett innen %1$s minutter.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Spol %d sekund fremover</item>
+        <item quantity="other">Spol %d sekunder fremover</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Spol %d sekund bakover</item>
+        <item quantity="other">Spol %d sekunder bakover</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nytt varsel</item>
+        <item quantity="other">%d nye varsler</item>
+    </plurals>
+</resources>

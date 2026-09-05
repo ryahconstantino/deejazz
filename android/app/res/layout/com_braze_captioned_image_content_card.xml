@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/Braze.ContentCards.CaptionedImage.Root"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/com_braze_content_cards_captioned_image_card_image_container" style="@style/Braze.ContentCards.CaptionedImage.ImageContainer">
+        <ImageView android:id="@id/com_braze_content_cards_captioned_image_card_image" style="@style/Braze.ContentCards.CaptionedImage.Image" />
+    </RelativeLayout>
+    <ImageView android:id="@id/com_braze_content_cards_pinned_icon" style="@style/Braze.ContentCards.PinnedIcon.CaptionedImage" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Braze.ContentCards.CaptionedImage.Container">
+        <TextView android:id="@id/com_braze_content_cards_captioned_image_title" style="@style/Braze.ContentCards.CaptionedImage.Title" />
+        <TextView android:id="@id/com_braze_content_cards_captioned_image_description" style="@style/Braze.ContentCards.CaptionedImage.Description" />
+        <TextView android:id="@id/com_braze_content_cards_action_hint" style="@style/Braze.ContentCards.ActionHint.CaptionedImage" />
+    </RelativeLayout>
+    <View android:id="@id/com_braze_content_cards_unread_bar" style="@style/Braze.ContentCards.UnreadBar.CaptionedImage" />
+</RelativeLayout>

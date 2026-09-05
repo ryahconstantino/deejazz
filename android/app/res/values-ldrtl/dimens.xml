@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="player_collapsed_text_margin">8.0dp</dimen>
+</resources>

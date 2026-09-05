@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@android:interpolator/fast_out_slow_in" android:duration="@integer/icon_sharing_animation_duration_in" android:startOffset="2700" android:valueFrom="0" android:valueTo="1" android:propertyName="fillAlpha" />
+</set>

@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dz_SMScoderesentconfirmationscreen_text_XSMScodesleft_mobile">
+        <item quantity="zero">باقي</item>
+        <item quantity="one">%1$s كود تتلقاه بواسطة رسالة نصية متبقٍ</item>
+        <item quantity="two">%1$s كودين تتلقاهما بواسطة رسالة نصية متبقيين</item>
+        <item quantity="few">%1$s أكواد تتلقاها بواسطة رسالة نصية متبقٍ</item>
+        <item quantity="many">%1$s كودا تتلقاه بواسطة رسالة نصية متبقٍ</item>
+        <item quantity="other">%1$s كود متبقٍ</item>
+    </plurals>
+    <plurals name="dz_agerestrictionerrormessage_text_mustbeXyearsentervaliddate_mobile">
+        <item quantity="zero">يجب أن يكون عمرك %1$s عام على الأقل لاستخدام حساب Deezer. يرجى إدخال تاريخ صالح.</item>
+        <item quantity="one">يجب أن يكون عمرك %1$s عام على الأقل لاستخدام حساب Deezer. يرجى إدخال تاريخ صالح.</item>
+        <item quantity="two">يجب أن يكون عمرك %1$s عامين على الأقل لاستخدام حساب Deezer. يرجى إدخال تاريخ صالح.</item>
+        <item quantity="few">يجب أن يكون عمرك %1$s أعوام على الأقل لاستخدام حساب Deezer. يرجى إدخال تاريخ صالح.</item>
+        <item quantity="many">يجب أن يكون عمرك %1$s عامًا على الأقل لاستخدام حساب Deezer. يرجى إدخال تاريخ صالح.</item>
+        <item quantity="other">يجب أن يكون عمرك %1$s عامًا على الأقل لاستخدام حساب Deezer. يرجى إدخال تاريخ صالح.</item>
+    </plurals>
+    <plurals name="dz_androidtv_text_profilenumberlimitreached_mobile">
+        <item quantity="zero">لقد وصلت إلى الحد الأقصى البالغ %1$s ملف تعريف. يُرجى حذف أحد ملفات التعريف للمتابعة.</item>
+        <item quantity="one">لقد وصلت إلى الحد الأقصى البالغ ملف تعريف واحد. يُرجى حذف أحد ملفات التعريف للمتابعة.</item>
+        <item quantity="two">لقد وصلت إلى الحد الأقصى البالغ ملفي تعريف. يُرجى حذف أحد ملفات التعريف للمتابعة.</item>
+        <item quantity="few">لقد وصلت إلى الحد الأقصى البالغ %1$s ملفات تعريف. يُرجى حذف أحد ملفات التعريف للمتابعة.</item>
+        <item quantity="many">لقد وصلت إلى الحد الأقصى البالغ %1$s ملف تعريف. يُرجى حذف أحد ملفات التعريف للمتابعة.</item>
+        <item quantity="other">وصلت إلى الحد الأقصى من الحسابات الفرعية والبالغ عددها %1$s . يُرجى حذف أحد الحسابات الفرعية للمتابعة.</item>
+    </plurals>
+    <plurals name="dz_androidtvlandingpage_text_morethanXmilliontracksacrossallgenres_mobile">
+        <item quantity="zero">أكثر من %1$s مليون أغنية من كل الأنواع الموسيقية</item>
+        <item quantity="one">أكثر من مليون أغنية من كل الأنواع الموسيقية</item>
+        <item quantity="two">أكثر من مليوني أغنية من كل الأنواع الموسيقية</item>
+        <item quantity="few">أكثر من %1$s ملايين أغنية من كل الأنواع الموسيقية</item>
+        <item quantity="many">أكثر من %1$s مليون أغنية من كل الأنواع الموسيقية</item>
+        <item quantity="other">أكثر من %1$s مليون أغنية من كل الأنواع الموسيقية</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseXmoreartistsUPP_mobile">
+        <item quantity="zero">اختر %1$s فنان آخرٍ</item>
+        <item quantity="one">اختر %1$s فنان آخرٍ</item>
+        <item quantity="two">اختر %1$s فنانيْن آخريْن</item>
+        <item quantity="few">اختر %1$s فنانين آخرين</item>
+        <item quantity="many">اختر %1$s فناناً آخراً</item>
+        <item quantity="other">اختر %1$s فنان آخرٍ</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseatleastXartistsUPP_mobile">
+        <item quantity="zero">اختر على الأقل %1$s فنان</item>
+        <item quantity="one">اختر على الأقل %1$s فنان</item>
+        <item quantity="two">اختر على الأقل %1$s فنانيْن</item>
+        <item quantity="few">اختر على الأقل %1$s فنانين</item>
+        <item quantity="many">اختر على الأقل %1$s فناناً</item>
+        <item quantity="other">اختر على الأقل %1$s فنان</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_continuewithXartistsUPP_mobile">
+        <item quantity="zero">واصل مع %1$s فنان</item>
+        <item quantity="one">واصل مع %1$s فنان</item>
+        <item quantity="two">واصل مع %1$s فنانيْن</item>
+        <item quantity="few">واصل مع %1$s فنانين</item>
+        <item quantity="many">واصل مع %1$s فناناً</item>
+        <item quantity="other">واصل مع %1$s فنان</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_deletetheseXplaylists_mobile">
+        <item quantity="zero">تريد حذف %1$s قائمة الأغاني هذه؟</item>
+        <item quantity="one">تريد حذف %1$s قائمة الأغاني هذه؟</item>
+        <item quantity="two">تريد حذف %1$s قائمتي أغاني هذه؟</item>
+        <item quantity="few">تريد حذف %1$s قائمة أغاني هذه؟</item>
+        <item quantity="many">تريد حذف %1$s قائمة أغاني هذه؟</item>
+        <item quantity="other">تريد حذف %1$s قائمة أغاني هذه؟</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_playlistsdownloaded_mobile">
+        <item quantity="zero">تم تنزيل قائمة الأغاني!</item>
+        <item quantity="one">تم تنزيل قائمة الأغاني!</item>
+        <item quantity="two">تم تنزيل قائمتي الأغاني!</item>
+        <item quantity="few">تم تنزيل قوائم الأغاني!</item>
+        <item quantity="many">قوائم أغانٍ تم تنزيلها!</item>
+        <item quantity="other">تم تنزيل قوائم الأغاني!</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_trackremovedfromfavorite_mobile">
+        <item quantity="zero">تمت إزالة هذه الأغنية من قائمة أغانيك المفضلة.</item>
+        <item quantity="one">تمت إزالة هذه الأغنية من قائمة أغانيك المفضلة.</item>
+        <item quantity="two">تمت إزالة هاتين الأغنيتين من قائمة أغانيك المفضلة.</item>
+        <item quantity="few">تمت إزالة هذه الأغاني من قائمة أغانيك المفضلة.</item>
+        <item quantity="many">تمت إزالة هذه الأغاني من قائمة أغانيك المفضلة.</item>
+        <item quantity="other">تمت إزالة هذه الأغاني من قسم \"الأغاني المفضلة\" لديك.</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xapps_mobile">
+        <item quantity="zero">%1$s تطبيق</item>
+        <item quantity="one">تطبيق واحد</item>
+        <item quantity="two">تطبيقان</item>
+        <item quantity="few">%1$s تطبيقات</item>
+        <item quantity="many">%1$s تطبيقاً</item>
+        <item quantity="other">%1$s تطبيق</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xartists_mobile">
+        <item quantity="zero">%1$s فنان</item>
+        <item quantity="one">فنان واحد</item>
+        <item quantity="two">فنانان</item>
+        <item quantity="few">%1$s فنانين</item>
+        <item quantity="many">%1$s فناناً</item>
+        <item quantity="other">%1$s فنان</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xaudiobooks_mobile">
+        <item quantity="zero">%1$s كتاب صوتي</item>
+        <item quantity="one">كتاب صوتي واحد</item>
+        <item quantity="two">كتابان صوتيان</item>
+        <item quantity="few">%1$s كتب صوتية</item>
+        <item quantity="many">%1$s كتاباً صوتياً</item>
+        <item quantity="other">%1$s كتاب صوتي</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xchapters_mobile">
+        <item quantity="zero">%1$s فصل</item>
+        <item quantity="one">فصل واحد</item>
+        <item quantity="two">فصلان</item>
+        <item quantity="few">%1$s فصول</item>
+        <item quantity="many">%1$s فصلاً</item>
+        <item quantity="other">%1$s فصل</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xdownloads_mobile">
+        <item quantity="zero">%1$s وسيط مُنزَّل</item>
+        <item quantity="one">وسيط واحد مُنزَّل</item>
+        <item quantity="two">وسيطان مُنزَّلان</item>
+        <item quantity="few">%1$s وسائط مُنزَّلة</item>
+        <item quantity="many">%1$s وسيطاً مُنزَّلاً</item>
+        <item quantity="other">%1$s وسيط مُنزَّل</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xepisodes_mobile">
+        <item quantity="zero">%1$s حلقة</item>
+        <item quantity="one">حلقة واحدة</item>
+        <item quantity="two">حلقتان</item>
+        <item quantity="few">%1$s حلقات</item>
+        <item quantity="many">%1$s حلقة</item>
+        <item quantity="other">%1$s حلقة</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xmixes_mobile">
+        <item quantity="zero">%1$s ميكس</item>
+        <item quantity="one">ميكس واحد</item>
+        <item quantity="two">ميكسان</item>
+        <item quantity="few">%1$s ميكسات</item>
+        <item quantity="many">%1$s ميكس</item>
+        <item quantity="other">%1$s ميكسات</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xnewentries_mobile">
+        <item quantity="zero">%1$s أغنية جديدة</item>
+        <item quantity="one">أغنية واحدة جديدة</item>
+        <item quantity="two">أغنيتان جديدتان</item>
+        <item quantity="few">%1$s أغانٍ جديدة</item>
+        <item quantity="many">%1$s أغنية جديدة</item>
+        <item quantity="other">%1$s أغنية جديدة</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xplaylists_mobile">
+        <item quantity="zero">%1$s قائمة أغانٍ</item>
+        <item quantity="one">قائمة أغانٍ واحدة</item>
+        <item quantity="two">قائمتا أغانٍ</item>
+        <item quantity="few">%1$s قوائم أغانٍ</item>
+        <item quantity="many">%1$s قائمة أغانٍ</item>
+        <item quantity="other">%1$s قائمة أغانٍ</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xpodcasts_mobile">
+        <item quantity="zero">%1$s بودكاست</item>
+        <item quantity="one">بودكاست واحد</item>
+        <item quantity="two">%1$s بودكاست</item>
+        <item quantity="few">%1$s بودكاست</item>
+        <item quantity="many">%1$s بودكاست</item>
+        <item quantity="other">%1$s بودكاست</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xtracks_mobile">
+        <item quantity="zero">%1$s أغنية</item>
+        <item quantity="one">أغنية واحدة</item>
+        <item quantity="two">أغنيتان</item>
+        <item quantity="few">%1$s أغانٍ</item>
+        <item quantity="many">%1$s أغنية</item>
+        <item quantity="other">%1$s أغنية</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xunheard_mobile">
+        <item quantity="zero">%1$s حلقة لم تستمع إليها</item>
+        <item quantity="one">حلقة واحدة لم تستمع إليها</item>
+        <item quantity="two">حلقتان لم تستمع إليهما</item>
+        <item quantity="few">%1$s حلقات لم تستمع إليها</item>
+        <item quantity="many">%1$s حلقة لم تستمع إليها</item>
+        <item quantity="other">%1$s حلقة لم تستمع إليها</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_subtitle_cancelactivesubsbeforedeleting_mobile">
+        <item quantity="zero">يجب عليك إلغاء أي اشتراك مفعّل قبل حذف حسابك.</item>
+        <item quantity="one">يجب عليك إلغاء أي اشتراك مفعّل قبل حذف حسابك.</item>
+        <item quantity="two">يجب عليك إلغاء أي اشتراكين مفعّلين قبل حذف حسابك.</item>
+        <item quantity="few">يجب عليك إلغاء أية اشتراكات مفعّلة قبل حذف حسابك.</item>
+        <item quantity="many">يجب عليك إلغاء أي اشتراك مفعّل قبل حذف حسابك.</item>
+        <item quantity="other">يجب عليك إلغاء أي اشتراك مفعّل قبل حذف حسابك.</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingloseaccesstoapps_mobile">
+        <item quantity="zero">بحذف حسابك، ستفقد إمكانية الوصول إلى التطبيق التالي:</item>
+        <item quantity="one">بحذف حسابك، ستفقد إمكانية الوصول إلى التطبيق التالي:</item>
+        <item quantity="two">بحذف حسابك، ستفقد إمكانية الوصول إلى التطبيقين التاليين:</item>
+        <item quantity="few">بحذف حسابك، ستفقد إمكانية الوصول إلى التطبيقات التالية:</item>
+        <item quantity="many">بحذف حسابك، ستفقد إمكانية الوصول إلى التطبيق التالي:</item>
+        <item quantity="other">بحذف حسابك، ستفقد إمكانية الوصول إلى التطبيق التالي:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletinglosefollowingsubs_mobile">
+        <item quantity="zero">بحذف حسابك، ستفقد الاشتراك التالي:</item>
+        <item quantity="one">بحذف حسابك، ستفقد الاشتراك التالي:</item>
+        <item quantity="two">بحذف حسابك، ستفقد الاشتراكين التاليين:</item>
+        <item quantity="few">بحذف حسابك، ستفقد الاشتراكات التالية:</item>
+        <item quantity="many">بحذف حسابك، ستفقد الاشتراك التالي:</item>
+        <item quantity="other">بحذف حسابك، ستفقد الاشتراك التالي:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingyouloseaccessdataandsubs_mobile">
+        <item quantity="zero">بحذف حسابك، ستفقد إمكانية الوصول إلى كل شيء وإلى بياناتك واشتراكاتك في التطبيق التالي:</item>
+        <item quantity="one">بحذف حسابك، ستفقد إمكانية الوصول إلى كل شيء وإلى بياناتك واشتراكاتك في التطبيق التالي:</item>
+        <item quantity="two">بحذف حسابك، ستفقد إمكانية الوصول إلى كل شيء وإلى بياناتك واشتراكاتك في التطبيقين التاليين:</item>
+        <item quantity="few">بحذف حسابك، ستفقد إمكانية الوصول إلى كل شيء وإلى بياناتك واشتراكاتك في التطبيقات التالية:</item>
+        <item quantity="many">بحذف حسابك، ستفقد إمكانية الوصول إلى كل شيء وإلى بياناتك واشتراكاتك في التطبيق التالي:</item>
+        <item quantity="other">بحذف حسابك، ستفقد إمكانية الوصول إلى كل شيء وإلى بياناتك واشتراكاتك في التطبيق التالي:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_accountassociatedwithXapps_mobile">
+        <item quantity="zero">حسابك مرتبط بـ %1$s تطبيق</item>
+        <item quantity="one">حسابك مرتبط بـ %1$s تطبيق</item>
+        <item quantity="two">حسابك مرتبط بـ %1$s تطبيقين</item>
+        <item quantity="few">حسابك مرتبط بـ %1$s تطبيقات</item>
+        <item quantity="many">حسابك مرتبط بـ %1$s تطبيقاً</item>
+        <item quantity="other">حسابك مرتبط بـ %1$s تطبيق</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithactivesubs_mobile">
+        <item quantity="zero">التطبيقات التي لها اشتراك مفعّل</item>
+        <item quantity="one">التطبيقات التي لها اشتراك مفعّل</item>
+        <item quantity="two">التطبيقات التي لها اشتراكين مفعّلين</item>
+        <item quantity="few">التطبيقات التي لها اشتراكات مفعّلة</item>
+        <item quantity="many">التطبيقات التي لها اشتراك مفعّل</item>
+        <item quantity="other">التطبيقات التي لها اشتراك مفعّل</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithoutsubs_mobile">
+        <item quantity="zero">التطبيقات التي ليس لها اشتراك</item>
+        <item quantity="one">التطبيقات التي ليس لها اشتراك</item>
+        <item quantity="two">التطبيقات التي ليس لها اشتراكين</item>
+        <item quantity="few">التطبيقات التي ليس لها اشتراكات</item>
+        <item quantity="many">التطبيقات التي ليس لها اشتراك</item>
+        <item quantity="other">التطبيقات التي ليس لها اشتراك</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithsubs_mobile">
+        <item quantity="zero">التطبيقات التي لها اشتراك</item>
+        <item quantity="one">التطبيقات التي لها اشتراك</item>
+        <item quantity="two">التطبيقات التي لها اشتراكين</item>
+        <item quantity="few">التطبيقات التي لها اشتراكات</item>
+        <item quantity="many">التطبيقات التي لها اشتراك</item>
+        <item quantity="other">التطبيقات التي لها اشتراك</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_subtitle_howaboutXmorefreedays_mobile">
+        <item quantity="zero">ما رأيك في %1$s يوم إضافي مجاناً؟</item>
+        <item quantity="one">ما رأيك في يوم واحد إضافي مجاناً؟</item>
+        <item quantity="two">ما رأيك في يومين إضافيين مجاناً؟</item>
+        <item quantity="few">ما رأيك في %1$s أيام إضافية مجاناً؟</item>
+        <item quantity="many">ما رأيك في %1$s يوماً إضافياً مجاناً؟</item>
+        <item quantity="other">ما رأيك في %1$s يوم إضافي مجاناً؟</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_title_planXtrialendsinXdays_mobile">
+        <item quantity="zero">تنتهي تجربتك المجانية لخدمة %1$s بعد %2$s يوم</item>
+        <item quantity="one">تنتهي تجربتك المجانية لخدمة %1$s بعد يوم واحد</item>
+        <item quantity="two">تنتهي تجربتك المجانية لخدمة %1$s بعد يومين</item>
+        <item quantity="few">تنتهي تجربتك المجانية لخدمة %1$s بعد %2$s أيام</item>
+        <item quantity="many">تنتهي تجربتك المجانية لخدمة %1$s بعد %2$s يوماً</item>
+        <item quantity="other">تنتهي تجربتك المجانية لخدمة %1$s بعد %2$s يوم</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXhours_mobile">
+        <item quantity="zero">لأسباب تتعلق بالأمان، يمكنك المحاولة ثانية في غضون %1$s ساعة.</item>
+        <item quantity="one">لأسباب تتعلق بالأمان، يمكنك المحاولة ثانية في غضون %1$s ساعة.</item>
+        <item quantity="two">لأسباب تتعلق بالأمان، يمكنك المحاولة ثانية في غضون %1$s ساعتين.</item>
+        <item quantity="few">لأسباب تتعلق بالأمان، يمكنك المحاولة ثانية في غضون %1$s ساعات.</item>
+        <item quantity="many">لأسباب تتعلق بالأمان، يمكنك المحاولة ثانية في غضون %1$s ساعةً.</item>
+        <item quantity="other">لأسباب تتعلق بالأمان، يمكنك المحاولة ثانية في غضون %1$s ساعةٍ.</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXminutes_mobile">
+        <item quantity="zero">لأسباب تتعلق بالأمان، يمكنك المحاولة ثانية في غضون %1$s دقيقة.</item>
+        <item quantity="one">لأسباب تتعلق بالأمان، يمكنك المحاولة ثانية في غضون %1$s دقيقة.</item>
+        <item quantity="two">لأسباب تتعلق بالأمان، يمكنك المحاولة ثانية في غضون %1$s دقيقة.</item>
+        <item quantity="few">لأسباب تتعلق بالأمان، يمكنك المحاولة ثانية في غضون %1$s دقيقتين.</item>
+        <item quantity="many">لأسباب تتعلق بالأمان، يمكنك المحاولة ثانية في غضون %1$s دقيقةً.</item>
+        <item quantity="other">لأسباب تتعلق بالأمان، يمكنك المحاولة ثانية في غضون %1$s دقيقةٍ.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_TCsprivacypolicyforunderXyearold_mobile">
+        <item quantity="zero">من خلال تفعيل حساب للمشتركين الذين تقل أعمارهم عن %1$s عام، فإنك توافق على أن يقوم Deezer بتجميع بياناتهم الشخصية وإدارتها حتى يتمكنوا من استخدام خدمتنا. للحصول على مزيد من المعلومات، يمكنك قراءة %2$sسياسة الخصوصية%3$s الخاصة بنا</item>
+        <item quantity="one">من خلال تفعيل حساب للمشتركين الذين تقل أعمارهم عن %1$s عام، فإنك توافق على أن يقوم Deezer بتجميع بياناتهم الشخصية وإدارتها حتى يتمكنوا من استخدام خدمتنا. للحصول على مزيد من المعلومات، يمكنك قراءة %2$sسياسة الخصوصية%3$s الخاصة بنا</item>
+        <item quantity="two">من خلال تفعيل حساب للمشتركين الذين تقل أعمارهم عن %1$s عامين، فإنك توافق على أن يقوم Deezer بتجميع بياناتهم الشخصية وإدارتها حتى يتمكنوا من استخدام خدمتنا. للحصول على مزيد من المعلومات، يمكنك قراءة %2$sسياسة الخصوصية%3$s الخاصة بنا</item>
+        <item quantity="few">من خلال تفعيل حساب للمشتركين الذين تقل أعمارهم عن %1$s أعوام، فإنك توافق على أن يقوم Deezer بتجميع بياناتهم الشخصية وإدارتها حتى يتمكنوا من استخدام خدمتنا. للحصول على مزيد من المعلومات، يمكنك قراءة %2$sسياسة الخصوصية%3$s الخاصة بنا</item>
+        <item quantity="many">من خلال تفعيل حساب للمشتركين الذين تقل أعمارهم عن %1$s عامًا، فإنك توافق على أن يقوم Deezer بتجميع بياناتهم الشخصية وإدارتها حتى يتمكنوا من استخدام خدمتنا. للحصول على مزيد من المعلومات، يمكنك قراءة %2$sسياسة الخصوصية%3$s الخاصة بنا</item>
+        <item quantity="other">من خلال تفعيل حساب للمشتركين الذين تقل أعمارهم عن %1$s عام، فإنك توافق على أن يقوم Deezer بتجميع بياناتهم الشخصية وإدارتها حتى يتمكنوا من استخدام خدمتنا. للحصول على مزيد من المعلومات، يمكنك قراءة %2$sسياسة الخصوصية%3$s الخاصة بنا</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_onlycontentsuitableforXageandunder_mobile">
+        <item quantity="zero">من خلال تفعيل هذا الخيار، لن يتم عرض سوى المحتوى المناسب للأعمار التي تبلغ %1$s عام وما دون ذلك.</item>
+        <item quantity="one">من خلال تفعيل هذا الخيار، لن يتم عرض سوى المحتوى المناسب للأعمار التي تبلغ %1$s عام وما دون ذلك.</item>
+        <item quantity="two">من خلال تفعيل هذا الخيار، لن يتم عرض سوى المحتوى المناسب للأعمار التي تبلغ %1$s عامين وما دون ذلك.</item>
+        <item quantity="few">من خلال تفعيل هذا الخيار، لن يتم عرض سوى المحتوى المناسب للأعمار التي تبلغ %1$s أعوام وما دون ذلك.</item>
+        <item quantity="many">من خلال تفعيل هذا الخيار، لن يتم عرض سوى المحتوى المناسب للأعمار التي تبلغ %1$s عامًا وما دون ذلك.</item>
+        <item quantity="other">من خلال تفعيل هذا الخيار، لن يتم عرض سوى المحتوى المناسب للأعمار التي تبلغ %1$s عام وما دون ذلك.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_underXyearsorkidscannotbeconverted_mobile">
+        <item quantity="zero">لا يمكنك الوصول إلى هذا الحساب الفرعي. لا يمكن تحويل المستخدمين الذين تقل أعمارهم عن %1$s عام أو الحسابات الفرعي للأطفال من حساب فرعي إلى حساب مستقل.</item>
+        <item quantity="one">لا يمكنك الوصول إلى هذا الحساب الفرعي. لا يمكن تحويل المستخدمين الذين تقل أعمارهم عن %1$s عام أو الحسابات الفرعي للأطفال من حساب فرعي إلى حساب مستقل.</item>
+        <item quantity="two">لا يمكنك الوصول إلى هذا الحساب الفرعي. لا يمكن تحويل المستخدمين الذين تقل أعمارهم عن %1$s عامين أو الحسابات الفرعي للأطفال من حساب فرعي إلى حساب مستقل.</item>
+        <item quantity="few">لا يمكنك الوصول إلى هذا الحساب الفرعي. لا يمكن تحويل المستخدمين الذين تقل أعمارهم عن %1$s أعوام أو الحسابات الفرعي للأطفال من حساب فرعي إلى حساب مستقل.</item>
+        <item quantity="many">لا يمكنك الوصول إلى هذا الحساب الفرعي. لا يمكن تحويل المستخدمين الذين تقل أعمارهم عن %1$s عاما أو الحسابات الفرعي للأطفال من حساب فرعي إلى حساب مستقل.</item>
+        <item quantity="other">لا يمكنك الوصول إلى هذا الحساب الفرعي. لا يمكن تحويل المستخدمين الذين تقل أعمارهم عن %1$s عام أو الحسابات الفرعي للأطفال من حساب فرعي إلى حساب مستقل.</item>
+    </plurals>
+    <plurals name="dz_familymemberselector_text_Xmembersremaining_mobile">
+        <item quantity="zero">%1$s فرد متبقي</item>
+        <item quantity="one">%1$s فرد متبقي</item>
+        <item quantity="two">%1$s فردين متبقين</item>
+        <item quantity="few">%1$s أفراد متبقين</item>
+        <item quantity="many">%1$s فرداً متبقياً</item>
+        <item quantity="other">%1$s فرد متبقي</item>
+    </plurals>
+    <plurals name="dz_familyprofileminorconsent_text_termsandconditions_mobile">
+        <item quantity="zero">من خلال إنشاء هذا الحساب الفرعي للقاصر دون %1$s عام، فإنك تقبل أن يقوم Deezer وشركائه بجمع ومعالجة البيانات الشخصية المرتبطة بحاملها لتقديم محتوى وعروض مصممة خصيصًا لتلبية اهتماماته. لمزيد من المعلومات يرجى الاطلاع على سياسة الخصوصية الخاصة بنا.</item>
+        <item quantity="one">من خلال إنشاء هذا الحساب الفرعي للقاصر دون %1$s عام، فإنك تقبل أن يقوم Deezer وشركائه بجمع ومعالجة البيانات الشخصية المرتبطة بحاملها لتقديم محتوى وعروض مصممة خصيصًا لتلبية اهتماماته. لمزيد من المعلومات يرجى الاطلاع على سياسة الخصوصية الخاصة بنا.</item>
+        <item quantity="two">من خلال إنشاء هذا الحساب الفرعي للقاصر دون %1$s عامين، فإنك تقبل أن يقوم Deezer وشركائه بجمع ومعالجة البيانات الشخصية المرتبطة بحاملها لتقديم محتوى وعروض مصممة خصيصًا لتلبية اهتماماته. لمزيد من المعلومات يرجى الاطلاع على سياسة الخصوصية الخاصة بنا.</item>
+        <item quantity="few">من خلال إنشاء هذا الحساب الفرعي للقاصر دون %1$s أعوام، فإنك تقبل أن يقوم Deezer وشركائه بجمع ومعالجة البيانات الشخصية المرتبطة بحاملها لتقديم محتوى وعروض مصممة خصيصًا لتلبية اهتماماته. لمزيد من المعلومات يرجى الاطلاع على سياسة الخصوصية الخاصة بنا.</item>
+        <item quantity="many">من خلال إنشاء هذا الحساب الفرعي للقاصر دون %1$s عاما، فإنك تقبل أن يقوم Deezer وشركائه بجمع ومعالجة البيانات الشخصية المرتبطة بحاملها لتقديم محتوى وعروض مصممة خصيصًا لتلبية اهتماماته. لمزيد من المعلومات يرجى الاطلاع على سياسة الخصوصية الخاصة بنا.</item>
+        <item quantity="other">من خلال إنشاء هذا الحساب الفرعي للقاصر دون %1$s عام، فإنك تقبل أن تقوم Deezer وشركائها بجمع ومعالجة البيانات الشخصية المرتبطة بحاملها لتقديم محتوى وعروض مصمّمة خصيصاً لتلبية اهتماماته. لمزيد من المعلومات يرجى الاطلاع على سياسة الخصوصية الخاصة بنا.</item>
+    </plurals>
+    <plurals name="dz_familyprofileswitcherwelcome_text_Xprofilesremaining_mobile">
+        <item quantity="zero">%1$s حساب فرعي متبقي</item>
+        <item quantity="one">تبقّ حساب فرعي واحد</item>
+        <item quantity="two">تبقّ حسابان فرعيان</item>
+        <item quantity="few">%1$s حسابات فرعية متبقية</item>
+        <item quantity="many">%1$s حسابات فرعية متبقية</item>
+        <item quantity="other">%1$s حساب فرعي متبقي</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_accountcreationagerestriction_mobile">
+        <item quantity="zero">يجب أن يكون عمرك %1$s عام على الأقل لإنشاء حساب.</item>
+        <item quantity="one">يجب أن يكون عمرك عام واحد على الأقل لتتمكن من إنشاء حساب.</item>
+        <item quantity="two">يجب أن يكون عمرك عامان على الأقل لتتمكن من إنشاء حساب.</item>
+        <item quantity="few">يجب أن يكون عمرك %1$s أعوام على الأقل لتتمكن من إنشاء حساب.</item>
+        <item quantity="many">يجب أن يكون عمرك %1$s عاماً على الأقل لتتمكن من إنشاء حساب.</item>
+        <item quantity="other">يجب أن يكون عمرك %1$s عام على الأقل لتتمكن من إنشاء حساب.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordnotenoughchars_mobile">
+        <item quantity="zero">يجب أن تتألف كلمة السر الخاصة بك من %1$s رمز على الأقل.</item>
+        <item quantity="one">يجب أن تتألف كلمة السر الخاصة بك من %1$s رمز على الأقل.</item>
+        <item quantity="two">يجب أن تتألف كلمة السر الخاصة بك من %1$s رمزين على الأقل.</item>
+        <item quantity="few">يجب أن تتألف كلمة السر الخاصة بك من %1$s رموز على الأقل.</item>
+        <item quantity="many">يجب أن تتألف كلمة السر الخاصة بك من %1$s رمزاً على الأقل.</item>
+        <item quantity="other">يجب أن تتألف كلمة السر الخاصة بك من %1$s رمز على الأقل.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordtoomanychars_mobile">
+        <item quantity="zero">يجب ألّا تضم كلمة السر أكثر من %1$s حرف.</item>
+        <item quantity="one">يجب ألّا تضم كلمة السر أكثر من حرف واحد.</item>
+        <item quantity="two">يجب ألّا تضم كلمة السر أكثر من حرفين.</item>
+        <item quantity="few">يجب ألّا تضم كلمة السر أكثر من %1$s أحرف.</item>
+        <item quantity="many">يجب ألّا تضم كلمة السر أكثر من %1$s حرفاً.</item>
+        <item quantity="other">يجب ألّا تضم كلمة السر أكثر من %1$s حرف.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernamenotenoughchars_mobile">
+        <item quantity="zero">يجب أن يتألف اسم المستخدم من %1$s حرف على الأقل.</item>
+        <item quantity="one">يجب أن يتألف اسم المستخدم من حرف واحد على الأقل.</item>
+        <item quantity="two">يجب أن يتألف اسم المستخدم من حرفين على الأقل.</item>
+        <item quantity="few">يجب أن يتألف اسم المستخدم من %1$s أحرف على الأقل.</item>
+        <item quantity="many">يجب أن يتألف اسم المستخدم من %1$s حرفاً على الأقل.</item>
+        <item quantity="other">يجب أن يتألف اسم المستخدم من %1$s حرف على الأقل.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernametoomanychars_mobile">
+        <item quantity="zero">يجب ألّا يضم اسم المستخدم أكثر من %1$s حرف.</item>
+        <item quantity="one">يجب ألّا يضم اسم المستخدم أكثر من حرف واحد.</item>
+        <item quantity="two">يجب ألّا يضم اسم المستخدم أكثر من حرفين.</item>
+        <item quantity="few">يجب ألّا يضم اسم المستخدم أكثر من %1$s أحرف.</item>
+        <item quantity="many">يجب ألّا يضم اسم المستخدم أكثر من %1$s حرفًا.</item>
+        <item quantity="other">يجب ألّا يضم اسم المستخدم أكثر من %1$s حرف.</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xgbleft_mobile">
+        <item quantity="zero">%1$s جيجابايت متبقية</item>
+        <item quantity="one">%1$s جيجابايت متبقية</item>
+        <item quantity="two">%1$s جيجابايت متبقية</item>
+        <item quantity="few">%1$s جيجابايت متبقية</item>
+        <item quantity="many">%1$s جيجابايت متبقية</item>
+        <item quantity="other">%1$s جيجابايت متبقية</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xmbleft_mobile">
+        <item quantity="zero">%1$s ميغابايت متبقية</item>
+        <item quantity="one">%1$s ميغابايت متبقية</item>
+        <item quantity="two">%1$s ميغابايت متبقية</item>
+        <item quantity="few">%1$s ميغابايت متبقية</item>
+        <item quantity="many">%1$s ميغابايت متبقية</item>
+        <item quantity="other">%1$s ميغابايت متبقية</item>
+    </plurals>
+    <plurals name="dz_inprogressplaylistpage_subtitle_duringthelastXdays_mobile">
+        <item quantity="zero">منذ الأمس</item>
+        <item quantity="one">منذ الأمس</item>
+        <item quantity="two">خلال %1$s اليومين الأخيرين</item>
+        <item quantity="few">خلال %1$s أيام الأخيرة</item>
+        <item quantity="many">خلال %1$s يوماً الأخيرة</item>
+        <item quantity="other">خلال %1$s يوم الأخيرة</item>
+    </plurals>
+    <plurals name="dz_masthead_title_episodescountnox_mobile">
+        <item quantity="zero">الحلقات</item>
+        <item quantity="one">الحلقات</item>
+        <item quantity="two">الحلقات</item>
+        <item quantity="few">الحلقات</item>
+        <item quantity="many">الحلقات</item>
+        <item quantity="other">الحلقات</item>
+    </plurals>
+    <plurals name="dz_masthead_title_fanscountnox_mobile">
+        <item quantity="zero">المعجبون</item>
+        <item quantity="one">المعجبون</item>
+        <item quantity="two">المعجبون</item>
+        <item quantity="few">المعجبون</item>
+        <item quantity="many">المعجبون</item>
+        <item quantity="other">المعجبون</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_Xtrackchangesperhour_mobile">
+        <item quantity="zero">يسمح لك الميكس بتغيير %1$s أغنية في الساعة.</item>
+        <item quantity="one">يسمح لك الميكس بتغيير أغنية واحدة في الساعة.</item>
+        <item quantity="two">يسمح لك الميكس بتغيير أغنيتين في الساعة.</item>
+        <item quantity="few">يسمح لك الميكس بتغيير %1$s أغانٍ في الساعة.</item>
+        <item quantity="many">يسمح لك الميكس بتغيير %1$s أغنية في الساعة.</item>
+        <item quantity="other">يسمح لك الميكس بتغيير %1$s أغنية في الساعة.</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_changetrackallowedagaininXmin_mobile">
+        <item quantity="zero">سيكون بإمكانك تغيير الأغاني في غضون %1$s دقيقة.</item>
+        <item quantity="one">سيكون بإمكانك تغيير الأغاني في غضون دقيقة واحدة.</item>
+        <item quantity="two">سيكون بإمكانك تغيير الأغاني في غضون دقيقتين.</item>
+        <item quantity="few">سيكون بإمكانك تغيير الأغاني في غضون %1$s دقائق.</item>
+        <item quantity="many">سيكون بإمكانك تغيير الأغاني في غضون %1$s دقيقة.</item>
+        <item quantity="other">سيكون بإمكانك تغيير الأغاني في غضون %1$s دقيقة.</item>
+    </plurals>
+    <plurals name="dz_mobiletrialtoaster_text_yourXdaytrialhasstarted_mobile">
+        <item quantity="zero">بدأَتْ للتو فترتك التجريبية لمدة %1$s يوم</item>
+        <item quantity="one">بدأَتْ للتو فترتك التجريبية لمدة %1$s يوم</item>
+        <item quantity="two">بدأَتْ للتو فترتك التجريبية لمدة %1$s يومين</item>
+        <item quantity="few">بدأَتْ للتو فترتك التجريبية لمدة %1$s أيام</item>
+        <item quantity="many">بدأَتْ للتو فترتك التجريبية لمدة %1$s يوماً</item>
+        <item quantity="other">بدأَتْ للتو فترتك التجريبية لمدة %1$s يوم</item>
+    </plurals>
+    <plurals name="dz_mymusic_albums_count">
+        <item quantity="zero">%1$s ألبوم</item>
+        <item quantity="one">ألبوم واحد</item>
+        <item quantity="two">ألبومان</item>
+        <item quantity="few">%1$s ألبومات</item>
+        <item quantity="many">%1$s ألبوماً</item>
+        <item quantity="other">%1$s ألبوم</item>
+    </plurals>
+    <plurals name="dz_newofferscardsusp_text_getXaccountswithXbenefitsplushifi_mobile">
+        <item quantity="zero">احصل على %1$s حساب فردي، مع كامل مزايا عرض %2$s بما في ذلك الصوت ذا الجودة الكاملة.</item>
+        <item quantity="one">احصل على %1$s حساب فردي، مع كامل مزايا عرض %2$s بما في ذلك الصوت ذا الجودة الكاملة.</item>
+        <item quantity="two">احصل على %1$s حسابين فرديين، مع كامل مزايا عرض %2$s بما في ذلك الصوت ذا الجودة الكاملة.</item>
+        <item quantity="few">احصل على %1$s حسابات فردية، مع كامل مزايا عرض %2$s بما في ذلك الصوت ذا الجودة الكاملة.</item>
+        <item quantity="many">احصل على %1$s حسابا فرديا، مع كامل مزايا عرض %2$s بما في ذلك الصوت ذا الجودة الكاملة.</item>
+        <item quantity="other">احصل على %1$s حساب فردي، مع كامل مزايا عرض %2$s بما في ذلك الصوت ذي الجودة الكاملة.</item>
+    </plurals>
+    <plurals name="dz_offerwall_text_priceXpermonthforXmonths_mobile">
+        <item quantity="zero">%1$s/الشهر لمدة %2$s شهر</item>
+        <item quantity="one">%1$s/الشهر لمدة %2$s شهر</item>
+        <item quantity="two">%1$s/الشهر لمدة %2$s شهر</item>
+        <item quantity="few">%1$s/الشهر لمدة %2$s أشهر</item>
+        <item quantity="many">%1$s/الشهر لمدة %2$s أشهر</item>
+        <item quantity="other">%1$s/الشهر لمدة %2$s أشهر</item>
+    </plurals>
+    <plurals name="dz_offlinepodcastplaylist_subtitle_Xdownloadedepisodes_mobile">
+        <item quantity="zero">%1$s حلقة مُنزَّلة</item>
+        <item quantity="one">حلقة واحدة منزّلة</item>
+        <item quantity="two">حلقتان منزّلتان</item>
+        <item quantity="few">%1$s حلقات مُنزَّلة</item>
+        <item quantity="many">%1$s حلقة مُنزَّلة</item>
+        <item quantity="other">%1$s حلقة مُنزَّلة</item>
+    </plurals>
+    <plurals name="dz_onboardingfirstlikes_action_pickXmoreUPP_mobile">
+        <item quantity="zero">اختر %1$s اختيار إضافي</item>
+        <item quantity="one">اختر احتياراً واحداً إضافياً</item>
+        <item quantity="two">اختر اختيارين إضافيين</item>
+        <item quantity="few">اختر %1$s اختيارات إضافية</item>
+        <item quantity="many">اختر %1$s اختياراً إضافياً</item>
+        <item quantity="other">اختر %1$s اختيار إضافي</item>
+    </plurals>
+    <plurals name="dz_onboardingtoastmessage_action_onlyXpickstostart_mobile">
+        <item quantity="zero">على رسلك! فلسنا في حاجة سوى إلى %1$s اختيار للبدء.</item>
+        <item quantity="one">على رسلك! فلسنا في حاجة سوى إلى اختيار واحد للبدء.</item>
+        <item quantity="two">على رسلك! فلسنا في حاجة سوى إلى اختيارين للبدء.</item>
+        <item quantity="few">على رسلك! فلسنا في حاجة سوى إلى %1$s اختيارات للبدء.</item>
+        <item quantity="many">على رسلك! فلسنا في حاجة سوى إلى %1$s اختياراً للبدء.</item>
+        <item quantity="other">على رسلك! فلسنا في حاجة سوى إلى %1$s اختيار للبدء.</item>
+    </plurals>
+    <plurals name="dz_passwordsecurity_title_Xcharactersmin_mobile">
+        <item quantity="zero">%1$s رمز على الأقل.</item>
+        <item quantity="one">%1$s رمز على الأقل.</item>
+        <item quantity="two">%1$s رمزين على الأقل.</item>
+        <item quantity="few">%1$s رموز على الأقل.</item>
+        <item quantity="many">%1$s رمزاً على الأقل.</item>
+        <item quantity="other">%1$s رمز على الأقل.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_accountalreadylinkedtoXdevices_mobile">
+        <item quantity="zero">حسابك مرتبط حالياً بـ %1$s جهاز آخر. لن تتوفر امتيازات %2$s على هذا الجهاز.</item>
+        <item quantity="one">حسابك مرتبط حالياً بجهاز واحد آخر. لن تتوفر امتيازات %2$s على هذا الجهاز.</item>
+        <item quantity="two">حسابك مرتبط حالياً بجهازين آخرين. لن تتوفر امتيازات %2$s على هذا الجهاز.</item>
+        <item quantity="few">حسابك مرتبط حالياً بـ %1$s أجهزة أخرى. لن تتوفر امتيازات %2$s على هذا الجهاز.</item>
+        <item quantity="many">حسابك مرتبط حالياً بـ %1$s جهازاً آخر. لن تتوفر امتيازات %2$s على هذا الجهاز.</item>
+        <item quantity="other">حسابك مرتبط حالياً بـ %1$s جهاز آخر. لن تتوفر امتيازات %2$s على هذا الجهاز.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_maxXdevicesonyoursubcription_mobile">
+        <item quantity="zero">يسمح لك اشتراكك بالاستمتاع بخدمة %1$s على %2$s جهاز كحدٍ أقصى.</item>
+        <item quantity="one">يسمح لك اشتراكك بالاستمتاع بخدمة %1$s على جهاز واحد كحدٍ أقصى.</item>
+        <item quantity="two">يسمح لك اشتراكك بالاستمتاع بخدمة %1$s على جهازين كحدٍ أقصى.</item>
+        <item quantity="few">يسمح لك اشتراكك بالاستمتاع بخدمة %1$s على %2$s أجهزة كحدٍ أقصى.</item>
+        <item quantity="many">يسمح لك اشتراكك بالاستمتاع بخدمة %1$s على %2$s جهازاً كحدٍ أقصى.</item>
+        <item quantity="other">يسمح لك اشتراكك بالاستمتاع بخدمة %1$s على %2$s جهاز كحدٍ أقصى.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_nomorethanXdevicesonyoursubcription_mobile">
+        <item quantity="zero">لا يسمح لك اشتراكك بالاستمتاع بخدمة %1$s على أكثر من %2$s جهاز كحدٍ أقصى.</item>
+        <item quantity="one">لا يسمح لك اشتراكك بالاستمتاع بخدمة %1$s على أكثر من جهاز واحد كحدٍ أقصى.</item>
+        <item quantity="two">لا يسمح لك اشتراكك بالاستمتاع بخدمة %1$s على أكثر من جهازين كحدٍ أقصى.</item>
+        <item quantity="few">لا يسمح لك اشتراكك بالاستمتاع بخدمة %1$s على أكثر من %2$s أجهزة كحدٍ أقصى.</item>
+        <item quantity="many">لا يسمح لك اشتراكك بالاستمتاع بخدمة %1$s على أكثر من %2$s جهازاً كحدٍ أقصى.</item>
+        <item quantity="other">لا يسمح لك اشتراكك بالاستمتاع بخدمة %1$s على أكثر من %2$s جهاز كحدٍ أقصى.</item>
+    </plurals>
+    <plurals name="dz_playlist_text_tracksalreadyaddedtotheplaylist_mobile">
+        <item quantity="zero">لقد سبق إضافة هذه الأغاني إلى قائمة الأغاني</item>
+        <item quantity="one">لقد سبق إضافة هذه الأغنية إلى قائمة الأغاني</item>
+        <item quantity="two">لقد سبق إضافة هاتين الأغنيتين إلى قائمة الأغاني</item>
+        <item quantity="few">لقد سبق إضافة هذه الأغاني إلى قائمة الأغاني</item>
+        <item quantity="many">لقد سبق إضافة هذه الأغاني إلى قائمة الأغاني</item>
+        <item quantity="other">لقد سبق إضافة هذه الأغاني إلى قائمة الأغاني</item>
+    </plurals>
+    <plurals name="dz_playlistpage_action_addXtracks_mobile">
+        <item quantity="zero">إضافة %1$s أغنيةٍ</item>
+        <item quantity="one">إضافة %1$s أغنيةٍ</item>
+        <item quantity="two">إضافة %1$s أغنيتين</item>
+        <item quantity="few">إضافة %1$s أغانٍ</item>
+        <item quantity="many">إضافة %1$s أغنيةً</item>
+        <item quantity="other">إضافة %1$s أغنيةٍ</item>
+    </plurals>
+    <plurals name="dz_premiumbenefit_text_skipmorethanXtracksperhour_mobile">
+        <item quantity="zero">تخطَّ أكثر من %1$s أغنية في الساعة</item>
+        <item quantity="one">تخطَّ أكثر من أغنية واحدة في الساعة</item>
+        <item quantity="two">تخطَّ أكثر من أغنيتين في الساعة</item>
+        <item quantity="few">تخطَّ أكثر من %1$s أغانٍ في الساعة</item>
+        <item quantity="many">تخطَّ أكثر من %1$s أغنية في الساعة</item>
+        <item quantity="other">تخطَّ أكثر من %1$s أغنية في الساعة</item>
+    </plurals>
+    <plurals name="dz_searchresult_title_topresults_mobile">
+        <item quantity="zero">أفضل نتيجة</item>
+        <item quantity="one">أفضل نتيجة</item>
+        <item quantity="two">أفضل نتيجين</item>
+        <item quantity="few">أفضل النتائج</item>
+        <item quantity="many">أفضل النتائج</item>
+        <item quantity="other">أفضل النتائج</item>
+    </plurals>
+    <plurals name="dz_signupjapanUS_action_tryitfreexmonths_mobile">
+        <item quantity="zero">جرّبه مجاناً لمدة %1$s شهر</item>
+        <item quantity="one">جرّبه مجاناً لمدة شهر واحد</item>
+        <item quantity="two">جرّبه مجاناً لمدة شهرين</item>
+        <item quantity="few">جرّبه مجاناً لمدة %1$s أشهر</item>
+        <item quantity="many">جرّبه مجاناً لمدة %1$s شهراً</item>
+        <item quantity="other">جرّبه مجاناً لمدة %1$s شهر</item>
+    </plurals>
+    <plurals name="dz_skipcounter_text_Xmoretracks_mobile">
+        <item quantity="zero">بإمكانك تخطّي %1$s أغنية إضافية.</item>
+        <item quantity="one">بإمكانك تخطّي أغنية واحدة إضافية.</item>
+        <item quantity="two">بإمكانك تخطّي أغنيتين إضافيتين.</item>
+        <item quantity="few">بإمكانك تخطّي %1$s أغانٍ إضافية.</item>
+        <item quantity="many">بإمكانك تخطّي %1$s أغنية إضافية.</item>
+        <item quantity="other">بإمكانك تخطّي %1$s أغنية إضافية.</item>
+    </plurals>
+    <plurals name="dz_sleeptimer_text_sleepinlessthanXminutes_mobile">
+        <item quantity="zero">الدخول في وضع السكون في أقل من %1$s دقيقة</item>
+        <item quantity="one">الدخول في وضع السكون في أقل من %1$s دقيقة</item>
+        <item quantity="two">الدخول في وضع السكون في أقل من %1$s دقيقتين</item>
+        <item quantity="few">الدخول في وضع السكون في أقل من %1$s دقائق</item>
+        <item quantity="many">الدخول في وضع السكون في أقل من %1$s دقيقة</item>
+        <item quantity="other">الدخول في وضع السكون في أقل من %1$s دقيقة</item>
+    </plurals>
+    <plurals name="dz_smartcache_text_storemostplayedtracksrecosettoXgb_mobile">
+        <item quantity="zero">تخزّن Smart Cache الأغاني الأكثر تشغيلاً لإعادة تحميلها بسرعةٍ أكبر. للتمتع بتجربةٍ أفضل، نوصي بتعديل حجم ذاكرة التخزين المؤقتة وضبطها على %1$s جيجابايت.</item>
+        <item quantity="one">تخزّن Smart Cache الأغاني الأكثر تشغيلاً لإعادة تحميلها بسرعةٍ أكبر. للتمتع بتجربةٍ أفضل، نوصي بتعديل حجم ذاكرة التخزين المؤقتة وضبطها على %1$s جيجابايت.</item>
+        <item quantity="two">تخزّن Smart Cache الأغاني الأكثر تشغيلاً لإعادة تحميلها بسرعةٍ أكبر. للتمتع بتجربةٍ أفضل، نوصي بتعديل حجم ذاكرة التخزين المؤقتة وضبطها على %1$s جيجابايت.</item>
+        <item quantity="few">تخزّن Smart Cache الأغاني الأكثر تشغيلاً لإعادة تحميلها بسرعةٍ أكبر. للتمتع بتجربةٍ أفضل، نوصي بتعديل حجم ذاكرة التخزين المؤقتة وضبطها على %1$s جيجابايت.</item>
+        <item quantity="many">تخزّن Smart Cache الأغاني الأكثر تشغيلاً لإعادة تحميلها بسرعةٍ أكبر. للتمتع بتجربةٍ أفضل، نوصي بتعديل حجم ذاكرة التخزين المؤقتة وضبطها على %1$s جيجابايت.</item>
+        <item quantity="other">تخزّن Smart Cache الأغاني الأكثر تشغيلاً لإعادة تحميلها بسرعةٍ أكبر. للتمتع بتجربةٍ أفضل، نوصي بتعديل حجم ذاكرة التخزين المؤقتة وضبطها على %1$s جيجابايت.</item>
+    </plurals>
+    <plurals name="dz_smartloginandroidtvxboxwelcome_text_thiscodewillexpireinXminutes_mobile">
+        <item quantity="zero">سوف تنتهي صلاحية هذا الكود خلال %1$s دقيقة.</item>
+        <item quantity="one">سوف تنتهي صلاحية هذا الكود خلال %1$s دقيقة.</item>
+        <item quantity="two">سوف تنتهي صلاحية هذا الكود خلال %1$s دقيقتين.</item>
+        <item quantity="few">سوف تنتهي صلاحية هذا الكود خلال %1$s دقائق.</item>
+        <item quantity="many">سوف تنتهي صلاحية هذا الكود خلال %1$s دقيقة.</item>
+        <item quantity="other">سوف تنتهي صلاحية هذا الكود خلال %1$s دقيقة.</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Followers_mobile">
+        <item quantity="zero">متابع</item>
+        <item quantity="one">متابع واحد</item>
+        <item quantity="two">متابعَان</item>
+        <item quantity="few">متابعين</item>
+        <item quantity="many">متابعاً</item>
+        <item quantity="other">متابع</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Following_mobile">
+        <item quantity="zero">متابَع</item>
+        <item quantity="one">متابَع واحد</item>
+        <item quantity="two">متابَعان</item>
+        <item quantity="few">متابَعين</item>
+        <item quantity="many">متابَعاً</item>
+        <item quantity="other">متابَع</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfans_mobile">
+        <item quantity="zero">%1$s مُعجَب</item>
+        <item quantity="one">مُعجَب واحد</item>
+        <item quantity="two">مُعجَبان</item>
+        <item quantity="few">%1$s مُعجَبين</item>
+        <item quantity="many">%1$s مُعجَباً</item>
+        <item quantity="other">%1$s مُعجَب</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowers_mobile">
+        <item quantity="zero">%1$s متابع</item>
+        <item quantity="one">متابع واحد</item>
+        <item quantity="two">متابعان</item>
+        <item quantity="few">%1$s متابعين</item>
+        <item quantity="many">%1$s متابعاً</item>
+        <item quantity="other">%1$s متابع</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowing_mobile">
+        <item quantity="zero">%1$s مستخدم تتابعه</item>
+        <item quantity="one">مستخدم واحد تتابعه</item>
+        <item quantity="two">مستخدمان تتابعهما</item>
+        <item quantity="few">%1$s مستخدمين تتابعهم</item>
+        <item quantity="many">%1$s مستخدماً تتابعهم</item>
+        <item quantity="other">%1$s مستخدمٍ تتابعهم</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xnotifications_mobile">
+        <item quantity="zero">%1$s إشعار جديد</item>
+        <item quantity="one">إشعار واحد جديد</item>
+        <item quantity="two">إشعاران جديدان</item>
+        <item quantity="few">%1$s إشعارات جديدة</item>
+        <item quantity="many">%1$s إشعاراً جديداً</item>
+        <item quantity="other">%1$s إشعار جديد</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xgigabytes_mobile">
+        <item quantity="zero">%1$s جيجابايت</item>
+        <item quantity="one">%1$s جيجابايت</item>
+        <item quantity="two">%1$s جيجابايت</item>
+        <item quantity="few">%1$s جيجابايت</item>
+        <item quantity="many">%1$s جيجابايت</item>
+        <item quantity="other">%1$s جيجابايت</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xmegabytes_mobile">
+        <item quantity="zero">%1$s ميجابايت</item>
+        <item quantity="one">%1$s ميجابايت</item>
+        <item quantity="two">%1$s ميجابايت</item>
+        <item quantity="few">%1$s ميجابايت</item>
+        <item quantity="many">%1$s ميجابايت</item>
+        <item quantity="other">%1$s ميجابايت</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdays_mobile">
+        <item quantity="zero">%1$s يوم</item>
+        <item quantity="one">يوم واحد</item>
+        <item quantity="two">يومان</item>
+        <item quantity="few">%1$s أيام</item>
+        <item quantity="many">%1$s يوماً</item>
+        <item quantity="other">%1$s يوم</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdaysago_mobile">
+        <item quantity="zero">منذ %1$s يوم</item>
+        <item quantity="one">منذ يوم واحد</item>
+        <item quantity="two">منذ يومين</item>
+        <item quantity="few">منذ %1$s أيام</item>
+        <item quantity="many">منذ %1$s يوماً</item>
+        <item quantity="other">منذ %1$s يوم</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhours_mobile">
+        <item quantity="zero">%1$s ساعة</item>
+        <item quantity="one">ساعة واحدة</item>
+        <item quantity="two">ساعتان</item>
+        <item quantity="few">%1$s ساعات</item>
+        <item quantity="many">%1$s ساعة</item>
+        <item quantity="other">%1$s ساعة</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhoursago_mobile">
+        <item quantity="zero">منذ %1$s ساعة</item>
+        <item quantity="one">منذ ساعة واحدة</item>
+        <item quantity="two">منذ ساعتين</item>
+        <item quantity="few">منذ %1$s ساعات</item>
+        <item quantity="many">منذ %1$s ساعة</item>
+        <item quantity="other">منذ %1$s ساعة</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmin_mobile">
+        <item quantity="zero">%1$s دقيقة</item>
+        <item quantity="one">دقيقة واحدة</item>
+        <item quantity="two">دقيقتان</item>
+        <item quantity="few">%1$s دقائق</item>
+        <item quantity="many">%1$s دقيقة</item>
+        <item quantity="other">%1$s دقيقة</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_XminleftUPP_mobile">
+        <item quantity="zero">%1$s دقيقةٍ متبقيةٍ</item>
+        <item quantity="one">%1$s دقيقةٍ متبقيةٍ</item>
+        <item quantity="two">%1$s دقيقتين متبقيتين</item>
+        <item quantity="few">%1$s دقائق متبقية</item>
+        <item quantity="many">%1$s دقيقةً متبقيةً</item>
+        <item quantity="other">%1$s دقيقةٍ متبقيةٍ</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutes_mobile">
+        <item quantity="zero">%1$s دقيقة</item>
+        <item quantity="one">دقيقة واحدة</item>
+        <item quantity="two">دقيقتان</item>
+        <item quantity="few">%1$s دقائق</item>
+        <item quantity="many">%1$s دقيقة</item>
+        <item quantity="other">%1$s دقيقة</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutesago_mobile">
+        <item quantity="zero">منذ %1$s دقيقة</item>
+        <item quantity="one">منذ دقيقة واحدة</item>
+        <item quantity="two">منذ دقيقتين</item>
+        <item quantity="few">منذ %1$s دقائق</item>
+        <item quantity="many">منذ %1$s دقيقة</item>
+        <item quantity="other">منذ %1$s دقيقة</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmonthsago_mobile">
+        <item quantity="zero">منذ %1$s شهر</item>
+        <item quantity="one">منذ شهر واحد</item>
+        <item quantity="two">منذ شهرين</item>
+        <item quantity="few">منذ %1$s أشهر</item>
+        <item quantity="many">منذ %1$s شهر</item>
+        <item quantity="other">منذ %1$s شهر</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xs_mobile">
+        <item quantity="zero">%1$s ثانية</item>
+        <item quantity="one">ثانية واحدة</item>
+        <item quantity="two">ثانيتان</item>
+        <item quantity="few">%1$s ثوانٍ</item>
+        <item quantity="many">%1$s ثانية</item>
+        <item quantity="other">%1$s ثانية</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xweeksago_mobile">
+        <item quantity="zero">منذ %1$s أسبوع</item>
+        <item quantity="one">منذ أسبوع واحد</item>
+        <item quantity="two">منذ أسبوعين</item>
+        <item quantity="few">منذ %1$s أسابيع</item>
+        <item quantity="many">منذ %1$s أسبوعاً</item>
+        <item quantity="other">منذ %1$s أسبوع</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xyearsago_mobile">
+        <item quantity="zero">منذ %1$s عام</item>
+        <item quantity="one">منذ عام واحد</item>
+        <item quantity="two">منذ عامين</item>
+        <item quantity="few">منذ %1$s أعوام</item>
+        <item quantity="many">منذ %1$s عاماً</item>
+        <item quantity="other">منذ %1$s عام</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_alreadyaddedtoplaylist_mobile">
+        <item quantity="zero">تمت إضافتها بالفعل إلى قائمة الأغاني</item>
+        <item quantity="one">تمت إضافتها بالفعل إلى قائمة الأغاني</item>
+        <item quantity="two">تمت إضافتها بالفعل إلى قائمة الأغاني</item>
+        <item quantity="few">تمت إضافتها بالفعل إلى قائمة الأغاني</item>
+        <item quantity="many">تمت إضافتها بالفعل إلى قائمة الأغاني</item>
+        <item quantity="other">تمت إضافتها بالفعل إلى قائمة الأغاني</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_unlockedXmoreskips_mobile">
+        <item quantity="zero">لقد حررت %1$s تخطٍّ إضافي</item>
+        <item quantity="one">لقد حررت تخطّياً واحداً إضافياً</item>
+        <item quantity="two">لقد حررت تخطّيين إضافيين</item>
+        <item quantity="few">لقد حررت %1$s تخطّيات إضافية</item>
+        <item quantity="many">لقد حررت %1$s تخطّياً إضافياً</item>
+        <item quantity="other">لقد حررت %1$s تخطٍّ إضافي</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoplaylisttrack_mobile">
+        <item quantity="zero">تمت إضافتها إلى قائمة الأغاني</item>
+        <item quantity="one">تمت إضافتها إلى قائمة الأغاني</item>
+        <item quantity="two">تمت إضافتهما إلى قائمة الأغاني</item>
+        <item quantity="few">تمت إضافتها إلى قائمة الأغاني</item>
+        <item quantity="many">تمت إضافتها إلى قائمة الأغاني</item>
+        <item quantity="other">تمت إضافتها إلى قائمة الأغاني</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoyourfavoritetrackstrack_mobile">
+        <item quantity="zero">تمت إضافتها إلى أغانيك المفضّلة</item>
+        <item quantity="one">تمت إضافتهما إلى أغانيك المفضّلة</item>
+        <item quantity="two">تمت إضافتهما إلى أغانيك المفضّلة</item>
+        <item quantity="few">تمت إضافتها إلى أغانيك المفضّلة</item>
+        <item quantity="many">تمت إضافتها إلى أغانيك المفضّلة</item>
+        <item quantity="other">تمت إضافتها إلى أغانيك المفضّلة</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromplaylist_mobile">
+        <item quantity="zero">تمت إزالتها من قائمة الأغاني</item>
+        <item quantity="one">تمت إزالتها من قائمة الأغاني</item>
+        <item quantity="two">تمت إزالتهما من قائمة الأغاني</item>
+        <item quantity="few">تمت إزالتها من قائمة الأغاني</item>
+        <item quantity="many">تمت إزالتها من قائمة الأغاني</item>
+        <item quantity="other">تمت إزالتها من قائمة الأغاني</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromyourfavoritetrackstrack_mobile">
+        <item quantity="zero">تمت إزالتها من أغانيك المفضّلة</item>
+        <item quantity="one">تمت إزالتها من أغانيك المفضّلة</item>
+        <item quantity="two">تمت إزالتهما من أغانيك المفضّلة</item>
+        <item quantity="few">تمت إزالتها من أغانيك المفضّلة</item>
+        <item quantity="many">تمت إزالتها من أغانيك المفضّلة</item>
+        <item quantity="other">تمت إزالتها من أغانيك المفضّلة</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_Xdaytrial_mobile">
+        <item quantity="zero">تجربة لمدة %1$s يوم</item>
+        <item quantity="one">تجربة مجانية لمدة يوم واحد</item>
+        <item quantity="two">تجربة مجانية لمدة يومين</item>
+        <item quantity="few">تجربة مجانية لمدة %1$s أيام</item>
+        <item quantity="many">تجربة مجانية لمدة %1$s يوماً</item>
+        <item quantity="other">تجربة مجانية لمدة %1$s يوم</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_downloadskipadfreelistening_mobile">
+        <item quantity="zero">نزّل أغانيك، وتخطَّ الأغاني التي لا تعجبك واستمتع بتجربة استماع بلا إعلانات لمدة %1$s يوم.</item>
+        <item quantity="one">نزّل أغانيك، وتخطَّ الأغاني التي لا تعجبك واستمتع بتجربة استماع بلا إعلانات لمدة يوم واحد.</item>
+        <item quantity="two">نزّل أغانيك، وتخطَّ الأغاني التي لا تعجبك واستمتع بتجربة استماع بلا إعلانات لمدة يومين.</item>
+        <item quantity="few">نزّل أغانيك، وتخطَّ الأغاني التي لا تعجبك واستمتع بتجربة استماع بلا إعلانات لمدة %1$s أيام.</item>
+        <item quantity="many">نزّل أغانيك، وتخطَّ الأغاني التي لا تعجبك واستمتع بتجربة استماع بلا إعلانات لمدة %1$s يوماً.</item>
+        <item quantity="other">نزّل أغانيك، وتخطَّ الأغاني التي لا تعجبك واستمتع بتجربة استماع بدون إعلانات لمدة %1$s يوم.</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_text_tryXforXdaysfreenocreditcardrequired_mobile">
+        <item quantity="zero">جرّب %1$s لمدة %2$s يوم؛ بلا حاجة إلى بطاقة ائتمان!</item>
+        <item quantity="one">جرّب %1$s لمدة يوم واحد؛ بلا حاجة إلى بطاقة ائتمان!</item>
+        <item quantity="two">جرّب %1$s لمدة يومين؛ بلا حاجة إلى بطاقة ائتمان!</item>
+        <item quantity="few">جرّب %1$s لمدة %2$s أيام؛ بلا حاجة إلى بطاقة ائتمان!</item>
+        <item quantity="many">جرّب %1$s لمدة %2$s يوماً؛ بلا حاجة إلى بطاقة ائتمان!</item>
+        <item quantity="other">جرّب %1$s لمدة %2$s يوم؛ بلا حاجة إلى بطاقة ائتمان!</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXdays_mobile">
+        <item quantity="zero">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s يوم.</item>
+        <item quantity="one">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s يوم.</item>
+        <item quantity="two">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s يومين.</item>
+        <item quantity="few">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s أيام.</item>
+        <item quantity="many">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s يوما.</item>
+        <item quantity="other">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s يوما.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXhours_mobile">
+        <item quantity="zero">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s ساعة.</item>
+        <item quantity="one">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s ساعة.</item>
+        <item quantity="two">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s ساعتين.</item>
+        <item quantity="few">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s ساعات.</item>
+        <item quantity="many">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s ساعة.</item>
+        <item quantity="other">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s ساعة.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXminutes_mobile">
+        <item quantity="zero">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s دقيقة.</item>
+        <item quantity="one">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s دقيقة.</item>
+        <item quantity="two">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s دقيقتين.</item>
+        <item quantity="few">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s دقائق.</item>
+        <item quantity="many">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s دقيقة.</item>
+        <item quantity="other">للتحقق من اشتراكك والاستمرار في استخدام Deezer على هاتفك، يرجى الاتصال بشبكة WiFi أو شبكة خلوية خلال %1$s دقيقة.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="zero">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="one">تقديم سريع للفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">تقديم سريع للفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">تقديم سريع للفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="other">تقديم سريع للفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="zero">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="one">ترجيع الفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">ترجيع الفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">ترجيع الفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="other">ترجيع الفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+        <item quantity="other">%d إشعار جديد</item>
+    </plurals>
+</resources>

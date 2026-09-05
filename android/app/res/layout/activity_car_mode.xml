@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/container_banner_top" />
+    <FrameLayout android:orientation="vertical" android:id="@id/main_container" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/banner_top">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:background="@color/car_mode_list_bg" android:padding="8.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.deezer.feature.carmode.player.CarModePlayerView android:id="@id/player_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

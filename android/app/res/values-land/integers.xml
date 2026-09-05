@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_customGrid_fullscreen_numColumns">6</integer>
+    <integer name="dynamic_page_card_span_count">4</integer>
+    <integer name="menu_share_card_span">8</integer>
+    <item type="integer" name="msisdn_country_dialog_percent_height" format="float">0.55</item>
+    <integer name="mtrl_calendar_header_orientation">0</integer>
+    <integer name="mtrl_calendar_selection_text_lines">6</integer>
+    <integer name="onboarding_artist_grid">4</integer>
+    <integer name="page_grid_generic_numColumns">3</integer>
+    <item type="integer" name="smart_msisdn_country_dialog_percent_height" format="float">0.65</item>
+</resources>

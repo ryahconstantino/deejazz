@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dynamic_page_recycler_view_section_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/scaled_16dp" android:layout_marginStart="@dimen/scaled_16dp" android:layout_marginEnd="@dimen/scaled_16dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:paddingBottom="@dimen/dynamic_page_recycler_view_section_margin" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/DynamicPageHeaderTitle" />
+    <TextView android:id="@id/subtitle" android:paddingBottom="@dimen/dynamic_page_recycler_view_section_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dynamic_page_recycler_view_section_margin_subtitle" style="@style/DynamicPageHeaderSubtitle" />
+</LinearLayout>

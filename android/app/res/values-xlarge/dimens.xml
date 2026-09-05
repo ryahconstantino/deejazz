@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_dialog_fixed_width_major">50.0%</dimen>
+    <dimen name="abc_dialog_fixed_width_minor">70.00001%</dimen>
+    <dimen name="abc_dialog_min_width_major">45.000004%</dimen>
+    <dimen name="abc_dialog_min_width_minor">72.0%</dimen>
+    <dimen name="player_subscription_layer_button_padding_horizontal">20.0dp</dimen>
+    <dimen name="player_subscription_layer_button_padding_vertical">10.0dp</dimen>
+    <dimen name="player_subscription_layer_text_margin_bottom">20.0dp</dimen>
+    <dimen name="player_subscription_layer_text_size">14.0sp</dimen>
+</resources>

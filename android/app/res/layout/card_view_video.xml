@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ripple_cell_background" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.android.ui.widget.imageview.KeepRatioRelativeLayout android:background="@drawable/placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dynamic_card_cover_margin" app:ratio="@dimen/dynamic_page_video_card_cover_ratio" style="@style/CardsElevation">
+        <ImageView android:id="@id/cover_and_title" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:minHeight="@dimen/dynamic_page_item_mosaic_highlight_height" app:foregroundDrawable="@drawable/mosaic_item_foreground" />
+    </com.deezer.android.ui.widget.imageview.KeepRatioRelativeLayout>
+    <include layout="@layout/card_view_default_internal" />
+</LinearLayout>

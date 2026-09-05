@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:paddingLeft="@dimen/content_page_list_padding" android:paddingRight="@dimen/content_page_list_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/content_page_list_elevation" android:outlineProvider="background" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <FrameLayout android:id="@id/fab_reveal_layout_black" android:background="@color/login_bg_veil_login_reg_screen" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="6.0dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/fab_reveal_layout_rv" android:background="@color/theme_bg_primary" android:layout_width="match_parent" android:layout_height="60.0dp" />
+        <ImageView android:textSize="14.0sp" android:gravity="center" android:id="@id/fab_reveal_button_close" android:background="@drawable/ripple_unbounded" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_close" />
+    </FrameLayout>
+    <com.deezer.android.ui.recyclerview.widget.ContentPagePlayButton android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0" app:layout_anchor="@id/app_bar" app:layout_anchorGravity="center|bottom" app:layout_behavior="com.deezer.android.ui.recyclerview.widget.ContentPagePlayButtonBehavior" style="@style/DeezerRoundAccentButton.ContentPagePlayButton" />
+</merge>

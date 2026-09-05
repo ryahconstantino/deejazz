@@ -1,0 +1,2375 @@
+{
+  "version": "2.0",
+  "page_id": "page_id=channel\/genres\/173,version=channel-genres.0.1",
+  "title": "Channel title",
+  "persistent": false,
+  "masthead": {
+    "title": "Masthead title",
+    "background_color": "#C26D11",
+    "background_image": {
+      "md5": "b6894cabc3596154faac85efdf855b9f",
+      "type": "misc"
+    },
+    "logo_image": {
+      "md5": "dd6d2756465b22488dff5d8663e86688",
+      "type": "misc"
+    }
+  },
+  "sections": [
+    {
+      "layout": "item-highlight",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=1",
+      "items": [
+        {
+          "item_id": "page_id=channel\/genres\/,version=channel-genres.0.1,section_id=horizontal-grid,section_position=1,item_type=radio,item_id=30781,item_position=1",
+          "id": "30781",
+          "type": "radio",
+          "data": {
+            "RADIO_ID": "30781",
+            "RADIO_PICTURE": "5c46d53aab760b8c4d6a7f3555bd3734",
+            "TAGS": [
+              "alternative_rock"
+            ],
+            "TITLE": "Alternative",
+            "STATUS": "1",
+            "__TYPE__": "radio"
+          },
+          "title": "Alternative",
+          "subtitle": "",
+          "caption": "#House, #Minimal, #Techno, #Acid House, #Deep House, #Dubstep, #Downtempo",
+          "pictures": [
+            {
+              "md5": "5c46d53aab760b8c4d6a7f3555bd3734",
+              "type": "misc"
+            }
+          ],
+          "tags": [
+            "alternative_rock"
+          ],
+          "play_button": false,
+          "weight": 1,
+          "cover_title": "Mix",
+          "cover_subtitle": "Alternative"
+        }
+      ]
+    },
+    {
+      "layout":"message",
+      "section_id":"page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=2",
+      "items":[
+        {
+          "item_id":"page_id=channel\/genres\/,version=channel-genres.0.1,section_id=message,section_position=1,item_type=call_onboarding,item_id=30781,item_position=2",
+          "id": "30781",
+          "type":"call_onboarding",
+          "target":"/artists_picker?genresBar=false&context=improve",
+          "title":"Améliorez vos recommandations en nous indiquant vos artistes préférés.",
+          "pictures":[
+            {
+              "md5":"62329d40cf3a9de39c2954f469f7677f",
+              "type":"artist"
+            },
+            {
+              "md5":"21ff57a578e1834ce43fe5bf705c1d45",
+              "type":"artist"
+            },
+            {
+              "md5":"0664d624e383cdc56eb107ee2a0cef4c",
+              "type":"artist"
+            },
+            {
+              "md5":"181d16cc6ef1ca90c4580c9f197e23ed",
+              "type":"artist"
+            },
+            {
+              "md5":"e874a6b8f9433266f52a9613f6b4e767",
+              "type":"artist"
+            }
+          ],
+          "weight":1,
+          "layout_parameters":{
+            "cta":{
+              "type":"browse",
+              "label":"Choisissez des artistes"
+            }
+          }
+        }
+      ],
+      "group_id":"606d7ebc1d003"
+    },
+    {
+      "layout":"message",
+      "section_id":"page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=2",
+      "items":[
+        {
+          "item_id":"page_id=channel\/genres\/,version=channel-genres.0.1,section_id=message,section_position=1,item_type=call_onboarding,item_id=30781,item_position=2",
+          "id": "30781",
+          "type":"call_onboarding",
+          "target":"/artists_picker?genresBar=false&context=improve",
+          "title":"Améliorez vos recommandations en nous indiquant vos artistes préférés.",
+          "pictures":[
+            {
+              "md5":"0664d624e383cdc56eb107ee2a0cef4c",
+              "type":"artist"
+            },
+            {
+              "md5":"181d16cc6ef1ca90c4580c9f197e23ed",
+              "type":"artist"
+            },
+            {
+              "md5":"e874a6b8f9433266f52a9613f6b4e767",
+              "type":"artist"
+            }
+          ],
+          "weight":1,
+          "layout_parameters":{
+            "cta":{
+              "type":"browse",
+              "label":"Choisissez des artistes"
+            }
+          }
+        }
+      ],
+      "group_id":"606d7ebc1d003"
+    },
+    {
+      "title": "DEEPLINKS",
+      "section_id": "version=all.1.1.c,section_id=deeplink-list,section_position=1",
+      "layout": "deeplink-list",
+      "items": [
+        {
+          "title": "Deezer sessions",
+          "icon": "link",
+          "type": "deeplink",
+          "item_id": "version=all.1.1.c,section_id=deeplink-list,section_position=1,item_type=deeplink,item_id=tops,item_position=0",
+          "target": "/app/sessions",
+          "background_color": "#3CBC50",
+          "pictures": [
+            {
+              "md5": "c871851fd2ec65071584353a6f578843",
+              "type": "misc"
+            }
+          ]
+        },
+        {
+          "title": "Item image error",
+          "icon": "link",
+          "type": "deeplink",
+          "item_id": "version=all.1.1.c,section_id=deeplink-list,section_position=1,item_type=deeplink,item_id=tops,item_position=0",
+          "target": "/app/sessions",
+          "background_color": "#3CBC50",
+          "pictures": [
+            {
+              "md5": "c871851fd2ec650584353a6f578843",
+              "type": "misc"
+            }
+          ]
+        },
+        {
+          "title": "Top Playlists",
+          "icon": "top",
+          "type": "deeplink",
+          "item_id": "version=all.1.1.c,section_id=deeplink-list,section_position=1,item_type=deeplink,item_id=tops,item_position=0",
+          "target": "/charts",
+          "background_color": "#92929D"
+        },
+        {
+          "title": "Nouveautés",
+          "icon": "new_release",
+          "type": "deeplink",
+          "item_id": "version=all.1.1.c,section_id=deeplink-list,section_position=1,item_type=deeplink,item_id=release,item_position=1",
+          "target": "/explore",
+          "background_color": "#007FEB"
+        },
+        {
+          "title": "Infos & Divertissement",
+          "icon": "show",
+          "type": "deeplink",
+          "item_id": "version=all.1.1.c,section_id=deeplink-list,section_position=1,item_type=deeplink,item_id=show,item_position=2",
+          "target": "/shows",
+          "background_color": "#ff8000"
+        }
+      ]
+    },
+    {
+      "title": "SECTION TITLE WITH LINK",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "alignment": "center",
+      "target": "\/playlist\/1362218795",
+      "layout": "grid",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=highlight,section_position=0",
+      "items": []
+    },
+    {
+      "layout": "slideshow",
+      "title": "SLIDESHOW",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "alignment": "center",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=2",
+      "related": {
+        "target": "\/charts\/playlist\/genre\/173",
+        "label": "See more playlists"
+      },
+      "items": [
+        {
+          "item_id": "page_id=channel\/genres\/,version=channel-genres.0.1,section_id=horizontal-grid,section_position=1,item_type=radio,item_id=31111,item_position=8",
+          "id": "31111",
+          "type": "external-link",
+          "theme": "dark",
+          "data": {
+            "RADIO_ID": "31111",
+            "RADIO_PICTURE": "c871851fd2ec65071584353a6f578843",
+            "TAGS": [
+              "dub",
+              "reggae"
+            ],
+            "TITLE": "Reggae\/Dub",
+            "STATUS": "1",
+            "__TYPE__": "radio"
+          },
+          "title": "Mix Electro",
+          "subtitle": "#House, #Minimal, #Techno, #Acid House, #Deep House, #Dubstep, #Downtempo",
+          "cover_title": "Mix",
+          "cover_subtitle": "ELECTRO",
+          "pictures": [
+            {
+              "md5": "c871851fd2ec65071584353a6f578843",
+              "type": "misc"
+            }
+          ],
+          "tags": [
+            "dub",
+            "reggae"
+          ],
+          "play_button": false,
+          "weight": 1,
+          "cover_title": "Mix",
+          "cover_subtitle": "Reggae\/Dub"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/,version=channel-genres.0.1,section_id=horizontal-grid,section_position=1,item_type=radio,item_id=31111,item_position=8",
+          "id": "31111",
+          "type": "radio",
+          "data": {
+            "RADIO_ID": "31111",
+            "RADIO_PICTURE": "c871851fd2ec65071584353a6f578843",
+            "TAGS": [
+              "dub",
+              "reggae"
+            ],
+            "TITLE": "Reggae\/Dub",
+            "STATUS": "1",
+            "__TYPE__": "radio"
+          },
+          "title": "Mix Electro",
+          "subtitle": "#House, #Minimal, #Techno, #Acid House, #Deep House, #Dubstep, #Downtempo",
+          "cover_title": "Mix",
+          "cover_subtitle": "ELECTRO",
+          "pictures": [
+            {
+              "md5": "c871851fd2ec65071584353a6f578843",
+              "type": "misc"
+            }
+          ],
+          "tags": [
+            "dub",
+            "reggae"
+          ],
+          "play_button": true,
+          "weight": 1,
+          "cover_title": "Mix",
+          "cover_subtitle": "Reggae\/Dub"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=3,item_position=2",
+          "id": "3",
+          "type": "artist",
+          "data": {
+            "ART_ID": "3",
+            "ART_NAME": "Snoop Dogg",
+            "URL_REWRITING": "snoop-dogg",
+            "ART_PICTURE": "5e53a969faf1fc8e9dee3811df20c617",
+            "NB_FAN": 4767048,
+            "__TYPE__": "artist"
+          },
+          "title": "Snoop Dogg",
+          "subtitle": "4 767 048 fans",
+          "pictures": [
+            {
+              "md5": "5e53a969faf1fc8e9dee3811df20c617",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/3"
+        }
+      ]
+    },
+    {
+      "layout": "mini-banner",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=2",
+      "items": [
+        {
+          "item_id": "page_id=channels/testqa/testcyril,render_id=8827bdc9b24bd736c761fb2dca1ea658,version=channel-cms.1.0,section_id=mini-banner,section_position=0,module_id=562a3014-014e-4495-86ca-6ee7e27a561d,module_type=promotionallink,section_content=external-link%3Ab28df877-f9e5-48be-8cea-300f703c3292%3Bexternal-link%3A691ba6fd-4a04-4570-9ba5-ee2e4c4c85fd%3Bexternal-link%3Ae5fcdccb-e786-4f42-814e-22362c4eef2d%3Bexternal-link%3Aef1acd23-23c3-42fc-a850-0d52994942b9%3Bexternal-link%3A454fa2fc-8c1e-4ca5-b658-ddf48053cfc9,item_type=external-link,item_id=454fa2fc-8c1e-4ca5-b658-ddf48053cfc9,item_position=4",
+          "id": "454fa2fc-8c1e-4ca5-b658-ddf48053cfc9",
+          "type": "external-link",
+          "data": {},
+          "target": "/profile/downloaded",
+          "title": "",
+          "subtitle": "Only a pure description and nothing more to add",
+          "weight": 1,
+          "layout_parameters": {
+            "cta": {
+              "type": "browse",
+              "label": "DÉCOUVRIR"
+            }
+          },
+          "theme": "light",
+          "target_title": "DÉCOUVRIR"
+        },
+        {
+          "item_id": "page_id=channels/testqa/testcyril,render_id=8827bdc9b24bd736c761fb2dca1ea658,version=channel-cms.1.0,section_id=mini-banner,section_position=0,module_id=562a3014-014e-4495-86ca-6ee7e27a561d,module_type=promotionallink,section_content=external-link%3Ab28df877-f9e5-48be-8cea-300f703c3292%3Bexternal-link%3A691ba6fd-4a04-4570-9ba5-ee2e4c4c85fd%3Bexternal-link%3Ae5fcdccb-e786-4f42-814e-22362c4eef2d%3Bexternal-link%3Aef1acd23-23c3-42fc-a850-0d52994942b9%3Bexternal-link%3A454fa2fc-8c1e-4ca5-b658-ddf48053cfc9,item_type=external-link,item_id=b28df877-f9e5-48be-8cea-300f703c3292,item_position=0",
+          "id": "b28df877-f9e5-48be-8cea-300f703c3292",
+          "type": "external-link",
+          "data": {},
+          "target": "/profile/downloaded",
+          "title": "Et çà aussi c'est un long titr",
+          "subtitle": "Avec une description encore plus longues, et ca fait peur !!",
+          "pictures": [
+            {
+              "md5": "c38476e8d387ffc2870166663226d5e2",
+              "type": "misc"
+            }
+          ],
+          "weight": 1,
+          "layout_parameters": {
+            "cta": {
+              "type": "browse",
+              "label": "DÉCOUVRIR"
+            }
+          },
+          "theme": "light",
+          "target_title": "DÉCOUVRIR",
+          "background_color": "#243682"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/,version=channel-genres.0.1,section_id=horizontal-grid,section_position=1,item_type=radio,item_id=31111,item_position=8",
+          "id": "31111",
+          "type": "external-link",
+          "background_color": "#127598",
+          "theme": "dark",
+          "title": "Mix Electro, plein plein plein plein plein plein de mix",
+          "data": {},
+          "subtitle": "#House, #Minimal, #Techno, #Acid House, #Deep House, #Dubstep, #Downtempo",
+          "pictures": [
+            {
+              "md5": "c871851fd2ec65071584353a6f578843",
+              "type": "misc"
+            }
+          ],
+          "weight": 1,
+          "cover_title": "Mix",
+          "cover_subtitle": "Reggae\/Dub"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/,version=channel-genres.0.1,section_id=horizontal-grid,section_position=1,item_type=radio,item_id=31111,item_position=8",
+          "id": "31111",
+          "type": "external-link",
+          "background_color": "#5c2323",
+          "data": {},
+          "target": "/playlist/761604441",
+          "title": "Deezer sur instagram stories",
+          "subtitle": "Partagez des chansons et des paroles sur vos stories",
+          "weight": 1,
+          "layout_parameters": {
+            "cta": {
+              "type": "browse",
+              "label": "ÉCOUTER"
+            }
+          },
+          "theme": "dark",
+          "target_title": "ÉCOUTER"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/,version=channel-genres.0.1,section_id=horizontal-grid,section_position=1,item_type=radio,item_id=31111,item_position=8",
+          "id": "31111",
+          "type": "external-link",
+          "background_color": "#127598",
+          "data": {},
+          "target": "/playlist/761604441",
+          "title": "Deezer sur instagram stories",
+          "subtitle": "Partagez des chansons et des paroles sur vos stories",
+          "pictures": [
+            {
+              "md5": "8d06ad9dc291cd5dc7f98c0cb958bf6f",
+              "type": "misc"
+            }
+          ],
+          "weight": 1,
+          "layout_parameters": {
+            "cta": {
+              "type": "browse",
+              "label": "ÉCOUTER"
+            }
+          },
+          "theme": "light",
+          "target_title": "ÉCOUTER"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/,version=channel-genres.0.1,section_id=horizontal-grid,section_position=1,item_type=radio,item_id=31111,item_position=8",
+          "id": "31111",
+          "type": "external-link",
+          "background_color": "#DA3025",
+          "data": {},
+          "target": "/playlist/761604441",
+          "subtitle": "Partagez des chansons et des paroles sur vos stories",
+          "pictures": [
+            {
+              "md5": "8d06ad9dc291cd5dc7f98c0cb958bf6f",
+              "type": "misc"
+            }
+          ],
+          "weight": 1,
+          "layout_parameters": {
+            "cta": {
+              "type": "browse",
+              "label": "ÉCOUTER"
+            }
+          },
+          "theme": "dark",
+          "target_title": "ÉCOUTER"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/,version=channel-genres.0.1,section_id=horizontal-grid,section_position=1,item_type=radio,item_id=31111,item_position=8",
+          "id": "31111",
+          "type": "external-link",
+          "background_color": "#DA3025",
+          "data": {},
+          "target": "/playlist/761604441",
+          "title": "TRUCDEOUFCATOLFEESAR, TRUCDEOUFCATOLFEESAR TRUCDEOUFCATOLFEESAR TRUCDEOUFCATOLFEESAR TRUCDEOUFCATOLFEESAR TRUCDEOUFCATOLFEESAR",
+          "subtitle": "La cacahuete saute au dessus des moutons, La cacahuete saute au dessus des moutons La cacahuete saute au dessus des moutons La cacahuete saute au dessus des moutons La cacahuete saute au dessus des moutons ",
+          "pictures": [
+            {
+              "md5": "8d06ad9dc291cd5dc7f98c0cb958bf6f",
+              "type": "misc"
+            }
+          ],
+          "weight": 1,
+          "layout_parameters": {
+            "cta": {
+              "type": "browse",
+              "label": "ÉCOUTER"
+            }
+          },
+          "theme": "dark",
+          "target_title": "ÉCOUTER"
+        }
+      ],
+      "title": "Mini Banner",
+      "alignment": "left",
+      "group_id": "602ff2765048a"
+    },
+    {
+      "layout": "horizontal-grid",
+      "title": "HORIZONTAL GRID",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "alignment": "center",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=2",
+      "related": {
+        "target": "\/charts\/playlist\/genre\/173",
+        "label": "See more playlists"
+      },
+      "items": [
+        {
+          "item_id": "page_id=channel\/genres\/,version=channel-genres.0.1,section_id=horizontal-grid,section_position=1,item_type=radio,item_id=31111,item_position=8",
+          "id": "31111",
+          "type": "radio",
+          "data": {
+            "RADIO_ID": "31111",
+            "RADIO_PICTURE": "c871851fd2ec65071584353a6f578843",
+            "TAGS": [
+              "dub",
+              "reggae"
+            ],
+            "TITLE": "Reggae\/Dub",
+            "STATUS": "1",
+            "__TYPE__": "radio"
+          },
+          "title": "Mix Electro",
+          "subtitle": "#House, #Minimal, #Techno, #Acid House, #Deep House, #Dubstep, #Downtempo",
+          "cover_title": "Mix",
+          "cover_subtitle": "ELECTRO",
+          "pictures": [
+            {
+              "md5": "c871851fd2ec65071584353a6f578843",
+              "type": "misc"
+            }
+          ],
+          "tags": [
+            "dub",
+            "reggae"
+          ],
+          "play_button": false,
+          "weight": 1,
+          "cover_title": "Mix",
+          "cover_subtitle": "Reggae\/Dub"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/,version=channel-genres.0.1,section_id=horizontal-grid,section_position=1,item_type=radio,item_id=31111,item_position=8",
+          "id": "31111",
+          "type": "radio",
+          "data": {
+            "RADIO_ID": "31111",
+            "RADIO_PICTURE": "c871851fd2ec65071584353a6f578843",
+            "TAGS": [
+              "dub",
+              "reggae"
+            ],
+            "TITLE": "Reggae\/Dub",
+            "STATUS": "1",
+            "__TYPE__": "radio"
+          },
+          "title": "Mix Electro",
+          "subtitle": "#House, #Minimal, #Techno, #Acid House, #Deep House, #Dubstep, #Downtempo",
+          "cover_title": "Mix",
+          "cover_subtitle": "ELECTRO",
+          "pictures": [
+            {
+              "md5": "c871851fd2ec65071584353a6f578843",
+              "type": "misc"
+            }
+          ],
+          "tags": [
+            "dub",
+            "reggae"
+          ],
+          "play_button": true,
+          "weight": 1,
+          "cover_title": "Mix",
+          "cover_subtitle": "Reggae\/Dub"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=3,item_position=2",
+          "id": "3",
+          "type": "artist",
+          "data": {
+            "ART_ID": "3",
+            "ART_NAME": "Snoop Dogg",
+            "URL_REWRITING": "snoop-dogg",
+            "ART_PICTURE": "5e53a969faf1fc8e9dee3811df20c617",
+            "NB_FAN": 4767048,
+            "__TYPE__": "artist"
+          },
+          "title": "Snoop Dogg",
+          "subtitle": "4 767 048 fans",
+          "pictures": [
+            {
+              "md5": "5e53a969faf1fc8e9dee3811df20c617",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/3"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=4,item_type=album,item_id=6496045,item_position=3",
+          "id": "6496045",
+          "type": "album",
+          "data": {
+            "ALB_ID": "6496045",
+            "ART_ID": "5080",
+            "ART_NAME": "Various Artists",
+            "ARTISTS": [
+              {
+                "ART_ID": "5080",
+                "ROLE_ID": "0",
+                "ART_NAME": "Various Artists",
+                "ART_PICTURE": "bb2d24a5ae14f9d3ff13680b20386c23",
+                "SMARTRADIO": "1",
+                "RANK": "570843",
+                "__TYPE__": "artist"
+              }
+            ],
+            "URL_REWRITING": "various-artists",
+            "ALB_TITLE": "High School Musical",
+            "ALB_PICTURE": "d5a3d2143ca25fd8ededb6164c022c0b",
+            "DIGITAL_RELEASE_DATE": "2006-03-08",
+            "TYPE": "1",
+            "__TYPE__": "album"
+          },
+          "title": "High School Musical",
+          "subtitle": "by Various Artists",
+          "pictures": [
+            {
+              "md5": "d5a3d2143ca25fd8ededb6164c022c0b",
+              "type": "cover"
+            }
+          ],
+          "caption": "Album out on 08\/03\/2006",
+          "target": "\/album\/6496045"
+        }
+      ]
+    },
+    {
+      "alignment": "center",
+      "items": [],
+      "layout": "ads",
+      "section_id": "page_id=ads,version=channel-genres.0.1,section_id=highlight,section_position=1",
+      "advertising_data": {
+        "page_id_iphone": "663481",
+        "page_id_ipad": "663478",
+        "page_id_android": "663470",
+        "page_id_android_tablet": "663474"
+      }
+    },
+    {
+      "title": "LARGE CARD",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "alignment": "center",
+      "layout": "large-card",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=1",
+      "items": [
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "30621",
+          "type": "radio",
+          "accessory_type": "on_air",
+          "data": {
+            "RADIO_ID": "30771",
+            "RADIO_PICTURE": "dd4043351cfcbbd35e809f25354f9298",
+            "TAGS": [
+              "indie"
+            ],
+            "TITLE": "Indie",
+            "STATUS": "1",
+            "__TYPE__": "radio"
+          },
+          "title": "Mix Electro",
+          "subtitle": "#House, #Minimal, #Techno, #Acid House, #Deep House, #Dubstep, #Downtempo",
+          "cover_title": "Mix",
+          "cover_subtitle": "ELECTRO 2 LINES TEST",
+          "pictures": [
+            {
+              "md5": "dd4043351cfcbbd35e809f25354f9298",
+              "type": "misc"
+            }
+          ],
+          "target": "\/mixes\/genre\/30621",
+          "play_button": true
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=4,item_type=album,item_id=6496045,item_position=3",
+          "id": "6496045",
+          "type": "album",
+          "accessory_type": "new",
+          "data": {
+            "ALB_ID": "6496045",
+            "ART_ID": "5080",
+            "ART_NAME": "Various Artists",
+            "ARTISTS": [
+              {
+                "ART_ID": "5080",
+                "ROLE_ID": "0",
+                "ART_NAME": "Various Artists",
+                "ART_PICTURE": "bb2d24a5ae14f9d3ff13680b20386c23",
+                "SMARTRADIO": "1",
+                "RANK": "570843",
+                "__TYPE__": "artist"
+              }
+            ],
+            "URL_REWRITING": "various-artists",
+            "ALB_TITLE": "High School Musical",
+            "ALB_PICTURE": "d5a3d2143ca25fd8ededb6164c022c0b",
+            "DIGITAL_RELEASE_DATE": "2006-03-08",
+            "TYPE": "1",
+            "__TYPE__": "album"
+          },
+          "title": "High School Musical",
+          "subtitle": "by Various Artists",
+          "pictures": [
+            {
+              "md5": "07d50cc50f4d446b7cbe9016cd0b0c3a",
+              "type": "cover"
+            },
+            {
+              "md5": "d577008d17b13601f7dffa18e9170bd2",
+              "type": "cover"
+            },
+            {
+              "md5": "862fd3783290bde0cd5662f643644242",
+              "type": "cover"
+            },
+            {
+              "md5": "4529a3c8ec16c3e21de17a6294a6b3e1",
+              "type": "cover"
+            },
+            {
+              "md5": "bb90d41947132a4447e8b60654842dc7",
+              "type": "cover"
+            }
+          ],
+          "caption": "Album out on 08\/03\/2006",
+          "target": "\/album\/6496045"
+        }
+      ]
+    },
+    {
+      "title": "APP",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "alignment": "center",
+      "layout": "large-card",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=1",
+      "items": [
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "30621",
+          "type": "app",
+          "data": {
+          },
+          "title": "Deezer Sessions",
+          "subtitle": "Lorem Ipsum Dolor est eai dkdmsùs the rujikm nest",
+          "pictures": [
+            {
+              "md5": "271b87245a700ae5ba26336d4a7b2ecc",
+              "type": "misc"
+            }
+          ],
+          "target": "\/app\/sessions\/",
+          "target_title": "LET'S GO"
+        }
+      ]
+    },
+    {
+      "title": "Event",
+      "layout": "large-card",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=1",
+      "items": [
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "30621",
+          "type": "external_link",
+          "data": {
+          },
+          "title": "Deezer Hellfest contest",
+          "subtitle": "Win your ticket for Hellfest Festival.",
+          "cover_title": "Mix",
+          "cover_subtitle": "ELECTRO 2 LINES TEST",
+          "pictures": [
+            {
+              "md5": "c0bad934b89b195c1a1d549f5c7af913",
+              "type": "playlist"
+            }
+          ],
+          "target": "\/mixes\/genre\/30621",
+          "target_title": "LET'S GO",
+          "label": "HELLFEST"
+        }
+      ]
+    },
+    {
+      "layout": "grid",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=grid,section_position=2",
+      "items": [
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=grid,section_position=2,item_type=playlist,item_id=990725991,item_position=0",
+          "id": "990725991",
+          "type": "playlist",
+          "data": {
+            "TITLE": "Boyhood OST",
+            "PLAYLIST_ID": "990725991",
+            "PARENT_USER_ID": "796271495",
+            "PARENT_USERNAME": "Ewelina - Movie Soundtrack Editor",
+            "TYPE": "0",
+            "PLAYLIST_PICTURE": "45570e4e80c1f73c97128025a973275e",
+            "PICTURE_TYPE": "playlist",
+            "NB_FAN": 643,
+            "NB_SONG": 45,
+            "__TYPE__": "playlist"
+          },
+          "pictures": [
+            {
+              "md5": "45570e4e80c1f73c97128025a973275e",
+              "type": "playlist"
+            }
+          ],
+          "subtitle": "16 tracks - 486 fans",
+          "caption": "643 fans",
+          "target": "\/playlist\/990725991",
+          "play_button": false,
+          "weight": 1
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=grid,section_position=2,item_type=playlist,item_id=781878947,item_position=1",
+          "id": "781878947",
+          "type": "playlist",
+          "data": {
+            "TITLE": "Breaking Bad songs",
+            "PLAYLIST_ID": "781878947",
+            "PARENT_USER_ID": "796271495",
+            "PARENT_USERNAME": "Ewelina - Movie Soundtrack Editor",
+            "TYPE": "0",
+            "PLAYLIST_PICTURE": "85815b8966d22606191dd1e10a667eb1",
+            "PICTURE_TYPE": "playlist",
+            "NB_FAN": 1871,
+            "NB_SONG": 124,
+            "__TYPE__": "playlist"
+          },
+          "pictures": [
+            {
+              "md5": "85815b8966d22606191dd1e10a667eb1",
+              "type": "playlist"
+            }
+          ],
+          "caption": "1871 fans",
+          "target": "\/playlist\/781878947",
+          "play_button": false,
+          "weight": 1
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=grid,section_position=2,item_type=playlist,item_id=1000231791,item_position=2",
+          "id": "1000231791",
+          "type": "playlist",
+          "data": {
+            "TITLE": "Gilmore Girls",
+            "PLAYLIST_ID": "1000231791",
+            "PARENT_USER_ID": "796271495",
+            "PARENT_USERNAME": "Ewelina - Movie Soundtrack Editor",
+            "TYPE": "0",
+            "PLAYLIST_PICTURE": "f603a6860de4be8fbc53eb65593f624c",
+            "PICTURE_TYPE": "playlist",
+            "NB_FAN": 868,
+            "NB_SONG": 169,
+            "__TYPE__": "playlist"
+          },
+          "pictures": [
+            {
+              "md5": "f603a6860de4be8fbc53eb65593f624c",
+              "type": "playlist"
+            }
+          ],
+          "caption": "868 fans",
+          "target": "\/playlist\/1000231791",
+          "play_button": false,
+          "weight": 1
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=grid,section_position=2,item_type=playlist,item_id=550083793,item_position=3",
+          "id": "550083793",
+          "type": "playlist",
+          "data": {
+            "TITLE": "Grey's Anatomy songs",
+            "PLAYLIST_ID": "550083793",
+            "PARENT_USER_ID": "796271495",
+            "PARENT_USERNAME": "Ewelina - Movie Soundtrack Editor",
+            "TYPE": "0",
+            "PLAYLIST_PICTURE": "2e1af6cf906cccc680f49d79d2b72936",
+            "PICTURE_TYPE": "playlist",
+            "NB_FAN": 2589,
+            "NB_SONG": 50,
+            "__TYPE__": "playlist"
+          },
+          "pictures": [
+            {
+              "md5": "2e1af6cf906cccc680f49d79d2b72936",
+              "type": "playlist"
+            }
+          ],
+          "caption": "2589 fans",
+          "target": "\/playlist\/550083793",
+          "play_button": false,
+          "weight": 1
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=grid,section_position=2,item_type=playlist,item_id=1205685661,item_position=4",
+          "id": "1205685661",
+          "type": "playlist",
+          "data": {
+            "TITLE": "Mad Men",
+            "PLAYLIST_ID": "1205685661",
+            "PARENT_USER_ID": "796271495",
+            "PARENT_USERNAME": "Ewelina - Movie Soundtrack Editor",
+            "TYPE": "0",
+            "PLAYLIST_PICTURE": "ce49c2c23d1c8f107689631c601ba521",
+            "PICTURE_TYPE": "playlist",
+            "NB_FAN": 1098,
+            "NB_SONG": 156,
+            "__TYPE__": "playlist"
+          },
+          "pictures": [
+            {
+              "md5": "ce49c2c23d1c8f107689631c601ba521",
+              "type": "playlist"
+            }
+          ],
+          "caption": "1098 fans",
+          "target": "\/playlist\/1205685661",
+          "play_button": false,
+          "weight": 1
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=grid,section_position=2,item_type=playlist,item_id=1162741801,item_position=5",
+          "id": "1162741801",
+          "type": "playlist",
+          "data": {
+            "TITLE": "Furious 7",
+            "PLAYLIST_ID": "1162741801",
+            "PARENT_USER_ID": "796271495",
+            "PARENT_USERNAME": "Ewelina - Movie Soundtrack Editor",
+            "TYPE": "0",
+            "PLAYLIST_PICTURE": "ac76034944765bb3624388aca4e16b0c",
+            "PICTURE_TYPE": "playlist",
+            "NB_FAN": 18471,
+            "NB_SONG": 16,
+            "__TYPE__": "playlist"
+          },
+          "pictures": [
+            {
+              "md5": "ac76034944765bb3624388aca4e16b0c",
+              "type": "playlist"
+            }
+          ],
+          "caption": "18471 fans",
+          "target": "\/playlist\/1162741801",
+          "play_button": false,
+          "weight": 1
+        }
+      ],
+      "title": "Playlists",
+      "related": {
+        "target": "\/charts\/playlist\/genre\/173",
+        "label": "See more playlists"
+      }
+    },
+    {
+      "layout": "list",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=3",
+      "items": [
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=3,item_type=album,item_id=11915416,item_position=0",
+          "id": "11915416",
+          "type": "album",
+          "data": {
+            "ART_ID": "1429039",
+            "ALB_ID": "11915416",
+            "ALB_TITLE": "Cinematic Soundscapes, Vol. 2",
+            "ALB_PICTURE": "6cc06d18d23f4665f23c8c03ef2b2356",
+            "ART_NAME": "Approaching Nirvana",
+            "GENRES": [],
+            "ALB_TYPE": "ALBUM",
+            "TYPE": "1",
+            "DIGITAL_RELEASE_DATE": "2015-12-19",
+            "__TYPE__": "album"
+          },
+          "title": "Cinematic Soundscapes, Vol. 2",
+          "subtitle": "by Approaching Nirvana",
+          "pictures": [
+            {
+              "md5": "6cc06d18d23f4665f23c8c03ef2b2356",
+              "type": "cover"
+            }
+          ],
+          "caption": "Album out on 19\/12\/2015",
+          "target": "\/album\/11915416"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=3,item_type=album,item_id=11901588,item_position=1",
+          "id": "11901588",
+          "type": "album",
+          "data": {
+            "ART_ID": "160",
+            "ALB_ID": "11901588",
+            "ALB_TITLE": "Try Everything",
+            "ALB_PICTURE": "07179a4eac08f7acd6a36816dd4f14b3",
+            "ART_NAME": "Shakira",
+            "GENRES": [],
+            "ALB_TYPE": "SINGLE",
+            "TYPE": "0",
+            "DIGITAL_RELEASE_DATE": "2016-01-08",
+            "__TYPE__": "album"
+          },
+          "title": "Try Everything",
+          "subtitle": "by Shakira",
+          "pictures": [
+            {
+              "md5": "07179a4eac08f7acd6a36816dd4f14b3",
+              "type": "cover"
+            }
+          ],
+          "caption": "Single out on 08\/01\/2016",
+          "target": "\/album\/11901588"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=3,item_type=album,item_id=11999394,item_position=2",
+          "id": "11999394",
+          "type": "album",
+          "data": {
+            "ART_ID": "2184731",
+            "ALB_ID": "11999394",
+            "ALB_TITLE": "Deadpool vs Boba Fett",
+            "ALB_PICTURE": "af81db95412a0bdc3ecc0f5933b514e4",
+            "ART_NAME": "Epic Rap Battles of History",
+            "GENRES": [],
+            "ALB_TYPE": "SINGLE",
+            "TYPE": "0",
+            "DIGITAL_RELEASE_DATE": "2015-12-16",
+            "__TYPE__": "album"
+          },
+          "title": "Deadpool vs Boba Fett",
+          "subtitle": "by Epic Rap Battles of History",
+          "pictures": [
+            {
+              "md5": "af81db95412a0bdc3ecc0f5933b514e4",
+              "type": "cover"
+            }
+          ],
+          "caption": "Single out on 16\/12\/2015",
+          "target": "\/album\/11999394"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=3,item_type=album,item_id=11901590,item_position=3",
+          "id": "11901590",
+          "type": "album",
+          "data": {
+            "ART_ID": "7058815",
+            "ALB_ID": "11901590",
+            "ALB_TITLE": "Off with His Shirt",
+            "ALB_PICTURE": "26d1f8b9a4a86023adb6df085ea411b7",
+            "ART_NAME": "Cast of Galavant",
+            "GENRES": [],
+            "ALB_TYPE": "SINGLE",
+            "TYPE": "0",
+            "DIGITAL_RELEASE_DATE": "2016-01-01",
+            "__TYPE__": "album"
+          },
+          "title": "Off with His Shirt",
+          "subtitle": "by Cast of Galavant",
+          "pictures": [
+            {
+              "md5": "26d1f8b9a4a86023adb6df085ea411b7",
+              "type": "cover"
+            }
+          ],
+          "caption": "Single out on 01\/01\/2016",
+          "target": "\/album\/11901590"
+        }
+      ],
+      "title": "New Releases",
+      "related": {
+        "target": "\/explore\/genres\/173",
+        "label": "More new additions"
+      }
+    },
+    {
+      "layout": "grid",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=4",
+      "items": [
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=4,item_type=album,item_id=11244086,item_position=0",
+          "id": "11244086",
+          "type": "album",
+          "data": {
+            "ALB_ID": "11244086",
+            "ART_ID": "5080",
+            "ART_NAME": "Various Artists",
+            "ARTISTS": [
+              {
+                "ART_ID": "5080",
+                "ROLE_ID": "0",
+                "ART_NAME": "Various Artists",
+                "ART_PICTURE": "bb2d24a5ae14f9d3ff13680b20386c23",
+                "SMARTRADIO": "1",
+                "RANK": "570843",
+                "__TYPE__": "artist"
+              }
+            ],
+            "URL_REWRITING": "various-artists",
+            "ALB_TITLE": "Hamilton",
+            "ALB_PICTURE": "1caa88583f24c9477fbb680cf7b1b8e8",
+            "DIGITAL_RELEASE_DATE": "2015-09-25",
+            "TYPE": "1",
+            "__TYPE__": "album"
+          },
+          "title": "Hamilton",
+          "subtitle": "by Various Artists",
+          "pictures": [
+            {
+              "md5": "1caa88583f24c9477fbb680cf7b1b8e8",
+              "type": "cover"
+            }
+          ],
+          "caption": "Album out on 25\/09\/2015",
+          "target": "\/album\/11244086"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=4,item_type=album,item_id=11996592,item_position=1",
+          "id": "11996592",
+          "type": "album",
+          "data": {
+            "ALB_ID": "11996592",
+            "ART_ID": "805",
+            "ART_NAME": "John Williams",
+            "ARTISTS": [
+              {
+                "ART_ID": "805",
+                "ROLE_ID": "0",
+                "ART_NAME": "John Williams",
+                "ART_PICTURE": "3085406099218d53ed8cbbba148e3e87",
+                "SMARTRADIO": "1",
+                "RANK": "572129",
+                "__TYPE__": "artist"
+              }
+            ],
+            "URL_REWRITING": "john-williams",
+            "ALB_TITLE": "Star Wars: The Force Awakens",
+            "ALB_PICTURE": "f5d5fe3aac73bd7b6060b09886f2c069",
+            "DIGITAL_RELEASE_DATE": "2015-12-18",
+            "TYPE": "1",
+            "__TYPE__": "album"
+          },
+          "title": "Star Wars: The Force Awakens",
+          "subtitle": "by John Williams",
+          "pictures": [
+            {
+              "md5": "f5d5fe3aac73bd7b6060b09886f2c069",
+              "type": "cover"
+            }
+          ],
+          "caption": "Album out on 18\/12\/2015",
+          "target": "\/album\/11996592"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=4,item_type=album,item_id=6191434,item_position=2",
+          "id": "6191434",
+          "type": "album",
+          "data": {
+            "ALB_ID": "6191434",
+            "ART_ID": "5080",
+            "ART_NAME": "Various Artists",
+            "ARTISTS": [
+              {
+                "ART_ID": "5080",
+                "ROLE_ID": "0",
+                "ART_NAME": "Various Artists",
+                "ART_PICTURE": "bb2d24a5ae14f9d3ff13680b20386c23",
+                "SMARTRADIO": "1",
+                "RANK": "570843",
+                "__TYPE__": "artist"
+              }
+            ],
+            "URL_REWRITING": "various-artists",
+            "ALB_TITLE": "Disney's Greatest Volume 1",
+            "ALB_PICTURE": "4b806f976665b1520763f1ec8fd45b77",
+            "DIGITAL_RELEASE_DATE": "2010-03-02",
+            "TYPE": "1",
+            "__TYPE__": "album"
+          },
+          "title": "Disney's Greatest Volume 1",
+          "subtitle": "by Various Artists",
+          "pictures": [
+            {
+              "md5": "4b806f976665b1520763f1ec8fd45b77",
+              "type": "cover"
+            }
+          ],
+          "caption": "Album out on 02\/03\/2010",
+          "target": "\/album\/6191434"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=4,item_type=album,item_id=6496045,item_position=3",
+          "id": "6496045",
+          "type": "album",
+          "data": {
+            "ALB_ID": "6496045",
+            "ART_ID": "5080",
+            "ART_NAME": "Various Artists",
+            "ARTISTS": [
+              {
+                "ART_ID": "5080",
+                "ROLE_ID": "0",
+                "ART_NAME": "Various Artists",
+                "ART_PICTURE": "bb2d24a5ae14f9d3ff13680b20386c23",
+                "SMARTRADIO": "1",
+                "RANK": "570843",
+                "__TYPE__": "artist"
+              }
+            ],
+            "URL_REWRITING": "various-artists",
+            "ALB_TITLE": "High School Musical",
+            "ALB_PICTURE": "d5a3d2143ca25fd8ededb6164c022c0b",
+            "DIGITAL_RELEASE_DATE": "2006-03-08",
+            "TYPE": "1",
+            "__TYPE__": "album"
+          },
+          "title": "High School Musical",
+          "subtitle": "by Various Artists",
+          "pictures": [
+            {
+              "md5": "d5a3d2143ca25fd8ededb6164c022c0b",
+              "type": "cover"
+            }
+          ],
+          "caption": "Album out on 08\/03\/2006",
+          "target": "\/album\/6496045"
+        }
+      ],
+      "title": "Top Albums",
+      "related": {
+        "target": "\/charts\/album\/genre\/173",
+        "label": "See more albums"
+      }
+    },
+    {
+      "layout": "grid",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5",
+      "items": [
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=4050205,item_position=0",
+          "id": "4050205",
+          "type": "artist",
+          "data": {
+            "ART_ID": "4050205",
+            "ART_NAME": "The Weeknd",
+            "URL_REWRITING": "the-weeknd",
+            "ART_PICTURE": "a17cafdfe3500d7787a51b934a495b8a",
+            "NB_FAN": 1100847,
+            "__TYPE__": "artist"
+          },
+          "title": "The Weeknd",
+          "subtitle": "1 100 847 fans",
+          "pictures": [
+            {
+              "md5": "a17cafdfe3500d7787a51b934a495b8a",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/4050205"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=74804,item_position=1",
+          "id": "74804",
+          "type": "artist",
+          "data": {
+            "ART_ID": "74804",
+            "ART_NAME": "Wiz Khalifa",
+            "URL_REWRITING": "wiz-khalifa",
+            "ART_PICTURE": "8093e06c8414f5ed13e882a5df9a7e95",
+            "NB_FAN": 4424245,
+            "__TYPE__": "artist"
+          },
+          "title": "Wiz Khalifa",
+          "subtitle": "4 424 245 fans",
+          "pictures": [
+            {
+              "md5": "8093e06c8414f5ed13e882a5df9a7e95",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/74804"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=3,item_position=2",
+          "id": "3",
+          "type": "artist",
+          "data": {
+            "ART_ID": "3",
+            "ART_NAME": "Snoop Dogg",
+            "URL_REWRITING": "snoop-dogg",
+            "ART_PICTURE": "5e53a969faf1fc8e9dee3811df20c617",
+            "NB_FAN": 4767048,
+            "__TYPE__": "artist"
+          },
+          "title": "Snoop Dogg",
+          "subtitle": "4 767 048 fans",
+          "pictures": [
+            {
+              "md5": "5e53a969faf1fc8e9dee3811df20c617",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/3"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "248",
+          "type": "artist",
+          "data": {
+            "ART_ID": "248",
+            "ART_NAME": "Earth, Wind & Fire",
+            "URL_REWRITING": "earth-wind-fire",
+            "ART_PICTURE": "bfcdfc9baa32098fda6ab9c7f49396cc",
+            "NB_FAN": 442572,
+            "__TYPE__": "artist"
+          },
+          "title": "Earth, Wind & Fire",
+          "subtitle": "442 572 fans",
+          "pictures": [
+            {
+              "md5": "bfcdfc9baa32098fda6ab9c7f49396cc",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/248"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "917475151",
+          "type": "user",
+          "data": {
+            "USER_ID": "917475151",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "Edito Test",
+          "subtitle": "750 followers",
+          "pictures": [
+            {
+              "md5": "59f707f019d369f6f36aa75f565e66f5",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/917475151"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "30621",
+          "type": "radio",
+          "accessory_type": "on_air",
+          "data": {
+            "RADIO_ID": "30771",
+            "RADIO_PICTURE": "c871851fd2ec65071584353a6f578843",
+            "TAGS": [
+              "indie"
+            ],
+            "TITLE": "Indie",
+            "STATUS": "1",
+            "__TYPE__": "radio"
+          },
+          "title": "Mix Electro",
+          "subtitle": "#House, #Minimal, #Techno, #Acid House, #Deep House, #Dubstep, #Downtempo",
+          "cover_title": "Mix",
+          "cover_subtitle": "ELECTRO",
+          "pictures": [
+            {
+              "md5": "c871851fd2ec65071584353a6f578843",
+              "type": "misc"
+            }
+          ],
+          "target": "\/mixes\/genre\/30621"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "31091",
+          "type": "radio",
+          "data": {
+            "RADIO_ID": "30771",
+            "RADIO_PICTURE": "c573e0911ae7a9d394d27f72ca24204c",
+            "TAGS": [
+              "indie"
+            ],
+            "TITLE": "Indie",
+            "STATUS": "1",
+            "__TYPE__": "radio"
+          },
+          "title": "Mix Reggae",
+          "subtitle": "With Peter Tosh, Max Romeo Anthony B, Damian Marley, Matthew MC Anuff, Fantah",
+          "cover_title": "Mix",
+          "cover_subtitle": "REGGAE",
+          "pictures": [
+            {
+              "md5": "c573e0911ae7a9d394d27f72ca24204c",
+              "type": "misc"
+            }
+          ],
+          "target": "\/mixes\/genre\/31091"
+        }
+      ],
+      "title": "Top Artists",
+      "related": {
+        "target": "\/charts\/artist\/genre\/173",
+        "label": "See more artists "
+      }
+    },
+    {
+      "layout": "grid-preview-one",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5",
+      "items": [
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=4050205,item_position=0",
+          "id": "4050205",
+          "type": "artist",
+          "data": {
+            "ART_ID": "4050205",
+            "ART_NAME": "The Weeknd",
+            "URL_REWRITING": "the-weeknd",
+            "ART_PICTURE": "a17cafdfe3500d7787a51b934a495b8a",
+            "NB_FAN": 1100847,
+            "__TYPE__": "artist"
+          },
+          "title": "The Weeknd",
+          "subtitle": "1 100 847 fans",
+          "pictures": [
+            {
+              "md5": "a17cafdfe3500d7787a51b934a495b8a",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/4050205"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=74804,item_position=1",
+          "id": "74804",
+          "type": "artist",
+          "data": {
+            "ART_ID": "74804",
+            "ART_NAME": "Wiz Khalifa",
+            "URL_REWRITING": "wiz-khalifa",
+            "ART_PICTURE": "8093e06c8414f5ed13e882a5df9a7e95",
+            "NB_FAN": 4424245,
+            "__TYPE__": "artist"
+          },
+          "title": "Wiz Khalifa",
+          "subtitle": "4 424 245 fans",
+          "pictures": [
+            {
+              "md5": "8093e06c8414f5ed13e882a5df9a7e95",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/74804"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=3,item_position=2",
+          "id": "3",
+          "type": "artist",
+          "data": {
+            "ART_ID": "3",
+            "ART_NAME": "Snoop Dogg",
+            "URL_REWRITING": "snoop-dogg",
+            "ART_PICTURE": "5e53a969faf1fc8e9dee3811df20c617",
+            "NB_FAN": 4767048,
+            "__TYPE__": "artist"
+          },
+          "title": "Snoop Dogg",
+          "subtitle": "4 767 048 fans",
+          "pictures": [
+            {
+              "md5": "5e53a969faf1fc8e9dee3811df20c617",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/3"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "248",
+          "type": "artist",
+          "data": {
+            "ART_ID": "248",
+            "ART_NAME": "Earth, Wind & Fire",
+            "URL_REWRITING": "earth-wind-fire",
+            "ART_PICTURE": "bfcdfc9baa32098fda6ab9c7f49396cc",
+            "NB_FAN": 442572,
+            "__TYPE__": "artist"
+          },
+          "title": "Earth, Wind & Fire",
+          "subtitle": "442 572 fans",
+          "pictures": [
+            {
+              "md5": "bfcdfc9baa32098fda6ab9c7f49396cc",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/248"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "917475151",
+          "type": "user",
+          "data": {
+            "USER_ID": "917475151",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "Edito Test",
+          "subtitle": "750 followers",
+          "pictures": [
+            {
+              "md5": "59f707f019d369f6f36aa75f565e66f5",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/917475151"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        }
+      ],
+      "title": "Grid preview one",
+      "related": {
+        "target": "\/charts\/artist\/genre\/173",
+        "label": "See more artists "
+      }
+    },
+    {
+      "layout": "grid-preview-two",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5",
+      "items": [
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=4050205,item_position=0",
+          "id": "4050205",
+          "type": "artist",
+          "data": {
+            "ART_ID": "4050205",
+            "ART_NAME": "The Weeknd",
+            "URL_REWRITING": "the-weeknd",
+            "ART_PICTURE": "a17cafdfe3500d7787a51b934a495b8a",
+            "NB_FAN": 1100847,
+            "__TYPE__": "artist"
+          },
+          "title": "The Weeknd",
+          "subtitle": "1 100 847 fans",
+          "pictures": [
+            {
+              "md5": "a17cafdfe3500d7787a51b934a495b8a",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/4050205"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=74804,item_position=1",
+          "id": "74804",
+          "type": "artist",
+          "data": {
+            "ART_ID": "74804",
+            "ART_NAME": "Wiz Khalifa",
+            "URL_REWRITING": "wiz-khalifa",
+            "ART_PICTURE": "8093e06c8414f5ed13e882a5df9a7e95",
+            "NB_FAN": 4424245,
+            "__TYPE__": "artist"
+          },
+          "title": "Wiz Khalifa",
+          "subtitle": "4 424 245 fans",
+          "pictures": [
+            {
+              "md5": "8093e06c8414f5ed13e882a5df9a7e95",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/74804"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=3,item_position=2",
+          "id": "3",
+          "type": "artist",
+          "data": {
+            "ART_ID": "3",
+            "ART_NAME": "Snoop Dogg",
+            "URL_REWRITING": "snoop-dogg",
+            "ART_PICTURE": "5e53a969faf1fc8e9dee3811df20c617",
+            "NB_FAN": 4767048,
+            "__TYPE__": "artist"
+          },
+          "title": "Snoop Dogg",
+          "subtitle": "4 767 048 fans",
+          "pictures": [
+            {
+              "md5": "5e53a969faf1fc8e9dee3811df20c617",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/3"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "248",
+          "type": "artist",
+          "data": {
+            "ART_ID": "248",
+            "ART_NAME": "Earth, Wind & Fire",
+            "URL_REWRITING": "earth-wind-fire",
+            "ART_PICTURE": "bfcdfc9baa32098fda6ab9c7f49396cc",
+            "NB_FAN": 442572,
+            "__TYPE__": "artist"
+          },
+          "title": "Earth, Wind & Fire",
+          "subtitle": "442 572 fans",
+          "pictures": [
+            {
+              "md5": "bfcdfc9baa32098fda6ab9c7f49396cc",
+              "type": "artist"
+            }
+          ],
+          "target": "\/artist\/248"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "917475151",
+          "type": "user",
+          "data": {
+            "USER_ID": "917475151",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "Edito Test",
+          "subtitle": "750 followers",
+          "pictures": [
+            {
+              "md5": "59f707f019d369f6f36aa75f565e66f5",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/917475151"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=248,item_position=3",
+          "id": "194787",
+          "type": "user",
+          "data": {
+            "USER_ID": "194787",
+            "FIRSTNAME": "Firstname",
+            "USER_PICTURE": "5c28d616e0a2f209ab4aca2900855ab6",
+            "__TYPE__": "user"
+          },
+          "title": "User test",
+          "subtitle": "1 750 followers",
+          "pictures": [
+            {
+              "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+              "type": "user"
+            }
+          ],
+          "target": "\/profile\/194787"
+        }
+      ],
+      "title": "Grid preview two",
+      "related": {
+        "target": "\/charts\/artist\/genre\/173",
+        "label": "See more artists "
+      }
+    },
+    {
+      "layout": "horizontal-grid",
+      "section_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5",
+      "title": "CHANNELS",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "related": {
+        "target": "\/charts\/artist\/genre\/173",
+        "label": "See more artists "
+      },
+      "items": [
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=4050205,item_position=0",
+          "id": "153",
+          "type": "channel",
+          "data": {
+          },
+          "title": "Blues",
+          "pictures": [
+            {
+              "md5": "1abb6810098d4015bdc860c91bcfd2b6",
+              "type": "misc"
+            }
+          ],
+          "target": "\/channels\/genres\/153"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=4050205,item_position=0",
+          "id": "98",
+          "type": "channel",
+          "data": {
+          },
+          "title": "Classique",
+          "pictures": [
+            {
+              "md5": "609f69b669b242252aa8ee09b5597655",
+              "type": "misc"
+            }
+          ],
+          "logo_image": {
+            "md5": "5c28d616e0a2f209ab4aca2900855ab6",
+            "type": "user"
+          },
+          "target": "\/channels\/genres\/98"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=4050205,item_position=0",
+          "id": "16",
+          "type": "channel",
+          "data": {
+          },
+          "title": "Musique asiatique",
+          "pictures": [
+            {
+              "md5": "dd6d2756465b22488dff5d8663e86688",
+              "type": "misc"
+            }
+          ],
+          "background_color": "#F0C30E",
+          "target": "\/channels\/genres\/16"
+        },
+        {
+          "item_id": "page_id=channel\/genres\/173,version=channel-genres.0.1,section_id=list,section_position=5,item_type=artist,item_id=4050205,item_position=0",
+          "id": "165",
+          "type": "channel",
+          "data": {
+          },
+          "logo_image": {
+            "md5": "af81db95412a0bdc3ecc0f5933b514e4",
+            "type": "cover"
+          },
+          "title": "R&B\/Soul\/Funk",
+          "background_color": "#90C3D4",
+          "target": "\/channels\/genres\/165"
+        }
+      ]
+    },
+    {
+      "layout": "grid",
+      "section_id": "page_id=channels\/explore,version=channel-cms.1.0,section_id=grid,section_position=0",
+      "title": "VIDEO GRID",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam diam ipsum, pretium sit amet diam nec, ultricies eleifend ipsum. ",
+      "items": [
+        {
+          "item_id": "page_id=channels\/explore,version=channel-cms.1.0,section_id=grid,section_position=0,item_type=channel,item_id=5653e6b1-8ec9-47f7-b50f-f5e241e12d42,item_position=0",
+          "id": "5653e6b1-8ec9-47f7-b50f-f5e241e12d42",
+          "type": "video-link",
+          "data": {
+            "id": "5653e6b1-8ec9-47f7-b50f-f5e241e12d42",
+            "name": "POPULAR",
+            "title": "POPULAR",
+            "logo": null,
+            "description": null,
+            "slug": "popular",
+            "background_color": "#2c7886",
+            "pictures": [
+              {
+                "md5": "d9dd64dbf1ce61f0d13208751286c81c",
+                "type": "misc"
+              }
+            ]
+          },
+          "target": "\/channels\/popular",
+          "title": "Tame Impala",
+          "subtitle": "804 423 views",
+          "pictures": [
+            {
+              "md5": "9fe30ce99ef17cb1250bef071f15ccee",
+              "type": "cover"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "item_id": "page_id=channels\/explore,version=channel-cms.1.0,section_id=grid,section_position=0,item_type=channel,item_id=fcd6d4bb-2288-4733-bc15-6aa0c198a7c4,item_position=1",
+          "id": "fcd6d4bb-2288-4733-bc15-6aa0c198a7c4",
+          "type": "video-link",
+          "data": {
+            "id": "fcd6d4bb-2288-4733-bc15-6aa0c198a7c4",
+            "name": "POP",
+            "title": "POP",
+            "logo": null,
+            "description": null,
+            "slug": "pop",
+            "background_color": "#df4f4a",
+            "pictures": [
+              {
+                "md5": "5ec5847ade4bfe9c0a1688487acb4975",
+                "type": "misc"
+              }
+            ]
+          },
+          "target": "\/channels\/pop",
+          "title": "Abd Al Malik",
+          "subtitle": "231 789 views",
+          "pictures": [
+            {
+              "md5": "bb169fd8ccbba4be7ab0314f539120c0",
+              "type": "cover"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "layout": "grid",
+      "section_id": "page_id=channels\/explore,version=channel-cms.1.0,section_id=grid,section_position=0",
+      "title": "CHANNELS GRID",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "items": [
+        {
+          "item_id": "page_id=channels\/explore,version=channel-cms.1.0,section_id=grid,section_position=0,item_type=channel,item_id=5653e6b1-8ec9-47f7-b50f-f5e241e12d42,item_position=0",
+          "id": "5653e6b1-8ec9-47f7-b50f-f5e241e12d42",
+          "type": "channel",
+          "data": {
+            "id": "5653e6b1-8ec9-47f7-b50f-f5e241e12d42",
+            "name": "POPULAR",
+            "title": "POPULAR",
+            "logo": null,
+            "description": null,
+            "slug": "popular",
+            "background_color": "#2c7886",
+            "pictures": [
+              {
+                "md5": "d9dd64dbf1ce61f0d13208751286c81c",
+                "type": "misc"
+              }
+            ]
+          },
+          "target": "\/channels\/popular",
+          "title": "POPULAR",
+          "pictures": [
+            {
+              "md5": "d9dd64dbf1ce61f0d13208751286c81c",
+              "type": "misc"
+            }
+          ],
+          "weight": 1,
+          "background_color": "#2c7886"
+        },
+        {
+          "item_id": "page_id=channels\/explore,version=channel-cms.1.0,section_id=grid,section_position=0,item_type=channel,item_id=fcd6d4bb-2288-4733-bc15-6aa0c198a7c4,item_position=1",
+          "id": "fcd6d4bb-2288-4733-bc15-6aa0c198a7c4",
+          "type": "channel",
+          "data": {
+            "id": "fcd6d4bb-2288-4733-bc15-6aa0c198a7c4",
+            "name": "POP",
+            "title": "POP",
+            "logo": null,
+            "description": null,
+            "slug": "pop",
+            "background_color": "#df4f4a",
+            "pictures": [
+              {
+                "md5": "5ec5847ade4bfe9c0a1688487acb4975",
+                "type": "misc"
+              }
+            ]
+          },
+          "target": "\/channels\/pop",
+          "title": "POP",
+          "pictures": [
+            {
+              "md5": "5ec5847ade4bfe9c0a1688487acb4975",
+              "type": "misc"
+            }
+          ],
+          "weight": 1,
+          "background_color": "#df4f4a"
+        },
+        {
+          "item_id": "page_id=channels\/explore,version=channel-cms.1.0,section_id=grid,section_position=0,item_type=channel,item_id=19b13375-15c9-4f5f-836c-e5ebbb4f8aba,item_position=2",
+          "id": "19b13375-15c9-4f5f-836c-e5ebbb4f8aba",
+          "type": "channel",
+          "data": {
+            "id": "19b13375-15c9-4f5f-836c-e5ebbb4f8aba",
+            "name": "HIP HOP & RAP avec SKYROCK",
+            "title": "HIP HOP & RAP avec SKYROCK",
+            "logo": "7245bcae1d8058b5ea5decdd3bd64f97",
+            "description": null,
+            "slug": "hiphop",
+            "background_color": "#fa6743",
+            "pictures": [
+              {
+                "md5": "67fc7095d98a4e140fe9f1b79646cf0b",
+                "type": "misc"
+              }
+            ]
+          },
+          "target": "\/channels\/hiphop",
+          "title": "HIP HOP & RAP avec SKYROCK",
+          "pictures": [
+            {
+              "md5": "67fc7095d98a4e140fe9f1b79646cf0b",
+              "type": "misc"
+            }
+          ],
+          "weight": 1,
+          "logo_image": {
+            "md5": "7245bcae1d8058b5ea5decdd3bd64f97",
+            "type": "misc"
+          },
+          "background_color": "#fa6743"
+        },
+        {
+          "item_id": "page_id=channels\/explore,version=channel-cms.1.0,section_id=grid,section_position=0,item_type=channel,item_id=8cb1499d-e8fa-4704-a2c7-c1cc4ac8ee5c,item_position=3",
+          "id": "8cb1499d-e8fa-4704-a2c7-c1cc4ac8ee5c",
+          "type": "channel",
+          "data": {
+            "id": "8cb1499d-e8fa-4704-a2c7-c1cc4ac8ee5c",
+            "name": "GRIME",
+            "title": "GRIME",
+            "logo": null,
+            "description": null,
+            "slug": "grime",
+            "background_color": "#2a2730",
+            "pictures": [
+              {
+                "md5": "66b85e2d8584cd058d271e8410cac982",
+                "type": "misc"
+              }
+            ]
+          },
+          "target": "\/channels\/grime",
+          "title": "GRIME",
+          "pictures": [
+            {
+              "md5": "66b85e2d8584cd058d271e8410cac982",
+              "type": "misc"
+            }
+          ],
+          "weight": 1,
+          "background_color": "#2a2730"
+        }
+      ]
+    },
+    {
+      "layout": "grid",
+      "section_id": "page_id=channels\/explore,version=channel-cms.1.0,section_id=grid,section_position=0",
+      "items": [
+        {
+          "item_id": "page_id=channels\/explore,version=channel-cms.1.0,section_id=grid,section_position=0,item_type=channel,item_id=5653e6b1-8ec9-47f7-b50f-f5e241e12d42,item_position=0",
+          "id": "5653e6b1-8ec9-47f7-b50f-f5e241e12d42",
+          "type": "channel",
+          "data": {
+            "id": "5653e6b1-8ec9-47f7-b50f-f5e241e12d42",
+            "name": "POPULAR",
+            "title": "POPULAR",
+            "logo": null,
+            "description": null,
+            "slug": "popular",
+            "background_color": "#2c7886",
+            "pictures": [
+              {
+                "md5": "d9dd64dbf1ce61f0d13208751286c81c",
+                "type": "misc"
+              }
+            ]
+          },
+          "target": "\/channels\/popular",
+          "title": "POPULAR",
+          "pictures": [
+            {
+              "md5": "d9dd64dbf1ce61f0d13208751286c81c",
+              "type": "misc"
+            }
+          ],
+          "weight": 1,
+          "background_color": "#2c7886"
+        },
+        {
+          "item_id": "page_id=channels\/explore,version=channel-cms.1.0,section_id=grid,section_position=0,item_type=channel,item_id=fcd6d4bb-2288-4733-bc15-6aa0c198a7c4,item_position=1",
+          "id": "fcd6d4bb-2288-4733-bc15-6aa0c198a7c4",
+          "type": "channel",
+          "data": {
+            "id": "fcd6d4bb-2288-4733-bc15-6aa0c198a7c4",
+            "name": "POP",
+            "title": "POP",
+            "logo": null,
+            "description": null,
+            "slug": "pop",
+            "background_color": "#df4f4a",
+            "pictures": [
+              {
+                "md5": "5ec5847ade4bfe9c0a1688487acb4975",
+                "type": "misc"
+              }
+            ]
+          },
+          "target": "\/channels\/pop",
+          "title": "POP",
+          "pictures": [
+            {
+              "md5": "5ec5847ade4bfe9c0a1688487acb4975",
+              "type": "misc"
+            }
+          ],
+          "weight": 1,
+          "background_color": "#df4f4a"
+        },
+        {
+          "item_id": "page_id=channels\/explore,version=channel-cms.1.0,section_id=grid,section_position=0,item_type=channel,item_id=19b13375-15c9-4f5f-836c-e5ebbb4f8aba,item_position=2",
+          "id": "19b13375-15c9-4f5f-836c-e5ebbb4f8aba",
+          "type": "channel",
+          "data": {
+            "id": "19b13375-15c9-4f5f-836c-e5ebbb4f8aba",
+            "name": "HIP HOP & RAP avec SKYROCK",
+            "title": "HIP HOP & RAP avec SKYROCK",
+            "logo": "7245bcae1d8058b5ea5decdd3bd64f97",
+            "description": null,
+            "slug": "hiphop",
+            "background_color": "#fa6743",
+            "pictures": [
+              {
+                "md5": "67fc7095d98a4e140fe9f1b79646cf0b",
+                "type": "misc"
+              }
+            ]
+          },
+          "target": "\/channels\/hiphop",
+          "title": "HIP HOP & RAP avec SKYROCK",
+          "pictures": [
+            {
+              "md5": "67fc7095d98a4e140fe9f1b79646cf0b",
+              "type": "misc"
+            }
+          ],
+          "weight": 1,
+          "logo_image": {
+            "md5": "7245bcae1d8058b5ea5decdd3bd64f97",
+            "type": "misc"
+          },
+          "background_color": "#fa6743"
+        },
+        {
+          "item_id": "page_id=channels\/explore,version=channel-cms.1.0,section_id=grid,section_position=0,item_type=channel,item_id=8cb1499d-e8fa-4704-a2c7-c1cc4ac8ee5c,item_position=3",
+          "id": "8cb1499d-e8fa-4704-a2c7-c1cc4ac8ee5c",
+          "type": "channel",
+          "data": {
+            "id": "8cb1499d-e8fa-4704-a2c7-c1cc4ac8ee5c",
+            "name": "GRIME",
+            "title": "GRIME",
+            "logo": null,
+            "description": null,
+            "slug": "grime",
+            "background_color": "#2a2730",
+            "pictures": [
+              {
+                "md5": "66b85e2d8584cd058d271e8410cac982",
+                "type": "misc"
+              }
+            ]
+          },
+          "target": "\/channels\/grime",
+          "title": "GRIME",
+          "pictures": [
+            {
+              "md5": "66b85e2d8584cd058d271e8410cac982",
+              "type": "misc"
+            }
+          ],
+          "weight": 1,
+          "background_color": "#2a2730"
+        }
+      ]
+    }
+  ]
+}

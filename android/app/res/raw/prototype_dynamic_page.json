@@ -1,0 +1,893 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "section_id": "version=all.1.1.c,section_id=highlight,section_position=0",
+      "layout": "highlight",
+      "items": [
+        {
+          "subtitle": "A link to the deezer session app.",
+          "play_button": false,
+          "title": "Generic content",
+          "caption": "caption",
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "9dce45726b2862727b2a2f98e9c671c9"
+            },
+            {
+              "type": "cover",
+              "md5": "c4948a8a70d0077722793acfd77ef73d"
+            },
+            {
+              "type": "artist",
+              "md5": "e8c278c1b4ad3105424410726f04081e"
+            },
+            {
+              "type": "misc",
+              "md5": "9dce45726b2862727b2a2f98e9c671c9"
+            },
+            {
+              "type": "cover",
+              "md5": "c4948a8a70d0077722793acfd77ef73d"
+            }
+          ],
+          "target": "/app/sessions",
+          "type": "generic",
+          "item_id": "version=all.1.1.c,section_id=highlight,section_position=0,item_type=user,item_id=3401386,item_position=0"
+        }
+      ],
+      "separator": true
+    },
+    {
+      "section_id": "version=all.1.1.c,section_id=highlight,section_position=0",
+      "layout": "highlight",
+      "items": [
+        {
+          "id": "10583929",
+          "title": "Get To Heaven (Deluxe)",
+          "subtitle": "by Everything Everything",
+          "caption": "Album released on 19/06/2015",
+          "target": "/album/10583929",
+          "play_button": false,
+          "type": "album",
+          "item_id": "",
+          "data": {
+            "ALB_ID": "10583929",
+            "ALB_TITLE": "Get To Heaven (Deluxe)",
+            "ART_ID": "157701",
+            "ALB_PICTURE": "c4948a8a70d0077722793acfd77ef73d"
+          },
+          "pictures": [
+            {
+              "type": "cover",
+              "md5": "c4948a8a70d0077722793acfd77ef73d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "separator": true,
+      "section_id": "version=all.1.1.c,section_id=highlight,section_position=0",
+      "layout": "highlight",
+      "items": [
+        {
+          "id": "10583929",
+          "title": "Get To Heaven (Deluxe)",
+          "subtitle": "by Everything Everything",
+          "caption": "Album released on 19/06/2015",
+          "target": "/album/10583929",
+          "play_button": true,
+          "type": "album",
+          "item_id": "",
+          "data": {
+            "ALB_ID": "10583929",
+            "ALB_TITLE": "Get To Heaven (Deluxe)",
+            "ART_ID": "157701",
+            "ALB_PICTURE": "c4948a8a70d0077722793acfd77ef73d"
+          },
+          "pictures": [
+            {
+              "type": "cover",
+              "md5": "c4948a8a70d0077722793acfd77ef73d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "version=all.1.1.c,section_id=highlight,section_position=0",
+      "layout": "highlight",
+      "items": [
+        {
+          "id": "12178",
+          "title": "Artist",
+          "subtitle": "Calvin Harris",
+          "type": "artist",
+          "item_id": "",
+          "data": {
+            "ART_ID": "12178",
+            "ART_NAME": "Calvin Harris",
+            "ART_PICTURE": "934b8b919bfcf10b85b68b71a5c59dc5",
+            "NB_FAN": 1871599,
+            "__TYPE__": "artist"
+          },
+          "pictures": [
+            {
+              "type": "artist",
+              "md5": "e8c278c1b4ad3105424410726f04081e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "separator": true,
+      "section_id": "version=all.1.1.c,section_id=highlight,section_position=0",
+      "layout": "highlight",
+      "items": [
+        {
+          "id": "12178",
+          "title": "Artist",
+          "subtitle": "Calvin Harris",
+          "type": "artist",
+          "play_button": true,
+          "item_id": "",
+          "data": {
+            "ART_ID": "12178",
+            "ART_NAME": "Calvin Harris",
+            "ART_PICTURE": "934b8b919bfcf10b85b68b71a5c59dc5",
+            "NB_FAN": 1871599,
+            "__TYPE__": "artist"
+          },
+          "pictures": [
+            {
+              "type": "artist",
+              "md5": "e8c278c1b4ad3105424410726f04081e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "version=all.1.1.c,section_id=highlight,section_position=0",
+      "layout": "highlight",
+      "items": [
+        {
+          "id": "847658151",
+          "target": "/playlist/847658151",
+          "subtitle": "par Freek - Belgium Editor",
+          "data": {
+            "PLAYLIST_PICTURE": "da2bba2c8aa4b3d81a4c706446b9b4c0",
+            "TITLE": "Guess the band - Rock",
+            "PARENT_USERNAME": "Freek - Belgium Editor",
+            "PLAYLIST_ID": "847658151",
+            "TYPE": "0",
+            "PICTURE_TYPE": "playlist",
+            "__TYPE__": "playlist"
+          },
+          "title": "Guess the band - Rock",
+          "pictures": [
+            {
+              "type": "playlist",
+              "md5": "da2bba2c8aa4b3d81a4c706446b9b4c0"
+            }
+          ],
+          "type": "playlist",
+          "item_id": "version=all.1.1.c,section_id=list,section_position=2,item_type=playlist,item_id=847658151,item_position=2",
+          "caption": "Playlist avec U2, The Rolling Stones, The Cranberries"
+        }
+      ]
+    },
+    {
+      "separator": true,
+      "section_id": "version=all.1.1.c,section_id=highlight,section_position=0",
+      "layout": "highlight",
+      "items": [
+        {
+          "id": "847658151",
+          "play_button": true,
+          "target": "/playlist/847658151",
+          "subtitle": "par Freek - Belgium Editor",
+          "data": {
+            "PLAYLIST_PICTURE": "da2bba2c8aa4b3d81a4c706446b9b4c0",
+            "TITLE": "Guess the band - Rock",
+            "PARENT_USERNAME": "Freek - Belgium Editor",
+            "PLAYLIST_ID": "847658151",
+            "TYPE": "0",
+            "PICTURE_TYPE": "playlist",
+            "__TYPE__": "playlist"
+          },
+          "title": "Guess the band - Rock",
+          "pictures": [
+            {
+              "type": "playlist",
+              "md5": "da2bba2c8aa4b3d81a4c706446b9b4c0"
+            }
+          ],
+          "type": "playlist",
+          "item_id": "version=all.1.1.c,section_id=list,section_position=2,item_type=playlist,item_id=847658151,item_position=2",
+          "caption": "Playlist avec U2, The Rolling Stones, The Cranberries"
+        }
+      ]
+    },
+    {
+      "separator": true,
+      "section_id": "version=all.1.1.c,section_id=highlight,section_position=0",
+      "layout": "highlight",
+      "items": [
+        {
+          "id": "30931",
+          "weight": 1,
+          "play_button": true,
+          "data": {
+            "RADIO_ID": "30931",
+            "TITLE": "Pop Rock",
+            "__TYPE__": "radio"
+          },
+          "title": "Radio",
+          "subtitle": "Pop Rock",
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "dfa92312732c68ee7e50136cf1b17f65"
+            }
+          ],
+          "type": "radio",
+          "item_id": "version=all.1.1.c,section_id=grid,section_position=3,item_type=radio,item_id=30931,item_position=0",
+          "tags": [
+            "rock",
+            "pop",
+            "indie_rock",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "version=all.1.1.c,section_id=highlight,section_position=0",
+      "layout": "highlight",
+      "items": [
+        {
+          "id": "3401386",
+          "subtitle": "Un mix basé sur vos favoris",
+          "play_button": true,
+          "data": {
+            "USER_ID": "3401386",
+            "BLOG_NAME": "Sammy",
+            "__TYPE__": "user"
+          },
+          "title": "Flow",
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "9dce45726b2862727b2a2f98e9c671c9"
+            }
+          ],
+          "type": "user",
+          "item_id": "version=all.1.1.c,section_id=highlight,section_position=0,item_type=user,item_id=3401386,item_position=0"
+        }
+      ]
+    },
+    {
+      "separator": true,
+      "section_id": "version=all.1.1.c,section_id=highlight,section_position=0",
+      "layout": "highlight",
+      "items": [
+        {
+          "id": "3401386",
+          "subtitle": "Sammy",
+          "play_button": false,
+          "data": {
+            "USER_ID": "3401386",
+            "BLOG_NAME": "Sammy",
+            "__TYPE__": "user"
+          },
+          "title": "Utilisateur",
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "9dce45726b2862727b2a2f98e9c671c9"
+            }
+          ],
+          "type": "user",
+          "item_id": "version=all.1.1.c,section_id=highlight,section_position=0,item_type=user,item_id=3401386,item_position=0"
+        }
+      ]
+    },
+    {
+      "section_id": "version=all.1.1.c,section_id=deeplink-list,section_position=1",
+      "layout": "deeplink-list",
+      "items": [
+        {
+          "title": "Deezer sessions",
+          "icon": "link",
+          "type": "deeplink",
+          "item_id": "version=all.1.1.c,section_id=deeplink-list,section_position=1,item_type=deeplink,item_id=tops,item_position=0",
+          "target": "/app/sessions"
+        },
+        {
+          "title": "Top Playlists",
+          "icon": "top",
+          "type": "deeplink",
+          "item_id": "version=all.1.1.c,section_id=deeplink-list,section_position=1,item_type=deeplink,item_id=tops,item_position=0",
+          "target": "/charts"
+        },
+        {
+          "title": "Nouveautés",
+          "icon": "new_release",
+          "type": "deeplink",
+          "item_id": "version=all.1.1.c,section_id=deeplink-list,section_position=1,item_type=deeplink,item_id=release,item_position=1",
+          "target": "/explore"
+        },
+        {
+          "title": "Infos & Divertissement",
+          "icon": "show",
+          "type": "deeplink",
+          "item_id": "version=all.1.1.c,section_id=deeplink-list,section_position=1,item_type=deeplink,item_id=show,item_position=2",
+          "target": "/shows"
+        }
+      ]
+    },
+    {
+      "separator": true,
+      "section_id": "version=all.1.1.c,section_id=list,section_position=2",
+      "title": "Sélectionné pour vous",
+      "items": [
+        {
+          "subtitle": "A link to the deezer session app.",
+          "play_button": false,
+          "title": "Generic content",
+          "caption": "test caption message",
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "9dce45726b2862727b2a2f98e9c671c9"
+            }
+          ],
+          "target": "/app/sessions",
+          "type": "generic",
+          "item_id": "version=all.1.1.c,section_id=highlight,section_position=0,item_type=user,item_id=3401386,item_position=0"
+        },
+        {
+          "id": "10583929",
+          "title": "Get To Heaven (Deluxe)",
+          "subtitle": "by Everything Everything",
+          "caption": "Album released on 19/06/2015",
+          "target": "/album/10583929",
+          "play_button": true,
+          "type": "album",
+          "item_id": "",
+          "data": {
+            "ALB_ID": "10583929",
+            "ALB_TITLE": "Get To Heaven (Deluxe)",
+            "ART_ID": "157701",
+            "ALB_PICTURE": "c4948a8a70d0077722793acfd77ef73d"
+          },
+          "pictures": [
+            {
+              "type": "cover",
+              "md5": "c4948a8a70d0077722793acfd77ef73d"
+            }
+          ]
+        },
+        {
+          "id": "10583929",
+          "title": "Get To Heaven (Deluxe)",
+          "subtitle": "by Everything Everything",
+          "caption": "Album released on 19/06/2015",
+          "target": "/album/10583929",
+          "play_button": false,
+          "type": "album",
+          "item_id": "",
+          "data": {
+            "ALB_ID": "10583929",
+            "ALB_TITLE": "Get To Heaven (Deluxe)",
+            "ART_ID": "157701",
+            "ALB_PICTURE": "c4948a8a70d0077722793acfd77ef73d"
+          },
+          "pictures": [
+            {
+              "type": "cover",
+              "md5": "c4948a8a70d0077722793acfd77ef73d"
+            }
+          ]
+        },
+        {
+          "id": "12178",
+          "title": "Artist",
+          "subtitle": "Calvin Harris",
+          "type": "artist",
+          "play_button": true,
+          "item_id": "",
+          "data": {
+            "ART_ID": "12178",
+            "ART_NAME": "Calvin Harris",
+            "ART_PICTURE": "934b8b919bfcf10b85b68b71a5c59dc5",
+            "NB_FAN": 1871599,
+            "__TYPE__": "artist"
+          },
+          "pictures": [
+            {
+              "type": "artist",
+              "md5": "e8c278c1b4ad3105424410726f04081e"
+            }
+          ]
+        },
+        {
+          "id": "10583929",
+          "title": "Artist",
+          "subtitle": "Calvin Harris",
+          "type": "artist",
+          "play_button": false,
+          "item_id": "",
+          "data": {
+            "ART_ID": "12178",
+            "ART_NAME": "Calvin Harris",
+            "ART_PICTURE": "934b8b919bfcf10b85b68b71a5c59dc5",
+            "NB_FAN": 1871599,
+            "__TYPE__": "artist"
+          },
+          "pictures": [
+            {
+              "type": "artist",
+              "md5": "e8c278c1b4ad3105424410726f04081e"
+            }
+          ]
+        },
+        {
+          "id": "847658151",
+          "target": "/playlist/847658151",
+          "subtitle": "par Freek - Belgium Editor",
+          "data": {
+            "PLAYLIST_PICTURE": "da2bba2c8aa4b3d81a4c706446b9b4c0",
+            "TITLE": "Guess the band - Rock",
+            "PARENT_USERNAME": "Freek - Belgium Editor",
+            "PLAYLIST_ID": "847658151",
+            "TYPE": "0",
+            "PICTURE_TYPE": "playlist",
+            "__TYPE__": "playlist"
+          },
+          "title": "Guess the band - Rock",
+          "pictures": [
+            {
+              "type": "playlist",
+              "md5": "da2bba2c8aa4b3d81a4c706446b9b4c0"
+            }
+          ],
+          "type": "playlist",
+          "item_id": "version=all.1.1.c,section_id=list,section_position=2,item_type=playlist,item_id=847658151,item_position=2",
+          "caption": "Playlist avec U2, The Rolling Stones, The Cranberries"
+        },
+        {
+          "id": "847658151",
+          "target": "/playlist/847658151",
+          "subtitle": "par Freek - Belgium Editor",
+          "play_button": true,
+          "data": {
+            "PLAYLIST_PICTURE": "da2bba2c8aa4b3d81a4c706446b9b4c0",
+            "TITLE": "Guess the band - Rock",
+            "PARENT_USERNAME": "Freek - Belgium Editor",
+            "PLAYLIST_ID": "847658151",
+            "TYPE": "0",
+            "PICTURE_TYPE": "playlist",
+            "__TYPE__": "playlist"
+          },
+          "title": "Guess the band - Rock",
+          "pictures": [
+            {
+              "type": "playlist",
+              "md5": "da2bba2c8aa4b3d81a4c706446b9b4c0"
+            }
+          ],
+          "type": "playlist",
+          "item_id": "version=all.1.1.c,section_id=list,section_position=2,item_type=playlist,item_id=847658151,item_position=2",
+          "caption": "Playlist avec U2, The Rolling Stones, The Cranberries"
+        },
+        {
+          "id": "30931",
+          "weight": 1,
+          "play_button": true,
+          "data": {
+            "RADIO_ID": "30931",
+            "TITLE": "Pop Rock",
+            "__TYPE__": "radio"
+          },
+          "title": "Radio",
+          "subtitle": "Pop Rock",
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "dfa92312732c68ee7e50136cf1b17f65"
+            }
+          ],
+          "type": "radio",
+          "item_id": "version=all.1.1.c,section_id=grid,section_position=3,item_type=radio,item_id=30931,item_position=0",
+          "tags": [
+            "rock",
+            "pop",
+            "indie_rock",
+            "en"
+          ]
+        },
+        {
+          "id": "3401386",
+          "subtitle": "Un mix basé sur vos favoris",
+          "play_button": true,
+          "data": {
+            "USER_ID": "3401386",
+            "BLOG_NAME": "Sammy",
+            "__TYPE__": "user"
+          },
+          "title": "Flow",
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "9dce45726b2862727b2a2f98e9c671c9"
+            }
+          ],
+          "type": "user",
+          "item_id": "version=all.1.1.c,section_id=highlight,section_position=0,item_type=user,item_id=3401386,item_position=0"
+        },
+        {
+          "id": "3401386",
+          "subtitle": "Un mix basé sur vos favoris",
+          "play_button": false,
+          "data": {
+            "USER_ID": "3401386",
+            "BLOG_NAME": "Sammy",
+            "__TYPE__": "user"
+          },
+          "title": "Flow",
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "9dce45726b2862727b2a2f98e9c671c9"
+            }
+          ],
+          "type": "user",
+          "item_id": "version=all.1.1.c,section_id=highlight,section_position=0,item_type=user,item_id=3401386,item_position=0"
+        }
+      ],
+      "layout": "list"
+    },
+    {
+      "section_id": "version=all.1.1.c,section_id=grid,section_position=3",
+      "title": "Les mix faits pour vous",
+      "items": [
+        {
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "9dce45726b2862727b2a2f98e9c671c9"
+            }
+          ],
+          "target": "/app/sessions",
+          "type": "generic",
+          "caption": "App Deezer Session",
+          "item_id": "version=all.1.1.c,section_id=highlight,section_position=0,item_type=user,item_id=3401386,item_position=0"
+        },
+        {
+          "id": "10583929",
+          "title": "Get To Heaven (Deluxe)",
+          "subtitle": "by Everything Everything",
+          "caption": "Album released on 19/06/2015",
+          "target": "/album/10583929",
+          "play_button": true,
+          "type": "album",
+          "item_id": "",
+          "data": {
+            "ALB_ID": "10583929",
+            "ALB_TITLE": "Get To Heaven (Deluxe)",
+            "ART_ID": "157701",
+            "ALB_PICTURE": "c4948a8a70d0077722793acfd77ef73d"
+          },
+          "pictures": [
+            {
+              "type": "cover",
+              "md5": "c4948a8a70d0077722793acfd77ef73d"
+            }
+          ]
+        },
+        {
+          "id": "10583929",
+          "title": "Get To Heaven (Deluxe)",
+          "subtitle": "by Everything Everything",
+          "caption": "Album released on 19/06/2015",
+          "target": "/album/10583929",
+          "play_button": false,
+          "type": "album",
+          "item_id": "",
+          "data": {
+            "ALB_ID": "10583929",
+            "ALB_TITLE": "Get To Heaven (Deluxe)",
+            "ART_ID": "157701",
+            "ALB_PICTURE": "c4948a8a70d0077722793acfd77ef73d"
+          },
+          "pictures": [
+            {
+              "type": "cover",
+              "md5": "c4948a8a70d0077722793acfd77ef73d"
+            }
+          ]
+        },
+        {
+          "id": "12178",
+          "title": "Artist",
+          "caption": "Calvin Harris",
+          "type": "artist",
+          "play_button": true,
+          "item_id": "",
+          "data": {
+            "ART_ID": "12178",
+            "ART_NAME": "Calvin Harris",
+            "ART_PICTURE": "934b8b919bfcf10b85b68b71a5c59dc5",
+            "NB_FAN": 1871599,
+            "__TYPE__": "artist"
+          },
+          "pictures": [
+            {
+              "type": "artist",
+              "md5": "e8c278c1b4ad3105424410726f04081e"
+            }
+          ]
+        },
+        {
+          "id": "12178",
+          "title": "Artist",
+          "caption": "Calvin Harris",
+          "type": "artist",
+          "play_button": false,
+          "item_id": "",
+          "data": {
+            "ART_ID": "12178",
+            "ART_NAME": "Calvin Harris",
+            "ART_PICTURE": "934b8b919bfcf10b85b68b71a5c59dc5",
+            "NB_FAN": 1871599,
+            "__TYPE__": "artist"
+          },
+          "pictures": [
+            {
+              "type": "artist",
+              "md5": "e8c278c1b4ad3105424410726f04081e"
+            }
+          ]
+        },
+        {
+          "id": "847658151",
+          "target": "/playlist/847658151",
+          "subtitle": "par Freek - Belgium Editor",
+          "data": {
+            "PLAYLIST_PICTURE": "da2bba2c8aa4b3d81a4c706446b9b4c0",
+            "TITLE": "Guess the band - Rock",
+            "PARENT_USERNAME": "Freek - Belgium Editor",
+            "PLAYLIST_ID": "847658151",
+            "TYPE": "0",
+            "PICTURE_TYPE": "playlist",
+            "__TYPE__": "playlist"
+          },
+          "title": "Guess the band - Rock",
+          "pictures": [
+            {
+              "type": "playlist",
+              "md5": "da2bba2c8aa4b3d81a4c706446b9b4c0"
+            }
+          ],
+          "type": "playlist",
+          "item_id": "version=all.1.1.c,section_id=list,section_position=2,item_type=playlist,item_id=847658151,item_position=2",
+          "caption": "Playlist avec U2, The Rolling Stones, The Cranberries"
+        },
+        {
+          "id": "847658151",
+          "target": "/playlist/847658151",
+          "subtitle": "par Freek - Belgium Editor",
+          "play_button": true,
+          "data": {
+            "PLAYLIST_PICTURE": "da2bba2c8aa4b3d81a4c706446b9b4c0",
+            "TITLE": "Guess the band - Rock",
+            "PARENT_USERNAME": "Freek - Belgium Editor",
+            "PLAYLIST_ID": "847658151",
+            "TYPE": "0",
+            "PICTURE_TYPE": "playlist",
+            "__TYPE__": "playlist"
+          },
+          "title": "Guess the band - Rock",
+          "pictures": [
+            {
+              "type": "playlist",
+              "md5": "da2bba2c8aa4b3d81a4c706446b9b4c0"
+            }
+          ],
+          "type": "playlist",
+          "item_id": "version=all.1.1.c,section_id=list,section_position=2,item_type=playlist,item_id=847658151,item_position=2",
+          "caption": "Playlist avec U2, The Rolling Stones, The Cranberries"
+        },
+        {
+          "id": "30931",
+          "weight": 1,
+          "play_button": true,
+          "data": {
+            "RADIO_ID": "30931",
+            "TITLE": "Pop Rock",
+            "__TYPE__": "radio"
+          },
+          "title": "Pop Rock",
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "dfa92312732c68ee7e50136cf1b17f65"
+            }
+          ],
+          "type": "radio",
+          "item_id": "version=all.1.1.c,section_id=grid,section_position=3,item_type=radio,item_id=30931,item_position=0",
+          "tags": [
+            "rock",
+            "pop",
+            "indie_rock",
+            "en"
+          ]
+        },
+        {
+          "id": "3401386",
+          "subtitle": "Un mix basé sur vos favoris",
+          "play_button": true,
+          "data": {
+            "USER_ID": "3401386",
+            "BLOG_NAME": "Sammy",
+            "__TYPE__": "user"
+          },
+          "title": "Flow",
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "9dce45726b2862727b2a2f98e9c671c9"
+            }
+          ],
+          "type": "user",
+          "item_id": "version=all.1.1.c,section_id=highlight,section_position=0,item_type=user,item_id=3401386,item_position=0"
+        },
+        {
+          "id": "3401386",
+          "subtitle": "Un mix basé sur vos favoris",
+          "play_button": false,
+          "data": {
+            "USER_ID": "3401386",
+            "BLOG_NAME": "Sammy",
+            "__TYPE__": "user"
+          },
+          "title": "Flow",
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "9dce45726b2862727b2a2f98e9c671c9"
+            }
+          ],
+          "type": "user",
+          "item_id": "version=all.1.1.c,section_id=highlight,section_position=0,item_type=user,item_id=3401386,item_position=0"
+        },
+        {
+          "id": "37645",
+          "weight": 2,
+          "play_button": true,
+          "data": {
+            "RADIO_ID": "37645",
+            "TITLE": "Après-midi d'été",
+            "__TYPE__": "radio"
+          },
+          "title": "Après-midi d'été",
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "b5bf2ee63d16a8d15901ea4b8745c62a"
+            }
+          ],
+          "type": "radio",
+          "item_id": "version=all.1.1.c,section_id=grid,section_position=3,item_type=radio,item_id=37645,item_position=4",
+          "tags": [
+            "sweet",
+            "indie",
+            "10s",
+            "summer",
+            "happy"
+          ]
+        }
+      ],
+      "subtitle": "Vos chansons préférées et nos recommandations, le tout dans un mix thématique.",
+      "layout": "grid"
+    },
+    {
+      "section_id": "version=all.1.1.c,section_id=deeplink-list,section_position=4",
+      "layout": "deeplink-list",
+      "items": [
+        {
+          "title": "Tous les mix",
+          "icon": "mix",
+          "type": "deeplink",
+          "item_id": "version=all.1.1.c,section_id=deeplink-list,section_position=4,item_type=deeplink,item_id=mixes,item_position=0",
+          "target": "/mixes"
+        }
+      ]
+    },
+    {
+      "section_id": "version=all.1.1.c,section_id=grid,section_position=3",
+      "title": "Les mix faits pour vous",
+      "items": [
+        {
+          "pictures": [
+            {
+              "type": "misc",
+              "md5": "9dce45726b2862727b2a2f98e9c671c9"
+            }
+          ],
+          "target": "/app/sessions",
+          "type": "generic",
+          "title": "App Deezer Session",
+          "item_id": "version=all.1.1.c,section_id=highlight,section_position=0,item_type=user,item_id=3401386,item_position=0",
+          "caption": "caption"
+        },
+        {
+          "id": "10583929",
+          "target": "/album/10583929",
+          "play_button": false,
+          "type": "album",
+          "item_id": "",
+          "data": {
+            "ALB_ID": "10583929",
+            "ALB_TITLE": "Get To Heaven (Deluxe)",
+            "ART_ID": "157701",
+            "ALB_PICTURE": "c4948a8a70d0077722793acfd77ef73d"
+          },
+          "pictures": [
+            {
+              "type": "cover",
+              "md5": "c4948a8a70d0077722793acfd77ef73d"
+            }
+          ]
+        },
+        {
+          "id": "12178",
+          "type": "artist",
+          "play_button": false,
+          "item_id": "",
+          "data": {
+            "ART_ID": "12178",
+            "ART_NAME": "Calvin Harris",
+            "ART_PICTURE": "934b8b919bfcf10b85b68b71a5c59dc5",
+            "NB_FAN": 1871599,
+            "__TYPE__": "artist"
+          },
+          "pictures": [
+            {
+              "type": "artist",
+              "md5": "e8c278c1b4ad3105424410726f04081e"
+            }
+          ]
+        },
+        {
+          "id": "847658151",
+          "target": "/playlist/847658151",
+          "data": {
+            "PLAYLIST_PICTURE": "da2bba2c8aa4b3d81a4c706446b9b4c0",
+            "TITLE": "Guess the band - Rock",
+            "PARENT_USERNAME": "Freek - Belgium Editor",
+            "PLAYLIST_ID": "847658151",
+            "TYPE": "0",
+            "PICTURE_TYPE": "playlist",
+            "__TYPE__": "playlist"
+          },
+          "pictures": [
+            {
+              "type": "playlist",
+              "md5": "da2bba2c8aa4b3d81a4c706446b9b4c0"
+            }
+          ],
+          "type": "playlist",
+          "item_id": "version=all.1.1.c,section_id=list,section_position=2,item_type=playlist,item_id=847658151,item_position=2"
+        }
+      ],
+      "subtitle": "Vos chansons préférées et nos recommandations, le tout dans un mix thématique.",
+      "layout": "grid"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+.class public final synthetic Ls3d;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Llre;
+
+
+# static fields
+.field public static final synthetic a:Ls3d;
+
+
+# direct methods
+.method public static synthetic constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Ls3d;
+
+    const/4 v1, 0x6
+
+    invoke-direct {v0}, Ls3d;-><init>()V
+
+    const/4 v1, 0x6
+
+    sput-object v0, Ls3d;->a:Ls3d;
+
+    const/4 v1, 0x4
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x3
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x2
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Z
+    .locals 2
+
+    const-string v1, "  ~@~@~@~@~@~@~@~@~@~@~   Smob - Mod obfuscation tool v1.4 by Kirlif\'   ~@~@~@~@~@~@~@~@~@~@~  "
+
+    instance-of v0, p1, Landroid/text/style/AbsoluteSizeSpan;
+
+    const/4 v1, 0x3
+
+    if-nez v0, :cond_1
+
+    const/4 v1, 0x6
+
+    instance-of p1, p1, Landroid/text/style/RelativeSizeSpan;
+
+    const/4 v1, 0x1
+
+    if-eqz p1, :cond_0
+
+    const/4 v1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x3
+
+    const/4 p1, 0x0
+
+    const/4 v1, 0x2
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v1, 0x1
+
+    const/4 p1, 0x1
+
+    :goto_1
+    const/4 v1, 0x6
+
+    return p1
+.end method

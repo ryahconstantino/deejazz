@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dz_SMScoderesentconfirmationscreen_text_XSMScodesleft_mobile">
+        <item quantity="other">%1$s개 SMS 코드가 남음</item>
+    </plurals>
+    <plurals name="dz_agerestrictionerrormessage_text_mustbeXyearsentervaliddate_mobile">
+        <item quantity="other">Deezer 계정을 이용하시려면 최소 %1$s세 이상이어야 합니다. 유효한 날짜를 입력하십시오.</item>
+    </plurals>
+    <plurals name="dz_androidtv_text_profilenumberlimitreached_mobile">
+        <item quantity="other">최대 생성 가능한 %1$s개 프로필 수를 초과했습니다. 계속하시려면 하나의 프로필을 삭제하세요.</item>
+    </plurals>
+    <plurals name="dz_androidtvlandingpage_text_morethanXmilliontracksacrossallgenres_mobile">
+        <item quantity="other">모든 장르의 음악들의 %1$s 000 000곡 이상</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseXmoreartistsUPP_mobile">
+        <item quantity="other">%1$s명 아티스트를 더 선택하세요</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseatleastXartistsUPP_mobile">
+        <item quantity="other">최소 %1$s명의 아티스트를 선택하세요</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_continuewithXartistsUPP_mobile">
+        <item quantity="other">%1$s명 아티스트로 진행합니다</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_deletetheseXplaylists_mobile">
+        <item quantity="other">이 %1$s개의 플레이리스트를 삭제하시겠습니까?</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_playlistsdownloaded_mobile">
+        <item quantity="other">플레이리스트 다운로드 완료!</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_trackremovedfromfavorite_mobile">
+        <item quantity="other">이 곡들이 좋아하는 곡 목록에서 삭제되었습니다.</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xapps_mobile">
+        <item quantity="other">%1$s개 앱</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xartists_mobile">
+        <item quantity="other">%1$s명 아티스트</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xaudiobooks_mobile">
+        <item quantity="other">%1$s개 오디오북</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xchapters_mobile">
+        <item quantity="other">%1$s장</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xdownloads_mobile">
+        <item quantity="other">%1$s개 다운로드</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xepisodes_mobile">
+        <item quantity="other">%1$s개 에피소드</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xmixes_mobile">
+        <item quantity="other">%1$s개 믹스</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xnewentries_mobile">
+        <item quantity="other">%1$s곡 새롭게 진입</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xplaylists_mobile">
+        <item quantity="other">%1$s개 플레이리스트</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xpodcasts_mobile">
+        <item quantity="other">%1$s개 팟캐스트</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xtracks_mobile">
+        <item quantity="other">%1$s개 곡</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xunheard_mobile">
+        <item quantity="other">%1$s개 재생 안함</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_subtitle_cancelactivesubsbeforedeleting_mobile">
+        <item quantity="other">계정을 삭제하기 전에 이용 중인 가입 서비스를 취소해야 합니다.</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingloseaccesstoapps_mobile">
+        <item quantity="other">계정을 삭제하시면 다음 앱을 이용할 수 없게 됩니다:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletinglosefollowingsubs_mobile">
+        <item quantity="other">계정을 삭제하시면 다음 가입 서비스를 잃게 됩니다:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingyouloseaccessdataandsubs_mobile">
+        <item quantity="other">계정을 삭제하시면 다음 앱을 이용할 수 없게 되고, 모든 데이터와 가입 서비스를 잃게 됩니다.</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_accountassociatedwithXapps_mobile">
+        <item quantity="other">귀하의 계정이 %1$s개 앱에 연결되어 있습니다.</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithactivesubs_mobile">
+        <item quantity="other">이용 중인 가입 서비스가 있는 앱</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithoutsubs_mobile">
+        <item quantity="other">가입 서비스가 없는 앱</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithsubs_mobile">
+        <item quantity="other">가입 서비스가 있는 앱</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_subtitle_howaboutXmorefreedays_mobile">
+        <item quantity="other">%1$s일동안 더 무료로 사용해 보시는 건 어떠세요?</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_title_planXtrialendsinXdays_mobile">
+        <item quantity="other">귀하의 %1$s 체험 기간이 %2$s일 후에 종료됩니다.</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXhours_mobile">
+        <item quantity="other">보안을 위해 %1$s시간 후에 다시 시도하시기 바랍니다.</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXminutes_mobile">
+        <item quantity="other">보안을 위해 %1$s분 후에 다시 시도하시기 바랍니다.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_TCsprivacypolicyforunderXyearold_mobile">
+        <item quantity="other">%1$s세 미만 멤버에 대한 계정을 활성화하면, 귀하는 해당 멤버가 서비스를 사용할 수 있도록 Deezer가 그들으 개인 정보를 수집 및 관리하는 것에 동의합니다. 자세한 정보는 당사의 %2$s개인정보 보호정책%3$s에서 확인하세요.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_onlycontentsuitableforXageandunder_mobile">
+        <item quantity="other">이 옵션을 활성화하면 %1$s세 미만 사용자에게 적합한 컨텐츠만 표시됩니다.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_underXyearsorkidscannotbeconverted_mobile">
+        <item quantity="other">이 프로필에 접속할 수 없습니다 %1$s세 미만의 사용자 또는 어린이 프로필은 독립 계정으로 전환할 수 없습니다.</item>
+    </plurals>
+    <plurals name="dz_familymemberselector_text_Xmembersremaining_mobile">
+        <item quantity="other">잔여 멤버 %1$s명</item>
+    </plurals>
+    <plurals name="dz_familyprofileminorconsent_text_termsandconditions_mobile">
+        <item quantity="other">%1$s세 미만의 미성년자 부계정을 개설함으로서 Deezer 및 협력업체들이 관심 분야에 맞는 컨텐츠 및 특전들을 제공하기 위해서 개인 데이터들을 수집하고 관리하는 것에 동의하는 것으로 간주됩니다. 더 많은 정보를 원하시면 저희 개인정보 보호정책을 확인해 주세요.</item>
+    </plurals>
+    <plurals name="dz_familyprofileswitcherwelcome_text_Xprofilesremaining_mobile">
+        <item quantity="other">남은 프로필 %1$s개</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_accountcreationagerestriction_mobile">
+        <item quantity="other">계정을 생성하기 위해서는 %1$s세 이상이어야 합니다.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordnotenoughchars_mobile">
+        <item quantity="other">비밀번호는 최소 %1$s자로 이루어져야 합니다.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordtoomanychars_mobile">
+        <item quantity="other">패스워드는 최대 %1$s자까지 가능합니다.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernamenotenoughchars_mobile">
+        <item quantity="other">사용자명은 최소한 %1$s개의 문자를 포함해야 합니다.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernametoomanychars_mobile">
+        <item quantity="other">사용자명의 글자수는 %1$s개를 초과할 수 없습니다.</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xgbleft_mobile">
+        <item quantity="other">%1$sGB 남음</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xmbleft_mobile">
+        <item quantity="other">%1$sMB 남음</item>
+    </plurals>
+    <plurals name="dz_inprogressplaylistpage_subtitle_duringthelastXdays_mobile">
+        <item quantity="other">지난 %1$s일 동안</item>
+    </plurals>
+    <plurals name="dz_masthead_title_episodescountnox_mobile">
+        <item quantity="other">에피소드</item>
+    </plurals>
+    <plurals name="dz_masthead_title_fanscountnox_mobile">
+        <item quantity="other">팬</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_Xtrackchangesperhour_mobile">
+        <item quantity="other">믹스에서는 시간당 %1$s곡만 변경하실 수 있습니다.</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_changetrackallowedagaininXmin_mobile">
+        <item quantity="other">%1$s분 후에 다시 곡을 변경하실 수 있습니다.</item>
+    </plurals>
+    <plurals name="dz_mobiletrialtoaster_text_yourXdaytrialhasstarted_mobile">
+        <item quantity="other">귀하의 %1$s-일 체험이 시작되었습니다</item>
+    </plurals>
+    <plurals name="dz_mymusic_albums_count">
+        <item quantity="other">%1$s개 앨범</item>
+    </plurals>
+    <plurals name="dz_newofferscardsusp_text_getXaccountswithXbenefitsplushifi_mobile">
+        <item quantity="other">%1$s개 개별 계정을 만들고 하이파이 사운드를 포함한 %2$s의 모든 혜택을 즐기세요.</item>
+    </plurals>
+    <plurals name="dz_offerwall_text_priceXpermonthforXmonths_mobile">
+        <item quantity="other">%2$s개월간 %1$s/월</item>
+    </plurals>
+    <plurals name="dz_offlinepodcastplaylist_subtitle_Xdownloadedepisodes_mobile">
+        <item quantity="other">다운로드된 에피소드 %1$s개</item>
+    </plurals>
+    <plurals name="dz_onboardingfirstlikes_action_pickXmoreUPP_mobile">
+        <item quantity="other">%1$s개 더 선택하세요</item>
+    </plurals>
+    <plurals name="dz_onboardingtoastmessage_action_onlyXpickstostart_mobile">
+        <item quantity="other">잠시만요! 단 %1$s개만 있으면 시작할 수 있습니다.</item>
+    </plurals>
+    <plurals name="dz_passwordsecurity_title_Xcharactersmin_mobile">
+        <item quantity="other">최소 %1$s자</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_accountalreadylinkedtoXdevices_mobile">
+        <item quantity="other">귀하의 계정이 이미 다른 %1$s개의 기기에 연결되어 있습니다. 그러므로 %2$s 기능들을 본 기기에서 사용하실 수 없습니다.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_maxXdevicesonyoursubcription_mobile">
+        <item quantity="other">가입하신 서비스를 통해서는 최대 %2$s개의 기기에서 %1$s를 이용하실 수 있습니다.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_nomorethanXdevicesonyoursubcription_mobile">
+        <item quantity="other">가입하신 서비스를 통해서는 최대 %2$s개의 기기에서 %1$s를 사용하실 수 있습니다.</item>
+    </plurals>
+    <plurals name="dz_playlist_text_tracksalreadyaddedtotheplaylist_mobile">
+        <item quantity="other">이 곡들은 이미 플레이리스트에 추가되었습니다</item>
+    </plurals>
+    <plurals name="dz_playlistpage_action_addXtracks_mobile">
+        <item quantity="other">%1$s곡 추가</item>
+    </plurals>
+    <plurals name="dz_premiumbenefit_text_skipmorethanXtracksperhour_mobile">
+        <item quantity="other">시간당 %1$s곡을 더 건너뛰기하세요</item>
+    </plurals>
+    <plurals name="dz_searchresult_title_topresults_mobile">
+        <item quantity="other">상위 결과</item>
+    </plurals>
+    <plurals name="dz_signupjapanUS_action_tryitfreexmonths_mobile">
+        <item quantity="other">%1$s개월 동안 무료로 이용해 보세요</item>
+    </plurals>
+    <plurals name="dz_skipcounter_text_Xmoretracks_mobile">
+        <item quantity="other">%1$s개 곡을 더 건너뛰실 수 있습니다.</item>
+    </plurals>
+    <plurals name="dz_sleeptimer_text_sleepinlessthanXminutes_mobile">
+        <item quantity="other">%1$s분 후에 수면</item>
+    </plurals>
+    <plurals name="dz_smartcache_text_storemostplayedtracksrecosettoXgb_mobile">
+        <item quantity="other">Smart Cache는 가장 많이 듣는 곡들을 저장하여, 더 빠른 속도로 재로딩할 수 있도록 해줍니다. 최상의 경험을 위해 %1$s GB로 설정하는 것을 권장해 드립니다.</item>
+    </plurals>
+    <plurals name="dz_smartloginandroidtvxboxwelcome_text_thiscodewillexpireinXminutes_mobile">
+        <item quantity="other">해당 코드는 %1$s분동안 유효합니다.</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Followers_mobile">
+        <item quantity="other">팔로워</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Following_mobile">
+        <item quantity="other">팔로잉</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfans_mobile">
+        <item quantity="other">%1$s명의 팬</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowers_mobile">
+        <item quantity="other">%1$s명의 팔로워</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowing_mobile">
+        <item quantity="other">%1$s명 팔로잉</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xnotifications_mobile">
+        <item quantity="other">%1$s개의 새로운 알림</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xgigabytes_mobile">
+        <item quantity="other">%1$s GB</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xmegabytes_mobile">
+        <item quantity="other">%1$s MB</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdays_mobile">
+        <item quantity="other">%1$s일</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdaysago_mobile">
+        <item quantity="other">%1$s일 전</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhours_mobile">
+        <item quantity="other">%1$s 시간</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhoursago_mobile">
+        <item quantity="other">%1$s시간 전</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmin_mobile">
+        <item quantity="other">%1$s 분</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_XminleftUPP_mobile">
+        <item quantity="other">%1$s분 남음</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutes_mobile">
+        <item quantity="other">%1$s분</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutesago_mobile">
+        <item quantity="other">%1$s분 전</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmonthsago_mobile">
+        <item quantity="other">%1$s개월 전</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xs_mobile">
+        <item quantity="other">%1$s초</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xweeksago_mobile">
+        <item quantity="other">%1$s주 전</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xyearsago_mobile">
+        <item quantity="other">%1$s년 전</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_alreadyaddedtoplaylist_mobile">
+        <item quantity="other">이미 플레이리스트에 추가되었습니다</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_unlockedXmoreskips_mobile">
+        <item quantity="other">추가 %1$s번 건너뛰기 권한을 얻으셨습니다</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoplaylisttrack_mobile">
+        <item quantity="other">플레이리스트에 추가되었습니다</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoyourfavoritetrackstrack_mobile">
+        <item quantity="other">좋아하는 곡에 추가되었습니다</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromplaylist_mobile">
+        <item quantity="other">플레이리스트에서 삭제되었습니다</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromyourfavoritetrackstrack_mobile">
+        <item quantity="other">좋아하는 곡에서 삭제되었습니다</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_Xdaytrial_mobile">
+        <item quantity="other">%1$s일 체험</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_downloadskipadfreelistening_mobile">
+        <item quantity="other">%1$s일 동안 곡을 다운로드하고 좋아하지 않는 곡은 건너뛰기하고, 광고 없이 음악을 감상해 보세요.</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_text_tryXforXdaysfreenocreditcardrequired_mobile">
+        <item quantity="other">%1$s 서비스를 %2$s일간 무료로 이용하세요 - 신용카드를 요구하지 않습니다!</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXdays_mobile">
+        <item quantity="other">가입을 확인하고 폰에서 Deezer를 계속 사용하려면, %1$s일 이내 WiFi 또는 모바일 네트워크에 연결하세요.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXhours_mobile">
+        <item quantity="other">가입을 확인하고 폰에서 Deezer를 계속 사용하려면, %1$s시간 이내 WiFi 또는 모바일 네트워크에 연결하세요.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXminutes_mobile">
+        <item quantity="other">가입을 확인하고 폰에서 Deezer를 계속 사용하려면, %1$s분 이내 WiFi 또는 모바일 네트워크에 연결하세요.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d초 빨리 감기</item>
+        <item quantity="other">%d초 빨리 감기</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d초 되감기</item>
+        <item quantity="other">%d초 되감기</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">새 알림 %d개</item>
+        <item quantity="other">새 알림 %d개</item>
+    </plurals>
+</resources>

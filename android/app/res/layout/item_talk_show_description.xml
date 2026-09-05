@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deezer.android.ui.widget.LinearLayoutWithBottomSeparator android:orientation="vertical" android:background="@color/download_bar_background" android:paddingTop="24.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:paddingStart="@dimen/scaled_16dp" android:paddingEnd="@dimen/scaled_16dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_body_mat" android:textColor="@color/theme_text_primary" android:id="@id/item_description_title_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/header_block_second_line_text" android:textColor="@color/theme_text_secondary" android:ellipsize="end" android:id="@id/item_description_short_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3" android:layout_centerVertical="true" android:textAlignment="viewStart" />
+    <TextView android:textSize="@dimen/header_block_second_line_text" android:textStyle="normal" android:textColor="@color/palette_blue" android:id="@id/item_description_link" android:background="@drawable/ripple_cell_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+</com.deezer.android.ui.widget.LinearLayoutWithBottomSeparator>

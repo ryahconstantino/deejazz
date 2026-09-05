@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?actionBarSize">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:background="@drawable/recycler_view_background" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/content_page_list_padding" android:paddingEnd="@dimen/content_page_list_padding" android:elevation="@dimen/content_page_list_elevation" android:outlineProvider="background" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include android:id="@id/content_page_header" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/content_page_header" />
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" app:popupTheme="@style/PopupTheme" app:subtitleTextAppearance="@style/DeezerSubTitle.Dark" app:theme="@style/Deezer.Toolbar" app:titleTextAppearance="@style/DeezerTitle.Dark">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/mock_toolbar_title_block" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:alpha="0.0">
+            <TextView android:textSize="@dimen/toolbar_first_line_text" android:textStyle="normal" android:textColor="@color/text_white" android:ellipsize="end" android:id="@id/mock_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:textDirection="locale" />
+            <TextView android:textSize="@dimen/toolbar_second_line_text" android:textStyle="italic" android:textColor="@color/text_white" android:ellipsize="end" android:id="@id/mock_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:textDirection="locale" />
+        </LinearLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+    <FrameLayout android:id="@id/fab_reveal_layout_black" android:background="@color/login_bg_veil_login_reg_screen" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="6.0dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/fab_reveal_layout_rv" android:background="@color/theme_bg_primary" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="60.0dp" />
+        <ImageView android:textSize="14.0sp" android:gravity="center" android:id="@id/fab_reveal_button_close" android:background="@drawable/ripple_unbounded" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_close" />
+    </FrameLayout>
+</merge>

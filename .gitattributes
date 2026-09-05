@@ -1,2 +1,4 @@
-src/DeeJazz.exe filter=lfs diff=lfs merge=lfs -text
-src/resources/app.asar filter=lfs diff=lfs merge=lfs -text
+desktop/DeeJazz.exe filter=lfs diff=lfs merge=lfs -text
+desktop/resources/app.asar filter=lfs diff=lfs merge=lfs -text
+android/app/** text=auto eol=lf
+android/app/original/** -text

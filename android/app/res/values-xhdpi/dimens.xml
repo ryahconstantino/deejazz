@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_sheet_context_menu_peek_height">512.0dp</dimen>
+    <dimen name="brick_error_top_margin_top">32.0dp</dimen>
+    <dimen name="com_appboy_card_background_border_bottom">1.0dp</dimen>
+    <dimen name="com_appboy_card_background_border_left">1.0dp</dimen>
+    <dimen name="com_appboy_card_background_border_right">1.0dp</dimen>
+    <dimen name="com_appboy_card_background_border_top">0.5dp</dimen>
+    <dimen name="com_braze_content_card_background_border_bottom">1.0dp</dimen>
+    <dimen name="com_braze_content_card_background_border_left">1.0dp</dimen>
+    <dimen name="com_braze_content_card_background_border_right">1.0dp</dimen>
+    <dimen name="com_braze_content_card_background_border_top">0.5dp</dimen>
+    <dimen name="com_braze_content_card_background_shadow_bottom">1.0dp</dimen>
+    <dimen name="content_page_playbutton_max_width">220.0dp</dimen>
+    <dimen name="masthead_artist_max_height">320.0dp</dimen>
+    <dimen name="masthead_fabbutton_horizontalmargin">16.0dp</dimen>
+    <dimen name="tw__login_btn_text_size">18.0sp</dimen>
+</resources>

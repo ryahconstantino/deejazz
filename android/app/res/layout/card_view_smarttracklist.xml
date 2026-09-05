@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.android.ui.recyclerview.widget.dynamicpage.DynamicCardSmartTrackListCoverView android:id="@id/cover_and_title" android:background="@drawable/placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" app:squared="true" style="@style/CardsElevation" />
+    <TextView android:textSize="@dimen/text_details_mat" android:textColor="@color/theme_text_secondary" android:ellipsize="end" android:gravity="start|center" android:id="@id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dynamic_card_text_margin" android:maxLines="3" android:textDirection="locale" />
+</LinearLayout>

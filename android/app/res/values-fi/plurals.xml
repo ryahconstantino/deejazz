@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dz_SMScoderesentconfirmationscreen_text_XSMScodesleft_mobile">
+        <item quantity="one">%1$s tekstiviestikoodi jäljellä</item>
+        <item quantity="other">%1$s tekstiviestikoodia jäljellä</item>
+    </plurals>
+    <plurals name="dz_agerestrictionerrormessage_text_mustbeXyearsentervaliddate_mobile">
+        <item quantity="one">Deezer-käyttäjän on oltava vähintään %1$s-vuotias. Ilmoita oikea päivämäärä.</item>
+        <item quantity="other">Deezer-käyttäjän on oltava vähintään %1$s-vuotias. Ilmoita oikea päivämäärä.</item>
+    </plurals>
+    <plurals name="dz_androidtv_text_profilenumberlimitreached_mobile">
+        <item quantity="one">%1$s profiilin raja on täyttynyt. Poista profiili jatkaaksesi.</item>
+        <item quantity="other">%1$s profiilin raja on täyttynyt. Poista profiili jatkaaksesi.</item>
+    </plurals>
+    <plurals name="dz_androidtvlandingpage_text_morethanXmilliontracksacrossallgenres_mobile">
+        <item quantity="one">Yli %1$s miljoonaa kappaletta, kaikki genret</item>
+        <item quantity="other">Yli %1$s miljoonaa kappaletta, kaikki genret</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseXmoreartistsUPP_mobile">
+        <item quantity="one">VALITSE VIELÄ %1$s ARTISTI</item>
+        <item quantity="other">VALITSE VIELÄ %1$s ARTISTIA</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_chooseatleastXartistsUPP_mobile">
+        <item quantity="one">VALITSE VÄHINTÄÄN %1$s ARTISTI</item>
+        <item quantity="other">VALITSE VÄHINTÄÄN %1$s ARTISTIA</item>
+    </plurals>
+    <plurals name="dz_artistselectionoptimization_action_continuewithXartistsUPP_mobile">
+        <item quantity="one">JATKA %1$s ARTISTILLA</item>
+        <item quantity="other">JATKA %1$s ARTISTILLA</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_deletetheseXplaylists_mobile">
+        <item quantity="one">Poistetaanko tämä soittolista?</item>
+        <item quantity="other">Poistetaanko nämä %1$s soittolistaa?</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_playlistsdownloaded_mobile">
+        <item quantity="one">Soittolista ladattu!</item>
+        <item quantity="other">Soittolistat ladattu!</item>
+    </plurals>
+    <plurals name="dz_confirmationmessage_text_trackremovedfromfavorite_mobile">
+        <item quantity="one">Kappale on poistettu suosikkikappaleistasi.</item>
+        <item quantity="other">Kappaleet on poistettu suosikkikappaleistasi.</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xapps_mobile">
+        <item quantity="one">%1$s sovellus</item>
+        <item quantity="other">%1$s sovellusta</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xartists_mobile">
+        <item quantity="one">%1$s artisti</item>
+        <item quantity="other">%1$s artistia</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xaudiobooks_mobile">
+        <item quantity="one">%1$s äänikirja</item>
+        <item quantity="other">%1$s äänikirjaa</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xchapters_mobile">
+        <item quantity="one">%1$s luku</item>
+        <item quantity="other">%1$s lukua</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xdownloads_mobile">
+        <item quantity="one">%1$s lataus</item>
+        <item quantity="other">%1$s latausta</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xepisodes_mobile">
+        <item quantity="one">%1$s jakso</item>
+        <item quantity="other">%1$s jaksoa</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xmixes_mobile">
+        <item quantity="one">%1$s mix</item>
+        <item quantity="other">%1$s mixiä</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xnewentries_mobile">
+        <item quantity="one">%1$s uusi lisäys</item>
+        <item quantity="other">%1$s uutta lisäystä</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xplaylists_mobile">
+        <item quantity="one">%1$s soittolista</item>
+        <item quantity="other">%1$s soittolistaa</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xpodcasts_mobile">
+        <item quantity="one">%1$s podcast</item>
+        <item quantity="other">%1$s podcastia</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xtracks_mobile">
+        <item quantity="one">%1$s kappale</item>
+        <item quantity="other">%1$s kappaletta</item>
+    </plurals>
+    <plurals name="dz_contentcounter_text_Xunheard_mobile">
+        <item quantity="one">%1$s kuuntelematon</item>
+        <item quantity="other">%1$s kuuntelematonta</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_subtitle_cancelactivesubsbeforedeleting_mobile">
+        <item quantity="one">Peruuta mahdollinen tilauksesi ennen kuin poistat tilisi.</item>
+        <item quantity="other">Peruuta mahdolliset tilauksesi ennen kuin poistat tilisi.</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingloseaccesstoapps_mobile">
+        <item quantity="one">Jos poistat tilisi, menetät seuraavan sovelluksen käyttöoikeudet:</item>
+        <item quantity="other">Jos poistat tilisi, menetät seuraavien sovellusten käyttöoikeudet:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletinglosefollowingsubs_mobile">
+        <item quantity="one">Jos poistat tilisi, menetät seuraavan tilauksen:</item>
+        <item quantity="other">Jos poistat tilisi, menetät seuraavat tilaukset:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_text_bydeletingyouloseaccessdataandsubs_mobile">
+        <item quantity="one">Jos poistat tilisi, menetät seuraavan sovelluksen kaikki käyttöoikeuden, tiedot ja tilaukset:</item>
+        <item quantity="other">Jos poistat tilisi, menetät seuraavien sovellusten kaikki käyttöoikeudet, tiedot ja tilaukset:</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_accountassociatedwithXapps_mobile">
+        <item quantity="one">Tiliisi on yhdistetty %1$s sovellus</item>
+        <item quantity="other">Tiliisi on yhdistetty %1$s sovellusta</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithactivesubs_mobile">
+        <item quantity="one">Sovellus, jossa on voimassa oleva tilaus</item>
+        <item quantity="other">Sovellukset, joissa on voimassa olevia tilauksia</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithoutsubs_mobile">
+        <item quantity="one">Sovellus, jossa ei tilausta</item>
+        <item quantity="other">Sovellukset, joissa ei tilauksia</item>
+    </plurals>
+    <plurals name="dz_deleteaccountmultipleapps_title_appswithsubs_mobile">
+        <item quantity="one">Sovellus, jossa tilaus</item>
+        <item quantity="other">Sovellukset, joissa tilauksia</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_subtitle_howaboutXmorefreedays_mobile">
+        <item quantity="one">Miltä %1$s ilmainen lisäpäivä kuullostaisi?</item>
+        <item quantity="other">Miltä %1$s ilmaista lisäpäivää kuullostaisi?</item>
+    </plurals>
+    <plurals name="dz_endoftrialbox_title_planXtrialendsinXdays_mobile">
+        <item quantity="one">%1$s-kokeilusi päättyy %2$s päivän kuluttua</item>
+        <item quantity="other">%1$s-kokeilusi päättyy %2$s päivän kuluttua</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXhours_mobile">
+        <item quantity="one">Turvallisuussyistä sinun täytyy odottaa %1$s tunti ennen seuraavaa yritystä.</item>
+        <item quantity="other">Turvallisuussyistä sinun täytyy odottaa %1$s tuntia ennen seuraavaa yritystä.</item>
+    </plurals>
+    <plurals name="dz_errormessage_text_securitytryagaininXminutes_mobile">
+        <item quantity="one">Turvallisuussyistä sinun täytyy odottaa %1$s minuutti ennen seuraavaa yritystä.</item>
+        <item quantity="other">Turvallisuussyistä sinun täytyy odottaa %1$s minuuttia ennen seuraavaa yritystä.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_TCsprivacypolicyforunderXyearold_mobile">
+        <item quantity="one">Kun aktivoit tilin alle %1$s-vuotiaalle käyttäjälle, hyväksyt sen, että Deezer kerää ja hallinnoi häntä koskevia henkilötietoja, jotta hän voi käyttää palvelua. Lisätietoja %2$stietosuojalausekkeesta%3$s.</item>
+        <item quantity="other">Kun aktivoit tilin alle %1$s-vuotiaalle käyttäjälle, hyväksyt sen, että Deezer kerää ja hallinnoi häntä koskevia henkilötietoja, jotta hän voi käyttää palvelua. Lisätietoja %2$stietosuojalausekkeesta%3$s.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_onlycontentsuitableforXageandunder_mobile">
+        <item quantity="one">Ottamalla tämän asetuksen käyttöön käyttäjälle näytetään vain %1$s-vuotiaalle ja sitä nuoremmille sopivaa sisältöä.</item>
+        <item quantity="other">Ottamalla tämän asetuksen käyttöön käyttäjälle näytetään vain %1$s-vuotiaalle ja sitä nuoremmille sopivaa sisältöä.</item>
+    </plurals>
+    <plurals name="dz_familyaccountmgmt_text_underXyearsorkidscannotbeconverted_mobile">
+        <item quantity="one">Et voi käyttää tätä profiilia. Alle %1$s-vuotiaita käyttäjiä tai lasten profiileja ei voi siirtää profiilista erilliseksi tiliksi.</item>
+        <item quantity="other">Et voi käyttää tätä profiilia. Alle %1$s-vuotiaita käyttäjiä tai lasten profiileja ei voi siirtää profiilista erilliseksi tiliksi.</item>
+    </plurals>
+    <plurals name="dz_familymemberselector_text_Xmembersremaining_mobile">
+        <item quantity="one">%1$s jäsen jäljellä</item>
+        <item quantity="other">%1$s jäsentä jäljellä</item>
+    </plurals>
+    <plurals name="dz_familyprofileminorconsent_text_termsandconditions_mobile">
+        <item quantity="one">Luomalla tämän tilin alle %1$s-vuotiaalle hyväksyt, että Deezer ja sen yhteistyökumppanit voivat kerätä ja käsitellä tilinhaltijaan liittyviä henkilötietoja tarjotakseen mieltymysten mukaan räätälöityä sisältöä ja tarjouksia. Lisätietoa löytyy Tietosuojalausunnostamme.</item>
+        <item quantity="other">Luomalla tämän tilin alle %1$s-vuotiaalle hyväksyt, että Deezer ja sen yhteistyökumppanit voivat kerätä ja käsitellä tilinhaltijaan liittyviä henkilötietoja tarjotakseen mieltymysten mukaan räätälöityä sisältöä ja tarjouksia. Lisätietoa löytyy Tietosuojalausunnostamme.</item>
+    </plurals>
+    <plurals name="dz_familyprofileswitcherwelcome_text_Xprofilesremaining_mobile">
+        <item quantity="one">%1$s profiili jäljellä</item>
+        <item quantity="other">%1$s profiilia jäljellä</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_accountcreationagerestriction_mobile">
+        <item quantity="one">Sinun täytyy olla vähintään %1$s vuotta, jotta voit luoda tilin.</item>
+        <item quantity="other">Sinun täytyy olla vähintään %1$s vuotta, jotta voit luoda tilin.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordnotenoughchars_mobile">
+        <item quantity="one">Salasanan tulee sisältää vähintään %1$s merkki.</item>
+        <item quantity="other">Salasanan tulee sisältää vähintään %1$s merkkiä.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_passwordtoomanychars_mobile">
+        <item quantity="one">Salasana ei saa sisältää enempää kuin %1$s merkin.</item>
+        <item quantity="other">Salasana ei saa sisältää enempää kuin %1$s merkkiä.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernamenotenoughchars_mobile">
+        <item quantity="one">Käyttäjänimessä tulee olla vähintään %1$s merkki.</item>
+        <item quantity="other">Käyttäjänimessä tulee olla vähintään %1$s merkkiä.</item>
+    </plurals>
+    <plurals name="dz_formerrormessage_text_usernametoomanychars_mobile">
+        <item quantity="one">Käyttäjänimi ei saa sisältää enempää kuin %1$s merkin.</item>
+        <item quantity="other">Käyttäjänimi ei saa sisältää enempää kuin %1$s merkkiä.</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xgbleft_mobile">
+        <item quantity="one">%1$s GB jäljellä</item>
+        <item quantity="other">%1$s GB jäljellä</item>
+    </plurals>
+    <plurals name="dz_generic_title_Xmbleft_mobile">
+        <item quantity="one">%1$s mb jäljellä</item>
+        <item quantity="other">%1$s mb jäljellä</item>
+    </plurals>
+    <plurals name="dz_inprogressplaylistpage_subtitle_duringthelastXdays_mobile">
+        <item quantity="one">Eilisestä alkaen</item>
+        <item quantity="other">Viimeisen %1$s päivän aikana</item>
+    </plurals>
+    <plurals name="dz_masthead_title_episodescountnox_mobile">
+        <item quantity="one">Jakso</item>
+        <item quantity="other">Jaksot</item>
+    </plurals>
+    <plurals name="dz_masthead_title_fanscountnox_mobile">
+        <item quantity="one">Fani</item>
+        <item quantity="other">Fania</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_Xtrackchangesperhour_mobile">
+        <item quantity="one">Mixissä voit vaihtaa %1$s kappaleen tunnissa.</item>
+        <item quantity="other">Mixissä voit vaihtaa %1$s kappaletta tunnissa.</item>
+    </plurals>
+    <plurals name="dz_mixlimitmessage_text_changetrackallowedagaininXmin_mobile">
+        <item quantity="one">Pystyt vaihtamaan kappaleen seuraavan kerran %1$s min päästä.</item>
+        <item quantity="other">Pystyt vaihtamaan kappaleen seuraavan kerran %1$s min päästä.</item>
+    </plurals>
+    <plurals name="dz_mobiletrialtoaster_text_yourXdaytrialhasstarted_mobile">
+        <item quantity="one">%1$s päivän kokeilujaksosi on alkanut</item>
+        <item quantity="other">%1$s päivän kokeilujaksosi on alkanut</item>
+    </plurals>
+    <plurals name="dz_mymusic_albums_count">
+        <item quantity="one">%1$s albumi</item>
+        <item quantity="other">%1$s albumia</item>
+    </plurals>
+    <plurals name="dz_newofferscardsusp_text_getXaccountswithXbenefitsplushifi_mobile">
+        <item quantity="one">Hanki %1$s erillinen tili kaikilla %2$s -tilauksen eduilla, mukana HiFi-äänenlaatu.</item>
+        <item quantity="other">Hanki %1$s erillistä tiliä kaikilla %2$s -tilauksen eduilla, mm. HiFi-äänenlaadulla.</item>
+    </plurals>
+    <plurals name="dz_offerwall_text_priceXpermonthforXmonths_mobile">
+        <item quantity="one">%1$s/kk %2$s kuukauden ajan</item>
+        <item quantity="other">%1$s/kk %2$s kuukauden ajan</item>
+    </plurals>
+    <plurals name="dz_offlinepodcastplaylist_subtitle_Xdownloadedepisodes_mobile">
+        <item quantity="one">%1$s ladattu jakso</item>
+        <item quantity="other">%1$s ladattua jaksoa</item>
+    </plurals>
+    <plurals name="dz_onboardingfirstlikes_action_pickXmoreUPP_mobile">
+        <item quantity="one">VALITSE VIELÄ %1$s</item>
+        <item quantity="other">VALITSE VIELÄ %1$s</item>
+    </plurals>
+    <plurals name="dz_onboardingtoastmessage_action_onlyXpickstostart_mobile">
+        <item quantity="one">Jihaa, cowboy! Enää %1$s valinta, niin pääset alkuun.</item>
+        <item quantity="other">Jihaa, cowboy! Enää %1$s valintaa, niin pääset alkuun.</item>
+    </plurals>
+    <plurals name="dz_passwordsecurity_title_Xcharactersmin_mobile">
+        <item quantity="one">Vähintään %1$s merkki</item>
+        <item quantity="other">Vähintään %1$s merkkiä</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_accountalreadylinkedtoXdevices_mobile">
+        <item quantity="one">Tilisi on jo yhdistetty %1$s muuhun laitteeseen. %2$s-toiminnot eivät ole käytettävissä tässä laitteessa.</item>
+        <item quantity="other">Tilisi on jo yhdistetty %1$s muuhun laitteeseen. %2$s-toiminnot eivät ole käytettävissä tässä laitteessa.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_maxXdevicesonyoursubcription_mobile">
+        <item quantity="one">Tilauksesi mahdollistaa %1$s -tilin käytön enintään %2$s laitteella.</item>
+        <item quantity="other">Tilauksesi mahdollistaa %1$s -tilin käytön enintään %2$s laitteella.</item>
+    </plurals>
+    <plurals name="dz_planrenaming_text_nomorethanXdevicesonyoursubcription_mobile">
+        <item quantity="one">Tilauksesi sallii %1$s -tilin käytön korkeintaan %2$s laitteella.</item>
+        <item quantity="other">Tilauksesi sallii %1$s -tilin käytön korkeintaan %2$s laitteella.</item>
+    </plurals>
+    <plurals name="dz_playlist_text_tracksalreadyaddedtotheplaylist_mobile">
+        <item quantity="one">Tämä kappale on jo lisätty soittolistaan</item>
+        <item quantity="other">Nämä kappaleet on jo lisätty soittolistaan</item>
+    </plurals>
+    <plurals name="dz_playlistpage_action_addXtracks_mobile">
+        <item quantity="one">Lisää %1$s kappale</item>
+        <item quantity="other">Lisää %1$s kappaletta</item>
+    </plurals>
+    <plurals name="dz_premiumbenefit_text_skipmorethanXtracksperhour_mobile">
+        <item quantity="one">Ohita enemmän kuin %1$s kappale tunnissa</item>
+        <item quantity="other">Ohita enemmän kuin %1$s kappaletta tunnissa</item>
+    </plurals>
+    <plurals name="dz_searchresult_title_topresults_mobile">
+        <item quantity="one">Paras osuma</item>
+        <item quantity="other">Parhaat osumat</item>
+    </plurals>
+    <plurals name="dz_signupjapanUS_action_tryitfreexmonths_mobile">
+        <item quantity="one">%1$s kuukauden ilmainen kokeilujakso</item>
+        <item quantity="other">%1$s kuukauden ilmainen kokeilujakso</item>
+    </plurals>
+    <plurals name="dz_skipcounter_text_Xmoretracks_mobile">
+        <item quantity="one">Voit hypätä vielä %1$s kappaleen yli</item>
+        <item quantity="other">Voit hypätä vielä %1$s kappaleen yli</item>
+    </plurals>
+    <plurals name="dz_sleeptimer_text_sleepinlessthanXminutes_mobile">
+        <item quantity="one">Lepotila aktivoituu alle %1$s minuutin kuluttua</item>
+        <item quantity="other">Lepotila aktivoituu alle %1$s minuutin kuluttua</item>
+    </plurals>
+    <plurals name="dz_smartcache_text_storemostplayedtracksrecosettoXgb_mobile">
+        <item quantity="one">Smart Cache -välimuistiin tallennetaan eniten kuuntelemasi kappaleet, jotta ne latautuvat nopeammin. Parhaan kokemuksen saamiseksi suosittelemme asetukseksi %1$s Gt.</item>
+        <item quantity="other">Smart Cache -välimuistiin tallennetaan eniten kuuntelemasi kappaleet, jotta ne latautuvat nopeammin. Parhaan kokemuksen saamiseksi suosittelemme asetukseksi %1$s Gt.</item>
+    </plurals>
+    <plurals name="dz_smartloginandroidtvxboxwelcome_text_thiscodewillexpireinXminutes_mobile">
+        <item quantity="one">Tämä koodi vanhenee %1$s minuutin kuluttua.</item>
+        <item quantity="other">Tämä koodi vanhenee %1$sminuutin kuluttua.</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Followers_mobile">
+        <item quantity="one">seuraaja</item>
+        <item quantity="other">seuraajaa</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Following_mobile">
+        <item quantity="one">Seurannassa</item>
+        <item quantity="other">Seurannassa</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfans_mobile">
+        <item quantity="one">%1$s fani</item>
+        <item quantity="other">%1$s fania</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowers_mobile">
+        <item quantity="one">%1$s seuraaja</item>
+        <item quantity="other">%1$s seuraajaa</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xfollowing_mobile">
+        <item quantity="one">%1$s seurattava</item>
+        <item quantity="other">%1$s seurattavaa</item>
+    </plurals>
+    <plurals name="dz_socialcounter_text_Xnotifications_mobile">
+        <item quantity="one">%1$s uusi ilmoitus</item>
+        <item quantity="other">%1$s uutta ilmoitusta</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xgigabytes_mobile">
+        <item quantity="one">%1$s GB</item>
+        <item quantity="other">%1$s GB</item>
+    </plurals>
+    <plurals name="dz_storagecounter_text_Xmegabytes_mobile">
+        <item quantity="one">%1$s MB</item>
+        <item quantity="other">%1$s MB</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdays_mobile">
+        <item quantity="one">%1$s päivä</item>
+        <item quantity="other">%1$s päivää</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xdaysago_mobile">
+        <item quantity="one">%1$s päivä sitten</item>
+        <item quantity="other">%1$s päivää sitten</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhours_mobile">
+        <item quantity="one">%1$s tunti</item>
+        <item quantity="other">%1$s tuntia</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xhoursago_mobile">
+        <item quantity="one">%1$s tunti sitten</item>
+        <item quantity="other">%1$s tuntia sitten</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmin_mobile">
+        <item quantity="one">%1$s minuutti</item>
+        <item quantity="other">%1$s minuuttia</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_XminleftUPP_mobile">
+        <item quantity="one">%1$s MIN JÄLJELLÄ</item>
+        <item quantity="other">%1$s MIN JÄLJELLÄ</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutes_mobile">
+        <item quantity="one">%1$s minuutti</item>
+        <item quantity="other">%1$s minuuttia</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xminutesago_mobile">
+        <item quantity="one">%1$s minuutti sitten</item>
+        <item quantity="other">%1$s minuuttia sitten</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xmonthsago_mobile">
+        <item quantity="one">%1$s kuukausi sitten</item>
+        <item quantity="other">%1$s kuukautta sitten</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xs_mobile">
+        <item quantity="one">%1$s s</item>
+        <item quantity="other">%1$s s</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xweeksago_mobile">
+        <item quantity="one">%1$s viikko sitten</item>
+        <item quantity="other">%1$s viikkoa sitten</item>
+    </plurals>
+    <plurals name="dz_timecounter_text_Xyearsago_mobile">
+        <item quantity="one">%1$s vuosi sitten</item>
+        <item quantity="other">%1$s vuotta sitten</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_alreadyaddedtoplaylist_mobile">
+        <item quantity="one">Lisätty jo soittolistalle</item>
+        <item quantity="other">Lisätty jo soittolistalle</item>
+    </plurals>
+    <plurals name="dz_toastmessage_text_unlockedXmoreskips_mobile">
+        <item quantity="one">Olet saanut %1$s lisämahdollisuuden ohittaa kappaleen.</item>
+        <item quantity="other">Olet saanut %1$s lisämahdollisuutta ohittaa kappaleita.</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoplaylisttrack_mobile">
+        <item quantity="one">Lisätty soittolistalle</item>
+        <item quantity="other">Lisätty soittolistalle</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_addedtoyourfavoritetrackstrack_mobile">
+        <item quantity="one">Lisätty suosikkikappaleisiisi</item>
+        <item quantity="other">Lisätty suosikkikappaleisiisi</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromplaylist_mobile">
+        <item quantity="one">Poistettu soittolistalta</item>
+        <item quantity="other">Poistettu soittolistalta</item>
+    </plurals>
+    <plurals name="dz_toastmessage_title_removedfromyourfavoritetrackstrack_mobile">
+        <item quantity="one">Poistettu suosikkikappaleistasi</item>
+        <item quantity="other">Poistettu suosikkikappaleistasi</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_Xdaytrial_mobile">
+        <item quantity="one">%1$s päivän kokeilu</item>
+        <item quantity="other">%1$s päivän kokeilu</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_subtitle_downloadskipadfreelistening_mobile">
+        <item quantity="one">Lataa kappaleita, ohita kappaleita joista et pidä ja nauti kuuntelemisesta ilman mainoksia %1$s päivä.</item>
+        <item quantity="other">Lataa kappaleita, ohita kappaleita joista et pidä ja nauti kuuntelemisesta ilman mainoksia %1$s päivää.</item>
+    </plurals>
+    <plurals name="dz_trialmanualactivation_text_tryXforXdaysfreenocreditcardrequired_mobile">
+        <item quantity="one">Kokeile %1$s -tilausta maksutta %2$s päivän ajan - luottokorttia ei tarvita!</item>
+        <item quantity="other">Kokeile %1$s -tilausta maksutta %2$s päivän ajan - luottokorttia ei tarvita!</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXdays_mobile">
+        <item quantity="one">Jotta voit tarkistaa tilauksesi ja käyttää Deezeriä matkapuhelimessasi, sinun on otettava WiFi-yhteys enintään %1$s päivän kuluessa.</item>
+        <item quantity="other">Jotta voit tarkistaa tilauksesi ja käyttää Deezeriä matkapuhelimessasi, sinun on otettava WiFi-yhteys enintään %1$s päivän kuluessa.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXhours_mobile">
+        <item quantity="one">Jotta voit tarkistaa tilauksesi ja käyttää Deezeriä matkapuhelimessasi, sinun on otettava WiFi-yhteys enintään %1$s tunnin kuluessa.</item>
+        <item quantity="other">Jotta voit tarkistaa tilauksesi ja käyttää Deezeriä matkapuhelimessasi, sinun on otettava WiFi-yhteys enintään %1$s tunnin kuluessa.</item>
+    </plurals>
+    <plurals name="dz_warningmessage_text_licenceexpirationXminutes_mobile">
+        <item quantity="one">Jotta voisit tarkistaa tilauksesi ja käyttää Deezeriä matkapuhelimessasi, sinun on otettava WiFi-yhteys enintään %1$s minuutti.</item>
+        <item quantity="other">Jotta voisit tarkistaa tilauksesi ja käyttää Deezeriä matkapuhelimessasi, sinun on otettava WiFi-yhteys enintään %1$s minuuttia.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Siirry eteenpäin %d sekunti</item>
+        <item quantity="other">Siirry eteenpäin %d sekuntia</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Siirry taaksepäin %d sekunti</item>
+        <item quantity="other">Siirry taaksepäin %d sekuntia</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d uusi ilmoitus</item>
+        <item quantity="other">%d uutta ilmoitusta</item>
+    </plurals>
+</resources>

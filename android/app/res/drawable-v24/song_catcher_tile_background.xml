@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="70.0dp" android:width="343.0dp" android:viewportWidth="343.0" android:viewportHeight="70.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$song_catcher_tile_background__0" android:pathData="M4,0L338.999,0A4,4 0,0 1,342.999 4L342.999,66A4,4 0,0 1,338.999 70L4,70A4,4 0,0 1,0 66L0,4A4,4 0,0 1,4 0z" />
+    <path android:fillColor="#ffffff" android:pathData="M70,31a129.5,130 0,1 0,259 0a129.5,130 0,1 0,-259 0z" android:fillAlpha="0.1" />
+    <path android:fillColor="#ffffff" android:pathData="M199.5,30.5m-88.5,0a88.5,88.5 0,1 1,177 0a88.5,88.5 0,1 1,-177 0" android:fillAlpha="0.1" />
+    <path android:fillColor="#ffffff" android:pathData="M258,32C258,64.033 232.033,90 200,90C167.967,90 142,64.033 142,32C142,-0.033 167.967,-26 200,-26C232.033,-26 258,-0.033 258,32Z" android:fillAlpha="0.1" />
+</vector>

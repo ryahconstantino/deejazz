@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="250.0dp" android:minHeight="40.0dp" android:updatePeriodMillis="50000" android:initialLayout="@layout/deezer_appwidget" android:previewImage="@drawable/deezer_appwidget_preview" android:widgetCategory="home_screen|keyguard"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

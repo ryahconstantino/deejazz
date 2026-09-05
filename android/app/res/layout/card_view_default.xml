@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.deezer.android.ui.recyclerview.widget.CardCoverView android:id="@id/cover_and_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dynamic_card_cover_margin" app:squared="true" style="@style/CardsElevation" />
+    <include layout="@layout/card_view_default_internal" />
+</LinearLayout>

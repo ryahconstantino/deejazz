@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="vertical" android:tag="layout/brick__cta_0" android:paddingTop="@dimen/scaled_16dp" android:paddingBottom="@dimen/scaled_16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/scaled_16dp" android:layout_marginEnd="@dimen/scaled_16dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <Button android:textAppearance="@style/Button2" android:id="@id/placeholder_empty_list_button" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="@dimen/scaled_24dp" android:paddingEnd="@dimen/scaled_24dp" bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintEnd_toEndOf="parent" bind:layout_constraintStart_toStartOf="parent" bind:layout_constraintTop_toTopOf="parent" bind:layout_constraintVertical_bias="0.14" style="@style/ButtonRoundAccent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

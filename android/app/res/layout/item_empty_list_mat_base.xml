@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/placeholder_empty_list_illustration" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_marginBottom="24.0dp" />
+    <TextView android:textSize="@dimen/placeholder_error_body" android:textColor="@color/theme_text_primary" android:gravity="center_horizontal" android:id="@id/placeholder_empty_list_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" />
+</merge>

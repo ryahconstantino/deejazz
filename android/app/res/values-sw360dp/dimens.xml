@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dynamic_page_locked_content_image_size">56.0dp</dimen>
+    <dimen name="flowtab_card_padding">16.0dp</dimen>
+    <dimen name="flowtab_card_playbutton_padding">24.0dp</dimen>
+    <dimen name="flowtab_card_playbutton_size">64.0dp</dimen>
+    <dimen name="flowtab_card_subtitle_goneMarginTop">40.0dp</dimen>
+    <dimen name="flowtab_card_subtitle_marginTop">2.0dp</dimen>
+    <dimen name="flowtab_card_title_marginTop">4.0dp</dimen>
+    <dimen name="flowtab_card_title_size">24.0sp</dimen>
+    <dimen name="flowtab_logo_margin_top">8.0dp</dimen>
+    <dimen name="hero_image_header_height_large">360.0dp</dimen>
+    <dimen name="message_one_cta_bis_button_margin_bottom">16.0dp</dimen>
+    <dimen name="message_one_cta_bis_title_margin_top">32.0dp</dimen>
+    <dimen name="offer_wall_header_height">84.0dp</dimen>
+    <dimen name="player_bottom_buttons_margin_top">14.0dp</dimen>
+    <dimen name="player_control_button">48.0dp</dimen>
+    <dimen name="player_controls_button_normal_margin">12.0dp</dimen>
+    <dimen name="player_controls_button_wide_margin">24.0dp</dimen>
+    <dimen name="player_land_side_panel_width">328.0dp</dimen>
+    <dimen name="player_title_container_type_text_size">@dimen/scaled_12sp</dimen>
+    <dimen name="player_title_text_size">@dimen/scaled_14sp</dimen>
+    <dimen name="player_track_subtitle">14.0sp</dimen>
+    <dimen name="player_track_title">20.0sp</dimen>
+    <dimen name="premium_box_blank_spacing">128.0dp</dimen>
+    <dimen name="premium_box_edge_spacing">32.0dp</dimen>
+    <dimen name="tutorial_text_size">24.0sp</dimen>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="offer_wall_display_sub_note">false</bool>
+</resources>

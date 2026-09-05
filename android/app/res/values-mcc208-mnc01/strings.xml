@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="telcoasso_customer_type_internet">Client Internet</string>
+    <string name="telcoasso_customer_type_mobile">Client Mobile/Open</string>
+    <string name="telcoasso_question_customer_type">Merci de nous indiquer si vous êtes client Mobile, Open ou Internet.</string>
+</resources>

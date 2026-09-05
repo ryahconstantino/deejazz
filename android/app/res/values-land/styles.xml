@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DeezerTheme.ActionBar.SubtitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="DeezerTheme.ActionBar.TitleTextStyle" parent="@style/p5">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="PlayerTrackButtonBlock">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">4.0dp</item>
+        <item name="android:layout_marginBottom">20.0dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="PlayerViewPager">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="SmartJourney.Title" parent="@style/h1">
+        <item name="android:textColor">@color/theme_text_primary</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginStart">32.0dp</item>
+        <item name="android:layout_marginEnd">32.0dp</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+    <style name="Widget.MaterialComponents.MaterialCalendar.HeaderSelection" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">?textAppearanceHeadline6</item>
+        <item name="android:textColor">?colorOnPrimary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@integer/mtrl_calendar_selection_text_lines</item>
+    </style>
+    <style name="songCatcherSearchHeader" parent="@style/songCatcherSearchHeaderSmall" />
+    <style name="songCatcherSearchHeaderSubtitle" parent="@style/songCatcherSearchHeaderSubtitleSmall" />
+    <style name="songCatcherSearchHeaderTitle" parent="@style/songCatcherSearchHeaderTitleSmall" />
+</resources>
