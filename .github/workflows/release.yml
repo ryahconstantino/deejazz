@@ -129,13 +129,19 @@ jobs:
           cache: npm
 
       - name: Set up Java
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: 21
 
       - name: Install Android build tools
-        run: sdkmanager 'build-tools;35.0.0'
+        shell: bash
+        run: |
+          archive="$RUNNER_TEMP/build-tools_r35_linux.zip"
+          curl -fL --retry 3 https://dl.google.com/android/repository/build-tools_r35_linux.zip -o "$archive"
+          printf '%s  %s\n' 'bd3a4966912eb8b30ed0d00b0cda6b6543b949d5ffe00bea54c04c81e1561d88' "$archive" | sha256sum --check -
+          unzip -q "$archive" -d "$RUNNER_TEMP/android-build-tools"
+          echo "ANDROID_BUILD_TOOLS=$RUNNER_TEMP/android-build-tools/android-15" >> "$GITHUB_ENV"
 
       - name: Install dependencies
         run: npm ci
