@@ -21,6 +21,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="preload" as="image" href="/assets/images/product/deejazz-windows-home.png" type="image/png" fetchpriority="high" />
     <link rel="image_src" href="https://ryahconstantino.github.io/deejazz/assets/images/social/og-deejazz-desktop.png" />
+    <link rel="stylesheet" href="./style.css" />
 
     <style>
       html,
@@ -29,44 +30,10 @@
         background: #f3f3f5;
       }
 
-      .brand {
-        display: inline-flex;
-        align-items: center;
-      }
-
-      .brand-wordmark {
-        display: inline-block;
-        color: #fff;
-        font-family: "Arial Black", "Avenir Next", "Segoe UI", Arial, sans-serif;
-        font-size: 1.3rem;
-        font-weight: 900;
-        letter-spacing: -0.09em;
-        line-height: 1;
-      }
-
-      .brand-wordmark-small {
-        font-size: 1.15rem;
-      }
-
-      .download-logo {
-        color: #fff;
-        font-family: "Arial Black", "Avenir Next", "Segoe UI", Arial, sans-serif;
-        font-size: clamp(2rem, 5vw, 3.3rem);
-        font-weight: 900;
-        letter-spacing: -0.09em;
-        line-height: 1;
-      }
-
       @media (prefers-color-scheme: dark) {
         html,
         body {
           background: #111114;
-        }
-      }
-
-      @media (max-width: 460px) {
-        .brand-wordmark {
-          font-size: 1.15rem;
         }
       }
     </style>
@@ -147,7 +114,10 @@
     <header class="site-header">
       <div class="header-inner">
         <a href="#inicio" class="brand" aria-label="DeeJazz - home" data-i18n-aria-label="brand.home">
-          <span class="brand-wordmark" aria-hidden="true">DEEJAZZ</span>
+          <picture class="brand-wordmark">
+            <source srcset="/assets/images/branding/deejazz-wordmark.png" media="(prefers-color-scheme: dark)" />
+            <img src="/assets/images/branding/deejazz-wordmark-on-light.png" width="1200" height="300" alt="" />
+          </picture>
         </a>
 
         <nav class="desktop-nav" aria-label="Main navigation" data-i18n-aria-label="nav.main">
@@ -498,7 +468,10 @@
 
       <section id="download" class="final-section">
         <div class="section-shell final-shell reveal">
-          <span class="download-logo" aria-hidden="true">DEEJAZZ</span>
+          <picture class="download-logo">
+            <source srcset="/assets/images/branding/deejazz-wordmark.png" media="(prefers-color-scheme: dark)" />
+            <img src="/assets/images/branding/deejazz-wordmark-on-light.png" width="1200" height="300" loading="lazy" decoding="async" alt="DeeJazz" />
+          </picture>
           <h2 class="display-title">
             <span data-i18n="final.title.main">Press play</span>
             <span class="accent-text" data-i18n="final.title.accent">your way.</span>
@@ -511,7 +484,10 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <span class="brand-wordmark brand-wordmark-small" aria-hidden="true">DEEJAZZ</span>
+        <picture class="brand-wordmark brand-wordmark-small">
+          <source srcset="/assets/images/branding/deejazz-wordmark.png" media="(prefers-color-scheme: dark)" />
+          <img src="/assets/images/branding/deejazz-wordmark-on-light.png" width="1200" height="300" loading="lazy" decoding="async" alt="DeeJazz" />
+        </picture>
         <p class="footer-made-by">
           <span data-i18n="footer.builtBy">Built by</span>
           <a href="https://www.ryahconstantino.com/" target="_blank" rel="me noopener">Ryan Constantino</a>

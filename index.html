@@ -19,8 +19,6 @@
     <link rel="icon" href="./assets/images/branding/deejazz-icon.png" type="image/png" sizes="512x512" />
     <link rel="apple-touch-icon" href="./assets/images/branding/deejazz-icon.png" />
     <link rel="manifest" href="./site.webmanifest" />
-    <link rel="preload" as="image" href="./assets/images/branding/deejazz-wordmark-on-light.png" type="image/png" media="(prefers-color-scheme: light)" />
-    <link rel="preload" as="image" href="./assets/images/branding/deejazz-wordmark.png" type="image/png" media="(prefers-color-scheme: dark)" />
     <link rel="preload" as="image" href="./assets/images/product/deejazz-windows-home.png" type="image/png" fetchpriority="high" />
     <link rel="image_src" href="https://ryahconstantino.github.io/deejazz/assets/images/social/og-deejazz-desktop.png" />
 
@@ -31,38 +29,10 @@
         background: #f3f3f5;
       }
 
-      .brand,
-      .brand picture {
-        display: inline-flex;
-        align-items: center;
-      }
-
-      .brand-wordmark {
-        display: block;
-        width: 7.7rem;
-        height: auto;
-      }
-
-      .brand-wordmark-small {
-        width: 6.9rem;
-      }
-
-      .download-logo {
-        display: block;
-        width: min(13rem, 60vw);
-        height: auto;
-      }
-
       @media (prefers-color-scheme: dark) {
         html,
         body {
           background: #111114;
-        }
-      }
-
-      @media (max-width: 460px) {
-        .brand-wordmark {
-          width: 6.8rem;
         }
       }
     </style>
@@ -111,8 +81,8 @@
         "inLanguage": ["en-US", "pt-BR"]
       }
     </script>
-    <script type="module" crossorigin src="./assets/index-DLck1qWg.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-D4X0FeAY.css">
+    <script type="module" crossorigin src="./assets/index-C2exRgFo.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Czf8iPrr.css">
   </head>
   <body>
     <svg class="svg-definitions" aria-hidden="true">
@@ -145,17 +115,9 @@
     <header class="site-header">
       <div class="header-inner">
         <a href="#inicio" class="brand" aria-label="DeeJazz - home" data-i18n-aria-label="brand.home">
-          <picture>
-            <source media="(prefers-color-scheme: light)" srcset="assets/images/branding/deejazz-wordmark-on-light.png" />
-            <img
-              class="brand-wordmark"
-              src="./assets/images/branding/deejazz-wordmark.png"
-              width="123"
-              height="31"
-              alt=""
-              aria-hidden="true"
-              fetchpriority="high"
-            />
+          <picture class="brand-wordmark">
+            <source srcset="assets/images/branding/deejazz-wordmark.png" media="(prefers-color-scheme: dark)" />
+            <img src="./assets/images/branding/deejazz-wordmark-on-light.png" width="1200" height="300" alt="" />
           </picture>
         </a>
 
@@ -507,17 +469,9 @@
 
       <section id="download" class="final-section">
         <div class="section-shell final-shell reveal">
-          <picture>
-            <source media="(prefers-color-scheme: light)" srcset="assets/images/branding/deejazz-wordmark-on-light.png" />
-            <img
-              class="download-logo"
-              src="./assets/images/branding/deejazz-wordmark.png"
-              width="208"
-              height="52"
-              loading="lazy"
-              alt=""
-              aria-hidden="true"
-            />
+          <picture class="download-logo">
+            <source srcset="assets/images/branding/deejazz-wordmark.png" media="(prefers-color-scheme: dark)" />
+            <img src="./assets/images/branding/deejazz-wordmark-on-light.png" width="1200" height="300" loading="lazy" decoding="async" alt="DeeJazz" />
           </picture>
           <h2 class="display-title">
             <span data-i18n="final.title.main">Press play</span>
@@ -531,17 +485,9 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <picture>
-          <source media="(prefers-color-scheme: light)" srcset="assets/images/branding/deejazz-wordmark-on-light.png" />
-          <img
-            class="brand-wordmark brand-wordmark-small"
-            src="./assets/images/branding/deejazz-wordmark.png"
-            width="110"
-            height="28"
-            loading="lazy"
-            alt=""
-            aria-hidden="true"
-          />
+        <picture class="brand-wordmark brand-wordmark-small">
+          <source srcset="assets/images/branding/deejazz-wordmark.png" media="(prefers-color-scheme: dark)" />
+          <img src="./assets/images/branding/deejazz-wordmark-on-light.png" width="1200" height="300" loading="lazy" decoding="async" alt="DeeJazz" />
         </picture>
         <p class="footer-made-by">
           <span data-i18n="footer.builtBy">Built by</span>

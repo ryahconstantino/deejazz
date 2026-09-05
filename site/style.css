@@ -135,20 +135,24 @@ button:focus-visible {
 .brand {
   display: inline-flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .brand-wordmark {
-  display: inline-block;
-  color: #fff;
-  font-family: "Arial Black", "Avenir Next", "Segoe UI", Arial, sans-serif;
-  font-size: 1.3rem;
-  font-weight: 900;
-  letter-spacing: -0.09em;
-  line-height: 1;
+  display: block;
+  width: 11rem;
+  max-width: 100%;
+}
+
+.brand-wordmark img,
+.download-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .brand-wordmark-small {
-  font-size: 1.15rem;
+  width: 10rem;
 }
 
 .desktop-nav {
@@ -463,6 +467,9 @@ button:focus-visible {
 .mobile-menu {
   position: absolute;
   inset: 4.5rem 0 auto;
+  max-height: calc(100dvh - 4.5rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
   border-bottom: 1px solid var(--line);
   background: var(--surface-raised);
   padding: 0.75rem 1rem 1rem;
@@ -1207,12 +1214,9 @@ button:focus-visible {
 }
 
 .download-logo {
-  color: #fff;
-  font-family: "Arial Black", "Avenir Next", "Segoe UI", Arial, sans-serif;
-  font-size: clamp(2rem, 5vw, 3.3rem);
-  font-weight: 900;
-  letter-spacing: -0.09em;
-  line-height: 1;
+  display: block;
+  width: clamp(15rem, 40vw, 24rem);
+  max-width: 100%;
   margin-bottom: 2rem;
 }
 
@@ -1441,7 +1445,7 @@ button:focus-visible {
   }
 
   .brand-wordmark {
-    font-size: 1.15rem;
+    width: 9rem;
   }
 
   .language-current {
@@ -1502,6 +1506,27 @@ button:focus-visible {
 
   .smartscreen-body {
     padding: 0 1rem 0.8rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .smartscreen-dialog {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .smartscreen-dialog-shell {
+    height: auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  .smartscreen-body {
+    overflow-y: visible;
+  }
+
+  .smartscreen-actions {
+    position: sticky;
+    bottom: 0;
   }
 }
 

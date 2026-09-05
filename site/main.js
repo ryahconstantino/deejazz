@@ -1,4 +1,3 @@
-import './style.css'
 import { DEFAULT_LOCALE, SUPPORTED_LOCALES, getMessage } from './i18n.js'
 
 document.documentElement.classList.add('js')
@@ -75,6 +74,7 @@ function updateMenuLabel() {
 
 function setMobileMenu(open) {
   if (!menuButton || !mobileMenu) return
+  if (open) setLanguageMenu(false)
   menuButton.setAttribute('aria-expanded', String(open))
   mobileMenu.hidden = !open
   document.body.classList.toggle('menu-open', open)
@@ -95,6 +95,7 @@ function updateLanguagePicker() {
 
 function setLanguageMenu(open, focusSelected = false) {
   if (!languageSelector || !languageMenu) return
+  if (open) setMobileMenu(false)
   languageSelector.setAttribute('aria-expanded', String(open))
   languageMenu.hidden = !open
   languagePicker?.classList.toggle('is-open', open)
@@ -144,7 +145,10 @@ copyLinuxButton?.addEventListener('click', async () => {
   if (!linuxCommandElement || copyLinuxButton.disabled) return
 
   window.clearTimeout(copyFeedbackTimer)
+  copyLinuxButton.classList.remove('is-copied')
+  copyLinuxButton.setAttribute('aria-label', getMessage(currentLocale, 'download.copy'))
   copyFeedback?.classList.remove('is-error')
+  if (copyFeedback) copyFeedback.textContent = ''
 
   try {
     if (!navigator.clipboard) throw new Error('Clipboard API unavailable')
@@ -169,6 +173,8 @@ smartScreenTriggers.forEach((trigger) => {
   trigger.addEventListener('click', () => {
     if (!smartScreenDialog?.showModal) return
     smartScreenDialog.showModal()
+    smartScreenDialog.scrollTop = 0
+    smartScreenDialog.querySelector('.smartscreen-body')?.scrollTo(0, 0)
     document.body.classList.add('modal-open')
   })
 })
@@ -205,13 +211,6 @@ languageOptions.forEach((option) => {
 })
 
 languageMenu?.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    event.preventDefault()
-    setLanguageMenu(false)
-    languageSelector?.focus()
-    return
-  }
-
   if (!['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) return
   event.preventDefault()
   const currentIndex = languageOptions.indexOf(document.activeElement)
@@ -225,6 +224,27 @@ languageMenu?.addEventListener('keydown', (event) => {
 
 document.addEventListener('click', (event) => {
   if (!languagePicker?.contains(event.target)) setLanguageMenu(false)
+  if (!mobileMenu?.contains(event.target) && !menuButton?.contains(event.target)) setMobileMenu(false)
+})
+
+languagePicker?.addEventListener('focusout', (event) => {
+  if (!languagePicker.contains(event.relatedTarget)) setLanguageMenu(false)
+})
+
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape') return
+
+  if (languageSelector?.getAttribute('aria-expanded') === 'true') {
+    event.preventDefault()
+    setLanguageMenu(false)
+    languageSelector.focus()
+  }
+
+  if (menuButton?.getAttribute('aria-expanded') === 'true') {
+    event.preventDefault()
+    setMobileMenu(false)
+    menuButton.focus()
+  }
 })
 
 menuButton?.addEventListener('click', () => {
@@ -248,7 +268,7 @@ if (currentYear) {
 }
 applyLocale(getInitialLocale())
 
-if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+if (typeof window.IntersectionObserver === 'function' && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
