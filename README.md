@@ -60,4 +60,6 @@ npm run dev
 npm run build
 ```
 
-`npm run build` compiles the site and refreshes the static files served from the branch root.
+`npm run build` compiles the site into `.pages-build`. Use `npm run publish:local` to also refresh the static files served from the branch root.
+
+The white, text-only wordmark is stored as outlines in `public/assets/images/branding/deejazz-wordmark.svg`. It does not load a font. Run `npm run assets:branding` to regenerate its PNG export and the Open Graph images from that SVG, then rebuild the website.

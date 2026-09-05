@@ -140,8 +140,20 @@ button:focus-visible {
 
 .brand-wordmark {
   display: block;
-  width: 11rem;
+  width: 7rem;
   max-width: 100%;
+}
+
+.wordmark-surface {
+  border-radius: 0.35rem;
+  background: #18181c;
+  padding: 0.375rem 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .wordmark-surface {
+    background: transparent;
+  }
 }
 
 .brand-wordmark img,
@@ -152,7 +164,7 @@ button:focus-visible {
 }
 
 .brand-wordmark-small {
-  width: 10rem;
+  width: 6.3rem;
 }
 
 .desktop-nav {
@@ -1215,7 +1227,7 @@ button:focus-visible {
 
 .download-logo {
   display: block;
-  width: clamp(15rem, 40vw, 24rem);
+  width: clamp(10rem, 25vw, 16rem);
   max-width: 100%;
   margin-bottom: 2rem;
 }
@@ -1445,7 +1457,7 @@ button:focus-visible {
   }
 
   .brand-wordmark {
-    width: 9rem;
+    width: 6.3rem;
   }
 
   .language-current {

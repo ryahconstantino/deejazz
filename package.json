@@ -5,12 +5,14 @@
   "description": "Static website for DeeJazz published with GitHub Pages",
   "license": "UNLICENSED",
   "scripts": {
+    "assets:branding": "node scripts/generate-social-images.mjs",
     "dev": "vite",
     "build": "vite build",
     "publish:local": "npm run build && node scripts/publish-site.mjs",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
     "@tailwindcss/vite": "4.3.3",
     "tailwindcss": "4.3.3",
     "vite": "8.2.2"
