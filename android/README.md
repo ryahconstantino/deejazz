@@ -59,8 +59,7 @@ npm run dist:android
 The script compiles the decoded project, aligns the APK, signs it, verifies the
 signature, alignment, package ID, app label and source integrity, then writes:
 
-- `Dist/deejazz-android-1.2.3.apk`
-- `Dist/deejazz-android-1.2.3.apk.sha256`
+- `Dist/deejazz-android-1.2.4.apk`
 
 The filename uses the DeeJazz release version from `DEEJAZZ_VERSION` or
 `.env.build`. GitHub Actions supplies the version from the release tag. The
@@ -74,7 +73,8 @@ Generated APKs, intermediate build files and signing keys are ignored.
 The root release workflow builds Android alongside Windows and Linux. It uses
 the repository secrets `ANDROID_KEYSTORE_BASE64` (base64-encoded release keystore)
 and `ANDROID_KEYSTORE_PASSWORD`. Keep the same keystore for future releases.
-The signed APK and checksum are attached to GitHub Releases.
+The signed APK is attached to GitHub Releases. Builds do not generate a separate
+checksum file.
 
 The DeeJazz signing certificate differs from the input APK's certificate, so
 Android will not accept it as an in-place update of that APK. This project keeps

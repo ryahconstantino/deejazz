@@ -115,9 +115,7 @@ jobs:
         with:
           name: deejazz-linux-${{ matrix.artifact }}-${{ needs.prepare.outputs.version }}
           if-no-files-found: error
-          path: |
-            dist/deejazz-linux-${{ matrix.artifact }}-${{ needs.prepare.outputs.version }}.tar.gz
-            dist/deejazz-linux-${{ matrix.artifact }}-${{ needs.prepare.outputs.version }}.tar.gz.sha256
+          path: dist/deejazz-linux-${{ matrix.artifact }}-${{ needs.prepare.outputs.version }}.tar.gz
 
   android:
     name: Android signed APK
@@ -167,14 +165,12 @@ jobs:
           printf '%s' "$ANDROID_KEYSTORE_BASE64" | base64 --decode > "$ANDROID_KEYSTORE_PATH"
           npm run dist:android
 
-      - name: Upload Android APK and checksum
+      - name: Upload Android APK
         uses: actions/upload-artifact@v4
         with:
           name: deejazz-android-${{ needs.prepare.outputs.version }}
           if-no-files-found: error
-          path: |
-            Dist/deejazz-android-${{ needs.prepare.outputs.version }}.apk
-            Dist/deejazz-android-${{ needs.prepare.outputs.version }}.apk.sha256
+          path: Dist/deejazz-android-${{ needs.prepare.outputs.version }}.apk
 
   release:
     name: Publish GitHub release
@@ -189,13 +185,13 @@ jobs:
           path: release-assets
           merge-multiple: true
 
-      - name: Verify release filenames and checksums
+      - name: Verify allowed release packages
         env:
           VERSION: ${{ needs.prepare.outputs.version }}
         shell: bash
         run: |
           python3 - <<'PY'
-          import hashlib, os
+          import os
           from pathlib import Path
           version = os.environ['VERSION']
           folder = Path('release-assets')
@@ -203,20 +199,13 @@ jobs:
                       f'deejazz-linux-amd64-{version}.tar.gz',
                       f'deejazz-linux-arm64-{version}.tar.gz',
                       f'deejazz-android-{version}.apk'}
-          checksums = {name + '.sha256' for name in packages if not name.endswith('.exe')}
           actual = {file.name for file in folder.iterdir()}
-          if actual != packages | checksums:
-              raise SystemExit(f'Unexpected release assets: {actual ^ (packages | checksums)}')
+          if actual != packages:
+              raise SystemExit(f'Unexpected release assets: {actual ^ packages}')
           for name in packages:
               if not (folder / name).is_file() or (folder / name).stat().st_size == 0:
                   raise SystemExit(f'Missing or empty release package: {name}')
-          for name in checksums:
-              checksum, filename = (folder / name).read_text().strip().split('  ', 1)
-              if filename != name.removesuffix('.sha256'):
-                  raise SystemExit(f'Checksum filename mismatch: {name}')
-              if hashlib.sha256((folder / filename).read_bytes()).hexdigest() != checksum:
-                  raise SystemExit(f'Checksum mismatch: {filename}')
-          print(f'All {len(actual)} release assets match version {version}; checksums verified.')
+          print(f'All {len(actual)} release assets are allowed packages for version {version}.')
           PY
 
       - name: Publish release
@@ -226,8 +215,11 @@ jobs:
           VERSION: ${{ needs.prepare.outputs.version }}
         shell: bash
         run: |
-          test -n "$(find release-assets -maxdepth 1 -type f -print -quit)"
-          gh release create "$TAG_NAME" release-assets/* \
+          gh release create "$TAG_NAME" \
+            "release-assets/deejazz-windows-x64-$VERSION.exe" \
+            "release-assets/deejazz-linux-amd64-$VERSION.tar.gz" \
+            "release-assets/deejazz-linux-arm64-$VERSION.tar.gz" \
+            "release-assets/deejazz-android-$VERSION.apk" \
             --repo "$GITHUB_REPOSITORY" \
             --target "$GITHUB_SHA" \
             --title "DeeJazz $VERSION" \

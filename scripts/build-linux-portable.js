@@ -1,6 +1,5 @@
 "use strict";
 
-const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 const { extractAll } = require("@electron/asar");
@@ -142,10 +141,6 @@ async function buildPortableArchive() {
       ],
     },
   });
-
-  const artifactPath = path.join(outputDir, artifactName);
-  const checksum = crypto.createHash("sha256").update(fs.readFileSync(artifactPath)).digest("hex");
-  fs.writeFileSync(path.join(outputDir, `${artifactName}.sha256`), `${checksum}  ${artifactName}\n`);
 }
 
 async function main() {

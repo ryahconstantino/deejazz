@@ -101,9 +101,6 @@ if [ -n "$LOCAL_ARCHIVE" ]; then
 else
   printf '%s\n' "Baixando $APP_NAME para Linux..."
   curl --fail --location --silent --show-error --retry 3 "$DOWNLOAD_URL" --output "$ARCHIVE_PATH"
-  if ! curl --fail --location --silent --show-error "${DOWNLOAD_URL}.sha256" --output "$CHECKSUM_PATH"; then
-    printf '%s\n' "Aviso: checksum remoto indisponível; continuando sem verificação." >&2
-  fi
 fi
 
 if [ -f "$CHECKSUM_PATH" ]; then

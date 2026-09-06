@@ -14,15 +14,17 @@ function resolveDownload(options = {}) {
   fs.writeFileSync(path.join(directory, "uname"), `#!/usr/bin/env node
 console.log(process.env.DEEJAZZ_TEST_ARCH);
 `, { mode: 0o755 });
-  // Stop before downloading or installing anything; record the selected URL.
+  // Record download URLs. Optionally simulate a download, then stop at extraction.
   fs.writeFileSync(path.join(directory, "curl"), `#!/usr/bin/env node
 const fs = require('node:fs');
 const args = process.argv.slice(2);
 fs.appendFileSync(process.env.DEEJAZZ_TEST_LOG, JSON.stringify(args) + '\\n');
 if (args.includes('%{url_effective}')) process.stdout.write(process.env.DEEJAZZ_TEST_RELEASE);
 else if (args.includes('%{http_code}')) process.stdout.write(process.env.DEEJAZZ_TEST_STATUS);
+else if (process.env.DEEJAZZ_TEST_DOWNLOAD === '1') fs.writeFileSync(args[args.indexOf('--output') + 1], 'archive fixture');
 else process.exit(77);
 `, { mode: 0o755 });
+  fs.writeFileSync(path.join(directory, "tar"), "#!/bin/sh\nexit 78\n", { mode: 0o755 });
   try {
     const result = spawnSync("sh", [installer], {
       encoding: "utf8",
@@ -37,6 +39,7 @@ else process.exit(77);
         DEEJAZZ_TEST_ARCH: options.arch || "x86_64",
         DEEJAZZ_TEST_RELEASE: options.release || `${repository}/releases/tag/v1.2.2`,
         DEEJAZZ_TEST_STATUS: options.status || "200",
+        DEEJAZZ_TEST_DOWNLOAD: options.download ? "1" : "0",
       },
     });
     const calls = fs.existsSync(log) ? fs.readFileSync(log, "utf8").trim().split("\n").map(JSON.parse) : [];
@@ -46,6 +49,14 @@ else process.exit(77);
     fs.rmSync(directory, { recursive: true, force: true });
   }
 }
+
+test("a downloaded release proceeds to extraction without requesting checksum files", () => {
+  const result = resolveDownload({ download: true });
+  assert.equal(result.status, 78);
+  assert.equal(result.downloads.length, 1);
+  assert.ok(result.downloads[0].includes(`${repository}/releases/download/v1.2.2/deejazz-linux-amd64-1.2.2.tar.gz`));
+  assert.equal(result.stderr, "");
+});
 
 for (const [arch, artifact] of [["x86_64", "amd64"], ["aarch64", "arm64"]]) {
   test(`latest ${arch} release downloads a versioned package`, () => {

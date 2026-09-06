@@ -70,12 +70,12 @@ npm run dist:linux:arm64
 
 Generated files are written to `dist/`:
 
-- `deejazz-windows-x64-1.2.3.exe`
-- `deejazz-linux-amd64-1.2.3.tar.gz`
-- `deejazz-linux-arm64-1.2.3.tar.gz`
+- `deejazz-windows-x64-1.2.4.exe`
+- `deejazz-linux-amd64-1.2.4.tar.gz`
+- `deejazz-linux-arm64-1.2.4.tar.gz`
 
 Filenames use the release version from `DEEJAZZ_VERSION` (or `.env.build` for
-local builds). Linux packages and the Android APK include SHA-256 checksum files.
+local builds).
 The Linux installer resolves the latest version automatically and also supports
 older releases with unversioned filenames.
 
@@ -88,11 +88,11 @@ signing secrets described in [android/README.md](android/README.md), then push a
 semantic-version tag to start a release:
 
 ```bash
-git tag v1.2.3
-git push origin v1.2.3
+git tag v1.2.4
+git push origin v1.2.4
 ```
 
-You can also run **Build and publish release** manually from the Actions tab and provide the version to publish. The workflow attaches the desktop packages and the Android APK with its SHA-256 checksum.
+You can also run **Build and publish release** manually from the Actions tab and provide the version to publish. The workflow only allows the four versioned packages listed above and in the Android instructions; additional files, including `.sha256` files, are rejected before publication.
 
 ## License
 

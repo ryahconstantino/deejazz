@@ -64,7 +64,7 @@ async function main() {
   const artifactName = `deejazz-android-${version}.apk`;
   const finalApk = path.join(output, artifactName);
   await fs.copyFile(signed, finalApk);
-  await fs.writeFile(`${finalApk}.sha256`, `${digest(await fs.readFile(finalApk))}  ${artifactName}\n`);
+  await fs.rm(`${finalApk}.sha256`, { force: true });
   await Promise.all([unsigned, aligned, signed].map(file => fs.rm(file)));
   console.log(`Signed and verified Android release: ${finalApk}`);
 }
