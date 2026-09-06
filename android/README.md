@@ -26,6 +26,12 @@ font dependency. `compact.svg` and `compact-icon.svg` provide the compact artwor
 used inside the app. These resources include native vector drawables and raster
 PNG/WebP fallbacks. Light screens use a dark wordmark for contrast.
 
+`app/assets/icon.png` and `app/assets/icon2.png` must remain byte-for-byte identical
+to the supplied APK. They are excluded from branding: the initialization code in
+`l5g.f()` reads `icon2.png` as binary data. Re-encoding these files caused startup
+to remain on "Hmm, something went wrong" in releases through 1.2.4. They are now
+covered by the protected source fingerprint, so a build fails if they change.
+
 ```sh
 npm ci
 npm run icons:android
@@ -59,7 +65,7 @@ npm run dist:android
 The script compiles the decoded project, aligns the APK, signs it, verifies the
 signature, alignment, package ID, app label and source integrity, then writes:
 
-- `Dist/deejazz-android-1.2.4.apk`
+- `Dist/deejazz-android-1.2.5.apk`
 
 The filename uses the DeeJazz release version from `DEEJAZZ_VERSION` or
 `.env.build`. GitHub Actions supplies the version from the release tag. The

@@ -114,14 +114,9 @@ ${content}
     } else continue;
     count++;
   }
-  for (const name of ["icon.png", "icon2.png"]) {
-    const file = path.join(app, "assets", name);
-    const { width, height } = await sharp(file).metadata();
-    await fs.writeFile(file, await sharp(Buffer.from(compact)).resize(width, height, {
-      fit: "contain", background: "#00000000",
-    }).png().toBuffer());
-    count++;
-  }
+  // Keep assets/icon.png and assets/icon2.png byte-for-byte unchanged. Despite
+  // their names, these are not branding resources: l5g.f() reads icon2.png as
+  // binary initialization data. Re-encoding it prevents startup from completing.
   const strings = path.join(app, "res/values/strings.xml");
   const original = await fs.readFile(strings, "utf8");
   await fs.writeFile(strings, original.replace(

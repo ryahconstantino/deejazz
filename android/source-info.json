@@ -9,13 +9,11 @@
     "url": "https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar",
     "sha256": "dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423"
   },
-  "protectedFileCount": 42428,
-  "protectedFilesSha256": "52c3b15252e681f4ceaeaf939e5712cd35d2f5b14b811bf3aea8c0e7f8aa3153",
+  "protectedFileCount": 42430,
+  "protectedFilesSha256": "8e7870162dd8d1434231791247e2097609fbce4e3bacc0d83c40e914d9df7ccd",
   "originalStringsSha256": "8d37086107d59732acce1652db440a38df5dc7a4cd238b258f067f13b27dae1b",
   "brandingFiles": [
     "res/drawable-nodpi/deejazz_launcher_art.png",
-    "assets/icon.png",
-    "assets/icon2.png",
     "res/drawable/ic_deezer_logo_full_white.xml",
     "res/drawable/icon_deezer_logo_fill_medium.xml",
     "res/drawable/icon_deezer_logo_fill_small.xml",
