@@ -13,7 +13,7 @@ const languageOptions = [...document.querySelectorAll('.language-option')]
 const menuButton = document.querySelector('#menu-button')
 const mobileMenu = document.querySelector('#mobile-menu')
 const desktopViewport = window.matchMedia('(min-width: 900px)')
-const windowsDownloadLinks = document.querySelectorAll('[data-windows-download]')
+const releaseDownloadLinks = document.querySelectorAll('[data-windows-download], [data-android-download]')
 const linuxCommandBox = document.querySelector('[data-linux-command-box]')
 const linuxCommandElement = document.querySelector('[data-linux-command]')
 const copyLinuxButton = document.querySelector('[data-copy-linux]')
@@ -51,10 +51,11 @@ function getInitialLocale() {
 }
 
 function updateDownloads() {
-  windowsDownloadLinks.forEach((link) => {
+  releaseDownloadLinks.forEach((link) => {
+    const platform = link.hasAttribute('data-android-download') ? 'android' : 'windows'
     const label = link.querySelector('span') || link
-    label.textContent = getMessage(currentLocale, 'download.windows.ready')
-    link.setAttribute('aria-label', getMessage(currentLocale, 'download.windows.readyAria'))
+    label.textContent = getMessage(currentLocale, `download.${platform}.ready`)
+    link.setAttribute('aria-label', getMessage(currentLocale, `download.${platform}.readyAria`))
     link.href = latestReleaseUrl
     link.removeAttribute('aria-disabled')
     link.setAttribute('rel', 'noopener')

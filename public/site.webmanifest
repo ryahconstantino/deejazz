@@ -1,7 +1,7 @@
 {
   "name": "DeeJazz",
   "short_name": "DeeJazz",
-  "description": "Music without distractions for Windows and Linux.",
+  "description": "Music without distractions for Windows, Linux and Android.",
   "start_url": "./",
   "scope": "./",
   "display": "browser",

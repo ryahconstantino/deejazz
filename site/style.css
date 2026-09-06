@@ -729,9 +729,9 @@ button:focus-visible {
 
 .platform-card-heading {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
 }
 
 .platform-name {
@@ -1316,6 +1316,20 @@ button:focus-visible {
 
   .platform-download-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .platform-download-card[data-platform="linux"] {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .platform-download-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .platform-download-card[data-platform="linux"] {
+    grid-column: auto;
   }
 }
 

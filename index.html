@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Download DeeJazz for Windows or install it on Linux with curl: your music with uBO Lite built in and fewer distractions."
+      content="Download DeeJazz for Windows, Linux and Android. Your music on desktop and mobile, with fewer distractions."
     />
     <meta name="application-name" content="DeeJazz" />
     <meta name="author" content="DeeJazz contributors" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow, max-image-preview:large" />
-    <meta name="keywords" content="DeeJazz, desktop music player, uBO Lite, Windows music app, Linux music app, ad blocker" />
+    <meta name="keywords" content="DeeJazz, desktop music player, uBO Lite, Windows music app, Linux music app, Android music app, APK, ad blocker" />
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#f3f3f5" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#111114" media="(prefers-color-scheme: dark)" />
@@ -40,7 +40,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="DeeJazz" />
     <meta property="og:title" content="DeeJazz - Music without distractions" />
-    <meta property="og:description" content="A desktop music experience for Windows and Linux with uBO Lite built in." />
+    <meta property="og:description" content="Your music on Windows, Linux and Android, with fewer distractions." />
     <meta property="og:url" content="https://ryahconstantino.github.io/deejazz/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="pt_BR" />
@@ -59,7 +59,7 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="DeeJazz - Music without distractions" />
-    <meta name="twitter:description" content="A desktop music experience for Windows and Linux with uBO Lite built in." />
+    <meta name="twitter:description" content="Your music on Windows, Linux and Android, with fewer distractions." />
     <meta name="twitter:url" content="https://ryahconstantino.github.io/deejazz/" />
     <meta name="twitter:image" content="https://ryahconstantino.github.io/deejazz/assets/images/social/og-deejazz-wordmark-desktop.png" />
     <meta name="twitter:image:alt" content="White DeeJazz wordmark on a dark background" />
@@ -70,8 +70,8 @@
         "@type": "SoftwareApplication",
         "name": "DeeJazz",
         "applicationCategory": "MultimediaApplication",
-        "operatingSystem": "Windows 10 or newer, Linux",
-        "description": "A desktop music experience for Windows and Linux with uBO Lite built in and fewer distractions.",
+        "operatingSystem": "Windows 10 or newer, Linux, Android 6.0 or newer (ARM64)",
+        "description": "Your music on Windows, Linux and Android, with fewer distractions.",
         "url": "https://ryahconstantino.github.io/deejazz/",
         "downloadUrl": "https://github.com/ryahconstantino/deejazz/releases/latest",
         "image": [
@@ -81,8 +81,8 @@
         "inLanguage": ["en-US", "pt-BR"]
       }
     </script>
-    <script type="module" crossorigin src="./assets/index-Duma4-bA.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DORUq5ES.css">
+    <script type="module" crossorigin src="./assets/index-9g_QesZF.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BBAKJfu-.css">
   </head>
   <body>
     <svg class="svg-definitions" aria-hidden="true">
@@ -201,12 +201,12 @@
       <section id="inicio" class="hero-section">
         <div class="hero-shell">
           <div class="hero-content">
-            <p class="eyebrow reveal" data-i18n="hero.eyebrow">DeeJazz for Windows and Linux</p>
+            <p class="eyebrow reveal" data-i18n="hero.eyebrow">DeeJazz for Windows, Linux and Android</p>
             <h1 class="display-title reveal">
               <span data-i18n="hero.title.main">All your music.</span>
               <span class="accent-text" data-i18n="hero.title.accent">No distractions.</span>
             </h1>
-            <p class="hero-copy reveal" data-i18n="hero.copy">A focused desktop player with uBO Lite built in, designed for listening without the usual noise.</p>
+            <p class="hero-copy reveal" data-i18n="hero.copy">Your music on desktop and mobile, with fewer distractions.</p>
             <div class="hero-actions reveal">
               <a class="button button-primary" href="#platform-downloads" data-i18n="download.header.choose">Downloads</a>
               <a class="text-link" href="https://github.com/ryahconstantino/deejazz" rel="noopener" data-i18n="hero.github">View on GitHub</a>
@@ -230,11 +230,11 @@
         <div class="section-shell downloads-shell">
           <div class="section-heading reveal">
             <h2 class="section-title" data-i18n="downloads.title">Choose your platform.</h2>
-            <p class="section-copy" data-i18n="downloads.copy">Use the installer on Windows or one command on Linux.</p>
+            <p class="section-copy" data-i18n="downloads.copy">Choose the Windows installer, the Linux install command or the Android APK.</p>
           </div>
 
           <div class="platform-download-grid">
-            <article class="platform-download-card reveal">
+            <article class="platform-download-card reveal" data-platform="windows">
               <div class="platform-card-heading">
                 <div class="platform-name">
                   <img class="platform-name-icon" src="./assets/images/platform/platform-windows.svg" width="24" height="24" alt="" aria-hidden="true" />
@@ -257,7 +257,27 @@
               <p data-i18n="download.windows.note">Choose your installer from GitHub Releases</p>
             </article>
 
-            <article class="platform-download-card reveal">
+            <article class="platform-download-card reveal" data-platform="android">
+              <div class="platform-card-heading">
+                <div class="platform-name">
+                  <img class="platform-name-icon" src="./assets/images/platform/platform-android.svg" width="24" height="24" alt="" aria-hidden="true" />
+                  <strong>Android</strong>
+                </div>
+                <span data-i18n="download.android.detail">Android 6.0 or newer · ARM64</span>
+              </div>
+              <a
+                class="button button-primary platform-action"
+                data-android-download
+                href="https://github.com/ryahconstantino/deejazz/releases/latest"
+                rel="noopener"
+                aria-label="View the DeeJazz Android APK in the latest GitHub release"
+              >
+                <span data-i18n="download.android.ready">Download APK</span>
+              </a>
+              <p data-i18n="download.android.note">Get the Android APK from GitHub Releases</p>
+            </article>
+
+            <article class="platform-download-card reveal" data-platform="linux">
               <div class="platform-card-heading">
                 <div class="platform-name">
                   <img class="platform-name-icon" src="./assets/images/platform/platform-linux.svg" width="24" height="24" alt="" aria-hidden="true" />
@@ -475,7 +495,7 @@
             <span data-i18n="final.title.main">Press play</span>
             <span class="accent-text" data-i18n="final.title.accent">your way.</span>
           </h2>
-          <p class="section-copy" data-i18n="final.copy">DeeJazz for Windows and Linux, with uBO Lite built in.</p>
+          <p class="section-copy" data-i18n="final.copy">Available for Windows, Linux and Android.</p>
           <a class="button button-primary" href="#platform-downloads" data-i18n="download.header.choose">Downloads</a>
         </div>
       </section>
