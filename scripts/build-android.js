@@ -8,7 +8,7 @@ const source = require("../android/source-info.json");
 
 const root = path.resolve(__dirname, "..");
 const work = path.join(root, ".android-build");
-const output = path.join(root, "Dist");
+const output = path.join(root, "dist");
 const java = process.env.JAVA_HOME ? path.join(process.env.JAVA_HOME, "bin/java") : "java";
 const sdk = process.env.ANDROID_HOME || process.env.ANDROID_SDK_ROOT;
 const buildTools = process.env.ANDROID_BUILD_TOOLS || (sdk && path.join(sdk, "build-tools/35.0.0"));

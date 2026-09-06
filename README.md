@@ -22,6 +22,14 @@ The localized uBlock Origin Lite dashboard shows active filtering, persistent co
 
 ![DeeJazz uBlock Origin Lite dashboard in English](assets/images/deejazz-blocker-panel.png)
 
+## Android
+
+DeeJazz for Android ships as a signed APK with the DeeJazz name, launcher icon and brand artwork. It requires Android 6.0 or newer on ARM64.
+
+![DeeJazz for Android](assets/images/deejazz-android-home.png)
+
+The Android project is a branding-only change: the package ID (`deezer.android.app`), manifest, Smali and native libraries are preserved. See [Android build and signing instructions](android/README.md) to build `dist/deejazz-android-1.2.5.apk` from source.
+
 ## Download
 
 Download the latest Windows, Linux and Android packages from [GitHub Releases](https://github.com/ryahconstantino/deejazz/releases/latest).
@@ -73,6 +81,13 @@ Generated files are written to `dist/`:
 - `deejazz-windows-x64-1.2.5.exe`
 - `deejazz-linux-amd64-1.2.5.tar.gz`
 - `deejazz-linux-arm64-1.2.5.tar.gz`
+- `deejazz-android-1.2.5.apk`
+
+Build the signed Android APK (see [android/README.md](android/README.md) for the required SDK and signing secrets):
+
+```bash
+npm run dist:android
+```
 
 Filenames use the release version from `DEEJAZZ_VERSION` (or `.env.build` for
 local builds).
@@ -82,8 +97,8 @@ older releases with unversioned filenames.
 ## Automated releases
 
 GitHub Actions builds the Windows x64 installer, both Linux packages and the
-signed Android APK, then publishes them to a GitHub Release. Android outputs are
-written to `Dist/`; desktop outputs remain in `dist/`. Configure the Android
+signed Android APK, then publishes them to a GitHub Release. All release
+packages are written to `dist/`. Configure the Android
 signing secrets described in [android/README.md](android/README.md), then push a
 semantic-version tag to start a release:
 

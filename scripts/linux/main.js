@@ -131,7 +131,7 @@ function setLogLevel() {
     log.transports.console.level = options.logLevel;
     log.transports.file.level = options.logLevel;
   } catch (error) {
-    console.warn("DeeJazz: não foi possível configurar o nível de log.", error.message);
+    console.warn("DeeJazz: could not configure the log level.", error.message);
   }
 }
 
@@ -260,7 +260,7 @@ function initializeMpris() {
     mprisPlayer.playbackStatus = MprisService.PLAYBACK_STATUS_STOPPED;
 
     mprisPlayer.on("error", (error) => {
-      console.warn("DeeJazz: MPRIS indisponível nesta sessão.", error.message);
+      console.warn("DeeJazz: MPRIS is unavailable in this session.", error.message);
     });
     mprisPlayer.on("play", () => sendPlayerControl("play"));
     mprisPlayer.on("pause", () => sendPlayerControl("pause"));
@@ -289,7 +289,7 @@ function initializeMpris() {
     });
     mprisPlayer.on("quit", () => app.quit());
   } catch (error) {
-    console.warn("DeeJazz: integração MPRIS não pôde ser iniciada.", error.message);
+    console.warn("DeeJazz: could not start the MPRIS integration.", error.message);
   }
 }
 

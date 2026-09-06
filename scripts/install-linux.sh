@@ -26,30 +26,30 @@ trap cleanup EXIT HUP INT TERM
 case "$(uname -m)" in
   x86_64|amd64) PACKAGE_ARCH="amd64" ;;
   aarch64|arm64) PACKAGE_ARCH="arm64" ;;
-  *) fail "arquitetura não suportada; use Linux x86_64 ou ARM64." ;;
+  *) fail "unsupported architecture; use Linux x86_64 or ARM64." ;;
 esac
 
 ARCHIVE_NAME="deejazz-linux-${PACKAGE_ARCH}.tar.gz"
 
-command -v tar >/dev/null 2>&1 || fail "tar não foi encontrado."
+command -v tar >/dev/null 2>&1 || fail "tar was not found."
 
 LOCAL_ARCHIVE="${DEEJAZZ_ARCHIVE_PATH:-}"
 
 if [ -n "$LOCAL_ARCHIVE" ]; then
   case "$LOCAL_ARCHIVE" in
     /*) ;;
-    *) fail "DEEJAZZ_ARCHIVE_PATH deve ser um caminho absoluto." ;;
+    *) fail "DEEJAZZ_ARCHIVE_PATH must be an absolute path." ;;
   esac
-  [ -f "$LOCAL_ARCHIVE" ] || fail "o pacote local não foi encontrado."
+  [ -f "$LOCAL_ARCHIVE" ] || fail "the local package was not found."
 elif [ -n "${DEEJAZZ_DOWNLOAD_URL:-}" ]; then
-  command -v curl >/dev/null 2>&1 || fail "curl não foi encontrado."
+  command -v curl >/dev/null 2>&1 || fail "curl was not found."
   DOWNLOAD_URL="$DEEJAZZ_DOWNLOAD_URL"
 else
-  command -v curl >/dev/null 2>&1 || fail "curl não foi encontrado."
+  command -v curl >/dev/null 2>&1 || fail "curl was not found."
   GITHUB_REPOSITORY="${DEEJAZZ_GITHUB_REPOSITORY:-$DEFAULT_GITHUB_REPOSITORY}"
   case "$GITHUB_REPOSITORY" in
     */*) ;;
-    *) fail "DEEJAZZ_GITHUB_REPOSITORY deve estar no formato proprietario/repositorio." ;;
+    *) fail "DEEJAZZ_GITHUB_REPOSITORY must use the format owner/repository." ;;
   esac
 
   RELEASE_VERSION="${DEEJAZZ_VERSION:-}"
@@ -57,13 +57,13 @@ else
     RELEASE_URL="$(curl --fail --location --silent --show-error --retry 3 --output /dev/null --write-out '%{url_effective}' "https://github.com/${GITHUB_REPOSITORY}/releases/latest")"
     case "$RELEASE_URL" in
       "https://github.com/${GITHUB_REPOSITORY}/releases/tag/v"*) RELEASE_VERSION="${RELEASE_URL##*/v}" ;;
-      *) fail "não foi possível identificar a versão mais recente." ;;
+      *) fail "could not determine the latest version." ;;
     esac
   fi
   printf '%s\n' "$RELEASE_VERSION" | LC_ALL=C awk '
     /^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$/ { valid = 1 }
     END { exit !(valid && NR == 1) }
-  ' || fail "a versão precisa estar no formato 1.2.2."
+  ' || fail "the version must use the format 1.2.2."
 
   RELEASE_BASE="https://github.com/${GITHUB_REPOSITORY}/releases/download/v${RELEASE_VERSION}"
   ARCHIVE_NAME="deejazz-linux-${PACKAGE_ARCH}-${RELEASE_VERSION}.tar.gz"
@@ -76,14 +76,14 @@ else
       ARCHIVE_NAME="deejazz-linux-${PACKAGE_ARCH}.tar.gz"
       DOWNLOAD_URL="$RELEASE_BASE/$ARCHIVE_NAME"
       ;;
-    *) fail "não foi possível consultar o pacote da versão $RELEASE_VERSION (HTTP $DOWNLOAD_STATUS)." ;;
+    *) fail "could not query the package for version $RELEASE_VERSION (HTTP $DOWNLOAD_STATUS)." ;;
   esac
 fi
 
 if [ -z "$LOCAL_ARCHIVE" ]; then
   case "$DOWNLOAD_URL" in
     https://github.com/*|https://objects.githubusercontent.com/*) ;;
-    *) fail "a URL do pacote precisa ser HTTPS e hospedada no GitHub." ;;
+    *) fail "the package URL must be HTTPS and hosted on GitHub." ;;
   esac
 fi
 
@@ -93,13 +93,13 @@ EXTRACT_DIR="$TEMP_DIR/extracted"
 CHECKSUM_PATH="$TEMP_DIR/$ARCHIVE_NAME.sha256"
 
 if [ -n "$LOCAL_ARCHIVE" ]; then
-  printf '%s\n' "Instalando $APP_NAME a partir do pacote local..."
+  printf '%s\n' "Installing $APP_NAME from the local package..."
   cp "$LOCAL_ARCHIVE" "$ARCHIVE_PATH"
   if [ -f "${LOCAL_ARCHIVE}.sha256" ]; then
     cp "${LOCAL_ARCHIVE}.sha256" "$CHECKSUM_PATH"
   fi
 else
-  printf '%s\n' "Baixando $APP_NAME para Linux..."
+  printf '%s\n' "Downloading $APP_NAME for Linux..."
   curl --fail --location --silent --show-error --retry 3 "$DOWNLOAD_URL" --output "$ARCHIVE_PATH"
 fi
 
@@ -107,18 +107,18 @@ if [ -f "$CHECKSUM_PATH" ]; then
   if command -v sha256sum >/dev/null 2>&1; then
     EXPECTED_CHECKSUM="$(awk 'NR == 1 { print $1 }' "$CHECKSUM_PATH")"
     ACTUAL_CHECKSUM="$(sha256sum "$ARCHIVE_PATH" | awk '{ print $1 }')"
-    [ "$EXPECTED_CHECKSUM" = "$ACTUAL_CHECKSUM" ] || fail "a verificação SHA-256 do pacote falhou."
+    [ "$EXPECTED_CHECKSUM" = "$ACTUAL_CHECKSUM" ] || fail "the SHA-256 verification of the package failed."
   fi
 fi
 
 mkdir -p "$EXTRACT_DIR"
 tar -tzf "$ARCHIVE_PATH" | while IFS= read -r entry; do
   case "$entry" in
-    /*|../*|*/../*|*/..) fail "o pacote contém um caminho inseguro." ;;
+    /*|../*|*/../*|*/..) fail "the package contains an unsafe path." ;;
   esac
 done
 tar -xzf "$ARCHIVE_PATH" -C "$EXTRACT_DIR" --strip-components=1
-[ -x "$EXTRACT_DIR/deejazz" ] || fail "o executável deejazz não foi encontrado no pacote."
+[ -x "$EXTRACT_DIR/deejazz" ] || fail "the deejazz executable was not found in the package."
 
 mkdir -p "$(dirname "$INSTALL_ROOT")" "$BIN_DIR" "$APPLICATIONS_DIR" "$ICON_DIR"
 NEW_INSTALL="${INSTALL_ROOT}.new.$$"
@@ -134,7 +134,7 @@ if mv "$NEW_INSTALL" "$INSTALL_ROOT"; then
   rm -rf "$OLD_INSTALL"
 else
   [ ! -d "$OLD_INSTALL" ] || mv "$OLD_INSTALL" "$INSTALL_ROOT"
-  fail "não foi possível concluir a instalação."
+  fail "could not complete the installation."
 fi
 
 ln -sfn "$INSTALL_ROOT/deejazz" "$BIN_DIR/deejazz"
@@ -175,14 +175,14 @@ fi
 if command -v ldd >/dev/null 2>&1; then
   MISSING_LIBRARIES="$(ldd "$INSTALL_ROOT/deejazz" 2>/dev/null | awk '/not found/ { print $1 }')"
   if [ -n "$MISSING_LIBRARIES" ]; then
-    printf '%s\n' "Aviso: bibliotecas do sistema não encontradas:" >&2
+    printf '%s\n' "Warning: missing system libraries:" >&2
     printf '  %s\n' $MISSING_LIBRARIES >&2
   fi
 fi
 
-printf '\n%s\n' "$APP_NAME foi instalado em $INSTALL_ROOT"
-printf '%s\n' "Execute com: deejazz"
+printf '\n%s\n' "$APP_NAME was installed to $INSTALL_ROOT"
+printf '%s\n' "Run with: deejazz"
 case ":$PATH:" in
   *":$BIN_DIR:"*) ;;
-  *) printf '%s\n' "Adicione $BIN_DIR ao PATH para executar pelo terminal." ;;
+  *) printf '%s\n' "Add $BIN_DIR to PATH to run it from the terminal." ;;
 esac

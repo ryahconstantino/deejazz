@@ -11,7 +11,7 @@ const panelLocalesPath = path.join(projectRoot, "scripts", "ubol-panel-locales.j
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v20";
+const integrationRevision = "deejazz-desktop-v21";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/";
 const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
@@ -530,9 +530,15 @@ function localizedHistoryTarget(value) {
 function localizedHistoryType(value) {`,
     );
   }
+  // The protection card keeps only the title and the switch. The filtering
+  // mode description is removed in every locale.
   result = result.replace(
     'elements.description.textContent = state.enabled\n    ? "Ativa. Anúncios e rastreadores compatíveis são filtrados antes de chegar ao player."\n    : "Desativada. As requisições estão passando sem a filtragem do uBO Lite.";',
+    'elements.description?.remove();',
+  );
+  result = result.replace(
     'elements.description.textContent = state.enabled\n    ? `${text("filteringMode2Name", "Optimal")}. ${text("optimalFilteringModeDescription", "Network and extended filtering are active.")}`\n    : `${text("filteringMode0Name", "No filtering")}. ${text("noFilteringModeDescription", "Requests are not filtered.")}`;',
+    'elements.description?.remove();',
   );
   result = result.replace(
     'elements.version.textContent = state.extensionVersion ? `Listas uBO Lite ${state.extensionVersion}` : "Mecanismo indisponível";',
@@ -582,6 +588,9 @@ function patchPanelHtml(panelHtml) {
   ]);
   let result = panelHtml;
   for (const [search, replacement] of replacements) result = result.split(search).join(replacement);
+  // Keep only the title and the switch in the protection card. The filtering
+  // mode description is removed in every locale.
+  result = result.replace(/<p id="protection-description"[^>]*>.*?<\/p>/s, "");
   return result;
 }
 
