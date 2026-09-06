@@ -17,10 +17,42 @@ async function walk(directory) {
   return result;
 }
 
+async function readWindowsLauncher() {
+  const ico = await fs.readFile(path.join(root, "desktop/resources/win/app.ico"));
+  if (ico.readUInt16LE(0) !== 0 || ico.readUInt16LE(2) !== 1) {
+    throw new Error("The shared Windows application icon is not an ICO file.");
+  }
+  const frames = [];
+  for (let index = 0; index < ico.readUInt16LE(4); index++) {
+    const entry = 6 + index * 16;
+    const width = ico[entry] || 256;
+    const height = ico[entry + 1] || 256;
+    const size = ico.readUInt32LE(entry + 8);
+    const offset = ico.readUInt32LE(entry + 12);
+    const bytes = ico.subarray(offset, offset + size);
+    if (bytes.subarray(0, 8).equals(Buffer.from("89504e470d0a1a0a", "hex"))) {
+      frames.push({ width, height, bytes });
+    }
+  }
+  frames.sort((a, b) => b.width * b.height - a.width * a.height);
+  if (!frames.length) throw new Error("The Windows icon has no PNG frames.");
+  // Reuse the actual Windows artwork; no redrawing or font rendering.
+  return frames[0].bytes;
+}
+
 async function main() {
   const wordmark = await fs.readFile(path.join(branding, "wordmark.svg"), "utf8");
   const compact = await fs.readFile(path.join(branding, "compact.svg"), "utf8");
-  const launcher = await fs.readFile(path.join(branding, "launcher.svg"));
+  const compactIcon = await fs.readFile(path.join(branding, "compact-icon.svg"));
+  const launcher = await readWindowsLauncher();
+  await fs.writeFile(path.join(branding, "launcher.png"), launcher);
+  const adaptiveDirectory = path.join(app, "res/drawable-nodpi");
+  await fs.mkdir(adaptiveDirectory, { recursive: true });
+  // A 108dp foreground at 4x resolution. The symbol stays inside the 66dp safe zone.
+  const adaptive = await sharp(launcher).resize(288, 288).extend({
+    top: 72, bottom: 72, left: 72, right: 72, background: "#00000000",
+  }).png().toBuffer();
+  await fs.writeFile(path.join(adaptiveDirectory, "deejazz_launcher_art.png"), adaptive);
   const glyphs = [...wordmark.matchAll(/<path d="([^"]+)"/g)].map(match => match[1]);
   if (glyphs.length !== 7 || /<(text|font)\b/.test(wordmark + compact)) {
     throw new Error("Android branding must contain seven outlined wordmark letters and no fonts.");
@@ -37,7 +69,7 @@ async function main() {
 ${content}
 </vector>\n`;
   };
-  let count = 0;
+  let count = 1;
   for (const file of await walk(path.join(app, "res"))) {
     const name = path.basename(file);
     if (name.startsWith("$")) continue;
@@ -48,14 +80,12 @@ ${content}
   <foreground android:drawable="@drawable/launcher_ic_foreground"/>
 </adaptive-icon>\n`);
     } else if (/^launcher_.*_(foreground|background)\.xml$/.test(name)) {
-      const old = await fs.readFile(file, "utf8");
       if (name.endsWith("background.xml")) {
         await fs.writeFile(file, `<?xml version="1.0" encoding="utf-8"?>
-<shape ${namespace} android:shape="rectangle"><solid android:color="#101014"/></shape>\n`);
+<shape ${namespace} android:shape="rectangle"><solid android:color="#000000"/></shape>\n`);
       } else {
-        // Keep the entire wordmark within the adaptive icon's central safe circle.
-        await fs.writeFile(file, vector(old, 108, 108,
-          `<group android:translateX="26" android:translateY="38" android:scaleX="0.0795" android:scaleY="0.0795">${stacked("#ffffff")}</group>`));
+        await fs.writeFile(file, `<?xml version="1.0" encoding="utf-8"?>
+<bitmap ${namespace} android:src="@drawable/deejazz_launcher_art" android:gravity="fill" android:filter="true"/>\n`);
       }
     } else if (/^(ic_deezer_logo_(white|black|colored_no_wording|full_white)|icon_deezer_logo_\w+|social_story_deezer_logo)\.xml$/.test(name)) {
       const old = await fs.readFile(file, "utf8");
@@ -74,7 +104,7 @@ ${content}
     } else if (name === "launcher_ic_app.png" ||
       /^(ic_deezer_logo_(white|black|colored|colored_no_wording)|parcours_reg_log_logo_deezer|widget_logo)\.(png|webp)$/.test(name)) {
       const { width, height } = await sharp(file).metadata();
-      const source = name === "launcher_ic_app.png" || name.includes("no_wording") ? launcher : Buffer.from(
+      const source = name === "launcher_ic_app.png" ? launcher : name.includes("no_wording") ? compactIcon : Buffer.from(
         /widget_logo/.test(name) ? compact :
           name.includes("black") ? wordmark.replace('fill="#fff"', 'fill="#101014"') : wordmark);
       const output = await sharp(source).resize(width, height, {

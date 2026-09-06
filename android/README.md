@@ -15,11 +15,16 @@ valid. Existing service names, URLs and third-party notices are preserved.
 
 ## Branding
 
+The Android launcher uses the same black square and colored music symbol as
+Windows. `branding/launcher.png` is copied from the largest PNG frame in
+`desktop/resources/win/app.ico` by the branding script. All launcher densities
+and carrier variants use this artwork; the adaptive icon adds transparent
+padding and a black background to preserve the symbol under Android masks.
+
 `branding/wordmark.svg` contains the spaced, outlined DeeJazz wordmark, with no
-font dependency. The compact icon stacks DEE above JAZZ in white on a dark
-background. The Android resources include native vector drawables and raster
-PNG/WebP fallbacks for all original screen densities and carrier variants.
-Light screens use a dark wordmark for contrast.
+font dependency. `compact.svg` and `compact-icon.svg` provide the compact artwork
+used inside the app. These resources include native vector drawables and raster
+PNG/WebP fallbacks. Light screens use a dark wordmark for contrast.
 
 ```sh
 npm ci
@@ -54,8 +59,8 @@ npm run dist:android
 The script compiles the decoded project, aligns the APK, signs it, verifies the
 signature, alignment, package ID, app label and source integrity, then writes:
 
-- `Dist/deejazz-android-1.2.2.apk`
-- `Dist/deejazz-android-1.2.2.apk.sha256`
+- `Dist/deejazz-android-1.2.3.apk`
+- `Dist/deejazz-android-1.2.3.apk.sha256`
 
 The filename uses the DeeJazz release version from `DEEJAZZ_VERSION` or
 `.env.build`. GitHub Actions supplies the version from the release tag. The

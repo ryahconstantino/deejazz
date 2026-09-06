@@ -13,6 +13,7 @@
   "protectedFilesSha256": "52c3b15252e681f4ceaeaf939e5712cd35d2f5b14b811bf3aea8c0e7f8aa3153",
   "originalStringsSha256": "8d37086107d59732acce1652db440a38df5dc7a4cd238b258f067f13b27dae1b",
   "brandingFiles": [
+    "res/drawable-nodpi/deejazz_launcher_art.png",
     "assets/icon.png",
     "assets/icon2.png",
     "res/drawable/ic_deezer_logo_full_white.xml",

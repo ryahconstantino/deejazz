@@ -1,7 +1,7 @@
 {
   "name": "deejazz",
   "productName": "DeeJazz",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "private": true,
   "description": "DeeJazz desktop application with uBO Lite integration",
   "license": "MIT",
