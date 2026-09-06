@@ -69,9 +69,9 @@ jobs:
       - name: Upload Windows installer
         uses: actions/upload-artifact@v4
         with:
-          name: deejazz-windows-x64
+          name: deejazz-windows-x64-${{ needs.prepare.outputs.version }}
           if-no-files-found: error
-          path: dist/deejazz-windows-x64.exe
+          path: dist/deejazz-windows-x64-${{ needs.prepare.outputs.version }}.exe
 
   linux:
     name: Linux ${{ matrix.arch }} package
@@ -104,20 +104,27 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Test Linux release downloads
+        run: npm run test:installer
+
       - name: Build Linux package
         run: npm run ${{ matrix.command }}
 
       - name: Upload Linux package
         uses: actions/upload-artifact@v4
         with:
-          name: deejazz-linux-${{ matrix.artifact }}
+          name: deejazz-linux-${{ matrix.artifact }}-${{ needs.prepare.outputs.version }}
           if-no-files-found: error
-          path: dist/deejazz-linux-${{ matrix.artifact }}.tar.gz
+          path: |
+            dist/deejazz-linux-${{ matrix.artifact }}-${{ needs.prepare.outputs.version }}.tar.gz
+            dist/deejazz-linux-${{ matrix.artifact }}-${{ needs.prepare.outputs.version }}.tar.gz.sha256
 
   android:
     name: Android signed APK
     needs: prepare
     runs-on: ubuntu-latest
+    env:
+      DEEJAZZ_VERSION: ${{ needs.prepare.outputs.version }}
     steps:
       - name: Check out source
         uses: actions/checkout@v4
@@ -163,11 +170,11 @@ jobs:
       - name: Upload Android APK and checksum
         uses: actions/upload-artifact@v4
         with:
-          name: deejazz-android
+          name: deejazz-android-${{ needs.prepare.outputs.version }}
           if-no-files-found: error
           path: |
-            Dist/deejazz-android.apk
-            Dist/deejazz-android.apk.sha256
+            Dist/deejazz-android-${{ needs.prepare.outputs.version }}.apk
+            Dist/deejazz-android-${{ needs.prepare.outputs.version }}.apk.sha256
 
   release:
     name: Publish GitHub release
@@ -181,6 +188,36 @@ jobs:
         with:
           path: release-assets
           merge-multiple: true
+
+      - name: Verify release filenames and checksums
+        env:
+          VERSION: ${{ needs.prepare.outputs.version }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, os
+          from pathlib import Path
+          version = os.environ['VERSION']
+          folder = Path('release-assets')
+          packages = {f'deejazz-windows-x64-{version}.exe',
+                      f'deejazz-linux-amd64-{version}.tar.gz',
+                      f'deejazz-linux-arm64-{version}.tar.gz',
+                      f'deejazz-android-{version}.apk'}
+          checksums = {name + '.sha256' for name in packages if not name.endswith('.exe')}
+          actual = {file.name for file in folder.iterdir()}
+          if actual != packages | checksums:
+              raise SystemExit(f'Unexpected release assets: {actual ^ (packages | checksums)}')
+          for name in packages:
+              if not (folder / name).is_file() or (folder / name).stat().st_size == 0:
+                  raise SystemExit(f'Missing or empty release package: {name}')
+          for name in checksums:
+              checksum, filename = (folder / name).read_text().strip().split('  ', 1)
+              if filename != name.removesuffix('.sha256'):
+                  raise SystemExit(f'Checksum filename mismatch: {name}')
+              if hashlib.sha256((folder / filename).read_bytes()).hexdigest() != checksum:
+                  raise SystemExit(f'Checksum mismatch: {filename}')
+          print(f'All {len(actual)} release assets match version {version}; checksums verified.')
+          PY
 
       - name: Publish release
         env:

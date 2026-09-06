@@ -27,7 +27,7 @@ if (!supportedArchitectures[requestedArch]) {
 }
 
 const artifactArchitecture = requestedArch === "x64" ? "amd64" : "arm64";
-const artifactName = `deejazz-linux-${artifactArchitecture}.tar.gz`;
+const artifactName = `deejazz-linux-${artifactArchitecture}-${version}.tar.gz`;
 const unpackedDirectoryName = requestedArch === "x64" ? "linux-unpacked" : `linux-${requestedArch}-unpacked`;
 
 function copyDependencyTree(packageName, copied = new Set()) {

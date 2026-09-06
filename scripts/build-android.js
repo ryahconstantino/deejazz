@@ -3,6 +3,7 @@ const path = require("node:path");
 const crypto = require("node:crypto");
 const { spawnSync } = require("node:child_process");
 const { verifySource } = require("./verify-android-source");
+const { version } = require("./build-environment");
 const source = require("../android/source-info.json");
 
 const root = path.resolve(__dirname, "..");
@@ -60,9 +61,10 @@ async function main() {
     throw new Error("The rebuilt APK has an unexpected package or application label.");
   }
   verifySource();
-  const finalApk = path.join(output, "deejazz-android.apk");
+  const artifactName = `deejazz-android-${version}.apk`;
+  const finalApk = path.join(output, artifactName);
   await fs.copyFile(signed, finalApk);
-  await fs.writeFile(`${finalApk}.sha256`, `${digest(await fs.readFile(finalApk))}  deejazz-android.apk\n`);
+  await fs.writeFile(`${finalApk}.sha256`, `${digest(await fs.readFile(finalApk))}  ${artifactName}\n`);
   await Promise.all([unsigned, aligned, signed].map(file => fs.rm(file)));
   console.log(`Signed and verified Android release: ${finalApk}`);
 }

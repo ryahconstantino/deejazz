@@ -1,7 +1,7 @@
 {
   "name": "deejazz",
   "productName": "DeeJazz",
-  "version": "1.0.0",
+  "version": "1.2.2",
   "private": true,
   "description": "DeeJazz desktop application with uBO Lite integration",
   "license": "MIT",
@@ -9,6 +9,7 @@
   "main": "build/main-with-ubol.js",
   "scripts": {
     "version:sync": "node scripts/sync-version.js",
+    "test:installer": "node --test scripts/tests/install-linux.test.js",
     "app:integrate": "node scripts/apply-application-integration.js",
     "runtime:brand": "node scripts/brand-windows-runtime.js",
     "icons:win": "node scripts/generate-windows-icon.js",
@@ -49,7 +50,7 @@
       "createStartMenuShortcut": true,
       "shortcutName": "DeeJazz",
       "uninstallDisplayName": "DeeJazz",
-      "artifactName": "deejazz-windows-x64.${ext}"
+      "artifactName": "deejazz-windows-x64-${version}.${ext}"
     }
   },
   "devDependencies": {

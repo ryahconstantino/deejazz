@@ -52,11 +52,32 @@ else
     *) fail "DEEJAZZ_GITHUB_REPOSITORY deve estar no formato proprietario/repositorio." ;;
   esac
 
-  if [ -n "${DEEJAZZ_VERSION:-}" ]; then
-    DOWNLOAD_URL="https://github.com/${GITHUB_REPOSITORY}/releases/download/v${DEEJAZZ_VERSION}/${ARCHIVE_NAME}"
-  else
-    DOWNLOAD_URL="https://github.com/${GITHUB_REPOSITORY}/releases/latest/download/${ARCHIVE_NAME}"
+  RELEASE_VERSION="${DEEJAZZ_VERSION:-}"
+  if [ -z "$RELEASE_VERSION" ]; then
+    RELEASE_URL="$(curl --fail --location --silent --show-error --retry 3 --output /dev/null --write-out '%{url_effective}' "https://github.com/${GITHUB_REPOSITORY}/releases/latest")"
+    case "$RELEASE_URL" in
+      "https://github.com/${GITHUB_REPOSITORY}/releases/tag/v"*) RELEASE_VERSION="${RELEASE_URL##*/v}" ;;
+      *) fail "não foi possível identificar a versão mais recente." ;;
+    esac
   fi
+  printf '%s\n' "$RELEASE_VERSION" | LC_ALL=C awk '
+    /^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$/ { valid = 1 }
+    END { exit !(valid && NR == 1) }
+  ' || fail "a versão precisa estar no formato 1.2.2."
+
+  RELEASE_BASE="https://github.com/${GITHUB_REPOSITORY}/releases/download/v${RELEASE_VERSION}"
+  ARCHIVE_NAME="deejazz-linux-${PACKAGE_ARCH}-${RELEASE_VERSION}.tar.gz"
+  DOWNLOAD_URL="$RELEASE_BASE/$ARCHIVE_NAME"
+  DOWNLOAD_STATUS="$(curl --head --location --silent --show-error --retry 3 --output /dev/null --write-out '%{http_code}' "$DOWNLOAD_URL")"
+  case "$DOWNLOAD_STATUS" in
+    200) ;;
+    404)
+      # Releases before 1.2.2 used filenames without a version.
+      ARCHIVE_NAME="deejazz-linux-${PACKAGE_ARCH}.tar.gz"
+      DOWNLOAD_URL="$RELEASE_BASE/$ARCHIVE_NAME"
+      ;;
+    *) fail "não foi possível consultar o pacote da versão $RELEASE_VERSION (HTTP $DOWNLOAD_STATUS)." ;;
+  esac
 fi
 
 if [ -z "$LOCAL_ARCHIVE" ]; then
