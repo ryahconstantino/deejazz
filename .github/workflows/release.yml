@@ -170,7 +170,7 @@ jobs:
         with:
           name: deejazz-android-${{ needs.prepare.outputs.version }}
           if-no-files-found: error
-          path: Dist/deejazz-android-${{ needs.prepare.outputs.version }}.apk
+          path: dist/deejazz-android-${{ needs.prepare.outputs.version }}.apk
 
   release:
     name: Publish GitHub release
