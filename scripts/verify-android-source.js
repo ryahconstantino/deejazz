@@ -18,9 +18,11 @@ function verifySource() {
     }
   }
   visit(app);
+  const packageFiles = new Set(source.packageFiles || []);
   const customizationFiles = files.filter(file =>
     /^res\/values[^/]*\/strings\.xml$/.test(file) ||
-    file === "smali_classes6/com/deezer/feature/search/datasource/model/SearchHomeChannelItemModel.smali");
+    file === "smali_classes6/com/deezer/feature/search/datasource/model/SearchHomeChannelItemModel.smali" ||
+    packageFiles.has(file));
   const editableFiles = new Set([...source.brandingFiles, ...customizationFiles]);
   const protectedFiles = files.sort().filter(file => !editableFiles.has(file));
   const fingerprint = sha256(protectedFiles.map(file =>
@@ -36,9 +38,13 @@ function verifySource() {
   }
   const strings = fs.readFileSync(path.join(app, "res/values/strings.xml"), "utf8");
   for (const key of ["app_name", "app_name_base"]) {
-    if (!strings.includes(`<string name="${key}">ryahconstantino.github.io.deejazz</string>`)) {
+    if (!strings.includes(`<string name="${key}">DeeJazz</string>`)) {
       throw new Error(`Android ${key} has an unexpected application label.`);
     }
+  }
+  const manifest = fs.readFileSync(path.join(app, "AndroidManifest.xml"), "utf8");
+  if (!manifest.includes(`package="${source.package}"`)) {
+    throw new Error("Android manifest has an unexpected package name.");
   }
   for (const file of customizationFiles.filter(file => file.endsWith("strings.xml"))) {
     const localized = fs.readFileSync(path.join(app, file), "utf8");

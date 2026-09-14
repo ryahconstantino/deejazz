@@ -13,7 +13,7 @@
 
     const/4 v1, 0x3
 
-    const-string v0, "android.resource://deezer.android.app/drawable/"
+    const-string v0, "android.resource://ryahconstantino.github.io.deejazz/drawable/"
 
     const/4 v1, 0x3
 

@@ -13,7 +13,8 @@ The supplied native libraries support ARM64 (`arm64-v8a`) only; the APK requires
 Android 6.0 or newer, as declared in the original manifest.
 Resource and class identifiers retain their original names so references remain
 valid. Existing service names, URLs and third-party notices are preserved. The
-visible Android application label is `ryahconstantino.github.io.deejazz`.
+visible Android application label is `DeeJazz`, and its package name is
+`ryahconstantino.github.io.deejazz`.
 
 ## Branding
 

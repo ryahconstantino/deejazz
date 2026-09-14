@@ -52,7 +52,7 @@
 
     const-string/jumbo v0, "poemeapd.rnezridda"
 
-    const-string v0, "deezer.android.app"
+    const-string v0, "ryahconstantino.github.io.deejazz"
 
     const/4 v2, 0x6
 

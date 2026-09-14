@@ -3134,7 +3134,7 @@
 
     const-string p1, "SiTTOdopRedpedCarUzHap..rne"
 
-    const-string p1, "deezer.android.app.SHORTCUT"
+    const-string p1, "ryahconstantino.github.io.deejazz.SHORTCUT"
 
     const/4 v4, 0x4
 

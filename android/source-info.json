@@ -1,7 +1,7 @@
 {
   "description": "Decoded resources and smali from the supplied APK; not the original Java/Kotlin source. Branding, user-facing strings and Search genre colors are customized.",
   "originalApkSha256": "925e9872261d6da253840dec02be8f7453b281ccb1ed56f00f89689712234af8",
-  "package": "deezer.android.app",
+  "package": "ryahconstantino.github.io.deejazz",
   "versionName": "7.0.5.56",
   "versionCode": 7000503,
   "apktool": {
@@ -9,10 +9,26 @@
     "url": "https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar",
     "sha256": "dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423"
   },
-  "protectedFileCount": 42387,
-  "protectedFilesSha256": "3664853ae14209e10d4e362f136805cf59faaed47d4b38fcaf77baf9f67003a8",
-  "customizationFileCount": 44,
-  "customizationFilesSha256": "5135840d7711221876611100de769aa5ef0f168d9b067ca888a715044841863c",
+  "protectedFileCount": 42373,
+  "protectedFilesSha256": "43bb26f26a3e961a9d949a004c293b707e62854738c79c1028fee0a6d6675998",
+  "customizationFileCount": 58,
+  "customizationFilesSha256": "5b1e1af66bc81be040a4a1f3ed3e9473fffaf6dc6e80b26fb827f6df238ebef2",
+  "packageFiles": [
+    "AndroidManifest.xml",
+    "res/xml/searchable.xml",
+    "res/xml/shortcuts.xml",
+    "smali/tb0.smali",
+    "smali_classes4/deezer/android/app/DZMidlet.smali",
+    "smali_classes4/deezer/android/utils/SearchSuggestionProvider.smali",
+    "smali_classes6/bya.smali",
+    "smali_classes6/com/deezer/feature/socialstories/utils/SocialStoryFileProvider.smali",
+    "smali_classes6/com/deezer/feature/waze/WazeWakeUpReceiver.smali",
+    "smali_classes6/ed6.smali",
+    "smali_classes6/f47.smali",
+    "smali_classes6/gm3.smali",
+    "smali_classes6/gqa.smali",
+    "smali_classes6/p0b.smali"
+  ],
   "originalStringsSha256": "8d37086107d59732acce1652db440a38df5dc7a4cd238b258f067f13b27dae1b",
   "brandingFiles": [
     "res/drawable-nodpi/deejazz_launcher_art.png",

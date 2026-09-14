@@ -580,7 +580,7 @@
 
     const-string v0, "oprmdarp.e.eaedizd"
 
-    const-string v0, "deezer.android.app"
+    const-string v0, "ryahconstantino.github.io.deejazz"
 
     move-object v14, v0
 

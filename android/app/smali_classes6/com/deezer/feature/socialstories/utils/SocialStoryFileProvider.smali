@@ -57,7 +57,7 @@
 
     const-string v0, "cissfoldoe.rvadodaite.lpsrr.zidneaeiopyr.ep"
 
-    const-string v0, "deezer.android.app.fileprovider.socialstory"
+    const-string v0, "ryahconstantino.github.io.deejazz.fileprovider.socialstory"
 
     const/4 v1, 0x2
 

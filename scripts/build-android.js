@@ -57,7 +57,7 @@ async function main() {
   run(path.join(buildTools, "zipalign"), ["-c", "-P", "16", "4", signed]);
   const badging = run(path.join(buildTools, "aapt"), ["dump", "badging", signed], true);
   if (!badging.includes(`package: name='${source.package}'`) ||
-      !badging.includes("application-label:'ryahconstantino.github.io.deejazz'")) {
+      !badging.includes("application-label:'DeeJazz'")) {
     throw new Error("The rebuilt APK has an unexpected package or application label.");
   }
   verifySource();

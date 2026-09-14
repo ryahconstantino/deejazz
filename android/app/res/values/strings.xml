@@ -30,8 +30,8 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="action_flow_play">Play Flow</string>
     <string name="activation_msisdn_code_hint">–</string>
-    <string name="app_name">ryahconstantino.github.io.deejazz</string>
-    <string name="app_name_base">ryahconstantino.github.io.deejazz</string>
+    <string name="app_name">DeeJazz</string>
+    <string name="app_name_base">DeeJazz</string>
     <string name="app_name_extension" />
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>

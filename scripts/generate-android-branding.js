@@ -6,7 +6,7 @@ const root = path.resolve(__dirname, "..");
 const app = path.join(root, "android/app");
 const branding = path.join(root, "android/branding");
 const namespace = 'xmlns:android="http://schemas.android.com/apk/res/android"';
-const applicationLabel = "ryahconstantino.github.io.deejazz";
+const applicationLabel = "DeeJazz";
 
 async function walk(directory) {
   const result = [];

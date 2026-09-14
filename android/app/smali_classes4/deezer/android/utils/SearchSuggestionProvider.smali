@@ -13,7 +13,7 @@
 
     const/4 v2, 0x4
 
-    const-string v0, "deezer.android.app.provider.SearchSuggestionProvider"
+    const-string v0, "ryahconstantino.github.io.deejazz.provider.SearchSuggestionProvider"
 
     const/4 v2, 0x0
 

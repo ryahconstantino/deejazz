@@ -107,7 +107,7 @@
 
     const-string v4, "COszr_rZnpAaEE.IdPoied..AWaNeNepTdO"
 
-    const-string v4, "deezer.android.app.ACTION_WAZE_OPEN"
+    const-string v4, "ryahconstantino.github.io.deejazz.ACTION_WAZE_OPEN"
 
     const/4 v5, 0x2
 

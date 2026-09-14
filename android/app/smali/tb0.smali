@@ -346,7 +346,7 @@
 
     const-string v2, "r.sdTepTaUeROzrdnaSeo.pHdCi"
 
-    const-string v2, "deezer.android.app.SHORTCUT"
+    const-string v2, "ryahconstantino.github.io.deejazz.SHORTCUT"
 
     const/4 v7, 0x3
 

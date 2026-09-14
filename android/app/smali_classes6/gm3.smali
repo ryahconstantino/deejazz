@@ -98,7 +98,7 @@
 
     const-string v3, "hSs.igoeedirtroupcnroSriavaedrs.e.rgprnveidd.zadoePe"
 
-    const-string v3, "deezer.android.app.provider.SearchSuggestionProvider"
+    const-string v3, "ryahconstantino.github.io.deejazz.provider.SearchSuggestionProvider"
 
     const/4 v4, 0x1
 
