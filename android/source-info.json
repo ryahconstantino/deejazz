@@ -17,10 +17,10 @@
     "url": "https://repo1.maven.org/maven2/org/json/json/20240303/json-20240303.jar",
     "sha256": "3cf6cd6892e32e2b4c1c39e0f52f5248a2f5b37646fdfbb79a66b46b618414ed"
   },
-  "protectedFileCount": 42373,
-  "protectedFilesSha256": "43bb26f26a3e961a9d949a004c293b707e62854738c79c1028fee0a6d6675998",
-  "customizationFileCount": 60,
-  "customizationFilesSha256": "3b6bf464b035468f606071718aba59628d0eefe018ca3aae5b4935ed4b8fe6d7",
+  "protectedFileCount": 42372,
+  "protectedFilesSha256": "ac771e4c8b100964ad68ca0f3911bfd5da0100ff4374ecabd7e3bda3221fd24a",
+  "customizationFileCount": 61,
+  "customizationFilesSha256": "a5930e401fc57323e39a712afb5f5e386466ae2c49eb64dcd35c61f0baad56fb",
   "packageFiles": [
     "AndroidManifest.xml",
     "res/xml/deejazz_update_paths.xml",

@@ -167,9 +167,7 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {p1}, Lrd1;->d()Lt84;
-
-    move-result-object v0
+    const/4 v0, 0x0
 
     const/4 v2, 0x6
 
@@ -185,12 +183,54 @@
 
     const/4 v2, 0x2
 
-    invoke-virtual {p1}, Lrd1;->c()I
+    iget-object v0, p0, Lqg1;->c:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
 
-    const/4 v2, 0x0
+    and-int/lit8 v0, v0, 0x7
 
+    packed-switch v0, :pswitch_data_0
+
+    const v0, -0x86aab8
+
+    goto :color_ready
+
+    :pswitch_0
+    const v0, -0x16e19d
+
+    goto :color_ready
+
+    :pswitch_1
+    const v0, -0x63d850
+
+    goto :color_ready
+
+    :pswitch_2
+    const v0, -0x98c549
+
+    goto :color_ready
+
+    :pswitch_3
+    const v0, -0xc0ae4b
+
+    goto :color_ready
+
+    :pswitch_4
+    const v0, -0xde690d
+
+    goto :color_ready
+
+    :pswitch_5
+    const v0, -0xff6978
+
+    goto :color_ready
+
+    :pswitch_6
+    const v0, -0xa8de
+
+    :color_ready
     iput v0, p0, Lqg1;->g:I
 
     const/4 v2, 0x5
@@ -218,6 +258,17 @@
     iput-object p1, p0, Lqg1;->h:Lyvb;
 
     return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+        :pswitch_5
+        :pswitch_6
+    .end packed-switch
 .end method
 
 

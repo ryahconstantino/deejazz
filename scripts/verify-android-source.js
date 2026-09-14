@@ -22,6 +22,7 @@ function verifySource() {
   const customizationFiles = files.filter(file =>
     /^res\/values[^/]*\/strings\.xml$/.test(file) ||
     file === "smali_classes6/com/deezer/feature/search/datasource/model/SearchHomeChannelItemModel.smali" ||
+    file === "smali/qg1.smali" ||
     packageFiles.has(file));
   const editableFiles = new Set([...source.brandingFiles, ...customizationFiles]);
   const protectedFiles = files.sort().filter(file => !editableFiles.has(file));
@@ -78,6 +79,22 @@ function verifySource() {
   }
   for (const file of source.brandingFiles) {
     if (!fs.existsSync(path.join(app, file))) throw new Error(`Missing branding resource: ${file}`);
+  }
+  const aboutSymbol = fs.readFileSync(path.join(app,
+    "res/drawable-anydpi-v24/ic_deezer_logo_colored_no_wording.xml"), "utf8");
+  if (!aboutSymbol.includes('android:viewportWidth="35.0"') ||
+      !aboutSymbol.includes('android:fillColor="#29ab70"') ||
+      aboutSymbol.includes("theme_icon_primary")) {
+    throw new Error("The Android About logo is not the colorful, wording-free symbol.");
+  }
+  const channelBrick = fs.readFileSync(path.join(app, "smali/qg1.smali"), "utf8");
+  const palette = ["-0x16e19d", "-0x63d850", "-0x98c549", "-0xc0ae4b",
+    "-0xde690d", "-0xff6978", "-0xa8de", "-0x86aab8"];
+  if (!channelBrick.includes("Ljava/lang/String;->hashCode()I") ||
+      !channelBrick.includes("and-int/lit8 v0, v0, 0x7") ||
+      channelBrick.includes("Lrd1;->d()Lt84;") ||
+      palette.some(color => !channelBrick.includes(color))) {
+    throw new Error("The Search genre cards are not using their solid color palette.");
   }
   console.log(`Android source verified: ${protectedFiles.length} protected files unchanged; ${customizationFiles.length} customizations matched.`);
 }

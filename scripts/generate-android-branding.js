@@ -44,7 +44,6 @@ async function readWindowsLauncher() {
 async function main() {
   const wordmark = await fs.readFile(path.join(branding, "wordmark.svg"), "utf8");
   const compact = await fs.readFile(path.join(branding, "compact.svg"), "utf8");
-  const compactIcon = await fs.readFile(path.join(branding, "compact-icon.svg"));
   const launcher = await readWindowsLauncher();
   await fs.writeFile(path.join(branding, "launcher.png"), launcher);
   const adaptiveDirectory = path.join(app, "res/drawable-nodpi");
@@ -70,6 +69,20 @@ async function main() {
 ${content}
 </vector>\n`;
   };
+  const coloredSymbolVector = `<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dp" android:width="35.0dp" android:viewportWidth="35.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#29ab70" android:pathData="M34.6346,0.6543H27.1734V5.064H34.6346V0.6543Z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__0" android:pathData="M34.6346,6.7178H27.1734V11.1275H34.6346V6.7178Z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__1" android:pathData="M34.6346,12.873H27.1734V17.2827H34.6346V12.873Z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__2" android:pathData="M7.4612,18.936H0V23.3457H7.4612V18.936Z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__3" android:pathData="M16.4883,18.936H9.0271V23.3457H16.4883V18.936Z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__4" android:pathData="M25.6075,18.936H18.1464V23.3457H25.6075V18.936Z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__5" android:pathData="M34.6346,18.936V23.3457H27.1734V18.936H34.6346Z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__6" android:pathData="M25.6075,12.8726H18.1464V17.2823H25.6075V12.8726Z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__7" android:pathData="M16.4883,12.873H9.0271V17.2827H16.4883V12.873Z" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__8" android:pathData="M16.4883,6.7178V11.1275H9.0271V6.7178H16.4883Z" android:fillType="evenOdd" />
+</vector>\n`;
   let count = 1;
   for (const file of await walk(path.join(app, "res"))) {
     const name = path.basename(file);
@@ -88,7 +101,11 @@ ${content}
         await fs.writeFile(file, `<?xml version="1.0" encoding="utf-8"?>
 <bitmap ${namespace} android:src="@drawable/deejazz_launcher_art" android:gravity="fill" android:filter="true"/>\n`);
       }
-    } else if (/^(ic_deezer_logo_(white|black|colored_no_wording|full_white)|icon_deezer_logo_\w+|social_story_deezer_logo)\.xml$/.test(name)) {
+    } else if (name === "ic_deezer_logo_colored_no_wording.xml") {
+      // Keep the service's colorful equalizer symbol in About. This resource
+      // deliberately contains no DeeJazz wordmark or other lettering.
+      await fs.writeFile(file, coloredSymbolVector);
+    } else if (/^(ic_deezer_logo_(white|black|full_white)|icon_deezer_logo_\w+|social_story_deezer_logo)\.xml$/.test(name)) {
       const old = await fs.readFile(file, "utf8");
       const small = /no_wording|^icon_/.test(name);
       const color = name.includes("black") ? "#101014" :
@@ -107,8 +124,8 @@ ${content}
       const { width, height } = await sharp(file).metadata();
       // The About screen resolves ic_deezer_logo_colored. Use the colorful
       // music symbol there, without the DeeJazz wordmark requested elsewhere.
-      const source = name === "launcher_ic_app.png" || name === "ic_deezer_logo_colored.png" ? launcher :
-        name.includes("no_wording") ? compactIcon : Buffer.from(
+      const source = name === "launcher_ic_app.png" || name === "ic_deezer_logo_colored.png" ||
+        name.includes("no_wording") ? launcher : Buffer.from(
         /widget_logo/.test(name) ? compact :
           name.includes("black") ? wordmark.replace('fill="#fff"', 'fill="#101014"') : wordmark);
       const output = await sharp(source).resize(width, height, {
