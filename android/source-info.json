@@ -9,17 +9,27 @@
     "url": "https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar",
     "sha256": "dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423"
   },
+  "androidCompileStub": {
+    "url": "https://repo1.maven.org/maven2/com/google/android/android/4.1.1.4/android-4.1.1.4.jar",
+    "sha256": "84072541cbb711eff89f7277100ff854929a446dba7ceb1b195c340e0b4fd3cb"
+  },
+  "jsonCompileStub": {
+    "url": "https://repo1.maven.org/maven2/org/json/json/20240303/json-20240303.jar",
+    "sha256": "3cf6cd6892e32e2b4c1c39e0f52f5248a2f5b37646fdfbb79a66b46b618414ed"
+  },
   "protectedFileCount": 42373,
   "protectedFilesSha256": "43bb26f26a3e961a9d949a004c293b707e62854738c79c1028fee0a6d6675998",
-  "customizationFileCount": 58,
-  "customizationFilesSha256": "5b1e1af66bc81be040a4a1f3ed3e9473fffaf6dc6e80b26fb827f6df238ebef2",
+  "customizationFileCount": 60,
+  "customizationFilesSha256": "3b6bf464b035468f606071718aba59628d0eefe018ca3aae5b4935ed4b8fe6d7",
   "packageFiles": [
     "AndroidManifest.xml",
+    "res/xml/deejazz_update_paths.xml",
     "res/xml/searchable.xml",
     "res/xml/shortcuts.xml",
     "smali/tb0.smali",
     "smali_classes4/deezer/android/app/DZMidlet.smali",
     "smali_classes4/deezer/android/utils/SearchSuggestionProvider.smali",
+    "smali_classes4/io/github/ryahconstantino/deejazz/update/UpdateFileProvider.smali",
     "smali_classes6/bya.smali",
     "smali_classes6/com/deezer/feature/socialstories/utils/SocialStoryFileProvider.smali",
     "smali_classes6/com/deezer/feature/waze/WazeWakeUpReceiver.smali",

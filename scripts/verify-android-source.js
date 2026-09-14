@@ -46,6 +46,17 @@ function verifySource() {
   if (!manifest.includes(`package="${source.package}"`)) {
     throw new Error("Android manifest has an unexpected package name.");
   }
+  for (const required of [
+    "android.permission.REQUEST_INSTALL_PACKAGES",
+    `${source.package}.update-provider`,
+    "@xml/deejazz_update_paths",
+  ]) {
+    if (!manifest.includes(required)) throw new Error(`Android updater manifest entry is missing: ${required}`);
+  }
+  const application = fs.readFileSync(path.join(app, "smali_classes4/deezer/android/app/DZMidlet.smali"), "utf8");
+  if (!application.includes("Lio/github/ryahconstantino/deejazz/update/GitHubUpdateManager;->start")) {
+    throw new Error("Android automatic updater is not started by the application.");
+  }
   for (const file of customizationFiles.filter(file => file.endsWith("strings.xml"))) {
     const localized = fs.readFileSync(path.join(app, file), "utf8");
     const visibleText = localized.split(/(<[^>]+>)/g)

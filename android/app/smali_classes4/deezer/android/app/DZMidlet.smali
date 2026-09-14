@@ -1700,6 +1700,8 @@
 
     invoke-super {p0}, Ll42;->onCreate()V
 
+    invoke-static {p0}, Lio/github/ryahconstantino/deejazz/update/GitHubUpdateManager;->start(Landroid/content/Context;)V
+
     const/4 v13, 0x5
 
     sput-object p0, Ldeezer/android/app/DZMidlet;->A:Ldeezer/android/app/DZMidlet;

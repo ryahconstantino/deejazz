@@ -6,15 +6,21 @@ Smali. It is **not** the original Java/Kotlin source or an Android Studio/Gradle
 project.
 
 The application display name, user-facing brand strings, launcher icons, About
-artwork and Search genre colors have been changed. The original version
-(`7.0.5.56`, code `7000503`), manifest, Smali, native libraries and existing
-features are preserved.
+artwork and Search genre colors have been changed. The decoded source originates
+from version `7.0.5.56` (code `7000503`); release APKs receive the DeeJazz
+semantic version and a monotonically increasing Android version code at build time.
 The supplied native libraries support ARM64 (`arm64-v8a`) only; the APK requires
 Android 6.0 or newer, as declared in the original manifest.
 Resource and class identifiers retain their original names so references remain
 valid. Existing service names, URLs and third-party notices are preserved. The
 visible Android application label is `DeeJazz`, and its package name is
 `ryahconstantino.github.io.deejazz`.
+
+At application startup, the updater checks the latest stable GitHub Release,
+selects the exact Android APK, verifies its reported size and SHA-256 digest,
+and verifies its package name before opening Android's system installer. Android
+does not allow an ordinary app to approve or install an APK silently: the user
+must allow DeeJazz as an installation source and confirm the native installer.
 
 ## Branding
 
@@ -54,7 +60,7 @@ keystore. Apktool is downloaded automatically and its SHA-256 hash is verified.
 
 Set these environment variables using your local secret manager or shell:
 
-- `JAVA_HOME`: JDK/JRE 21 directory.
+- `JAVA_HOME`: JDK 21 directory.
 - `ANDROID_HOME`: Android SDK directory; alternatively set `ANDROID_BUILD_TOOLS`
   directly to the directory containing `aapt`, `zipalign` and `lib/apksigner.jar`.
 - `ANDROID_KEYSTORE_PATH`: release keystore outside the repository.
@@ -69,11 +75,12 @@ npm run dist:android
 The script compiles the decoded project, aligns the APK, signs it, verifies the
 signature, alignment, package ID, app label and source integrity, then writes:
 
-- `dist/deejazz-android-1.2.7.apk`
+- `dist/deejazz-android-1.2.8.apk`
 
 The filename uses the DeeJazz release version from `DEEJAZZ_VERSION` or
 `.env.build`. GitHub Actions supplies the version from the release tag. The
-original Android manifest version remains unchanged.
+Android package metadata is synchronized to the DeeJazz release version during
+the build.
 
 The input APK is not required for subsequent builds and is not stored in Git.
 Generated APKs, intermediate build files and signing keys are ignored.
@@ -87,10 +94,11 @@ The signed APK is attached to GitHub Releases. Builds do not generate a separate
 checksum file.
 
 The DeeJazz signing certificate differs from the input APK's certificate, so
-Android will not accept it as an in-place update of that APK. This project keeps
-the original package ID to avoid changing app behavior. Back up local data before
-replacing an existing installation. Runtime behavior still needs validation on
-an Android device, especially integrations tied to a signing certificate.
+Android will not accept it as an in-place update of that input APK. DeeJazz
+releases use the package `ryahconstantino.github.io.deejazz` and must continue to
+use the same release keystore for automatic updates. Runtime behavior still
+needs validation on an Android device, especially integrations tied to a signing
+certificate.
 
 Decoded third-party components retain their respective licenses and notices;
 the root MIT license does not relicense them.

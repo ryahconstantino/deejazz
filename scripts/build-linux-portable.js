@@ -11,6 +11,7 @@ const sourceAsar = path.join(projectRoot, "desktop", "resources", "app.asar");
 const sourceIcon = path.join(projectRoot, "desktop", "resources", "deejazz-icon.png");
 const sourceTrayIcon = path.join(projectRoot, "desktop", "resources", "win", "systray.png");
 const sourceLinuxMain = path.join(projectRoot, "scripts", "linux", "main.js");
+const sourceLinuxInstaller = path.join(projectRoot, "scripts", "install-linux.sh");
 const workRoot = path.join(projectRoot, ".linux-build");
 const appDir = path.join(workRoot, "app");
 const linuxResources = path.join(workRoot, "resources", "linux");
@@ -101,6 +102,7 @@ function prepareApplication() {
 
   fs.copyFileSync(sourceIcon, path.join(linuxResources, "icon.png"));
   fs.copyFileSync(sourceTrayIcon, path.join(linuxResources, "systray.png"));
+  fs.copyFileSync(sourceLinuxInstaller, path.join(linuxResources, "install-linux.sh"));
 }
 
 async function buildPortableArchive() {

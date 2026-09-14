@@ -171,6 +171,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Test automatic update logic
+        run: npm run test:updater
+
       - name: Build, sign and verify Android APK
         env:
           ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}

@@ -8,10 +8,11 @@ const { projectRoot, version } = require("./build-environment");
 const sourceAsar = path.join(projectRoot, "desktop", "resources", "app.asar");
 const windowsIcon = path.join(projectRoot, "desktop", "resources", "win", "app.ico");
 const panelLocalesPath = path.join(projectRoot, "scripts", "ubol-panel-locales.json");
+const updaterSource = path.join(projectRoot, "scripts", "desktop", "auto-update.js");
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v21";
+const integrationRevision = "deejazz-desktop-v22";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/";
 const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
@@ -264,6 +265,12 @@ function patchWrapper(wrapper, locales, panelMessages) {
       result = result.replace(marker, `${marker}\n${localeRuntimeSource(locales, panelMessages)}`);
     }
   }
+  if (!result.includes('require("./deejazz-auto-update")')) {
+    result = result.replace(
+      'const APP_USER_MODEL_ID = "com.deejazz.desktop";',
+      'const { startAutomaticUpdate } = require("./deejazz-auto-update");\nconst APP_USER_MODEL_ID = "com.deejazz.desktop";',
+    );
+  }
 
   const menuIdsStart = result.indexOf("const MENU_IDS = Object.freeze({");
   const menuIdsEnd = result.indexOf("});", menuIdsStart);
@@ -419,6 +426,12 @@ function patchWrapper(wrapper, locales, panelMessages) {
     });
   });
   contents.on("dom-ready", () => {`,
+    );
+  }
+  if (!result.includes("startAutomaticUpdate(app, log);")) {
+    result = result.replace(
+      "module.exports = main;",
+      "startAutomaticUpdate(app, log);\n\nmodule.exports = main;",
     );
   }
   return result;
@@ -617,7 +630,7 @@ function patchTranslations(appRoot) {
 }
 
 async function main() {
-  for (const required of [sourceAsar, windowsIcon, panelLocalesPath]) {
+  for (const required of [sourceAsar, windowsIcon, panelLocalesPath, updaterSource]) {
     if (!fs.existsSync(required)) throw new Error(`Required integration asset is missing: ${required}`);
   }
 
@@ -665,13 +678,17 @@ async function main() {
     updateFile(path.join(extractedApp, "build", "ubol-panel-preload.js"), patchPanelPreload);
     updateFile(path.join(extractedApp, "build", "ubol-panel.js"), patchPanel);
     updateFile(path.join(extractedApp, "build", "ubol-panel.html"), patchPanelHtml);
+    fs.copyFileSync(updaterSource, path.join(extractedApp, "build", "deejazz-auto-update.js"));
     patchTranslations(extractedApp);
     fs.rmSync(path.join(extractedApp, "build", "branding"), { recursive: true, force: true });
 
     await createPackage(extractedApp, rebuiltAsar);
     const verificationMain = extractFile(rebuiltAsar, "build/main-with-ubol.js").toString("utf8");
     const verificationMetadata = JSON.parse(extractFile(rebuiltAsar, "package.json").toString("utf8"));
-    if (!verificationMain.includes(integrationRevision) || verificationMetadata.version !== version) {
+    const verificationUpdater = extractFile(rebuiltAsar, "build/deejazz-auto-update.js").toString("utf8");
+    if (!verificationMain.includes(integrationRevision) || verificationMetadata.version !== version ||
+        !verificationMain.includes("startAutomaticUpdate(app, log);") ||
+        !verificationUpdater.includes("resolveAvailableUpdate")) {
       throw new Error("The rebuilt application failed integration verification.");
     }
     fs.copyFileSync(rebuiltAsar, sourceAsar);

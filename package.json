@@ -1,7 +1,7 @@
 {
   "name": "deejazz",
   "productName": "DeeJazz",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "private": true,
   "description": "DeeJazz",
   "license": "MIT",
@@ -10,6 +10,7 @@
   "scripts": {
     "version:sync": "node scripts/sync-version.js",
     "test:installer": "node --test scripts/tests/install-linux.test.js",
+    "test:updater": "node --test scripts/tests/auto-update.test.js scripts/tests/android-auto-update.test.js",
     "app:integrate": "node scripts/apply-application-integration.js",
     "runtime:brand": "node scripts/brand-windows-runtime.js",
     "icons:win": "node scripts/generate-windows-icon.js",

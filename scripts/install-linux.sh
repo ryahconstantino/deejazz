@@ -4,7 +4,7 @@ set -eu
 
 APP_NAME="DeeJazz"
 DEFAULT_GITHUB_REPOSITORY="ryahconstantino/deejazz"
-INSTALL_ROOT="${XDG_DATA_HOME:-$HOME/.local/share}/deejazz"
+INSTALL_ROOT="${DEEJAZZ_INSTALL_ROOT:-${XDG_DATA_HOME:-$HOME/.local/share}/deejazz}"
 BIN_DIR="${HOME}/.local/bin"
 APPLICATIONS_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/applications"
 ICON_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/icons/hicolor/512x512/apps"
@@ -20,6 +20,16 @@ fail() {
   printf '%s\n' "DeeJazz: $*" >&2
   exit 1
 }
+
+case "$INSTALL_ROOT" in
+  /*) ;;
+  *) fail "DEEJAZZ_INSTALL_ROOT must be an absolute path." ;;
+esac
+case "$INSTALL_ROOT" in
+  /|"$HOME"|"${HOME}/.local"|"${HOME}/.local/share")
+    fail "DEEJAZZ_INSTALL_ROOT points to an unsafe directory."
+    ;;
+esac
 
 trap cleanup EXIT HUP INT TERM
 
@@ -185,4 +195,10 @@ printf '%s\n' "Run with: deejazz"
 case ":$PATH:" in
   *":$BIN_DIR:"*) ;;
   *) printf '%s\n' "Add $BIN_DIR to PATH to run it from the terminal." ;;
+esac
+
+case "${DEEJAZZ_RELAUNCH:-}" in
+  1|true|yes|on)
+    nohup "$INSTALL_ROOT/deejazz" >/dev/null 2>&1 &
+    ;;
 esac

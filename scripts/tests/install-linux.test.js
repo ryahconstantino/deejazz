@@ -109,3 +109,36 @@ test("explicit GitHub download URLs remain supported", () => {
   assert.equal(result.calls.length, 1);
   assert.ok(result.downloads[0].includes(url));
 });
+
+test("a local update atomically replaces an existing Linux installation", () => {
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), "deejazz-linux-update-test-"));
+  const home = path.join(directory, "home");
+  const fixture = path.join(directory, "fixture", "DeeJazz-linux-x64");
+  const installRoot = path.join(home, ".local", "share", "deejazz");
+  const archive = path.join(directory, "update.tar.gz");
+  try {
+    fs.mkdirSync(path.join(fixture, "resources", "linux"), { recursive: true });
+    fs.mkdirSync(installRoot, { recursive: true });
+    fs.writeFileSync(path.join(installRoot, "obsolete"), "old");
+    fs.writeFileSync(path.join(fixture, "deejazz"), "#!/bin/sh\nexit 0\n", { mode: 0o755 });
+    fs.writeFileSync(path.join(fixture, "resources", "linux", "icon.png"), "icon");
+    const archived = spawnSync("tar", ["-czf", archive, "-C", path.dirname(fixture), path.basename(fixture)]);
+    assert.equal(archived.status, 0);
+    const result = spawnSync("sh", [installer], {
+      encoding: "utf8",
+      env: {
+        ...process.env,
+        HOME: home,
+        XDG_DATA_HOME: path.join(home, ".local", "share"),
+        DEEJAZZ_ARCHIVE_PATH: archive,
+        DEEJAZZ_INSTALL_ROOT: installRoot,
+      },
+    });
+    assert.equal(result.status, 0, result.stderr);
+    assert.equal(fs.existsSync(path.join(installRoot, "obsolete")), false);
+    assert.equal(fs.readFileSync(path.join(installRoot, "deejazz"), "utf8"), "#!/bin/sh\nexit 0\n");
+    assert.equal(fs.readlinkSync(path.join(home, ".local", "bin", "deejazz")), path.join(installRoot, "deejazz"));
+  } finally {
+    fs.rmSync(directory, { recursive: true, force: true });
+  }
+});
