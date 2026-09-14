@@ -22,14 +22,6 @@ The localized uBlock Origin Lite dashboard shows active filtering, persistent co
 
 ![DeeJazz uBlock Origin Lite dashboard in English](assets/images/deejazz-blocker-panel.png)
 
-## Android
-
-<p align="center">
-  <img src="assets/images/deejazz-android-home.png" alt="DeeJazz running on Android 11" width="360">
-</p>
-
-The Android project is a branding-only change: the package ID (`deezer.android.app`), manifest, Smali and native libraries are preserved. See [Android build and signing instructions](android/README.md) to build `dist/deejazz-android-1.2.5.apk` from source.
-
 ## Download
 
 Download the latest Windows, Linux and Android packages from [GitHub Releases](https://github.com/ryahconstantino/deejazz/releases/latest).

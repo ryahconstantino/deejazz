@@ -6,9 +6,9 @@ Smali. It is **not** the original Java/Kotlin source or an Android Studio/Gradle
 project.
 
 The application display name, user-facing brand strings, launcher icons, About
-artwork and Search genre colors have been changed. The package ID
-(`deezer.android.app`), version (`7.0.5.56`, code
-`7000503`), manifest, Smali, native libraries and existing features are preserved.
+artwork and Search genre colors have been changed. The original version
+(`7.0.5.56`, code `7000503`), manifest, Smali, native libraries and existing
+features are preserved.
 The supplied native libraries support ARM64 (`arm64-v8a`) only; the APK requires
 Android 6.0 or newer, as declared in the original manifest.
 Resource and class identifiers retain their original names so references remain
