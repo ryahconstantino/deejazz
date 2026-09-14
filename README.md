@@ -91,8 +91,13 @@ older releases with unversioned filenames.
 GitHub Actions builds the Windows x64 installer, both Linux packages and the
 signed Android APK, then publishes them to a GitHub Release. All release
 packages are written to `dist/`. Configure the Android
-signing secrets described in [android/README.md](android/README.md), then push a
-semantic-version tag to start a release:
+signing secrets described in [android/README.md](android/README.md). On every
+push to `master`, the workflow reads the version from `package.json`. If that
+version does not have a GitHub Release yet, the workflow builds all packages,
+creates its `v`-prefixed tag and publishes the release. If it already exists,
+the build jobs are skipped.
+
+A semantic-version tag can also start a release explicitly:
 
 ```bash
 git tag v1.2.6
