@@ -625,6 +625,9 @@ async function main() {
   const packagedMetadata = JSON.parse(extractFile(sourceAsar, "package.json").toString("utf8"));
   if (packagedMain.includes(`const DEEJAZZ_INTEGRATION_REVISION = ${JSON.stringify(integrationRevision)};`)
     && packagedMetadata.version === version
+    && packagedMetadata.name === "deejazz"
+    && packagedMetadata.productName === "DeeJazz"
+    && packagedMetadata.description === "DeeJazz"
     && packagedMetadata.author === "Ryan Constantino"
     && packagedMetadata.license === "MIT") {
     console.log(`DeeJazz application integration ${integrationRevision} is already applied.`);
@@ -649,7 +652,7 @@ async function main() {
     metadata.name = "deejazz";
     metadata.productName = "DeeJazz";
     metadata.version = version;
-    metadata.description = "DeeJazz desktop application with uBO Lite integration";
+    metadata.description = "DeeJazz";
     metadata.homepage = projectUrl;
     metadata.repository = { type: "git", url: "https://github.com/ryahconstantino/deejazz.git" };
     metadata.author = "Ryan Constantino";

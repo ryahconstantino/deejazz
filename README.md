@@ -70,10 +70,10 @@ npm run dist:linux:arm64
 
 Generated files are written to `dist/`:
 
-- `deejazz-windows-x64-1.2.6.exe`
-- `deejazz-linux-amd64-1.2.6.tar.gz`
-- `deejazz-linux-arm64-1.2.6.tar.gz`
-- `deejazz-android-1.2.6.apk`
+- `deejazz-windows-x64-1.2.7.exe`
+- `deejazz-linux-amd64-1.2.7.tar.gz`
+- `deejazz-linux-arm64-1.2.7.tar.gz`
+- `deejazz-android-1.2.7.apk`
 
 Build the signed Android APK (see [android/README.md](android/README.md) for the required SDK and signing secrets):
 
@@ -100,8 +100,8 @@ the build jobs are skipped.
 A semantic-version tag can also start a release explicitly:
 
 ```bash
-git tag v1.2.6
-git push origin v1.2.6
+git tag v1.2.7
+git push origin v1.2.7
 ```
 
 You can also run **Build and publish release** manually from the Actions tab and provide the version to publish. The workflow only allows the four versioned packages listed above and in the Android instructions; additional files, including `.sha256` files, are rejected before publication.

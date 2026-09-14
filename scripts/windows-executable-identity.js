@@ -21,7 +21,7 @@ async function updateExecutableIdentity(executablePath, iconPath, version) {
 
   versionInfo.setStringValues(language, {
     CompanyName: "Ryan Constantino",
-    FileDescription: "DeeJazz desktop application",
+    FileDescription: "DeeJazz",
     FileVersion: version,
     InternalName: "DeeJazz",
     OriginalFilename: "DeeJazz.exe",

@@ -68,7 +68,7 @@ npm run dist:android
 The script compiles the decoded project, aligns the APK, signs it, verifies the
 signature, alignment, package ID, app label and source integrity, then writes:
 
-- `dist/deejazz-android-1.2.6.apk`
+- `dist/deejazz-android-1.2.7.apk`
 
 The filename uses the DeeJazz release version from `DEEJAZZ_VERSION` or
 `.env.build`. GitHub Actions supplies the version from the release tag. The
