@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="io.github.ryahconstantino.deejazz.uitest">
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="30"/>
+    <application android:label="DeeJazz UI tests"/>
+    <instrumentation android:name="io.github.ryahconstantino.deejazz.uitest.UiTest" android:targetPackage="ryahconstantino.github.io.deejazz"/>
+</manifest>

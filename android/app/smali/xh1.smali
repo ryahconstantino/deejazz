@@ -21,6 +21,8 @@
 
 .field public final d:I
 
+.field public genres:LDeeJazzGenreSource;
+
 
 # direct methods
 .method public constructor <init>(Lhl1;Lcom/deezer/feature/search/datasource/model/SearchChannelItemModel;I)V
@@ -73,6 +75,14 @@
 
 .method public p(Landroidx/databinding/ViewDataBinding;)V
     .locals 2
+
+    iget-object v0, p0, Lxh1;->genres:LDeeJazzGenreSource;
+    if-eqz v0, :legacy_single_channel
+    iget-object v1, p1, Landroidx/databinding/ViewDataBinding;->f:Landroid/view/View;
+    invoke-static {v1, v0}, Lio/github/ryahconstantino/deejazz/ui/GenreCards;->bind(Landroid/view/View;Lio/github/ryahconstantino/deejazz/ui/GenreCards$Source;)V
+    return-void
+
+    :legacy_single_channel
 
     const/4 v1, 0x1
 

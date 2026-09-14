@@ -74,11 +74,21 @@ async function buildUpdaterDex() {
     await verifiedDownload(source.jsonCompileStub, jsonStub);
   }
   run(javac, ["-source", "8", "-target", "8", "-classpath", `${stub}${path.delimiter}${jsonStub}`,
-    "-d", classes, generatedSource]);
+    "-d", classes, generatedSource,
+    path.join(root, "android/ui/src/io/github/ryahconstantino/deejazz/ui/GenreCards.java"),
+    path.join(root, "android/ui/src/io/github/ryahconstantino/deejazz/ui/OfferLabel.java")]);
+  async function classFiles(directory) {
+    const result = [];
+    for (const entry of await fs.readdir(directory, { withFileTypes: true })) {
+      const file = path.join(directory, entry.name);
+      if (entry.isDirectory()) result.push(...await classFiles(file));
+      else if (entry.name.endsWith(".class")) result.push(file);
+    }
+    return result;
+  }
   run(java, ["-Xmx2g", "-cp", path.join(buildTools, "lib/d8.jar"), "com.android.tools.r8.D8",
     "--min-api", "23", "--lib", stub, "--lib", process.env.JAVA_HOME, "--output", dexDirectory,
-    path.join(classes, "io/github/ryahconstantino/deejazz/update/GitHubUpdateManager.class"),
-    path.join(classes, "io/github/ryahconstantino/deejazz/update/GitHubUpdateManager$1.class")]);
+    ...await classFiles(classes)]);
   await fs.rename(path.join(dexDirectory, "classes.dex"), path.join(dexDirectory, "classes8.dex"));
   return dexDirectory;
 }

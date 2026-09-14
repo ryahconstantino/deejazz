@@ -1,14 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector android:height="24.0dp" android:width="35.0dp" android:viewportWidth="35.0" android:viewportHeight="24.0"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
-    <path android:fillColor="#29ab70" android:pathData="M34.6346,0.6543H27.1734V5.064H34.6346V0.6543Z" android:fillType="evenOdd" />
-    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__0" android:pathData="M34.6346,6.7178H27.1734V11.1275H34.6346V6.7178Z" android:fillType="evenOdd" />
-    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__1" android:pathData="M34.6346,12.873H27.1734V17.2827H34.6346V12.873Z" android:fillType="evenOdd" />
-    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__2" android:pathData="M7.4612,18.936H0V23.3457H7.4612V18.936Z" android:fillType="evenOdd" />
-    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__3" android:pathData="M16.4883,18.936H9.0271V23.3457H16.4883V18.936Z" android:fillType="evenOdd" />
-    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__4" android:pathData="M25.6075,18.936H18.1464V23.3457H25.6075V18.936Z" android:fillType="evenOdd" />
-    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__5" android:pathData="M34.6346,18.936V23.3457H27.1734V18.936H34.6346Z" android:fillType="evenOdd" />
-    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__6" android:pathData="M25.6075,12.8726H18.1464V17.2823H25.6075V12.8726Z" android:fillType="evenOdd" />
-    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__7" android:pathData="M16.4883,12.873H9.0271V17.2827H16.4883V12.873Z" android:fillType="evenOdd" />
-    <path android:fillColor="@drawable/$ic_deezer_logo_colored_no_wording__8" android:pathData="M16.4883,6.7178V11.1275H9.0271V6.7178H16.4883Z" android:fillType="evenOdd" />
-</vector>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android" android:src="@drawable/deejazz_launcher_art" android:gravity="fill" android:filter="true"/>

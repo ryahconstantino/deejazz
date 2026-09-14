@@ -31,8 +31,8 @@ and carrier variants use this artwork; the adaptive icon adds transparent
 padding and a black background to preserve the symbol under Android masks.
 
 `branding/wordmark.svg` contains the spaced, outlined DeeJazz wordmark, with no
-font dependency. `compact.svg` and `compact-icon.svg` provide the compact artwork
-used inside the app. The About screen uses the compact naming-free mark. These
+font dependency. Small in-app logos and the About button use the shared colorful
+launcher symbol without lettering. The old stacked wordmark is removed. These
 resources include native vector drawables and raster PNG/WebP fallbacks. Light
 screens use a dark wordmark for contrast.
 
@@ -41,6 +41,20 @@ to the supplied APK. They are excluded from branding: the initialization code in
 `l5g.f()` reads `icon2.png` as binary data. Re-encoding these files caused startup
 to remain on "Hmm, something went wrong" in releases through 1.2.4. They are now
 covered by the protected source fingerprint, so a build fails if they change.
+
+Search uses a six-card preview and a full-screen, scrollable two-column catalogue
+opened by See more / Ver mais. The model bridge retains the original genre IDs,
+positions and navigation callback. Remote Free offer labels are filtered only in
+the Settings and Favorites label views. Account subscription rows and the About
+website, terms, jobs and developer links are omitted; license notices remain.
+
+Run `npm run test:android-ui` for regression checks. After building a test-signed
+APK, use the same signing environment with `node scripts/build-android-ui-test.js`.
+Install both APKs in an emulator, then run
+`adb shell am instrument -w io.github.ryahconstantino.deejazz.uitest/.UiTest`.
+The instrumentation uses the real Search model, binding and navigation bridge
+with fixture genres; it does not require or validate a signed-in service account.
+It also saves About, preview and full-grid screenshots in the app's files folder.
 
 ```sh
 npm ci

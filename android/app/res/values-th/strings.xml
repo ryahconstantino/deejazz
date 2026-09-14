@@ -321,7 +321,7 @@ mixes
     <string name="dz_cookieconsentscreen_text_cookieintro2_mobile">เมื่อได้รับความยินยอมจากคุณ DeeJazz และ%1$sพันธมิตรของ DeeJazz%2$s จะใช้ข้อมูลนี้เพื่อปรับโฆษณาต่าง ๆ ให้ตรงใจคุณ และตรวจวัดประสิทธิภาพโฆษณา มิฉะนั้นจะมีเพียงโฆษณาพื้นฐานให้บริการเท่านั้น</string>
     <string name="dz_cookieconsentscreen_text_cookieintro3_mobile">คุณสามารถแสดงตัวเลือกของคุณได้ที่ด้านล่าง และสามารถเปลี่ยนตัวเลือกทั้งหมดได้ตลอดเวลาในการตั้งค่าของคุณ โดยตัวเลือกของคุณมีผลต่อ DeeJazz เท่านั้น จะไม่ส่งผลต่อประสบการณ์ของคุณ</string>
     <string name="dz_cookieconsentscreen_title_deezerprotectsprivacy_mobile">DeeJazz ปกป้องความเป็นส่วนตัวของคุณ</string>
-    <string name="dz_copyright_title_copyright_mobile">ลิขสิทธิ์ 2006-%1$s - DeeJazz.com</string>
+    <string name="dz_copyright_title_copyright_mobile">ลิขสิทธิ์ 2006-%1$s - DeeJazz</string>
     <string name="dz_countryselector_text_chgecontentbycountrylocalreco_mobile">เปลี่ยนเนื้อหาตามประเทศสำหรับการแนะนำในท้องถิ่น เมื่อเปิดใช้งาน คุณจะพบเมนู \"ตัวเลือกประเทศ\" ในการตั้งค่าของคุณ</string>
     <string name="dz_countryselector_text_chgecountryasoftenasyouwant_mobile">เปลี่ยนประเทศของคุณได้บ่อยตามต้องการ และการเลื่อนหน้าจอลงจะปรับเนื้อหาของคุณใหม่ การตั้งค่าภาษาของคุณจะไม่ได้รับผลกระทบ</string>
     <string name="dz_countryselector_title_chooseyourcountry_mobile">เลือกประเทศของคุณ</string>

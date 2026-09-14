@@ -317,7 +317,7 @@ itt"</string>
     <string name="dz_cookieconsentscreen_text_cookieintro2_mobile">Beleegyezéseddel a DeeJazz és %1$spartnerei%2$s ezeket az információkat a hirdetések személyre szabásához és a hirdetések teljesítményének mérésére használhatják fel. Ellenkező esetben csak az alapvető hirdetések jelennek meg.</string>
     <string name="dz_cookieconsentscreen_text_cookieintro3_mobile">Az alábbiakban megadhatod a választásodat, és a beállításaidban bármikor megváltoztathatod azt. Választásod csak a DeeJazzre vonatkozik, és nem befolyásolja a felhasználói élményedet.</string>
     <string name="dz_cookieconsentscreen_title_deezerprotectsprivacy_mobile">A DeeJazz megvédi az adataidat</string>
-    <string name="dz_copyright_title_copyright_mobile">Copyright 2006-%1$s - DeeJazz.com</string>
+    <string name="dz_copyright_title_copyright_mobile">Copyright 2006-%1$s - DeeJazz</string>
     <string name="dz_countryselector_text_chgecontentbycountrylocalreco_mobile">Válassz tartalmat ország szerint a helyi ajánlókhoz. Aktiválás után az „Ország kiválasztása” menü elérhető a Beállítások között.</string>
     <string name="dz_countryselector_text_chgecountryasoftenasyouwant_mobile">Válassz országot, ahányszor csak szeretnél, és húzd az ujjad lefelé a tartalom frissítéséhez. Nyelvi beállításaid nem fognak megváltozni.</string>
     <string name="dz_countryselector_title_chooseyourcountry_mobile">Válaszd ki az országot</string>

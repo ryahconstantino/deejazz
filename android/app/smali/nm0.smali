@@ -238,37 +238,6 @@
 
     const/4 v7, 0x3
 
-    new-instance v0, Lad3;
-
-    const-string v1, "e.lmcutti"
-
-    const-string v1, "title.cgu"
-
-    const/4 v7, 0x2
-
-    invoke-static {v1}, Loy;->l0(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v7, 0x2
-
-    new-instance v2, Ljm0;
-
-    const/4 v7, 0x7
-
-    invoke-direct {v2, p0}, Ljm0;-><init>(Lnm0;)V
-
-    const/4 v7, 0x7
-
-    invoke-direct {v0, v1, v2}, Lad3;-><init>(Ljava/lang/CharSequence;Lla0;)V
-
-    const/4 v7, 0x1
-
-    iget-object v1, p0, Lcm0;->j:Ljava/util/List;
-
-    const/4 v7, 0x3
-
-    invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     const/4 v7, 0x1
 
@@ -308,71 +277,9 @@
 
     const/4 v7, 0x6
 
-    new-instance v0, Lad3;
-
-    const/4 v7, 0x3
-
-    const-string v1, "tlseobitjb"
-
-    const-string v1, "title.jobs"
-
-    const/4 v7, 0x0
-
-    invoke-static {v1}, Loy;->l0(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v7, 0x1
-
-    new-instance v2, Lmm0;
-
-    const/4 v7, 0x0
-
-    invoke-direct {v2, p0}, Lmm0;-><init>(Lnm0;)V
-
-    const/4 v7, 0x3
-
-    invoke-direct {v0, v1, v2}, Lad3;-><init>(Ljava/lang/CharSequence;Lla0;)V
-
-    const/4 v7, 0x6
-
-    iget-object v1, p0, Lcm0;->j:Ljava/util/List;
-
-    invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     const/4 v7, 0x4
 
-    new-instance v0, Lad3;
-
-    const/4 v7, 0x5
-
-    const-string v1, "pevldnugi2tetso..vere"
-
-    const-string v1, "settings.v2.developer"
-
-    invoke-static {v1}, Loy;->l0(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v7, 0x2
-
-    new-instance v2, Llm0;
-
-    const/4 v7, 0x7
-
-    invoke-direct {v2, p0}, Llm0;-><init>(Lnm0;)V
-
-    const/4 v7, 0x2
-
-    invoke-direct {v0, v1, v2}, Lad3;-><init>(Ljava/lang/CharSequence;Lla0;)V
-
-    const/4 v7, 0x4
-
-    iget-object v1, p0, Lcm0;->j:Ljava/util/List;
-
-    const/4 v7, 0x5
-
-    invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     const/4 v7, 0x5
 

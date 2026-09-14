@@ -321,7 +321,7 @@
     <string name="dz_cookieconsentscreen_text_cookieintro2_mobile">بعد الحصول على موافقتك، قد يستخدم DeeJazz و%1$sشركاؤه%2$s هذه المعلومات قصد تخصيص الإعلانات وقياس مستوى أداء الإعلان. وإِلَّا، فإنه لن يتم عرض سوى الإعلانات الأساسية فقط.</string>
     <string name="dz_cookieconsentscreen_text_cookieintro3_mobile">يمكنك قبول أو رفض ذلك أدناه كما يمكنك تغيير اختيارك في أي وقت من خلال الإعدادات الخاصة بك. سوف يطبق اختيارك فقط على منصة DeeJazz ولن يؤثر ذلك على تجربة المستخدم الخاصة بك.</string>
     <string name="dz_cookieconsentscreen_title_deezerprotectsprivacy_mobile">DeeJazz يسهر على حماية خصوصيتك</string>
-    <string name="dz_copyright_title_copyright_mobile">حقوق النشر لعام 2006-%1$s - محفوظة لصالح DeeJazz.com</string>
+    <string name="dz_copyright_title_copyright_mobile">حقوق النشر لعام 2006-%1$s - محفوظة لصالح DeeJazz</string>
     <string name="dz_countryselector_text_chgecontentbycountrylocalreco_mobile">يمكنك تغيير المحتوى حسب البلد للتمتع بالتوصيات المحلية. بمجرد التفعيل، ستجد قائمة \"مُحدِّد البلد\" في إعداداتك.</string>
     <string name="dz_countryselector_text_chgecountryasoftenasyouwant_mobile">قم بتغيير البلد كما تحب. ثم اسحب الصفحة لتحديث المحتوى الخاص بك. لن يؤثر ذلك على إعدادات اللغة.</string>
     <string name="dz_countryselector_title_chooseyourcountry_mobile">اختر بلدك</string>

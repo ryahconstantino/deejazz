@@ -3492,6 +3492,10 @@
 
     invoke-direct {v6, v7, v10, v5}, Lxh1;-><init>(Lhl1;Lcom/deezer/feature/search/datasource/model/SearchChannelItemModel;I)V
 
+    new-instance v10, LDeeJazzGenreSource;
+    invoke-direct {v10, v2, v7}, LDeeJazzGenreSource;-><init>(Ljava/util/List;Lhl1;)V
+    iput-object v10, v6, Lxh1;->genres:LDeeJazzGenreSource;
+
     new-instance v7, Laxb;
 
     invoke-direct {v7, v6}, Laxb;-><init>(Lrwb;)V
@@ -3500,7 +3504,7 @@
 
     add-int/lit8 v5, v5, 0x1
 
-    goto :goto_1e
+    goto :cond_3e
 
     :cond_3e
     invoke-virtual {v1, v4}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z

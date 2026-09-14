@@ -298,7 +298,7 @@
     <string name="dz_cookieconsentscreen_text_cookieintro2_mobile">За вашою згодою DeeJazz та %1$sйого партнери%2$s можуть використовувати цю інформацію для персоналізації реклами та визначення ефективності рекламних оголошень. В іншому випадку відображатиметься лише базова реклама.</string>
     <string name="dz_cookieconsentscreen_text_cookieintro3_mobile">Ви можете зробити свій вибір нижче, і ви можете змінити його в будь-який час у розділі «Налаштування». Ваше рішення стосується виключно DeeJazz і не вплине на ваш досвід.</string>
     <string name="dz_cookieconsentscreen_title_deezerprotectsprivacy_mobile">DeeJazz захищає вашу конфіденційність</string>
-    <string name="dz_copyright_title_copyright_mobile">Copyright DeeJazz.com — 2006–%1$s</string>
+    <string name="dz_copyright_title_copyright_mobile">Copyright DeeJazz — 2006–%1$s</string>
     <string name="dz_countryselector_text_chgecontentbycountrylocalreco_mobile">Змінюйте контент відповідно до країни, щоб отримати місцеві рекомендації. Після активації ви знайдете меню «Обрання країни» у ваших налаштуваннях.</string>
     <string name="dz_countryselector_text_chgecountryasoftenasyouwant_mobile">Змінюйте країну так часто, як забажаєте, і оновлюйтеся для постійно актуального контенту. Налаштування вашої мови не зміняться.</string>
     <string name="dz_countryselector_title_chooseyourcountry_mobile">Виберіть країну</string>

@@ -172,7 +172,7 @@ jobs:
         run: npm ci
 
       - name: Test automatic update logic
-        run: npm run test:updater
+        run: npm run test:updater && npm run test:android-ui
 
       - name: Build, sign and verify Android APK
         env:

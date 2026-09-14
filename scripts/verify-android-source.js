@@ -19,10 +19,12 @@ function verifySource() {
   }
   visit(app);
   const packageFiles = new Set(source.packageFiles || []);
+  const uiFiles = new Set(source.uiFiles || []);
   const customizationFiles = files.filter(file =>
     /^res\/values[^/]*\/strings\.xml$/.test(file) ||
     file === "smali_classes6/com/deezer/feature/search/datasource/model/SearchHomeChannelItemModel.smali" ||
     file === "smali/qg1.smali" ||
+    uiFiles.has(file) ||
     packageFiles.has(file));
   const editableFiles = new Set([...source.brandingFiles, ...customizationFiles]);
   const protectedFiles = files.sort().filter(file => !editableFiles.has(file));
@@ -82,10 +84,13 @@ function verifySource() {
   }
   const aboutSymbol = fs.readFileSync(path.join(app,
     "res/drawable-anydpi-v24/ic_deezer_logo_colored_no_wording.xml"), "utf8");
-  if (!aboutSymbol.includes('android:viewportWidth="35.0"') ||
-      !aboutSymbol.includes('android:fillColor="#29ab70"') ||
+  if (!aboutSymbol.includes('@drawable/deejazz_launcher_art') ||
       aboutSymbol.includes("theme_icon_primary")) {
     throw new Error("The Android About logo is not the colorful, wording-free symbol.");
+  }
+  const aboutIcon = fs.readFileSync(path.join(app, "res/drawable/icon_deezer_logo_fill_small.xml"), "utf8");
+  if (!aboutIcon.includes('@drawable/deejazz_launcher_art')) {
+    throw new Error("The Settings About button still uses the old stacked wordmark.");
   }
   const channelBrick = fs.readFileSync(path.join(app, "smali/qg1.smali"), "utf8");
   const palette = ["-0x16e19d", "-0x63d850", "-0x98c549", "-0xc0ae4b",

@@ -324,7 +324,7 @@
     <string name="dz_cookieconsentscreen_text_cookieintro3_mobile">下記からご希望を選択できます。選択は「設定」内でいつでも変更可能です。この選択はDeeJazzのみに適用され、あなたの体験には影響しません。</string>
     <string name="dz_cookieconsentscreen_title_deezerprotectsprivacy_mobile">"DeeJazzはあなたのプライバシーを
 保護します"</string>
-    <string name="dz_copyright_title_copyright_mobile">著作権 2006-%1$s年 - DeeJazz.com</string>
+    <string name="dz_copyright_title_copyright_mobile">著作権 2006-%1$s年 - DeeJazz</string>
     <string name="dz_countryselector_text_chgecontentbycountrylocalreco_mobile">その国のおすすめにコンテンツを変更します。有効化の後に、設定から「国を選択」メニューを選んでください。</string>
     <string name="dz_countryselector_text_chgecountryasoftenasyouwant_mobile">国は何度でも変更できます。変更後は画面を上から下にスワイプして更新しコンテンツをアップデートしてください。言語設定への影響はありません。</string>
     <string name="dz_countryselector_title_chooseyourcountry_mobile">国を選んでください</string>
