@@ -1,5 +1,5 @@
 {
-  "description": "Decoded resources and smali from the supplied APK; not the original Java/Kotlin source. Only branding files are edited.",
+  "description": "Decoded resources and smali from the supplied APK; not the original Java/Kotlin source. Branding, user-facing strings and Search genre colors are customized.",
   "originalApkSha256": "925e9872261d6da253840dec02be8f7453b281ccb1ed56f00f89689712234af8",
   "package": "deezer.android.app",
   "versionName": "7.0.5.56",
@@ -9,8 +9,10 @@
     "url": "https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar",
     "sha256": "dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423"
   },
-  "protectedFileCount": 42430,
-  "protectedFilesSha256": "8e7870162dd8d1434231791247e2097609fbce4e3bacc0d83c40e914d9df7ccd",
+  "protectedFileCount": 42387,
+  "protectedFilesSha256": "3664853ae14209e10d4e362f136805cf59faaed47d4b38fcaf77baf9f67003a8",
+  "customizationFileCount": 44,
+  "customizationFilesSha256": "5135840d7711221876611100de769aa5ef0f168d9b067ca888a715044841863c",
   "originalStringsSha256": "8d37086107d59732acce1652db440a38df5dc7a4cd238b258f067f13b27dae1b",
   "brandingFiles": [
     "res/drawable-nodpi/deejazz_launcher_art.png",

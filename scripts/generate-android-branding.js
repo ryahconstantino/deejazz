@@ -6,6 +6,7 @@ const root = path.resolve(__dirname, "..");
 const app = path.join(root, "android/app");
 const branding = path.join(root, "android/branding");
 const namespace = 'xmlns:android="http://schemas.android.com/apk/res/android"';
+const applicationLabel = "ryahconstantino.github.io.deejazz";
 
 async function walk(directory) {
   const result = [];
@@ -104,7 +105,10 @@ ${content}
     } else if (name === "launcher_ic_app.png" ||
       /^(ic_deezer_logo_(white|black|colored|colored_no_wording)|parcours_reg_log_logo_deezer|widget_logo)\.(png|webp)$/.test(name)) {
       const { width, height } = await sharp(file).metadata();
-      const source = name === "launcher_ic_app.png" ? launcher : name.includes("no_wording") ? compactIcon : Buffer.from(
+      // The About screen resolves ic_deezer_logo_colored. Use the colorful
+      // music symbol there, without the DeeJazz wordmark requested elsewhere.
+      const source = name === "launcher_ic_app.png" || name === "ic_deezer_logo_colored.png" ? launcher :
+        name.includes("no_wording") ? compactIcon : Buffer.from(
         /widget_logo/.test(name) ? compact :
           name.includes("black") ? wordmark.replace('fill="#fff"', 'fill="#101014"') : wordmark);
       const output = await sharp(source).resize(width, height, {
@@ -117,11 +121,26 @@ ${content}
   // Keep assets/icon.png and assets/icon2.png byte-for-byte unchanged. Despite
   // their names, these are not branding resources: l5g.f() reads icon2.png as
   // binary initialization data. Re-encoding it prevents startup from completing.
-  const strings = path.join(app, "res/values/strings.xml");
-  const original = await fs.readFile(strings, "utf8");
-  await fs.writeFile(strings, original.replace(
-    /(<string name="(?:app_name|app_name_base)">)[^<]*(<\/string>)/g, "$1DeeJazz$2"));
-  console.log(`Updated ${count} Android branding assets and the application name.`);
+  const stringFiles = (await walk(path.join(app, "res"))).filter(file =>
+    path.basename(file) === "strings.xml" && path.basename(path.dirname(file)).startsWith("values"));
+  for (const file of stringFiles) {
+    const original = await fs.readFile(file, "utf8");
+    let branded = original.split(/(<[^>]+>)/g).map(part => part.startsWith("<") ? part : part
+      .replace(/DEEZER/g, "DEEJAZZ")
+      .replace(/Deezer/g, "DeeJazz")
+      // Preserve deezer.com addresses because they are service endpoints, not labels.
+      .replace(/deezer(?!\.com)/g, "deejazz")).join("")
+      .replace(/(<string name="dz_deezerplans_title_deezerfree(?:UPP)?_mobile">)[^<]*(<\/string>)/g, "$1$2")
+      .replace(/(<string name="dz_legacy_title_labs">)[^<]*(<\/string>)/g, "$1DeeJazz Labs$2")
+      .replace(/[ \t]+$/gm, "");
+    if (file === path.join(app, "res/values/strings.xml")) {
+      branded = branded.replace(
+        /(<string name="(?:app_name|app_name_base)">)[^<]*(<\/string>)/g,
+        `$1${applicationLabel}$2`);
+    }
+    await fs.writeFile(file, branded);
+  }
+  console.log(`Updated ${count} Android branding assets, ${stringFiles.length} locale files and the application name.`);
 }
 
 main().catch(error => { console.error(error); process.exitCode = 1; });

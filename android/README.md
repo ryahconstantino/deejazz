@@ -5,13 +5,15 @@ editable Android resources, the manifest, native libraries and disassembled
 Smali. It is **not** the original Java/Kotlin source or an Android Studio/Gradle
 project.
 
-Only the application display name, launcher icons and brand artwork have been
-changed. The package ID (`deezer.android.app`), version (`7.0.5.56`, code
+The application display name, user-facing brand strings, launcher icons, About
+artwork and Search genre colors have been changed. The package ID
+(`deezer.android.app`), version (`7.0.5.56`, code
 `7000503`), manifest, Smali, native libraries and existing features are preserved.
 The supplied native libraries support ARM64 (`arm64-v8a`) only; the APK requires
 Android 6.0 or newer, as declared in the original manifest.
 Resource and class identifiers retain their original names so references remain
-valid. Existing service names, URLs and third-party notices are preserved.
+valid. Existing service names, URLs and third-party notices are preserved. The
+visible Android application label is `ryahconstantino.github.io.deejazz`.
 
 ## Branding
 
@@ -23,8 +25,9 @@ padding and a black background to preserve the symbol under Android masks.
 
 `branding/wordmark.svg` contains the spaced, outlined DeeJazz wordmark, with no
 font dependency. `compact.svg` and `compact-icon.svg` provide the compact artwork
-used inside the app. These resources include native vector drawables and raster
-PNG/WebP fallbacks. Light screens use a dark wordmark for contrast.
+used inside the app. The About screen uses the compact naming-free mark. These
+resources include native vector drawables and raster PNG/WebP fallbacks. Light
+screens use a dark wordmark for contrast.
 
 `app/assets/icon.png` and `app/assets/icon2.png` must remain byte-for-byte identical
 to the supplied APK. They are excluded from branding: the initialization code in
@@ -39,9 +42,9 @@ npm run check:android
 ```
 
 `source-info.json` records the input APK hash, pinned Apktool checksum, the exact
-branding file list and an integrity hash covering every other decoded file.
-The build rejects changes outside that branding scope. This verifies preservation
-of the supplied logic; it does not certify the behavior of the supplied APK.
+customization file list and integrity hashes covering the decoded source. The
+build rejects changes outside that scope. This verifies preservation of the
+supplied logic; it does not certify the behavior of the supplied APK.
 
 ## Build a signed APK
 

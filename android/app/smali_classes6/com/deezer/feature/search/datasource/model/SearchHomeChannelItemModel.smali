@@ -900,19 +900,58 @@
 .method public final getBackgroundColorInt()I
     .locals 2
 
-    const/4 v1, 0x7
+    iget-object v0, p0, Lcom/deezer/feature/search/datasource/model/SearchHomeChannelItemModel;->id:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/deezer/feature/search/datasource/model/SearchHomeChannelItemModel;->backgroundColor:Ljava/lang/String;
-
-    const/4 v1, 0x6
-
-    invoke-static {v0}, Ldtb;->s1(Ljava/lang/String;)I
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
 
-    const/4 v1, 0x7
+    and-int/lit8 v0, v0, 0x7
+
+    packed-switch v0, :pswitch_data_0
+
+    const v0, -0x86aab8
 
     return v0
+
+    :pswitch_0
+    const v0, -0x16e19d
+    return v0
+
+    :pswitch_1
+    const v0, -0x63d850
+    return v0
+
+    :pswitch_2
+    const v0, -0x98c549
+    return v0
+
+    :pswitch_3
+    const v0, -0xc0ae4b
+    return v0
+
+    :pswitch_4
+    const v0, -0xde690d
+    return v0
+
+    :pswitch_5
+    const v0, -0xff6978
+    return v0
+
+    :pswitch_6
+    const v0, -0xa8de
+    return v0
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+        :pswitch_4
+        :pswitch_5
+        :pswitch_6
+    .end packed-switch
 .end method
 
 .method public final getBackgroundImage()Lt84;

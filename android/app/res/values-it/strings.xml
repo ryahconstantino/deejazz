@@ -133,7 +133,7 @@
     <string name="dz_addtosiri_title_favoritetracks_mobile">Riproduci le mie Canzoni del cuore</string>
     <string name="dz_addtosiri_title_flow_mobile">Riproduci il mio Flow</string>
     <string name="dz_addtosiri_title_shufflemymusic_mobile">Riproduci La mia musica a caso</string>
-    <string name="dz_agerestrictionerrormessage_text_mustbe16entervaliddate_mobile">Devi avere almeno 16 anni per poter usare un account Deezer. Inserisci una data valida.</string>
+    <string name="dz_agerestrictionerrormessage_text_mustbe16entervaliddate_mobile">Devi avere almeno 16 anni per poter usare un account DeeJazz. Inserisci una data valida.</string>
     <string name="dz_agerestrictionerrormessage_title_waitaminute_mobile">Aspetta un attimo</string>
     <string name="dz_alarmclock_text_alarmsetforXhrXmin_mobile">Sveglia impostata per le %1$s</string>
     <string name="dz_albumpage_action_addalbums_mobile">Aggiungi album</string>
@@ -142,9 +142,9 @@
     <string name="dz_androidtv_text_addprofiletouseraccount_mobile">"Aggiungi un profilo all'account di %1$s"</string>
     <string name="dz_androidtv_text_disconnectedloginagain_mobile">"Spiacenti, ti sei disconnesso. Esegui nuovamente l'accesso."</string>
     <string name="dz_androidtv_text_downloadapplogin_mobile">"Scarica la app ed esegui l'accesso"</string>
-    <string name="dz_androidtv_text_enjoydeezerexperiencealldevices15days_mobile">Goditi Deezer in versione integrale su tutti i tuoi dispositivi, gratuitamente per 15 giorni</string>
-    <string name="dz_androidtv_text_enjoydeezerexperiencealldevices_mobile">Goditi Deezer in versione integrale su tutti i tuoi dispositivi</string>
-    <string name="dz_androidtv_text_enjoymusicondeezer_mobile">Inizia a goderti la tua musica su Deezer!</string>
+    <string name="dz_androidtv_text_enjoydeezerexperiencealldevices15days_mobile">Goditi DeeJazz in versione integrale su tutti i tuoi dispositivi, gratuitamente per 15 giorni</string>
+    <string name="dz_androidtv_text_enjoydeezerexperiencealldevices_mobile">Goditi DeeJazz in versione integrale su tutti i tuoi dispositivi</string>
+    <string name="dz_androidtv_text_enjoymusicondeezer_mobile">Inizia a goderti la tua musica su DeeJazz!</string>
     <string name="dz_androidtv_text_findfavoritemixes_mobile">"Trova i
 tuoi mix
 preferiti
@@ -155,8 +155,8 @@ preferiti
 qui"</string>
     <string name="dz_androidtv_text_forgottentpasswordgotoresetlink_mobile">Hai dimenticato la password? Vai su www.deezer.com/password/reset sul tuo computer o sul cellulare.</string>
     <string name="dz_androidtv_text_gotopasswordresetlink_mobile">Vai su www.deezer.com/password/reset sul tuo computer o sul cellulare.</string>
-    <string name="dz_androidtv_text_grabphonegotoappstore_mobile">"Prendi il telefono, vai sull'app store e cerca Deezer"</string>
-    <string name="dz_androidtv_text_grabphonegotosite_mobile">Prendi il telefono e scarica la app Deezer, oppure vai su deezer.com/offers</string>
+    <string name="dz_androidtv_text_grabphonegotoappstore_mobile">"Prendi il telefono, vai sull'app store e cerca DeeJazz"</string>
+    <string name="dz_androidtv_text_grabphonegotosite_mobile">Prendi il telefono e scarica la app DeeJazz, oppure vai su deezer.com/offers</string>
     <string name="dz_androidtv_text_loggedas_mobile">"Hai eseguito l'accesso come:"</string>
     <string name="dz_androidtv_text_logindetailsincorrect_mobile">I tuoi dati non sono corretti. Riprova.</string>
     <string name="dz_androidtv_text_needofferXtoenjoyallfeatondevice_mobile">Se vuoi goderti tutta la musica che ami e utilizzare tutte le funzioni sul tuo dispositivo, ti serve %1$s:</string>
@@ -170,7 +170,7 @@ qui"</string>
     <string name="dz_androidtv_text_tracknotavailablemessage_mobile">Questo brano non è disponibile nel tuo paese.</string>
     <string name="dz_androidtv_text_youreenjoyingplanX_mobile">Stai usando %1$s.</string>
     <string name="dz_androidtv_title_albumx_mobile">Album: %1$s</string>
-    <string name="dz_androidtv_title_deezerkids_mobile">Deezer Kids</string>
+    <string name="dz_androidtv_title_deezerkids_mobile">DeeJazz Kids</string>
     <string name="dz_androidtv_title_kid_mobile">Kid</string>
     <string name="dz_androidtv_title_newprofile_mobile">Nuovo profilo</string>
     <string name="dz_androidtv_title_playlistx_mobile">Playlist: %1$s</string>
@@ -180,19 +180,19 @@ qui"</string>
     <string name="dz_androidtvlandingpage_text_getpersonalizedrecobasedonmusicyoulove_mobile">Consigli personalizzati basati sulla musica che ami</string>
     <string name="dz_androidtvlandingpage_text_noaccountyetsignupondeezercom_mobile">Non hai ancora un account? Registrati su deezer.com</string>
     <string name="dz_androidtvlandingpage_text_singalongwithonscreenlyrics_mobile">Il testo delle canzoni per cantare anche tu</string>
-    <string name="dz_androidtvlandingpage_text_worldofmusicstreamingmadepersonal_mobile">Deezer è il mondo dello streaming musicale, su misura per te.</string>
+    <string name="dz_androidtvlandingpage_text_worldofmusicstreamingmadepersonal_mobile">DeeJazz è il mondo dello streaming musicale, su misura per te.</string>
     <string name="dz_androidtvlandingpage_title_yourdeviceyourmusic_mobile">Il tuo dispositivo. La tua musica.</string>
     <string name="dz_androidtvlandingpage_title_yourtvyourmusic_mobile">La tua TV. La tua musica.</string>
     <string name="dz_applesignin_text_completeprofiletofinalizereg_mobile">Completa il tuo profilo per concludere la registrazione</string>
     <string name="dz_applesystembox_text_allowingtrackingforpersonalads_mobile">Acconsentire al tracking ti porterà annunci personalizzati basati sui tuoi interessi.</string>
-    <string name="dz_applesystembox_text_allowsdeezertoprovidebetteradexperience_mobile">Questo permette a Deezer di offrirti una migliore esperienza di pubblicità.</string>
-    <string name="dz_applesystembox_text_letsdzrbringmorerelevantcontent_mobile">Questo permette a Deezer di fornirti contenuti più rilevanti per te.</string>
+    <string name="dz_applesystembox_text_allowsdeezertoprovidebetteradexperience_mobile">Questo permette a DeeJazz di offrirti una migliore esperienza di pubblicità.</string>
+    <string name="dz_applesystembox_text_letsdzrbringmorerelevantcontent_mobile">Questo permette a DeeJazz di fornirti contenuti più rilevanti per te.</string>
     <string name="dz_applewatch_action_shuffleall_mobile">Tutti in modalità casuale</string>
     <string name="dz_applewatch_text_emptyhereheartstuffyoulike_mobile">"C'è poca roba qui. Tocca il \"cuore\" nei brani che ti piacciono e li ritroverai qui"</string>
-    <string name="dz_applewatch_text_logonphonebeforeusing_mobile">Devi accedere a Deezer sul tuo telefono prima di usare Deezer qui</string>
+    <string name="dz_applewatch_text_logonphonebeforeusing_mobile">Devi accedere a DeeJazz sul tuo telefono prima di usare DeeJazz qui</string>
     <string name="dz_applewatchonboarding_text_dwnldallyourfavplaylists_mobile">Scarica tutte le tue playlist preferite</string>
     <string name="dz_applewatchonboarding_text_enjoymusicwithoutiphonenearby_mobile">"Goditi la tua musica senza bisogno di avere vicino l'iPhone!"</string>
-    <string name="dz_applewatchonboarding_text_welcometonewdeezerapp_mobile">Benvenuto nella tua nuova applicazione Deezer!</string>
+    <string name="dz_applewatchonboarding_text_welcometonewdeezerapp_mobile">Benvenuto nella tua nuova applicazione DeeJazz!</string>
     <string name="dz_appsettings_title_viewoptions_mobile">Opzioni di visualizzazione</string>
     <string name="dz_artistmix_subtitle_withartistsX_mobile">Con %1$s</string>
     <string name="dz_artistmix_title_artistXmix_mobile">Mix di %1$s</string>
@@ -216,7 +216,7 @@ qui"</string>
     <string name="dz_audiooutput_title_audiooutput_mobile">Uscita audio</string>
     <string name="dz_audiooutput_title_bluetooth_mobile">Bluetooth</string>
     <string name="dz_audiooutput_title_connectedevices_mobile">Dispositivi connessi</string>
-    <string name="dz_audiooutput_title_deezerconnect_mobile">Deezer Connect</string>
+    <string name="dz_audiooutput_title_deezerconnect_mobile">DeeJazz Connect</string>
     <string name="dz_audiooutput_title_myphone_mobile">Il mio telefono</string>
     <string name="dz_audiosettings_text_enjoylosslesscdqualityaudioflac_mobile">Goditi una qualità audio lossless da CD (FLAC).</string>
     <string name="dz_audiosettings_text_highfidelitymoredatadiskspacehighspeed_mobile">"L'Alta fedeltà utilizza più dati e più spazio sul disco e richiede una connessione ad alta velocità."</string>
@@ -294,12 +294,12 @@ qui"</string>
     <string name="dz_confirmationmessage_text_wanttodeleteuserXprofile_mobile">Vuoi davvero eliminare il profilo di %1$s?</string>
     <string name="dz_confirmationmessage_text_wanttoremoveuserX_mobile">Vuoi davvero rimuovere %1$s?</string>
     <string name="dz_confirmationmessage_text_wanttoremoveuserXfromyouplanX_mobile">Vuoi davvero rimuovere %1$s dal tuo piano %2$s?</string>
-    <string name="dz_confirmationmessage_text_willletyouplaydeezeronhomedevices_mobile">Questo ti permetterà di ascoltare la tua musica di Deezer sui tuoi dispositivi smart home.</string>
-    <string name="dz_confirmationmessage_title_allowdeezertocastonyourdevices_mobile">Consentire a Deezer di trasmettere sui tuoi dispositivi?</string>
+    <string name="dz_confirmationmessage_text_willletyouplaydeezeronhomedevices_mobile">Questo ti permetterà di ascoltare la tua musica di DeeJazz sui tuoi dispositivi smart home.</string>
+    <string name="dz_confirmationmessage_title_allowdeezertocastonyourdevices_mobile">Consentire a DeeJazz di trasmettere sui tuoi dispositivi?</string>
     <string name="dz_confirmationmessage_title_deleteXplaylist_mobile">Cancellare la playlist %1$s?</string>
     <string name="dz_confirmationmessage_title_discardchanges_mobile">Vuoi annullare le modifiche?</string>
     <string name="dz_confirmationmessage_title_discardthisplaylist_mobile">Vuoi eliminare questa playlist?</string>
-    <string name="dz_confirmidentity_text_ifnoaccesstothisphonecontactsupport_mobile">Se non hai accesso a questo numero di telefono, contatta il %1$sServizio Clienti Deezer%2$s.</string>
+    <string name="dz_confirmidentity_text_ifnoaccesstothisphonecontactsupport_mobile">Se non hai accesso a questo numero di telefono, contatta il %1$sServizio Clienti DeeJazz%2$s.</string>
     <string name="dz_contextualmenu_text_addtomyfavorites_mobile">Aggiungi ai miei preferiti</string>
     <string name="dz_contextualmenu_text_deletefrommyfavorites_mobile">Elimina dai miei preferiti</string>
     <string name="dz_contextualmenu_text_launchtrackmix_mobile">Avvia mix di brani</string>
@@ -316,12 +316,12 @@ qui"</string>
     <string name="dz_cookieconsentbox1_text_consentorrefuse_mobile">"Puoi consentire o rifiutare l'utilizzo di queste tecnologie qui sotto. Puoi anche cambiare le tue preferenze nelle impostazioni quando vuoi."</string>
     <string name="dz_cookieconsentbox1_text_cookieintro_mobile">Noi e i nostri partner usiamo i cookies e gli identificatori sul tuo dispositivo per personalizzare e valutare gli annunci. Le tue informazioni possono essere usate con il tuo consenso o per i nostri legittimi interessi.</string>
     <string name="dz_cookieconsentbox1_text_cookieintrov2_mobile">Noi e %1$si nostri partner%2$s usiamo i cookies e gli identificatori sul tuo dispositivo per personalizzare e valutare gli annunci. Le tue informazioni possono essere usate con il tuo consenso o per i nostri legittimi interessi.</string>
-    <string name="dz_cookieconsentbox1_text_preferencesfordeezeronly_mobile">Queste preferenze valgono solo per Deezer e non influenzeranno la tua esperienza.</string>
-    <string name="dz_cookieconsentscreen_text_cookieintro1_mobile">Deezer utilizza i cookies e i dati personali (come identificatori e caratteristiche del dispositivo) memorizzati sul tuo dispositivo per offrirti e migliorare il suo servizio, assicurarti la sicurezza dello stesso, ottenere approfondimenti sul pubblico e prevenire le frodi.</string>
-    <string name="dz_cookieconsentscreen_text_cookieintro2_mobile">Con il tuo permesso, Deezer e %1$si suoi partner%2$s possono usare queste informazioni per personalizzare gli annunci e valutare le performance degli annunci. Altrimentii, ti verranno offerti solo annunci di base.</string>
-    <string name="dz_cookieconsentscreen_text_cookieintro3_mobile">Puoi esprimere la tua preferenza qui sotto e puoi cambiarla in qualsiasi momento dalle impostazioni. La tua scelta si applica solo a Deezer e non influirà sulla tua esperienza.</string>
-    <string name="dz_cookieconsentscreen_title_deezerprotectsprivacy_mobile">Deezer protegge la tua privacy</string>
-    <string name="dz_copyright_title_copyright_mobile">Copyright 2006-%1$s - Deezer.com</string>
+    <string name="dz_cookieconsentbox1_text_preferencesfordeezeronly_mobile">Queste preferenze valgono solo per DeeJazz e non influenzeranno la tua esperienza.</string>
+    <string name="dz_cookieconsentscreen_text_cookieintro1_mobile">DeeJazz utilizza i cookies e i dati personali (come identificatori e caratteristiche del dispositivo) memorizzati sul tuo dispositivo per offrirti e migliorare il suo servizio, assicurarti la sicurezza dello stesso, ottenere approfondimenti sul pubblico e prevenire le frodi.</string>
+    <string name="dz_cookieconsentscreen_text_cookieintro2_mobile">Con il tuo permesso, DeeJazz e %1$si suoi partner%2$s possono usare queste informazioni per personalizzare gli annunci e valutare le performance degli annunci. Altrimentii, ti verranno offerti solo annunci di base.</string>
+    <string name="dz_cookieconsentscreen_text_cookieintro3_mobile">Puoi esprimere la tua preferenza qui sotto e puoi cambiarla in qualsiasi momento dalle impostazioni. La tua scelta si applica solo a DeeJazz e non influirà sulla tua esperienza.</string>
+    <string name="dz_cookieconsentscreen_title_deezerprotectsprivacy_mobile">DeeJazz protegge la tua privacy</string>
+    <string name="dz_copyright_title_copyright_mobile">Copyright 2006-%1$s - DeeJazz.com</string>
     <string name="dz_countryselector_text_chgecontentbycountrylocalreco_mobile">Cambia i contenuti in base al Paese per ricevere consigli locali. Una volta attivato, troverai il menu \"Selettore Paese\" nelle Impostazioni.</string>
     <string name="dz_countryselector_text_chgecountryasoftenasyouwant_mobile">Cambia Paese quando vuoi e trascina verso il basso per aggiornare i tuoi contenuti. Le impostazioni di lingua non verranno modificate.</string>
     <string name="dz_countryselector_title_chooseyourcountry_mobile">Seleziona Paese</string>
@@ -354,24 +354,24 @@ qui"</string>
     <string name="dz_deezergo_title_shufflehour_mobile">1 ora di musica in modalità casuale</string>
     <string name="dz_deezergo_title_wecantloadthiscontent_mobile">Non è possibile caricare questo contenuto</string>
     <string name="dz_deezergo_title_yourfavorites_mobile">I tuoi preferiti</string>
-    <string name="dz_deezerplans_text_deezerwebUPP_mobile">DEEZER WEB</string>
-    <string name="dz_deezerplans_title_deezerfamilyUPP_mobile">DEEZER FAMILY</string>
-    <string name="dz_deezerplans_title_deezerfamily_mobile">Deezer Family</string>
-    <string name="dz_deezerplans_title_deezerfamilyhifiUPP_mobile">DEEZER FAMILY HIFI</string>
-    <string name="dz_deezerplans_title_deezerfamilyhifi_mobile">Deezer Family HiFi</string>
-    <string name="dz_deezerplans_title_deezerfreeUPP_mobile">DEEZER FREE</string>
-    <string name="dz_deezerplans_title_deezerfree_mobile">Deezer Free</string>
-    <string name="dz_deezerplans_title_deezerhifiUPP_mobile">DEEZER HIFI</string>
-    <string name="dz_deezerplans_title_deezerhifi_mobile">Deezer HiFi</string>
-    <string name="dz_deezerplans_title_deezerliteUPP_mobile">DEEZER LITE</string>
-    <string name="dz_deezerplans_title_deezerlite_mobile">Deezer Lite</string>
-    <string name="dz_deezerplans_title_deezerpremiumUPP_mobile">DEEZER PREMIUM</string>
-    <string name="dz_deezerplans_title_deezerpremium_mobile">Deezer Premium</string>
-    <string name="dz_deezerplans_title_deezerstudentUPP_mobile">DEEZER STUDENT</string>
-    <string name="dz_deezerplans_title_deezerstudent_mobile">Deezer Student</string>
-    <string name="dz_deezerplans_title_deezertrioUPP_mobile">DEEZER TRIO</string>
-    <string name="dz_deezerplans_title_deezertrio_mobile">Deezer Trio</string>
-    <string name="dz_deezerplans_title_deezerweb_mobile">Deezer Web</string>
+    <string name="dz_deezerplans_text_deezerwebUPP_mobile">DEEJAZZ WEB</string>
+    <string name="dz_deezerplans_title_deezerfamilyUPP_mobile">DEEJAZZ FAMILY</string>
+    <string name="dz_deezerplans_title_deezerfamily_mobile">DeeJazz Family</string>
+    <string name="dz_deezerplans_title_deezerfamilyhifiUPP_mobile">DEEJAZZ FAMILY HIFI</string>
+    <string name="dz_deezerplans_title_deezerfamilyhifi_mobile">DeeJazz Family HiFi</string>
+    <string name="dz_deezerplans_title_deezerfreeUPP_mobile"></string>
+    <string name="dz_deezerplans_title_deezerfree_mobile"></string>
+    <string name="dz_deezerplans_title_deezerhifiUPP_mobile">DEEJAZZ HIFI</string>
+    <string name="dz_deezerplans_title_deezerhifi_mobile">DeeJazz HiFi</string>
+    <string name="dz_deezerplans_title_deezerliteUPP_mobile">DEEJAZZ LITE</string>
+    <string name="dz_deezerplans_title_deezerlite_mobile">DeeJazz Lite</string>
+    <string name="dz_deezerplans_title_deezerpremiumUPP_mobile">DEEJAZZ PREMIUM</string>
+    <string name="dz_deezerplans_title_deezerpremium_mobile">DeeJazz Premium</string>
+    <string name="dz_deezerplans_title_deezerstudentUPP_mobile">DEEJAZZ STUDENT</string>
+    <string name="dz_deezerplans_title_deezerstudent_mobile">DeeJazz Student</string>
+    <string name="dz_deezerplans_title_deezertrioUPP_mobile">DEEJAZZ TRIO</string>
+    <string name="dz_deezerplans_title_deezertrio_mobile">DeeJazz Trio</string>
+    <string name="dz_deezerplans_title_deezerweb_mobile">DeeJazz Web</string>
     <string name="dz_deezerplans_title_familyUPP_mobile">FAMILY</string>
     <string name="dz_deezerplans_title_family_mobile">Family</string>
     <string name="dz_deezerplans_title_familyhifiUPP_mobile">FAMILY HIFI</string>
@@ -395,7 +395,7 @@ qui"</string>
     <string name="dz_deleteaccounterror_text_firstgotosettingsunsubscribe_mobile">"Per eliminare il tuo account, devi prima andare nelle impostazioni del tuo account e annullare l'iscrizione."</string>
     <string name="dz_deleteaccounterror_title_youhaveapaidsubscription_mobile">Hai un abbonamento a pagamento in corso</string>
     <string name="dz_deleteaccountmultipleapps_action_deleteeverything_mobile">Elimina tutto</string>
-    <string name="dz_deleteaccountmultipleapps_text_iunderstandiloseaccesstoallapps_mobile">Ho capito che perderò accesso a tutte le app di Deezer e che questa azione è irreversibile.</string>
+    <string name="dz_deleteaccountmultipleapps_text_iunderstandiloseaccesstoallapps_mobile">Ho capito che perderò accesso a tutte le app di DeeJazz e che questa azione è irreversibile.</string>
     <string name="dz_deleteaccountmultipleapps_text_managesubfromXappsettingsAndroid_mobile">"Gestisci i tuoi abbonamenti dalle impostazioni dell'app %1$s sul tuo dispositivo Android."</string>
     <string name="dz_deleteaccountmultipleapps_text_managesubfromXappsettingsiOS_mobile">"Gestisci i tuoi abbonamenti dalle impostazioni dell'app %1$s sul tuo dispositivo iOS."</string>
     <string name="dz_deleteaccountmultipleapps_title_youareabouttodeleteaccount_mobile">Stai per eliminare definitivamente il tuo account.</string>
@@ -414,14 +414,14 @@ qui"</string>
     <string name="dz_displaysettings_title_monochromeplayer_mobile">Player monocromatico</string>
     <string name="dz_download_action_removefromdownloads_mobile">Rimuovi dai download</string>
     <string name="dz_download_text_downloadingwillstartwhenwifi_mobile">"Il donload partirà appena l'app sarà collegata ad una rete WiFi.
-Puoi anche scaricare i brani usando i dati mobili attivando l'opzione \"%1$s\". 
+Puoi anche scaricare i brani usando i dati mobili attivando l'opzione \"%1$s\".
 Ma prima assicurati che il tuo piano dati sia adeguato."</string>
     <string name="dz_downloadpodcast_subtitle_tutorial_mobile">Scarica podcast</string>
     <string name="dz_downloadpodcast_text_tutorial_mobile">Scarica gli episodi che vuoi e ascoltali offline.</string>
     <string name="dz_emailconfirmation_action_sendcodeUPP_mobile">INVIA CODICE</string>
     <string name="dz_emailconfirmation_text_coderesent_mobile">Codice inviato di nuovo!</string>
     <string name="dz_emailconfirmation_text_confirmationcodesentforsecurityreason_mobile">Per motivi di sicurezza, invieremo un codice di verifica a:</string>
-    <string name="dz_emailconfirmation_text_ifnoaccesstoemailcontactdzrsupport_mobile">Se non hai accesso a questo indirizzo email, contatta il Servizio Clienti Deezer.</string>
+    <string name="dz_emailconfirmation_text_ifnoaccesstoemailcontactdzrsupport_mobile">Se non hai accesso a questo indirizzo email, contatta il Servizio Clienti DeeJazz.</string>
     <string name="dz_emailconfirmation_title_confirmyouridentity_mobile">Conferma la tua identità</string>
     <string name="dz_emptystate_text_discovernewtracksgetbetterreco_mobile">Scopri nuovi brani. Otterrai consigli migliori con più ascolti.</string>
     <string name="dz_emptystate_text_discoverouralbumselection_mobile">Scopri nuove uscite e la nostra selezione di album.</string>
@@ -447,12 +447,12 @@ Ma prima assicurati che il tuo piano dati sia adeguato."</string>
     <string name="dz_endoftrialbox_action_extendtrialUPP_mobile">PROLUNGA PERIODO DI PROVA</string>
     <string name="dz_equalizer_action_disableequalizer_mobile">Disabilita equalizzatore</string>
     <string name="dz_equalizer_action_enableequalizer_mobile">Abilita equalizzatore</string>
-    <string name="dz_errormessage_text_accountalreadylinkedwithaXsocial_mobile">Il tuo account Deezer è già collegato ad un account %1$s.</string>
-    <string name="dz_errormessage_text_accountalreadylinkedwiththisXsocial_mobile">Un account Deezer è già collegato a questo account %1$s.</string>
+    <string name="dz_errormessage_text_accountalreadylinkedwithaXsocial_mobile">Il tuo account DeeJazz è già collegato ad un account %1$s.</string>
+    <string name="dz_errormessage_text_accountalreadylinkedwiththisXsocial_mobile">Un account DeeJazz è già collegato a questo account %1$s.</string>
     <string name="dz_errormessage_text_addingpodcastXtolibraryfailed_mobile">"Spiacenti, l'aggiunta di \"%1$s\" alla tua libreria non è andata a buon fine."</string>
     <string name="dz_errormessage_text_alreadyofferXsubscriber_mobile">Hai già un abbonamento %1$s.</string>
     <string name="dz_errormessage_text_anerroroccurredpleasetryagain_mobile">Si è verificato un errore, riprova più tardi</string>
-    <string name="dz_errormessage_text_appleidlnkedtoanotherdzraccount_mobile">Questo ID Apple è già collegato a un altro account Deezer.</string>
+    <string name="dz_errormessage_text_appleidlnkedtoanotherdzraccount_mobile">Questo ID Apple è già collegato a un altro account DeeJazz.</string>
     <string name="dz_errormessage_text_apprequiresplanXsubscription_mobile">"Per quest'applicazione è necessario un abbonamento %1$s."</string>
     <string name="dz_errormessage_text_baddomainnamesuggestion_mobile">Volevi dire \"%1$s\"?</string>
     <string name="dz_errormessage_text_cansetnewpasswordonceloggedin_mobile">"Potrai impostare una nuova password una volta effettuato l'accesso."</string>
@@ -471,7 +471,7 @@ Ma prima assicurati che il tuo piano dati sia adeguato."</string>
     <string name="dz_errormessage_text_deactivateairplanemodetosaveplaylist_mobile">Disattiva la modalità aereo per salvare questa playlist.</string>
     <string name="dz_errormessage_text_deactivateofflinemodetoloadcontent_mobile">Disattiva la modalità offline per caricare questo contenuto.</string>
     <string name="dz_errormessage_text_deactivateofflinemodetosaveplaylist_mobile">Disattiva la modalità offline per salvare questa playlist.</string>
-    <string name="dz_errormessage_text_deezerunavailableinyourcountry_mobile">Siamo spiacenti, attualmente Deezer non è disponibile nel tuo paese.</string>
+    <string name="dz_errormessage_text_deezerunavailableinyourcountry_mobile">Siamo spiacenti, attualmente DeeJazz non è disponibile nel tuo paese.</string>
     <string name="dz_errormessage_text_didyoumeanXemailaddress_mobile">Volevi dire \"%1$s\"?</string>
     <string name="dz_errormessage_text_difficultiesreachingourservers_mobile">Sembra che ci sia qualche problema a raggiungere i nostri server.</string>
     <string name="dz_errormessage_text_domainnnamenotallowed_mobile">%1$s questo dominio email non è consentito.</string>
@@ -479,7 +479,7 @@ Ma prima assicurati che il tuo piano dati sia adeguato."</string>
     <string name="dz_errormessage_text_donwloadmusictoperformthisaction_mobile">Devi prima scaricare musica per eseguire questa azione</string>
     <string name="dz_errormessage_text_downloadfailednetworkerror_mobile">Download non riuscito: errore di rete</string>
     <string name="dz_errormessage_text_downloadincompletestoragefull_mobile">Download non completato. La memoria è piena!</string>
-    <string name="dz_errormessage_text_dzraccountlnkedtoanappleid_mobile">Il tuo account Deezer è già collegato a un ID Apple.</string>
+    <string name="dz_errormessage_text_dzraccountlnkedtoanappleid_mobile">Il tuo account DeeJazz è già collegato a un ID Apple.</string>
     <string name="dz_errormessage_text_erroroccuredtryagainlater_mobile">Si è verificato un errore. Riprova più tardi.</string>
     <string name="dz_errormessage_text_expiredsecuresessionrequestnewcode_mobile">La tua sessione protetta è scaduta. Richiedi un nuovo codice.</string>
     <string name="dz_errormessage_text_failedtoconnecttodeviceX_mobile">Impossibile connettersi a %1$s.</string>
@@ -489,8 +489,8 @@ Ma prima assicurati che il tuo piano dati sia adeguato."</string>
     <string name="dz_errormessage_text_incorrectverificationcodeusedtoomanytimes_mobile">Hai inserito un codice di verifica errato troppe volte. Riprova più tardi.</string>
     <string name="dz_errormessage_text_invalidphonenumber_mobile">Numero di telefono non valido</string>
     <string name="dz_errormessage_text_liveradionotavailableinyourcountry_mobile">Spiacenti, le dirette radio non sono al momento disponibili nel tuo paese.</string>
-    <string name="dz_errormessage_text_loginlnkXaccountfrmdzrsettings_mobile">"Esegui l'accesso e poi connetti il tuo account %1$s dalle impostazioni di Deezer."</string>
-    <string name="dz_errormessage_text_loginlnkappleidfrmdzrsettings_mobile">"Esegui l'accesso e poi connetti il tuo ID Apple dalle impostazioni di Deezer."</string>
+    <string name="dz_errormessage_text_loginlnkXaccountfrmdzrsettings_mobile">"Esegui l'accesso e poi connetti il tuo account %1$s dalle impostazioni di DeeJazz."</string>
+    <string name="dz_errormessage_text_loginlnkappleidfrmdzrsettings_mobile">"Esegui l'accesso e poi connetti il tuo ID Apple dalle impostazioni di DeeJazz."</string>
     <string name="dz_errormessage_text_maximumcodenumbersrequested_mobile">Hai richiesto il numero massimo di codici. Riprova tra qualche minuto.</string>
     <string name="dz_errormessage_text_maxnberartistreachedforthisstage_mobile">Hai raggiunto il numero massimo di artisti che puoi selezionare in questa fase.</string>
     <string name="dz_errormessage_text_maxnbercodesforthisphonenumberrequested_mobile">Hai richiesto il numero massimo di codici per questo numero di telefono.</string>
@@ -508,8 +508,8 @@ Ma prima assicurati che il tuo piano dati sia adeguato."</string>
     <string name="dz_errormessage_text_pleasetryagainlater_mobile">Riprova più tardi.</string>
     <string name="dz_errormessage_text_poorconnectivityorerrorwthservrs_mobile">Può essere causato da una connessione debole o da un errore dei nostri server.</string>
     <string name="dz_errormessage_text_removingpodcastXfromlibraryfailed_mobile">Spiacenti, la rimozione di \"%1$s\" dalla tua libreria non è andata a buon fine.</string>
-    <string name="dz_errormessage_text_servicealreadylinkedtodzraccount_mobile">Questo servizio è già collegato a un altro account Deezer.</string>
-    <string name="dz_errormessage_text_signupunavailableinyourcountry_mobile">Siamo spiacenti, attualmente non è possibile abbonarsi a Deezer nel tuo paese.</string>
+    <string name="dz_errormessage_text_servicealreadylinkedtodzraccount_mobile">Questo servizio è già collegato a un altro account DeeJazz.</string>
+    <string name="dz_errormessage_text_signupunavailableinyourcountry_mobile">Siamo spiacenti, attualmente non è possibile abbonarsi a DeeJazz nel tuo paese.</string>
     <string name="dz_errormessage_text_somethingwentwrongpleaseretry_mobile">Qualcosa è andato storto. Riprova</string>
     <string name="dz_errormessage_text_sorryeventcouldnotbefound_mobile">"Spiacenti, non troviamo l'evento che stai cercando."</string>
     <string name="dz_errormessage_text_switchtowifiormobdataortrylater_mobile">Potresti dover passare al WiFi o alla connessione dati, oppure riprovare più tardi.</string>
@@ -517,7 +517,7 @@ Ma prima assicurati che il tuo piano dati sia adeguato."</string>
     <string name="dz_errormessage_text_toconnectclickonoptionX_mobile">Per connetterti, clicca su \"%1$s\".</string>
     <string name="dz_errormessage_text_trackXnotaddedtoplaylistX_mobile">"L'aggiunta di \"%1$s\" alla playlist \"%2$s\" non è riuscita."</string>
     <string name="dz_errormessage_text_trackXnotremovedfromplaylistX_mobile">"L'eliminazione di \"%1$s\" dalla playlist \"%2$s\" non è riuscita."</string>
-    <string name="dz_errormessage_text_tryagainlaterorcontactdzrsupport_mobile">Riprova più tardi o contatta il Servizio Clienti Deezer.</string>
+    <string name="dz_errormessage_text_tryagainlaterorcontactdzrsupport_mobile">Riprova più tardi o contatta il Servizio Clienti DeeJazz.</string>
     <string name="dz_errormessage_text_unabletoaddalbumXbyartistXtolibrary_mobile">Impossibile aggiungere \"%1$s\" di %2$s alla tua libreria.</string>
     <string name="dz_errormessage_text_unabletoaddappXtoapps_mobile">Impossibile aggiungere %1$s alle tue app.</string>
     <string name="dz_errormessage_text_unabletoaddartistXtofavoriteartists_mobile">Impossibile aggiungere %1$s ai tuoi artisti preferiti.</string>
@@ -545,7 +545,7 @@ Ma prima assicurati che il tuo piano dati sia adeguato."</string>
     <string name="dz_errormessage_text_wrongcodetryagain_mobile">Codice errato, riprova</string>
     <string name="dz_errormessage_text_youneedtograntauthorizationtosignup_mobile">"Devi dare l'autorizzazione per registrarti"</string>
     <string name="dz_errormessage_text_yoursessionisalreadysecured_mobile">La tua sessione è già protetta.</string>
-    <string name="dz_errormessage_title_accountalrdyassociatedwithemail_mobile">Esiste già un account Deezer associato a questo indirizzo email</string>
+    <string name="dz_errormessage_title_accountalrdyassociatedwithemail_mobile">Esiste già un account DeeJazz associato a questo indirizzo email</string>
     <string name="dz_errormessage_title_erroridX_mobile">Errore: %1$s</string>
     <string name="dz_errormessage_title_maximumreached_mobile">Massimo raggiunto!</string>
     <string name="dz_errormessage_title_networkissue_mobile">Problema di rete</string>
@@ -607,7 +607,7 @@ Ma prima assicurati che il tuo piano dati sia adeguato."</string>
     <string name="dz_familymemberselectorerrormessage_text_thismemberusesadifferentlogin_mobile">"Non puoi accedere a questo account. Questo membro utilizza un indirizzo email diverso per l'accesso."</string>
     <string name="dz_familymemberselectorerrormessage_text_userXusesadifferentlogin_mobile">Non puoi accedere a questo account. %1$s usa delle credenziali diverse per accedere.</string>
     <string name="dz_familyprofilemigration_text_convertprofiletoindpdtaccountowncredentials_mobile">Trasforma il tuo profilo in un account indipendente per accedere con le tue credenziali personali e avere privacy completa.</string>
-    <string name="dz_familyprofilemigration_text_logintodeezerprofilenavigatesettingstochange_mobile">Accedi al tuo profilo Deezer dal desktop e vai alle Impostazioni per cambiarlo.</string>
+    <string name="dz_familyprofilemigration_text_logintodeezerprofilenavigatesettingstochange_mobile">Accedi al tuo profilo DeeJazz dal desktop e vai alle Impostazioni per cambiarlo.</string>
     <string name="dz_familyprofilemigration_title_wanttochangeprofiletoindpdtaccount_mobile">Vuoi cambiare il tuo profilo in un account indipendente?</string>
     <string name="dz_familyprofileminorconsent_text_acceptTCs_mobile">Si prega di accettare le termini generali di utilizzo.</string>
     <string name="dz_familyprofileminorconsent_title_gdprchildconsent_mobile">Consenso per account minorenni</string>
@@ -741,8 +741,8 @@ Un flusso illimitato di musica per te, creato con i tuoi preferiti. Gli artisti,
     <string name="dz_generic_title_account_mobile">Account</string>
     <string name="dz_generic_title_adddelete_mobile">Aggiungi/elimina</string>
     <string name="dz_generic_title_alldone_mobile">Tutto pronto!</string>
-    <string name="dz_generic_title_deezerfamily_mobile">Deezer Family</string>
-    <string name="dz_generic_title_deezerhifi_mobile">Deezer HiFi</string>
+    <string name="dz_generic_title_deezerfamily_mobile">DeeJazz Family</string>
+    <string name="dz_generic_title_deezerhifi_mobile">DeeJazz HiFi</string>
     <string name="dz_generic_title_downloadedplaylists_mobile">Playlist scaricate</string>
     <string name="dz_generic_title_episode_mobile">Episodio</string>
     <string name="dz_generic_title_featuring_mobile">Con</string>
@@ -769,8 +769,8 @@ Un flusso illimitato di musica per te, creato con i tuoi preferiti. Gli artisti,
     <string name="dz_hificast_title_streamingtodevices_mobile">Streaming su dispositivi</string>
     <string name="dz_homepageunlogged_title_bringpassionbringmusic_mobile">"Tu ci metti la passione.
 Noi ci mettiamo la musica."</string>
-    <string name="dz_infomessage_text_accesscamerapermission_mobile">Deezer ha bisogno di accedere alla tua fotocamera</string>
-    <string name="dz_infomessage_text_accessphotopermission_mobile">Deezer ha bisogno di accedere alle tue foto</string>
+    <string name="dz_infomessage_text_accesscamerapermission_mobile">DeeJazz ha bisogno di accedere alla tua fotocamera</string>
+    <string name="dz_infomessage_text_accessphotopermission_mobile">DeeJazz ha bisogno di accedere alle tue foto</string>
     <string name="dz_infomessage_text_connectwatchtobluetoothdevice_mobile">Connetti lo smartwatch al dispositivo Bluetooth prima di avviare la riproduzione.</string>
     <string name="dz_infomessage_text_connectwatchwifiboostdownload_mobile">Connetti il tuo orologio al WiFi per aumentare la velocità di download!</string>
     <string name="dz_infomessage_text_contentunavailtrydwnldcomplete_mobile">Contenuto non disponibile. Riprova al termine del download.</string>
@@ -781,15 +781,15 @@ Noi ci mettiamo la musica."</string>
     <string name="dz_infomessage_text_firstcreateorfavplaylistsoniphone_mobile">"Innanzitutto devi creare o aggiungere ai preferiti alcune playlist dall'iPhone."</string>
     <string name="dz_infomessage_text_linkcopiedtoyourclipboard_mobile">Il link è stato copiato nei tuoi appunti</string>
     <string name="dz_infomessage_text_playlistsdownloaded_mobile">Playlist scaricate!</string>
-    <string name="dz_infomessage_text_tochgemailaddcontactdzrsupport_mobile">Per cambiare il tuo indirizzo email contatta il Servizio Clienti Deezer.</string>
+    <string name="dz_infomessage_text_tochgemailaddcontactdzrsupport_mobile">Per cambiare il tuo indirizzo email contatta il Servizio Clienti DeeJazz.</string>
     <string name="dz_infomessage_text_touchtocastmediatodevice_mobile">Tocca per trasmettere i contenuti sul tuo dispositivo</string>
-    <string name="dz_infomessage_text_updateprivaterelayemailbeforeunlinkappleid_mobile">"Abbiamo notato che al momento stai usando l'indirizzo email %1$s. Per evitare di perdere l'accesso al tuo account Deezer, aggiorna la tua email personale nelle impostazioni prima di scollegare il tuo ID Apple."</string>
+    <string name="dz_infomessage_text_updateprivaterelayemailbeforeunlinkappleid_mobile">"Abbiamo notato che al momento stai usando l'indirizzo email %1$s. Per evitare di perdere l'accesso al tuo account DeeJazz, aggiorna la tua email personale nelle impostazioni prima di scollegare il tuo ID Apple."</string>
     <string name="dz_infomessage_text_waitdownloadiscomplete_mobile">Attendi che il download sia completato</string>
     <string name="dz_just_a_test">Esempi di &lt;b>testo in grassetto&lt;/b> e &lt;i>testo in corsivo&lt;/i> e &lt;u>testo sottolineato&lt;/u>!!</string>
     <string name="dz_label_text_previewtrackXbyartistX_mobile">Esecuzione anteprima di \"%1$s\" di %2$s</string>
     <string name="dz_label_title_explicitUPP_mobile">EXPLICIT</string>
-    <string name="dz_labs_text_remotecontrol_mobile">"Controlla un'altra applicazione Deezer"</string>
-    <string name="dz_labs_text_remotecontroldescription_mobile">"Controlla un'altra applicazione Deezer iOS, web o applicazione desktop."</string>
+    <string name="dz_labs_text_remotecontrol_mobile">"Controlla un'altra applicazione DeeJazz"</string>
+    <string name="dz_labs_text_remotecontroldescription_mobile">"Controlla un'altra applicazione DeeJazz iOS, web o applicazione desktop."</string>
     <string name="dz_labs_title_remotecontrol_mobile">Controllo a distanza</string>
     <string name="dz_legacy_MS_AccountSettings_FacebookUnlink_FailedHeader">Oops...</string>
     <string name="dz_legacy_MS_AccountSettings_SubscriptionStatus_Discovery">"Stai usufruendo dell'offerta Discovery."</string>
@@ -799,14 +799,14 @@ Noi ci mettiamo la musica."</string>
     <string name="dz_legacy_MS_AlbumPage_Actions_PinToStart">aggiungi per iniziare</string>
     <string name="dz_legacy_MS_AlbumPage_Actions_RemoveFromFavorites">Rimuovi dai preferiti</string>
     <string name="dz_legacy_MS_AppSettings_AutostartHeader_Text">Avvio automatico</string>
-    <string name="dz_legacy_MS_AppSettings_AutostartOption_Text">"Avvia Deezer all'avvio di Windows."</string>
+    <string name="dz_legacy_MS_AppSettings_AutostartOption_Text">"Avvia DeeJazz all'avvio di Windows."</string>
     <string name="dz_legacy_MS_App_UpdateAvailable_Header">Nuova versione disponibile!</string>
     <string name="dz_legacy_MS_ArtistPage_AlbumsHeader_Albums">Album</string>
     <string name="dz_legacy_MS_ArtistPage_AlbumsHeader_Compilations">Compilation</string>
     <string name="dz_legacy_MS_ArtistPage_AlbumsHeader_EP">EP</string>
     <string name="dz_legacy_MS_ArtistPage_AlbumsHeader_Singles">Singoli</string>
     <string name="dz_legacy_MS_ArtistPage_NumberOfFansLabel">fan</string>
-    <string name="dz_legacy_MS_AutostartNotification_Content">Ora Deezer si avvierà automaticamente, e la tua colonna sonora sarà sempre pronta a partire.</string>
+    <string name="dz_legacy_MS_AutostartNotification_Content">Ora DeeJazz si avvierà automaticamente, e la tua colonna sonora sarà sempre pronta a partire.</string>
     <string name="dz_legacy_MS_AutostartNotification_Title">Avvio automatico attivo.</string>
     <string name="dz_legacy_MS_ChartsPage_Pivot_TopAlbums">top album</string>
     <string name="dz_legacy_MS_DiscoverPage_Header">SCOPRI</string>
@@ -818,7 +818,7 @@ Noi ci mettiamo la musica."</string>
     <string name="dz_legacy_MS_OfflinePlaceholders_PageUnavailable">Oops... La pagina non è disponibile dal momento che non sei connesso a Internet.</string>
     <string name="dz_legacy_MS_OfflinePlaceholders_UnloggedHeader">Oops... Non sei connesso a Internet.</string>
     <string name="dz_legacy_MS_OfflineStartup_Description">"È necessario essere online per accedere alla biblioteca musicale. Verifica la tua connessione di rete e riavvia l'applicazione."</string>
-    <string name="dz_legacy_MS_OffllineMode_Errors_NoAuthorized">È necessario iscriversi a Deezer Premium+ per ascoltare la musica offline</string>
+    <string name="dz_legacy_MS_OffllineMode_Errors_NoAuthorized">È necessario iscriversi a DeeJazz Premium+ per ascoltare la musica offline</string>
     <string name="dz_legacy_MS_PlayerPage_Header">IN ASCOLTO</string>
     <string name="dz_legacy_MS_PlaylistPage_AppBar_Remove">Rimuovi traccia</string>
     <string name="dz_legacy_MS_PlaylistPage_RemoveTracks_Yes">Rimuovi</string>
@@ -827,7 +827,7 @@ Noi ci mettiamo la musica."</string>
     <string name="dz_legacy_MS_Settings_ForceOffline_Off">Off</string>
     <string name="dz_legacy_MS_Settings_ForceOffline_On">On</string>
     <string name="dz_legacy_MS_Share_SMS">SMS</string>
-    <string name="dz_legacy_MS_SigninOrJoinSP_Title_Text">Benvenuti in Deezer</string>
+    <string name="dz_legacy_MS_SigninOrJoinSP_Title_Text">Benvenuti in DeeJazz</string>
     <string name="dz_legacy_MS_WebPopup_Error_Description">Il server potrebbe non essere attivo, o potrebbe essere necessario verificare di essere connessi a Internet.</string>
     <string name="dz_legacy_MS_aboutsettings_legalMentionsLink_Text">Informazioni Legali</string>
     <string name="dz_legacy_MS_albumvm_notfound_header">Spiacente!</string>
@@ -840,7 +840,7 @@ Noi ci mettiamo la musica."</string>
     <string name="dz_legacy_MS_playlistvm_notfound_text">Non siamo stati in grado di trovare questa playlist.</string>
     <string name="dz_legacy_MS_smartcache_spaceused">Spazio usato per la Smart Cache</string>
     <string name="dz_legacy_MS_sync_default">Il download avverrà di default solo via WiFi.</string>
-    <string name="dz_legacy__android_cachedirectoryissue_text">"Non riesci a creare una cartella per salvare la musica che hai scaricato e lanciare l'app? Il motivo potrebbe essere che il tuo telefono è collegato ad una porta USB. 
+    <string name="dz_legacy__android_cachedirectoryissue_text">"Non riesci a creare una cartella per salvare la musica che hai scaricato e lanciare l'app? Il motivo potrebbe essere che il tuo telefono è collegato ad una porta USB.
 
 Non esitare a contattarci al nostro team di supporto se non riesci a risolvere: support@deezer.com"</string>
     <string name="dz_legacy__android_message_database_update">"È in corso l'aggiornamento dei dati dell'applicazione. Questa operazione può richiedere alcuni minuti. Ti preghiamo di attendere."</string>
@@ -868,7 +868,7 @@ Non esitare a contattarci al nostro team di supporto se non riesci a risolvere: 
     <string name="dz_legacy__bmw_toolbar_offline_disabled">Disattiva quando è offline</string>
     <string name="dz_legacy__bmw_tracks_more">Più brani...</string>
     <string name="dz_legacy__bmw_whats_hot_genres_empty">Nessun genere</string>
-    <string name="dz_legacy__iphone_message_sync_background_stop">"L'app Deezer non è attiva. Riavviala per riprendere il download."</string>
+    <string name="dz_legacy__iphone_message_sync_background_stop">"L'app DeeJazz non è attiva. Riavviala per riprendere il download."</string>
     <string name="dz_legacy_about_content_additional">Contenuti addizionali</string>
     <string name="dz_legacy_about_version_current">Versione attuale</string>
     <string name="dz_legacy_account_master">Account principale</string>
@@ -911,7 +911,7 @@ Non esitare a contattarci al nostro team di supporto se non riesci a risolvere: 
     <string name="dz_legacy_action_download">MP3</string>
     <string name="dz_legacy_action_edit">Modifica</string>
     <string name="dz_legacy_action_export">Esporta</string>
-    <string name="dz_legacy_action_external_listen">Ascolta su Deezer</string>
+    <string name="dz_legacy_action_external_listen">Ascolta su DeeJazz</string>
     <string name="dz_legacy_action_filter">Filtro</string>
     <string name="dz_legacy_action_finish">Fatto</string>
     <string name="dz_legacy_action_finish_uppercase">FATTO</string>
@@ -1037,31 +1037,31 @@ Non esitare a contattarci al nostro team di supporto se non riesci a risolvere: 
     <string name="dz_legacy_action_yes">Sì</string>
     <string name="dz_legacy_album_unknown">Album sconosciuto</string>
     <string name="dz_legacy_albums_all">Tutti gli album</string>
-    <string name="dz_legacy_app_needrestart">"L'applicazione Deezer dev'essere riavviata."</string>
-    <string name="dz_legacy_apple_watch_connection_failed_relaunch">"Apple Watch non riesce a connettersi a Deezer. Ti invitiamo a lanciare di nuovo l'app sul tuo iPhone."</string>
+    <string name="dz_legacy_app_needrestart">"L'applicazione DeeJazz dev'essere riavviata."</string>
+    <string name="dz_legacy_apple_watch_connection_failed_relaunch">"Apple Watch non riesce a connettersi a DeeJazz. Ti invitiamo a lanciare di nuovo l'app sul tuo iPhone."</string>
     <string name="dz_legacy_apprating_end_subtitle">I tuoi commenti sono stati spediti al nostro team di supporto e faremo del nostro meglio per migliorare la tua esperienza. Grazie ancora per aver deicato del tempo per inviarci i tuoi commenti.</string>
     <string name="dz_legacy_apprating_end_title">Grazie!</string>
     <string name="dz_legacy_apprating_ifhappy_subtitle">"Ti chiediamo 1 minuto del tuo tempo per valutare l'app. Ti saremo per sempre grati se ci darai 5 stelle!"</string>
-    <string name="dz_legacy_apprating_ifhappy_title">"E così ti piace l'app Deezer..."</string>
+    <string name="dz_legacy_apprating_ifhappy_title">"E così ti piace l'app DeeJazz..."</string>
     <string name="dz_legacy_apprating_ifnothappy_subtitle">Ci piacerebbe sapere come possiamo migliorare la tua esperienza.</string>
     <string name="dz_legacy_apprating_ifnothappy_title">Come possiamo aiutarti?</string>
     <string name="dz_legacy_apprating_placeholder_youcomments">I tuoi commenti...</string>
     <string name="dz_legacy_apprating_welcome_choice_happy">Molto buona</string>
     <string name="dz_legacy_apprating_welcome_choice_mixedfeelings">Così così</string>
     <string name="dz_legacy_apprating_welcome_choice_nothappy">Non buona</string>
-    <string name="dz_legacy_apprating_welcome_title">La tua esperienza con Deezer su smartphone è:</string>
+    <string name="dz_legacy_apprating_welcome_title">La tua esperienza con DeeJazz su smartphone è:</string>
     <string name="dz_legacy_artist_unknown">Artista sconosciuto</string>
     <string name="dz_legacy_artists_all">Tutti gli Artisti</string>
-    <string name="dz_legacy_attention_content_external_text_v2">"Questo contenuto non è offerto da Deezer. L'ascolto di questo contenuto potrebbe comportare costi dati supplementari applicati dal fornitore del servizio.
+    <string name="dz_legacy_attention_content_external_text_v2">"Questo contenuto non è offerto da DeeJazz. L'ascolto di questo contenuto potrebbe comportare costi dati supplementari applicati dal fornitore del servizio.
 Vuoi continuare?"</string>
     <string name="dz_legacy_audioads_message_resume">La riproduzione dei tuoi contenuti riprenderà fra qualche secondo.</string>
-    <string name="dz_legacy_audioads_message_whyads">La pubblicità è uno dei modi che abbiamo per offrirti Deezer gratis.</string>
+    <string name="dz_legacy_audioads_message_whyads">La pubblicità è uno dei modi che abbiamo per offrirti DeeJazz gratis.</string>
     <string name="dz_legacy_audioads_title_musicexperience">"Vuoi un'esperienza musicale migliore?"</string>
     <string name="dz_legacy_audioads_title_why_uppercase">"PERCHÉ C'È LA PUBBLICITÀ?"</string>
     <string name="dz_legacy_audiobooks_empty_placeholder">Recupera tempo con gli audiolibri</string>
     <string name="dz_legacy_auto_error_play_failed">Errore: riproduzione fallita.</string>
     <string name="dz_legacy_box_newversion_grade">"Attualmente hai l'ultima versione dell'app. Mostraci un po' d'amore e vota con 5 stelle!"</string>
-    <string name="dz_legacy_box_newversion_title">Ehilà dipendente Deezer, mani sulla scrivania, abbiamo bisogno di te!</string>
+    <string name="dz_legacy_box_newversion_title">Ehilà dipendente DeeJazz, mani sulla scrivania, abbiamo bisogno di te!</string>
     <string name="dz_legacy_box_newversion_update">Abbiamo appena realizzato una nuova versione della nostra app. Provala!</string>
     <string name="dz_legacy_button_shufflemymusic">La mia musica a caso</string>
     <string name="dz_legacy_button_terms_of_use">Mostra Termini di utilizzo</string>
@@ -1075,12 +1075,12 @@ Vuoi continuare?"</string>
     <string name="dz_legacy_car_text_besafe">Sii sempre prudente quando usi la modalità Auto.</string>
     <string name="dz_legacy_car_text_check_regulations">Accertati di aver controllato le norme del codice stradale del tuo Paese.</string>
     <string name="dz_legacy_car_text_click_continue">"Cliccando su 'Continua', accetti i Termini di utilizzo specifici per la modalità Auto."</string>
-    <string name="dz_legacy_car_text_deezer_any_claim">"In detto caso, l'Abbonato si obbliga a farsi carico personalmente di qualunque reclamo, richiesta o obiezione, e, più in generale, di qualunque procedimento avviato contro DEEZER da terzi."</string>
-    <string name="dz_legacy_car_text_deezer_liability_regulations">"DEEZER declina qualunque responsabilità in caso di violazione da parte dell'Abbonato di qualunque disposizione del codice della strada in vigore nel territorio in cui l'Abbonato stesso si trova."</string>
-    <string name="dz_legacy_car_text_deezer_liability_wrongful">"DEEZER non potrà essere ritenuta responsabile in caso di utilizzo improprio o non corretto della modalità Auto da parte dell'Abbonato."</string>
-    <string name="dz_legacy_car_text_deezer_not_liable">"DEEZER non può essere ritenuta responsabile in caso di (i) un'azione imprevedibile e insormontabile di terzi o di (ii) qualsiasi evento naturale, di forza maggiore, evento fortuito, inclusi, a titolo esemplificativo e non esaustivo, disastri naturali, incendi, scioperi interni o esterni, o qualunque guasto interno o esterno e in generale qualunque altro evento esterno imprevedibile e inevitabile che interferisca con la corretta esecuzione di qualsiasi funzionalità della modalità Auto."</string>
+    <string name="dz_legacy_car_text_deezer_any_claim">"In detto caso, l'Abbonato si obbliga a farsi carico personalmente di qualunque reclamo, richiesta o obiezione, e, più in generale, di qualunque procedimento avviato contro DEEJAZZ da terzi."</string>
+    <string name="dz_legacy_car_text_deezer_liability_regulations">"DEEJAZZ declina qualunque responsabilità in caso di violazione da parte dell'Abbonato di qualunque disposizione del codice della strada in vigore nel territorio in cui l'Abbonato stesso si trova."</string>
+    <string name="dz_legacy_car_text_deezer_liability_wrongful">"DEEJAZZ non potrà essere ritenuta responsabile in caso di utilizzo improprio o non corretto della modalità Auto da parte dell'Abbonato."</string>
+    <string name="dz_legacy_car_text_deezer_not_liable">"DEEJAZZ non può essere ritenuta responsabile in caso di (i) un'azione imprevedibile e insormontabile di terzi o di (ii) qualsiasi evento naturale, di forza maggiore, evento fortuito, inclusi, a titolo esemplificativo e non esaustivo, disastri naturali, incendi, scioperi interni o esterni, o qualunque guasto interno o esterno e in generale qualunque altro evento esterno imprevedibile e inevitabile che interferisca con la corretta esecuzione di qualsiasi funzionalità della modalità Auto."</string>
     <string name="dz_legacy_car_text_following_functionalities">"In modalità Auto, l'Abbonato può accedere alle seguenti funzionalità:"</string>
-    <string name="dz_legacy_car_text_hight_sound">"Un volume eccessivamente alto costituisce un pericolo durante la guida. DEEZER raccomanda di limitare o ridurre il volume a un livello che consenta all'Abbonato di sentire i rumori provenienti dall'esterno e dall'interno dell'abitacolo."</string>
+    <string name="dz_legacy_car_text_hight_sound">"Un volume eccessivamente alto costituisce un pericolo durante la guida. DEEJAZZ raccomanda di limitare o ridurre il volume a un livello che consenta all'Abbonato di sentire i rumori provenienti dall'esterno e dall'interno dell'abitacolo."</string>
     <string name="dz_legacy_car_text_safe_driving">"Di fatto la modalità Auto non esonera l'Abbonato dall'obbligo di un comportamento di guida affidabile, sicuro e rispettoso in conformità alle condizioni di guida e alla normativa stradale vigente in materia."</string>
     <string name="dz_legacy_car_text_showbutton">Mostra pulsante per attivare la modalità Auto con un solo tocco nel player e in La mia musica</string>
     <string name="dz_legacy_car_text_subscriber_check_regulations">"L'Abbonato è tenuto a utilizzare sempre la modalità Auto in condizioni di sicurezza e, prima di ogni utilizzo, a controllare tutte le normative sul traffico pertinenti in vigore nel territorio in cui si trova."</string>
@@ -1098,7 +1098,7 @@ Vuoi continuare?"</string>
     <string name="dz_legacy_content_loading_error">Il contenuto richiesto non sta caricando.</string>
     <string name="dz_legacy_device_lastConnection">Ultima connessione</string>
     <string name="dz_legacy_device_linkDate">Link date</string>
-    <string name="dz_legacy_devices_linkLimitReached">Hai raggiunto il massimo numero di dispositivi che puoi collegare al tuo account Deezer. Seleziona uno dei dispositivi qui sotto ed eliminalo.</string>
+    <string name="dz_legacy_devices_linkLimitReached">Hai raggiunto il massimo numero di dispositivi che puoi collegare al tuo account DeeJazz. Seleziona uno dei dispositivi qui sotto ed eliminalo.</string>
     <string name="dz_legacy_email_error_mustmatch">"L'indirizzo email deve coincidere."</string>
     <string name="dz_legacy_email_update_error">Non è stato possibile aggiornare il tuo indirizzo email.</string>
     <string name="dz_legacy_email_update_success">Il tuo indirizzo email è stato aggiornato con successo.</string>
@@ -1148,8 +1148,8 @@ Se il problema persiste, potrebbe essere necessario formattare la scheda di memo
     <string name="dz_legacy_error_securecode_invalid">Codice errato</string>
     <string name="dz_legacy_error_securecode_toolong">Il tuo codice contiene troppe cifre.</string>
     <string name="dz_legacy_error_songcatcher_cant_find">SongCatcher non riesce a trovare il tuo brano. Vuoi riprovare?</string>
-    <string name="dz_legacy_facebook_message_alreadylinked_deezer">"Al tuo account Deezer è collegato un altro account Facebook. 
-Modifica il tuo profilo su Deezer.com"</string>
+    <string name="dz_legacy_facebook_message_alreadylinked_deezer">"Al tuo account DeeJazz è collegato un altro account Facebook.
+Modifica il tuo profilo su DeeJazz.com"</string>
     <string name="dz_legacy_facebook_title">Facebook</string>
     <string name="dz_legacy_feature_placeholder_notavailable">Questa funzione non è ancora disponibile.</string>
     <string name="dz_legacy_filter_Common_AddedPlaylists">Playlist aggiunte</string>
@@ -1279,7 +1279,7 @@ Esatto, puoi interrompere l'abbonamento quando vuoi."</string>
     <string name="dz_legacy_message_error_cache_full">Il tuo dispositivo ha raggiunto la capacità massima. Elimina alcuni contenuti dalla memoria per continuare.</string>
     <string name="dz_legacy_message_error_connecttothemainaccounttocontinue">"Devi essere collegato all'account principale per proseguire."</string>
     <string name="dz_legacy_message_error_massstoragemode">"L'applicazione cesserà perché non può funzionare il quanto il dispositivo è connesso ad un computer in modalità 'memoria di massa'."</string>
-    <string name="dz_legacy_message_error_network">La connessione a Deezer.com non è riuscita.</string>
+    <string name="dz_legacy_message_error_network">La connessione a DeeJazz.com non è riuscita.</string>
     <string name="dz_legacy_message_error_network_lowbattery">La connessione non è riuscita. La batteria è troppo debole per connettersi alla rete.</string>
     <string name="dz_legacy_message_error_network_lowsignal">La connessione non è riuscita. Il segnale di rete è troppo debole.</string>
     <string name="dz_legacy_message_error_network_nonetwork">La connessione non è riuscita. Nessuna rete attualmente disponibile.</string>
@@ -1297,7 +1297,7 @@ Esatto, puoi interrompere l'abbonamento quando vuoi."</string>
     <string name="dz_legacy_message_feed_offline_title_connectionLost">Oops! Hai perso la connessione di rete.</string>
     <string name="dz_legacy_message_history_deleted">La cronologia delle ricerche è stata eliminata.</string>
     <string name="dz_legacy_message_hq_network_low">"La connessione di rete è debole. Disattiva l'audio in alta qualità per uno streaming migliore."</string>
-    <string name="dz_legacy_message_license_needconnect">Il tuo abbonamento Deezer Premium + deve essere verificato. La modalità offline è stata disattivata. Effettua nuovamente la connessione.</string>
+    <string name="dz_legacy_message_license_needconnect">Il tuo abbonamento DeeJazz Premium + deve essere verificato. La modalità offline è stata disattivata. Effettua nuovamente la connessione.</string>
     <string name="dz_legacy_message_license_nonetwork">"La verifica dell'abbonamento non è riuscita a causa di un errore di rete.
 L'applicazione verrà chiusa."</string>
     <string name="dz_legacy_message_license_willconnect">"Il tuo abbonamento deve essere verificato. L'applicazione si connetterà temporaneamente alla rete."</string>
@@ -1321,9 +1321,9 @@ Per reimpostare la password, fai clic sul link 'Hai dimenticato la password?'"</
     <string name="dz_legacy_message_radiomodeonly_fromArtist">Ecco un mix ispirato a questo artista.</string>
     <string name="dz_legacy_message_radiomodeonly_fromCharts">Ecco un mix ispirato ai Top ascolti.</string>
     <string name="dz_legacy_message_radiomodeonly_fromPlaylist">Ecco un mix ispirato a questa playlist.</string>
-    <string name="dz_legacy_message_restriction_stream">"Il tuo account Deezer è attualmente in uso su un altro dispositivo.
+    <string name="dz_legacy_message_restriction_stream">"Il tuo account DeeJazz è attualmente in uso su un altro dispositivo.
 
-Il tuo account Deezer è strettamente personale e può essere utilizzato in modalità di ascolto su un solo dispositivo alla volta."</string>
+Il tuo account DeeJazz è strettamente personale e può essere utilizzato in modalità di ascolto su un solo dispositivo alla volta."</string>
     <string name="dz_legacy_message_search_localresults">Risultati in La mia musica</string>
     <string name="dz_legacy_message_search_offline_backonline">Ecco (finalmente) i risultati della ricerca!</string>
     <string name="dz_legacy_message_search_offline_noresult">Non sei online. Non possiamo mostrare tutti i risultati.</string>
@@ -1331,7 +1331,7 @@ Il tuo account Deezer è strettamente personale e può essere utilizzato in moda
     <string name="dz_legacy_message_sms_onitsway">Riceverai un messaggio a breve.</string>
     <string name="dz_legacy_message_storage_change_confirmation">"Cambiando dispositivo di memorizzazione, tutti i dati dell'applicazione saranno eliminati definitivamente. Continuare?"</string>
     <string name="dz_legacy_message_storage_choose">"L'applicazione ha individuato più dispositivi di memorizzazione. Scegli quello che sarà utilizzato per memorizzare i dati dell'applicazione:"</string>
-    <string name="dz_legacy_message_store_storage_choose">"L'app ha trovato più dispositivi di memoria. Scegli dove vuoi che Deezer salvi la musica che hai acquistato."</string>
+    <string name="dz_legacy_message_store_storage_choose">"L'app ha trovato più dispositivi di memoria. Scegli dove vuoi che DeeJazz salvi la musica che hai acquistato."</string>
     <string name="dz_legacy_message_subscription_without_commitment">Senza Impegno. Puoi cancellarti in qualunque momento.</string>
     <string name="dz_legacy_message_talk_episode_failure">Spiacenti, questo podcast non è al momento disponibile.</string>
     <string name="dz_legacy_message_talk_notavailable">Spiacenti, i podcast non sono al momento disponibili nel tuo paese.</string>
@@ -1342,8 +1342,8 @@ Il tuo account Deezer è strettamente personale e può essere utilizzato in moda
     <string name="dz_legacy_message_urlhandler_error_offline">"L'applicazione è attualmente in modalità offline e il contenuto non può essere consultato. Vuoi tornare alla modalità online?"</string>
     <string name="dz_legacy_message_user_private">Questo profilo è privato.</string>
     <string name="dz_legacy_message_warning_actioncannotbeundone">Questa azione non può essere annullata.</string>
-    <string name="dz_legacy_message_warning_alreadylinked_details">"Se desideri collegare il tuo account con il dispositivo, visita il sito www.deezer.com su un computer. 
-Clicca sul tuo nome nell'angolo in alto a destra, seleziona 'Il mio account' poi 'I tuoi dispositivi collegati', ed elimina il dispositivo che desideri scollegare. 
+    <string name="dz_legacy_message_warning_alreadylinked_details">"Se desideri collegare il tuo account con il dispositivo, visita il sito www.deezer.com su un computer.
+Clicca sul tuo nome nell'angolo in alto a destra, seleziona 'Il mio account' poi 'I tuoi dispositivi collegati', ed elimina il dispositivo che desideri scollegare.
 Quindi riavvia l'applicazione sul tuo dispositivo in modalità Online."</string>
     <string name="dz_legacy_message_warning_alreadylinked_details_v3">Se vuoi collegare il tuo account a questo dispositivo, vai su Impostazioni e disconnetti uno degli altri dispositivi.</string>
     <string name="dz_legacy_message_you_are_offline">Sei offline</string>
@@ -1363,7 +1363,7 @@ Riprova più tardi."</string>
     <string name="dz_legacy_nodata_artist">Non ci sono contenuti per questo artista</string>
     <string name="dz_legacy_nodata_artists">Nessun artista</string>
     <string name="dz_legacy_nodata_biography">Nessuna biografia disponibile</string>
-    <string name="dz_legacy_nodata_connectedDevices">Al momento non hai nessun dispositivo connesso al tuo account Deezer.</string>
+    <string name="dz_legacy_nodata_connectedDevices">Al momento non hai nessun dispositivo connesso al tuo account DeeJazz.</string>
     <string name="dz_legacy_nodata_favoriteartists">Nessun artista preferito</string>
     <string name="dz_legacy_nodata_favouritealbums">Nessun album preferito</string>
     <string name="dz_legacy_nodata_followers_friend">Nessuno segue questo contatto</string>
@@ -1382,12 +1382,12 @@ Riprova più tardi."</string>
     <string name="dz_legacy_notification_goahead_activatetrial_v2">Ora che ti sei registrato puoi rilassarti e godere di musica illimitata!</string>
     <string name="dz_legacy_notification_goahead_noreg_v2">I tuoi primi 15 giorni di musica illimitata sono assolutamente GRATIS quando registri il tuo account!</string>
     <string name="dz_legacy_notification_goahead_regbutnostream_v2">Complimenti, hai registrato il tuo account, ora potrai godere di 15 giorni di musica illimitata completamente GRATIS!</string>
-    <string name="dz_legacy_notification_launchapp_content">Tocca per aprire Deezer</string>
+    <string name="dz_legacy_notification_launchapp_content">Tocca per aprire DeeJazz</string>
     <string name="dz_legacy_notification_launchapp_title">Vuoi ascoltare musica?</string>
     <string name="dz_legacy_notifications_action_activateled">Indicatore luminoso</string>
     <string name="dz_legacy_notifications_action_activateled_details">"Fai lampeggiare l'indicatore luminoso all'arrivo delle notifiche."</string>
     <string name="dz_legacy_notifications_action_allow">Attiva notifiche</string>
-    <string name="dz_legacy_notifications_action_allow_details">Potrai scoprire nuova musica grazie alle selezioni di Deezer.</string>
+    <string name="dz_legacy_notifications_action_allow_details">Potrai scoprire nuova musica grazie alle selezioni di DeeJazz.</string>
     <string name="dz_legacy_notifications_action_selectsound">Segnale acustico</string>
     <string name="dz_legacy_notifications_action_selectsound_details">Scegli la suoneria utilizzata per le notifiche.</string>
     <string name="dz_legacy_notifications_action_vibrate">Attiva la vibrazione</string>
@@ -1406,10 +1406,10 @@ Riprova più tardi."</string>
     <string name="dz_legacy_onboarding_header_seeyou2">Che piacere vederti!</string>
     <string name="dz_legacy_onboarding_loadingstep_header">Non muoverti, i nostri consigli sono quasi pronti.</string>
     <string name="dz_legacy_onboarding_loadingstep_text">Ancora un paio di secondi..</string>
-    <string name="dz_legacy_onboarding_text_buildflow">Vorremmo farti qualche domanda per creare il tuo Flow Deezer. Dunque, cosa ti piace?</string>
+    <string name="dz_legacy_onboarding_text_buildflow">Vorremmo farti qualche domanda per creare il tuo Flow DeeJazz. Dunque, cosa ti piace?</string>
     <string name="dz_legacy_onboarding_text_chooseone">Scegline uno per iniziare</string>
-    <string name="dz_legacy_onboarding_text_createFlow">Vorremmo farti qualche domanda per personalizzare Deezer per te e creare il tuo Flow. Dunque, cosa ti piace?</string>
-    <string name="dz_legacy_onboarding_text_personalrecommendations">Ottimo lavoro. Stiamo analizzando le tue indicazioni per creare il tuo Deezer.</string>
+    <string name="dz_legacy_onboarding_text_createFlow">Vorremmo farti qualche domanda per personalizzare DeeJazz per te e creare il tuo Flow. Dunque, cosa ti piace?</string>
+    <string name="dz_legacy_onboarding_text_personalrecommendations">Ottimo lavoro. Stiamo analizzando le tue indicazioni per creare il tuo DeeJazz.</string>
     <string name="dz_legacy_onboarding_text_swipe">Sfiora verso destra se ti piace, verso sinistra se non ti piace.</string>
     <string name="dz_legacy_onboarding_text_tryorquit">"Puoi provare un'altra opzione o uscire dall'installazione.
 Ci scusiamo per il disagio."</string>
@@ -1428,7 +1428,7 @@ Facci sapere che musica ti piace, e penseremo noi al resto."</string>
     <string name="dz_legacy_permissions_requirement_part1_contacts">È necessario accedere ai tuoi contatti perché noi possiamo completare questa azione.</string>
     <string name="dz_legacy_permissions_requirement_part2_contacts">"Autorizza l'accesso ai tuoi contatti configurando le Impostazioni di Sistema."</string>
     <string name="dz_legacy_permissions_requirement_title">Permesso richiesto</string>
-    <string name="dz_legacy_photos_noaccess">Deezer non riesce ad accedere alle tue foto</string>
+    <string name="dz_legacy_photos_noaccess">DeeJazz non riesce ad accedere alle tue foto</string>
     <string name="dz_legacy_picture_another_choose">"Scegli un'altra immagine"</string>
     <string name="dz_legacy_picture_photo_take">Scatta una foto</string>
     <string name="dz_legacy_picture_update">Aggiorna la foto</string>
@@ -1471,8 +1471,8 @@ Scarica la tua musica per ascoltarla dove e quando vuoi — nessuna connessione 
     <string name="dz_legacy_playlists_all">Tutte le Playlist</string>
     <string name="dz_legacy_podcasts_all">Tutti i Podcast</string>
     <string name="dz_legacy_popup_addtoplaylist_title">Aggiungi a playlist</string>
-    <string name="dz_legacy_popup_download_deezer_signup">Scarica Deezer sul tuo telefono e registrati.</string>
-    <string name="dz_legacy_premium_text_deezerfree">Supportano gli artisti e ci permettono di offrirti Deezer gratis</string>
+    <string name="dz_legacy_popup_download_deezer_signup">Scarica DeeJazz sul tuo telefono e registrati.</string>
+    <string name="dz_legacy_premium_text_deezerfree">Supportano gli artisti e ci permettono di offrirti DeeJazz gratis</string>
     <string name="dz_legacy_premium_text_subscribenow">Abbonati subito per continuare a goderti la musica senza pubblicità!</string>
     <string name="dz_legacy_premium_title_hearads">A volte ci saranno delle pubblicità</string>
     <string name="dz_legacy_premium_title_soundgood">Come ti suona?</string>
@@ -1487,7 +1487,7 @@ Scarica la tua musica per ascoltarla dove e quando vuoi — nessuna connessione 
     <string name="dz_legacy_profile_deletion_inprogress">Cancellazione del profilo.</string>
     <string name="dz_legacy_profile_error_offer_resubscribe_noparam">"Non sei più abbonato alla tua offerta. Per accedere all'offerta per la famiglia ti preghiamo di abbonarti di nuovo."</string>
     <string name="dz_legacy_profile_error_offer_unavailable_noparam">Non puoi più accedere ai tuoi profili perché non sei più abbonato alla tua offerta.</string>
-    <string name="dz_legacy_profile_forkids_switch">Attiva Deezer Kids</string>
+    <string name="dz_legacy_profile_forkids_switch">Attiva DeeJazz Kids</string>
     <string name="dz_legacy_profile_forkids_switch_explanations_under12">Musica scelta per chi ha meno di 12 anni</string>
     <string name="dz_legacy_profile_info_under12">Meno di 12 anni</string>
     <string name="dz_legacy_profile_list_access_error">Si è verificato un errore, non è possibile accedere alla lista dei tuoi profili.</string>
@@ -1525,7 +1525,7 @@ Scarica la tua musica per ascoltarla dove e quando vuoi — nessuna connessione 
     <string name="dz_legacy_settings_audioquality_wifistreaming_title">Streaming con WiFi</string>
     <string name="dz_legacy_settings_audioquality_wifisync_title">Scarica via WiFi</string>
     <string name="dz_legacy_settings_description_peekpop">"Consente di sentire l'anteprima audio mentre si dà un'occhiata"</string>
-    <string name="dz_legacy_settings_devices_list_title">Il tuo account Deezer è attualmente collegato ai seguenti dispositivi:</string>
+    <string name="dz_legacy_settings_devices_list_title">Il tuo account DeeJazz è attualmente collegato ai seguenti dispositivi:</string>
     <string name="dz_legacy_settings_devices_section_otherDevices">ALTRI DISPOSITIVI</string>
     <string name="dz_legacy_settings_devices_section_selectedDevice">DISPOSITIVI SELEZIONATI</string>
     <string name="dz_legacy_settings_devices_title">I miei dispositivi connessi</string>
@@ -1568,7 +1568,7 @@ Scarica la tua musica per ascoltarla dove e quando vuoi — nessuna connessione 
     <string name="dz_legacy_sponsoredtracks_message_newway">Per artisti e marchi è un nuovo modo di farsi conoscere.</string>
     <string name="dz_legacy_sponsoredtracks_title">Cosa sono i brani sponsorizzati?</string>
     <string name="dz_legacy_sponsoredtracks_title_havetime">Hai 30 secondi?</string>
-    <string name="dz_legacy_subtitle_offer_plug_headphones">Propone Deezer quanto colleghi le cuffie.</string>
+    <string name="dz_legacy_subtitle_offer_plug_headphones">Propone DeeJazz quanto colleghi le cuffie.</string>
     <string name="dz_legacy_tab_home">Home</string>
     <string name="dz_legacy_tab_home_uppercase">HOME</string>
     <string name="dz_legacy_tab_mymusic">La mia musica</string>
@@ -1592,7 +1592,7 @@ Scarica la tua musica per ascoltarla dove e quando vuoi — nessuna connessione 
     <string name="dz_legacy_telcoasso_error_phone_invalid">Numero di telefono non valido</string>
     <string name="dz_legacy_telcoasso_msg_codebyemail">Riceverai via email un codice per confermare il tuo abbonamento.</string>
     <string name="dz_legacy_telcoasso_msg_codebysms">Riceverai via SMS un codice per attivare il tuo abbonamento.</string>
-    <string name="dz_legacy_telcoasso_msg_congrats_notlogged">Congratulazioni! Vuoi usare un account Deezer esistente o vuoi crearne uno nuovo?</string>
+    <string name="dz_legacy_telcoasso_msg_congrats_notlogged">Congratulazioni! Vuoi usare un account DeeJazz esistente o vuoi crearne uno nuovo?</string>
     <string name="dz_legacy_telcoasso_prompt_needauth">Autentica il tuo account via SMS.</string>
     <string name="dz_legacy_telcoasso_prompt_phonenumber">Inserisci un numero di telefono:</string>
     <string name="dz_legacy_telcoasso_renewassociation_message">Accedi di nuovo al tuo account per ascoltare la tua musica:</string>
@@ -1602,7 +1602,7 @@ Scarica la tua musica per ascoltarla dove e quando vuoi — nessuna connessione 
     <string name="dz_legacy_text_allow_shortcut_more_options_menu">Consenti la creazione di scorciatoie nel menù Altre opzioni</string>
     <string name="dz_legacy_text_copyright_radio_chromecast">Per motivi di copyright la diretta radio non può essere ascoltata tramite Chromecast.</string>
     <string name="dz_legacy_text_emptymusic_tryagain">Aggiungi i brani, gli album o le playlist che preferisci e riprova.</string>
-    <string name="dz_legacy_text_free_cant_deezer_tv">Non puoi usare Deezer sulla tua TV perché hai un account gratuito.</string>
+    <string name="dz_legacy_text_free_cant_deezer_tv">Non puoi usare DeeJazz sulla tua TV perché hai un account gratuito.</string>
     <string name="dz_legacy_text_hear_alert_sponsored">Senti un avviso prima dei brani sponsorizzati</string>
     <string name="dz_legacy_text_log_another_account">Accedi con un altro account</string>
     <string name="dz_legacy_text_make_shortcut">Crea una scorciatoia</string>
@@ -1653,11 +1653,11 @@ mancano solo pochi secondi."</string>
     <string name="dz_legacy_title_country">Paese</string>
     <string name="dz_legacy_title_crossfading_duration">Durata del crossfade</string>
     <string name="dz_legacy_title_currently_offline">Sei attualmente offline</string>
-    <string name="dz_legacy_title_deezersynchronization">Download in corso da Deezer</string>
+    <string name="dz_legacy_title_deezersynchronization">Download in corso da DeeJazz</string>
     <string name="dz_legacy_title_detect_headphones">Rileva cuffie</string>
     <string name="dz_legacy_title_disk">Spazio totale</string>
     <string name="dz_legacy_title_disk_available">Disponibile</string>
-    <string name="dz_legacy_title_disk_deezer">Occupato da Deezer</string>
+    <string name="dz_legacy_title_disk_deezer">Occupato da DeeJazz</string>
     <string name="dz_legacy_title_dislike">Non mi piace</string>
     <string name="dz_legacy_title_display">Impostazioni visualizzazione</string>
     <string name="dz_legacy_title_done">Fatto!</string>
@@ -1699,7 +1699,7 @@ mancano solo pochi secondi."</string>
     <string name="dz_legacy_title_information_uppercase">INFORMAZIONI</string>
     <string name="dz_legacy_title_jobs">Lavora con noi</string>
     <string name="dz_legacy_title_justHeard">Ultimi ascolti</string>
-    <string name="dz_legacy_title_labs">Deezer Labs</string>
+    <string name="dz_legacy_title_labs">DeeJazz Labs</string>
     <string name="dz_legacy_title_last_tracks">Ascolti recenti</string>
     <string name="dz_legacy_title_last_tracks_uppercase">ASCOLTI RECENTI</string>
     <string name="dz_legacy_title_latest_release">Ultima uscita</string>
@@ -1745,7 +1745,7 @@ mancano solo pochi secondi."</string>
     <string name="dz_legacy_title_play_radio_artist_shortVersion">Ascolta il mix ispirato a questo artista.</string>
     <string name="dz_legacy_title_playing">Ascolta</string>
     <string name="dz_legacy_title_playlist">Playlist</string>
-    <string name="dz_legacy_title_playlist_topdeezertracks">I brani più ascoltati su Deezer ogni giorno.</string>
+    <string name="dz_legacy_title_playlist_topdeezertracks">I brani più ascoltati su DeeJazz ogni giorno.</string>
     <string name="dz_legacy_title_playlist_uppercase">PLAYLIST</string>
     <string name="dz_legacy_title_playlists">Playlist</string>
     <string name="dz_legacy_title_playlists_top">Top Playlist</string>
@@ -1765,7 +1765,7 @@ mancano solo pochi secondi."</string>
     <string name="dz_legacy_title_recentlyDownloaded">Scaricati di recente</string>
     <string name="dz_legacy_title_recentlyDownloaded_uppercase">SCARICATI DI RECENTE</string>
     <string name="dz_legacy_title_recentlyPlayed">Ascolti recenti</string>
-    <string name="dz_legacy_title_recommendations_selection">Selezione Deezer</string>
+    <string name="dz_legacy_title_recommendations_selection">Selezione DeeJazz</string>
     <string name="dz_legacy_title_relatedartists">Artisti simili</string>
     <string name="dz_legacy_title_releases_new">Nuove uscite</string>
     <string name="dz_legacy_title_search">Cerca un artista, un brano, un album</string>
@@ -1777,7 +1777,7 @@ mancano solo pochi secondi."</string>
     <string name="dz_legacy_title_share_with">Condividi con</string>
     <string name="dz_legacy_title_sharing">Condividi</string>
     <string name="dz_legacy_title_shuffleplay">Riproduzione casuale</string>
-    <string name="dz_legacy_title_sign_in_deezer_account">Accedi al tuo account Deezer</string>
+    <string name="dz_legacy_title_sign_in_deezer_account">Accedi al tuo account DeeJazz</string>
     <string name="dz_legacy_title_skip">Tralascia</string>
     <string name="dz_legacy_title_social_share_mycomments">I miei commenti</string>
     <string name="dz_legacy_title_social_share_myfavourites">I miei preferiti</string>
@@ -1793,7 +1793,7 @@ mancano solo pochi secondi."</string>
     <string name="dz_legacy_title_subscribe_unlock_downloads">Abbonati per sbloccare i download e ascoltare offline.</string>
     <string name="dz_legacy_title_summary">Sommario</string>
     <string name="dz_legacy_title_sync">Download in corso</string>
-    <string name="dz_legacy_title_sync_network_warning_data">"Ti consigliamo di deselezionare questo box se vuoi limitare l'uso dei tuoi dati. 
+    <string name="dz_legacy_title_sync_network_warning_data">"Ti consigliamo di deselezionare questo box se vuoi limitare l'uso dei tuoi dati.
 L'app scaricherà di default solo se collegata a WiFi."</string>
     <string name="dz_legacy_title_sync_uppercase">SCARICA</string>
     <string name="dz_legacy_title_syncedmusic">Scaricati</string>
@@ -1837,23 +1837,23 @@ L'app scaricherà di default solo se collegata a WiFi."</string>
     <string name="dz_legacy_update_itstime_title">È il momento di aggiornare!</string>
     <string name="dz_legacy_userid_title">User ID</string>
     <string name="dz_legacy_welcome_ads_keepenjoying">Continua ad ascoltare la musica che ami</string>
-    <string name="dz_legacy_widget_error_notLoggedIn">"Non hai eseguito l'accesso sul tuo account Deezer."</string>
+    <string name="dz_legacy_widget_error_notLoggedIn">"Non hai eseguito l'accesso sul tuo account DeeJazz."</string>
     <string name="dz_legacy_widget_playlist_willBeOnHomepage">Apparirà direttamente sulla tua home.</string>
     <string name="dz_legacy_word_by">di</string>
     <string name="dz_legacy_word_of">di</string>
     <string name="dz_libraryimporter_action_selectaserviceUPP_mobile">SELEZIONA UN SERVIZIO</string>
     <string name="dz_libraryimporter_action_transfernow_mobile">Trasferisci ora</string>
-    <string name="dz_libraryimporter_subtitle_movefavoritestodzr_mobile">Sposta i tuoi preferiti da un altro servizio di musica a Deezer.</string>
-    <string name="dz_libraryimporter_text_moveplaylistsandfavoritestodzr_mobile">Sposta le tue playlist e i tuoi preferiti da un altro servizio di musica a Deezer.</string>
+    <string name="dz_libraryimporter_subtitle_movefavoritestodzr_mobile">Sposta i tuoi preferiti da un altro servizio di musica a DeeJazz.</string>
+    <string name="dz_libraryimporter_text_moveplaylistsandfavoritestodzr_mobile">Sposta le tue playlist e i tuoi preferiti da un altro servizio di musica a DeeJazz.</string>
     <string name="dz_libraryimporter_title_transferyourfavorites_mobile">Trasferisci i tuoi preferiti</string>
     <string name="dz_libraryimporterdismiss_text_transferstillavailableinsettings_mobile">La funzione per trasferire la tua musica resterà disponibile nelle Impostazioni.</string>
     <string name="dz_libraryimporteronboarding_action_chooseartistsmanually_mobile">Seleziona gii artisti manualmente</string>
     <string name="dz_libraryimporteronboarding_text_fastsafethankstoXpartner_mobile">È veloce e sicuro, grazie al nostro partner %1$s.</string>
     <string name="dz_libraryimporteronboarding_text_supportsXstreamserviceslist_mobile">Supporta: %1$s, %2$s, %3$s, %4$s, %5$s e molti altri.</string>
-    <string name="dz_libraryimporteronboarding_text_transfermusiclibraryforfree_mobile">Trasferisci la tua libreria musicale su Deezer gratuitamente.</string>
+    <string name="dz_libraryimporteronboarding_text_transfermusiclibraryforfree_mobile">Trasferisci la tua libreria musicale su DeeJazz gratuitamente.</string>
     <string name="dz_libraryimporteronboarding_title_transferfavsfromanotherservice_mobile">Trasferisci i tuoi preferiti da un altro servizio</string>
-    <string name="dz_linkeddevices_text_maxnumberreacheddeleteonedevice_mobile">Hai raggiunto il massimo numero di dispositivi che puoi collegare al tuo account Deezer. Seleziona uno dei dispositivi qui sotto ed eliminalo per utilizzare Deezer sul tuo %1$s.</string>
-    <string name="dz_loginpage_text_seemsalreadyhavedzraccount_mobile">Beh, sembrerebbe che tu abbia già un account Deezer</string>
+    <string name="dz_linkeddevices_text_maxnumberreacheddeleteonedevice_mobile">Hai raggiunto il massimo numero di dispositivi che puoi collegare al tuo account DeeJazz. Seleziona uno dei dispositivi qui sotto ed eliminalo per utilizzare DeeJazz sul tuo %1$s.</string>
+    <string name="dz_loginpage_text_seemsalreadyhavedzraccount_mobile">Beh, sembrerebbe che tu abbia già un account DeeJazz</string>
     <string name="dz_loginpopupmessage_text_passwordisinvalid_mobile">La password che hai inserito non è valida.</string>
     <string name="dz_loginpopupmessage_text_sentloginlinktoXemail_mobile">Non preoccuparti, abbiamo mandato un link a %1$s per aiutarti ad accedere, controlla la tua casella di posta!</string>
     <string name="dz_lyrics_action_withouttranslation_mobile">Senza traduzione</string>
@@ -1892,9 +1892,9 @@ L'app scaricherà di default solo se collegata a WiFi."</string>
     <string name="dz_multiflow_title_youandme_mobile">Io e te</string>
     <string name="dz_multiflowtooltip_text_coolsurpriseawaitsyou_mobile">Una bella sorpresa ti aspetta!</string>
     <string name="dz_multiflowtooltip_text_guideflowtoyourmood_mobile">Tocca qui per impostare il Flow in base al tuo mood.</string>
-    <string name="dz_multiplebillingalertbox_text_applestorepurchalreadyinprocess_mobile">"È già in corso una transazione sull'App Store. Controlla la cronologia degli acquisti attraverso il tuo ID Apple o contatta il Servizio Clienti Deezer."</string>
+    <string name="dz_multiplebillingalertbox_text_applestorepurchalreadyinprocess_mobile">"È già in corso una transazione sull'App Store. Controlla la cronologia degli acquisti attraverso il tuo ID Apple o contatta il Servizio Clienti DeeJazz."</string>
     <string name="dz_multiplebillingalertbox_text_applesubalreadypendingforpayment_mobile">"C'è già un abbonamento in attesa di pagamento. Aggiorna i tuoi dati di pagamento tramite il tuo ID Apple."</string>
-    <string name="dz_multiplebillingalertbox_text_dzrsubalreadylinkedtoaccount_mobile">Hai già un abbonamento a Deezer collegato a questo account.</string>
+    <string name="dz_multiplebillingalertbox_text_dzrsubalreadylinkedtoaccount_mobile">Hai già un abbonamento a DeeJazz collegato a questo account.</string>
     <string name="dz_multiplebillingalertbox_text_emailalreadyinuse_mobile">Questo indirizzo email è già in uso; scegline un altro.</string>
     <string name="dz_musicgenre_title_alternative_mobile">Alternative</string>
     <string name="dz_musicgenre_title_electro_mobile">Electro</string>
@@ -1904,7 +1904,7 @@ L'app scaricherà di default solo se collegata a WiFi."</string>
     <string name="dz_myaccount_title_thirdpartyaccounts_mobile">Account di terze parti</string>
     <string name="dz_mymusic_albums_none">Nessun album</string>
     <string name="dz_mymusic_title_collection_mobile">Raccolta</string>
-    <string name="dz_networkstatus_text_deezeroffline_mobile">Deezer è offline</string>
+    <string name="dz_networkstatus_text_deezeroffline_mobile">DeeJazz è offline</string>
     <string name="dz_networkstatus_text_nowonline_mobile">Ora online</string>
     <string name="dz_networkstatus_text_signalisweak_mobile">Il segnale è debole</string>
     <string name="dz_newofferscardsusp_text_benefitsofXplanplushifiannual_mobile">Tutti i vantaggi di %1$s più il Suono ad alta fedeltà ad un prezzo annuale scontato.</string>
@@ -1915,21 +1915,21 @@ L'app scaricherà di default solo se collegata a WiFi."</string>
     <string name="dz_newofferscardsusp_text_playanytrackadfreeandoffline_mobile">Scegli e ascolta qualsiasi brano senza pubblicità, puoi anche scaricare i tuoi preferiti per ascoltarti offline.</string>
     <string name="dz_newofferscardsusp_text_supportedXpartnerdevices_mobile">I dispositivi audio supportati includono: %1$s, %2$s, %3$s, %4$s e tanti altri</string>
     <string name="dz_notification_text_checkaudiobookXbyauthorX_mobile">Ascolta questo: \"%1$s\" di %2$s</string>
-    <string name="dz_notification_text_discoveralbumXbyartistXondeezer_mobile">Scopri \"%1$s\" di %2$s su Deezer</string>
-    <string name="dz_notification_text_discoverappXondeezer_mobile">"Scopri l'app %1$s su Deezer"</string>
-    <string name="dz_notification_text_discoverartistXondeezer_mobile">Scopri %1$s su Deezer</string>
-    <string name="dz_notification_text_discovermixXondeezer_mobile">Scopri il mix \"%1$s\" su Deezer</string>
-    <string name="dz_notification_text_discoverplaylistXbyuserXondeezer_mobile">Scopri \"%1$s\" di %2$s su Deezer</string>
-    <string name="dz_notification_text_discoverpodcastXbyauthorXondeezer_mobile">Scopri \"%1$s\" di %2$s su Deezer</string>
-    <string name="dz_notification_text_discoverpodcastXondeezer_mobile">Scopri \"%1$s\" su Deezer</string>
-    <string name="dz_notification_text_discovertrackXbyartistXondeezer_mobile">Scopri \"%1$s\" di %2$s su Deezer</string>
-    <string name="dz_notification_text_hearalbumXbyartistXondeezer_mobile">Ascolta \"%1$s\" di %2$s su Deezer!</string>
-    <string name="dz_notification_text_hearartistXondeezer_mobile">Ascolta %1$s su Deezer!</string>
-    <string name="dz_notification_text_hearmixXondeezer_mobile">Ascolta il mix \"%1$s\" su Deezer!</string>
-    <string name="dz_notification_text_hearplaylistXondeezer_mobile">Ascolta la playlist \"%1$s\" su Deezer!</string>
-    <string name="dz_notification_text_hearpodcastXbyauthorXondeezer_mobile">Ascolta \"%1$s\" di %2$s su Deezer!</string>
-    <string name="dz_notification_text_hearpodcastXondeezer_mobile">Ascolta \"%1$s\" su Deezer!</string>
-    <string name="dz_notification_text_heartrackXbyartistXondeezer_mobile">Ascolta \"%1$s\" di %2$s su Deezer!</string>
+    <string name="dz_notification_text_discoveralbumXbyartistXondeezer_mobile">Scopri \"%1$s\" di %2$s su DeeJazz</string>
+    <string name="dz_notification_text_discoverappXondeezer_mobile">"Scopri l'app %1$s su DeeJazz"</string>
+    <string name="dz_notification_text_discoverartistXondeezer_mobile">Scopri %1$s su DeeJazz</string>
+    <string name="dz_notification_text_discovermixXondeezer_mobile">Scopri il mix \"%1$s\" su DeeJazz</string>
+    <string name="dz_notification_text_discoverplaylistXbyuserXondeezer_mobile">Scopri \"%1$s\" di %2$s su DeeJazz</string>
+    <string name="dz_notification_text_discoverpodcastXbyauthorXondeezer_mobile">Scopri \"%1$s\" di %2$s su DeeJazz</string>
+    <string name="dz_notification_text_discoverpodcastXondeezer_mobile">Scopri \"%1$s\" su DeeJazz</string>
+    <string name="dz_notification_text_discovertrackXbyartistXondeezer_mobile">Scopri \"%1$s\" di %2$s su DeeJazz</string>
+    <string name="dz_notification_text_hearalbumXbyartistXondeezer_mobile">Ascolta \"%1$s\" di %2$s su DeeJazz!</string>
+    <string name="dz_notification_text_hearartistXondeezer_mobile">Ascolta %1$s su DeeJazz!</string>
+    <string name="dz_notification_text_hearmixXondeezer_mobile">Ascolta il mix \"%1$s\" su DeeJazz!</string>
+    <string name="dz_notification_text_hearplaylistXondeezer_mobile">Ascolta la playlist \"%1$s\" su DeeJazz!</string>
+    <string name="dz_notification_text_hearpodcastXbyauthorXondeezer_mobile">Ascolta \"%1$s\" di %2$s su DeeJazz!</string>
+    <string name="dz_notification_text_hearpodcastXondeezer_mobile">Ascolta \"%1$s\" su DeeJazz!</string>
+    <string name="dz_notification_text_heartrackXbyartistXondeezer_mobile">Ascolta \"%1$s\" di %2$s su DeeJazz!</string>
     <string name="dz_notification_text_heresmixX_mobile">Ecco il mix \"%1$s\".</string>
     <string name="dz_notification_text_heresmixXinpiredbytrackXbyartistX_mobile">Ecco un mix ispirato a \"%1$s\" di %2$s.</string>
     <string name="dz_notification_text_heresmixXinpiredbyuserXfavorites_mobile">Ecco un mix ispirato ai preferiti di %1$s.</string>
@@ -1937,22 +1937,22 @@ L'app scaricherà di default solo se collegata a WiFi."</string>
     <string name="dz_notification_text_heresmixXinspiredbytrackslistenedbyuserX_mobile">Ecco un mix ispirato ai brani che %1$s ha ascoltato di recente.</string>
     <string name="dz_notification_text_maxnumberoftracksreached_mobile">Numero massimo di brani raggiunto</string>
     <string name="dz_notificationcenteremptystate_text_toreceivepersonotifslikeallfavorites_mobile">Per ricevere notifiche personalizzate sugli artisti che ami, assicurati di mettere mi piace a tutti i tuoi preferiti.</string>
-    <string name="dz_notificationfacebook_text_checkaudiobookXbyauthorXondeezer_mobile">Ascolta \"%1$s\" di %2$s su @Deezer</string>
-    <string name="dz_notificationtwitter_text_checkaudiobookXbyauthorXondeezer_mobile">Ascolta \"%1$s\" di %2$s su #deezer</string>
-    <string name="dz_notificationtwitter_text_discoveralbumXbyartistXondeezer_mobile">Scopri \"%1$s\" di %2$s su #deezer</string>
-    <string name="dz_notificationtwitter_text_discoverappXondeezer_mobile">"Scopri l'app %1$s su #deezer"</string>
-    <string name="dz_notificationtwitter_text_discoverartistXondeezer_mobile">Scopri %1$s su #deezer</string>
-    <string name="dz_notificationtwitter_text_discovermixXondeezer_mobile">Scopri il mix \"%1$s\" su #deezer</string>
-    <string name="dz_notificationtwitter_text_discoverplaylistXbyuserXondeezer_mobile">Scopri \"%1$s\" di %2$s su #deezer</string>
-    <string name="dz_notificationtwitter_text_discoverpodcastXondeezer_mobile">Scopri \"%1$s\" su #deezer</string>
-    <string name="dz_notificationtwitter_text_discoverthisepisodeofpodcastXondeezer_mobile">Scopri questo episodio di %1$s su #deezer</string>
-    <string name="dz_notificationtwitter_text_discovertrackXbyartistXondeezer_mobile">Scopri \"%1$s\" di %2$s su #deezer</string>
-    <string name="dz_oauth_action_gotodeezer_mobile">Vai a Deezer</string>
+    <string name="dz_notificationfacebook_text_checkaudiobookXbyauthorXondeezer_mobile">Ascolta \"%1$s\" di %2$s su @DeeJazz</string>
+    <string name="dz_notificationtwitter_text_checkaudiobookXbyauthorXondeezer_mobile">Ascolta \"%1$s\" di %2$s su #deejazz</string>
+    <string name="dz_notificationtwitter_text_discoveralbumXbyartistXondeezer_mobile">Scopri \"%1$s\" di %2$s su #deejazz</string>
+    <string name="dz_notificationtwitter_text_discoverappXondeezer_mobile">"Scopri l'app %1$s su #deejazz"</string>
+    <string name="dz_notificationtwitter_text_discoverartistXondeezer_mobile">Scopri %1$s su #deejazz</string>
+    <string name="dz_notificationtwitter_text_discovermixXondeezer_mobile">Scopri il mix \"%1$s\" su #deejazz</string>
+    <string name="dz_notificationtwitter_text_discoverplaylistXbyuserXondeezer_mobile">Scopri \"%1$s\" di %2$s su #deejazz</string>
+    <string name="dz_notificationtwitter_text_discoverpodcastXondeezer_mobile">Scopri \"%1$s\" su #deejazz</string>
+    <string name="dz_notificationtwitter_text_discoverthisepisodeofpodcastXondeezer_mobile">Scopri questo episodio di %1$s su #deejazz</string>
+    <string name="dz_notificationtwitter_text_discovertrackXbyartistXondeezer_mobile">Scopri \"%1$s\" di %2$s su #deejazz</string>
+    <string name="dz_oauth_action_gotodeezer_mobile">Vai a DeeJazz</string>
     <string name="dz_oauth_action_nothanks_mobile">No, grazie</string>
     <string name="dz_oauth_text_grantpermissionstodevice_mobile">%1$s avrà bisogno di queste autorizzazioni per il collegamento al tuo account. La tua privacy è estremamente importante per noi, per cui pensa bene se vuoi davvero condividere queste informazioni prima di procedere.</string>
     <string name="dz_oauth_text_sharethisinfowithdevice_mobile">Condividi queste informazioni con %1$s:</string>
     <string name="dz_oauth_title_grantpermissionstodevice_mobile">Autorizza %1$s</string>
-    <string name="dz_oauth_title_wanttologtodeezerondevice_mobile">"Vuoi collegarti a Deezer su %1$s? Dovremo farti accedere all'app Deezer."</string>
+    <string name="dz_oauth_title_wanttologtodeezerondevice_mobile">"Vuoi collegarti a DeeJazz su %1$s? Dovremo farti accedere all'app DeeJazz."</string>
     <string name="dz_offerwall_text_appleTsCsdescription_mobile">"Il pagamento sarà addebitato sull'account iTunes al momento della conferma dell'acquisto. Per il rinnovo sarà addebitato lo stesso importo sull'account nelle 24 ore che precedono la fine del periodo in corso. Non è consentita la cancellazione dell'abbonamento in corso durante il periodo in cui è attivo."</string>
     <string name="dz_offerwall_text_billettoorangeinvoice_mobile">Addebitati sulla tua bolletta Orange</string>
     <string name="dz_offerwall_text_noads_mobile">Senza pubblicità</string>
@@ -1971,7 +1971,7 @@ i clienti Orange"</string>
     <string name="dz_offline_subtitle_tryagainwhenstrongersignal_mobile">Riprova quando il segnale è più forte</string>
     <string name="dz_offline_subtitle_turnitofftryagain_mobile">Spegni e riprova</string>
     <string name="dz_offline_title_cantconnecttointernet_mobile">Impossibile connettersi a Internet</string>
-    <string name="dz_offline_title_deezerinofflinemode_mobile">Deezer è in modalità offline</string>
+    <string name="dz_offline_title_deezerinofflinemode_mobile">DeeJazz è in modalità offline</string>
     <string name="dz_offline_title_unabletoloadpage_mobile">Non è possibile caricare la pagina.</string>
     <string name="dz_offline_title_youreinplanemode_mobile">Sei in modalità aereo</string>
     <string name="dz_offlinemode_text_savedatadwnldplaylistsalbumstracks_mobile">Risparmia dati mobili ascoltando solo le tue playlist, i tuoi album e i tuoi brani scaricati.</string>
@@ -2012,7 +2012,7 @@ notifiche push?"</string>
     <string name="dz_passwordsecurity_text_strongpasswordunique8charcombinedwith_mobile">Per una password sicura fai in modo che sia unica, contenga almeno 8 caratteri e sia una combinazione di:</string>
     <string name="dz_passwordsecurity_text_uppercaseletters_mobile">Lettere maiuscole</string>
     <string name="dz_passwordsecurity_title_8charactersmin_mobile">8 caratteri minimo</string>
-    <string name="dz_permissionbox_text_googleassistantviabluetooth_mobile">Questo permetterà a Deezer di trovare e connettersi ai dispositivi Assistente Google tramite Bluetooth.</string>
+    <string name="dz_permissionbox_text_googleassistantviabluetooth_mobile">Questo permetterà a DeeJazz di trovare e connettersi ai dispositivi Assistente Google tramite Bluetooth.</string>
     <string name="dz_planrenaming_action_getofferXUPP_mobile">OTTIENI%1$s</string>
     <string name="dz_planrenaming_action_getofferX_mobile">Ottieni %1$s</string>
     <string name="dz_planrenaming_action_stayofferXUPP_mobile">RESTA CON %1$s</string>
@@ -2027,7 +2027,7 @@ notifiche push?"</string>
     <string name="dz_planrenaming_text_makethemostofofferXmixfromalbum_mobile">Sfrutta al massimo la tua offerta %1$s: ascolta un mix ispirato a questo album.</string>
     <string name="dz_planrenaming_text_makethemostofofferXplaylistinshuffle_mobile">Sfrutta al massimo la tua offerta %1$s: ascolta questa playlist in modalità casuale.</string>
     <string name="dz_planrenaming_text_offerXallowsyoudownloadevennosignal_mobile">%1$s ti permette di scaricare la tua musica e ascoltarla dove e quando vuoi — anche senza connessione.</string>
-    <string name="dz_planrenaming_text_offerXneededforBMWconnecteddrive_mobile">"E' necessario avere un account %1$s per utilizzare Deezer su BMW ConnectedDrive."</string>
+    <string name="dz_planrenaming_text_offerXneededforBMWconnecteddrive_mobile">"E' necessario avere un account %1$s per utilizzare DeeJazz su BMW ConnectedDrive."</string>
     <string name="dz_planrenaming_text_offerXsubvaliduntildate_mobile">Il tuo abbonamento %1$s è valido fino a %2$s.</string>
     <string name="dz_planrenaming_text_offerXthemusicyouwant_mobile">"%1$s
 La musica che vuoi
@@ -2086,7 +2086,7 @@ Dove vuoi, quando vuoi"</string>
     <string name="dz_premiumtab_subtitle_anytrackanytime_mobile">Qualunque brano, quando vuoi</string>
     <string name="dz_premiumtab_subtitle_becomeakaraokestar_mobile">Diventa una star del karaoke</string>
     <string name="dz_premiumtab_subtitle_downloadfavoritecontent_mobile">Scarica i tuoi contenuti preferiti</string>
-    <string name="dz_premiumtab_subtitle_learnmoreondeezerwebsite_mobile">Scopri di più sul sito di Deezer</string>
+    <string name="dz_premiumtab_subtitle_learnmoreondeezerwebsite_mobile">Scopri di più sul sito di DeeJazz</string>
     <string name="dz_premiumtab_subtitle_listenwithoutinterruption_mobile">Ascolta senza interruzioni</string>
     <string name="dz_premiumtab_subtitle_playexactsongyouwant_mobile">Ascolta proprio la canzone che vuoi</string>
     <string name="dz_premiumtab_subtitle_skipstracksyoudontlike_mobile">Salta i brani che non ti piacciono</string>
@@ -2105,8 +2105,8 @@ Dove vuoi, quando vuoi"</string>
     <string name="dz_progressmessage_text_syncinprogress_mobile">Sincronizzazione in corso...</string>
     <string name="dz_pushnotificationinbox_text_getallupdatesfromfavoriteartists_mobile">Riceverai tutti i migliori aggiornamenti dai tuoi artisti preferiti, ad esempio le loro nuove uscite.</string>
     <string name="dz_pushnotificationinbox_title_turnonpushnotifications_mobile">Attivare le notifiche push?</string>
-    <string name="dz_queuesync_text_alertchromecast_mobile">Per ascoltare Deezer su Chromecast, attiva la sincronizzazione della coda di ascolto.</string>
-    <string name="dz_queuesync_text_box_mobile">Il contenuto della coda di ascolto resta lo stesso per tutti i dispositivi su cui utilizzi Deezer.</string>
+    <string name="dz_queuesync_text_alertchromecast_mobile">Per ascoltare DeeJazz su Chromecast, attiva la sincronizzazione della coda di ascolto.</string>
+    <string name="dz_queuesync_text_box_mobile">Il contenuto della coda di ascolto resta lo stesso per tutti i dispositivi su cui utilizzi DeeJazz.</string>
     <string name="dz_queuesync_title_box_mobile">Coda di ascolto sincronizzata</string>
     <string name="dz_radiofilter_title_local_mobile">Locali</string>
     <string name="dz_radiofilter_title_recommended_mobile">Consigliato</string>
@@ -2115,7 +2115,7 @@ Dove vuoi, quando vuoi"</string>
     <string name="dz_radiosearchbanner_title_notstationsyourelookingfor_mobile">Non sono le stazioni che cercavi?</string>
     <string name="dz_remotecontrol_title_allowdevicecontrolling_mobile">Consenti controllo del dispositivo</string>
     <string name="dz_remotecontrol_title_choosethedevice_mobile">Scegli il dispositivo</string>
-    <string name="dz_remotecontroljourney_text_deezerisopenondevicetoconnect_mobile">Deezer deve essere aperto sul dispotivio con cui ti vuoi connettere.</string>
+    <string name="dz_remotecontroljourney_text_deezerisopenondevicetoconnect_mobile">DeeJazz deve essere aperto sul dispotivio con cui ti vuoi connettere.</string>
     <string name="dz_remotecontroljourney_text_desktoptabletphone_mobile">Desktop, tablet, telefono</string>
     <string name="dz_remotecontroljourney_text_loggedinwithsameaccount_mobile">"Devi aver effettuato l'accesso con lo stesso account e con lo stesso profilo."</string>
     <string name="dz_remotecontroljourney_text_sonosspeakers_mobile">Altoparlanti Sonos</string>
@@ -2180,7 +2180,7 @@ Dove vuoi, quando vuoi"</string>
     <string name="dz_settingspage_title_offlinemode_mobile">Modalità offline</string>
     <string name="dz_settingspage_title_preferences_mobile">Preferenze</string>
     <string name="dz_settingspage_title_ratetheapplication_mobile">"Valuta l'app"</string>
-    <string name="dz_settingspage_title_yourprivacy_mobile">La tua privacy su Deezer</string>
+    <string name="dz_settingspage_title_yourprivacy_mobile">La tua privacy su DeeJazz</string>
     <string name="dz_sharefacebookstories_text_creatingyourstory_mobile">Crea la tua storia</string>
     <string name="dz_sharelyrics_action_sendtoinstagram_mobile">Condividi su Instagram</string>
     <string name="dz_sharelyrics_action_sharelyricsoninstagram_mobile">Condividi testo su Instagram</string>
@@ -2229,7 +2229,7 @@ Dove vuoi, quando vuoi"</string>
     <string name="dz_sharingnotification_text_ijustheardpodcastXyoullloveit_mobile">Ciao,&lt;p>ho ascoltato \"%1$s\" e ho pensato a te. Credo che ti piacerà!&lt;/p></string>
     <string name="dz_sharingnotification_text_ijustheardtrackXbyartistXyoullloveit_mobile">Ciao,&lt;p>ho ascoltato \"%1$s\" di %2$s e ho pensato a te. Credo che ti piacerà!&lt;/p></string>
     <string name="dz_sharingnotification_text_ilistenedtoartistXyoullloveit_mobile">Ciao,&lt;p> ho ascoltato %1$s e ho pensato a te. Credo che ti piacerà!&lt;/p></string>
-    <string name="dz_sharingnotification_text_ilistenedtoaudiobookXyoulikeittoo_mobile">"Ciao, stavo ascoltando l'audiolibro \"%1$s\" su Deezer e ho pensato che potrebbe piacere anche a te."</string>
+    <string name="dz_sharingnotification_text_ilistenedtoaudiobookXyoulikeittoo_mobile">"Ciao, stavo ascoltando l'audiolibro \"%1$s\" su DeeJazz e ho pensato che potrebbe piacere anche a te."</string>
     <string name="dz_sharingnotification_text_ilistenedtomixXyoullloveit_mobile">Ciao, &lt;p>ascoltando il mix \"%1$s\" ho pensato a te. Credo che ti piacerà!&lt;/p></string>
     <string name="dz_sharingnotification_text_ilistenedtoplaylistXyoullloveit_mobile">Ciao,&lt;p> ho ascoltato \"%1$s\" e ho pensato a te. Credo che ti piacerà!&lt;/p></string>
     <string name="dz_signinlogin_action_linkyourappleidaccount_mobile">Collega il tuo account ID Apple</string>
@@ -2249,40 +2249,40 @@ Fatto apposta per te"</string>
     <string name="dz_signupincentive_action_justonemorestep_mobile">Soltanto un passo ancora</string>
     <string name="dz_signupjapanUS_action_tryoffername_mobile">PROVA %1$s</string>
     <string name="dz_signupjapan_action_streammusichifi_mobile">Ascolta la tua musica in streaming ad alta fedeltà.</string>
-    <string name="dz_signupturkey_text_autorizedatasharingwithdzrinEU_mobile">"Autorizzo la condivisione dei miei %1$sdati%2$s con Deezer nell'Unione europea."</string>
+    <string name="dz_signupturkey_text_autorizedatasharingwithdzrinEU_mobile">"Autorizzo la condivisione dei miei %1$sdati%2$s con DeeJazz nell'Unione europea."</string>
     <string name="dz_sirikitvoicecommands_text_addthistomylibrary_mobile">Aggiungi alla mia libreria musicale</string>
     <string name="dz_sirikitvoicecommands_text_addthistomysundaymoodplaylist_mobile">Aggiungi alla mia playlist mood della domenica</string>
-    <string name="dz_sirikitvoicecommands_text_findaworkoutplaylistondeezer_mobile">Trova una playlist per allenarsi su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_findbeyoncesongsondeezer_mobile">Trova canzoni di Beyonce su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_findthebeatlesondeezer_mobile">Trova i Beatles su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_findthehomecomingalbum_mobile">"Trova l'album Homecoming su Deezer"</string>
-    <string name="dz_sirikitvoicecommands_text_findtheindiediscoplaylist_mobile">Trova la playlist Indie Disco su Deezer</string>
+    <string name="dz_sirikitvoicecommands_text_findaworkoutplaylistondeezer_mobile">Trova una playlist per allenarsi su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_findbeyoncesongsondeezer_mobile">Trova canzoni di Beyonce su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_findthebeatlesondeezer_mobile">Trova i Beatles su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_findthehomecomingalbum_mobile">"Trova l'album Homecoming su DeeJazz"</string>
+    <string name="dz_sirikitvoicecommands_text_findtheindiediscoplaylist_mobile">Trova la playlist Indie Disco su DeeJazz</string>
     <string name="dz_sirikitvoicecommands_text_idontlikethissong_mobile">Questa canzone non mi piace</string>
     <string name="dz_sirikitvoicecommands_text_ihatethissong_mobile">Non sopporto questa canzone</string>
     <string name="dz_sirikitvoicecommands_text_ilikethissong_mobile">Mi piace questa canzone</string>
     <string name="dz_sirikitvoicecommands_text_ilovethissong_mobile">Adoro questa canzone</string>
-    <string name="dz_sirikitvoicecommands_text_launchajazzmixondeezer_mobile">Fammi ascoltare un mix jazz su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playbeyonceondeezer_mobile">Fammi ascoltare Beyonce su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playcapitalukondeezer_mobile">Fammi ascoltare Capital UK su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playchillmusicondeezer_mobile">Fammi ascoltare musica chill su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playelectronicmusicondeezer_mobile">Fammi ascoltare musica elettronica su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playepisodemeditationondeezer_mobile">"Fammi ascoltare l'episodio \"Meditation - Setting An Intention\" su Deezer"</string>
-    <string name="dz_sirikitvoicecommands_text_playfeelgoodalternplaylistondzer_mobile">Fammi ascoltare la playlist Feel Good Alternative su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playgetluckybydaftpunkondeezer_mobile">Fammi ascoltare Get Lucky dei Daft Punk su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playlastepisodeofpodcastondzr_mobile">"Fammi ascoltare l'ultimo episodio del podcast TED talks daily su Deezer"</string>
-    <string name="dz_sirikitvoicecommands_text_playlatestepisodeofpodcastondzr_mobile">"Fammi ascoltare l'ultimo episodio del podcast Serial su Deezer"</string>
-    <string name="dz_sirikitvoicecommands_text_playmusicforarunondeezer_mobile">Metti della musica da running su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playmusicondeezer_mobile">Fammi ascoltare musica su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playmyfavoritesongsondeezer_mobile">Fammi ascoltare le mie canzoni preferite su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playmyflowondeezer_mobile">Riproduci il mio Flow su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playmysundayplaylistondeezer_mobile">Fammi ascoltare la mia playlist mood della domenica su Deezer</string>
+    <string name="dz_sirikitvoicecommands_text_launchajazzmixondeezer_mobile">Fammi ascoltare un mix jazz su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playbeyonceondeezer_mobile">Fammi ascoltare Beyonce su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playcapitalukondeezer_mobile">Fammi ascoltare Capital UK su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playchillmusicondeezer_mobile">Fammi ascoltare musica chill su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playelectronicmusicondeezer_mobile">Fammi ascoltare musica elettronica su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playepisodemeditationondeezer_mobile">"Fammi ascoltare l'episodio \"Meditation - Setting An Intention\" su DeeJazz"</string>
+    <string name="dz_sirikitvoicecommands_text_playfeelgoodalternplaylistondzer_mobile">Fammi ascoltare la playlist Feel Good Alternative su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playgetluckybydaftpunkondeezer_mobile">Fammi ascoltare Get Lucky dei Daft Punk su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playlastepisodeofpodcastondzr_mobile">"Fammi ascoltare l'ultimo episodio del podcast TED talks daily su DeeJazz"</string>
+    <string name="dz_sirikitvoicecommands_text_playlatestepisodeofpodcastondzr_mobile">"Fammi ascoltare l'ultimo episodio del podcast Serial su DeeJazz"</string>
+    <string name="dz_sirikitvoicecommands_text_playmusicforarunondeezer_mobile">Metti della musica da running su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playmusicondeezer_mobile">Fammi ascoltare musica su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playmyfavoritesongsondeezer_mobile">Fammi ascoltare le mie canzoni preferite su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playmyflowondeezer_mobile">Riproduci il mio Flow su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playmysundayplaylistondeezer_mobile">Fammi ascoltare la mia playlist mood della domenica su DeeJazz</string>
     <string name="dz_sirikitvoicecommands_text_playnextorpreviousepisode_mobile">"Fammi ascoltare il prossimo episodio/l'episodio successivo"</string>
-    <string name="dz_sirikitvoicecommands_text_playquanticondeezer_mobile">Fammi ascoltare i Quantic su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playradiobbcworldserviceondeezer_mobile">Fammi ascoltare la radio BBC World Service su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playsomemusicondeezer_mobile">"Fammi ascoltare un po' di musica su Deezer"</string>
-    <string name="dz_sirikitvoicecommands_text_playthehomecomingalbumbybeyonce_mobile">"Fammi ascoltare l'album Homecoming di Beyonce su Deezer"</string>
-    <string name="dz_sirikitvoicecommands_text_playthepodcastXondeezer_mobile">Fammi ascoltare il podcast Intercepted su Deezer</string>
-    <string name="dz_sirikitvoicecommands_text_playthepodcasttedondeezer_mobile">Fammi ascoltare il podcast TED talks daily su Deezer</string>
+    <string name="dz_sirikitvoicecommands_text_playquanticondeezer_mobile">Fammi ascoltare i Quantic su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playradiobbcworldserviceondeezer_mobile">Fammi ascoltare la radio BBC World Service su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playsomemusicondeezer_mobile">"Fammi ascoltare un po' di musica su DeeJazz"</string>
+    <string name="dz_sirikitvoicecommands_text_playthehomecomingalbumbybeyonce_mobile">"Fammi ascoltare l'album Homecoming di Beyonce su DeeJazz"</string>
+    <string name="dz_sirikitvoicecommands_text_playthepodcastXondeezer_mobile">Fammi ascoltare il podcast Intercepted su DeeJazz</string>
+    <string name="dz_sirikitvoicecommands_text_playthepodcasttedondeezer_mobile">Fammi ascoltare il podcast TED talks daily su DeeJazz</string>
     <string name="dz_sleeptimer_action_turnofftimer_mobile">Spegni timer</string>
     <string name="dz_sleeptimer_text_sleepinXhrXmin_mobile">Spegni fra %1$s</string>
     <string name="dz_sleeptimer_title_10minutes_mobile">10 minuti</string>
@@ -2302,7 +2302,7 @@ Fatto apposta per te"</string>
     <string name="dz_smartconnectform_title_yourpassword_mobile">La tua password</string>
     <string name="dz_smartconnectformloading_text_getreadytodiscover_mobile">Preparati a scoprire...</string>
     <string name="dz_smartloginandroidtvxboxloading_text_loggingin_mobile">Mi sto collegando...</string>
-    <string name="dz_smartloginandroidtvxboxsuccess_text_nowconnectedtoyourdzraccount_mobile">Ora sei collegato al tuo account Deezer.</string>
+    <string name="dz_smartloginandroidtvxboxsuccess_text_nowconnectedtoyourdzraccount_mobile">Ora sei collegato al tuo account DeeJazz.</string>
     <string name="dz_smartloginandroidtvxboxsuccess_title_rockon_mobile">Evvai!</string>
     <string name="dz_smartloginandroidtvxboxwelcome_action_loginwithemail_mobile">"Accedi con l'email"</string>
     <string name="dz_smartloginandroidtvxboxwelcome_action_refreshcode_mobile">Aggiorna codice</string>
@@ -2332,7 +2332,7 @@ Fatto apposta per te"</string>
     <string name="dz_smarttvmusictab_title_recommendedplaylists_mobile">Playlist consigliate</string>
     <string name="dz_smarttvsection_title_allcategories_mobile">Tutte le categorie</string>
     <string name="dz_smarttvsection_title_mostpopularalbums_mobile">Album più popolari</string>
-    <string name="dz_smarttvshowstab_title_deezeroriginals_mobile">Deezer Originals</string>
+    <string name="dz_smarttvshowstab_title_deezeroriginals_mobile">DeeJazz Originals</string>
     <string name="dz_smarttvshowstab_title_newandnoteworthy_mobile">Novità di cui prendere nota</string>
     <string name="dz_smarttvshowstab_title_podcastsforyou_mobile">Podcast per te</string>
     <string name="dz_smarttvshowstab_title_popularpodcasts_mobile">Podcast: Di tendenza</string>
@@ -2365,7 +2365,7 @@ Fatto apposta per te"</string>
     <string name="dz_songcatcherhumming_text_identifysongplaying_mobile">Preferisci identificare la canzone riproducendola?</string>
     <string name="dz_songcatcherpermission_action_deny_mobile">Rifiuta</string>
     <string name="dz_songcatcherpermission_subtitle_on2ndtrychangepermissions_mobile">Cambia le autorizzazioni nelle impostazioni del telefono</string>
-    <string name="dz_songcatcherpermission_text_needmicrophoneaccess_mobile">Deezer ha bisogno di accedere al microfono per poter usare questa funzionalità</string>
+    <string name="dz_songcatcherpermission_text_needmicrophoneaccess_mobile">DeeJazz ha bisogno di accedere al microfono per poter usare questa funzionalità</string>
     <string name="dz_songcatcherpermission_title_microphonaccess_mobile">Accesso al microfono</string>
     <string name="dz_songcatcherresult_subtitle_errorsomethingwrong_mobile">Mmh, qualcosa è andato storto</string>
     <string name="dz_songcatcherresult_subtitle_makesuredevicecanhearsong_mobile">Assicurati che il tuo dispositivo possa sentire la canzone chiaramente</string>
@@ -2514,16 +2514,16 @@ Ma prima assicurati che il tuo piano dati lo consenta."</string>
     <string name="dz_trackingconsent_subtitle_statistics_mobile">Statistiche</string>
     <string name="dz_trackingconsent_text_ads2_mobile">"I cookie per la pubblicità mirata sono usati per tracciare i visitatori all'interno del sito web. L'intenzione è quella di visualizzare pubblicità pertinenti e interessanti per il singolo utente."</string>
     <string name="dz_trackingconsent_text_ads_mobile">"I cookie per la pubblicità mirata sono usati per tracciare i visitatori all'interno del sito web. L'intenzione è quella di visualizzare pubblicità pertinenti e interessanti per il singolo utente e pertanto di maggior valore per editori e inserzionisti."</string>
-    <string name="dz_trackingconsent_text_banner_mobile">"Continuando accetti l'uso di cookie e di altre tecnologie di tracking da parte di Deezer e dei suoi partner per offrirti contenuti o offerte su misura per i tuoi interessi, pubblicità personalizzata e analizzare il nostro traffico."</string>
-    <string name="dz_trackingconsent_text_banneriagree_mobile">"Continuando o scegliendo \"Acconsento\" accetti l'uso di cookie e di altre tecnologie di tracking da parte di Deezer e dei suoi partner per offrirti contenuti e offerte su misura in base ai tuoi interessi, pubblicità personalizzata e analizzare il nostro traffico. Per rifiutare l'uso di cookie e di altre tecnologie di tracking scegli \"Verifica le impostazioni e ottieni più informazioni\". Puoi anche ritirare il tuo consenso in qualsiasi momento nelle Impostazioni della privacy. Deezer e i suoi partner non utilizzeranno cookie né altre tecnologie di tracking se rifiuti o ritiri il consenso."</string>
-    <string name="dz_trackingconsent_text_banneriagreev2_mobile">"Continuando o scegliendo \"Acconsento\" accetti l'uso di cookie e di altre tecnologie di tracking da parte di Deezer e dei suoi partner per offrirti contenuti, offerte su misura in base ai tuoi interessi e pubblicità personalizzata e analizzare il nostro traffico. Per rifiutare l'uso dei cookie e altre tecnologie di tracking seleziona \"Verifica le impostazioni e ottieni più informazioni\". Puoi anche revocare il consenso in qualsiasi momento dalle tue impostazioni. Deezer e i suoi partner non useranno cookie né altre tecnologie di tracking se rifiuti o se revochi il consenso."</string>
+    <string name="dz_trackingconsent_text_banner_mobile">"Continuando accetti l'uso di cookie e di altre tecnologie di tracking da parte di DeeJazz e dei suoi partner per offrirti contenuti o offerte su misura per i tuoi interessi, pubblicità personalizzata e analizzare il nostro traffico."</string>
+    <string name="dz_trackingconsent_text_banneriagree_mobile">"Continuando o scegliendo \"Acconsento\" accetti l'uso di cookie e di altre tecnologie di tracking da parte di DeeJazz e dei suoi partner per offrirti contenuti e offerte su misura in base ai tuoi interessi, pubblicità personalizzata e analizzare il nostro traffico. Per rifiutare l'uso di cookie e di altre tecnologie di tracking scegli \"Verifica le impostazioni e ottieni più informazioni\". Puoi anche ritirare il tuo consenso in qualsiasi momento nelle Impostazioni della privacy. DeeJazz e i suoi partner non utilizzeranno cookie né altre tecnologie di tracking se rifiuti o ritiri il consenso."</string>
+    <string name="dz_trackingconsent_text_banneriagreev2_mobile">"Continuando o scegliendo \"Acconsento\" accetti l'uso di cookie e di altre tecnologie di tracking da parte di DeeJazz e dei suoi partner per offrirti contenuti, offerte su misura in base ai tuoi interessi e pubblicità personalizzata e analizzare il nostro traffico. Per rifiutare l'uso dei cookie e altre tecnologie di tracking seleziona \"Verifica le impostazioni e ottieni più informazioni\". Puoi anche revocare il consenso in qualsiasi momento dalle tue impostazioni. DeeJazz e i suoi partner non useranno cookie né altre tecnologie di tracking se rifiuti o se revochi il consenso."</string>
     <string name="dz_trackingconsent_text_necessary_mobile">"I cookie necessari aiutano a rendere un sito web utilizzabile consentendo funzioni di base come la navigazione di una pagina o l'accesso ad aree protette del sito web. Il sito web non può funzionare correttamente senza questi cookie."</string>
     <string name="dz_trackingconsent_text_statistics_mobile">I cookie per statistiche aiutano i titolari di siti web a capire il modo in cui i visitatori interagiscono con i siti web raccogliendo e riferendo le informazioni in modo anonimo.</string>
     <string name="dz_trackingconsent_text_trackersintro_mobile">"La tecnologia di tracking è un cookie, web beacon, tag, pixel invisibile o qualsiasi altro sistema in grado di memorizzare e/o raccogliere informazioni sulla navigazione del tuo terminale (computer, tablet ecc.) e/o la tua attività sulla pubblicità visualizzata.
 
 I regolamenti applicabili consentono la memorizzazione di tecnologie di tracking sul tuo dispositivo se sono strettamente necessarie per il funzionamento del servizio. Per tutti gli altri tipi di tecnologia di tracking, abbiamo bisogno del tuo consenso.
 
-Quando usi l'app Deezer e in base alle scelte che hai fatto, si possono attivare tecnologie di tracking. Alcune tecnologie sono per servizi terzi."</string>
+Quando usi l'app DeeJazz e in base alle scelte che hai fatto, si possono attivare tecnologie di tracking. Alcune tecnologie sono per servizi terzi."</string>
     <string name="dz_trackingconsent_title_banner_mobile">Importante: informativa sui cookie e sulla tecnologia di tracking</string>
     <string name="dz_trackingconsent_title_parameterspage_mobile">Informativa sui cookie e sulla tecnologia di tracking</string>
     <string name="dz_trackpreview_subtitle_containsUPP_mobile">CONTIENE</string>
@@ -2541,7 +2541,7 @@ Quando usi l'app Deezer e in base alle scelte che hai fatto, si possono attivare
     <string name="dz_trialmanualactivation_title_wanttostopshuffling_mobile">Stanco della modalità casuale?</string>
     <string name="dz_trialmanualactivation_title_welcometotheXexperience_mobile">"Benvenuto nell'esperienza %1$s"</string>
     <string name="dz_uaj_action_activatemypartneroffer_mobile">Attiva la mia offerta partner</string>
-    <string name="dz_unlinkaccountconfirmation_text_createpasswordoruseothermethodbeforeunlinking_mobile">Prima di scollegarlo, crea una password o connettiti usando un altro metodo per assicurarti di non perdere il tuo account Deezer.</string>
+    <string name="dz_unlinkaccountconfirmation_text_createpasswordoruseothermethodbeforeunlinking_mobile">Prima di scollegarlo, crea una password o connettiti usando un altro metodo per assicurarti di non perdere il tuo account DeeJazz.</string>
     <string name="dz_unlinkaccountconfirmation_text_nologinwithappleidaccountonceunlinked_mobile">Una volta scollegato, non potrai più accedere usando il tuo account ID Apple.</string>
     <string name="dz_unlinkaccountconfirmation_text_nologinwithmethodXaccountonceunlinked_mobile">Una volta scollegato, non potrai più accedere usando il tuo account %1$s.</string>
     <string name="dz_unlinkaccountconfirmation_title_unlinkyourappleidaccount_mobile">Vuoi scollegare il tuo account ID Apple?</string>
@@ -2596,8 +2596,8 @@ Quando usi l'app Deezer e in base alle scelte che hai fatto, si possono attivare
     <string name="dz_voiceover_text_unselectradiofilter_mobile">Deseleziona filtro Radio</string>
     <string name="dz_voiceover_text_unselecttrackfilter_mobile">Deseleziona filtro Brano</string>
     <string name="dz_warningmessage_text_HQHIFImoredatadiskspacefastntwkconnection_mobile">Alta qualità (HQ) e Alta fedeltà (HiFi) utilizzano più connessione dati e più spazio di archiviazione e richiedono una connessione veloce.</string>
-    <string name="dz_warningmessage_text_deezercantaccessyourlocation_mobile">Deezer non riesce ad accedere alla tua posizione</string>
-    <string name="dz_warningmessage_text_deezercantaccessyourmic_mobile">Deezer non riesce ad accedere al tuo microfono</string>
+    <string name="dz_warningmessage_text_deezercantaccessyourlocation_mobile">DeeJazz non riesce ad accedere alla tua posizione</string>
+    <string name="dz_warningmessage_text_deezercantaccessyourmic_mobile">DeeJazz non riesce ad accedere al tuo microfono</string>
     <string name="dz_warningmessage_text_disconnectedfromchromecastreceiverX_mobile">Sei stato disconnesso dal ricevitore Chromecast %1$s.</string>
     <string name="dz_warningmessage_text_licenceexponlineafewseconds_mobile">La app deve solo essere online per qualche secondo.</string>
     <string name="dz_warningmessage_text_managestorageinsettings_mobile">"Puoi gestire lo spazio di archiviazione e liberarne un po' nelle Impostazioni."</string>
@@ -2605,7 +2605,7 @@ Quando usi l'app Deezer e in base alle scelte che hai fatto, si possono attivare
     <string name="dz_warningmessage_text_podcastdownloaddeactivated_mobile">Spiacenti, i download sono stati disattivati per questo podcast.</string>
     <string name="dz_warningmessage_text_removeextramembers_mobile">Rimuovi i membri in eccesso.</string>
     <string name="dz_warningmessage_text_selectedtracksalreadyinplaylistX_mobile">I brani selezionati sono già nella playlist \"%1$s\".</string>
-    <string name="dz_warningmessage_text_siriaccesstodzrplaylists_mobile">I nomi delle playlist di Deezer verranno inviati a Siri per elaborare le tue richieste.</string>
+    <string name="dz_warningmessage_text_siriaccesstodzrplaylists_mobile">I nomi delle playlist di DeeJazz verranno inviati a Siri per elaborare le tue richieste.</string>
     <string name="dz_warningmessage_text_trackXalreadyinfavoritetracks_mobile">\"%1$s\" è già fra le tue Canzoni del cuore.</string>
     <string name="dz_warningmessage_text_trackXalreadyinplaylistX_mobile">\"%1$s\" è già nella playlist \"%2$s\".</string>
     <string name="dz_warningmessage_text_trackXbyartistXalreadyinfavoritetracks_mobile">\"%1$s\" di %2$s è già fra le tue Canzoni del cuore.</string>
@@ -2622,12 +2622,12 @@ Quando usi l'app Deezer e in base alle scelte che hai fatto, si possono attivare
     <string name="dz_welcomescreen_text_oruse_mobile">o usa:</string>
     <string name="dz_welcomescreen_text_signupforfreeorlogin_mobile">"Registrati gratis
 o accedi"</string>
-    <string name="dz_whatsappsharing_text_album_mobile">Ho trovato un album per te... %1$s di %2$s 🤩 Ascoltalo ora su #Deezer</string>
-    <string name="dz_whatsappsharing_text_artist_mobile">Ho trovato un artista per te... %1$s 🤩 Ascoltalo ora su #Deezer</string>
-    <string name="dz_whatsappsharing_text_playlist_mobile">Ho trovato una playlist per te... %1$s 🤩 Ascoltalo ora su #Deezer</string>
-    <string name="dz_whatsappsharing_text_podcast_mobile">Ho trovato un podcast per te... %1$s 💬 Ascoltalo ora su #Deezer</string>
-    <string name="dz_whatsappsharing_text_podcastepisode_mobile">Ho trovato un episodio per te... %1$s 💬 Ascoltalo ora su #Deezer</string>
-    <string name="dz_whatsappsharing_text_track_mobile">Ho trovato una canzone per te... %1$s di %2$s 🔥 Ascoltala ora su #Deezer</string>
+    <string name="dz_whatsappsharing_text_album_mobile">Ho trovato un album per te... %1$s di %2$s 🤩 Ascoltalo ora su #DeeJazz</string>
+    <string name="dz_whatsappsharing_text_artist_mobile">Ho trovato un artista per te... %1$s 🤩 Ascoltalo ora su #DeeJazz</string>
+    <string name="dz_whatsappsharing_text_playlist_mobile">Ho trovato una playlist per te... %1$s 🤩 Ascoltalo ora su #DeeJazz</string>
+    <string name="dz_whatsappsharing_text_podcast_mobile">Ho trovato un podcast per te... %1$s 💬 Ascoltalo ora su #DeeJazz</string>
+    <string name="dz_whatsappsharing_text_podcastepisode_mobile">Ho trovato un episodio per te... %1$s 💬 Ascoltalo ora su #DeeJazz</string>
+    <string name="dz_whatsappsharing_text_track_mobile">Ho trovato una canzone per te... %1$s di %2$s 🔥 Ascoltala ora su #DeeJazz</string>
     <string name="dz_widget_title_favoriteplaylists_mobile">Playlist preferite</string>
     <string name="dz_widget_title_topartists_mobile">Artisti preferiti</string>
     <string name="dz_widgetdescription_text_accessrecentlyplayed_mobile">Accedi velocemente ai tuoi Ascolti recenti: brani, album, playlist, podcast...</string>
@@ -2635,17 +2635,17 @@ o accedi"</string>
     <string name="dz_widgetdescription_text_choosedailyrecommendationsorflow_mobile">Scegli dai tuoi consigli giornalieri o dal Flow per un mix infinito.</string>
     <string name="dz_widgetdescription_text_findoutwhichartistslistenedmost_mobile">Scopri quali artisti hai ascoltato di più</string>
     <string name="dz_widgetdescription_text_getplaylistsbasedonmostplayed_mobile">Ricevi playlist raccomandate basate sui generi e sulla musica che ascolti di più</string>
-    <string name="dz_widgetmessage_text_logintoenjoydeezerexperience_mobile">"Accedi per goderti l'esperienza Deezer"</string>
+    <string name="dz_widgetmessage_text_logintoenjoydeezerexperience_mobile">"Accedi per goderti l'esperienza DeeJazz"</string>
     <string name="dz_windowing_action_listentosomethingelse_mobile">Ascolta altri brani</string>
     <string name="dz_windowing_text_premiumexclusivecontentnodate_mobile">"Questa è un'esclusiva per i piani in abbonamento. Ti piacerebbe ascoltarlo?"</string>
     <string name="dz_windowing_text_premiumexclusivecontentwithdate_mobile">"Questa è un'esclusiva per i piani in abbonamento fino al %1$s. Non vedi l'ora di ascoltarlo?"</string>
     <string name="dz_windowing_title_PREMIUM_mobile">PREMIUM</string>
-    <string name="dz_xbox_subtitle_subscribetoofferXenjoydeezeronxbox_mobile">Abbonati a %1$s per goderti Deezer sulla tua Xbox.</string>
+    <string name="dz_xbox_subtitle_subscribetoofferXenjoydeezeronxbox_mobile">Abbonati a %1$s per goderti DeeJazz sulla tua Xbox.</string>
     <string name="dz_xboxhifimessage_text_hifiaudiomayimpactgameplay_mobile">"Nota: l'audio HiFi può influenzare la qualità della riproduzione della musica durante il gioco"</string>
     <string name="dz_xboxone_text_downloadapp_mobile">"Non hai ancora %1$s? Scarica l'app sul tuo telefono per iniziare la tua prova gratuita"</string>
     <string name="dz_xboxone_text_signuptooffername2_mobile">Non hai ancora %1$s? Registrati su dzr.fm/xbox</string>
     <string name="dz_xboxone_text_signuptooffername_mobile">Non hai ancora %1$s? Registrati su deezer.com/Xbox</string>
-    <string name="dz_xboxone_text_subscriptionneeded_mobile">Per ascoltare Deezer sulla tua Xbox devi avere un abbonamento Deezer.</string>
+    <string name="dz_xboxone_text_subscriptionneeded_mobile">Per ascoltare DeeJazz sulla tua Xbox devi avere un abbonamento DeeJazz.</string>
     <string name="error_icon_content_description">Errore</string>
     <string name="exo_controls_cc_disabled_description">Attiva i sottotitoli</string>
     <string name="exo_controls_cc_enabled_description">Disattiva i sottotitoli</string>

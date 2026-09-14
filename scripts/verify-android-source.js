@@ -18,27 +18,51 @@ function verifySource() {
     }
   }
   visit(app);
-  const protectedFiles = files.sort().filter(file => !source.brandingFiles.includes(file));
+  const customizationFiles = files.filter(file =>
+    /^res\/values[^/]*\/strings\.xml$/.test(file) ||
+    file === "smali_classes6/com/deezer/feature/search/datasource/model/SearchHomeChannelItemModel.smali");
+  const editableFiles = new Set([...source.brandingFiles, ...customizationFiles]);
+  const protectedFiles = files.sort().filter(file => !editableFiles.has(file));
   const fingerprint = sha256(protectedFiles.map(file =>
     `${file}\0${sha256(fs.readFileSync(path.join(app, file)))}\n`).join(""));
   if (protectedFiles.length !== source.protectedFileCount || fingerprint !== source.protectedFilesSha256) {
     throw new Error("Files outside the Android branding scope changed. Restore the decoded application logic/resources.");
   }
+  const customizationFingerprint = sha256(customizationFiles.sort().map(file =>
+    `${file}\0${sha256(fs.readFileSync(path.join(app, file)))}\n`).join(""));
+  if (customizationFiles.length !== source.customizationFileCount ||
+      customizationFingerprint !== source.customizationFilesSha256) {
+    throw new Error("Android strings or Search genre color customization changed unexpectedly.");
+  }
   const strings = fs.readFileSync(path.join(app, "res/values/strings.xml"), "utf8");
   for (const key of ["app_name", "app_name_base"]) {
-    if (!strings.includes(`<string name="${key}">DeeJazz</string>`)) {
-      throw new Error(`Android ${key} must be DeeJazz.`);
+    if (!strings.includes(`<string name="${key}">ryahconstantino.github.io.deejazz</string>`)) {
+      throw new Error(`Android ${key} has an unexpected application label.`);
     }
   }
-  const restoredNames = strings.replace(
-    /(<string name="(?:app_name|app_name_base)">)DeeJazz(<\/string>)/g, "$1Deezer$2");
-  if (sha256(restoredNames) !== source.originalStringsSha256) {
-    throw new Error("Android strings changed beyond the two application name resources.");
+  for (const file of customizationFiles.filter(file => file.endsWith("strings.xml"))) {
+    const localized = fs.readFileSync(path.join(app, file), "utf8");
+    const visibleText = localized.split(/(<[^>]+>)/g)
+      .filter(part => !part.startsWith("<"))
+      .join("")
+      .replace(/(?:www\.)?deezer\.com/gi, "");
+    if (/deezer/i.test(visibleText)) {
+      throw new Error(`Legacy Deezer branding remains in ${file}.`);
+    }
+    const freePlanValues = [...localized.matchAll(
+      /<string name="dz_deezerplans_title_deezerfree(?:UPP)?_mobile">([^<]*)<\/string>/g)];
+    if (freePlanValues.some(match => match[1] !== "")) {
+      throw new Error(`The Deezer Free label was not removed from ${file}.`);
+    }
+    if (localized.includes('name="dz_legacy_title_labs"') &&
+        !/<string name="dz_legacy_title_labs">DeeJazz Labs<\/string>/.test(localized)) {
+      throw new Error(`The DeeJazz Labs label is missing from ${file}.`);
+    }
   }
   for (const file of source.brandingFiles) {
     if (!fs.existsSync(path.join(app, file))) throw new Error(`Missing branding resource: ${file}`);
   }
-  console.log(`Android source verified: ${protectedFiles.length} files unchanged; edits limited to branding.`);
+  console.log(`Android source verified: ${protectedFiles.length} protected files unchanged; ${customizationFiles.length} customizations matched.`);
 }
 
 if (require.main === module) verifySource();
