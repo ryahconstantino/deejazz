@@ -793,8 +793,8 @@
     <dimen name="message_three_cta_inner_margin">16.0dp</dimen>
     <dimen name="message_three_cta_outer_margin">32.0dp</dimen>
     <dimen name="mini_player_button_size">56.0dp</dimen>
-    <dimen name="mini_player_collapsed_button_end_margin">8.0dp</dimen>
-    <dimen name="mini_player_collapsed_button_end_width">42.0dp</dimen>
+    <dimen name="mini_player_collapsed_button_end_margin">4.0dp</dimen>
+    <dimen name="mini_player_collapsed_button_end_width">48.0dp</dimen>
     <dimen name="mini_player_favorites_toast_horizontal_position">0.0</dimen>
     <dimen name="mini_player_favorites_toast_vertical_position">0.2</dimen>
     <dimen name="mini_player_height">48.0dp</dimen>
@@ -1282,7 +1282,7 @@
     <dimen name="settings_item_content_vertical_margin">12.0dp</dimen>
     <dimen name="settings_item_horizontal_padding">16.0dp</dimen>
     <dimen name="settings_item_icon_size">32.0dp</dimen>
-    <dimen name="settings_item_info_vertical_margin">6.0dp</dimen>
+    <dimen name="settings_item_info_vertical_margin">8.0dp</dimen>
     <dimen name="settings_item_separator_size">1.0dp</dimen>
     <dimen name="settings_list_padding">0.0dp</dimen>
     <dimen name="settings_profile__big_picture_half_size">32.0dp</dimen>

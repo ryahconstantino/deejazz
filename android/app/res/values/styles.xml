@@ -6674,12 +6674,14 @@
     <style name="h2">
         <item name="android:textSize">20.0sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">@font/deezer_font</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="lineHeight">24.0sp</item>
     </style>
     <style name="h3">
         <item name="android:textSize">18.0sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">@font/deezer_font</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="lineHeight">24.0sp</item>
     </style>
     <style name="notificationsCenterPinnedButton">
         <item name="android:textSize">12.0sp</item>
@@ -6695,6 +6697,7 @@
     <style name="p1">
         <item name="android:textSize">@dimen/scaled_16sp</item>
         <item name="android:fontFamily">sans-serif</item>
+        <item name="lineHeight">24.0sp</item>
     </style>
     <style name="p2">
         <item name="android:textSize">@dimen/scaled_14sp</item>
@@ -6704,6 +6707,7 @@
     <style name="p3">
         <item name="android:textSize">@dimen/scaled_14sp</item>
         <item name="android:fontFamily">sans-serif</item>
+        <item name="lineHeight">20.0sp</item>
     </style>
     <style name="p4">
         <item name="android:textSize">@dimen/scaled_12sp</item>
