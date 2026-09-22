@@ -170,71 +170,7 @@
 
     const/4 v7, 0x1
 
-    new-instance v3, Lqd3;
-
-    const/4 v7, 0x3
-
-    invoke-static {v0}, Lhx1;->a(Ljava/util/Vector;)Ljava/lang/CharSequence;
-
-    move-result-object v0
-
-    const/4 v7, 0x7
-
-    invoke-virtual {p0}, Lagb;->i()Landroid/content/Context;
-
-    move-result-object v4
-
-    const/4 v7, 0x3
-
-    const v5, 0x7f120155
-
-    const/4 v7, 0x4
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    const/4 v7, 0x7
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x6
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    const/4 v7, 0x0
-
-    aput-object v1, v2, v6
-
-    const/4 v7, 0x4
-
-    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    const/4 v7, 0x4
-
-    invoke-virtual {v1, v5, v2}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v7, 0x3
-
-    new-instance v2, Lnm0$a;
-
-    const/4 v7, 0x5
-
-    invoke-direct {v2, p0}, Lnm0$a;-><init>(Lnm0;)V
-
-    invoke-direct {v3, v0, v1, v2}, Lqd3;-><init>(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lla0;)V
-
-    const/4 v7, 0x6
-
     iget-object v0, p0, Lcm0;->j:Ljava/util/List;
-
-    const/4 v7, 0x6
-
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     # Project credit only; keep the original licensing section below.
     new-instance v3, Lqd3;
