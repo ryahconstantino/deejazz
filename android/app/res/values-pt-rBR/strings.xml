@@ -1847,7 +1847,7 @@ O download ocorrerá de modo padrão via conexão Wi-Fi."</string>
     <string name="dz_masthead_title_releasedalbum_mobile">Lançamento</string>
     <string name="dz_masthead_title_updatedplaylist_mobile">Atualizado</string>
     <string name="dz_menutab_title_favoritesUPP_mobile">FAVORITOS</string>
-    <string name="dz_menutab_title_favorites_mobile">Favoritos</string>
+    <string name="dz_menutab_title_favorites_mobile">Biblioteca</string>
     <string name="dz_menutab_title_musicUPP_mobile">MÚSICA</string>
     <string name="dz_menutab_title_music_mobile">Música</string>
     <string name="dz_menutab_title_premium_mobile">Premium</string>

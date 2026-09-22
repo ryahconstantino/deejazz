@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:icon="@drawable/ic_tab_home" android:id="@id/home_item" android:title="@string/dz_menutab_title_music_mobile" app:showAsAction="always" />
-    <item android:icon="@drawable/ic_tab_shows" android:id="@id/podcasts_item" android:title="@string/dz_legacy_title_talk_library" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_tab_home" android:id="@id/home_item" android:title="@string/dz_legacy_tab_home" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_tab_shows" android:id="@id/podcasts_item" android:title="@string/dz_legacy_title_explore" app:showAsAction="always" />
     <item android:icon="@drawable/ic_tab_mymusic" android:id="@id/my_music_item" android:title="@string/dz_menutab_title_favorites_mobile" app:showAsAction="always" />
     <item android:icon="@drawable/ic_tab_search" android:id="@id/search_item" android:title="@string/dz_legacy_tab_search" app:showAsAction="always" />
-    <item android:icon="@drawable/ic_tab_premium" android:id="@id/premium_item" android:title="@string/dz_menutab_title_premium_mobile" app:showAsAction="always" />
 </menu>

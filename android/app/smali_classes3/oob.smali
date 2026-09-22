@@ -85,9 +85,9 @@
 
     const/4 v3, 0x1
 
-    const v4, 0x7f080494
+    const v4, 0x7f080493
 
-    const v5, 0x7f12074d
+    const v5, 0x7f12061b
 
     const-string v6, "hmse/"
 
@@ -113,7 +113,7 @@
 
     const v12, 0x7f080499
 
-    const v13, 0x7f120705
+    const v13, 0x7f12067c
 
     const-string v14, "soh/ow"
 

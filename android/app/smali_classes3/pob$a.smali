@@ -297,14 +297,6 @@
     if-eqz v3, :cond_6
 
     :cond_5
-    const/4 v4, 0x6
-
-    sget-object v1, Loob;->i:Loob;
-
-    const/4 v4, 0x7
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
     :cond_6
     const/4 v4, 0x6
 

@@ -134,7 +134,7 @@
     <dimen name="artist_page_ad_banner_margin_top">16.0dp</dimen>
     <dimen name="bitmap_transformation_shadow_thickness">2.0dp</dimen>
     <dimen name="bitmap_transformation_top_offset">1.0dp</dimen>
-    <dimen name="bottom_bar_height">56.0dp</dimen>
+    <dimen name="bottom_bar_height">74.0dp</dimen>
     <dimen name="bottom_sheet_context_menu_corner_radius">16.0dp</dimen>
     <dimen name="bottom_sheet_context_menu_entry_halfVerticalMargin">6.0dp</dimen>
     <dimen name="bottom_sheet_context_menu_entry_height">44.0dp</dimen>

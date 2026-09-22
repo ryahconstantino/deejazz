@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="true" android:drawable="@drawable/icon_heart_fill_medium" />
-    <item android:drawable="@drawable/icon_heart_medium" />
+    <item android:state_checked="true" android:drawable="@drawable/icon_square_note_stack_fill_medium" />
+    <item android:drawable="@drawable/icon_square_note_stack_medium" />
 </selector>

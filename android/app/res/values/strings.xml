@@ -1903,7 +1903,7 @@ Downloading will occur over WiFi by default."</string>
     <string name="dz_masthead_title_releasedalbum_mobile">Released</string>
     <string name="dz_masthead_title_updatedplaylist_mobile">Updated</string>
     <string name="dz_menutab_title_favoritesUPP_mobile">FAVORITES</string>
-    <string name="dz_menutab_title_favorites_mobile">Favorites</string>
+    <string name="dz_menutab_title_favorites_mobile">Library</string>
     <string name="dz_menutab_title_musicUPP_mobile">MUSIC</string>
     <string name="dz_menutab_title_music_mobile">Music</string>
     <string name="dz_menutab_title_premium_mobile">Premium</string>
