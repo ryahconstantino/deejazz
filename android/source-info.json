@@ -20,7 +20,7 @@
   "protectedFileCount": 42354,
   "protectedFilesSha256": "6a7c202279702e07df8122595d323c594fcf15619d2b2c78a976ea502a1a3908",
   "customizationFileCount": 88,
-  "customizationFilesSha256": "bf86d7ba74fc9611ab0537726ec11bc656f7950a0374158c42219abaadf3b9a5",
+  "customizationFilesSha256": "b0ab1c8a60f253c9af43342ad62cec665b179b5dae44e9b078895481b7232b39",
   "uiFiles": [
     "res/drawable/deejazz_symbol_white.xml",
     "res/drawable/ic_settings_about.xml",

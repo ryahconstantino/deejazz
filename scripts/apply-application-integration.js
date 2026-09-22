@@ -12,7 +12,7 @@ const updaterSource = path.join(projectRoot, "scripts", "desktop", "auto-update.
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v23";
+const integrationRevision = "deejazz-desktop-v24";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/";
 const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
@@ -321,11 +321,17 @@ function patchWrapper(wrapper, locales, panelMessages) {
       'const { promptManualUpdate } = require("./deejazz-auto-update");\nconst APP_USER_MODEL_ID = "com.deejazz.desktop";',
     );
   }
-  if (!result.includes("dialog,") || !result.includes("  dialog,\n} = require(\"electron\");")) {
-    result = result.replace(
-      "  session,\n  shell,\n} = require(\"electron\");",
-      "  dialog,\n  session,\n  shell,\n} = require(\"electron\");",
-    );
+  // Collapse any duplicate dialog entry left by earlier revisions, then add
+  // it only when the Electron destructure does not declare it yet.
+  result = result.split("  dialog,\n  dialog,\n").join("  dialog,\n");
+  {
+    const electronDestructure = result.match(/const \{([\s\S]*?)\} = require\("electron"\);/);
+    if (electronDestructure && !/[,\s]dialog,/.test(electronDestructure[1])) {
+      result = result.replace(
+        "  session,\n  shell,\n} = require(\"electron\");",
+        "  dialog,\n  session,\n  shell,\n} = require(\"electron\");",
+      );
+    }
   }
 
   const menuIdsStart = result.indexOf("const MENU_IDS = Object.freeze({");

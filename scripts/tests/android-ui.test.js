@@ -58,6 +58,10 @@ test('settings presentation follows the reference hierarchy without replacing De
   assert.match(read('android/app/res/values-night/deejazz_ui.xml'), /name="deejazz_settings_surface">#141216/);
 });
 
+test('Settings no longer builds the Developer row', () => {
+  assert.doesNotMatch(read('android/app/smali/zo0.smali'), /settings\.v2\.developer/);
+});
+
 test('Settings offers a manual update check instead of forcing updates', () => {
   const settings = read('android/app/smali/zo0.smali');
   assert.match(settings, /LDeeJazzUpdateCheck;-><init>/);
@@ -72,5 +76,5 @@ test('Settings offers a manual update check instead of forcing updates', () => {
   assert.doesNotMatch(desktop, /startAutomaticUpdate|performAutomaticUpdate/);
   const integration = read('scripts/apply-application-integration.js');
   assert.match(integration, /checkForUpdatesManually/);
-  assert.match(integration, /deejazz-desktop-v23/);
+  assert.match(integration, /deejazz-desktop-v24/);
 });

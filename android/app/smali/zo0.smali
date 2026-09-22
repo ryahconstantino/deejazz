@@ -1459,36 +1459,6 @@
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    new-instance v0, Lbd3;
-
-    const-string v1, "e.edgb.o2evpnirtestls"
-
-    const-string v1, "settings.v2.developer"
-
-    invoke-static {v1}, Loy;->l0(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    const v3, 0x7f080463
-
-    new-instance v4, Lfp0;
-
-    invoke-direct {v4, p0}, Lfp0;-><init>(Lzo0;)V
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x1
-
-    move-object v1, v0
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v6}, Lbd3;-><init>(Ljava/lang/CharSequence;ILla0;ZZ)V
-
-    iget-object v1, p0, Lcm0;->j:Ljava/util/List;
-
-    invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
     invoke-virtual {p0}, Lcm0;->N0()V
 
     new-instance v0, Ljd3;
