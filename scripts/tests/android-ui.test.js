@@ -80,10 +80,12 @@ test('Settings offers a manual update check instead of forcing updates', () => {
   assert.doesNotMatch(desktop, /startAutomaticUpdate|performAutomaticUpdate/);
   const integration = read('scripts/apply-application-integration.js');
   assert.match(integration, /checkForUpdatesManually/);
-  assert.match(integration, /deejazz-desktop-v25/);
+  assert.match(integration, /deejazz-desktop-v26/);
   assert.match(integration, /injectUpdateMenuItem/);
   assert.match(integration, /return "Check for Updates";/);
   assert.match(integration, /entry\.role === "help"/);
+  assert.match(integration, /"com\.deezer\.deezer-desktop"/);
+  assert.match(integration, /AppUserModelID/);
 });
 
 test('Update row icon follows the blue-circle standard with a smaller glyph', () => {

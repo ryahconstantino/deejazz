@@ -12,7 +12,7 @@ const updaterSource = path.join(projectRoot, "scripts", "desktop", "auto-update.
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v25";
+const integrationRevision = "deejazz-desktop-v26";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/";
 const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
@@ -278,7 +278,10 @@ function patchMain(main) {
   let result = main;
   result = result.split(previousProjectUrl).join(projectUrl);
   result = result.split(legacyBrand).join("DeeJazz");
-  result = result.replace(/com\.deejazz\.deejazz-desktop/g, "com.deejazz.desktop");
+  // The taskbar groups windows by AppUserModelID, and the NSIS installer
+  // stamps shortcuts with the build appId. Both must be com.deezer.desktop
+  // or pins detach on every update.
+  result = result.split('"com.deezer.deezer-desktop"').join('"com.deezer.desktop"');
   result = result.split(`.config/${legacyBrandLower}-desktop`).join(".config/deejazz");
   result = result.split(`menu_hide-${legacyBrandLower}_label`).join("menu_hide-deejazz_label");
   result = result.split(`menu_quit-${legacyBrandLower}_label`).join("menu_quit-deejazz_label");
@@ -750,10 +753,13 @@ async function main() {
     const verificationMain = extractFile(rebuiltAsar, "build/main-with-ubol.js").toString("utf8");
     const verificationMetadata = JSON.parse(extractFile(rebuiltAsar, "package.json").toString("utf8"));
     const verificationUpdater = extractFile(rebuiltAsar, "build/deejazz-auto-update.js").toString("utf8");
+    const verificationVendor = extractFile(rebuiltAsar, "build/main.js").toString("utf8");
     if (!verificationMain.includes(integrationRevision) || verificationMetadata.version !== version ||
         !verificationMain.includes("checkForUpdatesManually") ||
         verificationMain.includes("startAutomaticUpdate(app, log);") ||
-        !verificationUpdater.includes("promptManualUpdate")) {
+        !verificationUpdater.includes("promptManualUpdate") ||
+        !verificationVendor.includes('"com.deezer.desktop"') ||
+        verificationVendor.includes("com.deezer.deezer-desktop")) {
       throw new Error("The rebuilt application failed integration verification.");
     }
     fs.copyFileSync(rebuiltAsar, sourceAsar);
