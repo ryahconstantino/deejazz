@@ -1247,7 +1247,7 @@
 
     invoke-direct {v8, v2}, LDeeJazzUpdateCheck;-><init>(Landroid/app/Activity;)V
 
-    const v7, 0x7f08025c
+    const v7, 0x7f0807f2
 
     const/4 v9, 0x0
 

@@ -78,3 +78,21 @@ test('Settings offers a manual update check instead of forcing updates', () => {
   assert.match(integration, /checkForUpdatesManually/);
   assert.match(integration, /deejazz-desktop-v24/);
 });
+
+test('Update row icon follows the blue-circle standard with a smaller glyph', () => {
+  assert.match(read('android/app/smali/zo0.smali'), /const v7, 0x7f0807f2/);
+  const button = read('android/app/res/drawable/ic_settings_update.xml');
+  assert.match(button, /@color\/palette_blue_700/);
+  assert.match(button, /@drawable\/ic_download_white/);
+  assert.match(button, /android:left="6\.0dp"/);
+  const glyph = read('android/app/res/drawable/ic_download_white.xml');
+  assert.match(glyph, /android:fillColor="#ffffffff"/);
+});
+
+test('Mini-player clears the taller bottom bar and settings shows the user photo', () => {
+  assert.match(read('android/app/res/values/dimens.xml'), /name="mini_player_ng_height_bottom_tabbar">130\.0dp/);
+  assert.match(
+    read('android/app/res/layout/settings_item_name_followers_left_photo.xml'),
+    /android:id="@id\/settings_item_icon"[^>]*app:srcCompat="@null"/,
+  );
+});

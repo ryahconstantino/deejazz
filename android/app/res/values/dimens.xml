@@ -799,7 +799,7 @@
     <dimen name="mini_player_favorites_toast_vertical_position">0.2</dimen>
     <dimen name="mini_player_height">48.0dp</dimen>
     <dimen name="mini_player_ng_height">56.0dp</dimen>
-    <dimen name="mini_player_ng_height_bottom_tabbar">112.0dp</dimen>
+    <dimen name="mini_player_ng_height_bottom_tabbar">130.0dp</dimen>
     <dimen name="mini_player_title_subtitle_margin">1.0dp</dimen>
     <dimen name="mosaic_divider_margin_bottom">0.0dp</dimen>
     <dimen name="mosaic_divider_margin_top">12.0dp</dimen>
