@@ -172,10 +172,33 @@
 
     iget-object v0, p0, Lcm0;->j:Ljava/util/List;
 
-    # Project credit only; keep the original licensing section below.
-    new-instance v3, Lqd3;
+    # Project credit plus release version; versionName tracks the DeeJazz release.
     const-string v1, "DeeJazz"
     const-string v2, "Ryan Constantino"
+    invoke-virtual {p0}, Lagb;->i()Landroid/content/Context;
+    move-result-object v4
+    invoke-virtual {v4}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    move-result-object v4
+    invoke-virtual {p0}, Lagb;->i()Landroid/content/Context;
+    move-result-object v5
+    invoke-virtual {v5}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+    move-result-object v5
+    const/4 v6, 0x0
+    invoke-virtual {v4, v5, v6}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    move-result-object v4
+    iget-object v4, v4, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
+    new-instance v5, Ljava/lang/StringBuilder;
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
+    const-string v6, " \u2022 v"
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
+    new-instance v3, Lqd3;
     const/4 v4, 0x0
     invoke-direct {v3, v1, v2, v4}, Lqd3;-><init>(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lla0;)V
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z

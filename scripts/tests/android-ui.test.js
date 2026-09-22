@@ -38,6 +38,7 @@ test('About uses the white background-free DeeJazz symbol and credits Ryan Const
   assert.match(symbol, /android:fillColor="#00000000"/);
   assert.doesNotMatch(symbol, /<bitmap|deejazz_launcher_art/);
   assert.match(read('android/app/smali/nm0.smali'), /const-string v2, "Ryan Constantino"/);
+  assert.match(read('android/app/smali/nm0.smali'), /PackageInfo;->versionName/);
   assert.doesNotMatch(read('android/app/res/drawable/ic_settings_about.xml'), /android:id="@id\/ic_icon"/);
   assert.match(read('android/app/res/drawable/icon_deezer_logo_fill_small.xml'), /deejazz_launcher_art/);
   for (const file of ['compact.svg', 'compact-icon.svg']) {
@@ -86,6 +87,7 @@ test('Update row icon follows the blue-circle standard with a smaller glyph', ()
   assert.match(read('android/app/smali/zo0.smali'), /const v7, 0x7f0807f2/);
   const button = read('android/app/res/drawable/ic_settings_update.xml');
   assert.match(button, /@color\/palette_blue_700/);
+  assert.match(button, /android:id="@id\/ic_icon"/);
   assert.match(button, /@drawable\/ic_download_white/);
   assert.match(button, /android:left="6\.0dp"/);
   const glyph = read('android/app/res/drawable/ic_download_white.xml');
