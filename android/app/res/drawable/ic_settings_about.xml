@@ -6,6 +6,6 @@
             <solid android:color="@color/palette_blue_700" />
         </shape>
     </item>
-    <!-- No ic_icon layer ID: the Settings binder tints that layer white. -->
-    <item android:drawable="@drawable/icon_deezer_logo_fill_small" android:left="2.0dp" android:top="2.0dp" android:right="2.0dp" android:bottom="2.0dp" />
+    <!-- White DeeJazz symbol, no black launcher tile or wordmark. -->
+    <item android:drawable="@drawable/deejazz_symbol_white" android:left="2.0dp" android:top="2.0dp" android:right="2.0dp" android:bottom="2.0dp" />
 </layer-list>

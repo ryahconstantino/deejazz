@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DeeJazz's seven rounded equalizer bars, without a background or wordmark. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="256" android:viewportHeight="256">
+    <path android:fillColor="#00000000" android:strokeColor="#ffffffff"
+        android:strokeWidth="19" android:strokeLineCap="round"
+        android:pathData="M51,167 L51,182 M77,130 L77,182 M102,89 L102,182 M128,74 L128,182 M154,89 L154,182 M179,130 L179,182 M205,167 L205,182" />
+</vector>

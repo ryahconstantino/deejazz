@@ -31,11 +31,29 @@ test('Account and About no longer build the unwanted rows', () => {
   assert.ok(!copyright.includes('.com'));
 });
 
-test('About uses the colorful shared mark and stacked artwork is removed', () => {
-  assert.match(read('android/app/res/drawable/ic_settings_about.xml'), /icon_deezer_logo_fill_small/);
+test('About uses the white background-free DeeJazz symbol and credits Ryan Constantino', () => {
+  assert.match(read('android/app/res/drawable/ic_settings_about.xml'), /deejazz_symbol_white/);
+  const symbol = read('android/app/res/drawable/deejazz_symbol_white.xml');
+  assert.match(symbol, /android:strokeColor="#ffffffff"/);
+  assert.match(symbol, /android:fillColor="#00000000"/);
+  assert.doesNotMatch(symbol, /<bitmap|deejazz_launcher_art/);
+  assert.match(read('android/app/smali/nm0.smali'), /const-string v2, "Ryan Constantino"/);
   assert.doesNotMatch(read('android/app/res/drawable/ic_settings_about.xml'), /android:id="@id\/ic_icon"/);
   assert.match(read('android/app/res/drawable/icon_deezer_logo_fill_small.xml'), /deejazz_launcher_art/);
   for (const file of ['compact.svg', 'compact-icon.svg']) {
     assert.equal(fs.existsSync(path.resolve(__dirname, '../../android/branding', file)), false);
   }
+});
+
+test('settings presentation follows the reference hierarchy without replacing DeeJazz branding', () => {
+  const layout = read('android/app/res/layout/fragment_settings_list.xml');
+  assert.match(layout, /@color\/deejazz_settings_surface/);
+  assert.match(layout, /@color\/deejazz_settings_toolbar/);
+  assert.match(layout, /@style\/DeeJazz.Settings.Title/);
+  assert.doesNotMatch(layout, /@dimen\/toolbar_elevation/);
+  const style = read('android/app/res/values/deejazz_ui.xml');
+  assert.match(style, /name="deejazz_settings_surface">#ffffff/);
+  assert.match(style, /name="android:fontFamily">sans-serif/);
+  assert.doesNotMatch(style, /deezer_font|purplelight|tempo_color|theme_accent_primary/);
+  assert.match(read('android/app/res/values-night/deejazz_ui.xml'), /name="deejazz_settings_surface">#141216/);
 });

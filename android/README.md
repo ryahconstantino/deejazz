@@ -31,8 +31,10 @@ and carrier variants use this artwork; the adaptive icon adds transparent
 padding and a black background to preserve the symbol under Android masks.
 
 `branding/wordmark.svg` contains the spaced, outlined DeeJazz wordmark, with no
-font dependency. Small in-app logos and the About button use the shared colorful
-launcher symbol without lettering. The old stacked wordmark is removed. These
+font dependency. Small in-app logos use the shared colorful launcher symbol.
+The About button uses a white vector of the same seven-bar DeeJazz symbol, with
+transparent background and no black launcher tile. The About page credits Ryan
+Constantino. The old stacked wordmark is removed. These
 resources include native vector drawables and raster PNG/WebP fallbacks. Light
 screens use a dark wordmark for contrast.
 

@@ -236,6 +236,14 @@
 
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
+    # Project credit only; keep the original licensing section below.
+    new-instance v3, Lqd3;
+    const-string v1, "DeeJazz"
+    const-string v2, "Ryan Constantino"
+    const/4 v4, 0x0
+    invoke-direct {v3, v1, v2, v4}, Lqd3;-><init>(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lla0;)V
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
     const/4 v7, 0x3
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="vertical" android:id="@id/settings_item_two_lines_content" android:layout_width="match_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="@style/p1" android:textColor="@color/theme_text_primary_statelist" android:gravity="start|bottom" android:id="@id/settings_item_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" android:textAlignment="viewStart" />
-    <TextView android:textAppearance="@style/p3" android:textColor="@color/theme_text_secondary" android:gravity="start|top" android:id="@id/settings_item_subtitle" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" android:textAlignment="viewStart" />
+    <TextView android:textAppearance="@style/DeeJazz.Settings.Body" android:textColor="@color/theme_text_primary_statelist" android:gravity="start|bottom" android:id="@id/settings_item_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" android:textAlignment="viewStart" />
+    <TextView android:textAppearance="@style/DeeJazz.Settings.Caption" android:textColor="@color/theme_text_secondary" android:gravity="start|top" android:id="@id/settings_item_subtitle" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" android:textAlignment="viewStart" />
 </LinearLayout>

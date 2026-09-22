@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Presentation-only adaptation; DeeJazz accents and assets remain unchanged. -->
+    <color name="deejazz_settings_surface">#ffffff</color>
+    <color name="deejazz_settings_toolbar">#f5f2f8</color>
+    <style name="DeeJazz" />
+    <style name="DeeJazz.Settings" parent="@style/DeeJazz" />
+    <style name="DeeJazz.Settings.Title" parent="@style/DeeJazz.Settings">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+        <item name="lineHeight">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/theme_text_primary</item>
+    </style>
+    <style name="DeeJazz.Settings.Body" parent="@style/p1">
+        <item name="android:textSize">16sp</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+    <style name="DeeJazz.Settings.Caption" parent="@style/p3">
+        <item name="android:textSize">14sp</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+</resources>

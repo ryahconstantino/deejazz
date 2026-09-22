@@ -46,7 +46,7 @@ public final class UiTest extends Instrumentation {
             });
             waitForIdleSync();
             screenshot("genres-all");
-            result.putString("stream", "PASS: real Search binding, 6-card preview, all genres, callback, empty/short lists, remote offer labels\n");
+            result.putString("stream", "PASS: About author credit, white transparent symbol, real Search binding, 6-card preview, all genres, callback, empty/short lists, remote offer labels\n");
             finish(Activity.RESULT_OK, result);
         } catch (Throwable error) {
             result.putString("stream", android.util.Log.getStackTraceString(error));
@@ -54,12 +54,29 @@ public final class UiTest extends Instrumentation {
         }
     }
     private void test(Activity activity) throws Exception {
+        check(hasText(activity.getWindow().getDecorView(), "Ryan Constantino"), "About project credit missing");
         android.widget.ImageView icon = new android.widget.ImageView(activity);
         icon.setImageResource(activity.getResources().getIdentifier("ic_settings_about", "drawable", activity.getPackageName()));
         Class.forName("dtb").getMethod("Z1", android.widget.ImageView.class, int.class, int.class)
             .invoke(null, icon, 0x7f0a03a9, 0x7f0602ab);
         android.graphics.drawable.LayerDrawable layers = (android.graphics.drawable.LayerDrawable) icon.getDrawable();
-        check(layers.findDrawableByLayerId(0x7f0a03a9) == null, "About symbol must not receive white tint");
+        check(layers.findDrawableByLayerId(0x7f0a03a9) == null, "About symbol should use its own white vector");
+        android.graphics.drawable.Drawable symbol = activity.getResources().getDrawable(
+            activity.getResources().getIdentifier("deejazz_symbol_white", "drawable", activity.getPackageName()));
+        android.graphics.Bitmap silhouette = android.graphics.Bitmap.createBitmap(256, 256, android.graphics.Bitmap.Config.ARGB_8888);
+        symbol.setBounds(0, 0, 256, 256);
+        symbol.draw(new android.graphics.Canvas(silhouette));
+        int opaque = 0;
+        for (int y = 0; y < 256; y++) for (int x = 0; x < 256; x++) {
+            int pixel = silhouette.getPixel(x, y);
+            if (android.graphics.Color.alpha(pixel) > 0) {
+                check((pixel & 0xffffff) == 0xffffff, "Symbol contains a non-white pixel");
+                opaque++;
+            }
+        }
+        check(opaque > 1000 && opaque < 20000, "Symbol background is not transparent");
+        check(silhouette.getPixel(0, 0) == 0, "Symbol corner must be transparent");
+        silhouette.recycle();
         android.graphics.Bitmap mark = android.graphics.Bitmap.createBitmap(128, 128, android.graphics.Bitmap.Config.ARGB_8888);
         layers.setBounds(0, 0, 128, 128);
         layers.draw(new android.graphics.Canvas(mark));
@@ -126,6 +143,13 @@ public final class UiTest extends Instrumentation {
             if (found != null) return found;
         }
         return null;
+    }
+    private static boolean hasText(View view, String expected) {
+        if (view instanceof TextView && ((TextView) view).getText().toString().contains(expected)) return true;
+        if (view instanceof ViewGroup) for (int i = 0; i < ((ViewGroup) view).getChildCount(); i++) {
+            if (hasText(((ViewGroup) view).getChildAt(i), expected)) return true;
+        }
+        return false;
     }
     private void screenshot(String name) throws Exception {
         Thread.sleep(500); // Allow the window animation and rendering frame to finish.
