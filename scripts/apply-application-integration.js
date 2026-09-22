@@ -12,7 +12,7 @@ const updaterSource = path.join(projectRoot, "scripts", "desktop", "auto-update.
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v22";
+const integrationRevision = "deejazz-desktop-v23";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/";
 const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
@@ -190,6 +190,43 @@ function updateUbolMenu(state = getUbolState()) {
   if (versionItem) versionItem.label = ubolVersionMenuLabel(state);
 }
 
+function updateMenuLabel() {
+  return UBOL_LOCALE.startsWith("pt") ? "Verificar atualizações…" : "Check for Updates…";
+}
+
+async function checkForUpdatesManually() {
+  const { promptManualUpdate } = require("./deejazz-auto-update");
+  const portuguese = UBOL_LOCALE.startsWith("pt");
+  const currentWindow = BrowserWindow.getFocusedWindow();
+  const show = (options) => dialog.showMessageBox(currentWindow, options);
+  try {
+    await promptManualUpdate(app, {
+      notifyUpToDate: () => show({
+        type: "info",
+        title: "DeeJazz",
+        message: portuguese ? "O DeeJazz já está atualizado." : "DeeJazz is already up to date.",
+      }),
+      confirmUpdate: async (update) => (await show({
+        type: "question",
+        title: "DeeJazz",
+        message: portuguese
+          ? \`A versão \${update.version} está disponível. Deseja baixar e atualizar agora?\`
+          : \`Version \${update.version} is available. Download and update now?\`,
+        buttons: portuguese ? ["Atualizar", "Agora não"] : ["Update now", "Later"],
+        defaultId: 0,
+        cancelId: 1,
+      })).response === 0,
+      notifySkipped: () => show({
+        type: "warning",
+        title: "DeeJazz",
+        message: portuguese ? "Não foi possível verificar atualizações." : "Could not check for updates.",
+      }),
+    }, log);
+  } catch (error) {
+    log.warn?.("DeeJazz: manual update check failed.", error);
+  }
+}
+
 function injectUbolMenu(menu) {
   if (!menu || menu.getMenuItemById(MENU_IDS.root)) return menu;
 
@@ -211,6 +248,16 @@ function injectUbolMenu(menu) {
       id: MENU_IDS.version,
       label: ubolVersionMenuLabel(state),
       enabled: false,
+    },
+    {
+      type: "separator",
+    },
+    {
+      id: MENU_IDS.update,
+      label: updateMenuLabel(),
+      click: () => {
+        void checkForUpdatesManually();
+      },
     },
   ]);
   const menuItem = new MenuItem({
@@ -265,10 +312,19 @@ function patchWrapper(wrapper, locales, panelMessages) {
       result = result.replace(marker, `${marker}\n${localeRuntimeSource(locales, panelMessages)}`);
     }
   }
+  result = result
+    .split('const { startAutomaticUpdate } = require("./deejazz-auto-update");')
+    .join('const { promptManualUpdate } = require("./deejazz-auto-update");');
   if (!result.includes('require("./deejazz-auto-update")')) {
     result = result.replace(
       'const APP_USER_MODEL_ID = "com.deejazz.desktop";',
-      'const { startAutomaticUpdate } = require("./deejazz-auto-update");\nconst APP_USER_MODEL_ID = "com.deejazz.desktop";',
+      'const { promptManualUpdate } = require("./deejazz-auto-update");\nconst APP_USER_MODEL_ID = "com.deejazz.desktop";',
+    );
+  }
+  if (!result.includes("dialog,") || !result.includes("  dialog,\n} = require(\"electron\");")) {
+    result = result.replace(
+      "  session,\n  shell,\n} = require(\"electron\");",
+      "  dialog,\n  session,\n  shell,\n} = require(\"electron\");",
     );
   }
 
@@ -279,6 +335,7 @@ function patchWrapper(wrapper, locales, panelMessages) {
   root: "deejazz-ubol",
   enabled: "deejazz-ubol-enabled",
   version: "deejazz-ubol-version",
+  update: "deejazz-update-check",
 });${result.slice(menuIdsEnd + 3)}`;
 
   result = result.split(`An official ${legacyBrand} update would replace this customized app.asar.`).join("A vendor update would replace this customized app.asar.");
@@ -428,12 +485,9 @@ function patchWrapper(wrapper, locales, panelMessages) {
   contents.on("dom-ready", () => {`,
     );
   }
-  if (!result.includes("startAutomaticUpdate(app, log);")) {
-    result = result.replace(
-      "module.exports = main;",
-      "startAutomaticUpdate(app, log);\n\nmodule.exports = main;",
-    );
-  }
+  // Updates are manual-only: remove any legacy automatic update startup.
+  result = result.split("startAutomaticUpdate(app, log);\n\n").join("");
+  result = result.split("\nstartAutomaticUpdate(app, log);").join("");
   return result;
 }
 
@@ -687,8 +741,9 @@ async function main() {
     const verificationMetadata = JSON.parse(extractFile(rebuiltAsar, "package.json").toString("utf8"));
     const verificationUpdater = extractFile(rebuiltAsar, "build/deejazz-auto-update.js").toString("utf8");
     if (!verificationMain.includes(integrationRevision) || verificationMetadata.version !== version ||
-        !verificationMain.includes("startAutomaticUpdate(app, log);") ||
-        !verificationUpdater.includes("resolveAvailableUpdate")) {
+        !verificationMain.includes("checkForUpdatesManually") ||
+        verificationMain.includes("startAutomaticUpdate(app, log);") ||
+        !verificationUpdater.includes("promptManualUpdate")) {
       throw new Error("The rebuilt application failed integration verification.");
     }
     fs.copyFileSync(rebuiltAsar, sourceAsar);

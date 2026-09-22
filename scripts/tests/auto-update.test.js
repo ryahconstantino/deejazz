@@ -10,6 +10,7 @@ const {
   artifactName,
   checkForUpdate,
   compareVersions,
+  promptManualUpdate,
   resolveAvailableUpdate,
   verifyDownloadedAsset,
 } = require("../desktop/auto-update");
@@ -82,4 +83,39 @@ test("download verification checks both byte count and GitHub SHA-256", () => {
   } finally {
     fs.rmSync(directory, { recursive: true, force: true });
   }
+});
+
+test("manual checks report up-to-date without downloading anything", async () => {
+  const app = { isPackaged: true, getVersion: () => "1.2.8" };
+  let notified = 0;
+  const update = await promptManualUpdate(app, {
+    notifyUpToDate: () => { notified += 1; },
+    confirmUpdate: () => { throw new Error("must not ask when up to date"); },
+  }, console, async () => release("1.2.8", "linux", "x64"));
+  assert.equal(update, null);
+  assert.equal(notified, 1);
+});
+
+test("manual checks ask first and never install when declined", async () => {
+  const app = { isPackaged: true, getVersion: () => "1.2.7", quit: () => { throw new Error("must not quit"); } };
+  let asked = 0;
+  const update = await promptManualUpdate(app, {
+    confirmUpdate: (found) => {
+      asked += 1;
+      assert.equal(found.version, "1.2.8");
+      return false;
+    },
+  }, console, async () => release("1.2.8", "linux", "x64"));
+  assert.equal(update, null);
+  assert.equal(asked, 1);
+});
+
+test("manual check failures are reported instead of throwing", async () => {
+  const app = { isPackaged: true, getVersion: () => "1.2.7" };
+  let skipped = 0;
+  const update = await promptManualUpdate(app, {
+    notifySkipped: () => { skipped += 1; },
+  }, console, async () => { throw new Error("offline"); });
+  assert.equal(update, null);
+  assert.equal(skipped, 1);
 });

@@ -1,12 +1,18 @@
 package io.github.ryahconstantino.deejazz.update;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Application;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -21,6 +27,7 @@ import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.security.MessageDigest;
+import java.util.Locale;
 
 public final class GitHubUpdateManager {
     private static final String TAG = "DeeJazzUpdater";
@@ -29,47 +36,158 @@ public final class GitHubUpdateManager {
     private static final String RELEASE_API = "__DEEJAZZ_UPDATE_API__";
     private static final boolean TEST_MODE = __DEEJAZZ_UPDATE_TEST_MODE__;
     private static boolean started;
+    private static boolean checking;
+    private static volatile Activity foregroundActivity;
 
     private GitHubUpdateManager() {}
 
     public static synchronized void start(final Context context) {
         if (started || !PACKAGE_NAME.equals(context.getPackageName()) || !isMainProcess()) return;
         started = true;
-        Thread worker = new Thread(new Runnable() {
-            @Override public void run() {
-                try {
-                    checkAndInstall(context.getApplicationContext());
-                } catch (Throwable error) {
-                    Log.w(TAG, "Automatic update skipped", error);
-                }
-            }
-        }, "DeeJazz GitHub updater");
-        worker.start();
-    }
-
-    private static boolean isMainProcess() {
-        FileInputStream input = null;
         try {
-            input = new FileInputStream("/proc/self/cmdline");
-            byte[] bytes = new byte[256];
-            int count = input.read(bytes);
-            int length = 0;
-            while (length < count && bytes[length] != 0) length++;
-            return PACKAGE_NAME.equals(new String(bytes, 0, length, "UTF-8"));
-        } catch (Throwable ignored) {
-            return true;
-        } finally {
-            if (input != null) try { input.close(); } catch (Throwable ignored) {}
+            Application application = (Application) context.getApplicationContext();
+            application.registerActivityLifecycleCallbacks(new Application.ActivityLifecycleCallbacks() {
+                @Override public void onActivityCreated(Activity activity, Bundle savedInstanceState) {}
+                @Override public void onActivityStarted(Activity activity) {}
+                @Override public void onActivityResumed(Activity activity) { foregroundActivity = activity; }
+                @Override public void onActivityPaused(Activity activity) {
+                    if (foregroundActivity == activity) foregroundActivity = null;
+                }
+                @Override public void onActivityStopped(Activity activity) {}
+                @Override public void onActivitySaveInstanceState(Activity activity, Bundle outState) {}
+                @Override public void onActivityDestroyed(Activity activity) {
+                    if (foregroundActivity == activity) foregroundActivity = null;
+                }
+            });
+        } catch (Throwable error) {
+            Log.w(TAG, "Update activity tracking skipped", error);
         }
     }
 
-    private static void checkAndInstall(Context context) throws Exception {
+    private static boolean isPortuguese() {
+        try {
+            String language = Locale.getDefault().getLanguage();
+            return language != null && language.toLowerCase(Locale.US).startsWith("pt");
+        } catch (Throwable ignored) {
+            return false;
+        }
+    }
+
+    public static String updateTitle(Context context) {
+        return isPortuguese() ? "Verificar atualizações" : "Check for updates";
+    }
+
+    public static synchronized void checkForUpdates(final Activity activity) {
+        final Activity target = activity != null ? activity : foregroundActivity;
+        if (target == null) return;
+        if (checking) {
+            showToast(target, isPortuguese()
+                ? "Já há uma verificação em andamento."
+                : "An update check is already running.");
+            return;
+        }
+        checking = true;
+        Thread worker = new Thread(new Runnable() {
+            @Override public void run() {
+                try {
+                    final UpdateInfo update = fetchUpdate();
+                    if (update == null) {
+                        showToast(target, isPortuguese()
+                            ? "O DeeJazz já está atualizado."
+                            : "DeeJazz is already up to date.");
+                        return;
+                    }
+                    askToUpdate(target, update);
+                } catch (final Throwable error) {
+                    Log.w(TAG, "Manual update check skipped", error);
+                    showToast(target, isPortuguese()
+                        ? "Não foi possível verificar atualizações."
+                        : "Could not check for updates.");
+                } finally {
+                    synchronized (GitHubUpdateManager.class) {
+                        checking = false;
+                    }
+                }
+            }
+        }, "DeeJazz manual update check");
+        worker.start();
+    }
+
+    private static void showToast(final Activity activity, final String message) {
+        try {
+            activity.runOnUiThread(new Runnable() {
+                @Override public void run() {
+                    try {
+                        Toast.makeText(activity, message, Toast.LENGTH_LONG).show();
+                    } catch (Throwable ignored) {}
+                }
+            });
+        } catch (Throwable ignored) {}
+    }
+
+    private static void askToUpdate(final Activity activity, final UpdateInfo update) {
+        try {
+            activity.runOnUiThread(new Runnable() {
+                @Override public void run() {
+                    try {
+                        if (activity.isFinishing()) return;
+                        final boolean portuguese = isPortuguese();
+                        final Context application = activity.getApplicationContext();
+                        new AlertDialog.Builder(activity)
+                            .setTitle(portuguese ? "Atualização do DeeJazz" : "DeeJazz update")
+                            .setMessage(portuguese
+                                ? "A versão " + update.version + " está disponível. Deseja baixar e atualizar agora?"
+                                : "Version " + update.version + " is available. Download and update now?")
+                            .setPositiveButton(portuguese ? "Atualizar" : "Update now",
+                                new DialogInterface.OnClickListener() {
+                                    @Override public void onClick(DialogInterface dialog, int which) {
+                                        Thread installer = new Thread(new Runnable() {
+                                            @Override public void run() {
+                                                try {
+                                                    installUpdate(application, update);
+                                                } catch (Throwable error) {
+                                                    Log.w(TAG, "Confirmed update skipped", error);
+                                                }
+                                            }
+                                        }, "DeeJazz confirmed update");
+                                        installer.start();
+                                    }
+                                })
+                            .setNegativeButton(portuguese ? "Agora não" : "Later", null)
+                            .show();
+                    } catch (Throwable error) {
+                        Log.w(TAG, "Update prompt skipped", error);
+                    }
+                }
+            });
+        } catch (Throwable error) {
+            Log.w(TAG, "Update prompt skipped", error);
+        }
+    }
+
+    private static final class UpdateInfo {
+        final String name;
+        final String version;
+        final String url;
+        final String digest;
+        final long size;
+
+        UpdateInfo(String name, String version, String url, String digest, long size) {
+            this.name = name;
+            this.version = version;
+            this.url = url;
+            this.digest = digest;
+            this.size = size;
+        }
+    }
+
+    private static UpdateInfo fetchUpdate() throws Exception {
         JSONObject release = readJson(RELEASE_API);
-        if (release.optBoolean("draft") || release.optBoolean("prerelease")) return;
+        if (release.optBoolean("draft") || release.optBoolean("prerelease")) return null;
         String tag = release.optString("tag_name", "");
-        if (!tag.matches("^v[0-9]+\\.[0-9]+\\.[0-9]+$")) return;
+        if (!tag.matches("^v[0-9]+\\.[0-9]+\\.[0-9]+$")) return null;
         String version = tag.substring(1);
-        if (compareVersions(version, CURRENT_VERSION) <= 0) return;
+        if (compareVersions(version, CURRENT_VERSION) <= 0) return null;
 
         String name = "deejazz-android-" + version + ".apk";
         String expectedUrl = "https://github.com/ryahconstantino/deejazz/releases/download/v" + version + "/" + name;
@@ -90,11 +208,14 @@ public final class GitHubUpdateManager {
         if (!digest.matches("^sha256:[0-9a-fA-F]{64}$")) throw new SecurityException("Missing update digest");
         long expectedSize = asset.optLong("size", -1);
         if (expectedSize <= 0) throw new SecurityException("Invalid update size");
+        return new UpdateInfo(name, version, expectedUrl, digest.substring(7).toLowerCase(), expectedSize);
+    }
 
+    private static void installUpdate(Context context, UpdateInfo update) throws Exception {
         File directory = new File(context.getCacheDir(), "updates");
         if (!directory.exists() && !directory.mkdirs()) throw new IllegalStateException("Cannot create update directory");
-        File apk = new File(directory, name);
-        download(downloadUrl, apk, digest.substring(7).toLowerCase(), expectedSize);
+        File apk = new File(directory, update.name);
+        download(update.url, apk, update.digest, update.size);
         PackageInfo archive = context.getPackageManager().getPackageArchiveInfo(apk.getAbsolutePath(), 0);
         if (archive == null || !PACKAGE_NAME.equals(archive.packageName)) {
             apk.delete();
@@ -112,6 +233,22 @@ public final class GitHubUpdateManager {
             if (!canInstallPackages(context.getPackageManager())) return;
         }
         launchInstaller(context, apk);
+    }
+
+    private static boolean isMainProcess() {
+        FileInputStream input = null;
+        try {
+            input = new FileInputStream("/proc/self/cmdline");
+            byte[] bytes = new byte[256];
+            int count = input.read(bytes);
+            int length = 0;
+            while (length < count && bytes[length] != 0) length++;
+            return PACKAGE_NAME.equals(new String(bytes, 0, length, "UTF-8"));
+        } catch (Throwable ignored) {
+            return true;
+        } finally {
+            if (input != null) try { input.close(); } catch (Throwable ignored) {}
+        }
     }
 
     private static String testOrigin(String value) throws Exception {

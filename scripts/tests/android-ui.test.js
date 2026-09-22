@@ -57,3 +57,20 @@ test('settings presentation follows the reference hierarchy without replacing De
   assert.doesNotMatch(style, /deezer_font|purplelight|tempo_color|theme_accent_primary/);
   assert.match(read('android/app/res/values-night/deejazz_ui.xml'), /name="deejazz_settings_surface">#141216/);
 });
+
+test('Settings offers a manual update check instead of forcing updates', () => {
+  const settings = read('android/app/smali/zo0.smali');
+  assert.match(settings, /LDeeJazzUpdateCheck;-><init>/);
+  assert.match(settings, /GitHubUpdateManager;->updateTitle/);
+  assert.match(read('android/app/smali/DeeJazzUpdateCheck.smali'), /GitHubUpdateManager;->checkForUpdates/);
+  assert.ok(fs.existsSync(path.resolve(__dirname, '../../android/app/smali/DeeJazzUpdateCheck.smali')));
+  const updater = read('android/updater/src/io/github/ryahconstantino/deejazz/update/GitHubUpdateManager.java');
+  assert.match(updater, /AlertDialog/);
+  assert.match(updater, /registerActivityLifecycleCallbacks/);
+  const desktop = read('scripts/desktop/auto-update.js');
+  assert.match(desktop, /promptManualUpdate/);
+  assert.doesNotMatch(desktop, /startAutomaticUpdate|performAutomaticUpdate/);
+  const integration = read('scripts/apply-application-integration.js');
+  assert.match(integration, /checkForUpdatesManually/);
+  assert.match(integration, /deejazz-desktop-v23/);
+});

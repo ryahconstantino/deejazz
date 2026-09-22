@@ -9,8 +9,6 @@ const { spawn } = require("child_process");
 
 const REPOSITORY = "ryahconstantino/deejazz";
 const RELEASE_API = `https://api.github.com/repos/${REPOSITORY}/releases/latest`;
-const TRUE_VALUES = new Set(["1", "true", "yes", "on"]);
-let updateStarted = false;
 
 function parseVersion(value) {
   const match = String(value || "").trim().match(/^v?(\d+)\.(\d+)\.(\d+)(?:-([0-9A-Za-z.-]+))?$/);
@@ -171,29 +169,34 @@ function launchInstaller(app, updateFile) {
   app.quit();
 }
 
-async function performAutomaticUpdate(app, log = console) {
-  if (updateStarted || !app.isPackaged) return null;
-  if (TRUE_VALUES.has(String(process.env.DEEJAZZ_DISABLE_AUTO_UPDATE || "").toLowerCase())) return null;
-  updateStarted = true;
+async function promptManualUpdate(app, prompts, log = console, getRelease) {
+  if (!app.isPackaged) return null;
+  const { confirmUpdate, notifyUpToDate, notifySkipped } = prompts || {};
   try {
-    const update = await checkForUpdate(app.getVersion(), process.platform, process.arch);
-    if (!update) return null;
+    const update = await checkForUpdate(app.getVersion(), process.platform, process.arch, getRelease);
+    if (!update) {
+      if (typeof notifyUpToDate === "function") await notifyUpToDate();
+      else log.info?.("DeeJazz: already up to date.");
+      return null;
+    }
+    const confirmed = typeof confirmUpdate === "function" ? await confirmUpdate(update) : false;
+    if (!confirmed) {
+      log.info?.(`DeeJazz: update ${update.version} declined by the user.`);
+      return null;
+    }
     const directory = fs.mkdtempSync(path.join(os.tmpdir(), "deejazz-update-"));
     const file = path.join(directory, update.name);
-    log.info?.(`DeeJazz: downloading automatic update ${update.version}.`);
+    log.info?.(`DeeJazz: downloading update ${update.version}.`);
     await downloadAsset(update.url, file);
     verifyDownloadedAsset(file, update);
-    log.info?.(`DeeJazz: installing automatic update ${update.version}.`);
+    log.info?.(`DeeJazz: installing update ${update.version}.`);
     launchInstaller(app, file);
     return update;
   } catch (error) {
-    log.warn?.("DeeJazz: automatic update was skipped.", error);
+    if (typeof notifySkipped === "function") await notifySkipped(error);
+    else log.warn?.("DeeJazz: manual update was skipped.", error);
     return null;
   }
-}
-
-function startAutomaticUpdate(app, log = console) {
-  app.whenReady().then(() => performAutomaticUpdate(app, log));
 }
 
 module.exports = {
@@ -201,8 +204,7 @@ module.exports = {
   checkForUpdate,
   compareVersions,
   parseVersion,
-  performAutomaticUpdate,
+  promptManualUpdate,
   resolveAvailableUpdate,
-  startAutomaticUpdate,
   verifyDownloadedAsset,
 };
