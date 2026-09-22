@@ -173,7 +173,7 @@
     <dimen name="card_badge_vertical_margin">6.0dp</dimen>
     <dimen name="card_badge_vertical_padding">3.0dp</dimen>
     <dimen name="card_caption_margin_top">4.0dp</dimen>
-    <dimen name="card_cover_elevation">2.0dp</dimen>
+    <dimen name="card_cover_elevation">0.0dp</dimen>
     <dimen name="card_cover_padding">20.0dp</dimen>
     <dimen name="card_cover_size_auto">0.0dp</dimen>
     <dimen name="card_cover_size_carousel">148.0dp</dimen>
@@ -184,7 +184,7 @@
     <dimen name="card_margin_horizontal_external">16.0dp</dimen>
     <dimen name="card_margin_horizontal_internal">8.0dp</dimen>
     <dimen name="card_margin_vertical_external">16.0dp</dimen>
-    <dimen name="card_play_button_large_padding">15.0dp</dimen>
+    <dimen name="card_play_button_large_padding">12.0dp</dimen>
     <dimen name="card_play_button_large_size">48.0dp</dimen>
     <dimen name="card_play_button_margin">10.0dp</dimen>
     <dimen name="card_play_button_padding">10.0dp</dimen>
@@ -239,11 +239,11 @@
     <dimen name="cast_seek_bar_thumb_size">12.0dp</dimen>
     <dimen name="cast_tracks_chooser_dialog_no_message_text_size">18.0sp</dimen>
     <dimen name="cast_tracks_chooser_dialog_row_text_size">18.0sp</dimen>
-    <dimen name="cell_action_icon_width">42.0dp</dimen>
+    <dimen name="cell_action_icon_width">48.0dp</dimen>
     <dimen name="cell_caption_margin_top">2.0dp</dimen>
     <dimen name="cell_cover_elevation">2.0dp</dimen>
     <dimen name="cell_cover_guideline_begin">78.0dp</dimen>
-    <dimen name="cell_cover_size">62.0dp</dimen>
+    <dimen name="cell_cover_size">48.0dp</dimen>
     <dimen name="cell_download_progress_bar_height">2.0dp</dimen>
     <dimen name="cell_image_offer_line_comparator_height">24.0dp</dimen>
     <dimen name="cell_image_partner_start_n_end">8.0dp</dimen>
@@ -254,7 +254,7 @@
     <dimen name="cell_margin_vertical_external">8.0dp</dimen>
     <dimen name="cell_separator_height">1.0dp</dimen>
     <dimen name="cell_with_cover_description_progress_height">156.0dp</dimen>
-    <dimen name="cell_with_cover_height">78.0dp</dimen>
+    <dimen name="cell_with_cover_height">64.0dp</dimen>
     <dimen name="change_email_dialog_height">400.0dp</dimen>
     <dimen name="change_password_expand_height">598.0dp</dimen>
     <dimen name="change_phone_validation_expand_height">800.0dp</dimen>
@@ -332,7 +332,7 @@
     <dimen name="config_padding_for_float_error_label_login">11.0dp</dimen>
     <dimen name="consent_cookies_constraint_width_percent">1.0</dimen>
     <dimen name="consent_cookies_description_margin_bottom">32.0dp</dimen>
-    <dimen name="consent_cookies_description_margin_top">16.0dp</dimen>
+    <dimen name="consent_cookies_description_margin_top">32.0dp</dimen>
     <dimen name="consent_cookies_preferences_button_margin_bottom">16.0dp</dimen>
     <dimen name="consent_cookies_title_margin_top">8.0dp</dimen>
     <dimen name="content_card_square_deezer_logo_height">64.0px</dimen>
@@ -478,7 +478,7 @@
     <dimen name="dynamic_page_section_header_padding_top">14.0dp</dimen>
     <dimen name="dynamic_page_section_header_padding_top_matching_parent">14.0dp</dimen>
     <dimen name="dynamic_page_section_header_text_vertical_margin">2.0dp</dimen>
-    <dimen name="dynamic_page_section_margin_top">24.0dp</dimen>
+    <dimen name="dynamic_page_section_margin_top">26.0dp</dimen>
     <dimen name="dynamic_page_section_title_drawable_margin">6.0dp</dimen>
     <dimen name="dynamic_page_section_title_drawable_top_margin">2.0dp</dimen>
     <dimen name="dynamic_page_video_card_cover_ratio">1.95</dimen>
@@ -642,7 +642,7 @@
     <dimen name="item_image_pinned_notification_center_half_size">32.0dp</dimen>
     <dimen name="item_image_size">@dimen/scaled_64dp</dimen>
     <dimen name="item_large_corner_radius">24.0dp</dimen>
-    <dimen name="item_love_button_height">44.0dp</dimen>
+    <dimen name="item_love_button_height">48.0dp</dimen>
     <dimen name="item_love_button_width">48.0dp</dimen>
     <dimen name="item_menu_button_height">44.0dp</dimen>
     <dimen name="item_menu_button_padding_right">0.0dp</dimen>
@@ -712,7 +712,7 @@
     <dimen name="margin_item_cover_bottom_top">21.0dp</dimen>
     <dimen name="margin_item_cover_left_right">22.0dp</dimen>
     <dimen name="masthead_adjustable_height_view_marginbottom">16.0dp</dimen>
-    <dimen name="masthead_adjustable_height_view_margintop">16.0dp</dimen>
+    <dimen name="masthead_adjustable_height_view_margintop">4.0dp</dimen>
     <dimen name="masthead_anchored_button_height_half">24.0dp</dimen>
     <dimen name="masthead_artist_subtitle_marginBottom">48.0dp</dimen>
     <dimen name="masthead_artist_text_horizontalmargin">16.0dp</dimen>
@@ -720,7 +720,7 @@
     <dimen name="masthead_artist_title_marginBottom">8.0dp</dimen>
     <dimen name="masthead_background_viewpager_size_diff">32.0dp</dimen>
     <dimen name="masthead_button_height">32.0dp</dimen>
-    <dimen name="masthead_button_margintop">8.0dp</dimen>
+    <dimen name="masthead_button_margintop">4.0dp</dimen>
     <dimen name="masthead_coloredbackground_height">131.0dp</dimen>
     <dimen name="masthead_content_2_columns_horizontalmargin">24.0dp</dimen>
     <dimen name="masthead_content_2_columns_margintop">4.0dp</dimen>
@@ -820,10 +820,10 @@
     <dimen name="mr_dynamic_dialog_route_text_size">12.0sp</dimen>
     <dimen name="mr_dynamic_dialog_row_height">48.0dp</dimen>
     <dimen name="mr_dynamic_volume_group_list_item_height">80.0dp</dimen>
-    <dimen name="mtrl_alert_dialog_background_inset_bottom">80.0dp</dimen>
-    <dimen name="mtrl_alert_dialog_background_inset_end">24.0dp</dimen>
-    <dimen name="mtrl_alert_dialog_background_inset_start">24.0dp</dimen>
-    <dimen name="mtrl_alert_dialog_background_inset_top">80.0dp</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_bottom">10.0dp</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_end">10.0dp</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_start">10.0dp</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_top">10.0dp</dimen>
     <dimen name="mtrl_alert_dialog_picker_background_inset">24.0dp</dimen>
     <dimen name="mtrl_badge_horizontal_edge_offset">4.0dp</dimen>
     <dimen name="mtrl_badge_long_text_horizontal_padding">4.0dp</dimen>
@@ -1125,7 +1125,7 @@
     <dimen name="player_controls_button_normal_margin">8.0dp</dimen>
     <dimen name="player_controls_button_wide_margin">16.0dp</dimen>
     <dimen name="player_cover_background_compat_stroke_width">2.0dp</dimen>
-    <dimen name="player_cover_elevation">20.0dp</dimen>
+    <dimen name="player_cover_elevation">10.0dp</dimen>
     <dimen name="player_cover_margin">16.0dp</dimen>
     <dimen name="player_fullscreen_bubble_margin">48.0dp</dimen>
     <dimen name="player_gradient_start_from_bottom">180.0dp</dimen>
@@ -1169,9 +1169,9 @@
     <dimen name="player_more_button">48.0dp</dimen>
     <dimen name="player_nearly_loaded_subtitle_text_size">16.0sp</dimen>
     <dimen name="player_nearly_loaded_title_text_size">18.0sp</dimen>
-    <dimen name="player_personalization_button">42.0dp</dimen>
-    <dimen name="player_play_pause_button_padding">2.0dp</dimen>
-    <dimen name="player_progress_bar_padding">8.0dp</dimen>
+    <dimen name="player_personalization_button">48.0dp</dimen>
+    <dimen name="player_play_pause_button_padding">8.0dp</dimen>
+    <dimen name="player_progress_bar_padding">16.0dp</dimen>
     <dimen name="player_queue_list_delete_hint_padding">16.0dp</dimen>
     <dimen name="player_queue_list_delete_text_size">18.0sp</dimen>
     <dimen name="player_seek_bar_height">32.0dp</dimen>
@@ -1189,9 +1189,9 @@
     <dimen name="player_track_subtitle_lyrics_margin_vertical">8.0dp</dimen>
     <dimen name="player_track_subtitle_lyrics_padding_vertical">8.0dp</dimen>
     <dimen name="player_track_title">16.0sp</dimen>
-    <dimen name="player_track_title_and_lyrics_padding_bottom">12.0dp</dimen>
+    <dimen name="player_track_title_and_lyrics_padding_bottom">0.0dp</dimen>
     <dimen name="player_track_title_and_lyrics_padding_top">0.0dp</dimen>
-    <dimen name="player_ui_track_title">80.0dp</dimen>
+    <dimen name="player_ui_track_title">72.0dp</dimen>
     <dimen name="player_very_small_margin">2.0dp</dimen>
     <dimen name="playlist_masthead_content_margin_top">24.0dp</dimen>
     <dimen name="preference_dropdown_padding_start">72.0dp</dimen>
@@ -1276,7 +1276,7 @@
     <dimen name="scaled_99dp">99.0dp</dimen>
     <dimen name="search_channel_item_width">120.0dp</dimen>
     <dimen name="search_headband_height">106.0dp</dimen>
-    <dimen name="search_input_elevation">6.0dp</dimen>
+    <dimen name="search_input_elevation">0.0dp</dimen>
     <dimen name="search_input_height">220.0dp</dimen>
     <dimen name="searchbar_height">48.0dp</dimen>
     <dimen name="settings_item_content_vertical_margin">12.0dp</dimen>

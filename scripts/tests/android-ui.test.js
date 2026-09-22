@@ -89,7 +89,7 @@ test('Update row icon follows the blue-circle standard with a smaller glyph', ()
   assert.match(button, /@color\/palette_blue_700/);
   assert.match(button, /android:id="@id\/ic_icon"/);
   assert.match(button, /@drawable\/ic_download_white/);
-  assert.match(button, /android:left="6\.0dp"/);
+  assert.match(button, /android:left="8\.0dp"/);
   const glyph = read('android/app/res/drawable/ic_download_white.xml');
   assert.match(glyph, /android:fillColor="#ffffffff"/);
 });
@@ -99,5 +99,25 @@ test('Mini-player clears the taller bottom bar and settings shows the user photo
   assert.match(
     read('android/app/res/layout/settings_item_name_followers_left_photo.xml'),
     /android:id="@id\/settings_item_icon"[^>]*app:srcCompat="@null"/,
+  );
+});
+
+test('Reference presentation tokens follow deezer.apkm 9.0.22.2', () => {
+  const dimens = read('android/app/res/values/dimens.xml');
+  for (const [name, value] of [
+    ['player_personalization_button', '48.0dp'],
+    ['player_play_pause_button_padding', '8.0dp'],
+    ['player_progress_bar_padding', '16.0dp'],
+    ['player_cover_elevation', '10.0dp'],
+    ['search_input_elevation', '0.0dp'],
+    ['cell_with_cover_height', '64.0dp'],
+    ['cell_cover_size', '48.0dp'],
+    ['mini_player_ng_height_bottom_tabbar', '130.0dp'],
+  ]) {
+    assert.match(dimens, new RegExp(`name="${name}">${value.replace('.', '\\.')}`));
+  }
+  assert.match(
+    read('android/app/res/drawable/ic_settings_update.xml'),
+    /android:left="8\.0dp"/,
   );
 });

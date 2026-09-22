@@ -7,5 +7,5 @@
             <solid android:color="@color/palette_blue_700" />
         </shape>
     </item>
-    <item android:id="@id/ic_icon" android:drawable="@drawable/ic_download_white" android:left="6.0dp" android:top="6.0dp" android:right="6.0dp" android:bottom="6.0dp" />
+    <item android:id="@id/ic_icon" android:drawable="@drawable/ic_download_white" android:left="8.0dp" android:top="8.0dp" android:right="8.0dp" android:bottom="8.0dp" />
 </layer-list>

@@ -8,8 +8,9 @@ only generic glyph shapes may be adapted, redrawn with DeeJazz colors.
 
 - Settings row buttons: `layer-list` with a `@color/palette_blue_700` oval
   background plus a white glyph centered with symmetric insets. Standard glyph
-  padding is `2.0dp` (`ic_settings_about`); use `6.0dp` when the glyph must
-  render smaller (`ic_settings_update`). White glyphs are standalone vectors
+  padding is `2.0dp` (`ic_settings_about`); use `6.0dp` like the stock rows, or
+  `8.0dp` when the glyph must render visibly smaller (`ic_settings_update`).
+  White glyphs are standalone vectors
   (for example `ic_download_white`), never tinted at runtime.
 - Bottom tab icons: selectors named `ic_tab_*` mapping the unchecked state to
   an outline `*_medium` vector and the checked state to a `*_fill_medium`
