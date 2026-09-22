@@ -17,10 +17,10 @@
     "url": "https://repo1.maven.org/maven2/org/json/json/20240303/json-20240303.jar",
     "sha256": "3cf6cd6892e32e2b4c1c39e0f52f5248a2f5b37646fdfbb79a66b46b618414ed"
   },
-  "protectedFileCount": 42354,
-  "protectedFilesSha256": "6a7c202279702e07df8122595d323c594fcf15619d2b2c78a976ea502a1a3908",
-  "customizationFileCount": 90,
-  "customizationFilesSha256": "a9da5a69524997e153d9c4f9b1c1e9db4f2e1b77fcc313051b3312bd41c334aa",
+  "protectedFileCount": 42353,
+  "protectedFilesSha256": "2719803c3acbec4efad660fc8671ac9c1ee5f78c17da5b37d5ae8579dbf8d20f",
+  "customizationFileCount": 91,
+  "customizationFilesSha256": "666cef6094f5fc4301ace4627f79aa6e94c0c01771b888c05861f5db0831a195",
   "uiFiles": [
     "res/drawable/deejazz_symbol_white.xml",
     "res/drawable/ic_download_white.xml",
@@ -39,6 +39,7 @@
     "res/layout/settings_item_two_lines_content.xml",
     "res/menu/navigation.xml",
     "res/values-night/deejazz_ui.xml",
+    "res/values/colors.xml",
     "res/values/deejazz_ui.xml",
     "res/values/dimens.xml",
     "res/values/styles.xml",

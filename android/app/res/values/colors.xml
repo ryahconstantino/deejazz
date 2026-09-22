@@ -690,8 +690,10 @@
     <color name="theme_accent_secondary">@color/palette_coral_700</color>
     <color name="theme_bg_contrast">@color/palette_light_grey_300</color>
     <color name="theme_bg_elevation">@color/palette_light_grey_700</color>
-    <color name="theme_bg_primary">@color/palette_light_grey_50</color>
-    <color name="theme_bg_secondary">@color/palette_white</color>
+    <!-- Light surfaces follow the reference neutral hierarchy: white primary,
+         lightly tinted secondary. Dark surfaces stay untouched. -->
+    <color name="theme_bg_primary">@color/palette_white</color>
+    <color name="theme_bg_secondary">#f5f2f8</color>
     <color name="theme_divider_primary">@color/palette_light_grey_300</color>
     <color name="theme_divider_secondary">@color/palette_light_grey_500</color>
     <color name="theme_download_primary">@color/palette_green_500</color>

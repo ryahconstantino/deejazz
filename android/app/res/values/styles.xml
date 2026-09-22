@@ -233,7 +233,7 @@
     </style>
     <style name="Base.TextAppearance.MaterialComponents.Button" parent="@style/TextAppearance.AppCompat.Button">
         <item name="android:textSize">14.0sp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textStyle">normal</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:letterSpacing">0.08928572</item>
@@ -249,7 +249,7 @@
     </style>
     <style name="Base.TextAppearance.MaterialComponents.Subtitle2" parent="@style/TextAppearance.AppCompat.Subhead">
         <item name="android:textSize">14.0sp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textStyle">normal</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:letterSpacing">0.007142857</item>
@@ -1733,14 +1733,12 @@
         <item name="android:textColor">@color/theme_text_secondary_statelist</item>
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">1</item>
-        <item name="android:fontFamily">sans-serif-light</item>
     </style>
     <style name="BottomMenu.SimpleEntry.EpisodeTitle" parent="@style/BottomMenu.SimpleEntry">
         <item name="android:textSize">18.0sp</item>
         <item name="android:textColor">@color/theme_text_primary_statelist</item>
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">2</item>
-        <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="BottomMenu.SimpleEntry.Text" parent="@style/p3">
         <item name="android:textColor">@color/theme_text_primary_statelist</item>
@@ -2621,18 +2619,15 @@
         <item name="android:textSize">14.0sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">?android:textColorPrimary</item>
-        <item name="android:textAllCaps">true</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="Button2">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">?android:textColorPrimary</item>
-        <item name="android:textAllCaps">true</item>
     </style>
     <style name="Button3">
         <item name="android:textSize">10.0sp</item>
         <item name="android:textColor">?android:textColorPrimary</item>
-        <item name="android:textAllCaps">true</item>
     </style>
     <style name="ButtonAccent" parent="@style/ButtonBase">
         <item name="android:textColor">@color/palette_white</item>
@@ -2649,10 +2644,12 @@
         <item name="android:padding">0.0dp</item>
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
+        <item name="android:textAllCaps">false</item>
         <item name="backgroundTint">@null</item>
     </style>
     <style name="ButtonBaseBorderless" parent="@style/Widget.MaterialComponents.Button.TextButton">
         <item name="android:textAppearance">@style/Button1</item>
+        <item name="android:textAllCaps">false</item>
         <item name="android:padding">0.0dp</item>
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
@@ -4143,7 +4140,9 @@
         <item name="android:layout_height">48.0dp</item>
         <item name="android:letterSpacing">0.1</item>
     </style>
-    <style name="PlayerPageTheme" parent="@style/ContentPageTheme" />
+    <style name="PlayerPageTheme" parent="@style/ContentPageTheme">
+        <item name="android:padding">12.0dp</item>
+    </style>
     <style name="PlayerPersonalizationButton">
         <item name="android:background">@drawable/ripple_round_mask</item>
         <item name="android:padding">8.0dp</item>
@@ -4186,10 +4185,8 @@
         <item name="android:letterSpacing">0.04</item>
     </style>
     <style name="PlayerTrackTitle">
-        <item name="android:gravity">center</item>
         <item name="android:paddingTop">@dimen/player_track_title_and_lyrics_padding_top</item>
         <item name="android:paddingBottom">@dimen/player_track_title_and_lyrics_padding_bottom</item>
-        <item name="android:clipToPadding">false</item>
     </style>
     <style name="PlayerViewPager">
         <item name="android:layout_width">match_parent</item>
@@ -4679,6 +4676,7 @@
         <item name="android:textSize">@dimen/scaled_30sp</item>
         <item name="android:textColor">@color/theme_text_primary</item>
         <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <style name="SmartTrackListCardFlowText">
         <item name="android:textSize">@dimen/flowtab_card_title_flow_size</item>
@@ -4847,9 +4845,11 @@
     </style>
     <style name="TabBar.Active" parent="@style/TabBar">
         <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
     </style>
     <style name="TabBar.Inactive" parent="@style/TabBar">
         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAllCaps">false</item>
     </style>
     <style name="TabPageTheme" parent="@style/DeezerLightTheme">
         <item name="android:windowContentOverlay">@null</item>
@@ -5798,6 +5798,12 @@
     <style name="Widget.Deezer.Snackbar" parent="@style/Widget.MaterialComponents.Snackbar">
         <item name="actionTextColorAlpha">1.0</item>
         <item name="materialThemeOverlay">@style/ThemeOverlay.Deezer.Snackbar</item>
+        <item name="android:layout_margin">16.0dp</item>
+        <item name="android:paddingTop">8.0dp</item>
+        <item name="android:paddingBottom">8.0dp</item>
+        <item name="android:paddingStart">16.0dp</item>
+        <item name="android:paddingEnd">16.0dp</item>
+        <item name="android:elevation">12.0dp</item>
     </style>
     <style name="Widget.Deezer.SnackbarButton" parent="@style/Widget.MaterialComponents.Button.TextButton.Snackbar">
         <item name="android:textColor">@color/theme_accent_primary</item>

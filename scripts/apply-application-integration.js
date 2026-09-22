@@ -12,7 +12,7 @@ const updaterSource = path.join(projectRoot, "scripts", "desktop", "auto-update.
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v24";
+const integrationRevision = "deejazz-desktop-v25";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/";
 const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
@@ -191,7 +191,21 @@ function updateUbolMenu(state = getUbolState()) {
 }
 
 function updateMenuLabel() {
-  return UBOL_LOCALE.startsWith("pt") ? "Verificar atualizações…" : "Check for Updates…";
+  return "Check for Updates";
+}
+
+function injectUpdateMenuItem(menu) {
+  if (!menu || menu.getMenuItemById(MENU_IDS.update)) return menu;
+  const item = new MenuItem({
+    id: MENU_IDS.update,
+    label: updateMenuLabel(),
+    click: () => {
+      void checkForUpdatesManually();
+    },
+  });
+  const helpIndex = menu.items.findIndex((entry) => entry.role === "help" || /help/i.test(String(entry.label || "")));
+  menu.insert(helpIndex === -1 ? menu.items.length : helpIndex, item);
+  return menu;
 }
 
 async function checkForUpdatesManually() {
@@ -249,16 +263,6 @@ function injectUbolMenu(menu) {
       label: ubolVersionMenuLabel(state),
       enabled: false,
     },
-    {
-      type: "separator",
-    },
-    {
-      id: MENU_IDS.update,
-      label: updateMenuLabel(),
-      click: () => {
-        void checkForUpdatesManually();
-      },
-    },
   ]);
   const menuItem = new MenuItem({
     id: MENU_IDS.root,
@@ -266,7 +270,7 @@ function injectUbolMenu(menu) {
     submenu,
   });
   menu.insert(Math.max(0, menu.items.length - 1), menuItem);
-  return menu;
+  return injectUpdateMenuItem(menu);
 }`;
 }
 
