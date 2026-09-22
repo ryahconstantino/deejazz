@@ -6,12 +6,13 @@ All Android artwork must follow these patterns so icons stay visually consistent
 Never import Deezer brand assets (names, logos, wordmarks, proprietary fonts);
 only generic glyph shapes may be adapted, redrawn with DeeJazz colors.
 
-- Settings row buttons: `layer-list` with a `@color/palette_blue_700` oval
-  background plus a white glyph centered with symmetric insets. Standard glyph
-  padding is `2.0dp` (`ic_settings_about`); use `6.0dp` like the stock rows, or
-  `8.0dp` when the glyph must render visibly smaller (`ic_settings_update`).
-  White glyphs are standalone vectors
-  (for example `ic_download_white`), never tinted at runtime.
+- Settings row buttons: `layer-list` with a colored oval background (each row
+  keeps its own stock color) plus a glyph centered with symmetric `6.0dp`
+  insets and an `android:id="@id/ic_icon"` layer so the binder tints it.
+  The About button is the DeeJazz exception: `@color/palette_blue_700` oval
+  with the white seven-bar symbol at `2.0dp` insets and no `ic_icon` id.
+  Never invent a parallel custom button when a stock `ic_settings_*`
+  button already matches; reuse it by drawable id.
 - Bottom tab icons: selectors named `ic_tab_*` mapping the unchecked state to
   an outline `*_medium` vector and the checked state to a `*_fill_medium`
   vector. Vectors are `24dp`, use `#ffffffff` fills, and rely on the

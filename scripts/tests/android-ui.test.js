@@ -88,15 +88,13 @@ test('Settings offers a manual update check instead of forcing updates', () => {
   assert.match(integration, /AppUserModelID/);
 });
 
-test('Update row icon follows the blue-circle standard with a smaller glyph', () => {
-  assert.match(read('android/app/smali/zo0.smali'), /const v7, 0x7f0807f2/);
-  const button = read('android/app/res/drawable/ic_settings_update.xml');
-  assert.match(button, /@color\/palette_blue_700/);
+test('Update row reuses the Data and storage button icon identically', () => {
+  assert.match(read('android/app/smali/zo0.smali'), /const v7, 0x7f080462/);
+  const button = read('android/app/res/drawable/ic_settings_data_storage.xml');
+  assert.match(button, /@color\/palette_blue_900/);
   assert.match(button, /android:id="@id\/ic_icon"/);
-  assert.match(button, /@drawable\/ic_download_white/);
-  assert.match(button, /android:left="8\.0dp"/);
-  const glyph = read('android/app/res/drawable/ic_download_white.xml');
-  assert.match(glyph, /android:fillColor="#ffffffff"/);
+  assert.match(button, /android:left="6\.0dp"/);
+  assert.equal(fs.existsSync(path.resolve(__dirname, '../../android/app/res/drawable/ic_settings_update.xml')), false);
 });
 
 test('Mini-player clears the taller bottom bar and settings shows the user photo', () => {
@@ -122,7 +120,15 @@ test('Reference presentation tokens follow deezer.apkm 9.0.22.2', () => {
     assert.match(dimens, new RegExp(`name="${name}">${value.replace('.', '\\.')}`));
   }
   assert.match(
-    read('android/app/res/drawable/ic_settings_update.xml'),
-    /android:left="8\.0dp"/,
+    read('android/app/res/drawable/ic_settings_data_storage.xml'),
+    /android:left="6\.0dp"/,
   );
+});
+
+test('Genre preview has no See more and notification icon is DeeJazz monochrome', () => {
+  const genres = read('android/ui/src/io/github/ryahconstantino/deejazz/ui/GenreCards.java');
+  assert.doesNotMatch(genres, /See more|Ver mais|showAll/);
+  const notif = read('android/app/res/drawable-anydpi-v24/notifications_ic_equaliser.xml');
+  assert.match(notif, /android:tint="#ffffff"/);
+  assert.doesNotMatch(notif, /23\.8151/);
 });

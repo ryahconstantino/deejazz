@@ -80,55 +80,6 @@ public final class GenreCards {
             params.bottomMargin = dp(c, 12);
             preview.addView(row, params);
         }
-        if (source.count() > PREVIEW_LIMIT) {
-            TextView more = new TextView(c);
-            more.setText(portuguese(c) ? "Ver mais" : "See more");
-            more.setTextSize(16);
-            more.setTypeface(Typeface.DEFAULT, Typeface.BOLD);
-            more.setGravity(Gravity.CENTER);
-            more.setMinHeight(dp(c, 48));
-            more.setOnClickListener(new View.OnClickListener() {
-                @Override public void onClick(View view) { showAll(c, source); }
-            });
-            preview.addView(more, new LinearLayout.LayoutParams(-1, -2));
-        }
         host.addView(preview, new ViewGroup.LayoutParams(-1, -2));
-    }
-    public static Dialog showAll(final Context c, final Source source) {
-        final Dialog page = new Dialog(c, android.R.style.Theme_DeviceDefault_NoActionBar);
-        page.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        LinearLayout content = new LinearLayout(page.getContext());
-        content.setOrientation(LinearLayout.VERTICAL);
-        TextView back = new TextView(page.getContext());
-        back.setText(portuguese(c) ? "‹  Gêneros, moods e mais" : "‹  Genres, moods and more");
-        back.setTextSize(20);
-        back.setPadding(dp(c, 16), dp(c, 16), dp(c, 16), dp(c, 16));
-        back.setContentDescription(portuguese(c) ? "Voltar" : "Back");
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View view) { page.dismiss(); }
-        });
-        content.addView(back, new LinearLayout.LayoutParams(-1, -2));
-        GridView grid = new GridView(page.getContext());
-        grid.setNumColumns(2);
-        grid.setStretchMode(GridView.STRETCH_COLUMN_WIDTH);
-        grid.setHorizontalSpacing(dp(c, 12));
-        grid.setVerticalSpacing(dp(c, 12));
-        grid.setPadding(dp(c, 16), dp(c, 8), dp(c, 16), dp(c, 16));
-        grid.setClipToPadding(false);
-        grid.setAdapter(new BaseAdapter() {
-            @Override public int getCount() { return source.count(); }
-            @Override public Object getItem(int position) { return source.name(position); }
-            @Override public long getItemId(int position) { return position; }
-            @Override public View getView(int position, View recycled, ViewGroup parent) {
-                TextView view = card(parent.getContext(), source, position, page);
-                view.setLayoutParams(new GridView.LayoutParams(-1, dp(c, 108)));
-                return view;
-            }
-        });
-        content.addView(grid, new LinearLayout.LayoutParams(-1, 0, 1));
-        page.setContentView(content);
-        page.show();
-        page.getWindow().setLayout(-1, -1);
-        return page;
     }
 }

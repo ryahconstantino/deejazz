@@ -41,12 +41,7 @@ public final class UiTest extends Instrumentation {
             waitForIdleSync();
             if (failure != null) throw new RuntimeException(failure);
             screenshot("genres-preview");
-            runOnMainSync(new Runnable() {
-                @Override public void run() { GenreCards.showAll(activity, catalogue); }
-            });
-            waitForIdleSync();
-            screenshot("genres-all");
-            result.putString("stream", "PASS: About author credit, white transparent symbol, real Search binding, 6-card preview, all genres, callback, empty/short lists, remote offer labels\n");
+            result.putString("stream", "PASS: About author credit, white transparent symbol, real Search binding, 6-card preview, callback, empty/short lists, remote offer labels\n");
             finish(Activity.RESULT_OK, result);
         } catch (Throwable error) {
             result.putString("stream", android.util.Log.getStackTraceString(error));
@@ -108,18 +103,9 @@ public final class UiTest extends Instrumentation {
         activity.getWindow().setContentView(root);
         catalogue = source;
         LinearLayout preview = (LinearLayout) root.getChildAt(0);
-        check(preview.getChildCount() == 4, "Expected three rows and See more");
-        check(((TextView) preview.getChildAt(3)).getText().toString().equals("See more"), "See more text");
+        check(preview.getChildCount() == 3, "Expected three preview rows and no See more");
         ((ViewGroup) preview.getChildAt(0)).getChildAt(1).performClick();
         check(selected == 1, "Preview callback must preserve index");
-        Dialog page = GenreCards.showAll(activity, source);
-        android.widget.GridView grid = findGrid(page.getWindow().getDecorView());
-        check(grid != null && grid.getAdapter().getCount() == 16, "Complete catalogue");
-        grid.measure(View.MeasureSpec.makeMeasureSpec(1080, View.MeasureSpec.EXACTLY),
-            View.MeasureSpec.makeMeasureSpec(1600, View.MeasureSpec.EXACTLY));
-        check(grid.getNumColumns() == 2, "Two-column grid after layout");
-        grid.getAdapter().getView(15, null, grid).performClick();
-        check(selected == 15 && !page.isShowing(), "Last card navigates and closes page");
         OfferLabel offer = new OfferLabel(activity, null);
         for (String name : new String[]{"Deezer Free", "DEEJAZZ FREE", " Deezer Free "}) {
             offer.setText(name); check(offer.getText().length() == 0, "Remote offer not filtered");
