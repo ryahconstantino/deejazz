@@ -71,6 +71,9 @@ test('Settings offers a manual update check instead of forcing updates', () => {
   const updater = read('android/updater/src/io/github/ryahconstantino/deejazz/update/GitHubUpdateManager.java');
   assert.match(updater, /AlertDialog/);
   assert.match(updater, /registerActivityLifecycleCallbacks/);
+  assert.match(updater, /UI_MODE_NIGHT_YES/);
+  assert.match(updater, /setTextColor\(Color\.WHITE\)/);
+  assert.match(updater, /rightMargin/);
   const desktop = read('scripts/desktop/auto-update.js');
   assert.match(desktop, /promptManualUpdate/);
   assert.doesNotMatch(desktop, /startAutomaticUpdate|performAutomaticUpdate/);

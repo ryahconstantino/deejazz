@@ -8,10 +8,15 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.TypedValue;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -133,7 +138,7 @@ public final class GitHubUpdateManager {
                         if (activity.isFinishing()) return;
                         final boolean portuguese = isPortuguese();
                         final Context application = activity.getApplicationContext();
-                        new AlertDialog.Builder(activity)
+                        AlertDialog prompt = new AlertDialog.Builder(activity)
                             .setTitle(portuguese ? "Atualização do DeeJazz" : "DeeJazz update")
                             .setMessage(portuguese
                                 ? "A versão " + update.version + " está disponível. Deseja baixar e atualizar agora?"
@@ -155,6 +160,7 @@ public final class GitHubUpdateManager {
                                 })
                             .setNegativeButton(portuguese ? "Agora não" : "Later", null)
                             .show();
+                        styleUpdateButtons(activity, prompt);
                     } catch (Throwable error) {
                         Log.w(TAG, "Update prompt skipped", error);
                     }
@@ -162,6 +168,29 @@ public final class GitHubUpdateManager {
             });
         } catch (Throwable error) {
             Log.w(TAG, "Update prompt skipped", error);
+        }
+    }
+
+    private static void styleUpdateButtons(Activity activity, AlertDialog prompt) {
+        try {
+            if (prompt == null) return;
+            Button positive = prompt.getButton(DialogInterface.BUTTON_POSITIVE);
+            Button negative = prompt.getButton(DialogInterface.BUTTON_NEGATIVE);
+            if (positive == null || negative == null) return;
+            int night = activity.getResources().getConfiguration().uiMode
+                & Configuration.UI_MODE_NIGHT_MASK;
+            if (night == Configuration.UI_MODE_NIGHT_YES) {
+                positive.setTextColor(Color.WHITE);
+                negative.setTextColor(Color.WHITE);
+            }
+            int gap = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16,
+                activity.getResources().getDisplayMetrics());
+            ViewGroup.MarginLayoutParams params =
+                (ViewGroup.MarginLayoutParams) negative.getLayoutParams();
+            params.rightMargin = params.rightMargin + gap;
+            negative.setLayoutParams(params);
+        } catch (Throwable error) {
+            Log.w(TAG, "Update button styling skipped", error);
         }
     }
 
