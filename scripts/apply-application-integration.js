@@ -12,7 +12,7 @@ const updaterSource = path.join(projectRoot, "scripts", "desktop", "auto-update.
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v27";
+const integrationRevision = "deejazz-desktop-v28";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/";
 const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
@@ -240,7 +240,6 @@ app.on("will-quit", (event) => {
       app.quit();
     });
 });
-}
 
 function injectUbolMenu(menu) {
   if (!menu || menu.getMenuItemById(MENU_IDS.root)) return menu;

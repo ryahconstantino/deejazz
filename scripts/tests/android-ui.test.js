@@ -86,7 +86,7 @@ test('Updates are checked on launch with confirmation, never from a menu row', (
   assert.match(integration, /checkForUpdatesAtStartup/);
   assert.match(integration, /will-quit/);
   assert.match(integration, /Atualizar ao sair/);
-  assert.match(integration, /deejazz-desktop-v27/);
+  assert.match(integration, /deejazz-desktop-v28/);
   assert.doesNotMatch(integration, /function injectUpdateMenuItem/);
   assert.doesNotMatch(integration, /update: "deejazz-update-check"/);
   assert.match(integration, /"com\.deezer\.deezer-desktop"/);
