@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Launch splash: neutral background with the colorful DeeJazz symbol only. -->
 <layer-list
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@color/palette_white" />
-    <item android:gravity="center" android:drawable="@drawable/ic_deezer_logo_black" />
+    <item android:drawable="@color/theme_bg_primary" />
+    <item android:gravity="center" android:width="96.0dp" android:height="96.0dp" android:drawable="@drawable/deejazz_launcher_art" />
 </layer-list>

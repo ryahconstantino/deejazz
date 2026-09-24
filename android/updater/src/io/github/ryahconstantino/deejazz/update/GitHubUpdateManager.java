@@ -42,6 +42,7 @@ public final class GitHubUpdateManager {
     private static final boolean TEST_MODE = __DEEJAZZ_UPDATE_TEST_MODE__;
     private static boolean started;
     private static boolean checking;
+    private static boolean autoChecked;
     private static volatile Activity foregroundActivity;
 
     private GitHubUpdateManager() {}
@@ -54,7 +55,14 @@ public final class GitHubUpdateManager {
             application.registerActivityLifecycleCallbacks(new Application.ActivityLifecycleCallbacks() {
                 @Override public void onActivityCreated(Activity activity, Bundle savedInstanceState) {}
                 @Override public void onActivityStarted(Activity activity) {}
-                @Override public void onActivityResumed(Activity activity) { foregroundActivity = activity; }
+                @Override public void onActivityResumed(Activity activity) {
+                    foregroundActivity = activity;
+                    synchronized (GitHubUpdateManager.class) {
+                        if (autoChecked) return;
+                        autoChecked = true;
+                    }
+                    checkForUpdates(activity);
+                }
                 @Override public void onActivityPaused(Activity activity) {
                     if (foregroundActivity == activity) foregroundActivity = null;
                 }

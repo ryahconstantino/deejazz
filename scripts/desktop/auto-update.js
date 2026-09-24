@@ -169,9 +169,20 @@ function launchInstaller(app, updateFile) {
   app.quit();
 }
 
+async function downloadAndInstall(app, update, log = console) {
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), "deejazz-update-"));
+  const file = path.join(directory, update.name);
+  log.info?.(`DeeJazz: downloading update ${update.version}.`);
+  await downloadAsset(update.url, file);
+  verifyDownloadedAsset(file, update);
+  log.info?.(`DeeJazz: installing update ${update.version}.`);
+  launchInstaller(app, file);
+  return update;
+}
+
 async function promptManualUpdate(app, prompts, log = console, getRelease) {
   if (!app.isPackaged) return null;
-  const { confirmUpdate, notifyUpToDate, notifySkipped } = prompts || {};
+  const { armUpdateOnQuit, confirmUpdate, notifyUpToDate, notifySkipped } = prompts || {};
   try {
     const update = await checkForUpdate(app.getVersion(), process.platform, process.arch, getRelease);
     if (!update) {
@@ -179,19 +190,15 @@ async function promptManualUpdate(app, prompts, log = console, getRelease) {
       else log.info?.("DeeJazz: already up to date.");
       return null;
     }
-    const confirmed = typeof confirmUpdate === "function" ? await confirmUpdate(update) : false;
-    if (!confirmed) {
-      log.info?.(`DeeJazz: update ${update.version} declined by the user.`);
+    const choice = typeof confirmUpdate === "function" ? await confirmUpdate(update) : false;
+    if (choice === true || choice === "now") return downloadAndInstall(app, update, log);
+    if (choice === "quit") {
+      if (typeof armUpdateOnQuit === "function") await armUpdateOnQuit(update);
+      else log.info?.(`DeeJazz: update ${update.version} postponed.`);
       return null;
     }
-    const directory = fs.mkdtempSync(path.join(os.tmpdir(), "deejazz-update-"));
-    const file = path.join(directory, update.name);
-    log.info?.(`DeeJazz: downloading update ${update.version}.`);
-    await downloadAsset(update.url, file);
-    verifyDownloadedAsset(file, update);
-    log.info?.(`DeeJazz: installing update ${update.version}.`);
-    launchInstaller(app, file);
-    return update;
+    log.info?.(`DeeJazz: update ${update.version} declined by the user.`);
+    return null;
   } catch (error) {
     if (typeof notifySkipped === "function") await notifySkipped(error);
     else log.warn?.("DeeJazz: manual update was skipped.", error);
@@ -203,6 +210,7 @@ module.exports = {
   artifactName,
   checkForUpdate,
   compareVersions,
+  downloadAndInstall,
   parseVersion,
   promptManualUpdate,
   resolveAvailableUpdate,

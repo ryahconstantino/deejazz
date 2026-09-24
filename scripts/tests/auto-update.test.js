@@ -119,3 +119,17 @@ test("manual check failures are reported instead of throwing", async () => {
   assert.equal(update, null);
   assert.equal(skipped, 1);
 });
+
+test("manual checks can postpone the install until quit", async () => {
+  const app = { isPackaged: true, getVersion: () => "1.2.7", quit: () => { throw new Error("must not quit"); } };
+  let armed = null;
+  const update = await promptManualUpdate(app, {
+    confirmUpdate: (found) => {
+      assert.equal(found.version, "1.2.8");
+      return "quit";
+    },
+    armUpdateOnQuit: (found) => { armed = found; },
+  }, console, async () => release("1.2.8", "linux", "x64"));
+  assert.equal(update, null);
+  assert.equal(armed && armed.version, "1.2.8");
+});

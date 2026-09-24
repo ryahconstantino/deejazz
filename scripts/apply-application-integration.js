@@ -12,7 +12,7 @@ const updaterSource = path.join(projectRoot, "scripts", "desktop", "auto-update.
 const workRoot = path.join(projectRoot, ".application-integration-work");
 const extractedApp = path.join(workRoot, "app");
 const rebuiltAsar = path.join(workRoot, "app.asar");
-const integrationRevision = "deejazz-desktop-v26";
+const integrationRevision = "deejazz-desktop-v27";
 const projectUrl = "https://ryahconstantino.github.io/deejazz/";
 const previousProjectUrl = "https://ryahconstantino.github.io/deejazz/#platform-downloads";
 const legacyBrand = ["Dee", "zer"].join("");
@@ -190,55 +190,56 @@ function updateUbolMenu(state = getUbolState()) {
   if (versionItem) versionItem.label = ubolVersionMenuLabel(state);
 }
 
-function updateMenuLabel() {
-  return "Check for Updates";
-}
+let updateOnQuitArmed = null;
+let quitUpdateRunning = false;
 
-function injectUpdateMenuItem(menu) {
-  if (!menu || menu.getMenuItemById(MENU_IDS.update)) return menu;
-  const item = new MenuItem({
-    id: MENU_IDS.update,
-    label: updateMenuLabel(),
-    click: () => {
-      void checkForUpdatesManually();
-    },
-  });
-  const helpIndex = menu.items.findIndex((entry) => entry.role === "help" || /help/i.test(String(entry.label || "")));
-  menu.insert(helpIndex === -1 ? menu.items.length : helpIndex, item);
-  return menu;
-}
-
-async function checkForUpdatesManually() {
+async function checkForUpdatesAtStartup() {
   const { promptManualUpdate } = require("./deejazz-auto-update");
   const portuguese = UBOL_LOCALE.startsWith("pt");
   const currentWindow = BrowserWindow.getFocusedWindow();
   const show = (options) => dialog.showMessageBox(currentWindow, options);
   try {
     await promptManualUpdate(app, {
-      notifyUpToDate: () => show({
-        type: "info",
-        title: "DeeJazz",
-        message: portuguese ? "O DeeJazz já está atualizado." : "DeeJazz is already up to date.",
-      }),
-      confirmUpdate: async (update) => (await show({
-        type: "question",
-        title: "DeeJazz",
-        message: portuguese
-          ? \`A versão \${update.version} está disponível. Deseja baixar e atualizar agora?\`
-          : \`Version \${update.version} is available. Download and update now?\`,
-        buttons: portuguese ? ["Atualizar", "Agora não"] : ["Update now", "Later"],
-        defaultId: 0,
-        cancelId: 1,
-      })).response === 0,
-      notifySkipped: () => show({
-        type: "warning",
-        title: "DeeJazz",
-        message: portuguese ? "Não foi possível verificar atualizações." : "Could not check for updates.",
-      }),
+      armUpdateOnQuit: (update) => {
+        updateOnQuitArmed = update;
+      },
+      confirmUpdate: async (update) => {
+        const { response } = await show({
+          type: "question",
+          title: "DeeJazz",
+          message: portuguese
+            ? \`A versão \${update.version} está disponível.\`
+            : \`Version \${update.version} is available.\`,
+          buttons: portuguese
+            ? ["Atualizar agora", "Atualizar ao sair", "Agora não"]
+            : ["Update now", "Update on quit", "Later"],
+          defaultId: 0,
+          cancelId: 2,
+        });
+        return response === 0 ? "now" : response === 1 ? "quit" : false;
+      },
     }, log);
   } catch (error) {
-    log.warn?.("DeeJazz: manual update check failed.", error);
+    log.warn?.("DeeJazz: startup update check failed.", error);
   }
+}
+
+app.on("will-quit", (event) => {
+  if (quitUpdateRunning || !updateOnQuitArmed) return;
+  event.preventDefault();
+  quitUpdateRunning = true;
+  const pending = updateOnQuitArmed;
+  updateOnQuitArmed = null;
+  const { downloadAndInstall } = require("./deejazz-auto-update");
+  void Promise.resolve()
+    .then(() => downloadAndInstall(app, pending, log))
+    .catch((error) => {
+      log.warn?.("DeeJazz: update on quit skipped.", error);
+    })
+    .then(() => {
+      app.quit();
+    });
+});
 }
 
 function injectUbolMenu(menu) {
@@ -270,7 +271,7 @@ function injectUbolMenu(menu) {
     submenu,
   });
   menu.insert(Math.max(0, menu.items.length - 1), menuItem);
-  return injectUpdateMenuItem(menu);
+  return menu;
 }`;
 }
 
@@ -348,7 +349,6 @@ function patchWrapper(wrapper, locales, panelMessages) {
   root: "deejazz-ubol",
   enabled: "deejazz-ubol-enabled",
   version: "deejazz-ubol-version",
-  update: "deejazz-update-check",
 });${result.slice(menuIdsEnd + 3)}`;
 
   result = result.split(`An official ${legacyBrand} update would replace this customized app.asar.`).join("A vendor update would replace this customized app.asar.");
@@ -498,9 +498,16 @@ function patchWrapper(wrapper, locales, panelMessages) {
   contents.on("dom-ready", () => {`,
     );
   }
-  // Updates are manual-only: remove any legacy automatic update startup.
+  // Updates are checked on every foreground launch and confirmed first;
+  // there is no background or menu-driven update flow.
   result = result.split("startAutomaticUpdate(app, log);\n\n").join("");
   result = result.split("\nstartAutomaticUpdate(app, log);").join("");
+  if (!result.includes("checkForUpdatesAtStartup();")) {
+    result = result.replace(
+      "module.exports = main;",
+      "app.whenReady().then(() => {\n  void checkForUpdatesAtStartup();\n});\n\nmodule.exports = main;",
+    );
+  }
   return result;
 }
 
@@ -755,9 +762,12 @@ async function main() {
     const verificationUpdater = extractFile(rebuiltAsar, "build/deejazz-auto-update.js").toString("utf8");
     const verificationVendor = extractFile(rebuiltAsar, "build/main.js").toString("utf8");
     if (!verificationMain.includes(integrationRevision) || verificationMetadata.version !== version ||
-        !verificationMain.includes("checkForUpdatesManually") ||
+        !verificationMain.includes("checkForUpdatesAtStartup();") ||
+        !verificationMain.includes("will-quit") ||
+        verificationMain.includes("injectUpdateMenuItem") ||
+        verificationMain.includes("deejazz-update-check") ||
         verificationMain.includes("startAutomaticUpdate(app, log);") ||
-        !verificationUpdater.includes("promptManualUpdate") ||
+        !verificationUpdater.includes("downloadAndInstall") ||
         !verificationVendor.includes('"com.deezer.desktop"') ||
         verificationVendor.includes("com.deezer.deezer-desktop")) {
       throw new Error("The rebuilt application failed integration verification.");

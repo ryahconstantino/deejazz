@@ -63,27 +63,32 @@ test('Settings no longer builds the Developer row', () => {
   assert.doesNotMatch(read('android/app/smali/zo0.smali'), /settings\.v2\.developer/);
 });
 
-test('Settings offers a manual update check instead of forcing updates', () => {
+test('Updates are checked on launch with confirmation, never from a menu row', () => {
   const settings = read('android/app/smali/zo0.smali');
-  assert.match(settings, /LDeeJazzUpdateCheck;-><init>/);
-  assert.match(settings, /GitHubUpdateManager;->updateTitle/);
-  assert.match(read('android/app/smali/DeeJazzUpdateCheck.smali'), /GitHubUpdateManager;->checkForUpdates/);
-  assert.ok(fs.existsSync(path.resolve(__dirname, '../../android/app/smali/DeeJazzUpdateCheck.smali')));
+  assert.doesNotMatch(settings, /DeeJazzUpdateCheck/);
+  assert.equal(fs.existsSync(path.resolve(__dirname, '../../android/app/smali/DeeJazzUpdateCheck.smali')), false);
   const updater = read('android/updater/src/io/github/ryahconstantino/deejazz/update/GitHubUpdateManager.java');
   assert.match(updater, /AlertDialog/);
   assert.match(updater, /registerActivityLifecycleCallbacks/);
+  assert.match(updater, /autoChecked/);
+  assert.match(updater, /onActivityResumed/);
   assert.match(updater, /UI_MODE_NIGHT_YES/);
   assert.match(updater, /setTextColor\(Color\.WHITE\)/);
   assert.match(updater, /rightMargin/);
+  const splash = read('android/app/res/drawable/branded_launch_white_bg.xml');
+  assert.match(splash, /@drawable\/deejazz_launcher_art/);
+  assert.doesNotMatch(splash, /ic_deezer_logo_black/);
   const desktop = read('scripts/desktop/auto-update.js');
-  assert.match(desktop, /promptManualUpdate/);
+  assert.match(desktop, /downloadAndInstall/);
+  assert.match(desktop, /armUpdateOnQuit/);
   assert.doesNotMatch(desktop, /startAutomaticUpdate|performAutomaticUpdate/);
   const integration = read('scripts/apply-application-integration.js');
-  assert.match(integration, /checkForUpdatesManually/);
-  assert.match(integration, /deejazz-desktop-v26/);
-  assert.match(integration, /injectUpdateMenuItem/);
-  assert.match(integration, /return "Check for Updates";/);
-  assert.match(integration, /entry\.role === "help"/);
+  assert.match(integration, /checkForUpdatesAtStartup/);
+  assert.match(integration, /will-quit/);
+  assert.match(integration, /Atualizar ao sair/);
+  assert.match(integration, /deejazz-desktop-v27/);
+  assert.doesNotMatch(integration, /function injectUpdateMenuItem/);
+  assert.doesNotMatch(integration, /update: "deejazz-update-check"/);
   assert.match(integration, /"com\.deezer\.deezer-desktop"/);
   assert.match(integration, /AppUserModelID/);
 });

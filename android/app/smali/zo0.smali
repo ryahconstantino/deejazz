@@ -1237,34 +1237,6 @@
 
     invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object v2, p0, Lagb;->a:Landroid/app/Activity;
-
-    invoke-static {v2}, Lio/github/ryahconstantino/deejazz/update/GitHubUpdateManager;->updateTitle(Landroid/content/Context;)Ljava/lang/String;
-
-    move-result-object v6
-
-    new-instance v8, LDeeJazzUpdateCheck;
-
-    invoke-direct {v8, v2}, LDeeJazzUpdateCheck;-><init>(Landroid/app/Activity;)V
-
-    const v7, 0x7f080462
-
-    const/4 v9, 0x0
-
-    const/4 v10, 0x1
-
-    new-instance v3, Lbd3;
-
-    move-object v5, v3
-
-    move-object v5, v3
-
-    invoke-direct/range {v5 .. v10}, Lbd3;-><init>(Ljava/lang/CharSequence;ILla0;ZZ)V
-
-    iget-object v2, p0, Lcm0;->j:Ljava/util/List;
-
-    invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
     invoke-virtual {p0}, Lcm0;->N0()V
 
     new-instance v2, Lhd3;
