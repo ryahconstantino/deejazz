@@ -2,7 +2,7 @@
 
 ## Integrated with uBlock Origin Lite
 
-DeeJazz is a desktop music player for Windows and Linux. It combines a focused listening experience with built-in uBlock Origin Lite filtering, DeeJazz cosmetic rules, media controls, system tray support, and a localized blocker dashboard.
+DeeJazz is a music player for Windows, Linux and Android. It combines a focused listening experience with built-in uBlock Origin Lite filtering, DeeJazz cosmetic rules, media controls, system tray support on desktop, and a localized blocker dashboard.
 
 ![DeeJazz running on Windows](assets/images/deejazz-windows-home.png)
 
@@ -13,7 +13,7 @@ DeeJazz is a desktop music player for Windows and Linux. It combines a focused l
 - Dedicated blocker dashboard with persistent filtering history
 - Windows x64 installer
 - Portable Linux builds for AMD64 and ARM64
-- Android APK with DeeJazz name, icons and artwork
+- Android APK with DeeJazz name, icons, artwork and verified startup updates
 - Automatic startup updates from verified GitHub Release packages
 - Linux MPRIS media controls, tray integration, and Wayland support
 
@@ -27,6 +27,13 @@ The localized uBlock Origin Lite dashboard shows active filtering, persistent co
 
 Download the latest Windows, Linux and Android packages from [GitHub Releases](https://github.com/ryahconstantino/deejazz/releases/latest).
 
+| Platform | Package |
+| --- | --- |
+| Windows x64 | `deejazz-windows-x64-<version>.exe` installer |
+| Linux AMD64 | `deejazz-linux-amd64-<version>.tar.gz` portable build |
+| Linux ARM64 | `deejazz-linux-arm64-<version>.tar.gz` portable build |
+| Android | `deejazz-android-<version>.apk` signed APK |
+
 On startup, DeeJazz checks the latest stable GitHub Release. Windows and Linux
 download the matching package, verify its GitHub SHA-256 digest, install it and
 restart automatically. Android performs the same verified download and opens
@@ -38,6 +45,19 @@ Linux users can install the latest compatible package without `sudo`:
 ```bash
 curl -fsSL https://raw.githubusercontent.com/ryahconstantino/deejazz/master/scripts/install-linux.sh | sh
 ```
+
+### Android
+
+The Android build ships as a signed APK, so it installs outside Google Play:
+
+1. Download `deejazz-android-<version>.apk` from [GitHub Releases](https://github.com/ryahconstantino/deejazz/releases/latest) on the device.
+2. Allow the browser or file manager to install unknown apps when Android asks.
+3. Open the downloaded APK and confirm the installation.
+4. Keep the app as an allowed installation source so startup updates can install new versions.
+
+Android requires version 6.0 (API 23) or newer; Android 8.0 and later asks for
+the per-app "install unknown apps" permission. Startup updates are verified
+against the GitHub SHA-256 digest before the system installer opens.
 
 ## Build from source
 
@@ -78,10 +98,10 @@ npm run dist:linux:arm64
 
 Generated files are written to `dist/`:
 
-- `deejazz-windows-x64-1.2.8.exe`
-- `deejazz-linux-amd64-1.2.8.tar.gz`
-- `deejazz-linux-arm64-1.2.8.tar.gz`
-- `deejazz-android-1.2.8.apk`
+- `deejazz-windows-x64-<version>.exe`
+- `deejazz-linux-amd64-<version>.tar.gz`
+- `deejazz-linux-arm64-<version>.tar.gz`
+- `deejazz-android-<version>.apk`
 
 Build the signed Android APK (see [android/README.md](android/README.md) for the required SDK and signing secrets):
 
@@ -122,12 +142,10 @@ version does not have a GitHub Release yet, the workflow builds all packages,
 creates its `v`-prefixed tag and publishes the release. If it already exists,
 the build jobs are skipped.
 
-A semantic-version tag can also start a release explicitly:
-
-```bash
-git tag v1.2.8
-git push origin v1.2.8
-```
+A release is published by pushing `master`, never by pushing a tag: the workflow
+creates the `v`-prefixed tag itself. Pushing a tag alongside `master` starts a
+second run for the same version, which fails when it tries to publish an
+existing release.
 
 You can also run **Build and publish release** manually from the Actions tab and provide the version to publish. The workflow only allows the four versioned packages listed above and in the Android instructions; additional files, including `.sha256` files, are rejected before publication.
 

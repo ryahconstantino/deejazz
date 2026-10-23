@@ -69,17 +69,12 @@ function installExternalOpenHandler() {
       if (!app.isReady() || externalOpenWarningShown) return;
       externalOpenWarningShown = true;
       try {
-        const portuguese = String(app.getLocale() || "").toLowerCase().startsWith("pt");
         const response = dialog.showMessageBoxSync({
           type: "warning",
           title: "DeeJazz",
-          message: portuguese
-            ? "O DeeJazz não conseguiu abrir este link no navegador."
-            : "DeeJazz could not open this link in a browser.",
-          detail: portuguese
-            ? `Instale xdg-utils ou defina BROWSER (por exemplo, BROWSER=firefox).\n\n${value}`
-            : `Install xdg-utils or set BROWSER (for example, BROWSER=firefox).\n\n${value}`,
-          buttons: portuguese ? ["Copiar link", "Fechar"] : ["Copy link", "Close"],
+          message: "DeeJazz could not open this link in a browser.",
+          detail: `Install xdg-utils or set BROWSER (for example, BROWSER=firefox).\n\n${value}`,
+          buttons: ["Copy link", "Close"],
           defaultId: 0,
           cancelId: 1,
         });

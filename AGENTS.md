@@ -1,5 +1,12 @@
 # DeeJazz contributor notes
 
+## Language
+
+Everything in this project is written in English: source code, comments, commit
+messages, documentation, README files, release notes, and any reply posted on
+GitHub through `gh` (issues and pull requests). Localized user-facing app
+strings under the existing i18n resources are the only exception.
+
 ## Android icon standard
 
 All Android artwork must follow these patterns so icons stay visually consistent.
