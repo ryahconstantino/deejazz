@@ -3,8 +3,12 @@
 const os = require("os");
 const {
   app,
+  clipboard,
+  dialog,
   ipcMain,
+  shell,
 } = require("electron");
+const { createExternalOpener, isWebUrl } = require("./deejazz-open-external");
 
 const TRUE_VALUES = new Set(["1", "true", "yes", "on"]);
 const LOG_LEVELS = new Set(["error", "warn", "info", "verbose", "debug", "silly"]);
@@ -43,6 +47,51 @@ if (options.disableSystray) options.startInTray = false;
 
 global.__DEEJAZZ_LINUX_OPTIONS = options;
 process.env.DZ_DISABLE_UPDATE = "yes";
+
+const openExternalWithSystem = createExternalOpener({
+  logger: {
+    info: (message) => console.log(message),
+    warn: (message) => console.warn(message),
+  },
+});
+let externalOpenWarningShown = false;
+
+function installExternalOpenHandler() {
+  const nativeOpenExternal = shell.openExternal.bind(shell);
+  shell.openExternal = function (targetUrl, openOptions) {
+    const value = String(targetUrl);
+    // Custom protocols (including the app's own dzr:// and deezer:// links)
+    // keep using Electron's native handler. Web links go through the Linux
+    // fallback chain because xdg-utils is not installed on every distribution.
+    if (!isWebUrl(value)) return nativeOpenExternal(targetUrl, openOptions);
+    return openExternalWithSystem.open(value).catch((error) => {
+      console.warn("DeeJazz: could not open the external link.", error);
+      if (!app.isReady() || externalOpenWarningShown) return;
+      externalOpenWarningShown = true;
+      try {
+        const portuguese = String(app.getLocale() || "").toLowerCase().startsWith("pt");
+        const response = dialog.showMessageBoxSync({
+          type: "warning",
+          title: "DeeJazz",
+          message: portuguese
+            ? "O DeeJazz não conseguiu abrir este link no navegador."
+            : "DeeJazz could not open this link in a browser.",
+          detail: portuguese
+            ? `Instale xdg-utils ou defina BROWSER (por exemplo, BROWSER=firefox).\n\n${value}`
+            : `Install xdg-utils or set BROWSER (for example, BROWSER=firefox).\n\n${value}`,
+          buttons: portuguese ? ["Copiar link", "Fechar"] : ["Copy link", "Close"],
+          defaultId: 0,
+          cancelId: 1,
+        });
+        if (response === 0) clipboard.writeText(value);
+      } catch (dialogError) {
+        console.warn("DeeJazz: could not show the external link warning.", dialogError);
+      }
+    });
+  };
+}
+
+installExternalOpenHandler();
 
 if (options.disableHardwareAcceleration) app.disableHardwareAcceleration();
 

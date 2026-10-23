@@ -94,6 +94,23 @@ local builds).
 The Linux installer resolves the latest version automatically and also supports
 older releases with unversioned filenames.
 
+## Linux external links
+
+DeeJazz opens web links through `DZ_BROWSER`, `BROWSER`, `xdg-open`, `gio open`
+and the first installed browser, in that order. The fallbacks keep links
+working on minimal Arch/XFCE installs where `xdg-utils` is absent or replaced
+by a broken handler. If links open in the wrong browser, launch DeeJazz with an
+explicit choice:
+
+```bash
+BROWSER=firefox deejazz
+```
+
+Set `DZ_KEEP_GDK_BACKEND=1` to preserve a custom `GDK_BACKEND` value for the
+browser process. The installer also registers the `deejazz://`, `deezer://`
+and `dzr://` URL schemes so deep links reach DeeJazz on XFCE, where
+`xdg-settings` does not support scheme handlers.
+
 ## Automated releases
 
 GitHub Actions builds the Windows x64 installer, both Linux packages and the

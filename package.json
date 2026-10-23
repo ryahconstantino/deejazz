@@ -1,7 +1,7 @@
 {
   "name": "deejazz",
   "productName": "DeeJazz",
-  "version": "1.3.14",
+  "version": "1.3.15",
   "private": true,
   "description": "DeeJazz",
   "license": "MIT",
@@ -9,7 +9,7 @@
   "main": "build/main-with-ubol.js",
   "scripts": {
     "version:sync": "node scripts/sync-version.js",
-    "test:installer": "node --test scripts/tests/install-linux.test.js",
+    "test:installer": "node --test scripts/tests/install-linux.test.js scripts/tests/open-external.test.js",
     "test:updater": "node --test scripts/tests/auto-update.test.js scripts/tests/android-auto-update.test.js",
     "app:integrate": "node scripts/apply-application-integration.js",
     "runtime:brand": "node scripts/brand-windows-runtime.js",

@@ -142,3 +142,58 @@ test("a local update atomically replaces an existing Linux installation", () => 
     fs.rmSync(directory, { recursive: true, force: true });
   }
 });
+
+for (const handler of ["xdg-mime", "gio"]) {
+  test(`the desktop entry registers every DeeJazz deep-link scheme via ${handler}`, () => {
+    const directory = fs.mkdtempSync(path.join(os.tmpdir(), `deejazz-linux-${handler}-test-`));
+    const home = path.join(directory, "home");
+    const dataHome = path.join(home, ".local", "share");
+    const fixture = path.join(directory, "fixture", "DeeJazz-linux-x64");
+    const installRoot = path.join(dataHome, "deejazz");
+    const archive = path.join(directory, "package.tar.gz");
+    const bin = path.join(directory, "bin");
+    const log = path.join(directory, `${handler}.log`);
+    try {
+      fs.mkdirSync(path.join(fixture, "resources", "linux"), { recursive: true });
+      fs.mkdirSync(bin, { recursive: true });
+      fs.writeFileSync(path.join(fixture, "deejazz"), "#!/bin/sh\nexit 0\n", { mode: 0o755 });
+      fs.writeFileSync(path.join(fixture, "resources", "linux", "icon.png"), "icon");
+      fs.writeFileSync(path.join(bin, "xdg-mime"), `#!/bin/sh
+printf '%s\\n' "$*" >> "$DEEJAZZ_TEST_XDG_LOG"
+exit ${handler === "xdg-mime" ? 0 : 1}
+`, { mode: 0o755 });
+      fs.writeFileSync(path.join(bin, "gio"), `#!/bin/sh
+printf '%s\\n' "$*" >> "$DEEJAZZ_TEST_GIO_LOG"
+exit 0
+`, { mode: 0o755 });
+      const archived = spawnSync("tar", ["-czf", archive, "-C", path.dirname(fixture), path.basename(fixture)]);
+      assert.equal(archived.status, 0);
+      const result = spawnSync("sh", [installer], {
+        encoding: "utf8",
+        env: {
+          ...process.env,
+          HOME: home,
+          XDG_DATA_HOME: dataHome,
+          PATH: `${bin}:${process.env.PATH}`,
+          DEEJAZZ_ARCHIVE_PATH: archive,
+          DEEJAZZ_INSTALL_ROOT: installRoot,
+          DEEJAZZ_TEST_XDG_LOG: log,
+          DEEJAZZ_TEST_GIO_LOG: log,
+        },
+      });
+      assert.equal(result.status, 0, result.stderr);
+      const desktop = fs.readFileSync(path.join(dataHome, "applications", "deejazz.desktop"), "utf8");
+      assert.match(desktop, /^MimeType=x-scheme-handler\/deejazz;x-scheme-handler\/deezer;x-scheme-handler\/dzr;$/m);
+      assert.match(desktop, /^Exec=".*\/deejazz" %U$/m);
+      const calls = fs.readFileSync(log, "utf8").trim().split("\n");
+      for (const scheme of ["deejazz", "deezer", "dzr"]) {
+        const expected = handler === "xdg-mime"
+          ? `default deejazz.desktop x-scheme-handler/${scheme}`
+          : `mime x-scheme-handler/${scheme} deejazz.desktop`;
+        assert.ok(calls.includes(expected), expected);
+      }
+    } finally {
+      fs.rmSync(directory, { recursive: true, force: true });
+    }
+  });
+}

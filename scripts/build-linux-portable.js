@@ -11,6 +11,7 @@ const sourceAsar = path.join(projectRoot, "desktop", "resources", "app.asar");
 const sourceIcon = path.join(projectRoot, "desktop", "resources", "deejazz-icon.png");
 const sourceTrayIcon = path.join(projectRoot, "desktop", "resources", "win", "systray.png");
 const sourceLinuxMain = path.join(projectRoot, "scripts", "linux", "main.js");
+const sourceLinuxExternalOpen = path.join(projectRoot, "scripts", "linux", "open-external.js");
 const sourceLinuxInstaller = path.join(projectRoot, "scripts", "install-linux.sh");
 const workRoot = path.join(projectRoot, ".linux-build");
 const appDir = path.join(workRoot, "app");
@@ -76,6 +77,7 @@ function prepareApplication() {
   fs.writeFileSync(packagePath, `${JSON.stringify(appPackage, null, 2)}\n`);
 
   fs.copyFileSync(sourceLinuxMain, path.join(appDir, "build", "main-linux.js"));
+  fs.copyFileSync(sourceLinuxExternalOpen, path.join(appDir, "build", "deejazz-open-external.js"));
   copyDependencyTree("@jellybrick/mpris-service");
 
   const originalMainPath = path.join(appDir, "build", "main.js");

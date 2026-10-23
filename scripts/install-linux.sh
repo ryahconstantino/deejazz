@@ -164,7 +164,7 @@ DESKTOP_FILE="$APPLICATIONS_DIR/deejazz.desktop"
   printf '%s\n' 'Keywords=music;audio;player;streaming;deejazz;'
   printf '%s\n' 'StartupNotify=true'
   printf '%s\n' 'StartupWMClass=DeeJazz'
-  printf '%s\n' 'MimeType=x-scheme-handler/deejazz;'
+  printf '%s\n' 'MimeType=x-scheme-handler/deejazz;x-scheme-handler/deezer;x-scheme-handler/dzr;'
   printf '%s\n' 'SingleMainWindow=true'
   printf '%s\n' 'X-GNOME-UsesNotifications=true'
 } > "$DESKTOP_FILE"
@@ -178,9 +178,21 @@ if command -v gtk-update-icon-cache >/dev/null 2>&1; then
   gtk-update-icon-cache "${XDG_DATA_HOME:-$HOME/.local/share}/icons/hicolor" >/dev/null 2>&1 || true
 fi
 
-if command -v xdg-mime >/dev/null 2>&1; then
-  xdg-mime default deejazz.desktop x-scheme-handler/deejazz >/dev/null 2>&1 || true
-fi
+set_default_handler() {
+  if command -v xdg-mime >/dev/null 2>&1; then
+    xdg-mime default deejazz.desktop "x-scheme-handler/$1" >/dev/null 2>&1 || true
+  fi
+  if command -v gio >/dev/null 2>&1; then
+    gio mime "x-scheme-handler/$1" deejazz.desktop >/dev/null 2>&1 || true
+  fi
+}
+
+# The bundled Deezer client registers dzr:// and deezer:// at startup, but
+# xdg-settings cannot install URL scheme handlers on XFCE. Register all three
+# schemes from the desktop entry instead.
+for DEEJAZZ_SCHEME in deejazz deezer dzr; do
+  set_default_handler "$DEEJAZZ_SCHEME"
+done
 
 if command -v ldd >/dev/null 2>&1; then
   MISSING_LIBRARIES="$(ldd "$INSTALL_ROOT/deejazz" 2>/dev/null | awk '/not found/ { print $1 }')"
